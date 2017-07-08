@@ -77,12 +77,6 @@ namespace Melia.Channel.Network
 			
 			packet.PutLpString(conn.SessionKey);
 
-			// [i109XX (2015-12-01)]
-			// [i11025 (2016-02-26)] Removed?
-			{
-				//packet.PutShort(0xFB31); // ?
-			}
-
 			packet.PutInt(character.Handle);
 			packet.PutInt(0);
 
@@ -263,14 +257,14 @@ namespace Melia.Channel.Network
 		public static void ZC_SKILL_LIST(Character character)
 		{
 			var packet = new Packet(Op.ZC_SKILL_LIST);
-			var skills = new[] { 1, 101, 105, 108, 20, 3, 100, 10002, 10003 };
+			//var skills = new[] { 1, 101, 105, 108, 20, 3, 100, 10002, 10003 };
 
 			packet.PutInt(character.Handle);
-			packet.PutShort(skills.Length); // count
+			packet.PutShort(character.Skills.Length); // count
 
 			packet.PutShort(0); // No compression
 			//packet.BeginZlib();
-			foreach (var skill in skills)
+			foreach (var skill in character.Skills)
 				packet.AddSkill(skill);
 			//packet.EndZlib();
 

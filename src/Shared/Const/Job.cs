@@ -90,6 +90,32 @@ namespace Melia.Shared.Const
 		GM = 9,
 	}
 
+	public enum SkillType
+	{
+		Normal_Attack = 1,
+		Bow_Attack = 2,
+		Hammer_Attack = 3,
+		Magic_Attack = 4,
+		Normal_Attack_TH = 5,
+		War_JustFrameDagger = 10,
+		War_JustFrameAttack = 11,
+		Common_ShadowUmbrella = 14,
+		Common_DaggerAries = 20,
+		CrossBow_Attack = 52,
+		Pistol_Attack = 53,
+		Musket_Attack = 55,
+		Sword_Attack = 56,
+		War_JustFramePistol = 59,
+		Default = 100,
+		Common_vuvuzela = 101,
+		Common_shovel = 103,
+		Common_dumbbell = 105,
+		Common_snowspray = 106,
+		Common_wateringcan = 108,
+		Common_balloonpipe = 110,
+		Warrior_Guard = 1535,
+	}
+
 	public static class JobExtension
 	{
 		public static Class ToClass(this Job job)

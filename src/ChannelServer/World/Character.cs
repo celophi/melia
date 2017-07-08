@@ -118,6 +118,59 @@ namespace Melia.Channel.World
 		/// </summary>
 		public Variables Variables { get; private set; }
 
+		public int[] Skills
+		{
+			get
+			{
+				var skills = new List<SkillType>()
+				{
+					SkillType.Default,
+					SkillType.Common_balloonpipe,
+					SkillType.Common_dumbbell,
+					SkillType.Common_shovel,
+					SkillType.Common_snowspray,
+					SkillType.Common_vuvuzela,
+					SkillType.Common_wateringcan
+				};
+
+				switch (this.Job)
+				{
+					case Job.Wizard:
+						skills.AddRange(new[] {
+						SkillType.Magic_Attack,
+						SkillType.Common_ShadowUmbrella });
+						break;
+					case Job.Cleric:
+						skills.AddRange(new[] {
+						SkillType.Hammer_Attack,
+						SkillType.Common_ShadowUmbrella });
+						break;
+					case Job.Archer:
+						skills.AddRange(new[] {
+						SkillType.Bow_Attack,
+						SkillType.CrossBow_Attack,
+						SkillType.Musket_Attack,
+						SkillType.Pistol_Attack,
+						// Skills.Sword_Attack, // something strange about this.
+						SkillType.Common_DaggerAries });
+						break;
+					case Job.Swordsman:
+					default:
+						skills.AddRange(new[] {
+						SkillType.Normal_Attack,
+						SkillType.Normal_Attack_TH,
+						SkillType.Warrior_Guard,
+						SkillType.War_JustFrameDagger,
+						SkillType.War_JustFrameAttack,
+						SkillType.Pistol_Attack,
+						SkillType.War_JustFramePistol });
+						break;
+				}
+
+				return skills.Cast<int>().ToArray();
+			}
+		}
+
 		/// <summary>
 		/// Creates new character.
 		/// </summary>
