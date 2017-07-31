@@ -40,6 +40,7 @@ namespace Melia.Channel.Database
 			}
 
 			this.SaveVariables("account:" + account.Id, account.Variables.Perm);
+			this.SaveMapVisibility(account);
 
 			return true;
 		}
@@ -73,6 +74,7 @@ namespace Melia.Channel.Database
 			}
 
 			this.LoadVars("account:" + account.Id, account.Variables.Perm);
+			this.LoadMapVisibility(account);
 
 			return account;
 		}
@@ -399,6 +401,60 @@ namespace Melia.Channel.Database
 							Log.Warning("LoadVars: Value '{2}' of variable '{0}' doesn't fit into type '{1}'. Owner: '{3}'", name, type, val, owner);
 							continue;
 						}
+					}
+				}
+			}
+		}
+
+		/// Updates explored maps for an account.
+		/// </summary>
+		/// <param name="account"></param>
+		public void SaveMapVisibility(Account account)
+		{
+			using (var conn = this.GetConnection())
+			using (var trans = conn.BeginTransaction())
+			{
+				foreach (var pair in account.MapVisibility)
+				{
+					using (var mc = new MySqlCommand("DELETE FROM `MapVisibility` WHERE `accountId` = @accountId AND `map` = @map", conn, trans))
+					{
+						mc.Parameters.AddWithValue("@accountId", account.Id);
+						mc.Parameters.AddWithValue("@map", pair.Key);
+						mc.ExecuteNonQuery();
+					}
+
+					using (var cmd = new InsertCommand("INSERT INTO `MapVisibility` {0}", conn))
+					{
+						cmd.Set("accountId", account.Id);
+						cmd.Set("map", pair.Key);
+						cmd.Set("explored", pair.Value);
+						cmd.Execute();
+					}
+				}
+				trans.Commit();
+			}
+		}
+
+		/// <summary>
+		/// Returns a dictionary of explored maps for an account.
+		/// </summary>
+		/// <param name="account"></param>
+		public void LoadMapVisibility(Account account)
+		{
+			account.MapVisibility = new Dictionary<int, byte[]>();
+
+			using (var conn = this.GetConnection())
+			using (var mc = new MySqlCommand("SELECT * FROM `MapVisibility` WHERE `accountId` = @accountId", conn))
+			{
+				mc.Parameters.AddWithValue("accountId", account.Id);
+
+				using (var reader = mc.ExecuteReader())
+				{
+					while (reader.Read())
+					{
+						var map = reader.GetInt32("map");
+						var explored = reader["explored"] as byte[];
+						account.MapVisibility[map] = explored;
 					}
 				}
 			}

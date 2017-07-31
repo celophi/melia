@@ -1285,6 +1285,24 @@ namespace Melia.Channel.Network
 		}
 
 		/// <summary>
+		/// Sends the visible areas of a map to a character.
+		/// </summary>
+		/// <param name="conn"></param>
+		public static void ZC_MAP_REVEAL_LIST(ChannelConnection conn)
+		{
+			var packet = new Packet(Op.ZC_MAP_REVEAL_LIST);
+
+			packet.PutInt(conn.Account.MapVisibility.Count());
+			foreach (var pair in conn.Account.MapVisibility)
+			{
+				packet.PutInt(pair.Key);
+				packet.PutBin(pair.Value);
+			}
+
+			conn.Send(packet);
+		}
+
+		/// <summary>
 		/// Adds exp.
 		/// </summary>
 		/// <param name="character"></param>
@@ -1336,7 +1354,7 @@ namespace Melia.Channel.Network
 
 			character.Connection.Send(packet);
 		}
-		
+
 		/// <summary>
 		/// Updates a property on a character.
 		/// </summary>
@@ -1351,7 +1369,7 @@ namespace Melia.Channel.Network
 			var packet = new Packet(Op.ZC_PC_PROP_UPDATE);
 			packet.PutInt(property);
 			packet.PutByte(type);
-			
+
 			character.Connection.Send(packet);
 		}
 
