@@ -55,6 +55,7 @@
     <Compile Include="Database\Account.cs" />
     <Compile Include="Database\ChannelDb.cs" />
     <Compile Include="Database\AccountSettings.cs" />
+    <Compile Include="Database\ChatMacro.cs" />
     <Compile Include="Network\ChannelConnection.cs" />
     <Compile Include="Network\ChannelPacketHandler.cs" />
     <Compile Include="Network\ChannelPacketSender.cs" />

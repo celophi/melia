@@ -53,12 +53,48 @@ namespace Melia.Channel.Database
 		public Dictionary<int, byte[]> MapVisibility { get; set; }
 
 		/// <summary>
+		/// List of chat macros.
+		/// </summary>
+		private List<ChatMacro> _chatMacros;
+
+		/// <summary>
+		/// lock for updating the account
+		/// </summary>
+		private object _key = new object();
+
+		/// <summary>
 		/// Creates new account.
 		/// </summary>
 		public Account()
 		{
 			this.Settings = new AccountSettings();
 			this.Variables = new Variables();
+			this._chatMacros = new List<ChatMacro>();
+		}
+
+		/// <summary>
+		/// Returns the chat macros for an account.
+		/// </summary>
+		/// <returns></returns>
+		public IReadOnlyList<ChatMacro> GetChatMacros()
+		{
+			return this._chatMacros.AsReadOnly();
+		}
+
+		/// <summary>
+		/// Adds a chat macro to the account.
+		/// </summary>
+		/// <param name="macro"></param>
+		public void AddChatMacro(ChatMacro macro)
+		{
+			lock(this._key)
+			{
+				var old = this._chatMacros.FirstOrDefault(x => x.Slot == macro.Slot);
+				if (old != null)
+					this._chatMacros.Remove(old);
+
+				this._chatMacros.Add(macro);
+			}
 		}
 
 		/// <summary>

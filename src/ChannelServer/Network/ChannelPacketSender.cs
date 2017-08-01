@@ -355,10 +355,17 @@ namespace Melia.Channel.Network
 		/// <param name="character"></param>
 		public static void ZC_CHAT_MACRO_LIST(Character character)
 		{
+			var macros = character.Connection.Account.GetChatMacros();
+
 			var packet = new Packet(Op.ZC_CHAT_MACRO_LIST);
-
-			packet.PutInt(0); // ?
-
+			packet.PutInt(macros.Count);
+			foreach (var macro in macros)
+			{
+				packet.PutInt(macro.Slot);
+				packet.PutString(macro.Message, 128);
+				packet.PutInt(macro.Pose);
+			}
+			
 			character.Connection.Send(packet);
 		}
 

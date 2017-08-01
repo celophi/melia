@@ -1,7 +1,7 @@
 //------------------------------------------------
 //--- 010 Editor v8.0 Binary Template
 //
-//      File: CZ_CHAT_MACRO.bt
+//      File: CHAT_MACRO_INFO.bt
 //   Authors: celophi
 //   Version: 164556
 //   Purpose: 
@@ -11,11 +11,8 @@
 //   History: 
 //------------------------------------------------
 
-#include "common/CHAT_MACRO_INFO.bt"
-
-short op<format=hex>;
-int reserved;
-int sequence;
-
-CHAT_MACRO_INFO macro;
-
+typedef struct {
+  int slot;
+  char message[128]; // this can also be a classID
+  int pose;
+} CHAT_MACRO_INFO;

@@ -1,7 +1,7 @@
 //------------------------------------------------
 //--- 010 Editor v8.0 Binary Template
 //
-//      File: CZ_CHAT_MACRO.bt
+//      File: ZC_CHAT_MACRO_LIST.bt
 //   Authors: celophi
 //   Version: 164556
 //   Purpose: 
@@ -15,7 +15,9 @@
 
 short op<format=hex>;
 int reserved;
-int sequence;
+short packetLength;
 
-CHAT_MACRO_INFO macro;
-
+int count;
+local int i<hidden=true>;
+for (i = 0; i < count; i++)
+    CHAT_MACRO_INFO macro;

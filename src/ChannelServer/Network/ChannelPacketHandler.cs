@@ -1183,9 +1183,18 @@ namespace Melia.Channel.Network
 		[PacketHandler(Op.CZ_CHAT_MACRO)]
 		public void CZ_CHAT_MACRO(ChannelConnection conn, Packet packet)
 		{
-			var index = packet.GetInt();
-			var msg = packet.GetString(128);
-			var poseId = packet.GetInt();
+			var slot = packet.GetInt();
+			var message = packet.GetString(128);
+			var pose = packet.GetInt();
+
+			if ((slot > 10) || (slot < 0))
+				return;
+
+			if (String.IsNullOrEmpty(message) && pose == 0)
+				return;
+
+			var macro = new Database.ChatMacro(slot, message, pose);
+			conn.Account.AddChatMacro(macro);
 		}
 
 		/// <summary>
