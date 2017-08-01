@@ -48,6 +48,11 @@ namespace Melia.Channel.Database
 		public Variables Variables { get; private set; }
 
 		/// <summary>
+		/// Contains all visible portions of maps.
+		/// </summary>
+		public Dictionary<int, byte[]> MapVisibility { get; set; }
+
+		/// <summary>
 		/// Creates new account.
 		/// </summary>
 		public Account()

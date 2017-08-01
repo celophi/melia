@@ -116,6 +116,7 @@ namespace Melia.Channel.Network
 			Send.ZC_ITEM_EQUIP_LIST(character);
 			Send.ZC_SKILL_LIST(character);
 			Send.ZC_ABILITY_LIST(character);
+			Send.ZC_MAP_REVEAL_LIST(conn);
 			Send.ZC_NORMAL_JobSkillPointUpdate(character);
 			Send.ZC_COOLDOWN_LIST(character);
 			Send.ZC_QUICK_SLOT_LIST(conn);
@@ -768,6 +769,20 @@ namespace Melia.Channel.Network
 		}
 
 		/// <summary>
+		/// Contains newly uncovered areas of a map.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CZ_MAP_REVEAL_INFO)]
+		public void CZ_MAP_REVEAL_INFO(ChannelConnection conn, Packet packet)
+		{
+			var mapId = packet.GetInt();
+			var explored = packet.GetBin(128);
+
+			conn.Account.MapVisibility[mapId] = explored;
+		}
+
+		/// <summary>
 		/// Sent when attacking enemies.
 		/// </summary>
 		/// <param name="conn"></param>
@@ -1145,7 +1160,7 @@ namespace Melia.Channel.Network
 				default:
 					return;
 			}
-			
+
 			Log.Info("User {0} is transferring to {1} state.", conn.Account.Name, destination);
 		}
 
