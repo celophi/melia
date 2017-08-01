@@ -116,6 +116,7 @@ namespace Melia.Channel.Network
 			Send.ZC_ITEM_EQUIP_LIST(character);
 			Send.ZC_SKILL_LIST(character);
 			Send.ZC_ABILITY_LIST(character);
+			Send.ZC_MAP_REVEAL_LIST(conn);
 			Send.ZC_NORMAL_JobSkillPointUpdate(character);
 			Send.ZC_COOLDOWN_LIST(character);
 			Send.ZC_QUICK_SLOT_LIST(conn);
@@ -124,7 +125,6 @@ namespace Melia.Channel.Network
 			Send.ZC_OBJECT_PROPERTY_Init(character);
 			Send.ZC_LOGIN_TIME(conn, DateTime.Now);
 			Send.ZC_MYPC_ENTER(character);
-			Send.ZC_MAP_REVEAL_LIST(conn);
 			// ZC_NORMAL...
 			// ZC_OBJECT_PROPERTY...
 			// ZC_SKILL_ADD...
