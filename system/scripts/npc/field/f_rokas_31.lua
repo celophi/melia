@@ -1,4 +1,27 @@
------ npc_lecifer ----- 
+----- King's Plateau ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001194", "f_rokas_31", 940, 107, -998, 94, "npc_ETC_20150317_001194")
+function npc_ETC_20150317_001194()
+msg("ROKAS31_ROKAS30")
+end
+
+----- Royal Mausoleum 1F ----- 
+----- Enter -----
+----- QuestIDs: ROKAS31_REXITHER3 -----
+addnpc(40001, "ETC_20150317_001196", "f_rokas_31", -1271, 274, 715, 180, "npc_ETC_20150317_001196")
+function npc_ETC_20150317_001196()
+msg("GM_QUEST_MODIFY_PC_SEL")
+msg("GM_NPC_HIDE_UNHIDE")
+end
+
+----- Stele Road ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009579", "f_rokas_31", 470, 107, -1399, -94, "npc_ETC_20150323_009579")
+function npc_ETC_20150323_009579()
+msg("ROKAS31_REMAINS37")
+end
+
+----- Rexipher ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS31_PACT_END -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS31_PACT_END -----
@@ -8,7 +31,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_lecifer ----- 
+----- Rexipher ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS31_REXITHER2 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS31_REXITHER2 | ROKAS31_PACT_END -----
@@ -18,7 +41,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ stone_monument3 ----- 
+----- Varkis' Records ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS31_RECORD -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS29_VACYS9 -----
@@ -28,7 +51,7 @@ msg("ROKAS31_RECORD_basic1")
 msg("ABBEY64_2_MEMORY")
 end
 
------ npc_historian_odel_body ----- 
+----- Historian Cyrenia Odell ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS31_ODEL2 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS31_REXITHER3 | ROKAS31_REXITHER2 -----
@@ -56,7 +79,7 @@ msg("ROKAS31_REXITHER2_dlg2")
 msg("ROKAS31_ODEL2_basic")
 end
 
------ npc_rokas_7 ----- 
+----- Royal Mausoleum Guardian Device ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS31_REXITHER1 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS31_REXITHER1 -----
@@ -66,7 +89,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS31_SUB_01_BOX -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS31_SUB_01 -----
@@ -76,7 +99,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_soldier_female_01 ----- 
+----- Powerless Security Guard ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS31_SUB -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS31_SUB_02 | ROKAS31_SUB_03 | ROKAS31_RP_1 -----
@@ -86,7 +109,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ statue_zemina ----- 
+----- Statue of Goddess Zemyna ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(40110, "ETC_20150317_007030", "f_rokas_31", 496, 107, -27, -55, "npc_ETC_20150317_007030")
@@ -95,7 +118,7 @@ msg("F_ROKAS_31_EV_55_001")
 msg("F_ROKAS_31_EV_55_001")
 end
 
------ id_gate_npc ----- 
+----- Historic Site Ruins Dungeon ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154046, "ETC_20151224_019968", "f_rokas_31", 620, 107, -75, 45, "npc_ETC_20151224_019968")
@@ -103,7 +126,7 @@ function npc_ETC_20151224_019968()
 msg("INSTANCE_DUNGEON_REMAINS_05")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_rokas_31", -736, 107, -1088, 45, "npc_ETC_20150317_009100")

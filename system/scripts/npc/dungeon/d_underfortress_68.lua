@@ -1,4 +1,4 @@
------ npc_PremierEminent ----- 
+----- Old Manager ----- 
 ----- npcselectdialog.ies | ClassName: EMINENT_68_1 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_68_MQ010 | UNDERFORTRESS_68_MQ020 | UNDERFORTRESS_68_MQ030 | UNDERFORTRESS_68_MQ040 | UNDERFORTRESS_68_MQ050 | UNDERFORTRESS_68_MQ060 | UNDERFORTRESS_67_MQ060 -----
@@ -8,14 +8,28 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ firetower_gear_01 ----- 
+----- Platform of Confessions ----- 
 ----- Enter -----
 addnpc(147503, "ETC_20151016_015899", "d_underfortress_68", -107, 342, -979, 45, "npc_ETC_20151016_015899")
 function npc_ETC_20151016_015899()
 msg("UNDER68_DEVICE01")
 end
 
------ mon_paladin_follower1_3_Q ----- 
+----- Resident Quarter ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170330_027524", "d_underfortress_68", -2898, 485, -1228, 217, "npc_ETC_20170330_027524")
+function npc_ETC_20170330_027524()
+msg("UNDERFORTRESS68_UNDERFORTRESS67")
+end
+
+----- Fortress Battlegrounds ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009595", "d_underfortress_68", 1746, 344, 1810, 155, "npc_ETC_20150323_009595")
+function npc_ETC_20150323_009595()
+msg("UNDERFORTRESS68_UNDERFORTRESS69")
+end
+
+----- Ruklys' Squad Member Spirit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(103015, "QUEST_20151001_002606", "d_underfortress_68", 35, 339, -642, 45, "npc_QUEST_20151001_002606")
@@ -23,7 +37,7 @@ function npc_QUEST_20151001_002606()
 msg("UNDER68_GHOST_DLG02")
 end
 
------ mon_paladin_follower1_3_Q ----- 
+----- Ruklys' Squad Member Spirit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(103015, "QUEST_20151001_002606", "d_underfortress_68", 195, 338, -723, 45, "npc_QUEST_20151001_002606")
@@ -31,7 +45,7 @@ function npc_QUEST_20151001_002606()
 msg("UNDER68_GHOST_DLG02")
 end
 
------ mon_paladin_follower1_3_Q ----- 
+----- Ruklys' Squad Member Spirit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(103015, "QUEST_20151001_002606", "d_underfortress_68", 743, 342, -678, 45, "npc_QUEST_20151001_002606")
@@ -39,7 +53,7 @@ function npc_QUEST_20151001_002606()
 msg("UNDER68_GHOST_DLG02")
 end
 
------ mon_paladin_follower1_3_Q ----- 
+----- Ruklys' Squad Member Spirit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(103015, "QUEST_20151001_002606", "d_underfortress_68", -643, 405, -940, 45, "npc_QUEST_20151001_002606")
@@ -47,7 +61,7 @@ function npc_QUEST_20151001_002606()
 msg("UNDER68_GHOST_DLG02")
 end
 
------ mon_paladin_follower1_3_Q ----- 
+----- Ruklys' Squad Member Spirit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(103015, "QUEST_20151001_002606", "d_underfortress_68", -987, 405, -1044, 45, "npc_QUEST_20151001_002606")
@@ -55,7 +69,7 @@ function npc_QUEST_20151001_002606()
 msg("UNDER68_GHOST_DLG02")
 end
 
------ mon_paladin_follower1_3_Q ----- 
+----- Ruklys' Squad Member Spirit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(103015, "QUEST_20151001_002606", "d_underfortress_68", 411, 341, -613, 45, "npc_QUEST_20151001_002606")
@@ -63,7 +77,7 @@ function npc_QUEST_20151001_002606()
 msg("UNDER68_GHOST_DLG02")
 end
 
------ f_katyn_owl04 ----- 
+----- Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(48004, "ETC_20150317_000345", "d_underfortress_68", 716, 342, -471, -30, "npc_ETC_20150317_000345")
@@ -71,7 +85,7 @@ function npc_ETC_20150317_000345()
 msg("UNDER68_SQ2_OWL")
 end
 
------ npc_historian_odel_2 ----- 
+----- [Amanda Grave Robbers]Amanda ----- 
 ----- npcselectdialog.ies | ClassName: AMANDA_68_1 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_68_MQ070 -----
@@ -81,7 +95,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_historian_odel_2 ----- 
+----- [Amanda Grave Robbers]Amanda ----- 
 ----- npcselectdialog.ies | ClassName: AMANDA_68_2 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_68_MQ070 -----

@@ -1,4 +1,18 @@
------ npc_historian_odel_2 ----- 
+----- Drill Ground of Confliction ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170330_027523", "d_underfortress_67", 32, 288, -1661, -78, "npc_ETC_20170330_027523")
+function npc_ETC_20170330_027523()
+msg("UNDERFORTRESS67_UNDERFORTRESS66")
+end
+
+----- Storage Quarter ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170330_027525", "d_underfortress_67", 351, 179, 546, 131, "npc_ETC_20170330_027525")
+function npc_ETC_20170330_027525()
+msg("UNDERFORTRESS67_UNDERFORTRESS68")
+end
+
+----- [Amanda Grave Robbers]Amanda ----- 
 ----- npcselectdialog.ies | ClassName: AMANDA_67_1 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_67_MQ010 | UNDERFORTRESS_67_MQ020 -----
@@ -8,7 +22,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_historian_odel_2 ----- 
+----- [Amanda Grave Robbers]Amanda ----- 
 ----- npcselectdialog.ies | ClassName: AMANDA_67_2 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_67_MQ020 | UNDERFORTRESS_67_MQ030 -----
@@ -104,7 +118,7 @@ msg("FLASH64_MQ_01_04")
 msg("UNDER_69_MQ060_succ01")
 end
 
------ npc_PremierEminent ----- 
+----- Old Manager ----- 
 ----- npcselectdialog.ies | ClassName: EMINENT_67_1 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_67_MQ030 | UNDERFORTRESS_67_MQ040 | UNDERFORTRESS_67_MQ050 | UNDERFORTRESS_67_MQ060 -----
@@ -114,7 +128,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_PremierEminent ----- 
+----- Old Manager ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153139, "QUEST_LV_0100_20150803_007776", "d_underfortress_67", 63, 317, -278, 45, "npc_QUEST_LV_0100_20150803_007776")
@@ -122,10 +136,10 @@ function npc_QUEST_LV_0100_20150803_007776()
 msg("EMINENT_67_2")
 end
 
------ Link_stone_small ----- 
+----- Barrier Crystal ----- 
 addnpc(153069, "ETC_20151001_015239", "d_underfortress_67", 72, 288, -588, -14, "npc_dummy")
 
------ soldier_article_1 ----- 
+----- Soldier's Grave ----- 
 ----- npcselectdialog.ies | ClassName: UNDER67_SQ020 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_67_SQ020 -----
@@ -135,7 +149,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ mon_paladin_follower1_3 ----- 
+----- The soldier with the resentment ----- 
 ----- npcselectdialog.ies | ClassName: UNDER67_SQ030 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_67_SQ020 | UNDERFORTRESS_67_SQ030 -----
@@ -143,5 +157,12 @@ addnpc(11283, "ETC_20150803_014081", "d_underfortress_67", 1776, 371, 802, -45, 
 function npc_ETC_20150803_014081()
 msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
+end
+
+----- Ruklys Hall of Fame ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170330_027530", "d_underfortress_67", 884, 185, 3, -68, "npc_ETC_20170330_027530")
+function npc_ETC_20170330_027530()
+msg("UNDERFORTRESS67_UNDERFORTRESS30_1")
 end
 

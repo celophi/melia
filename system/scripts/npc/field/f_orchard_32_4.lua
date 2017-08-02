@@ -1,4 +1,25 @@
------ npc_rada_goddess ----- 
+----- Zeraha ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151022_016078", "f_orchard_32_4", 1889, 119, 500, 65, "npc_ETC_20151022_016078")
+function npc_ETC_20151022_016078()
+msg("ORCHARD_32_4_TO_ORCHARD_34_2")
+end
+
+----- Fedimian ----- 
+----- Enter -----
+addnpc(40001, "QUEST_LV_0100_20150317_006373", "f_orchard_32_4", -23, 2, -743, -45, "npc_QUEST_LV_0100_20150317_006373")
+function npc_QUEST_LV_0100_20150317_006373()
+msg("ORCHARD_32_4_TO_FEDIMIAN")
+end
+
+----- Sicarius 1F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016533", "f_orchard_32_4", 1561, 515, 1706, 125, "npc_ETC_20151102_016533")
+function npc_ETC_20151102_016533()
+msg("ORCHARD_32_4_TO_UNDERFOREST_68_1")
+end
+
+----- Goddess Lada ----- 
 ----- npcselectdialog.ies | ClassName: ORCHARD324_LADA -----
 ----- Dialog -----
 ----- QuestIDs: ORCHARD_324_MQ_01 | ORCHARD_324_MQ_02 | ORCHARD_324_MQ_03 | ORCHARD_324_MQ_05 | ORCHARD_324_MQ_06 | ORCHARD_324_MQ_07 | ORCHARD_324_MQ_04 -----
@@ -8,7 +29,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Boss_Kubas_Head ----- 
+----- Redemption Ward ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155024, "ETC_20151102_017435", "f_orchard_32_4", -47, 1, 814, 45, "npc_ETC_20151102_017435")
@@ -16,7 +37,7 @@ function npc_ETC_20151102_017435()
 msg("ORCHARD324_BINDIG1")
 end
 
------ Boss_Kubas_Head ----- 
+----- Redemption Ward ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155024, "ETC_20151102_017435", "f_orchard_32_4", -91, 1, 898, 45, "npc_ETC_20151102_017435")
@@ -24,7 +45,7 @@ function npc_ETC_20151102_017435()
 msg("ORCHARD324_BINDIG2")
 end
 
------ Boss_Kubas_Head ----- 
+----- Redemption Ward ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155024, "ETC_20151102_017435", "f_orchard_32_4", 2, 1, 898, 45, "npc_ETC_20151102_017435")
@@ -32,7 +53,7 @@ function npc_ETC_20151102_017435()
 msg("ORCHARD324_BINDIG3")
 end
 
------ npc_huevill_male_1 ----- 
+----- Village Priest ----- 
 ----- npcselectdialog.ies | ClassName: ORCHARD324_PRIEST -----
 ----- Dialog -----
 ----- QuestIDs: ORCHARD_324_SQ_01 | ORCHARD_324_SQ_02 | ORCHARD_324_SQ_03 -----
@@ -83,7 +104,7 @@ msg("ORCHARD324_PRIEST_basic02")
 msg("ORCHARD323_PRIEST_basic03")
 end
 
------ npc_huevill_male_2 ----- 
+----- Great Priest of the Village ----- 
 ----- npcselectdialog.ies | ClassName: ORCHARD324_FUZE -----
 ----- Dialog -----
 ----- QuestIDs: ORCHARD_324_SQ_04 -----
@@ -97,7 +118,7 @@ msg("ORCHARD324_FUZE_basic01")
 msg("ORCHARD324_FUZE_basic02")
 end
 
------ orchard_drain ----- 
+----- Vitality Absorption Device ----- 
 ----- npcselectdialog.ies | ClassName: ORCHARD324_DRAIN -----
 ----- Dialog -----
 ----- QuestIDs: ORCHARD_324_MQ_04 -----
@@ -107,14 +128,14 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ kruvina_pillar ----- 
+----- Kruvina Suppressor ----- 
 ----- Enter -----
 addnpc(155105, "ETC_20151001_015256", "f_orchard_32_4", -860, 568, 1009, 45, "npc_ETC_20151001_015256")
 function npc_ETC_20151001_015256()
 msg("ORCHARD324_DESPENSOR")
 end
 
------ bube_flag1 ----- 
+----- Demon Totem ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47150, "ETC_20151001_014711", "f_orchard_32_4", 1344, 109, 60, 45, "npc_ETC_20151001_014711")
@@ -122,7 +143,7 @@ function npc_ETC_20151001_014711()
 msg("ORCHARD324_EVIL1")
 end
 
------ bube_flag1 ----- 
+----- Demon Totem ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47150, "ETC_20151001_014711", "f_orchard_32_4", 884, 87, 138, 45, "npc_ETC_20151001_014711")
@@ -130,7 +151,7 @@ function npc_ETC_20151001_014711()
 msg("ORCHARD324_EVIL2")
 end
 
------ bube_flag1 ----- 
+----- Demon Totem ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47150, "ETC_20151001_014711", "f_orchard_32_4", 439, 43, 141, 45, "npc_ETC_20151001_014711")
@@ -138,7 +159,7 @@ function npc_ETC_20151001_014711()
 msg("ORCHARD324_EVIL3")
 end
 
------ bube_flag1 ----- 
+----- Demon Totem ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47150, "ETC_20151001_014711", "f_orchard_32_4", 1021, -2, -871, 45, "npc_ETC_20151001_014711")
@@ -146,7 +167,7 @@ function npc_ETC_20151001_014711()
 msg("ORCHARD324_EVIL4")
 end
 
------ npc_rada_goddess ----- 
+----- Goddess Lada ----- 
 ----- npcselectdialog.ies | ClassName: ORCHARD324_LADA2 -----
 ----- Dialog -----
 ----- QuestIDs: ORCHARD_324_MQ_07 | ORCHARD_324_SQ_04 -----
@@ -174,7 +195,7 @@ msg("ORCHARD324_LADA2_basic01")
 msg("ORCHARD324_LADA2_basic02")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_orchard_32_4", 956, 507, 1499, 45, "npc_ETC_20150317_009100")
@@ -182,7 +203,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_huevill_female_1 ----- 
+----- Believer Dreka ----- 
 ----- npcselectdialog.ies | ClassName: ORCHARD324_RP_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: ORCHARD324_RP_1 -----
@@ -194,14 +215,14 @@ msg("ORCHARD324_RP_1_2")
 msg("ORCHARD324_RP_1_3")
 end
 
------ blank_npc_warp ----- 
+----- Tavorh Cave ----- 
 ----- Enter -----
 addnpc(147507, "ETC_20170313_026460", "f_orchard_32_4", -1678, 73, -734, 45, "npc_ETC_20170313_026460")
 function npc_ETC_20170313_026460()
 msg("ORCHARD_32_4_TO_LIMESTONECAVE_73_1")
 end
 
------ Board2 ----- 
+----- Warning ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40080, "QUEST_20150317_000808", "f_orchard_32_4", -1709, 73, -786, 45, "npc_QUEST_20150317_000808")

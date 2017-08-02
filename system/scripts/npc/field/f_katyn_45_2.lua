@@ -1,4 +1,18 @@
------ npc_circle_trigger ----- 
+----- Grynas Hills ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009614", "f_katyn_45_2", 1676, 120, -2250, 315, "npc_ETC_20150323_009614")
+function npc_ETC_20150323_009614()
+msg("KATYN45_2_KATYN45_3")
+end
+
+----- Grynas Trails ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009611", "f_katyn_45_2", -1344, 329, 1681, 225, "npc_ETC_20150323_009611")
+function npc_ETC_20150323_009611()
+msg("KATYN45_2_KATYN45_1")
+end
+
+----- Purifier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155051, "ETC_20150317_007254", "f_katyn_45_2", 1981, 21, 755, 45, "npc_ETC_20150317_007254")
@@ -6,7 +20,7 @@ function npc_ETC_20150317_007254()
 msg("DTACURLING_DLG1")
 end
 
------ npc_circle_trigger ----- 
+----- Mysterious Device ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155051, "QUEST_20151224_003568", "f_katyn_45_2", -759, 202, -940, 45, "npc_QUEST_20151224_003568")
@@ -14,7 +28,7 @@ function npc_QUEST_20151224_003568()
 msg("KATYN_45_2_NUMBER_BASEBALL")
 end
 
------ npc_dievdirbys_m_2 ----- 
+----- Dievdirbys Asel ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_2_AJEL1 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_1_SQ_8 | KATYN_45_2_SQ_3 | KATYN_45_2_SQ_5 | KATYN_45_2_SQ_1 | KATYN_45_2_SQ_2 | KATYN_45_2_SQ_4 | KATYN_45_2_SQ_6 -----
@@ -24,7 +38,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_dievdirbys_m ----- 
+----- Dievdirbys Aisol ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_2_ESOL -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_2_SQ_12 | KATYN_45_2_SQ_13 -----
@@ -44,7 +58,7 @@ msg("KATYN_45_2_ESOL_BG1")
 msg("KATYN_45_2_ESOL_BG3")
 end
 
------ npc_dievdirbys_m_3 ----- 
+----- Trainee Leryd ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_2_SCULPTOR1 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_2_SQ_8 | KATYN_45_2_SQ_11 -----
@@ -64,7 +78,7 @@ msg("KATYN_45_2_SQ_8_BS3")
 msg("KATYN_45_2_SQ_8_BS4")
 end
 
------ npc_dievdirbys_m ----- 
+----- Dievdirbys Ruthalen ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_2_SCULPTOR2 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_2_SQ_9 | KATYN_45_2_SQ_10 -----
@@ -83,7 +97,7 @@ msg("KATYN_45_2_SCULPTOR2_BG1")
 msg("KATYN_45_2_SCULPTOR2_BG3")
 end
 
------ f_katyn_owl04 ----- 
+----- Hasty Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_2_OWL1 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_2_SQ_1 -----
@@ -95,7 +109,7 @@ msg("KATYN_45_2_OWL1_BG")
 msg("KATYN_45_2_OWL1_BG2")
 end
 
------ f_katyn_owl04 ----- 
+----- Lonely Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_2_OWL2 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_2_SQ_2 | KATYN_45_2_SQ_3 -----
@@ -109,7 +123,7 @@ msg("KATYN_45_2_OWL2_BG")
 msg("KATYN_45_2_OWL2_BG2")
 end
 
------ f_katyn_owl04 ----- 
+----- Sleeping Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_2_OWL3 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_2_SQ_3 | KATYN_45_2_SQ_5 -----
@@ -119,7 +133,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ f_katyn_owl04 ----- 
+----- Sleeping Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_2_OWL4 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_2_SQ_7 | KATYN_45_2_SQ_6 -----
@@ -143,7 +157,7 @@ msg("KATYN_45_2_SQ_7_STD")
 msg("KATYN_45_2_OWL4_BG")
 end
 
------ npc_dievdirbys_m_2 ----- 
+----- Dievdirbys Asel ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_2_AJEL2 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_2_SQ_6 | KATYN_45_2_SQ_7 | KATYN_45_2_SQ_4 | KATYN_45_2_SQ_5 -----
@@ -153,7 +167,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ siauliai_grass_3 ----- 
+----- Pile of Greenery ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20160718_022661", "f_katyn_45_2", 334, 168, 839, 45, "npc_ETC_20160718_022661")
@@ -161,7 +175,7 @@ function npc_ETC_20160718_022661()
 msg("KATYN_45_2_SQ_9_HERB")
 end
 
------ siauliai_grass_3 ----- 
+----- Pile of Greenery ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20160718_022661", "f_katyn_45_2", 677, 167, 871, 45, "npc_ETC_20160718_022661")
@@ -169,7 +183,7 @@ function npc_ETC_20160718_022661()
 msg("KATYN_45_2_SQ_9_HERB")
 end
 
------ siauliai_grass_3 ----- 
+----- Pile of Greenery ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20160718_022661", "f_katyn_45_2", 1139, 119, 561, 45, "npc_ETC_20160718_022661")
@@ -177,7 +191,7 @@ function npc_ETC_20160718_022661()
 msg("KATYN_45_2_SQ_9_HERB")
 end
 
------ siauliai_grass_3 ----- 
+----- Pile of Greenery ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20160718_022661", "f_katyn_45_2", 906, 120, 194, 45, "npc_ETC_20160718_022661")
@@ -185,7 +199,7 @@ function npc_ETC_20160718_022661()
 msg("KATYN_45_2_SQ_9_HERB")
 end
 
------ siauliai_grass_3 ----- 
+----- Pile of Greenery ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20160718_022661", "f_katyn_45_2", 546, 119, 199, 45, "npc_ETC_20160718_022661")
@@ -193,7 +207,7 @@ function npc_ETC_20160718_022661()
 msg("KATYN_45_2_SQ_9_HERB")
 end
 
------ siauliai_grass_3 ----- 
+----- Pile of Greenery ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20160718_022661", "f_katyn_45_2", 102, 118, 77, 45, "npc_ETC_20160718_022661")
@@ -201,7 +215,7 @@ function npc_ETC_20160718_022661()
 msg("KATYN_45_2_SQ_9_HERB")
 end
 
------ npc_dievdirbys_m_2 ----- 
+----- Dievdirbys Asel ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_2_AJEL3 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_2_SQ_6 | KATYN_45_2_SQ_7 -----
@@ -211,7 +225,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_katyn_45_2", 339, 166, 1385, 90, "npc_ETC_20150317_009100")

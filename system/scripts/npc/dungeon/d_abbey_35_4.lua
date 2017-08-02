@@ -1,4 +1,18 @@
------ npc_friar_04_2 ----- 
+----- Galeed Plateau ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150918_014223", "d_abbey_35_4", -1716, 125, -550, -130, "npc_ETC_20150918_014223")
+function npc_ETC_20150918_014223()
+msg("ABBEY_35_4_TO_ROKAS_36_1")
+end
+
+----- Elgos Monastery Annex ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_017818", "d_abbey_35_4", 16, 0, 1459, 133, "npc_ETC_20151224_017818")
+function npc_ETC_20151224_017818()
+msg("ABBEY_35_4_ABBEY_35_3")
+end
+
+----- Elgos Monk ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY_35_4_MONK -----
 ----- Dialog -----
 ----- QuestIDs: ABBEY_35_4_SQ_1 | ABBEY_35_4_SQ_2 | ABBEY_35_4_SQ_3 | ABBEY_35_4_SQ_8 -----
@@ -35,7 +49,7 @@ msg("ABBEY_35_4_MONK_basic01")
 msg("ABBEY_35_4_MONK_basic02")
 end
 
------ npc_friar_01 ----- 
+----- Elgos Abbot ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY_35_4_ELDER -----
 ----- Dialog -----
 ----- QuestIDs: ABBEY_35_4_SQ_4 | ABBEY_35_4_SQ_3 | ABBEY_35_4_SQ_5 | ABBEY_35_4_SQ_6 | ABBEY_35_4_SQ_7 -----
@@ -65,14 +79,14 @@ msg("ABBEY_35_4_SQ_7_add")
 msg("ABBEY_35_4_SQ_10_AG")
 end
 
------ npc_Obelisk ----- 
+----- Sinister Idol ----- 
 ----- Enter -----
 addnpc(147414, "ETC_20160310_021163", "d_abbey_35_4", 835, 68, -1202, 45, "npc_ETC_20160310_021163")
 function npc_ETC_20160310_021163()
 msg("ABBEY_35_4_UNHOLY")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -83,7 +97,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_ABBEY_35_4")
 end
 
------ npc_gintas ----- 
+----- Priest Dominikas ----- 
 ----- Enter -----
 ----- QuestIDs: ABBEY_35_4_SQ_7 -----
 addnpc(156000, "ETC_20160310_020914", "d_abbey_35_4", 262, 68, -1185, 45, "npc_ETC_20160310_020914")
@@ -92,7 +106,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_friar_01 ----- 
+----- Elgos Abbot ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY_35_4_ELDER_2 -----
 ----- Dialog -----
 ----- QuestIDs: ABBEY_35_4_SQ_7 | ABBEY_35_4_SQ_9 | ABBEY_35_4_SQ_10 -----
@@ -122,7 +136,7 @@ msg("ABBEY_35_4_SQ_7_add")
 msg("ABBEY_35_4_SQ_10_AG")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_abbey_35_4", -1481, 125, -703, 135, "npc_ETC_20150317_009100")

@@ -1,4 +1,18 @@
------ npc_friar_03 ----- 
+----- Paupys Crossing ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009567", "d_prison_62_1", -573, 326, -1387, 225, "npc_ETC_20150323_009567")
+function npc_ETC_20150323_009567()
+msg("PRISON621_TO_SIAULIAI11RE")
+end
+
+----- Ashaq Underground Prison 2F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151001_014681", "d_prison_62_1", -564, 326, 355, 135, "npc_ETC_20151001_014681")
+function npc_ETC_20151001_014681()
+msg("PRISON621_TO_PRISON622")
+end
+
+----- Priest Pranas ----- 
 ----- npcselectdialog.ies | ClassName: PRISON621_PRANAS -----
 ----- Dialog -----
 ----- QuestIDs: PRISON621_MQ_01 | PRISON621_MQ_02 | PRISON621_MQ_03 | PRISON621_MQ_07 | PRISON622_MQ_01 | PRISON621_MQ_05 | PRISON621_MQ_04 -----
@@ -38,7 +52,7 @@ msg("PRISON622_MQ_03_02")
 msg("PRISON622_SQ_01_add")
 end
 
------ npc_paladin_follower2_1 ----- 
+----- Chaser Torvana ----- 
 ----- npcselectdialog.ies | ClassName: PRISON621_TORNAVA -----
 ----- Dialog -----
 ----- QuestIDs: PRISON621_SQ_01 | PRISON621_SQ_02 -----
@@ -56,7 +70,7 @@ msg("PRISON621_SQ_02_02")
 msg("PRISON621_SQ_02_03")
 end
 
------ npc_paladin_follower2_4 ----- 
+----- Chaser Daramaus ----- 
 ----- npcselectdialog.ies | ClassName: PRISON621_DARAMAUS -----
 ----- Dialog -----
 ----- QuestIDs: PRISON621_SQ_03 | PRISON621_SQ_04 -----
@@ -70,7 +84,7 @@ msg("PRISON621_SQ_03_02")
 msg("PRISON621_SQ_04_03")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -81,7 +95,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_PRISON_62_1")
 end
 
------ npc_Urbonas ----- 
+----- Bishop Urbonas ----- 
 ----- npcselectdialog.ies | ClassName: PRISON621_URBONAS -----
 ----- Dialog -----
 ----- QuestIDs: PRISON621_MQ_05 | PRISON621_MQ_06 | PRISON621_MQ_07 | PRISON623_MQ_06 | PRISON623_MQ_07 -----
@@ -105,7 +119,7 @@ msg("ORSHA_MQ3_01_03")
 msg("PRISON621_MQ_06_TRACK_DLG_1")
 end
 
------ bube_flag1 ----- 
+----- Cursed Idol ----- 
 ----- npcselectdialog.ies | ClassName: PRISON621_MQ_02_NPC -----
 ----- Dialog -----
 ----- QuestIDs: PRISON621_MQ_02 | PRISON621_MQ_03 | PRISON621_MQ_07 -----
@@ -115,7 +129,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ dialog_warp_npc_1 ----- 
+----- Hidden Chamber Entrance ----- 
 ----- npcselectdialog.ies | ClassName: PRISON621_TO_PRISON621_1 -----
 ----- Dialog -----
 ----- QuestIDs: PRISON621_MQ_05 -----
@@ -125,7 +139,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ dialog_warp_npc_1 ----- 
+----- Ashaq Underground Prison 1F ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154069, "ETC_20151001_014680", "d_prison_62_1", 464, 431, 660, 45, "npc_ETC_20151001_014680")
@@ -133,7 +147,7 @@ function npc_ETC_20151001_014680()
 msg("PRISON621_1_TO_PRISON621")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_prison_62_1", -1501, 408, 1232, 45, "npc_ETC_20150317_009100")

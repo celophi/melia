@@ -1,4 +1,18 @@
------ npc_circle_trigger ----- 
+----- Sventimas Exile ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009598", "f_tableland_73", 1481, 526, -1198, 45, "npc_ETC_20150323_009598")
+function npc_ETC_20150323_009598()
+msg("TABLELAND73_TABLELAND72")
+end
+
+----- Steel Heights ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001255", "f_tableland_73", 1576, 678, 1631, 95, "npc_ETC_20150317_001255")
+function npc_ETC_20150317_001255()
+msg("TABLELAND73_TABLELAND74")
+end
+
+----- Unidentified Stone ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155051, "QUEST_20151224_003279", "f_tableland_73", -883, 499, -82, -8, "npc_QUEST_20151224_003279")
@@ -6,7 +20,7 @@ function npc_QUEST_20151224_003279()
 msg("TABLELAND73_HIGH_LOW")
 end
 
------ npc_figurine ----- 
+----- Cursed Statue ----- 
 ----- npcselectdialog.ies | ClassName: TABLE73_SUB_ARTIFACT1 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_73_SQ1 | TABLELAND_73_SQ2 -----
@@ -16,7 +30,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_figurine ----- 
+----- Cursed Statue ----- 
 ----- npcselectdialog.ies | ClassName: TABLE73_SUB_ARTIFACT2 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_73_SQ3 | TABLELAND_73_SQ4 -----
@@ -26,7 +40,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_figurine ----- 
+----- Cursed Statue ----- 
 ----- npcselectdialog.ies | ClassName: TABLE73_SUB_ARTIFACT3 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_73_SQ5 -----
@@ -36,7 +50,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_pollution_altar_s ----- 
+----- Altar ----- 
 ----- npcselectdialog.ies | ClassName: TABLE73_SUBQ_ALTAR1 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_73_SQ7 -----
@@ -46,7 +60,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_pollution_altar_s ----- 
+----- Altar ----- 
 ----- npcselectdialog.ies | ClassName: TABLE73_SUBQ_ALTAR2 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_73_SQ8 -----
@@ -56,7 +70,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_tableland_73", 176, 526, -214, 135, "npc_ETC_20150317_009100")

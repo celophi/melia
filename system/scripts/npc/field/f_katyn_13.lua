@@ -1,4 +1,11 @@
------ f_katyn_owl01 ----- 
+----- Owl Burial Ground ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009565", "f_katyn_13", 71, 123, -2123, 49.57, "npc_ETC_20150323_009565")
+function npc_ETC_20150323_009565()
+msg("KATYN13_KATYN7_2")
+end
+
+----- Sincere Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_1_OWLBOSS -----
 ----- Dialog -----
 ----- QuestIDs: KATYN13_1_KEY | KATYN13_1_TO_OWLJUNIOR1 | KATYN13_1_TO_OWLJUNIOR2 | KATYN13_NEWSUB_01 -----
@@ -14,7 +21,7 @@ msg("KATYN13_ADDQUEST5_01")
 msg("KATYN13_ADDQUEST5_02")
 end
 
------ f_katyn_owl04 ----- 
+----- Scared Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_1_KEYNPC -----
 ----- Dialog -----
 ----- QuestIDs: KATYN13_1_KEY -----
@@ -27,7 +34,7 @@ msg("KATYN13_1_Q1_11")
 msg("KATYN13_1_Q1_14")
 end
 
------ f_katyn_owl04 ----- 
+----- Devoted Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_1_OWLJUNIOR1 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN13_1_TO_OWLJUNIOR1 -----
@@ -40,7 +47,7 @@ msg("KATYN13_1_OWLJUNIOR1_after2")
 msg("KATYN13_1_Q2_14")
 end
 
------ f_katyn_owl04 ----- 
+----- Troubled Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_1_OWLJUNIOR2 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN13_1_TO_OWLJUNIOR2 -----
@@ -53,7 +60,7 @@ msg("KATYN13_1_OWLJUNIOR2_after2")
 msg("KATYN13_1_Q3_14")
 end
 
------ f_katyn_owl04_fall ----- 
+----- Weak Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_1_OWLJUNIOR3 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN13_ADDQUEST5 -----
@@ -63,7 +70,7 @@ msg("KATYN13_1_OWLJUNIOR3_basic1")
 msg("KATYN13_1_OWLJUNIOR3_basic2")
 end
 
------ f_katyn_owl01_fall ----- 
+----- Broken Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_ADDQUEST1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: KATYN13_ADDQUEST1 -----
@@ -73,7 +80,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ f_katyn_owl02_fall ----- 
+----- Broken Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_ADDQUEST1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: KATYN13_ADDQUEST1 -----
@@ -83,7 +90,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ f_katyn_owl03_fall ----- 
+----- Broken Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_ADDQUEST1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: KATYN13_ADDQUEST1 -----
@@ -93,7 +100,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ f_katyn_owl04_fall ----- 
+----- Broken Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_ADDQUEST2_NPC -----
 ----- Dialog -----
 ----- QuestIDs: KATYN13_ADDQUEST2 -----
@@ -103,7 +110,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ f_katyn_owl01_fall ----- 
+----- Broken Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_ADDQUEST2_NPC -----
 ----- Dialog -----
 ----- QuestIDs: KATYN13_ADDQUEST2 -----
@@ -113,7 +120,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ f_katyn_owl02_fall ----- 
+----- Broken Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_ADDQUEST2_NPC -----
 ----- Dialog -----
 ----- QuestIDs: KATYN13_ADDQUEST2 -----
@@ -123,7 +130,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ f_katyn_owl03_fall ----- 
+----- Broken Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_ADDQUEST3_NPC -----
 ----- Dialog -----
 ----- QuestIDs: KATYN13_ADDQUEST3 | KATYN13_NEWSUB_02 -----
@@ -133,7 +140,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ f_katyn_owl04_fall ----- 
+----- Broken Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_ADDQUEST3_NPC -----
 ----- Dialog -----
 ----- QuestIDs: KATYN13_ADDQUEST3 | KATYN13_NEWSUB_02 -----
@@ -143,7 +150,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ f_katyn_owl01_fall ----- 
+----- Broken Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_ADDQUEST3_NPC -----
 ----- Dialog -----
 ----- QuestIDs: KATYN13_ADDQUEST3 | KATYN13_NEWSUB_02 -----
@@ -153,7 +160,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Oil Boxes ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_ADDQUEST4_NPC -----
 ----- Enter | Dialog -----
 ----- QuestIDs: KATYN13_ADDQUEST4 -----
@@ -164,7 +171,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Oil Boxes ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_ADDQUEST4_NPC -----
 ----- Enter | Dialog -----
 ----- QuestIDs: KATYN13_ADDQUEST4 -----
@@ -175,7 +182,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Oil Boxes ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_ADDQUEST4_NPC -----
 ----- Enter | Dialog -----
 ----- QuestIDs: KATYN13_ADDQUEST4 -----
@@ -186,7 +193,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ f_katyn_owl04 ----- 
+----- Weak Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_1_OWLJUNIOR3_AFTER -----
 ----- Dialog -----
 ----- QuestIDs: KATYN13_ADDQUEST5 | KATYN13_ADDQUEST4 | KATYN13_NEWSUB_01 | KATYN13_NEWSUB_02 -----
@@ -205,7 +212,21 @@ msg("KATYN13_ADDQUEST1_AG")
 msg("KATYN13_ADDQUEST5_succ")
 end
 
------ treasure_box1 ----- 
+----- Saknis Plains ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009569", "f_katyn_13", -2725, 240, 1296, 225, "npc_ETC_20150323_009569")
+function npc_ETC_20150323_009569()
+msg("KATYN13_KATYN14")
+end
+
+----- Septyni Glen ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009564", "f_katyn_13", -1079, 201, -2373, 225, "npc_ETC_20150323_009564")
+function npc_ETC_20150323_009564()
+msg("KATYN13_HUEVILLAGE58_4")
+end
+
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_1_TO_OWLJUNIOR3_S1_BOX -----
 ----- Dialog -----
 ----- QuestIDs: KATYN13_1_TO_OWLJUNIOR3_S1 -----
@@ -215,7 +236,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Caved Area ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_1_KEY_SUB1_TRUFFLE -----
 ----- Dialog -----
 ----- QuestIDs: KATYN13_1_KEY_SUB1 -----
@@ -225,7 +246,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ closing_device_m ----- 
+----- Magic Condenser ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153059, "ETC_20150714_013168", "f_katyn_13", 719, 289, -367, -89, "npc_ETC_20150714_013168")
@@ -233,7 +254,7 @@ function npc_ETC_20150714_013168()
 msg("PARTY_Q7_DEVICE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_katyn_13", -1018, 238, -1066, 45, "npc_ETC_20150317_009100")

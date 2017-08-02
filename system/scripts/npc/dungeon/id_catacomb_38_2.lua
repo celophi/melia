@@ -1,4 +1,25 @@
------ npc_village_male_a2 ----- 
+----- Laukyme Swamp ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011735", "id_catacomb_38_2", 1229, 2, -1377, -45, "npc_ETC_20150714_011735")
+function npc_ETC_20150714_011735()
+msg("CATACOMB_38_2_THORN_39_3")
+end
+
+----- Underground Grave of Ritinis ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011731", "id_catacomb_38_2", -1723, 280, -1487, 225, "npc_ETC_20150714_011731")
+function npc_ETC_20150714_011731()
+msg("CATACOMB_38_2_CATACOMB_04")
+end
+
+----- Videntis Shrine ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011745", "id_catacomb_38_2", -13, -280, 2080, 135, "npc_ETC_20150714_011745")
+function npc_ETC_20150714_011745()
+msg("CATACOMB_38_2_CATACOMB_38_1")
+end
+
+----- Disciple Laius ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_38_2_NPC_01 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_38_2_SQ_01 | CATACOMB_38_2_SQ_02 | CATACOMB_38_2_SQ_03 | CATACOMB_38_2_SQ_11 -----
@@ -26,7 +47,7 @@ msg("CATACOMB_38_2_SQ_04_book2")
 msg("CATACOMB_38_2_SQ_02_add")
 end
 
------ npc_village_male_b3 ----- 
+----- Disciple Hones ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_38_2_NPC_02 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_38_2_SQ_03 | CATACOMB_38_2_SQ_04 | CATACOMB_38_2_SQ_05 | CATACOMB_38_2_SQ_06 | CATACOMB_04_SQ_09 -----
@@ -55,7 +76,7 @@ msg("CATACOMB_04_SQ_09_succ")
 msg("CATACOMB_04_SQ_MEMO_book1")
 end
 
------ pillarobb_crystal ----- 
+----- Hardened Astral Body Crystal ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_38_2_OBJ_01 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_38_2_SQ_03 -----
@@ -65,7 +86,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zacharial_desk ----- 
+----- Kareras' Memoir ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47254, "ETC_20150714_012113", "id_catacomb_38_2", -2432, -135, -748, 45, "npc_ETC_20150714_012113")
@@ -73,7 +94,7 @@ function npc_ETC_20150714_012113()
 msg("CATACOMB_38_2_DIARY_01")
 end
 
------ BOOK_01 ----- 
+----- Records about Disciple Laius ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147311, "QUEST_20150714_002095", "id_catacomb_38_2", -2357, -135, -861, 135, "npc_QUEST_20150714_002095")
@@ -81,7 +102,7 @@ function npc_QUEST_20150714_002095()
 msg("CATACOMB_38_2_DIARY_02")
 end
 
------ BOOK_01 ----- 
+----- Records about Disciple Hones ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147311, "QUEST_20150714_002099", "id_catacomb_38_2", -2017, -135, -266, 0, "npc_QUEST_20150714_002099")
@@ -89,7 +110,7 @@ function npc_QUEST_20150714_002099()
 msg("CATACOMB_38_2_DIARY_03")
 end
 
------ LOST_PAPER ----- 
+----- Finishing the research ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147312, "ETC_20150714_012114", "id_catacomb_38_2", -1866, -135, -411, 75, "npc_ETC_20150714_012114")
@@ -97,7 +118,7 @@ function npc_ETC_20150714_012114()
 msg("CATACOMB_38_2_DIARY_04")
 end
 
------ boxes_02 ----- 
+----- Storage Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151030, "ETC_20150714_013184", "id_catacomb_38_2", 2404, 35, 161, -85, "npc_ETC_20150714_013184")
@@ -105,7 +126,7 @@ function npc_ETC_20150714_013184()
 msg("CATACOMB_38_2_OBJ_02")
 end
 
------ boxes_02 ----- 
+----- Storage Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151030, "ETC_20150714_013184", "id_catacomb_38_2", 2422, 2, -310, -85, "npc_ETC_20150714_013184")
@@ -113,7 +134,7 @@ function npc_ETC_20150714_013184()
 msg("CATACOMB_38_2_OBJ_02_EMPTY")
 end
 
------ boxes_02 ----- 
+----- Storage Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151030, "ETC_20150714_013184", "id_catacomb_38_2", 2348, 2, -135, 55, "npc_ETC_20150714_013184")
@@ -121,7 +142,7 @@ function npc_ETC_20150714_013184()
 msg("CATACOMB_38_2_OBJ_02_EMPTY")
 end
 
------ boxes_02 ----- 
+----- Storage Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151030, "ETC_20150714_013184", "id_catacomb_38_2", 2212, 2, -314, 90, "npc_ETC_20150714_013184")
@@ -129,7 +150,7 @@ function npc_ETC_20150714_013184()
 msg("CATACOMB_38_2_OBJ_02_EMPTY")
 end
 
------ boxes_02 ----- 
+----- Storage Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151030, "ETC_20150714_013184", "id_catacomb_38_2", 2263, 2, 26, 165, "npc_ETC_20150714_013184")
@@ -137,7 +158,7 @@ function npc_ETC_20150714_013184()
 msg("CATACOMB_38_2_OBJ_02_EMPTY")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -148,7 +169,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_ID_CATACOMB_38_2")
 end
 
------ npc_WAR_master ----- 
+----- [Warlock Master]Melanie Melachim ----- 
 ----- npcselectdialog.ies | ClassName: WARLOCK_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_WARLOCK_7_1 | JOB_WARLOCK_8_1 | CATACOMB38_2_HQ1 -----
@@ -169,7 +190,7 @@ msg("CATACOMB38_2_HQ1_prog1")
 msg("CATACOMB38_2_HQ1_succ1")
 end
 
------ npc_FTF_master ----- 
+----- [Featherfoot Master]Kyoll Lurawa ----- 
 ----- npcselectdialog.ies | ClassName: FEATHERFOOT_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_FEATHERFOOT_7_1 | JOB_FEATHERFOOT_8_1 -----
@@ -186,7 +207,7 @@ msg("JOB_FEATHERFOOT_8_1_PROG1")
 msg("JOB_FEATHERFOOT_8_1_SUCC1")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "id_catacomb_38_2", 1425, 2, -372, -45, "npc_ETC_20150317_009100")

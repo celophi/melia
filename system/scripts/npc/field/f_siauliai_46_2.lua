@@ -1,4 +1,25 @@
------ npc_austeja_female_1 ----- 
+----- Spring Light Woods ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001226", "f_siauliai_46_2", 1378, 0, 4293, 45, "npc_ETC_20150317_001226")
+function npc_ETC_20150317_001226()
+msg("SIAULIAI46_2_SIAULIAI46_1")
+end
+
+----- Vilna Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009587", "f_siauliai_46_2", -2410, 166, 3233, -125, "npc_ETC_20150323_009587")
+function npc_ETC_20150323_009587()
+msg("SIAULIAI46_2_SIAULIAI46_3")
+end
+
+----- Dina Bee Farm ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009588", "f_siauliai_46_2", -1149, 166, 3225, 25, "npc_ETC_20150323_009588")
+function npc_ETC_20150323_009588()
+msg("SIAULIAI46_2_SIAULIAI46_4")
+end
+
+----- Priest Raeli ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_2_MQ01_NPC -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_2_MQ_01 | SIAULIAI_46_2_MQ_02 | SIAULIAI_46_2_MQ_03 | SIAULIAI_46_2_MQ_04 | SIAULIAI_46_2_MQ_01_01 | SIAULIAI_46_2_SQ_01 | PARTY_Q_100 | PARTY_Q_101 | PARTY_Q_102 | SIAULIAI462_HQ1 | SIAULIAI462_HQ2 -----
@@ -39,7 +60,7 @@ msg("SIAULIAI_46_2_SQ_02_start_PG")
 msg("SIAULIAI_46_2_SQ_02_succ")
 end
 
------ npc_austeja_goddess ----- 
+----- Goddess Austeja ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_2_AUSTEJA -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_2_MQ_04 | SIAULIAI_46_2_MQ_05 -----
@@ -53,7 +74,7 @@ msg("SIAULIAI_46_2_MQ_05_succ")
 msg("SIAULIAI_46_2_MQ_05_DLG01")
 end
 
------ npc_Obelisk ----- 
+----- Seal Tower ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_2_SEAL -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_2_MQ_04 | SIAULIAI_46_2_SQ_02 | PARTY_Q_101 | PARTY_Q_100 | PARTY_Q_102 -----
@@ -63,7 +84,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_village_uncle_4 ----- 
+----- Farmer Druva ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_2_SQ_03_NPC -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_2_SQ_03 | SIAULIAI_46_2_SQ_04 -----
@@ -79,7 +100,7 @@ msg("SIAULIAI_46_2_SQ_04_select")
 msg("SIAULIAI_46_2_SQ_04_start_prog")
 end
 
------ npc_beekeeper3 ----- 
+----- Ruined Bee Farmer Logen ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_2_SQ_05_NPC -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_2_SQ_05 -----
@@ -92,7 +113,7 @@ msg("SIAULIAI_46_2_SQ_05_start_PG")
 msg("SIAULIAI_46_2_SQ_05_succ")
 end
 
------ siauliai_grass_3_large ----- 
+----- Giant Mutated Plant ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_2_SQ_01_NPC -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_2_SQ_01 -----
@@ -102,14 +123,14 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ scarecrow_01 ----- 
+----- Scarecrow ----- 
 ----- Enter -----
 addnpc(151032, "ETC_20150317_000557", "f_siauliai_46_2", 470, 39, 5734, 46, "npc_ETC_20150317_000557")
 function npc_ETC_20150317_000557()
 msg("SIAULIAI_46_2_SQ_04_01_AFTER")
 end
 
------ npc_gele_sanctuary_1 ----- 
+----- Guardian Stone ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_2_GUARDIAN -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_2_MQ_01_01 -----
@@ -119,10 +140,10 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ austeja_alter ----- 
+----- Austeja Altar ----- 
 addnpc(151024, "ETC_20150317_005345", "f_siauliai_46_2", -676, 224, 3692, -45, "npc_dummy")
 
------ wood_piece_01 ----- 
+----- Pile of wood ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151031, "ETC_20150323_010406", "f_siauliai_46_2", -1527, 166, 3600, 55, "npc_ETC_20150323_010406")
@@ -130,7 +151,7 @@ function npc_ETC_20150323_010406()
 msg("SIAULIAI_46_2_WOODPIECE")
 end
 
------ wood_piece_01 ----- 
+----- Pile of wood ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151031, "ETC_20150323_010406", "f_siauliai_46_2", -1304, 166, 3589, 15, "npc_ETC_20150323_010406")
@@ -138,7 +159,7 @@ function npc_ETC_20150323_010406()
 msg("SIAULIAI_46_2_WOODPIECE")
 end
 
------ wood_piece_01 ----- 
+----- Pile of wood ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151031, "ETC_20150323_010406", "f_siauliai_46_2", -1757, 166, 3125, 75, "npc_ETC_20150323_010406")
@@ -146,7 +167,7 @@ function npc_ETC_20150323_010406()
 msg("SIAULIAI_46_2_WOODPIECE")
 end
 
------ wood_piece_01 ----- 
+----- Pile of wood ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151031, "ETC_20150323_010406", "f_siauliai_46_2", -1980, 166, 3057, -5, "npc_ETC_20150323_010406")
@@ -154,7 +175,7 @@ function npc_ETC_20150323_010406()
 msg("SIAULIAI_46_2_WOODPIECE")
 end
 
------ wood_piece_01 ----- 
+----- Pile of wood ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151031, "ETC_20150323_010406", "f_siauliai_46_2", -1218, 166, 3779, 145, "npc_ETC_20150323_010406")
@@ -162,7 +183,14 @@ function npc_ETC_20150323_010406()
 msg("SIAULIAI_46_2_WOODPIECE")
 end
 
------ treasure_box1 ----- 
+----- Laukyme Swamp ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011735", "f_siauliai_46_2", 1198, -35, 7571, 175, "npc_ETC_20150714_011735")
+function npc_ETC_20150714_011735()
+msg("SIAULIAI46_2_THORN39_3")
+end
+
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_siauliai_46_2", 921, 6, 5095, 45, "npc_ETC_20150317_009100")

@@ -1,4 +1,25 @@
------ npc_Agatas ----- 
+----- Mochia Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011742", "f_pilgrimroad_31_2", -1814, 221, -1645, -119.05, "npc_ETC_20150714_011742")
+function npc_ETC_20150714_011742()
+msg("PILGRIM312_TO_PILGRIM313")
+end
+
+----- Galeed Plateau ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150918_014223", "f_pilgrimroad_31_2", -173, 313, 2386, 128, "npc_ETC_20150918_014223")
+function npc_ETC_20150918_014223()
+msg("PILGRIM_31_2_TO_ROKAS_36_1")
+end
+
+----- Temporary ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_019953", "f_pilgrimroad_31_2", 1247, 320, 1303, 40.03, "npc_ETC_20151224_019953")
+function npc_ETC_20151224_019953()
+msg("PILGRIM312_TO_PILGRIM313")
+end
+
+----- Pilgrim Agatas ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM312_AGATAS_01 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM312_SQ_01 | PILGRIM312_SQ_07 | PILGRIM312_SQ_02 -----
@@ -11,7 +32,7 @@ msg("PILGRIM312_SQ_07_03_ADD")
 msg("Hauberk_BOOK_01")
 end
 
------ npc_hauberk ----- 
+----- Demon Lord Hauberk ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM312_HAUBERK_03 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM312_SQ_05 | PILGRIM312_SQ_06 | PILGRIM312_SQ_05_1 -----
@@ -21,7 +42,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zachariel_head_01 ----- 
+----- Ownerless Grave ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM312_SQ_05_NPC -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM312_SQ_05 -----
@@ -31,7 +52,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_hauberk ----- 
+----- Demon Lord Hauberk ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM312_HAUBERK_04 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM312_SQ_06 | PILGRIM312_SQ_07 -----
@@ -41,7 +62,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_hauberk ----- 
+----- Demon Lord Hauberk ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM312_HAUBERK_01 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM312_SQ_03 | PILGRIM312_SQ_02 | PILGRIM312_SQ_01 | PILGRIM312_SQ_04 -----
@@ -86,7 +107,7 @@ msg("M_FLIB_DIR_B_6")
 msg("M_FLIB_DIR_B_8")
 end
 
------ LOST_PAPER_2 ----- 
+----- The diary of Agatas ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153057, "ETC_20151001_015261", "f_pilgrimroad_31_2", -1604, 221, -868, 45, "npc_ETC_20151001_015261")
@@ -94,7 +115,7 @@ function npc_ETC_20151001_015261()
 msg("PILGRIM312_PAPER_01")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_pilgrimroad_31_2", -88, 265, -1125, 180, "npc_ETC_20150317_009100")

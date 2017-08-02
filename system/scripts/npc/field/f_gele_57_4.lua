@@ -1,4 +1,25 @@
------ npc_paladin_follower1_3 ----- 
+----- Nefritas Cliff ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009560", "f_gele_57_4", -841, -80, -155, -39, "npc_ETC_20150323_009560")
+function npc_ETC_20150323_009560()
+msg("GELE574_TO_GELE573")
+end
+
+----- Tenet Church First Floor ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_009339", "f_gele_57_4", 1296, -79, 2145, 138, "npc_ETC_20150317_009339")
+function npc_ETC_20150317_009339()
+msg("GELE574_TO_CHAPEL576")
+end
+
+----- Tenet Church B1 ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001162", "f_gele_57_4", 1073, -79, 2046, 136, "npc_ETC_20150317_001162")
+function npc_ETC_20150317_001162()
+msg("GELE574_TO_CHAPEL575_1")
+end
+
+----- Follower Alfonsas ----- 
 ----- npcselectdialog.ies | ClassName: GELE574_ADRIJA -----
 ----- Dialog -----
 ----- QuestIDs: GELE574_MQ_07 | GELE574_MQ_08 -----
@@ -13,7 +34,7 @@ msg("GELE574_MQ_07_02")
 msg("GELE574_ADRIJA_BASIC01")
 end
 
------ npc_gele_sanctuary_1 ----- 
+----- Namott Altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147413, "ETC_20151102_017433", "f_gele_57_4", -1626, 7, -712, 45, "npc_ETC_20151102_017433")
@@ -21,7 +42,7 @@ function npc_ETC_20151102_017433()
 msg("GELE574_MQ_07_SHRINE")
 end
 
------ npc_paladin_follower1_1 ----- 
+----- Follower Algis ----- 
 ----- npcselectdialog.ies | ClassName: GELE574_ARUNE_1 -----
 ----- Dialog -----
 ----- QuestIDs: GELE574_MQ_09 -----
@@ -73,7 +94,7 @@ msg("d_chapel_57_7_dlg_11")
 msg("d_chapel_57_6_dlg_11")
 end
 
------ blank_npc ----- 
+----- Namott Altar Post ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "ETC_20151102_017434", "f_gele_57_4", -1626, 7, -711, 45, "npc_ETC_20151102_017434")
@@ -81,7 +102,7 @@ function npc_ETC_20151102_017434()
 msg("GELE574_MQ_07_PLACE")
 end
 
------ blank_npc_2 ----- 
+----- Summoning Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147380, "ETC_20150317_009342", "f_gele_57_4", 159, -80, 796, 45, "npc_ETC_20150317_009342")
@@ -89,7 +110,14 @@ function npc_ETC_20150317_009342()
 msg("GELE574_MQ_08_01")
 end
 
------ npc_paladin_noinst3_2 ----- 
+----- Entrance of Kateen Forest ----- 
+----- Enter -----
+addnpc(40001, "QUEST_LV_0100_20150317_005052", "f_gele_57_4", -912, -80, 2474, 135, "npc_QUEST_LV_0100_20150317_005052")
+function npc_QUEST_LV_0100_20150317_005052()
+msg("GELE574_KATYN_7")
+end
+
+----- Follower Rikke ----- 
 ----- npcselectdialog.ies | ClassName: GELE574_REIKE -----
 ----- Dialog -----
 ----- QuestIDs: GELE574_MQ_01 | GELE574_MQ_05 | GELE574_MQ_06 -----
@@ -108,7 +136,7 @@ msg("GELE574_MQ_05_02")
 msg("GELE574_MQ_05_01_AG")
 end
 
------ npc_paladin_follower2_1 ----- 
+----- Watcher Erra ----- 
 ----- npcselectdialog.ies | ClassName: GELE574_ERRA -----
 ----- Dialog -----
 ----- QuestIDs: PARTY_Q_020 | GELE574_MQ_02 | GELE574_MQ_03 | GELE574_MQ_04 -----
@@ -130,7 +158,7 @@ msg("PARTY_Q_020_startnpc_prog01")
 msg("PARTY_Q_020_succ01")
 end
 
------ npc_paladin_follower1_1 ----- 
+----- Follower Algis ----- 
 ----- npcselectdialog.ies | ClassName: GELE574_ALLGES -----
 ----- Dialog -----
 ----- QuestIDs: GELE574_MQ_09 -----
@@ -140,7 +168,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Barricade_honeycomb ----- 
+----- Small Hive ----- 
 ----- npcselectdialog.ies | ClassName: GELE574_MQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: GELE574_MQ_01 -----
@@ -150,7 +178,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc_2 ----- 
+----- Summoning Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147380, "ETC_20150317_009342", "f_gele_57_4", 302, -80, 828, 45, "npc_ETC_20150317_009342")
@@ -158,7 +186,7 @@ function npc_ETC_20150317_009342()
 msg("GELE574_MQ_08_01")
 end
 
------ blank_npc_2 ----- 
+----- Summoning Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147380, "ETC_20150317_009342", "f_gele_57_4", 786, -80, 1073, 45, "npc_ETC_20150317_009342")
@@ -166,7 +194,7 @@ function npc_ETC_20150317_009342()
 msg("GELE574_MQ_08_01")
 end
 
------ blank_npc_2 ----- 
+----- Summoning Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147380, "ETC_20150317_009342", "f_gele_57_4", 751, -80, 930, 45, "npc_ETC_20150317_009342")
@@ -174,7 +202,7 @@ function npc_ETC_20150317_009342()
 msg("GELE574_MQ_08_01")
 end
 
------ blank_npc_2 ----- 
+----- Summoning Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147380, "ETC_20150317_009342", "f_gele_57_4", 596, -80, 949, 45, "npc_ETC_20150317_009342")
@@ -182,7 +210,7 @@ function npc_ETC_20150317_009342()
 msg("GELE574_MQ_08_01")
 end
 
------ blank_npc_2 ----- 
+----- Summoning Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147380, "ETC_20150317_009342", "f_gele_57_4", 603, -80, 1084, 45, "npc_ETC_20150317_009342")
@@ -190,7 +218,7 @@ function npc_ETC_20150317_009342()
 msg("GELE574_MQ_08_01")
 end
 
------ blank_npc_2 ----- 
+----- Summoning Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147380, "ETC_20150317_009342", "f_gele_57_4", 394, -80, 626, 45, "npc_ETC_20150317_009342")
@@ -198,7 +226,7 @@ function npc_ETC_20150317_009342()
 msg("GELE574_MQ_08_01")
 end
 
------ blank_npc_2 ----- 
+----- Summoning Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147380, "ETC_20150317_009342", "f_gele_57_4", 204, -80, 575, 45, "npc_ETC_20150317_009342")
@@ -206,7 +234,7 @@ function npc_ETC_20150317_009342()
 msg("GELE574_MQ_08_01")
 end
 
------ blank_npc_2 ----- 
+----- Summoning Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147380, "ETC_20150317_009342", "f_gele_57_4", 81, -80, 674, 45, "npc_ETC_20150317_009342")
@@ -214,7 +242,7 @@ function npc_ETC_20150317_009342()
 msg("GELE574_MQ_08_01")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -225,7 +253,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_GELE_57_4")
 end
 
------ TreasureBox1 ----- 
+----- Lv2 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40030, "ETC_20150317_009071", "f_gele_57_4", -1823, 7, -728, 135, "npc_ETC_20150317_009071")
@@ -233,7 +261,7 @@ function npc_ETC_20150317_009071()
 msg("TREASUREBOX_LV")
 end
 
------ Board1 ----- 
+----- Warning ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000566", "f_gele_57_4", -979, -80, 2391, -45, "npc_QUEST_20150317_000566")
@@ -241,7 +269,14 @@ function npc_QUEST_20150317_000566()
 msg("UPPER_WARNING_F_GELE_57_4")
 end
 
------ id_gate_npc ----- 
+----- Guards Graveyard ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150401_010447", "f_gele_57_4", -442, -80, 2142, 135, "npc_ETC_20150401_010447")
+function npc_ETC_20150401_010447()
+msg("GELE_57_4_TO_CATACOMB_01")
+end
+
+----- Underground Chapel Dungeon Notice Board ----- 
 ----- npcselectdialog.ies | ClassName: INSTANCE_DUNGEON_CHAPLE_03 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: TUTO_INSTANT_DUNGEON -----
@@ -252,11 +287,18 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_gele_57_4", -1855, -30, 159, -45, "npc_ETC_20150317_009100")
 function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
+end
+
+----- Gele Plateau Mission ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001364", "f_gele_57_4", -251, -5, -814, -98, "npc_ETC_20150317_001364")
+function npc_ETC_20150317_001364()
+msg("GELE574_TO_GUILDMISSION")
 end
 

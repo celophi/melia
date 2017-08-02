@@ -1,4 +1,18 @@
------ npc_miner ----- 
+----- Rukas Plateau ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009577", "f_rokas_30", 1019, 148, -1097, 0, "npc_ETC_20150323_009577")
+function npc_ETC_20150323_009577()
+msg("ROKAS30_ROKAS29")
+end
+
+----- Zachariel Crossroads ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009578", "f_rokas_30", -1773, 215, -116, 218, "npc_ETC_20150323_009578")
+function npc_ETC_20150323_009578()
+msg("ROKAS30_ROKAS31")
+end
+
+----- Stonemason Pipoti ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS30_PIPOTI -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS30_PIPOTI01 -----
@@ -18,7 +32,7 @@ msg("ROKAS29_VACYS8_succ2")
 msg("ROKAS29_VACYS9_prog1")
 end
 
------ npc_low_lev_officer_m ----- 
+----- Liaison Officer Bale ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS30_BAIL -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS30_MQ1 -----
@@ -30,7 +44,7 @@ msg("ROKAS30_MQ1_select01")
 msg("ROKAS30_MQ1_startnpc01")
 end
 
------ npc_paladin_noinst3_1 ----- 
+----- Historian Colin ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS30_COLLIN -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS30_MQ1_BRIDGE | ROKAS_30_HQ_01 -----
@@ -45,7 +59,7 @@ msg("ROKAS_30_HQ_01_succ01")
 msg("ROKAS30_COLLIN_basic01")
 end
 
------ npc_historian_odel_body ----- 
+----- Historian Cyrenia Odell ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS30_ODEL -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS30_MQ2 -----
@@ -73,7 +87,7 @@ msg("ROKAS31_REXITHER2_dlg2")
 msg("ROKAS31_ODEL2_basic")
 end
 
------ Aos_Soldier ----- 
+----- Soldier's Corpse ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS30_MQ2_1_SCAR -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS30_MQ2_1 -----
@@ -83,7 +97,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_2 ----- 
+----- Sviesa Altar ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS30_SAELDEVICE2 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS30_MQ7 -----
@@ -93,7 +107,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_2 ----- 
+----- Chesed Altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47102, "ETC_20150317_006579", "f_rokas_30", 542, 402, 1065, 45, "npc_ETC_20150317_006579")
@@ -101,7 +115,7 @@ function npc_ETC_20150317_006579()
 msg("ROKAS30_SEALDESTROY1")
 end
 
------ npc_rokas_2 ----- 
+----- Gedulah Altar ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS30_SAELDEVICE1 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS30_MQ5 -----
@@ -111,7 +125,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_2 ----- 
+----- Tzedej Altar ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS30_SEALDESTROY2 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS30_MQ6 | ROKAS30_MQ6_1 -----
@@ -121,7 +135,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_historian_odel_body ----- 
+----- Historian Cyrenia Odell ----- 
 ----- Enter -----
 ----- QuestIDs: ROKAS30_MQ8 -----
 addnpc(147345, "QUEST_LV_0100_20150317_001304", "f_rokas_30", -1397, 215, -493, 45, "npc_QUEST_LV_0100_20150317_001304")
@@ -130,7 +144,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ soldier1 ----- 
+----- Zachariel's Brave Protector ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20011, "QUEST_20150317_000352", "f_rokas_30", -164, 348, 488, 45, "npc_QUEST_20150317_000352")
@@ -138,7 +152,7 @@ function npc_QUEST_20150317_000352()
 msg("ROKAS30_ZACARIEL_SERVANT1")
 end
 
------ soldier5 ----- 
+----- Zachariel's Faithful Protector ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20015, "QUEST_20150317_000355", "f_rokas_30", -1313, 179, -838, 45, "npc_QUEST_20150317_000355")
@@ -146,7 +160,7 @@ function npc_QUEST_20150317_000355()
 msg("ROKAS30_ZACARIEL_SERVANT2")
 end
 
------ npc_oldman_1 ----- 
+----- Wounded Historian Laulas ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS30_HURT -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS30_MQ3 -----
@@ -158,7 +172,7 @@ msg("ROKAS30_MQ3_start01")
 msg("ROKAS30_MQ3_PG")
 end
 
------ npc_historian_odel_body ----- 
+----- Historian Cyrenia Odell ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS_ODEL2 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS30_MQ6 | ROKAS30_MQ7 -----
@@ -168,7 +182,14 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ statue_vakarine ----- 
+----- Escanciu Village ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009580", "f_rokas_30", -209, 347, 893, 135, "npc_ETC_20150323_009580")
+function npc_ETC_20150323_009580()
+msg("ROKAS30_REMAINS39")
+end
+
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -179,7 +200,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_ROKAS_30")
 end
 
------ treasure_box1 ----- 
+----- Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS30_PIPOTI02_TREASUREBOX -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS30_PIPOTI02 -----
@@ -189,7 +210,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_rokas_30", -434, 349, 307, 45, "npc_ETC_20150317_009100")

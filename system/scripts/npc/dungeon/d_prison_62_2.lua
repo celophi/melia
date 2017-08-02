@@ -1,4 +1,18 @@
------ npc_friar_03 ----- 
+----- Ashaq Underground Prison 1F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151001_014680", "d_prison_62_2", -3, 371, 1623, 135, "npc_ETC_20151001_014680")
+function npc_ETC_20151001_014680()
+msg("PRISON622_TO_PRISON621")
+end
+
+----- Ashaq Underground Prison 3F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151001_014682", "d_prison_62_2", 164, -724, -1132, 138, "npc_ETC_20151001_014682")
+function npc_ETC_20151001_014682()
+msg("PRISON622_TO_PRISON623")
+end
+
+----- Priest Pranas ----- 
 ----- npcselectdialog.ies | ClassName: PRISON622_PRANAS -----
 ----- Dialog -----
 ----- QuestIDs: PRISON622_MQ_01 | PRISON622_MQ_02 | PRISON622_MQ_03 | PRISON622_MQ_05 | PRISON622_MQ_06 -----
@@ -38,7 +52,7 @@ msg("PRISON622_MQ_03_02")
 msg("PRISON622_SQ_01_add")
 end
 
------ npc_friar_04 ----- 
+----- Priest Auranas ----- 
 ----- npcselectdialog.ies | ClassName: PRISON621_ARUNARAS -----
 ----- Dialog -----
 ----- QuestIDs: PRISON622_SQ_01 | PRISON622_SQ_02 -----
@@ -57,7 +71,7 @@ msg("PRISON622_SQ_02_02")
 msg("PRISON622_SQ_02_03")
 end
 
------ npc_friar_05 ----- 
+----- Priest Draznie ----- 
 ----- npcselectdialog.ies | ClassName: PRISON622_DRAZUNIE -----
 ----- Dialog -----
 ----- QuestIDs: PRISON622_SQ_03 | PRISON622_SQ_04 | PRISON622_RP_1 -----
@@ -82,7 +96,7 @@ msg("PRISON622_RP_1_3")
 msg("PRISON622_RP_1_1_AG")
 end
 
------ npc_frair_f_01 ----- 
+----- Priest Irma ----- 
 ----- npcselectdialog.ies | ClassName: PRISON621_IRMA -----
 ----- Dialog -----
 ----- QuestIDs: PRISON622_MQ_03 | PRISON622_MQ_04 | PRISON622_MQ_05 | PRISON622_MQ_02 | PRISON622_MQ_06 -----
@@ -92,7 +106,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -103,7 +117,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_PRISON_62_2")
 end
 
------ bube_flag1 ----- 
+----- Cursed Idol ----- 
 ----- npcselectdialog.ies | ClassName: PRISON622_MQ_02_NPC -----
 ----- Dialog -----
 ----- QuestIDs: PRISON622_MQ_02 -----
@@ -113,7 +127,21 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Special Prison District ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_018351", "d_prison_62_2", 648, 241, -1323, -56, "npc_ETC_20151224_018351")
+function npc_ETC_20151224_018351()
+msg("PRISON622_TO_PRISON622_1")
+end
+
+----- Ashaq Underground Prison 2F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151001_014681", "d_prison_62_2", 43, 416, -1910, 45, "npc_ETC_20151001_014681")
+function npc_ETC_20151001_014681()
+msg("PRISON622_1_TO_PRISON622")
+end
+
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_prison_62_2", 141, 242, 1375, 135, "npc_ETC_20150317_009100")

@@ -1,4 +1,18 @@
------ npc_paladin_follower2_3 ----- 
+----- Baron Allerno  ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009589", "f_farm_47_3", 1035, 205, 57, 45, "npc_ETC_20150323_009589")
+function npc_ETC_20150323_009589()
+msg("FARM_47_3_TO_FARM_47_4")
+end
+
+----- Aqueduct Bridge Area ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009637", "f_farm_47_3", -2182, -9, 431, -126, "npc_ETC_20150323_009637")
+function npc_ETC_20150323_009637()
+msg("FARM_47_3_TO_FARM_47_2")
+end
+
+----- Baron Secretary Arunas ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_ARUNAS -----
 ----- Dialog -----
 ----- QuestIDs: FARM47_3_SQ_010 | FARM47_3_SQ_020 -----
@@ -17,7 +31,7 @@ msg("FARM47_3_SQ_020_PRST")
 msg("FARM47_3_SQ_020_COMP")
 end
 
------ npc_Florijonas ----- 
+----- Wizard Rimas ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_RIMAS -----
 ----- Dialog -----
 ----- QuestIDs: FARM47_3_SQ_030 | FARM47_3_SQ_060 | FARM47_3_SQ_070 | FARM47_3_SQ_050 -----
@@ -41,7 +55,7 @@ msg("FARM47_3_SQ_070_SUCPR")
 msg("FARM47_RIMAS_BASIC01")
 end
 
------ npc_rich_baron ----- 
+----- Baron Allerno ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155017, "ETC_20150414_010973", "f_farm_47_3", -476, 72, 614, -90, "npc_ETC_20150414_010973")
@@ -49,7 +63,7 @@ function npc_ETC_20150414_010973()
 msg("FARM47_BARON_BASIC01")
 end
 
------ npc_paladin_follower2_2 ----- 
+----- Baron Secretary Benius ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_BENIUS -----
 ----- Dialog -----
 ----- QuestIDs: FARM47_3_SQ_100 | FARM473_RP_1 -----
@@ -69,10 +83,10 @@ msg("FARM473_RP_1_2")
 msg("FARM473_RP_1_3")
 end
 
------ farm47_power_01 ----- 
+----- Spell Device ----- 
 addnpc(153042, "ETC_20150414_011209", "f_farm_47_3", -515, 72, 497, 45, "npc_dummy")
 
------ farm47_warehouse_01 ----- 
+----- Baron's Storage ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_HUT -----
 ----- Dialog -----
 ----- QuestIDs: FARM47_3_SQ_060 -----
@@ -82,14 +96,14 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ noshadow_npc ----- 
+----- Detect strange aura ----- 
 ----- Enter -----
 addnpc(147469, "ETC_20150323_010376", "f_farm_47_3", -202, 157, 193, 45, "npc_ETC_20150323_010376")
 function npc_ETC_20150323_010376()
 msg("FARM47_ODD_FEEL_E")
 end
 
------ treasure_box3 ----- 
+----- Lv3 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147393, "ETC_20150317_009082", "f_farm_47_3", -1312, -9, 648, 45, "npc_ETC_20150317_009082")
@@ -97,7 +111,7 @@ function npc_ETC_20150317_009082()
 msg("TREASUREBOX_LV")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_farm_47_3", -111, 90, -508, 0, "npc_ETC_20150317_009100")

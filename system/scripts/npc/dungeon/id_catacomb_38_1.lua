@@ -1,4 +1,25 @@
------ npc_village_uncle_8 ----- 
+----- Underground Grave of Ritinis ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011731", "id_catacomb_38_1", -2119, 272, -924, 225, "npc_ETC_20150714_011731")
+function npc_ETC_20150714_011731()
+msg("CATACOMB_38_1_CATACOMB_04")
+end
+
+----- Valius' Eternal Resting Place ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011730", "id_catacomb_38_1", 1797, 249, 1596, 85, "npc_ETC_20150714_011730")
+function npc_ETC_20150714_011730()
+msg("CATACOMB_38_1_CATACOMB_02")
+end
+
+----- Mokusul Chamber ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011746", "id_catacomb_38_1", 2014, -14, 49, 45, "npc_ETC_20150714_011746")
+function npc_ETC_20150714_011746()
+msg("CATACOMB_38_1_CATACOMB_38_2")
+end
+
+----- Wandering Spirit ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_38_1_NPC_01 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_38_1_SQ_01 -----
@@ -8,7 +29,7 @@ msg("CATACOMB_38_1_SQ_01_select")
 msg("CATACOMB_38_1_NPC_01_basic01")
 end
 
------ npc_kupole_6 ----- 
+----- Kupole Vita ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_38_1_NPC_02 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_38_1_SQ_01 | CATACOMB_38_1_SQ_02 | CATACOMB_38_1_SQ_03 | CATACOMB_38_1_SQ_04 | CATACOMB_38_1_SQ_05 -----
@@ -30,7 +51,7 @@ msg("CATACOMB_38_1_NPC_02_basic02")
 msg("CATACOMB_38_1_NPC_02_basic03")
 end
 
------ npc_village_uncle_1 ----- 
+----- Wandering Spirit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20117, "ETC_20150714_013182", "id_catacomb_38_1", 120, -110, -495, 45, "npc_ETC_20150714_013182")
@@ -38,7 +59,7 @@ function npc_ETC_20150714_013182()
 msg("CATACOMB_38_1_GHOST_01")
 end
 
------ npc_matron2 ----- 
+----- Wandering Spirit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20145, "ETC_20150714_013182", "id_catacomb_38_1", 346, -110, -789, 45, "npc_ETC_20150714_013182")
@@ -46,7 +67,7 @@ function npc_ETC_20150714_013182()
 msg("CATACOMB_38_1_GHOST_02")
 end
 
------ npc_village_uncle_3 ----- 
+----- Wandering Spirit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20138, "ETC_20150714_013182", "id_catacomb_38_1", -466, 0, -634, 45, "npc_ETC_20150714_013182")
@@ -54,7 +75,7 @@ function npc_ETC_20150714_013182()
 msg("CATACOMB_38_1_GHOST_03")
 end
 
------ npc_matron4 ----- 
+----- Wandering Spirit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20147, "ETC_20150714_013182", "id_catacomb_38_1", -657, 18, -788, 45, "npc_ETC_20150714_013182")
@@ -62,7 +83,7 @@ function npc_ETC_20150714_013182()
 msg("CATACOMB_38_1_GHOST_04")
 end
 
------ rokas_pot1 ----- 
+----- Pot of Silence ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_38_1_OBJ_01 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_38_1_SQ_02 | CATACOMB_38_1_SQ_03 | CATACOMB_38_1_SQ_04 -----
@@ -72,7 +93,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_village_uncle_11 ----- 
+----- Rimos' Spirit ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_38_1_NPC_03 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_38_1_SQ_05 | CATACOMB_38_1_SQ_06 | CATACOMB_38_1_SQ_07 -----
@@ -82,7 +103,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ farm47_circle_01 ----- 
+----- Contract of Flesh ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_38_1_OBJ_03 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_38_1_SQ_06 -----
@@ -92,7 +113,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "id_catacomb_38_1", -1782, 202, -1355, 90, "npc_ETC_20150317_009100")

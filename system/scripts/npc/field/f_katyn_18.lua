@@ -1,4 +1,25 @@
------ npc_ghost_soldier ----- 
+----- Svalphinghas Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20160718_022008", "f_katyn_18", 3248, 375, -1961, 45, "npc_ETC_20160718_022008")
+function npc_ETC_20160718_022008()
+msg("WS_KATYN18_TO_MAPLE25_2")
+end
+
+----- Emmet Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20161005_024581", "f_katyn_18", -1322, 574, -2179, -117, "npc_ETC_20161005_024581")
+function npc_ETC_20161005_024581()
+msg("WS_KATYN18_TO_WHITETREES23_1")
+end
+
+----- City Wall District 4 ----- 
+----- Enter -----
+addnpc(40001, "ETC_20160718_022002", "f_katyn_18", -2314, 644, 1100, 203, "npc_ETC_20160718_022002")
+function npc_ETC_20160718_022002()
+msg("WS_KATYN18_TO_CASTLE19_2")
+end
+
+----- Supply Soldier's Spirit ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_18_RE_SQ_NPC_1 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_18_RE_SQ_1 | KATYN_18_RE_SQ_2 -----
@@ -15,7 +36,7 @@ msg("KATYN_18_RE_SQ_2_succ")
 msg("KATYN_18_RE_SQ_NPC_1_basic1")
 end
 
------ npc_ghost_soldier2 ----- 
+----- Castle Wall Soldier's Spirit ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_18_RE_SQ_NPC_2 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_18_RE_SQ_3 | KATYN_18_RE_SQ_4 | KATYN_18_RE_SQ_5 -----
@@ -32,7 +53,7 @@ msg("KATYN_18_RE_SQ_5_succ")
 msg("KATYN_18_RE_SQ_NPC_2_basic1")
 end
 
------ npc_ghost_soldier3 ----- 
+----- Scout Soldier's Spirit ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_18_RE_SQ_NPC_3 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_18_RE_SQ_6 | KATYN_18_RE_SQ_7 | KATYN_18_RE_SQ_8 -----
@@ -52,7 +73,7 @@ msg("KATYN_18_RE_SQ_8_prog_start")
 msg("KATYN_18_RE_SQ_NPC_3_basic1")
 end
 
------ Huevillage_Altar ----- 
+----- Forgotten Goddess Altar ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_18_RE_SQ_OBJ_5 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_18_RE_SQ_8 -----
@@ -62,7 +83,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_katyn_18", 1899, 373, -1207, 45, "npc_ETC_20150317_009100")

@@ -1,4 +1,18 @@
------ npc_pilgrim_m_2 ----- 
+----- Grynas Trails ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009611", "f_pilgrimroad_41_4", 1822, 41, -1411, -53, "npc_ETC_20150323_009611")
+function npc_ETC_20150323_009611()
+msg("PILGRIM41_4_KATYN45_1")
+end
+
+----- Salvia Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016504", "f_pilgrimroad_41_4", -102, 0, 1348, 138, "npc_ETC_20151102_016504")
+function npc_ETC_20151102_016504()
+msg("PILGRIM41_4_PILGRIM41_2")
+end
+
+----- Pilgrim Vados ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM414_SQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_4_SQ01 | PILGRIM41_4_SQ02 | PILGRIM41_4_SQ05 | PILGRIM41_4_SQ06 | PILGRIM41_4_SQ07 | PILGRIM41_4_SQ10 | PILGRIM41_4_SQ11 | PILGRIM41_4_SQ13 | PILGRIM41_4_SQ12 -----
@@ -29,7 +43,7 @@ msg("PILGRIM414_SQ_11_prog2")
 msg("PILGRIM414_SQ_13_succ1")
 end
 
------ npc_friar_04 ----- 
+----- Monk Dorma ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM414_SQ_02 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_4_SQ01 | PILGRIM41_4_SQ03 | PILGRIM41_4_SQ04 | PILGRIM41_4_SQ05 | PILGRIM41_4_SQ06 | PILGRIM41_4_SQ08 | PILGRIM41_4_SQ09 -----
@@ -67,7 +81,7 @@ msg("PILGRIM41_4_SQ01_DLG")
 msg("PILGRIM414_SQ_03_DLG")
 end
 
------ npc_friar_04 ----- 
+----- Monk Dorma ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM414_SQ_02_1 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_4_SQ10 | PILGRIM41_4_SQ11 | PILGRIM41_4_SQ16 -----
@@ -105,7 +119,7 @@ msg("PILGRIM41_4_SQ01_DLG")
 msg("PILGRIM414_SQ_03_DLG")
 end
 
------ npc_pilgrim_m_4 ----- 
+----- Pilgrim David ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM414_SQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_4_SQ03 | PILGRIM41_4_SQ14 -----
@@ -126,7 +140,7 @@ msg("PILGRIM414_SQ_14_prog")
 msg("PILGRIM414_SQ_14_succ")
 end
 
------ npc_pilgrim_m_3 ----- 
+----- Pilgrim Eli ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM414_SQ_04 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_4_SQ04 | PILGRIM41_4_SQ07 -----
@@ -143,7 +157,7 @@ msg("PILGRIM414_SQ_07_succ1")
 msg("PILGRIM414_SQ_13_succ4")
 end
 
------ npc_pilgrim_m_1 ----- 
+----- Pilgrim George ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM414_SQ_08 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_4_SQ08 | PILGRIM41_4_SQ09 | PILGRIM41_4_SQ15 -----

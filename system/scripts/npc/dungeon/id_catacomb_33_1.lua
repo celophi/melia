@@ -1,4 +1,18 @@
------ npc_pilgrim_shrine_NoObb ----- 
+----- Absenta Reservoir ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016510", "id_catacomb_33_1", 793, 347, -1284, -45, "npc_ETC_20151102_016510")
+function npc_ETC_20151102_016510()
+msg("CATACOMB_33_1_3CMLAKE_84")
+end
+
+----- Carlyle's Mausoleum ----- 
+----- Enter -----
+addnpc(40001, "QUEST_LV_0100_20150730_007760", "id_catacomb_33_1", 745, 136, 2116, 135, "npc_QUEST_LV_0100_20150730_007760")
+function npc_QUEST_LV_0100_20150730_007760()
+msg("CATACOMB_33_1_TO_CATACOMB_33_2")
+end
+
+----- Holy Relic of the Order ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(152069, "QUEST_20150729_002304", "id_catacomb_33_1", -201, 186, 154, -45, "npc_QUEST_20150729_002304")
@@ -6,7 +20,7 @@ function npc_QUEST_20150729_002304()
 msg("CATACOMB_33_1_UNHOLY_DLG")
 end
 
------ npc_bocor_juta ----- 
+----- Bokor Juta ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_33_1_JUTA -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_33_1_SQ_01 | CATACOMB_33_1_SQ_02 | CATACOMB_33_1_SQ_03 | CATACOMB_33_1_SQ_07 -----
@@ -35,7 +49,7 @@ msg("CATACOMB_33_1_SQ_07_TRACK_01")
 msg("CATACOMB_33_1_SQ_07_TRACK_02")
 end
 
------ npc_paladin_noinst3_3 ----- 
+----- Grave Keeper Sigis ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_33_1_SIGIS -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_33_1_SQ_03 | CATACOMB_33_1_SQ_04 | CATACOMB_33_1_SQ_05 | CATACOMB_33_1_SQ_08 | CATACOMB_33_1_SQ_06 | CATACOMB_33_1_SQ_09 -----
@@ -69,7 +83,7 @@ msg("CATACOMB_33_1_SIGIS_basic01")
 msg("CATACOMB_33_1_SIGIS_basic02")
 end
 
------ TreasureBox1 ----- 
+----- Grave Keeper's Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40030, "ETC_20150729_014030", "id_catacomb_33_1", 203, 160, 1413, -80, "npc_ETC_20150729_014030")
@@ -77,7 +91,7 @@ function npc_ETC_20150729_014030()
 msg("CATACOMB_33_1_BOX")
 end
 
------ npc_bocor_juta ----- 
+----- Bokor Juta ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_33_1_JUTA2 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_33_1_SQ_07 | CATACOMB_33_1_SQ_08 -----
@@ -106,7 +120,7 @@ msg("CATACOMB_33_1_SQ_07_TRACK_01")
 msg("CATACOMB_33_1_SQ_07_TRACK_02")
 end
 
------ TreasureBox1 ----- 
+----- Grave Keeper's Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40030, "ETC_20150729_014030", "id_catacomb_33_1", -34, 160, 1359, 0, "npc_ETC_20150729_014030")
@@ -114,7 +128,7 @@ function npc_ETC_20150729_014030()
 msg("CATACOMB_33_1_BOX_F1")
 end
 
------ TreasureBox1 ----- 
+----- Grave Keeper's Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40030, "ETC_20150729_014030", "id_catacomb_33_1", 95, 160, 1455, -45, "npc_ETC_20150729_014030")
@@ -122,7 +136,7 @@ function npc_ETC_20150729_014030()
 msg("CATACOMB_33_1_BOX_F2")
 end
 
------ TreasureBox1 ----- 
+----- Grave Keeper's Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40030, "ETC_20150729_014030", "id_catacomb_33_1", 260, 160, 1185, 180, "npc_ETC_20150729_014030")
@@ -130,7 +144,7 @@ function npc_ETC_20150729_014030()
 msg("CATACOMB_33_1_BOX_F3")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -141,7 +155,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_ID_CATACOMB_33_1")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "id_catacomb_33_1", -1281, 160, 1123, 45, "npc_ETC_20150317_009100")

@@ -1,4 +1,18 @@
------ statue_vakarine ----- 
+----- Pilgrim Path ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009582", "p_catacomb_1", 19, 267, 1161, 135, "npc_ETC_20150323_009582")
+function npc_ETC_20150323_009582()
+msg("PCATACOMB1_PILGRIM47")
+end
+
+----- Rukas Plateau ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009577", "p_catacomb_1", 21, 267, -1146, 315, "npc_ETC_20150323_009577")
+function npc_ETC_20150323_009577()
+msg("PCATACOMB1_ROKAS29")
+end
+
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -9,7 +23,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_P_CATACOMB_1")
 end
 
------ Board1 ----- 
+----- Warning ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000566", "p_catacomb_1", -3, 268, 1063, 45, "npc_QUEST_20150317_000566")
@@ -17,7 +31,7 @@ function npc_QUEST_20150317_000566()
 msg("UPPER_WARNING_P_CATACOMB_1")
 end
 
------ npc_NEC_master ----- 
+----- [Necromancer Master]Loretta Nimbus ----- 
 ----- npcselectdialog.ies | ClassName: JOB_NECRO4_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_NECROMANCER5_1 | JOB_NECROMANCER_6_1 | JOB_NECROMANCER7_1 | LOWLV_MASTER_ENCY_SQ_50 -----

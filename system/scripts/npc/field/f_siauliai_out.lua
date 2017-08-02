@@ -1,4 +1,25 @@
------ statue_vakarine ----- 
+----- Eastern Woods ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_009508", "f_siauliai_out", 500, 37, -2241, -64.98, "npc_ETC_20150317_009508")
+function npc_ETC_20150317_009508()
+msg("WS_SIAULST3_SIAULST2")
+end
+
+----- Crystal Mine ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001155", "f_siauliai_out", -213, 245, -17, -120, "npc_ETC_20150317_001155")
+function npc_ETC_20150317_001155()
+msg("WS_ACT3_ACT4_1")
+end
+
+----- Srautas Gorge ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009559", "f_siauliai_out", 1832, 43, -578, 40, "npc_ETC_20150323_009559")
+function npc_ETC_20150323_009559()
+msg("SIALLAIOUT_GELE571")
+end
+
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -9,7 +30,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_SIAULIAI_OUT")
 end
 
------ Box1 ----- 
+----- Relief Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009510", "f_siauliai_out", -1086, 42, -1522, 130, "npc_ETC_20150317_009510")
@@ -17,7 +38,7 @@ function npc_ETC_20150317_009510()
 msg("SIAULIAIOUT_119_2")
 end
 
------ Box1 ----- 
+----- Relief Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009510", "f_siauliai_out", -1197, 42, -1627, 130, "npc_ETC_20150317_009510")
@@ -25,7 +46,7 @@ function npc_ETC_20150317_009510()
 msg("SIAULIAIOUT_119_3")
 end
 
------ Box1 ----- 
+----- Relief Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009510", "f_siauliai_out", -1237, 90, -1457, 130, "npc_ETC_20150317_009510")
@@ -33,7 +54,7 @@ function npc_ETC_20150317_009510()
 msg("SIAULIAIOUT_119_4")
 end
 
------ Box1 ----- 
+----- Relief Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009510", "f_siauliai_out", -1160, 171, -1225, 130, "npc_ETC_20150317_009510")
@@ -41,7 +62,7 @@ function npc_ETC_20150317_009510()
 msg("SIAULIAIOUT_119_5")
 end
 
------ Box1 ----- 
+----- Relief Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009510", "f_siauliai_out", -1364, 171, -1002, 130, "npc_ETC_20150317_009510")
@@ -49,7 +70,7 @@ function npc_ETC_20150317_009510()
 msg("SIAULIAIOUT_119_6")
 end
 
------ Box1 ----- 
+----- Relief Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009510", "f_siauliai_out", -1576, 43, -1673, 130, "npc_ETC_20150317_009510")
@@ -57,7 +78,7 @@ function npc_ETC_20150317_009510()
 msg("SIAULIAIOUT_119_7")
 end
 
------ Box1 ----- 
+----- Relief Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009510", "f_siauliai_out", -1807, 43, -1853, 130, "npc_ETC_20150317_009510")
@@ -65,7 +86,7 @@ function npc_ETC_20150317_009510()
 msg("SIAULIAIOUT_119_8")
 end
 
------ Box1 ----- 
+----- Relief Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009510", "f_siauliai_out", -2078, 43, -1783, 136, "npc_ETC_20150317_009510")
@@ -73,7 +94,7 @@ function npc_ETC_20150317_009510()
 msg("SIAULIAIOUT_119_9")
 end
 
------ npc_cleric_f_1 ----- 
+----- Healer Lady ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAIOUT_HEALER_B -----
 ----- Dialog -----
 ----- QuestIDs: SOUT_Q_09 | SOUT_Q_10 | SOUT_SUDD_PREBOSS -----
@@ -93,7 +114,7 @@ msg("SOUT_Q_10_2")
 msg("SOUT_Q_10_3")
 end
 
------ npc_cleric_f_1 ----- 
+----- Healer Lady ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAIOUT_HEALER_C -----
 ----- Dialog -----
 ----- QuestIDs: SOUT_Q_09 | SOUT_Q_10 -----
@@ -103,28 +124,28 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ cart_empty ----- 
+----- Kepa Wagon ----- 
 ----- Enter -----
 addnpc(45315, "ETC_20150317_007048", "f_siauliai_out", -82, 156, -612, 16, "npc_ETC_20150317_007048")
 function npc_ETC_20150317_007048()
 msg("SIAULIAIOUT_CART")
 end
 
------ cart_empty ----- 
+----- Kepa Wagon ----- 
 ----- Enter -----
 addnpc(45315, "ETC_20150317_007048", "f_siauliai_out", -41, 157, -608, -45, "npc_ETC_20150317_007048")
 function npc_ETC_20150317_007048()
 msg("SIAULIAIOUT_CART")
 end
 
------ cart_empty ----- 
+----- Kepa Wagon ----- 
 ----- Enter -----
 addnpc(45315, "ETC_20150317_007048", "f_siauliai_out", -64, 161, -557, -45, "npc_ETC_20150317_007048")
 function npc_ETC_20150317_007048()
 msg("SIAULIAIOUT_CART")
 end
 
------ npc_miner ----- 
+----- Mine Manager Brinker ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAIOUT_MINER_B -----
 ----- Dialog -----
 ----- QuestIDs: SOUT_Q_07 -----
@@ -141,7 +162,7 @@ msg("SIAULIAIOUT_MINER_basic")
 msg("SIAULIAIOUT_MINER_A_TRADE")
 end
 
------ npc_miner ----- 
+----- Mine Manager Brinker ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20109, "QUEST_LV_0100_20150317_001224", "f_siauliai_out", 355, 43, -1117, -45, "npc_QUEST_LV_0100_20150317_001224")
@@ -149,7 +170,7 @@ function npc_QUEST_LV_0100_20150317_001224()
 msg("SIAULIAIOUT_MINER_A_TRADE")
 end
 
------ npc_village_uncle_2 ----- 
+----- Miners' Village Mayor ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAIOUT_CHIEF_A -----
 ----- Dialog -----
 ----- QuestIDs: JOB_CRYOMANCER2_1 | JOB_CRYOMANCER2_2 | CMINE6_TO_KATYN7_3 | SOUT_Q_01 | SOUT_Q_11 | SOUT_Q_14 | SOUT_Q_41 | SOUT_Q_13 | LOWLV_BOASTER_SQ_40 -----
@@ -177,7 +198,7 @@ msg("LOWLV_BOASTER_SQ_40_PG2")
 msg("LOWLV_BOASTER_SQ_40_SUCPR")
 end
 
------ npc_mining_alchemist ----- 
+----- [Alchemist Master]Vaidotas ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAIOUT_ALCHE -----
 ----- Dialog -----
 ----- QuestIDs: SOUT_Q_14 | SOUT_Q_15 -----
@@ -229,7 +250,7 @@ msg("PARTY_Q_011_startnpc_prog01")
 msg("PARTY_Q_011_succ01")
 end
 
------ npc_sout_hunter ----- 
+----- Hunter ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAIOUT_HUNTER -----
 ----- Dialog -----
 ----- QuestIDs: SOUT_Q_05 -----
@@ -266,7 +287,7 @@ msg("3CMLAKE_84_HUNTER2_basic04")
 msg("3CMLAKE_84_HUNTER2_basic05")
 end
 
------ npc_mining_alchemist ----- 
+----- [Alchemist Master]Vaidotas ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAIOUT_ALCHE_A -----
 ----- Dialog -----
 ----- QuestIDs: SOUT_Q_16 | JOB_ALCHEMIST5_1 | JOB_ALCHEMIST_6_1 | JOB_ALCHEMIST7_1 | PARTY_Q_010 | PARTY_Q_011 | SIAULIAI_35_1_SQ_9 -----
@@ -318,7 +339,7 @@ msg("PARTY_Q_011_startnpc_prog01")
 msg("PARTY_Q_011_succ01")
 end
 
------ Board1 ----- 
+----- Notice ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000560", "f_siauliai_out", -142, 153, -435, 45, "npc_QUEST_20150317_000560")
@@ -326,7 +347,7 @@ function npc_QUEST_20150317_000560()
 msg("F_SIAULIA_OUT_BOARD01")
 end
 
------ npc_matron ----- 
+----- Village Aunt ----- 
 ----- npcselectdialog.ies | ClassName: F_SIAU_OUT_NPC01 -----
 ----- Dialog -----
 addnpc(20114, "QUEST_LV_0100_20150317_000206", "f_siauliai_out", -54, 85, -1064, 45, "npc_QUEST_LV_0100_20150317_000206")
@@ -340,7 +361,7 @@ msg("D_CMINE_NPC01_basic01")
 msg("D_CMINE_NPC01_basic02")
 end
 
------ npc_miner2 ----- 
+----- Miner ----- 
 ----- npcselectdialog.ies | ClassName: F_SIAU_OUT_NPC02 -----
 ----- Dialog -----
 addnpc(20150, "QUEST_LV_0100_20150317_000366", "f_siauliai_out", 36, 85, -968, 45, "npc_QUEST_LV_0100_20150317_000366")
@@ -352,7 +373,7 @@ msg("F_SIAU_OUT_NPC02_basic01")
 msg("F_SIAU_OUT_NPC02_basic02")
 end
 
------ npc_village_female ----- 
+----- Village Girl ----- 
 ----- npcselectdialog.ies | ClassName: F_SIAU_OUT_NPC03 -----
 ----- Dialog -----
 addnpc(147473, "QUEST_LV_0100_20150317_000209", "f_siauliai_out", 66, 88, -1083, 45, "npc_QUEST_LV_0100_20150317_000209")
@@ -366,7 +387,7 @@ msg("F_SIAU_OUT_NPC03_basic02")
 msg("F_SIAU_OUT_NPC03_basic03")
 end
 
------ Board1 ----- 
+----- Lot 2 Closure Notice ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "ETC_20150317_005371", "f_siauliai_out", 129, 153, -18, 315, "npc_ETC_20150317_005371")
@@ -374,7 +395,7 @@ function npc_ETC_20150317_005371()
 msg("F_SIAULIAI_OUT_BOARD02")
 end
 
------ npc_PSY_sub_master ----- 
+----- [Psychokino Submaster]Cielle Gudan ----- 
 ----- npcselectdialog.ies | ClassName: JOB_PSYCHOKINESIST2_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_PSYCHOKINESIST2_1 | JOB_PSYCHOKINESIST3_1 | JOB_PSYCHOKINESIST4_1 | JOB_PSYCHOKINESIST5_1 -----
@@ -396,7 +417,7 @@ msg("JOB_PSYCHOKINESIST2_1_NPC_basic4")
 msg("JOB_PSYCHOKINESIST2_1_NPC_basic3")
 end
 
------ npc_LIN_sub_master ----- 
+----- [Linker Submaster]Roddie Kuska ----- 
 ----- npcselectdialog.ies | ClassName: JOB_LINKER2_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_LINKER2_1 | JOB_LINKER2_2 | JOB_LINKER3_1 | JOB_LINKER4_1 | JOB_LINKER5_1 -----
@@ -419,7 +440,7 @@ msg("JOB_LINKER2_1_NPC_basic2")
 msg("JOB_LINKER2_1_NPC_basic3")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName: TREASUREBOX_BUBE -----
 ----- Dialog -----
 ----- QuestIDs: SOUT_Q_15 -----
@@ -429,7 +450,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ statue_zemina ----- 
+----- Statue of Goddess Zemyna ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(40110, "ETC_20150317_007030", "f_siauliai_out", -2194, 40, -2055, 38.6, "npc_ETC_20150317_007030")
@@ -438,7 +459,7 @@ msg("F_SIAULIAI_OUT_EV_55_001")
 msg("F_SIAULIAI_OUT_EV_55_001")
 end
 
------ npc_husband_1 ----- 
+----- Refugee ----- 
 ----- npcselectdialog.ies | ClassName: SOUT_REFUGEE01 -----
 ----- Dialog -----
 ----- QuestIDs: SOUT_Q_09 -----
@@ -449,7 +470,7 @@ msg("SOUT_REFUGEE01_2_BASIC01")
 msg("SOUT_REFUGEE01_BASIC01")
 end
 
------ Board1 ----- 
+----- Safety Instructions ----- 
 ----- npcselectdialog.ies | ClassName: F_SIAULIAI_OUT_BOARD03 -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000114", "f_siauliai_out", -58, 150, -133, 0, "npc_QUEST_20150317_000114")
@@ -458,7 +479,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_miner ----- 
+----- Mine Manager Brinker ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAIOUT_MINER_C -----
 ----- Dialog -----
 ----- QuestIDs: SOUT_Q_08 -----
@@ -468,7 +489,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_cleric_f_2 ----- 
+----- Pharmacist Lady ----- 
 ----- npcselectdialog.ies | ClassName: SOUT_PHARMACY -----
 ----- Dialog -----
 ----- QuestIDs: SOUT_Q_20 | SOUT_Q_21 | SOUT_Q_22 | SOUT_Q_23 | SOUT_Q_24 -----
@@ -488,7 +509,7 @@ msg("SOUT_PHARMACY_basic03")
 msg("HT_SOUT_PHARMACY_BASIC06")
 end
 
------ soldier6 ----- 
+----- Soldier Jace ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAIOUT_SOLDIRE_SQ31 -----
 ----- Dialog -----
 ----- QuestIDs: SOUT_Q_31 -----
@@ -506,7 +527,7 @@ msg("SOUT_Q_31_PROG03")
 msg("SOUT_Q_31_SUCC03")
 end
 
------ soldier7 ----- 
+----- Soldier Edgar ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAIOUT_SOLDIRE_SQ32 -----
 ----- Dialog -----
 ----- QuestIDs: SOUT_Q_32 -----
@@ -522,7 +543,7 @@ msg("SOUT_Q_32_PROG02")
 msg("SOUT_Q_32_SUCC02")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_siauliai_out", 1224, 198, 280, 45, "npc_ETC_20150317_009100")

@@ -1,4 +1,18 @@
------ npc_aurelius ----- 
+----- Apsimesti Crossroads ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009585", "d_cathedral_53", 17, -1, -1133, 315, "npc_ETC_20150323_009585")
+function npc_ETC_20150323_009585()
+msg("CATHEDRAL53_PILGRIM52")
+end
+
+----- Grand Corridor ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170330_027519", "d_cathedral_53", 1166, 84, -285, 49, "npc_ETC_20170330_027519")
+function npc_ETC_20170330_027519()
+msg("CATHEDRAL53_CATHEDRAL54")
+end
+
+----- Bishop Aurelius' Spirit ----- 
 ----- npcselectdialog.ies | ClassName: CHATHEDRAL53_MQ_BISHOP -----
 ----- Dialog -----
 ----- QuestIDs: CHATHEDRAL53_MQ02 | CHATHEDRAL53_MQ03 | CHATHEDRAL53_MQ01 -----
@@ -63,7 +77,7 @@ msg("CHATHEDRAL56_BISHOP_DIALOG08")
 msg("BISHOP_TRACK_DLG")
 end
 
------ BOOK_01 ----- 
+----- Scripture of Prediction ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147311, "ETC_20150317_009217", "d_cathedral_53", -769, 0, 223, -1, "npc_ETC_20150317_009217")
@@ -71,7 +85,7 @@ function npc_ETC_20150317_009217()
 msg("CHATHEDRAL53_MQ02_BOOK1")
 end
 
------ BOOK_01 ----- 
+----- Scripture of Earth ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147311, "ETC_20150317_009218", "d_cathedral_53", -662, 0, -54, 105, "npc_ETC_20150317_009218")
@@ -79,7 +93,7 @@ function npc_ETC_20150317_009218()
 msg("CHATHEDRAL53_MQ02_BOOK2")
 end
 
------ BOOK_01 ----- 
+----- Scripture of Rest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147311, "ETC_20150317_009219", "d_cathedral_53", -995, 0, 21, 46, "npc_ETC_20150317_009219")
@@ -87,7 +101,7 @@ function npc_ETC_20150317_009219()
 msg("CHATHEDRAL53_MQ02_BOOK3")
 end
 
------ BOOK_01 ----- 
+----- Scripture of Eternity ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147311, "ETC_20150317_009220", "d_cathedral_53", -573, 0, -326, -1, "npc_ETC_20150317_009220")
@@ -95,7 +109,7 @@ function npc_ETC_20150317_009220()
 msg("CHATHEDRAL53_MQ02_BOOK4")
 end
 
------ BOOK_01 ----- 
+----- Scripture of Purification ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147311, "ETC_20150317_009221", "d_cathedral_53", -914, 0, -359, -38, "npc_ETC_20150317_009221")
@@ -103,7 +117,7 @@ function npc_ETC_20150317_009221()
 msg("CHATHEDRAL53_MQ02_BOOK5")
 end
 
------ BOOK_01 ----- 
+----- Scripture of Praise ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147311, "ETC_20150317_009222", "d_cathedral_53", -456, 0, 174, -55, "npc_ETC_20150317_009222")
@@ -111,7 +125,7 @@ function npc_ETC_20150317_009222()
 msg("CHATHEDRAL53_MQ02_BOOK6")
 end
 
------ Huevillage_Altar ----- 
+----- Altar of Stability ----- 
 ----- npcselectdialog.ies | ClassName: CHATHEDRAL53_MQ03 -----
 ----- Dialog -----
 ----- QuestIDs: CHATHEDRAL53_MQ02 -----
@@ -121,7 +135,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_saule_female_1 ----- 
+----- Priest Inea ----- 
 ----- npcselectdialog.ies | ClassName: CHATHEDRAL53_SQ01 -----
 ----- Dialog -----
 ----- QuestIDs: CHATHEDRAL53_SQ01 | CHATHEDRAL53_SQ02 -----
@@ -137,7 +151,7 @@ msg("CHATHEDRAL53_SQ02_succ01")
 msg("CHATHEDRAL53_SQ01_prognpc")
 end
 
------ npc_saule_male_1 ----- 
+----- Priest Benedict ----- 
 ----- npcselectdialog.ies | ClassName: CHATHEDRAL53_SQ02 -----
 ----- Dialog -----
 ----- QuestIDs: CHATHEDRAL53_SQ06 | CHATHEDRAL53_SQ05 -----
@@ -153,7 +167,7 @@ msg("CHATHEDRAL53_SQ02_basic01")
 msg("CHATHEDRAL53_SQ02_basic02")
 end
 
------ npc_saule_male_2 ----- 
+----- Priest Aden ----- 
 ----- npcselectdialog.ies | ClassName: CHATHEDRAL53_SQ03 -----
 ----- Dialog -----
 ----- QuestIDs: CHATHEDRAL53_SQ03 | CHATHEDRAL53_SQ07 | CHATHEDRAL53_SQ08 | CHATHEDRAL53_SQ09 -----
@@ -171,7 +185,7 @@ msg("CHATHEDRAL53_SQ08_succ01")
 msg("CHATHEDRAL53_SQ09_select01")
 end
 
------ Huevillage_Altar ----- 
+----- Old Altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147417, "ETC_20150317_009226", "d_cathedral_53", 863, 0, -1445, 43, "npc_ETC_20150317_009226")
@@ -179,7 +193,7 @@ function npc_ETC_20150317_009226()
 msg("CHATHEDRAL53_MQ06_HINT01_DLG")
 end
 
------ Huevillage_Altar ----- 
+----- Old Altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147417, "ETC_20150317_009226", "d_cathedral_53", 864, 0, -1352, 43, "npc_ETC_20150317_009226")
@@ -187,7 +201,7 @@ function npc_ETC_20150317_009226()
 msg("CHATHEDRAL53_MQ06_HINT02_DLG")
 end
 
------ npc_saule_male_2 ----- 
+----- Priest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147398, "ETC_20150323_010345", "d_cathedral_53", 295, 0, -199, -96, "npc_ETC_20150323_010345")
@@ -195,7 +209,7 @@ function npc_ETC_20150323_010345()
 msg("CHATHEDRAL53_SQ03_AFTER")
 end
 
------ npc_saule_male_1 ----- 
+----- Cleric ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147389, "QUEST_LV_0200_20150317_000889", "d_cathedral_53", 230, 0, -218, 61, "npc_QUEST_LV_0200_20150317_000889")
@@ -203,7 +217,7 @@ function npc_QUEST_LV_0200_20150317_000889()
 msg("CHATHEDRAL53_SQ02_AFTER")
 end
 
------ npc_saule_female_2 ----- 
+----- Priest4 ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147397, "ETC_20150317_009227", "d_cathedral_53", -1243, 0, 240, -34, "npc_ETC_20150317_009227")
@@ -211,7 +225,7 @@ function npc_ETC_20150317_009227()
 msg("CHATHEDRAL53_SQ05_NPC")
 end
 
------ npc_saule_female_2 ----- 
+----- Priest4after ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147397, "ETC_20150317_009228", "d_cathedral_53", 276, 0, 966, -29, "npc_ETC_20150317_009228")
@@ -219,7 +233,7 @@ function npc_ETC_20150317_009228()
 msg("CHATHEDRAL53_SQ05_NPC_AFTER")
 end
 
------ npc_zacharial_desk ----- 
+----- Reading Desk ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47254, "QUEST_20150317_000986", "d_cathedral_53", -140, 0, -862, 205, "npc_QUEST_20150317_000986")
@@ -227,7 +241,7 @@ function npc_QUEST_20150317_000986()
 msg("CHATHEDRAL54_BOOK")
 end
 
------ BOOK_02 ----- 
+----- Dusty Book ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153014, "QUEST_20150323_001620", "d_cathedral_53", -136, 8, -915, 135, "npc_QUEST_20150323_001620")
@@ -235,7 +249,7 @@ function npc_QUEST_20150323_001620()
 msg("CHATHEDRAL54_BOOK02")
 end
 
------ npc_cathedral_device_02 ----- 
+----- Secret of Maven ----- 
 ----- npcselectdialog.ies | ClassName: CHATHEDRAL53_MQ06_PUZZLE -----
 ----- Dialog -----
 ----- QuestIDs: CHATHEDRAL53_MQ06 -----
@@ -245,7 +259,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ id_gate_npc ----- 
+----- Catacombs Dungeon 2 ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154046, "ETC_20170313_027480", "d_cathedral_53", 319, 0, -273, 45, "npc_ETC_20170313_027480")
@@ -253,7 +267,7 @@ function npc_ETC_20170313_027480()
 msg("INSTANCE_DUNGEON_CATACOM2_08")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_cathedral_53", 229, 0, -314, 135, "npc_ETC_20150317_009100")
@@ -261,7 +275,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ noshadow_npc ----- 
+----- Wand Fragment ----- 
 ----- npcselectdialog.ies | ClassName: CHATHEDRAL53_SQ07_OBJ1 -----
 ----- Dialog -----
 ----- QuestIDs: CHATHEDRAL53_SQ07 -----

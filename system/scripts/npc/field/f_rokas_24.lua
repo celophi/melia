@@ -1,4 +1,20 @@
------ statue_vakarine ----- 
+----- Sunset Flag Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001186", "f_rokas_24", 930, 123, -3045, -45, "npc_ETC_20150317_001186")
+function npc_ETC_20150317_001186()
+msg("GM_QUEST_MODIFY_PC_SEL")
+msg("GM_NPC_HIDE_UNHIDE")
+end
+
+----- Ramstis Ridge ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009574", "f_rokas_24", 904, 261, 1240, 131, "npc_ETC_20150323_009574")
+function npc_ETC_20150323_009574()
+msg("GM_QUEST_MODIFY_PC_SEL")
+msg("GM_NPC_HIDE_UNHIDE")
+end
+
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -9,7 +25,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_ROKAS_24")
 end
 
------ npc_low_lev_officer_m ----- 
+----- Liaison Officer Niels ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS_24_NEALS -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS24_DIALOG1 | ROKAS24_QB_6 | ROKAS24_KILL1 | ROKAS24_DIALOG2 | ROKAS24_KILL3 -----
@@ -30,7 +46,7 @@ msg("ROKAS_24_NEALS_basic1")
 msg("ROKAS_24_NEALS_basic2")
 end
 
------ npc_village_uncle_12 ----- 
+----- Historian Viode ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS_24_BEARD -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS24_KILL2 -----
@@ -43,7 +59,7 @@ msg("ROKAS_24_BEARD_BASIC02")
 msg("ROKAS_24_BEARD_basic1")
 end
 
------ npc_paladin_noinst3_2 ----- 
+----- Historian Kepeck ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS_24_KEFEK -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS24_KILL3 | ROKAS24_QB_15 | ROKAS24_RP_1 -----
@@ -59,7 +75,7 @@ msg("ROKAS24_RP_1_2")
 msg("ROKAS24_RP_1_3")
 end
 
------ noshadow_npc ----- 
+----- Beacon ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS_24_BEACON_TRIGGER -----
 ----- Dialog -----
 addnpc(147469, "ETC_20150317_005275", "f_rokas_24", -2909, 1342, -580, 45, "npc_ETC_20150317_005275")
@@ -68,7 +84,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Royal Mausoleum Artifact ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS_24_RELIC_TRIGGERGO -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS24_KILL3 -----
@@ -78,7 +94,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_soldier_female_02 ----- 
+----- Mercenary Mirta ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS24_MIRTA -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS24_QB_15 | ROKAS24_DIALOG2 -----
@@ -92,7 +108,7 @@ msg("ROKAS24_MIRTA_basic1")
 msg("ROKAS24_QB_15_start01")
 end
 
------ npc_Florijonas ----- 
+----- Archivist Jonas ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS_24_FLORIJONAS -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS24_QB_5 -----
@@ -121,7 +137,7 @@ msg("ROKAS_24_FLORIJONAS_basic2")
 msg("ROKAS_24_FLORIJONAS_basic4")
 end
 
------ npc_Florijonas ----- 
+----- Archivist Jonas ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS_24_FLORIJONAS2 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS24_QB_8 | ROKAS24_QB_14 -----
@@ -131,7 +147,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_Florijonas ----- 
+----- Archivist Jonas ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS_24_FLORIJONAS3 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS24_QB_10 | ROKAS24_KILL1 -----
@@ -160,7 +176,7 @@ msg("ROKAS_24_FLORIJONAS_basic2")
 msg("ROKAS_24_FLORIJONAS_basic4")
 end
 
------ npc_zachariel_cube_mini ----- 
+----- Eyes of the Great King ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS24_DEVICE_1 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS24_QB_10 -----
@@ -170,7 +186,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_2 ----- 
+----- Gorge Area Device ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS24_DEVICE_2 -----
 ----- Dialog -----
 addnpc(47102, "ETC_20150317_009440", "f_rokas_24", 1188, 201, 1014, 45, "npc_ETC_20150317_009440")
@@ -179,7 +195,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- Security Guard ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS24_SOLDIER -----
 ----- Dialog -----
 addnpc(10033, "QUEST_LV_0100_20150317_001256", "f_rokas_24", 883, 123, -1505, -45, "npc_QUEST_LV_0100_20150317_001256")
@@ -256,7 +272,7 @@ msg("FLASH29_1_SQ_090_basic01")
 msg("FLASH29_1_SQ_090_basic02")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- Security Guard ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS24_SOLDIER -----
 ----- Dialog -----
 addnpc(10033, "QUEST_LV_0100_20150317_001256", "f_rokas_24", 665, 123, -2449, -45, "npc_QUEST_LV_0100_20150317_001256")
@@ -333,7 +349,7 @@ msg("FLASH29_1_SQ_090_basic01")
 msg("FLASH29_1_SQ_090_basic02")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- Security Guard ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS24_SOLDIER -----
 ----- Dialog -----
 addnpc(10033, "QUEST_LV_0100_20150317_001256", "f_rokas_24", 811, 123, -1499, -45, "npc_QUEST_LV_0100_20150317_001256")
@@ -410,7 +426,7 @@ msg("FLASH29_1_SQ_090_basic01")
 msg("FLASH29_1_SQ_090_basic02")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- Security Guard ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS24_SOLDIER -----
 ----- Dialog -----
 addnpc(10033, "QUEST_LV_0100_20150317_001256", "f_rokas_24", 584, 123, -2449, -45, "npc_QUEST_LV_0100_20150317_001256")
@@ -487,7 +503,7 @@ msg("FLASH29_1_SQ_090_basic01")
 msg("FLASH29_1_SQ_090_basic02")
 end
 
------ npc_village_uncle_8 ----- 
+----- Merchant Davio ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS24_DABIO -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS24_QB_13 | ROKAS24_QB_14 | ROKAS24_QB_6 -----
@@ -505,7 +521,7 @@ msg("ROKAS24_DABIO_basic02")
 msg("ROKAS24_QB_13_PRST")
 end
 
------ npc_Florijonas ----- 
+----- Archivist Jonas ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS_24_FLORIJONAS4 -----
 ----- Dialog -----
 addnpc(147425, "QUEST_LV_0100_20150317_000046", "f_rokas_24", 603, 238, -1883, -45, "npc_QUEST_LV_0100_20150317_000046")
@@ -514,7 +530,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_miner ----- 
+----- Medicine Dealer ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS_24_PHARMACIST -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS24_QB_11 | ROKAS24_QB_13 -----
@@ -528,7 +544,7 @@ msg("ROKAS_24_PHARMACIST_BASIC01")
 msg("ROKAS_24_PHARMACIST_basic1")
 end
 
------ npc_miner ----- 
+----- New Researcher ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS_24_NEWCOMER -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS24_QB_1 | ROKAS24_QB_2 | ROKAS24_QB_3 | ROKAS24_QB_4 -----
@@ -547,7 +563,7 @@ msg("ROKAS_24_NEWCOMER_CAT")
 msg("ROKAS_24_NEWCOMER_basic1")
 end
 
------ npc_village_uncle_1 ----- 
+----- Historian Gorath ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS_24_GORATH -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS24_SQ_02 | ROKAS24_QB_9 -----
@@ -561,7 +577,7 @@ msg("ROKAS24_SQ_02_prog_startnpc01")
 msg("ROKAS_24_GORATH_basic01")
 end
 
------ npc_miner ----- 
+----- Historian Badat ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS_24_ARCHAEOLOGIST -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS24_SQ_02 | ROKAS24_SQ_03 -----
@@ -576,7 +592,7 @@ msg("ROKAS24_SQ_03_add")
 msg("ROKAS_24_ARCHAEOLOGIST_basic_01")
 end
 
------ npc_miner ----- 
+----- Stonemason Pipoti ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS24_PIPOTI -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS29_VACYS7 | ROKAS29_VACYS8 | ROKAS29_VACYS9 -----
@@ -596,7 +612,7 @@ msg("ROKAS29_VACYS8_succ2")
 msg("ROKAS29_VACYS9_prog1")
 end
 
------ npc_intermediate_officer_men2 ----- 
+----- Ahylas Jonas ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS24_ALCHEMIST -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS24_MQ_1 | ROKAS24_MQ_2 | ROKAS25_REXIPHER1 -----
@@ -621,7 +637,7 @@ msg("HIDDEN_RUNECASTER_npc1_dlg1")
 msg("HIDDEN_RUNECASTER_npc1_dlg2")
 end
 
------ rokas_pot3 ----- 
+----- Tree Sap Pot ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47258, "ETC_20150317_009443", "f_rokas_24", -1520, 895, -1531, 134, "npc_ETC_20150317_009443")
@@ -629,7 +645,7 @@ function npc_ETC_20150317_009443()
 msg("ROKAS24_BOX1")
 end
 
------ rokas_pot3 ----- 
+----- Tree Sap Pot ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47258, "ETC_20150317_009443", "f_rokas_24", -1221, 895, -1522, 134, "npc_ETC_20150317_009443")
@@ -637,7 +653,7 @@ function npc_ETC_20150317_009443()
 msg("ROKAS24_BOX1")
 end
 
------ rokas_pot3 ----- 
+----- Tree Sap Pot ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47258, "ETC_20150317_009443", "f_rokas_24", -1699, 895, -1201, 134, "npc_ETC_20150317_009443")
@@ -645,7 +661,7 @@ function npc_ETC_20150317_009443()
 msg("ROKAS24_BOX1")
 end
 
------ rokas_pot3 ----- 
+----- Tree Sap Pot ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47258, "ETC_20150317_009443", "f_rokas_24", -1515, 895, -994, 134, "npc_ETC_20150317_009443")
@@ -653,7 +669,7 @@ function npc_ETC_20150317_009443()
 msg("ROKAS24_BOX1")
 end
 
------ rokas_pot3 ----- 
+----- Tree Sap Pot ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47258, "ETC_20150317_009443", "f_rokas_24", -1398, 895, -1079, 134, "npc_ETC_20150317_009443")
@@ -661,7 +677,7 @@ function npc_ETC_20150317_009443()
 msg("ROKAS24_BOX1")
 end
 
------ noshadow_npc ----- 
+----- Portal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20150317_005172", "f_rokas_24", 1155, 123, -1979, 0, "npc_ETC_20150317_005172")
@@ -669,7 +685,7 @@ function npc_ETC_20150317_005172()
 msg("ROKAS_24_PORTAL")
 end
 
------ Board1 ----- 
+----- Bulletin Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000081", "f_rokas_24", 754, 124, -2075, 0, "npc_QUEST_20150317_000081")
@@ -677,7 +693,7 @@ function npc_QUEST_20150317_000081()
 msg("ROKAS24_BOARD_BASIC01")
 end
 
------ siauliai_grass_1 ----- 
+----- Canyon Amalas ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47200, "ETC_20150317_009444", "f_rokas_24", -146, 594, 1560, 45, "npc_ETC_20150317_009444")
@@ -685,7 +701,7 @@ function npc_ETC_20150317_009444()
 msg("ROKAS24_MQFLOWER")
 end
 
------ siauliai_grass_1 ----- 
+----- Canyon Amalas ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47200, "ETC_20150317_009444", "f_rokas_24", -398, 594, 1199, 45, "npc_ETC_20150317_009444")
@@ -693,7 +709,7 @@ function npc_ETC_20150317_009444()
 msg("ROKAS24_MQFLOWER")
 end
 
------ siauliai_grass_1 ----- 
+----- Canyon Amalas ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47200, "ETC_20150317_009444", "f_rokas_24", -130, 594, 1105, 45, "npc_ETC_20150317_009444")
@@ -701,7 +717,7 @@ function npc_ETC_20150317_009444()
 msg("ROKAS24_MQFLOWER")
 end
 
------ siauliai_grass_1 ----- 
+----- Canyon Amalas ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47200, "ETC_20150317_009444", "f_rokas_24", -459, 602, 1448, 45, "npc_ETC_20150317_009444")
@@ -709,7 +725,7 @@ function npc_ETC_20150317_009444()
 msg("ROKAS24_MQFLOWER")
 end
 
------ siauliai_grass_1 ----- 
+----- Canyon Amalas ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47200, "ETC_20150317_009444", "f_rokas_24", 140, 592, 1243, 45, "npc_ETC_20150317_009444")
@@ -717,14 +733,14 @@ function npc_ETC_20150317_009444()
 msg("ROKAS24_MQFLOWER")
 end
 
------ rokas_beacon ----- 
+----- Beacon ----- 
 ----- Enter -----
 addnpc(147468, "ETC_20150317_005275", "f_rokas_24", -2958, 1342, -566, -45, "npc_ETC_20150317_005275")
 function npc_ETC_20150317_005275()
 msg("ROKAS_24_BEACON_REAL")
 end
 
------ npc_village_uncle_12 ----- 
+----- Historian Viode ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS_24_BEARD_AFTER -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS24_KILL2 -----
@@ -737,7 +753,7 @@ msg("ROKAS_24_BEARD_BASIC02")
 msg("ROKAS_24_BEARD_basic1")
 end
 
------ Board1 ----- 
+----- Warning ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000566", "f_rokas_24", 821, 124, -2989, 45, "npc_QUEST_20150317_000566")
@@ -745,7 +761,7 @@ function npc_QUEST_20150317_000566()
 msg("UPPER_WARNING_F_ROKAS_24")
 end
 
------ npc_ROD_sub_master ----- 
+----- [Rodelero Submaster]Trogen ----- 
 ----- npcselectdialog.ies | ClassName: JOB_RODELERO3_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_RODELERO3_1 | JOB_RODELERO4_1 | JOB_ARCHER3_2 | JOB_ARCHER3_1 | JOB_RODELERO5_1 -----
@@ -766,7 +782,7 @@ msg("JOB_RODELERO5_1_succ")
 msg("JOB_RODELERO5_1_AG")
 end
 
------ npc_CAT_sub_master ----- 
+----- [Cataphract Submaster] Dirk Drigg ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_CATAPHRACT -----
 ----- Dialog -----
 ----- QuestIDs: JOB_CATAPHRACT3_1 | JOB_CATAPHRACT4_1 | JOB_CATAPHRACT5_1 -----
@@ -787,7 +803,7 @@ msg("JOB_CATAPHRACT5_1_prog")
 msg("JOB_CATAPHRACT5_1_succ")
 end
 
------ npc_THA_master ----- 
+----- [Thaumaturge Master] Larisa ----- 
 ----- npcselectdialog.ies | ClassName: JOB_THAUMATURGE3_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_THAUMATURGE3_1 | JOB_THAUMATURGE4_1 | JOB_THAUMATURGE5_1 | FIRETOWER_45_HQ_01 -----
@@ -810,7 +826,7 @@ msg("JOB_THAUMATURGE3_1_NPC_BASIC03")
 msg("JOB_THAUMATURGE3_1_NPC_BASIC04")
 end
 
------ npc_SCT_master ----- 
+----- [Scout Master]Recon Rimgaile ----- 
 ----- npcselectdialog.ies | ClassName: JOB_SCOUT3_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_SCOUT3_1 | JOB_SCOUT4_1 | JOB_SCOUT5_1 -----
@@ -836,7 +852,7 @@ msg("JOB_ROGUE_6_1_ITEM_MSG3")
 msg("JOB_SHINOBI_HIDDEN_SCOUT_MASTER_dlg1")
 end
 
------ npc_WUG_sub_master ----- 
+----- [Wugushi Submaster]May Patt ----- 
 ----- npcselectdialog.ies | ClassName: JOB_WUGU3_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_WUGU3_1 | JOB_WUGU4_1 | JOB_WUGU5_1 -----
@@ -859,7 +875,14 @@ msg("JOB_WUGU3_1_NPC_BASIC03")
 msg("JOB_WUGU3_1_NPC_BASIC04")
 end
 
------ treasure_box1 ----- 
+----- Canyon Guild Mission ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_019966", "f_rokas_24", -1885, 893, 2120, 225, "npc_ETC_20151224_019966")
+function npc_ETC_20151224_019966()
+msg("ROKAS24_TO_GUILDMISSION")
+end
+
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_rokas_24", -678, 724, -2528, 45, "npc_ETC_20150317_009100")
@@ -867,7 +890,14 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_village_uncle_4 ----- 
+----- Letas Stream ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009622", "f_rokas_24", 1653, 124, -1051, 45, "npc_ETC_20150323_009622")
+function npc_ETC_20150323_009622()
+msg("ROKAS24_KATYN12")
+end
+
+----- Historian Grenus ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS24_RP_2_NPC -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS24_RP_2 -----
@@ -879,7 +909,7 @@ msg("ROKAS24_RP_2_3")
 msg("ROKAS24_RP_2_NPC_basic1")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -2115, 1334, -266, 45, "npc_ETC_20150317_004961")
@@ -887,7 +917,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -1701, 1334, -198, 45, "npc_ETC_20150317_004961")
@@ -895,7 +925,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -1989, 1334, 108, 45, "npc_ETC_20150317_004961")
@@ -903,7 +933,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -2166, 1334, -31, 45, "npc_ETC_20150317_004961")
@@ -911,7 +941,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -2292, 1334, -245, 45, "npc_ETC_20150317_004961")
@@ -919,7 +949,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -3058, 1342, -548, 45, "npc_ETC_20150317_004961")
@@ -927,7 +957,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -2857, 1342, -616, 45, "npc_ETC_20150317_004961")
@@ -935,7 +965,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -954, 1125, -318, 45, "npc_ETC_20150317_004961")
@@ -943,7 +973,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -676, 1125, -573, 45, "npc_ETC_20150317_004961")
@@ -951,7 +981,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -347, 1125, -489, 45, "npc_ETC_20150317_004961")
@@ -959,7 +989,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -732, 1125, 164, 45, "npc_ETC_20150317_004961")
@@ -967,7 +997,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -890, 1125, 9, 45, "npc_ETC_20150317_004961")
@@ -975,7 +1005,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -355, 1125, 181, 45, "npc_ETC_20150317_004961")
@@ -983,7 +1013,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -493, 1125, -171, 45, "npc_ETC_20150317_004961")
@@ -991,7 +1021,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -704, 1125, -271, 45, "npc_ETC_20150317_004961")
@@ -999,7 +1029,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -170, 1125, 37, 45, "npc_ETC_20150317_004961")
@@ -1007,7 +1037,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", 126, 1125, -10, 45, "npc_ETC_20150317_004961")
@@ -1015,7 +1045,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", 55, 1125, -205, 45, "npc_ETC_20150317_004961")
@@ -1023,7 +1053,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -108, 1125, -157, 45, "npc_ETC_20150317_004961")
@@ -1031,7 +1061,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -483, 1125, 69, 45, "npc_ETC_20150317_004961")
@@ -1039,7 +1069,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -1807, 1334, 177, 45, "npc_ETC_20150317_004961")
@@ -1047,7 +1077,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -1823, 1334, 51, 45, "npc_ETC_20150317_004961")
@@ -1055,7 +1085,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -1709, 1334, 7, 45, "npc_ETC_20150317_004961")
@@ -1063,7 +1093,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -2280, 1334, 42, 45, "npc_ETC_20150317_004961")
@@ -1071,7 +1101,7 @@ function npc_ETC_20150317_004961()
 msg("ROKAS24_RP_2_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Exploration Site ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150317_004961", "f_rokas_24", -2173, 1334, -177, 45, "npc_ETC_20150317_004961")

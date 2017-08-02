@@ -1,4 +1,4 @@
------ noshadow_npc ----- 
+----- Master Altar Barrier ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_4_MQ01_NPC01 -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_4_MQ02 -----
@@ -8,7 +8,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_saule_goddess ----- 
+----- Goddess Saule ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_4_SAULE_BEFORE -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_4_MQ02 | HUEVILLAGE_58_4_MQ05 | HUEVILLAGE_58_4_MQ06 | HUEVILLAGE_58_4_MQ07 | HUEVILLAGE_58_4_MQ08 | HUEVILLAGE_58_4_MQ01 -----
@@ -52,7 +52,7 @@ msg("LIMESTONE_52_4_MQ_9_succ")
 msg("LIMESTONE_52_4_MQ_10_start")
 end
 
------ npc_saule_goddess ----- 
+----- Goddess Saule ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_4_SAULE_AFTER -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_4_MQ08 | HUEVILLAGE_58_4_MQ11 | HUEVILLAGE_58_4_MQ09 | LIMESTONE_52_4_MQ_8 | LIMESTONE_52_4_MQ_9 | PARTY_Q_060 | PARTY_Q_061 | LIMESTONE_52_4_MQ_10 -----
@@ -96,7 +96,7 @@ msg("LIMESTONE_52_4_MQ_9_succ")
 msg("LIMESTONE_52_4_MQ_10_start")
 end
 
------ Huevillage_Altar ----- 
+----- Binding Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_4_MQ03_NPC01 -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_4_MQ03 -----
@@ -106,7 +106,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Huevillage_Altar ----- 
+----- Binding Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_4_MQ04_NPC01 -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_4_MQ04 -----
@@ -116,7 +116,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Demon Barrier ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_4_MQ07_NPC01 -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_4_MQ07 -----
@@ -126,7 +126,21 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ noshadow_npc ----- 
+----- Cobalt Forest ----- 
+----- Enter -----
+addnpc(40001, "QUEST_JOBSTEP_20150323_002351", "f_huevillage_58_4", 1292, -22, -1061, -52, "npc_QUEST_JOBSTEP_20150323_002351")
+function npc_QUEST_JOBSTEP_20150323_002351()
+msg("HUEVILLAGE58_4_TO_HUEVILLAGE58_3")
+end
+
+----- Gate Route ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001182", "f_huevillage_58_4", 993, -22, 1273, 130, "npc_ETC_20150317_001182")
+function npc_ETC_20150317_001182()
+msg("HUEVILLAGE58_4_TO_THORN19")
+end
+
+----- Portal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20150317_005172", "f_huevillage_58_4", 28, 34, -189, 45, "npc_ETC_20150317_005172")
@@ -134,56 +148,70 @@ function npc_ETC_20150317_005172()
 msg("HUEVILLAGE_58_4_PORTAL_AFTER")
 end
 
------ huevill_mothtem_gray ----- 
+----- Poslinkis Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009568", "f_huevillage_58_4", 1470, -24, 359, 46, "npc_ETC_20150323_009568")
+function npc_ETC_20150323_009568()
+msg("HUEVILLAGE58_4_KATYN13")
+end
+
+----- Dina Bee Farm ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009588", "f_huevillage_58_4", 471, -8, 982, 135, "npc_ETC_20150323_009588")
+function npc_ETC_20150323_009588()
+msg("HUEVILLAGE58_4_SIAULIAI46_4")
+end
+
+----- Statue ----- 
 ----- Enter -----
 addnpc(147388, "ETC_20150317_007035", "f_huevillage_58_4", 107, 34, -203, -133, "npc_ETC_20150317_007035")
 function npc_ETC_20150317_007035()
 msg("HUEVILLAGE_58_4_MQ01_STONE_STATUE01")
 end
 
------ huevill_merge_gray ----- 
+----- Statue ----- 
 ----- Enter -----
 addnpc(147387, "ETC_20150317_007035", "f_huevillage_58_4", -53, 34, -201, 53, "npc_ETC_20150317_007035")
 function npc_ETC_20150317_007035()
 msg("HUEVILLAGE_58_4_MQ01_STONE_STATUE02")
 end
 
------ npc_bramble_root_s ----- 
+----- Thorny Bushes ----- 
 ----- Enter -----
 addnpc(153058, "ETC_20150714_013167", "f_huevillage_58_4", 893, -23, 749, 45, "npc_ETC_20150714_013167")
 function npc_ETC_20150714_013167()
 msg("PARTY_Q06_THORN02")
 end
 
------ npc_bramble_root_m ----- 
+----- Thorny Bushes ----- 
 ----- Enter -----
 addnpc(153039, "ETC_20150714_013167", "f_huevillage_58_4", 1063, -23, 721, 45, "npc_ETC_20150714_013167")
 function npc_ETC_20150714_013167()
 msg("PARTY_Q06_THORN02")
 end
 
------ npc_bramble_root_m ----- 
+----- Thorny Bushes ----- 
 ----- Enter -----
 addnpc(153039, "ETC_20150714_013167", "f_huevillage_58_4", 1013, -23, 925, 45, "npc_ETC_20150714_013167")
 function npc_ETC_20150714_013167()
 msg("PARTY_Q06_THORN02")
 end
 
------ npc_bramble_root_m ----- 
+----- Thorny Bushes ----- 
 ----- Enter -----
 addnpc(153039, "ETC_20150714_013167", "f_huevillage_58_4", 891, -23, 868, 45, "npc_ETC_20150714_013167")
 function npc_ETC_20150714_013167()
 msg("PARTY_Q06_THORN02")
 end
 
------ npc_bramble_root_s ----- 
+----- Thorny Bushes ----- 
 ----- Enter -----
 addnpc(153058, "ETC_20150714_013167", "f_huevillage_58_4", 1105, -23, 847, 45, "npc_ETC_20150714_013167")
 function npc_ETC_20150714_013167()
 msg("PARTY_Q06_THORN02")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -194,7 +222,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_HUEVILLAGE_58_4")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_huevillage_58_4", 240, -9, -735, 225, "npc_ETC_20150317_009100")

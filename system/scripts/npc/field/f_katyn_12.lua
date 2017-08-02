@@ -1,4 +1,25 @@
------ f_katyn_owl04 ----- 
+----- Karolis Springs ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009566", "f_katyn_12", 92, 249, -1598, -45, "npc_ETC_20150323_009566")
+function npc_ETC_20150323_009566()
+msg("KATYN_12_KATYN_10")
+end
+
+----- Pelke Shrine Ruins ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016509", "f_katyn_12", 2241, 248, 1141, 70, "npc_ETC_20151102_016509")
+function npc_ETC_20151102_016509()
+msg("KATYN_12_3CMLAKE_83")
+end
+
+----- Gateway of the Great King ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001187", "f_katyn_12", -1490, 504, 2366, 135, "npc_ETC_20150317_001187")
+function npc_ETC_20150317_001187()
+msg("KATYN_12_ROKAS_24")
+end
+
+----- Guide Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_12_NPC_01 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_12_MQ_01 | KATYN_12_MQ_02 | KATYN_12_MQ_03 | KATYN_12_MQ_04 | KATYN_12_MQ_10 | KATYN12_HQ1 -----
@@ -26,7 +47,7 @@ msg("KATYN_12_NPC_01_basic03")
 msg("KATYN_12_NPC_01_basic04")
 end
 
------ npc_mardas ----- 
+----- Liaison Officer Mardas ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_12_NPC_02 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_12_MQ_04 | KATYN_12_MQ_05 | KATYN_12_MQ_06 | KATYN_12_MQ_07 | KATYN_12_MQ_08 | KATYN_12_MQ_10 -----
@@ -36,7 +57,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ noshadow_npc ----- 
+----- Black Energy ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20151224_019951", "f_katyn_12", 1351, 139, -2265, 45, "npc_ETC_20151224_019951")
@@ -44,7 +65,7 @@ function npc_ETC_20151224_019951()
 msg("KATYN_12_OBJ_03_1")
 end
 
------ noshadow_npc ----- 
+----- Black Energy ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20151224_019951", "f_katyn_12", 2583, 139, -2216, 45, "npc_ETC_20151224_019951")
@@ -52,7 +73,7 @@ function npc_ETC_20151224_019951()
 msg("KATYN_12_OBJ_03_2")
 end
 
------ noshadow_npc ----- 
+----- Black Energy ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20151224_019951", "f_katyn_12", 3030, 139, -1076, 45, "npc_ETC_20151224_019951")
@@ -60,7 +81,7 @@ function npc_ETC_20151224_019951()
 msg("KATYN_12_OBJ_03_3")
 end
 
------ noshadow_npc ----- 
+----- Protection Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20151022_016460", "f_katyn_12", 1852, 250, 263, 45, "npc_ETC_20151022_016460")
@@ -68,7 +89,7 @@ function npc_ETC_20151022_016460()
 msg("KATYN_12_OBJ_04_1")
 end
 
------ noshadow_npc ----- 
+----- Protection Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20151022_016460", "f_katyn_12", 1839, 251, 122, 45, "npc_ETC_20151022_016460")
@@ -76,7 +97,7 @@ function npc_ETC_20151022_016460()
 msg("KATYN_12_OBJ_04_2")
 end
 
------ noshadow_npc ----- 
+----- Protection Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20151022_016460", "f_katyn_12", 1998, 251, 296, 45, "npc_ETC_20151022_016460")
@@ -84,7 +105,7 @@ function npc_ETC_20151022_016460()
 msg("KATYN_12_OBJ_04_3")
 end
 
------ noshadow_npc ----- 
+----- Protection Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20151022_016460", "f_katyn_12", 1962, 251, 63, 45, "npc_ETC_20151022_016460")
@@ -92,7 +113,7 @@ function npc_ETC_20151022_016460()
 msg("KATYN_12_OBJ_04_4")
 end
 
------ noshadow_npc ----- 
+----- Protection Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20151022_016460", "f_katyn_12", 2069, 251, 183, 45, "npc_ETC_20151022_016460")
@@ -100,7 +121,7 @@ function npc_ETC_20151022_016460()
 msg("KATYN_12_OBJ_04_5")
 end
 
------ soul_gathering_mchn_5 ----- 
+----- Soul Starvation ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_12_OBJ_05 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_12_MQ_09 -----
@@ -110,7 +131,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ LOST_PAPER ----- 
+----- Letter on the Ground ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_12_SQ_NPC_01 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_12_SQ_01 -----
@@ -120,7 +141,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Altar1 ----- 
+----- Letas Altar ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_12_SQ_NPC_02 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_12_SQ_02 -----
@@ -130,7 +151,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_katyn_12", 1642, 249, 1686, -45, "npc_ETC_20150317_009100")
@@ -138,7 +159,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -149,7 +170,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_KATYN_12")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_katyn_12", 2148, 249, 965, 0, "npc_ETC_20150317_009100")
@@ -157,7 +178,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ f_katyn_owl04 ----- 
+----- Frail Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN12_RP_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: KATYN12_RP_1 | KATYN12_HQ1 -----

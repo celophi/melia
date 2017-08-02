@@ -1,4 +1,11 @@
------ statue_vakarine ----- 
+----- Grynas Training Camp ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009613", "f_katyn_45_3", -79, 79, -1799, 315, "npc_ETC_20150323_009613")
+function npc_ETC_20150323_009613()
+msg("KATYN45_3_KATYN45_2")
+end
+
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -9,7 +16,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_KATYN_45_3")
 end
 
------ npc_circle_trigger ----- 
+----- Mysterious Device ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155051, "QUEST_20151224_003568", "f_katyn_45_3", -1930, 79, 601, 45, "npc_QUEST_20151224_003568")
@@ -17,7 +24,7 @@ function npc_QUEST_20151224_003568()
 msg("KATYN_45_3_NUMBER_MIXING")
 end
 
------ f_katyn_owl04 ----- 
+----- Quiet Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_3_OWL1 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_3_SQ_1 | KATYN_45_3_SQ_13 | KATYN_45_3_SQ_14 -----
@@ -37,7 +44,7 @@ msg("KATYN_45_3_SQ_1_STD2")
 msg("KATYN_45_3_SQ_13_BS2")
 end
 
------ npc_dievdirbys_m_2 ----- 
+----- Dievdirbys Asel ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_3_AJEL1 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_3_SQ_1 -----
@@ -47,7 +54,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_dievdirbys_m_2 ----- 
+----- Dievdirbys Asel ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_3_AJEL2 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_3_SQ_1 | KATYN_45_3_SQ_2 | KATYN_45_3_SQ_3 -----
@@ -57,7 +64,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ f_katyn_owl04 ----- 
+----- Exhausted Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_3_OWL2 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_3_SQ_2 -----
@@ -67,7 +74,7 @@ msg("KATYN_45_3_OWL2_BG")
 msg("KATYN_45_3_OWL2_BG2")
 end
 
------ f_katyn_owl01_fall ----- 
+----- Broken Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_3_OWL4 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: KATYN_45_3_SQ_3 | KATYN_45_3_SQ_2 -----
@@ -78,7 +85,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_dievdirbys_m_2 ----- 
+----- Dievdirbys Asel ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_3_AJEL3 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_3_SQ_4 | KATYN_45_3_SQ_5 | KATYN_45_3_SQ_6 | KATYN_45_3_SQ_8 | KATYN_45_3_SQ_9 | KATYN_45_3_SQ_10 | KATYN_45_3_SQ_11 | KATYN_45_3_SQ_3 | KATYN_45_3_SQ_15 -----
@@ -166,7 +173,7 @@ msg("KATYN_45_1_SQ_1_BG")
 msg("KATYN_45_1_SQ_1_BG2")
 end
 
------ f_katyn_owl04 ----- 
+----- Kind Owl Sculptor ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_3_OWL3 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_3_SQ_8 | KATYN_45_3_SQ_9 | KATYN_45_3_SQ_12 | KATYN_45_3_SQ_11 -----
@@ -189,7 +196,7 @@ msg("KATYN_45_3_SQ_9_BS2")
 msg("KATYN_45_3_SQ_9_BS3")
 end
 
------ siauliai_grass_3 ----- 
+----- Suspicious Greenery ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_3_GRASS -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_3_SQ_3 -----
@@ -199,7 +206,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_dievdirbys_m_2 ----- 
+----- Dievdirbys Asel ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_3_AJEL4 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_3_SQ_7 | KATYN_45_3_SQ_8 | KATYN_45_3_SQ_9 | KATYN_45_3_SQ_6 | KATYN_45_3_SQ_5 | KATYN_45_3_SQ_10 -----
@@ -209,7 +216,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ f_katyn_owl04_fall ----- 
+----- Broken Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(48024, "ETC_20150317_005211", "f_katyn_45_3", 201, 27, 274, -32, "npc_ETC_20150317_005211")
@@ -217,7 +224,7 @@ function npc_ETC_20150317_005211()
 msg("KATYN_45_3_OWL5_3")
 end
 
------ f_katyn_owl03_fall ----- 
+----- Broken Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(48023, "ETC_20150317_005211", "f_katyn_45_3", 163, 27, 342, -45, "npc_ETC_20150317_005211")
@@ -225,7 +232,7 @@ function npc_ETC_20150317_005211()
 msg("KATYN_45_3_OWL5_2")
 end
 
------ f_katyn_owl01_fall ----- 
+----- Broken Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(48021, "ETC_20150317_005211", "f_katyn_45_3", 125, 27, 429, -78, "npc_ETC_20150317_005211")
@@ -233,7 +240,7 @@ function npc_ETC_20150317_005211()
 msg("KATYN_45_3_OWL5_1")
 end
 
------ f_katyn_owl01_fall ----- 
+----- Broken Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(48021, "ETC_20150317_005211", "f_katyn_45_3", -460, 27, 145, 23, "npc_ETC_20150317_005211")
@@ -241,10 +248,10 @@ function npc_ETC_20150317_005211()
 msg("KATYN_45_3_OWL4PURI")
 end
 
------ npc_gele_sanctuary_1 ----- 
+----- Old Sanctuary ----- 
 addnpc(147413, "ETC_20161005_025501", "f_katyn_45_3", 1147, 83, 358, 45, "npc_dummy")
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_katyn_45_3", -851, 265, 1381, 90, "npc_ETC_20150317_009100")
@@ -252,7 +259,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ Board2 ----- 
+----- Warning ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40080, "QUEST_20150317_000808", "f_katyn_45_3", 851, 83, 84, 45, "npc_QUEST_20150317_000808")

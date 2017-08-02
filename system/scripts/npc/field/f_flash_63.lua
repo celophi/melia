@@ -1,4 +1,18 @@
------ npc_low_lev_officer4_m ----- 
+----- Verkti Square ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009591", "f_flash_63", -582, 122, -2292, 270, "npc_ETC_20150323_009591")
+function npc_ETC_20150323_009591()
+msg("FLASH63_FLASH59")
+end
+
+----- Inner Enceinte District ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001243", "f_flash_63", -140, 224, 1456, 155, "npc_ETC_20150317_001243")
+function npc_ETC_20150317_001243()
+msg("FLASH63_FLASH64")
+end
+
+----- [Royal Army]Rofdel ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_ROFHDEL -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ_10 | FLASH63_SQ_12 -----
@@ -15,7 +29,7 @@ msg("FLASH63_SQ_12_03")
 msg("FLASH63_ROFHDEL_basic_02")
 end
 
------ npc_low_lev_officer3_m ----- 
+----- [Knights of Kaliss]Adjutant General Hans ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_HANS -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ_01 | FLASH63_SQ_02 | FLASH63_SQ_03 | FLASH63_SQ_04 -----
@@ -42,7 +56,7 @@ msg("FLASH63_SQ_04_01_add")
 msg("FLASH63_HANS_basic_02")
 end
 
------ npc_combat_transport_section_2 ----- 
+----- [Amanda Grave Robbers]Stephonas ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_STEPONAS -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ_05 | FLASH63_SQ_06 | FLASH63_SQ_07 | FLASH63_SQ_08 -----
@@ -66,13 +80,13 @@ msg("FLASH63_SQ_06_01_01")
 msg("FLASH63_STEPONAS_basic_02")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 770, 40, -1288, 28, "npc_dummy")
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 764, 40, -1305, -2, "npc_dummy")
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SOLDIER03 -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 893, 584, 1018, 117, "npc_ETC_20150714_013143")
@@ -164,7 +178,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SOLDIER03 -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 915, 584, 1055, 45, "npc_ETC_20150714_013143")
@@ -256,7 +270,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SOLDIER03 -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 1040, 583, 1180, 31, "npc_ETC_20150714_013143")
@@ -348,7 +362,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SOLDIER03 -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 1077, 584, 1119, 121, "npc_ETC_20150714_013143")
@@ -440,7 +454,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SOLDIER03 -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 835, 584, 860, -9, "npc_ETC_20150714_013143")
@@ -532,7 +546,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SOLDIER03 -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 922, 584, 768, -40, "npc_ETC_20150714_013143")
@@ -624,7 +638,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ stontablet_down_2 ----- 
+----- Floating Petrified Records ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147464, "ETC_20150317_009327", "f_flash_63", 1670, 40, 2213, 45, "npc_ETC_20150317_009327")
@@ -632,7 +646,7 @@ function npc_ETC_20150317_009327()
 msg("FLASH63_SQ_10_NPC")
 end
 
------ stontablet_down_2 ----- 
+----- Floating Petrified Records ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147464, "ETC_20150317_009327", "f_flash_63", 1677, 40, 1884, 45, "npc_ETC_20150317_009327")
@@ -640,7 +654,7 @@ function npc_ETC_20150317_009327()
 msg("FLASH63_SQ_10_NPC")
 end
 
------ stontablet_down_2 ----- 
+----- Floating Petrified Records ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147464, "ETC_20150317_009327", "f_flash_63", 1485, 40, 2107, 45, "npc_ETC_20150317_009327")
@@ -648,7 +662,7 @@ function npc_ETC_20150317_009327()
 msg("FLASH63_SQ_10_NPC")
 end
 
------ stontablet_down_2 ----- 
+----- Floating Petrified Records ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147464, "ETC_20150317_009327", "f_flash_63", 1768, 40, 2002, 45, "npc_ETC_20150317_009327")
@@ -656,7 +670,7 @@ function npc_ETC_20150317_009327()
 msg("FLASH63_SQ_10_NPC")
 end
 
------ stontablet_down_2 ----- 
+----- Floating Petrified Records ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147464, "ETC_20150317_009327", "f_flash_63", 1460, 40, 2347, 45, "npc_ETC_20150317_009327")
@@ -664,7 +678,7 @@ function npc_ETC_20150317_009327()
 msg("FLASH63_SQ_10_NPC")
 end
 
------ stontablet_down_2 ----- 
+----- Floating Petrified Records ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147464, "ETC_20150317_009327", "f_flash_63", 1615, 40, 2341, 45, "npc_ETC_20150317_009327")
@@ -672,7 +686,7 @@ function npc_ETC_20150317_009327()
 msg("FLASH63_SQ_10_NPC")
 end
 
------ stontablet_down_2 ----- 
+----- Floating Petrified Records ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147464, "ETC_20150317_009327", "f_flash_63", 1453, 40, 2153, 45, "npc_ETC_20150317_009327")
@@ -680,7 +694,7 @@ function npc_ETC_20150317_009327()
 msg("FLASH63_SQ_10_NPC")
 end
 
------ stontablet_down_2 ----- 
+----- Floating Petrified Records ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147464, "ETC_20150317_009327", "f_flash_63", 1526, 40, 2046, 45, "npc_ETC_20150317_009327")
@@ -688,7 +702,7 @@ function npc_ETC_20150317_009327()
 msg("FLASH63_SQ_10_NPC")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SOLDIER04 -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", -318, 166, 625, -52, "npc_ETC_20150714_013143")
@@ -780,7 +794,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SOLDIER04 -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", -342, 166, 592, 93, "npc_ETC_20150714_013143")
@@ -872,7 +886,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ npc_flash_book_2 ----- 
+----- Royal Army Propoganda ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154038, "ETC_20150714_013161", "f_flash_63", 460, 172, -551, 45, "npc_ETC_20150714_013161")
@@ -880,7 +894,7 @@ function npc_ETC_20150714_013161()
 msg("FLASH63_SQ_04_NPC")
 end
 
------ npc_flash_book_2 ----- 
+----- Royal Army Propoganda ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154038, "ETC_20150714_013161", "f_flash_63", 338, 172, -523, 45, "npc_ETC_20150714_013161")
@@ -888,7 +902,7 @@ function npc_ETC_20150714_013161()
 msg("FLASH63_SQ_04_NPC")
 end
 
------ npc_flash_book_2 ----- 
+----- Royal Army Propoganda ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154038, "ETC_20150714_013161", "f_flash_63", 294, 172, -595, 45, "npc_ETC_20150714_013161")
@@ -896,7 +910,7 @@ function npc_ETC_20150714_013161()
 msg("FLASH63_SQ_04_NPC")
 end
 
------ npc_flash_book_2 ----- 
+----- Royal Army Propoganda ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154038, "ETC_20150714_013161", "f_flash_63", 300, 132, -928, 45, "npc_ETC_20150714_013161")
@@ -904,7 +918,7 @@ function npc_ETC_20150714_013161()
 msg("FLASH63_SQ_04_NPC")
 end
 
------ npc_flash_book_2 ----- 
+----- Royal Army Propoganda ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154038, "ETC_20150714_013161", "f_flash_63", 157, 141, -776, 45, "npc_ETC_20150714_013161")
@@ -912,7 +926,7 @@ function npc_ETC_20150714_013161()
 msg("FLASH63_SQ_04_NPC")
 end
 
------ npc_flash_book_2 ----- 
+----- Royal Army Propoganda ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154038, "ETC_20150714_013161", "f_flash_63", -472, 197, -731, 45, "npc_ETC_20150714_013161")
@@ -920,7 +934,7 @@ function npc_ETC_20150714_013161()
 msg("FLASH63_SQ_04_NPC")
 end
 
------ npc_flash_book_2 ----- 
+----- Royal Army Propoganda ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154038, "ETC_20150714_013161", "f_flash_63", -219, 197, -634, -56, "npc_ETC_20150714_013161")
@@ -928,7 +942,7 @@ function npc_ETC_20150714_013161()
 msg("FLASH63_SQ_04_NPC")
 end
 
------ npc_flash_book_2 ----- 
+----- Royal Army Propoganda ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154038, "ETC_20150714_013161", "f_flash_63", -296, 197, -506, 45, "npc_ETC_20150714_013161")
@@ -936,7 +950,7 @@ function npc_ETC_20150714_013161()
 msg("FLASH63_SQ_04_NPC")
 end
 
------ npc_flash_book_2 ----- 
+----- Royal Army Propoganda ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154038, "ETC_20150714_013161", "f_flash_63", 355, 132, -1053, 45, "npc_ETC_20150714_013161")
@@ -944,7 +958,7 @@ function npc_ETC_20150714_013161()
 msg("FLASH63_SQ_04_NPC")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ_03_NPC -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 321, 132, -1054, 45, "npc_ETC_20150714_013143")
@@ -1036,7 +1050,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ_03_NPC -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 303, 132, -1016, 45, "npc_ETC_20150714_013143")
@@ -1128,7 +1142,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ_03_NPC -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 340, 132, -837, 45, "npc_ETC_20150714_013143")
@@ -1220,7 +1234,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ_03_NPC -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 361, 132, -868, 45, "npc_ETC_20150714_013143")
@@ -1312,7 +1326,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ_03_NPC -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 67, 147, -712, 45, "npc_ETC_20150714_013143")
@@ -1404,7 +1418,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ_03_NPC -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 92, 147, -708, 45, "npc_ETC_20150714_013143")
@@ -1496,7 +1510,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ_03_NPC -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 248, 172, -655, 45, "npc_ETC_20150714_013143")
@@ -1588,7 +1602,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ_03_NPC -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 253, 172, -543, 45, "npc_ETC_20150714_013143")
@@ -1680,7 +1694,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ_03_NPC -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 160, 168, -1097, 45, "npc_ETC_20150714_013143")
@@ -1772,7 +1786,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ_03_NPC -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 107, 172, -1046, 45, "npc_ETC_20150714_013143")
@@ -1864,7 +1878,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ_03_NPC -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 439, 172, -490, 45, "npc_ETC_20150714_013143")
@@ -1956,7 +1970,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ_03_NPC -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_63", 484, 172, -597, 45, "npc_ETC_20150714_013143")
@@ -2048,7 +2062,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Board1 ----- 
+----- Royal Army Notice Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "ETC_20150714_013160", "f_flash_63", 267, 92, -1212, 30, "npc_ETC_20150714_013160")
@@ -2056,7 +2070,7 @@ function npc_ETC_20150714_013160()
 msg("FLASH63_SQ_12_01_NPC")
 end
 
------ Board1 ----- 
+----- Royal Army Notice Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "ETC_20150714_013160", "f_flash_63", 1068, 42, -74, -41, "npc_ETC_20150714_013160")
@@ -2064,7 +2078,7 @@ function npc_ETC_20150714_013160()
 msg("FLASH63_SQ_12_02_NPC")
 end
 
------ Board1 ----- 
+----- Royal Army Notice Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "ETC_20150714_013160", "f_flash_63", 1221, 70, 2176, 14, "npc_ETC_20150714_013160")
@@ -2072,7 +2086,7 @@ function npc_ETC_20150714_013160()
 msg("FLASH63_SQ_12_03_NPC")
 end
 
------ Board1 ----- 
+----- Royal Army Notice Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "ETC_20150714_013160", "f_flash_63", 203, 197, 962, 25, "npc_ETC_20150714_013160")
@@ -2080,7 +2094,14 @@ function npc_ETC_20150714_013160()
 msg("FLASH63_SQ_12_04_NPC")
 end
 
------ treasure_box1 ----- 
+----- Coastal Fortress ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_017432", "f_flash_63", 1775, 46, 1001, 81, "npc_ETC_20151102_017432")
+function npc_ETC_20151102_017432()
+msg("FLASH63_FLASH29_1")
+end
+
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_flash_63", 1208, 425, 1317, 0, "npc_ETC_20150317_009100")
@@ -2088,7 +2109,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- Guard Horton ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ13 -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ13 | FLASH63_SQ14 -----
@@ -2106,7 +2127,7 @@ msg("FLASH63_SQ13_basic01")
 msg("FLASH63_SQ13_basic02")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- Guard Manderson ----- 
 ----- npcselectdialog.ies | ClassName: FLASH29_1_SQ_090 -----
 ----- Dialog -----
 ----- QuestIDs: FLASH_29_1_SQ_090 | FLASH_29_1_SQ_100 -----
@@ -2124,7 +2145,7 @@ msg("FLASH29_1_SQ_090_basic01")
 msg("FLASH29_1_SQ_090_basic02")
 end
 
------ noshadow_npc ----- 
+----- Shiny Object ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ13_OBJ1 -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ13 -----
@@ -2134,7 +2155,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ noshadow_npc ----- 
+----- Shiny Object ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ13_OBJ1 -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ13 -----
@@ -2144,7 +2165,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ noshadow_npc ----- 
+----- Shiny Object ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ13_OBJ1 -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ13 -----
@@ -2154,7 +2175,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ noshadow_npc ----- 
+----- Shiny Object ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ13_OBJ1 -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ13 -----
@@ -2164,7 +2185,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ noshadow_npc ----- 
+----- Shiny Object ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ13_OBJ1 -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ13 -----
@@ -2174,7 +2195,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ noshadow_npc ----- 
+----- Shiny Object ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ13_OBJ1 -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ13 -----
@@ -2184,7 +2205,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ noshadow_npc ----- 
+----- Shiny Object ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ13_OBJ1 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: FLASH63_SQ13 -----
@@ -2195,7 +2216,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ old_wooden_box_S ----- 
+----- Abandoned Chest ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ14_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ14 -----
@@ -2205,7 +2226,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ old_wooden_box_S ----- 
+----- Abandoned Chest ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ14_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ14 -----
@@ -2215,7 +2236,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ old_wooden_box_S ----- 
+----- Abandoned Chest ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ14_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ14 -----
@@ -2225,7 +2246,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ old_wooden_box_S ----- 
+----- Abandoned Chest ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ14_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ14 -----
@@ -2235,7 +2256,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ old_wooden_box_S ----- 
+----- Abandoned Chest ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ14_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ14 -----
@@ -2245,7 +2266,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ old_wooden_box_S ----- 
+----- Abandoned Chest ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ14_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ14 -----
@@ -2255,7 +2276,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ old_wooden_box_S ----- 
+----- Abandoned Chest ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ14_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ14 -----
@@ -2265,7 +2286,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ old_wooden_box_S ----- 
+----- Abandoned Chest ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ14_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ14 -----
@@ -2275,7 +2296,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ old_wooden_box_S ----- 
+----- Abandoned Chest ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ14_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ14 -----
@@ -2285,7 +2306,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ old_wooden_box_S ----- 
+----- Abandoned Chest ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ14_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ14 -----
@@ -2295,7 +2316,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ old_wooden_box_S ----- 
+----- Abandoned Chest ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_SQ14_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: FLASH63_SQ14 -----

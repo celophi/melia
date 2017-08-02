@@ -1,4 +1,18 @@
------ npc_Erikais ----- 
+----- Feretory Hills ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011740", "f_pilgrimroad_31_3", -1874, 125, -1345, -124.38, "npc_ETC_20150714_011740")
+function npc_ETC_20150714_011740()
+msg("PILGRIM313_TO_PILGRIM311")
+end
+
+----- Sutatis Trade Route ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011741", "f_pilgrimroad_31_3", 991, 186, 1720, 140, "npc_ETC_20150714_011741")
+function npc_ETC_20150714_011741()
+msg("PILGRIM313_TO_PILGRIM312")
+end
+
+----- Pardoner Erikas ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM313_ERIKAS -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM313_SQ_01 -----
@@ -11,7 +25,7 @@ msg("PILGRIM313_SQ_01_03")
 msg("PILGRIM313_SQ_07_05")
 end
 
------ npc_williya ----- 
+----- Squire Williya ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM313_WILLIYA -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM313_SQ_01 | PILGRIM313_SQ_02 | PILGRIM313_SQ_07 | PILGRIM31_3_HQ1 -----
@@ -35,7 +49,7 @@ msg("PILGRIM313_WILLIYA_basic1")
 msg("PILGRIM313_SQ_07_03")
 end
 
------ npc_Galius ----- 
+----- Gailus Legwyn ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM313_GALIUS -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM313_SQ_02 | PILGRIM313_SQ_03 | PILGRIM313_SQ_04 | PILGRIM313_SQ_05 | PILGRIM313_SQ_06 | PILGRIM313_SQ_07 -----
@@ -59,7 +73,7 @@ msg("PILGRIM313_SQ_06_03")
 msg("PILGRIM313_SQ_07_01")
 end
 
------ npc_zachariel_head_01 ----- 
+----- Nameless Monument ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47251, "QUEST_LV_0100_20150317_001331", "f_pilgrimroad_31_3", -328, 0, -154, -46, "npc_QUEST_LV_0100_20150317_001331")
@@ -67,7 +81,7 @@ function npc_QUEST_LV_0100_20150317_001331()
 msg("PILGRIM313_SQ_02_NPC")
 end
 
------ npc_pilgrim_tomb ----- 
+----- Nameless Monument ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(152009, "QUEST_LV_0100_20150317_001331", "f_pilgrimroad_31_3", -677, 0, -673, -45, "npc_QUEST_LV_0100_20150317_001331")
@@ -75,7 +89,7 @@ function npc_QUEST_LV_0100_20150317_001331()
 msg("PILGRIM313_SQ_02_NPC")
 end
 
------ npc_pilgrim_tomb ----- 
+----- Nameless Monument ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(152009, "QUEST_LV_0100_20150317_001331", "f_pilgrimroad_31_3", -509, 0, -551, -45, "npc_QUEST_LV_0100_20150317_001331")
@@ -83,7 +97,7 @@ function npc_QUEST_LV_0100_20150317_001331()
 msg("PILGRIM313_SQ_02_NPC")
 end
 
------ npc_pilgrim_tomb ----- 
+----- Nameless Monument ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(152009, "QUEST_LV_0100_20150317_001331", "f_pilgrimroad_31_3", -250, 0, -1025, -45, "npc_QUEST_LV_0100_20150317_001331")
@@ -91,7 +105,7 @@ function npc_QUEST_LV_0100_20150317_001331()
 msg("PILGRIM313_SQ_02_NPC")
 end
 
------ npc_pilgrim_tomb ----- 
+----- Nameless Monument ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(152009, "QUEST_LV_0100_20150317_001331", "f_pilgrimroad_31_3", -569, 0, -959, -45, "npc_QUEST_LV_0100_20150317_001331")
@@ -99,7 +113,7 @@ function npc_QUEST_LV_0100_20150317_001331()
 msg("PILGRIM313_SQ_02_NPC")
 end
 
------ npc_pilgrim_tomb ----- 
+----- Nameless Monument ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(152009, "QUEST_LV_0100_20150317_001331", "f_pilgrimroad_31_3", 175, 0, -410, -45, "npc_QUEST_LV_0100_20150317_001331")
@@ -107,7 +121,7 @@ function npc_QUEST_LV_0100_20150317_001331()
 msg("PILGRIM313_SQ_02_NPC")
 end
 
------ npc_zachariel_head_01 ----- 
+----- Nameless Monument ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47251, "QUEST_LV_0100_20150317_001331", "f_pilgrimroad_31_3", -415, 0, -209, -46, "npc_QUEST_LV_0100_20150317_001331")
@@ -115,7 +129,7 @@ function npc_QUEST_LV_0100_20150317_001331()
 msg("PILGRIM313_SQ_02_NPC")
 end
 
------ npc_zachariel_head_01 ----- 
+----- Nameless Monument ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47251, "QUEST_LV_0100_20150317_001331", "f_pilgrimroad_31_3", -178, 0, -246, -46, "npc_QUEST_LV_0100_20150317_001331")
@@ -123,7 +137,7 @@ function npc_QUEST_LV_0100_20150317_001331()
 msg("PILGRIM313_SQ_02_NPC")
 end
 
------ npc_zachariel_head_01 ----- 
+----- Nameless Monument ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47251, "QUEST_LV_0100_20150317_001331", "f_pilgrimroad_31_3", 10, 0, -321, -46, "npc_QUEST_LV_0100_20150317_001331")
@@ -131,7 +145,7 @@ function npc_QUEST_LV_0100_20150317_001331()
 msg("PILGRIM313_SQ_02_NPC")
 end
 
------ npc_rokas_3 ----- 
+----- Omninous Seal Device ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM313_SQ_06_NPC -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM313_SQ_06 -----
@@ -141,7 +155,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Stone03 ----- 
+----- Stone Grave ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(10045, "ETC_20151001_015263", "f_pilgrimroad_31_3", 348, 68, 61, 1, "npc_ETC_20151001_015263")
@@ -149,7 +163,7 @@ function npc_ETC_20151001_015263()
 msg("PILGRIM313_SQ_04_NPC")
 end
 
------ Stone03 ----- 
+----- Stone Grave ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(10045, "ETC_20151001_015263", "f_pilgrimroad_31_3", 566, 67, 164, 1, "npc_ETC_20151001_015263")
@@ -157,7 +171,7 @@ function npc_ETC_20151001_015263()
 msg("PILGRIM313_SQ_04_NPC")
 end
 
------ Stone03 ----- 
+----- Stone Grave ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(10045, "ETC_20151001_015263", "f_pilgrimroad_31_3", 701, 68, 287, 1, "npc_ETC_20151001_015263")
@@ -165,7 +179,7 @@ function npc_ETC_20151001_015263()
 msg("PILGRIM313_SQ_04_NPC")
 end
 
------ Stone03 ----- 
+----- Stone Grave ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(10045, "ETC_20151001_015263", "f_pilgrimroad_31_3", 900, 68, 187, 1, "npc_ETC_20151001_015263")
@@ -173,7 +187,7 @@ function npc_ETC_20151001_015263()
 msg("PILGRIM313_SQ_04_NPC")
 end
 
------ Stone03 ----- 
+----- Stone Grave ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(10045, "ETC_20151001_015263", "f_pilgrimroad_31_3", 888, 68, -37, 1, "npc_ETC_20151001_015263")
@@ -181,7 +195,7 @@ function npc_ETC_20151001_015263()
 msg("PILGRIM313_SQ_04_NPC")
 end
 
------ Stone03 ----- 
+----- Stone Grave ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(10045, "ETC_20151001_015263", "f_pilgrimroad_31_3", 862, 68, -161, 1, "npc_ETC_20151001_015263")
@@ -189,7 +203,7 @@ function npc_ETC_20151001_015263()
 msg("PILGRIM313_SQ_04_NPC")
 end
 
------ Stone03 ----- 
+----- Stone Grave ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(10045, "ETC_20151001_015263", "f_pilgrimroad_31_3", 807, 68, -195, 1, "npc_ETC_20151001_015263")
@@ -197,7 +211,7 @@ function npc_ETC_20151001_015263()
 msg("PILGRIM313_SQ_04_NPC")
 end
 
------ Stone03 ----- 
+----- Stone Grave ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(10045, "ETC_20151001_015263", "f_pilgrimroad_31_3", 689, 68, -119, 1, "npc_ETC_20151001_015263")
@@ -205,7 +219,7 @@ function npc_ETC_20151001_015263()
 msg("PILGRIM313_SQ_04_NPC")
 end
 
------ Stone03 ----- 
+----- Stone Grave ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(10045, "ETC_20151001_015263", "f_pilgrimroad_31_3", 595, 68, -238, 1, "npc_ETC_20151001_015263")
@@ -213,7 +227,7 @@ function npc_ETC_20151001_015263()
 msg("PILGRIM313_SQ_04_NPC")
 end
 
------ Stone03 ----- 
+----- Stone Grave ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(10045, "ETC_20151001_015263", "f_pilgrimroad_31_3", 424, 68, -203, 1, "npc_ETC_20151001_015263")
@@ -221,7 +235,7 @@ function npc_ETC_20151001_015263()
 msg("PILGRIM313_SQ_04_NPC")
 end
 
------ npc_Galius_follower_1 ----- 
+----- Legwyn Family's Vassal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154054, "ETC_20151001_014729", "f_pilgrimroad_31_3", -548, 0, -674, 0, "npc_ETC_20151001_014729")
@@ -229,7 +243,7 @@ function npc_ETC_20151001_014729()
 msg("PILGRIM313_SQ_04_01")
 end
 
------ npc_Galius_follower_2 ----- 
+----- Legwyn Family's Vassal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154055, "ETC_20151001_014729", "f_pilgrimroad_31_3", -508, 0, -664, -41, "npc_ETC_20151001_014729")
@@ -237,7 +251,7 @@ function npc_ETC_20151001_014729()
 msg("PILGRIM313_SQ_04_02")
 end
 
------ npc_Galius_follower_3 ----- 
+----- Legwyn Family's Vassal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154056, "ETC_20151001_014729", "f_pilgrimroad_31_3", -449, 0, -703, -87, "npc_ETC_20151001_014729")
@@ -245,7 +259,7 @@ function npc_ETC_20151001_014729()
 msg("PILGRIM313_SQ_04_03")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -256,7 +270,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_PILGRIMROAD_31_3")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_pilgrimroad_31_3", -546, 125, -1685, 180, "npc_ETC_20150317_009100")

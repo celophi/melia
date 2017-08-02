@@ -1,4 +1,4 @@
------ npc_bocormaster ----- 
+----- [Bokor Master]Mama Marie Lavoie ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_BOCORS -----
 ----- Dialog -----
 ----- QuestIDs: JOB_BOCORS1 | JOB_FIREMAGE1 | CMINE6_TO_KATYN7_2 | JOB_BOKOR3_1 | JOB_BOCOR4_1 | JOB_BOCOR4_2 | JOB_BOCOR4_3 | JOB_BOCOR4_4 | JOB_DIEVDIRBYS4_4 | JOB_DIEVDIRBYS4_5 | JOB_BOCOR5_1 | PILGRIMROAD362_HQ2 | SIAULIAI_50_1_SQ_040 | SIAULIAI_50_1_SQ_050 | PARTY_Q_050 | PARTY_Q_051 -----
@@ -52,5 +52,12 @@ msg("PARTY_Q_050_starnpc01")
 msg("PARTY_Q_050_starnpc02")
 msg("PARTY_Q_050_prog01")
 msg("PARTY_Q_052_succ01")
+end
+
+----- Klaipeda ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001144", "c_voodoo", 43, 0, -129, -25, "npc_ETC_20150317_001144")
+function npc_ETC_20150317_001144()
+msg("WS_BOCORS_KLAPEDA")
 end
 

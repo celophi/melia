@@ -1,4 +1,4 @@
------ siauliai_grass_2 ----- 
+----- In order of Age of Nicotia ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20150317_009386", "f_pilgrimroad_46", 26, 171, -277, 45, "npc_ETC_20150317_009386")
@@ -6,7 +6,7 @@ function npc_ETC_20150317_009386()
 msg("JOB_CLERIC_GRASS")
 end
 
------ siauliai_grass_2 ----- 
+----- In order of Age of Nicotia ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20150317_009386", "f_pilgrimroad_46", 30, 171, 67, 45, "npc_ETC_20150317_009386")
@@ -14,7 +14,7 @@ function npc_ETC_20150317_009386()
 msg("JOB_CLERIC_GRASS")
 end
 
------ siauliai_grass_2 ----- 
+----- In order of Age of Nicotia ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20150317_009386", "f_pilgrimroad_46", 296, 120, 548, 45, "npc_ETC_20150317_009386")
@@ -22,7 +22,7 @@ function npc_ETC_20150317_009386()
 msg("JOB_CLERIC_GRASS")
 end
 
------ siauliai_grass_2 ----- 
+----- In order of Age of Nicotia ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20150317_009386", "f_pilgrimroad_46", 56, 120, 885, 45, "npc_ETC_20150317_009386")
@@ -30,7 +30,7 @@ function npc_ETC_20150317_009386()
 msg("JOB_CLERIC_GRASS")
 end
 
------ siauliai_grass_2 ----- 
+----- In order of Age of Nicotia ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20150317_009386", "f_pilgrimroad_46", 346, 171, -287, 45, "npc_ETC_20150317_009386")
@@ -38,7 +38,7 @@ function npc_ETC_20150317_009386()
 msg("JOB_CLERIC_GRASS")
 end
 
------ siauliai_grass_2 ----- 
+----- In order of Age of Nicotia ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20150317_009386", "f_pilgrimroad_46", 646, 171, -285, 45, "npc_ETC_20150317_009386")
@@ -46,7 +46,7 @@ function npc_ETC_20150317_009386()
 msg("JOB_CLERIC_GRASS")
 end
 
------ siauliai_grass_2 ----- 
+----- In order of Age of Nicotia ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20150317_009386", "f_pilgrimroad_46", 465, 171, 181, 45, "npc_ETC_20150317_009386")
@@ -54,7 +54,7 @@ function npc_ETC_20150317_009386()
 msg("JOB_CLERIC_GRASS")
 end
 
------ siauliai_grass_2 ----- 
+----- In order of Age of Nicotia ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20150317_009386", "f_pilgrimroad_46", 535, 120, 614, 45, "npc_ETC_20150317_009386")
@@ -62,7 +62,7 @@ function npc_ETC_20150317_009386()
 msg("JOB_CLERIC_GRASS")
 end
 
------ siauliai_grass_2 ----- 
+----- In order of Age of Nicotia ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20150317_009386", "f_pilgrimroad_46", 706, 171, 107, 45, "npc_ETC_20150317_009386")
@@ -70,7 +70,21 @@ function npc_ETC_20150317_009386()
 msg("JOB_CLERIC_GRASS")
 end
 
------ npc_pilgrim_f_1 ----- 
+----- Fedimian ----- 
+----- Enter -----
+addnpc(40001, "QUEST_LV_0100_20150317_006373", "f_pilgrimroad_46", -2073, 120, -2455, -90, "npc_QUEST_LV_0100_20150317_006373")
+function npc_QUEST_LV_0100_20150317_006373()
+msg("PILGRIM46_FEDMIAN")
+end
+
+----- Pilgrim Path ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009582", "f_pilgrimroad_46", 601, 119, 1714, 135, "npc_ETC_20150323_009582")
+function npc_ETC_20150323_009582()
+msg("PILGRIM46_PILGRIM47")
+end
+
+----- Pilgrim Liliya ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM46_NPC01 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM46_SQ_010 | PILGRIM46_SQ_020 | PILGRIM46_SQ_030 | PILGRIM46_SQ_031 -----
@@ -91,7 +105,7 @@ msg("PILGRIM46_NPC01_basic01")
 msg("PILGRIM46_NPC01_basic02")
 end
 
------ npc_pilgrim_m_1 ----- 
+----- Pilgrim Julius ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM46_NPC02 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM46_SQ_040 | PILGRIM46_SQ_050 | PILGRIM46_SQ_060 | PILGRIM46_SQ_070 -----
@@ -113,7 +127,7 @@ msg("PILGRIM46_SQ_060_PRST")
 msg("PILGRIM46_SQ_060_COMP")
 end
 
------ npc_pilgrim_m_2 ----- 
+----- Pilgrim Zenius ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM46_NPC04 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM46_SQ_089 | PILGRIM46_SQ_090 | PILGRIM46_SQ_100 -----
@@ -134,14 +148,14 @@ msg("PILGRIM46_NPC04_BASIC03")
 msg("PILGRIM46_NPC04_BASIC04")
 end
 
------ Aos_Soldier ----- 
+----- Pilgrim Matas' Corpse ----- 
 ----- Enter -----
 addnpc(10023, "ETC_20151001_015270", "f_pilgrimroad_46", 23, 120, 559, 117, "npc_ETC_20151001_015270")
 function npc_ETC_20151001_015270()
 msg("PILGRIM46_NPC05")
 end
 
------ treasure_box3 ----- 
+----- Lv3 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147393, "ETC_20150317_009082", "f_pilgrimroad_46", 310, 221, -1324, 45, "npc_ETC_20150317_009082")
@@ -149,7 +163,7 @@ function npc_ETC_20150317_009082()
 msg("TREASUREBOX_LV")
 end
 
------ npc_pilgrim_alter_01 ----- 
+----- Abandoned Altar ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_PALADIN5_TRIGGER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_PALADIN5 -----
@@ -159,7 +173,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_pilgrimroad_46", -866, 221, -660, 180, "npc_ETC_20150317_009100")

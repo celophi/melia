@@ -1,4 +1,32 @@
------ npc_friar_01 ----- 
+----- Glade Hillroad ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011734", "d_thorn_39_3", 3191, -3, 169, 126, "npc_ETC_20150714_011734")
+function npc_ETC_20150714_011734()
+msg("THORN393_TO_THORN392")
+end
+
+----- Tyla Monastery ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011736", "d_thorn_39_3", -1937, 125, 1262, 197, "npc_ETC_20150714_011736")
+function npc_ETC_20150714_011736()
+msg("THORN393_TO_ABBEY394")
+end
+
+----- Uskis Arable Land ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009586", "d_thorn_39_3", 1285, 181, -2261, -43, "npc_ETC_20150323_009586")
+function npc_ETC_20150323_009586()
+msg("THORN393_TO_SIAULIAI462")
+end
+
+----- Mokusul Chamber ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011746", "d_thorn_39_3", 75, -8, -1007, 209, "npc_ETC_20150714_011746")
+function npc_ETC_20150714_011746()
+msg("THORN393_TO_CATACOMB382")
+end
+
+----- Senior Monk Goss ----- 
 ----- npcselectdialog.ies | ClassName: THORN393_MQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_3_MQ01 | THORN39_3_MQ02 | THORN39_3_MQ03 | THORN39_3_MQ04 | THORN39_3_MQ06 -----
@@ -41,7 +69,7 @@ msg("ABBEY39_4_MQ_08_1")
 msg("ABBEY39_4_MQ_08_3")
 end
 
------ npc_paladin_follower2_2 ----- 
+----- Hunter Natasha ----- 
 ----- npcselectdialog.ies | ClassName: THORN393_MQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_3_MQ03 | THORN39_3_MQ04 | THORN39_3_MQ05 | THORN39_3_MQ01 | THORN39_3_MQ06 | THORN39_1_MQ08 -----
@@ -85,7 +113,7 @@ msg("THORN39_3_MQ_06_5")
 msg("THORN39_3_MQ_06_add")
 end
 
------ npc_friar_05 ----- 
+----- Monk Jones ----- 
 ----- npcselectdialog.ies | ClassName: THORN393_SQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_3_SQ01 | THORN39_3_SQ02 | THORN39_3_SQ05 | THORN39_3_SQ06 | THORN39_3_SQ07 -----
@@ -113,7 +141,7 @@ msg("THORN39_3_SQ07_prog01")
 msg("THORN39_3_SQ07_succ01")
 end
 
------ npc_friar_03 ----- 
+----- Monk Jeffrey ----- 
 ----- npcselectdialog.ies | ClassName: THORN393_SQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_3_SQ03 | THORN39_3_SQ04 -----
@@ -133,14 +161,14 @@ msg("THORN39_3_SQ_04_3")
 msg("THORN39_3_SQ_04_4")
 end
 
------ Velhider2_NPC ----- 
+----- Baboon ----- 
 ----- Enter -----
 addnpc(47521, "ETC_20150714_013135", "d_thorn_39_3", 1538, 80, -493, -41, "npc_ETC_20150714_013135")
 function npc_ETC_20150714_013135()
 msg("THORN393_COMPANION")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_thorn_39_3", -2506, 115, -124, 135, "npc_ETC_20150317_009100")
@@ -148,7 +176,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_mushroom ----- 
+----- Dead Liverwort ----- 
 ----- npcselectdialog.ies | ClassName: THORN39_3_SQ06_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_3_SQ06 -----
@@ -158,7 +186,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_mushroom ----- 
+----- Dead Liverwort ----- 
 ----- npcselectdialog.ies | ClassName: THORN39_3_SQ06_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_3_SQ06 -----
@@ -168,7 +196,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_mushroom ----- 
+----- Dead Liverwort ----- 
 ----- npcselectdialog.ies | ClassName: THORN39_3_SQ06_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_3_SQ06 -----
@@ -178,7 +206,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_mushroom ----- 
+----- Dead Liverwort ----- 
 ----- npcselectdialog.ies | ClassName: THORN39_3_SQ06_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_3_SQ06 -----
@@ -188,7 +216,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_mushroom ----- 
+----- Dead Liverwort ----- 
 ----- npcselectdialog.ies | ClassName: THORN39_3_SQ06_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_3_SQ06 -----
@@ -198,7 +226,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_mushroom ----- 
+----- Dead Liverwort ----- 
 ----- npcselectdialog.ies | ClassName: THORN39_3_SQ06_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_3_SQ06 -----
@@ -208,7 +236,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_mushroom ----- 
+----- Dead Liverwort ----- 
 ----- npcselectdialog.ies | ClassName: THORN39_3_SQ06_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_3_SQ06 -----
@@ -218,7 +246,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_mushroom ----- 
+----- Dead Liverwort ----- 
 ----- npcselectdialog.ies | ClassName: THORN39_3_SQ06_OBJ -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_3_SQ06 -----

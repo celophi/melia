@@ -1,4 +1,18 @@
------ npc_druid_f ----- 
+----- Aqueduct Bridge Area ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009637", "f_farm_49_1", 2378, 255, 909, 61, "npc_ETC_20150323_009637")
+function npc_ETC_20150323_009637()
+msg("FARM491_TO_FARM472")
+end
+
+----- Shaton Farm ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009617", "f_farm_49_1", -979, 0, 1136, 81, "npc_ETC_20150323_009617")
+function npc_ETC_20150323_009617()
+msg("FARM491_TO_FARM492")
+end
+
+----- Druid Ellie ----- 
 ----- npcselectdialog.ies | ClassName: FARM491_MQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_1_MQ01 | FARM49_1_MQ02 | FARM49_1_MQ03 | FARM49_1_MQ04 | FARM49_1_MQ05 -----
@@ -25,10 +39,10 @@ msg("FARM49_1_MQ_05_1")
 msg("FARM49_1_MQ_05_2")
 end
 
------ farm49_sapling ----- 
+----- The Mysterious Tree ----- 
 addnpc(155001, "QUEST_LV_0200_20150323_004547", "f_farm_49_1", 1664, 255, 892, -25, "npc_dummy")
 
------ npc_village_male_a1 ----- 
+----- Farmer Darcy ----- 
 ----- npcselectdialog.ies | ClassName: FARM491_SQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_1_SQ01 | FARM49_1_SQ02 -----
@@ -47,7 +61,7 @@ msg("FARM49_1_SQ_02_3")
 msg("FARM49_1_SQ_02_4")
 end
 
------ npc_wife_1 ----- 
+----- Farmer Miren ----- 
 ----- npcselectdialog.ies | ClassName: FARM491_SQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_1_SQ03 | FARM49_1_SQ04 -----
@@ -67,7 +81,7 @@ msg("FARM49_1_SQ_04_3")
 msg("FARM49_1_SQ_04_4")
 end
 
------ npc_beekeeper1 ----- 
+----- Investigator Monahan ----- 
 ----- npcselectdialog.ies | ClassName: FARM491_SQ_05 -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_1_SQ06 | FARM49_1_SQ05 -----
@@ -85,7 +99,7 @@ msg("FARM49_1_SQ_06_3")
 msg("FARM49_1_SQ_06_4")
 end
 
------ dirt_heal_2 ----- 
+----- Polluted Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155003, "ETC_20150323_010380", "f_farm_49_1", 1298, 112, -1293, 45, "npc_ETC_20150323_010380")
@@ -93,7 +107,7 @@ function npc_ETC_20150323_010380()
 msg("FARM491_MQ_02_1")
 end
 
------ dirt_heal_2 ----- 
+----- Polluted Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155003, "ETC_20150323_010380", "f_farm_49_1", 1640, 112, -1068, 45, "npc_ETC_20150323_010380")
@@ -101,7 +115,7 @@ function npc_ETC_20150323_010380()
 msg("FARM491_MQ_02_1")
 end
 
------ dirt_heal_2 ----- 
+----- Polluted Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155003, "ETC_20150323_010380", "f_farm_49_1", 2505, 112, -431, 45, "npc_ETC_20150323_010380")
@@ -109,7 +123,7 @@ function npc_ETC_20150323_010380()
 msg("FARM491_MQ_02_2")
 end
 
------ dirt_heal_2 ----- 
+----- Polluted Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155003, "ETC_20150323_010380", "f_farm_49_1", 2555, 112, -8, 45, "npc_ETC_20150323_010380")
@@ -117,7 +131,7 @@ function npc_ETC_20150323_010380()
 msg("FARM491_MQ_02_2")
 end
 
------ small_dandelion ----- 
+----- Young Dandelion ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155004, "ETC_20150323_010381", "f_farm_49_1", 1727, 112, -19, -45, "npc_ETC_20150323_010381")
@@ -125,7 +139,7 @@ function npc_ETC_20150323_010381()
 msg("FARM491_DANDELION")
 end
 
------ small_dandelion ----- 
+----- Young Dandelion ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155004, "ETC_20150323_010381", "f_farm_49_1", 1446, 112, 73, -45, "npc_ETC_20150323_010381")
@@ -133,7 +147,7 @@ function npc_ETC_20150323_010381()
 msg("FARM491_DANDELION")
 end
 
------ small_dandelion ----- 
+----- Young Dandelion ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155004, "ETC_20150323_010381", "f_farm_49_1", 1822, 112, -83, -45, "npc_ETC_20150323_010381")
@@ -141,7 +155,7 @@ function npc_ETC_20150323_010381()
 msg("FARM491_DANDELION")
 end
 
------ small_dandelion ----- 
+----- Young Dandelion ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155004, "ETC_20150323_010381", "f_farm_49_1", 1787, 112, -236, -45, "npc_ETC_20150323_010381")
@@ -149,7 +163,7 @@ function npc_ETC_20150323_010381()
 msg("FARM491_DANDELION")
 end
 
------ small_dandelion ----- 
+----- Young Dandelion ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155004, "ETC_20150323_010381", "f_farm_49_1", 1683, 112, -235, -45, "npc_ETC_20150323_010381")
@@ -157,7 +171,7 @@ function npc_ETC_20150323_010381()
 msg("FARM491_DANDELION")
 end
 
------ small_dandelion ----- 
+----- Young Dandelion ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155004, "ETC_20150323_010381", "f_farm_49_1", 1355, 112, -73, -45, "npc_ETC_20150323_010381")
@@ -165,7 +179,7 @@ function npc_ETC_20150323_010381()
 msg("FARM491_DANDELION")
 end
 
------ small_dandelion ----- 
+----- Young Dandelion ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155004, "ETC_20150323_010381", "f_farm_49_1", 1524, 112, -1148, -45, "npc_ETC_20150323_010381")
@@ -173,7 +187,7 @@ function npc_ETC_20150323_010381()
 msg("FARM491_DANDELION")
 end
 
------ small_dandelion ----- 
+----- Young Dandelion ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155004, "ETC_20150323_010381", "f_farm_49_1", 1378, 112, -1201, -45, "npc_ETC_20150323_010381")
@@ -181,7 +195,7 @@ function npc_ETC_20150323_010381()
 msg("FARM491_DANDELION")
 end
 
------ old_sack ----- 
+----- Old Bag ----- 
 ----- npcselectdialog.ies | ClassName: FARM491_SQ_04_BUNDLE -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_1_SQ04 -----
@@ -191,7 +205,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ old_sack ----- 
+----- Old Bag ----- 
 ----- npcselectdialog.ies | ClassName: FARM491_SQ_04_BUNDLE -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_1_SQ04 -----
@@ -201,7 +215,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ old_sack ----- 
+----- Old Bag ----- 
 ----- npcselectdialog.ies | ClassName: FARM491_SQ_04_BUNDLE -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_1_SQ04 -----
@@ -211,7 +225,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ old_sack ----- 
+----- Old Bag ----- 
 ----- npcselectdialog.ies | ClassName: FARM491_SQ_04_BUNDLE -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_1_SQ04 -----
@@ -221,7 +235,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ old_sack ----- 
+----- Old Bag ----- 
 ----- npcselectdialog.ies | ClassName: FARM491_SQ_04_BUNDLE -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_1_SQ04 -----
@@ -231,7 +245,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ old_sack ----- 
+----- Old Bag ----- 
 ----- npcselectdialog.ies | ClassName: FARM491_SQ_04_BUNDLE -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_1_SQ04 -----
@@ -241,7 +255,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ grape_vine_1 ----- 
+----- Grape Vines ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155006, "ETC_20150323_010383", "f_farm_49_1", -1290, 0, 206, 15, "npc_ETC_20150323_010383")
@@ -249,7 +263,7 @@ function npc_ETC_20150323_010383()
 msg("FARM491_SQ_06")
 end
 
------ grape_vine_1 ----- 
+----- Grape Vines ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155006, "ETC_20150323_010383", "f_farm_49_1", -2051, 0, 307, 46, "npc_ETC_20150323_010383")
@@ -257,7 +271,7 @@ function npc_ETC_20150323_010383()
 msg("FARM491_SQ_06")
 end
 
------ grape_vine_1 ----- 
+----- Grape Vines ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155006, "ETC_20150323_010383", "f_farm_49_1", -1232, 0, 98, 57, "npc_ETC_20150323_010383")
@@ -265,7 +279,7 @@ function npc_ETC_20150323_010383()
 msg("FARM491_SQ_06")
 end
 
------ grape_vine_1 ----- 
+----- Grape Vines ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155006, "ETC_20150323_010383", "f_farm_49_1", -1348, 0, 741, -64, "npc_ETC_20150323_010383")
@@ -273,7 +287,7 @@ function npc_ETC_20150323_010383()
 msg("FARM491_SQ_06")
 end
 
------ grape_vine_1 ----- 
+----- Grape Vines ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155006, "ETC_20150323_010383", "f_farm_49_1", -2189, 83, 224, 26, "npc_ETC_20150323_010383")
@@ -281,7 +295,7 @@ function npc_ETC_20150323_010383()
 msg("FARM491_SQ_06")
 end
 
------ grape_vine_1 ----- 
+----- Grape Vines ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155006, "ETC_20150323_010383", "f_farm_49_1", -1539, 0, 398, -42, "npc_ETC_20150323_010383")
@@ -289,7 +303,7 @@ function npc_ETC_20150323_010383()
 msg("FARM491_SQ_06")
 end
 
------ grape_vine_1 ----- 
+----- Grape Vines ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155006, "ETC_20150323_010383", "f_farm_49_1", -2131, 83, 567, -40, "npc_ETC_20150323_010383")
@@ -297,7 +311,7 @@ function npc_ETC_20150323_010383()
 msg("FARM491_SQ_06")
 end
 
------ grape_vine_1 ----- 
+----- Grape Vines ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155006, "ETC_20150323_010383", "f_farm_49_1", -1790, 0, 461, -38, "npc_ETC_20150323_010383")
@@ -305,7 +319,7 @@ function npc_ETC_20150323_010383()
 msg("FARM491_SQ_06")
 end
 
------ grape_vine_1 ----- 
+----- Grape Vines ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155006, "ETC_20150323_010383", "f_farm_49_1", -918, 0, 585, -72, "npc_ETC_20150323_010383")
@@ -313,7 +327,7 @@ function npc_ETC_20150323_010383()
 msg("FARM491_SQ_06")
 end
 
------ grape_vine_1 ----- 
+----- Grape Vines ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155006, "ETC_20150323_010383", "f_farm_49_1", -1948, 0, 424, -39, "npc_ETC_20150323_010383")
@@ -321,7 +335,7 @@ function npc_ETC_20150323_010383()
 msg("FARM491_SQ_06")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -332,7 +346,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_FARM_49_1")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_farm_49_1", -1043, 83, -1664, -180, "npc_ETC_20150317_009100")
@@ -340,7 +354,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_village_uncle_7 ----- 
+----- Edward ----- 
 ----- npcselectdialog.ies | ClassName: FARM491_SQ_07 -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_1_SQ07 | FARM49_1_SQ08 -----

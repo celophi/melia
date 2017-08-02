@@ -1,4 +1,33 @@
------ Grill ----- 
+----- Zachariel Crossroads ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009578", "d_zachariel_32", 30, 261, -2423, -45, "npc_ETC_20150323_009578")
+function npc_ETC_20150323_009578()
+msg("GM_QUEST_MODIFY_PC_SEL")
+msg("GM_NPC_HIDE_UNHIDE")
+end
+
+----- Royal Mausoleum 2F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001198", "d_zachariel_32", 32, 309, 2863, 134, "npc_ETC_20150317_001198")
+function npc_ETC_20150317_001198()
+msg("ZACHARIEL32_ZACHARIEL33")
+end
+
+----- Ramstis Ridge ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009574", "d_zachariel_32", -1418, 241, -2199, 217, "npc_ETC_20150323_009574")
+function npc_ETC_20150323_009574()
+msg("ZACHARIEL32_ROKAS25")
+end
+
+----- Tiltas Valley ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009576", "d_zachariel_32", 1080, 243, -2192, -131, "npc_ETC_20150323_009576")
+function npc_ETC_20150323_009576()
+msg("ZACHARIEL32_ROKAS28")
+end
+
+----- Power Source Consecration Container ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40064, "ETC_20150317_009298", "d_zachariel_32", 57, 336, 332, 45, "npc_ETC_20150317_009298")
@@ -6,7 +35,7 @@ function npc_ETC_20150317_009298()
 msg("ZACHA32_MQ_04_D")
 end
 
------ Grill ----- 
+----- Power Source Consecration Container ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40064, "ETC_20150317_009298", "d_zachariel_32", 43, 336, -70, 45, "npc_ETC_20150317_009298")
@@ -14,7 +43,7 @@ function npc_ETC_20150317_009298()
 msg("ZACHA32_MQ_04_D")
 end
 
------ zachariel_guardian_2 ----- 
+----- Royal Mausoleum Foundation Stone ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA1F_MQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA1F_MQ_01 -----
@@ -23,7 +52,7 @@ function npc_QUEST_LV_0100_20150317_000588()
 msg("ZACHA1F_MQ_01_basic01")
 end
 
------ Moving_trap_33 ----- 
+----- Sleeping Boowok ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(57565, "ETC_20150317_009297", "d_zachariel_32", -11, 253, -1206, 45, "npc_ETC_20150317_009297")
@@ -31,7 +60,7 @@ function npc_ETC_20150317_009297()
 msg("ZACHA1F_MQ_01_MON")
 end
 
------ Moving_trap_33 ----- 
+----- Sleeping Boowok ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(57565, "ETC_20150317_009297", "d_zachariel_32", -106, 253, -1012, 45, "npc_ETC_20150317_009297")
@@ -39,7 +68,7 @@ function npc_ETC_20150317_009297()
 msg("ZACHA1F_MQ_01_MON")
 end
 
------ Moving_trap_33 ----- 
+----- Sleeping Boowok ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(57565, "ETC_20150317_009297", "d_zachariel_32", 46, 292, -552, 45, "npc_ETC_20150317_009297")
@@ -47,7 +76,7 @@ function npc_ETC_20150317_009297()
 msg("ZACHA1F_MQ_01_MON")
 end
 
------ Moving_trap_33 ----- 
+----- Sleeping Boowok ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(57565, "ETC_20150317_009297", "d_zachariel_32", 88, 210, -1006, 45, "npc_ETC_20150317_009297")
@@ -55,7 +84,7 @@ function npc_ETC_20150317_009297()
 msg("ZACHA1F_MQ_01_MON")
 end
 
------ Moving_trap_33 ----- 
+----- Sleeping Boowok ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(57565, "ETC_20150317_009297", "d_zachariel_32", -2, 253, -690, 45, "npc_ETC_20150317_009297")
@@ -63,7 +92,7 @@ function npc_ETC_20150317_009297()
 msg("ZACHA1F_MQ_01_MON")
 end
 
------ Moving_trap_33 ----- 
+----- Sleeping Boowok ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(57565, "ETC_20150317_009297", "d_zachariel_32", 168, 252, -1062, 45, "npc_ETC_20150317_009297")
@@ -71,7 +100,7 @@ function npc_ETC_20150317_009297()
 msg("ZACHA1F_MQ_01_MON")
 end
 
------ Moving_trap_33 ----- 
+----- Sleeping Boowok ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(57565, "ETC_20150317_009297", "d_zachariel_32", 28, 290, -1397, 45, "npc_ETC_20150317_009297")
@@ -79,7 +108,7 @@ function npc_ETC_20150317_009297()
 msg("ZACHA1F_MQ_01_MON")
 end
 
------ Moving_trap_33 ----- 
+----- Sleeping Boowok ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(57565, "ETC_20150317_009297", "d_zachariel_32", 333, 252, -978, 45, "npc_ETC_20150317_009297")
@@ -87,7 +116,7 @@ function npc_ETC_20150317_009297()
 msg("ZACHA1F_MQ_01_MON")
 end
 
------ npc_zachariel_head_02 ----- 
+----- Royal Mausoleum Cube Manual ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA1F_MQ_02 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA1F_MQ_02 -----
@@ -98,7 +127,7 @@ msg("ZACHA1F_MQ_02_02")
 msg("ZACHA1F_MQ_02_basic01")
 end
 
------ npc_zachariel_cube_09 ----- 
+----- Royal Mausoleum Guard Cube ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47262, "ETC_20150317_009301", "d_zachariel_32", -872, 253, -844, 45, "npc_ETC_20150317_009301")
@@ -106,7 +135,7 @@ function npc_ETC_20150317_009301()
 msg("ZACHA1F_MQ_01_MON")
 end
 
------ npc_zachariel_cube_09 ----- 
+----- Royal Mausoleum Guard Cube ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47262, "ETC_20150317_009301", "d_zachariel_32", -1146, 253, -840, 133, "npc_ETC_20150317_009301")
@@ -114,7 +143,7 @@ function npc_ETC_20150317_009301()
 msg("ZACHA1F_MQ_01_MON")
 end
 
------ npc_zachariel_cube_09 ----- 
+----- Royal Mausoleum Guard Cube ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47262, "ETC_20150317_009301", "d_zachariel_32", -1154, 253, -1105, 133, "npc_ETC_20150317_009301")
@@ -122,7 +151,7 @@ function npc_ETC_20150317_009301()
 msg("ZACHA1F_MQ_01_MON")
 end
 
------ npc_zachariel_cube_09 ----- 
+----- Royal Mausoleum Guard Cube ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47262, "ETC_20150317_009301", "d_zachariel_32", -870, 253, -1114, 132, "npc_ETC_20150317_009301")
@@ -130,7 +159,7 @@ function npc_ETC_20150317_009301()
 msg("ZACHA1F_MQ_01_MON")
 end
 
------ holyark_yellow ----- 
+----- Hidden Chest ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA32_DEVICE_1_2 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS28_QM2 -----
@@ -140,7 +169,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_2 ----- 
+----- Hidden Sanctum Seal ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA32_DEVICE02 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS25_TO_26_ZACHA01 -----
@@ -150,7 +179,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zachariel_head_02 ----- 
+----- Defense System Manual ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA1F_MQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA1F_MQ_03 -----
@@ -160,7 +189,7 @@ msg("ZACHA1F_MQ_03_01")
 msg("ZACHA1F_MQ_03_basic01")
 end
 
------ npc_zachariel_head_02 ----- 
+----- Gate Guardian's Role ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA1F_MQ_04 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA1F_MQ_04 -----
@@ -171,7 +200,7 @@ msg("ZACHA1F_MQ_05_select01")
 msg("ZACHA1F_MQ_05_prog_startnpc")
 end
 
------ npc_zacharial_desk ----- 
+----- Royal Mausoleum Blueprint ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA1F_SQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA1F_SQ_01 -----
@@ -189,7 +218,7 @@ msg("ZACHA4F_MQ_basic01")
 msg("HT_ZACHA_DESK01_BASIC01")
 end
 
------ npc_zachariel_lantern ----- 
+----- Royal Mausoleum Stone Lantern ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA1F_SQ_02 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA1F_SQ_01 | ZACHA1F_SQ_02 -----
@@ -199,7 +228,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zacharial_desk ----- 
+----- Royal Mausoleum Regulatory Magic Manual ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA1F_SQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA1F_SQ_03 | ZACHA1F_SQ_04 | ZACHA1F_SQ_05 -----
@@ -212,7 +241,7 @@ msg("ZACHA1F_SQ_05_ST")
 msg("ZACHA1F_SQ_04_ST")
 end
 
------ npc_zachariel_cube_05 ----- 
+----- Royal Mausoleum Magic Regulator ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA1F_SQ_04 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA1F_SQ_04 -----
@@ -222,7 +251,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zachariel_cube_05 ----- 
+----- Royal Mausoleum Magic Regulator ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA1F_SQ_05 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA1F_SQ_05 -----
@@ -232,7 +261,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -243,7 +272,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_ZACHARIEL_32")
 end
 
------ npc_zachariel_head_01 ----- 
+----- Royal Mausoleum Tombstone ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA1F_MQ_05_NPC -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA1F_MQ_05 -----
@@ -254,21 +283,21 @@ msg("ZACHA1F_MQ_05_select01")
 msg("ZACHA1F_MQ_05_prog_startnpc")
 end
 
------ npc_zachariel_lantern ----- 
+----- Malfunctioning Guardian Device ----- 
 ----- Enter -----
 addnpc(47253, "ETC_20150317_005410", "d_zachariel_32", -1054, 334, 383, -45, "npc_ETC_20150317_005410")
 function npc_ETC_20150317_005410()
 msg("ZACHA1F_MQ_03_LANTERN")
 end
 
------ npc_zachariel_lantern ----- 
+----- Malfunctioning Guardian Device ----- 
 ----- Enter -----
 addnpc(47253, "ETC_20150317_005410", "d_zachariel_32", -943, 334, 383, -45, "npc_ETC_20150317_005410")
 function npc_ETC_20150317_005410()
 msg("ZACHA1F_MQ_03_LANTERN")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_zachariel_32", 862, 336, 414, 45, "npc_ETC_20150317_009100")
@@ -276,7 +305,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ zachariel_guardian ----- 
+----- Royal Mausoleum Guardian ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA32_RP_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA32_RP_1 -----

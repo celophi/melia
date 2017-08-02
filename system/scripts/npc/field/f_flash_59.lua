@@ -1,4 +1,25 @@
------ Silvertransporter_m_Quest ----- 
+----- Apsimesti Crossroads ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009585", "f_flash_59", -452, 109, 881, 175.76, "npc_ETC_20150323_009585")
+function npc_ETC_20150323_009585()
+msg("FLASH59_PILGRIM52")
+end
+
+----- Roxona Market ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009593", "f_flash_59", 157, 134, 765, 136.25, "npc_ETC_20150323_009593")
+function npc_ETC_20150323_009593()
+msg("FLASH59_FLASH60")
+end
+
+----- Ruklys Street ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001241", "f_flash_59", 1373, 134, 1084, 139, "npc_ETC_20150317_001241")
+function npc_ETC_20150317_001241()
+msg("FLASH59_FLASH61")
+end
+
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH59_BENJAMINAS -----
 ----- Dialog -----
 ----- QuestIDs: FLASH59_SQ_10 | FLASH59_SQ_11 | FLASH59_SQ_12 | FLASH59_SQ_13 -----
@@ -91,7 +112,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ npc_soldier_female_03 ----- 
+----- [Royal Army] Retia ----- 
 ----- npcselectdialog.ies | ClassName: FLASH59_RETIA -----
 ----- Dialog -----
 ----- QuestIDs: FLASH59_SQ_01 | FLASH59_SQ_02 | FLASH59_SQ_03 | FLASH59_SQ_04 | FLASH59_SQ_05 | FLASH59_SQ_13 | FLASH_29_1_SQ_030 | FLASH_29_1_SQ_040 | FLASH_29_1_SQ_045 | TABLELAND_11_1_SQ_12 -----
@@ -133,7 +154,7 @@ msg("f_flash_59_track_dlg_3")
 msg("f_flash_59_track_dlg_4")
 end
 
------ npc_village_uncle_1 ----- 
+----- [Amanda Grave Robbers]Hubertas ----- 
 ----- npcselectdialog.ies | ClassName: FLASH59_HUBERTAS -----
 ----- Dialog -----
 ----- QuestIDs: FLASH59_SQ_06 | FLASH59_SQ_07 | FLASH59_SQ_08 | FLASH59_SQ_10 -----
@@ -156,7 +177,7 @@ msg("FLASH59_SQ_10_01_add")
 msg("FLASH59_HUBERTAS_basic_02")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH59_SOLDIER -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_59", -358, 109, 603, 102, "npc_ETC_20150714_013143")
@@ -248,7 +269,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH59_SOLDIER -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_59", -321, 109, 608, 165, "npc_ETC_20150714_013143")
@@ -340,7 +361,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH59_SOLDIER -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_59", -352, 109, 645, -39, "npc_ETC_20150714_013143")
@@ -432,7 +453,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH59_SOLDIER -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_59", -388, 109, 763, 150, "npc_ETC_20150714_013143")
@@ -524,7 +545,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH59_SOLDIER -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_59", -324, 109, 819, 207, "npc_ETC_20150714_013143")
@@ -616,7 +637,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH59_SOLDIER -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_59", -279, 109, 822, -6, "npc_ETC_20150714_013143")
@@ -708,7 +729,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH59_SOLDIER -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_59", -175, 109, 886, -84, "npc_ETC_20150714_013143")
@@ -800,7 +821,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH59_SOLDIER -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_59", -112, 109, 810, 43, "npc_ETC_20150714_013143")
@@ -892,7 +913,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH59_SOLDIER -----
 ----- Dialog -----
 addnpc(10033, "ETC_20150714_013143", "f_flash_59", -194, 109, 864, 83, "npc_ETC_20150714_013143")
@@ -984,7 +1005,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ flash_detector ----- 
+----- Petrification Detector ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154025, "ETC_20150317_005106", "f_flash_59", -112, 135, 494, 45, "npc_ETC_20150317_005106")
@@ -992,7 +1013,7 @@ function npc_ETC_20150317_005106()
 msg("FLASH59_SQ_03_1")
 end
 
------ flash_detector ----- 
+----- Petrification Detector ----- 
 ----- npcselectdialog.ies | ClassName: FLASH59_SQ_03_2 -----
 ----- Dialog -----
 ----- QuestIDs: FLASH59_SQ_05 -----
@@ -1002,7 +1023,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ flash_detector ----- 
+----- Petrification Detector ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154025, "ETC_20150317_005106", "f_flash_59", -39, 109, -221, 45, "npc_ETC_20150317_005106")
@@ -1010,7 +1031,7 @@ function npc_ETC_20150317_005106()
 msg("FLASH59_SQ_03_5")
 end
 
------ flash_detector ----- 
+----- Petrification Detector ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154025, "ETC_20150317_005106", "f_flash_59", -1649, 109, -265, 45, "npc_ETC_20150317_005106")
@@ -1018,7 +1039,7 @@ function npc_ETC_20150317_005106()
 msg("FLASH59_SQ_03_3")
 end
 
------ flash_detector ----- 
+----- Petrification Detector ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154025, "ETC_20150317_005106", "f_flash_59", -712, 109, -257, 45, "npc_ETC_20150317_005106")
@@ -1026,7 +1047,7 @@ function npc_ETC_20150317_005106()
 msg("FLASH59_SQ_03_4")
 end
 
------ npc_flash_box_1 ----- 
+----- Petrified Stolen Goods ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154035, "ETC_20150317_009315", "f_flash_59", -1627, 109, -352, 135, "npc_ETC_20150317_009315")
@@ -1034,7 +1055,7 @@ function npc_ETC_20150317_009315()
 msg("FLASH59_SQ_08_NPC")
 end
 
------ npc_flash_box_1 ----- 
+----- Petrified Stolen Goods ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154035, "ETC_20150317_009315", "f_flash_59", -1564, 109, -307, 135, "npc_ETC_20150317_009315")
@@ -1042,7 +1063,7 @@ function npc_ETC_20150317_009315()
 msg("FLASH59_SQ_08_NPC")
 end
 
------ npc_flash_box_1 ----- 
+----- Petrified Stolen Goods ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154035, "ETC_20150317_009315", "f_flash_59", -1435, 109, -272, 135, "npc_ETC_20150317_009315")
@@ -1050,7 +1071,7 @@ function npc_ETC_20150317_009315()
 msg("FLASH59_SQ_08_NPC")
 end
 
------ npc_flash_box_1 ----- 
+----- Petrified Stolen Goods ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154035, "ETC_20150317_009315", "f_flash_59", -1415, 109, -407, 135, "npc_ETC_20150317_009315")
@@ -1058,7 +1079,7 @@ function npc_ETC_20150317_009315()
 msg("FLASH59_SQ_08_NPC")
 end
 
------ npc_flash_box_1 ----- 
+----- Petrified Stolen Goods ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154035, "ETC_20150317_009315", "f_flash_59", -1236, 109, -424, 135, "npc_ETC_20150317_009315")
@@ -1066,7 +1087,7 @@ function npc_ETC_20150317_009315()
 msg("FLASH59_SQ_08_NPC")
 end
 
------ npc_flash_box_1 ----- 
+----- Petrified Stolen Goods ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154035, "ETC_20150317_009315", "f_flash_59", -1118, 109, -475, 135, "npc_ETC_20150317_009315")
@@ -1074,7 +1095,7 @@ function npc_ETC_20150317_009315()
 msg("FLASH59_SQ_08_NPC")
 end
 
------ npc_flash_box_1 ----- 
+----- Petrified Stolen Goods ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154035, "ETC_20150317_009315", "f_flash_59", -1217, 109, -263, 135, "npc_ETC_20150317_009315")
@@ -1082,7 +1103,7 @@ function npc_ETC_20150317_009315()
 msg("FLASH59_SQ_08_NPC")
 end
 
------ npc_flash_box_1 ----- 
+----- Petrified Stolen Goods ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154035, "ETC_20150317_009315", "f_flash_59", -1074, 109, -238, 135, "npc_ETC_20150317_009315")
@@ -1090,7 +1111,7 @@ function npc_ETC_20150317_009315()
 msg("FLASH59_SQ_08_NPC")
 end
 
------ npc_flash_box_1 ----- 
+----- Petrified Stolen Goods ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154035, "ETC_20150317_009315", "f_flash_59", -948, 109, -272, 135, "npc_ETC_20150317_009315")
@@ -1098,34 +1119,41 @@ function npc_ETC_20150317_009315()
 msg("FLASH59_SQ_08_NPC")
 end
 
------ blank_npc ----- 
+----- Faint Petrifying Frost ----- 
 addnpc(147372, "ETC_20150317_009316", "f_flash_59", 30, 135, 100, 45, "npc_dummy")
 
------ blank_npc ----- 
+----- Faint Petrifying Frost ----- 
 addnpc(147372, "ETC_20150317_009316", "f_flash_59", -96, 135, 300, 45, "npc_dummy")
 
------ blank_npc ----- 
+----- Faint Petrifying Frost ----- 
 addnpc(147372, "ETC_20150317_009316", "f_flash_59", 121, 135, 309, 45, "npc_dummy")
 
------ blank_npc ----- 
+----- Faint Petrifying Frost ----- 
 addnpc(147372, "ETC_20150317_009316", "f_flash_59", 330, 135, 259, 45, "npc_dummy")
 
------ blank_npc ----- 
+----- Faint Petrifying Frost ----- 
 addnpc(147372, "ETC_20150317_009316", "f_flash_59", 306, 135, 156, 45, "npc_dummy")
 
------ blank_npc ----- 
+----- Faint Petrifying Frost ----- 
 addnpc(147372, "ETC_20150317_009316", "f_flash_59", 202, 135, 100, 45, "npc_dummy")
 
------ blank_npc ----- 
+----- Faint Petrifying Frost ----- 
 addnpc(147372, "ETC_20150317_009316", "f_flash_59", 319, 135, 458, 45, "npc_dummy")
 
------ blank_npc ----- 
+----- Faint Petrifying Frost ----- 
 addnpc(147372, "ETC_20150317_009316", "f_flash_59", 161, 135, 550, 45, "npc_dummy")
 
------ blank_npc ----- 
+----- Faint Petrifying Frost ----- 
 addnpc(147372, "ETC_20150317_009316", "f_flash_59", 6, 135, 494, 45, "npc_dummy")
 
------ treasure_box1 ----- 
+----- Downtown ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001242", "f_flash_59", 1426, 62, 635, 45, "npc_ETC_20150317_001242")
+function npc_ETC_20150317_001242()
+msg("FLASH59_FLASH63")
+end
+
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_flash_59", 818, 62, 798, 45, "npc_ETC_20150317_009100")

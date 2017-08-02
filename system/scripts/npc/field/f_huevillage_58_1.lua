@@ -1,4 +1,4 @@
------ huevill_chief ----- 
+----- Old Man of Andale Village ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_1_MQ01_NPC -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_1_MQ01 | HUEVILLAGE_58_1_MQ03 | HUEVILLAGE_58_1_MQ02 -----
@@ -14,7 +14,7 @@ msg("HUEVILLAGE_58_1_MQ03_select")
 msg("HUEVILLAGE_58_1_MQ03_agree")
 end
 
------ blank_npc ----- 
+----- Holy Pond ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_1_MQ02_NPC -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_1_MQ02 | HUEVILLAGE_58_1_SQ03 -----
@@ -24,7 +24,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_huevill_male_1 ----- 
+----- Injured Villager ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_1_MQ03_NPC -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_1_MQ03 | HUEVILLAGE_58_1_MQ04 -----
@@ -39,7 +39,7 @@ msg("HUEVILLAGE_58_1_MQ04_PG")
 msg("HUEVILLAGE_58_1_MQ03_NPC_basic")
 end
 
------ magicsquare_1_mini ----- 
+----- Nugria Altar ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_1_PORTAL -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_1_MQ04 | HUEVILLAGE_58_1_SQ01 -----
@@ -49,7 +49,21 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ statue_vakarine ----- 
+----- Nefritas Cliff ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009560", "f_huevillage_58_1", 1562, 371, -1188, 33.69, "npc_ETC_20150323_009560")
+function npc_ETC_20150323_009560()
+msg("HUEVILLAGE58_1_TO_GELE573")
+end
+
+----- Vieta Gorge ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009563", "f_huevillage_58_1", -720, 236, -403, -96, "npc_ETC_20150323_009563")
+function npc_ETC_20150323_009563()
+msg("HUEVILLAGE58_1_TO_HUEVILLAGE58_2")
+end
+
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -60,7 +74,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_HUEVILLAGE_58_1")
 end
 
------ blank_npc ----- 
+----- Source of Corruption ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_1_SQ02_NPC -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_1_SQ02 -----
@@ -70,7 +84,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Source of Corruption ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_1_SQ02_NPC -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_1_SQ02 -----
@@ -80,7 +94,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Source of Corruption ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_1_SQ02_NPC -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_1_SQ02 -----
@@ -90,7 +104,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Source of Corruption ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_1_SQ02_NPC -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_1_SQ02 -----
@@ -100,7 +114,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Source of Corruption ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_1_SQ02_NPC -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_1_SQ02 -----
@@ -110,7 +124,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Source of Corruption ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_1_SQ02_NPC -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_1_SQ02 -----
@@ -120,7 +134,14 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Board1 ----- 
+----- Gytis Settlement Area ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009621", "f_huevillage_58_1", 222, 371, -1974, -67, "npc_ETC_20150323_009621")
+function npc_ETC_20150323_009621()
+msg("HUEVILLAGE_58_1_SIAUL50_1")
+end
+
+----- To the other side ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "ETC_20150406_010846", "f_huevillage_58_1", 648, 371, -189, -45, "npc_ETC_20150406_010846")
@@ -128,7 +149,7 @@ function npc_ETC_20150406_010846()
 msg("HUEVILLAGE_58_1_CABLETEMP_01")
 end
 
------ Board1 ----- 
+----- To the other side ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "ETC_20150406_010846", "f_huevillage_58_1", 633, 99, 597, -45, "npc_ETC_20150406_010846")
@@ -136,7 +157,7 @@ function npc_ETC_20150406_010846()
 msg("HUEVILLAGE_58_1_CABLETEMP_02")
 end
 
------ npc_rich_m ----- 
+----- Klaipeda Mayor's Spirit ----- 
 ----- npcselectdialog.ies | ClassName: KLAIPEDA_MAYER -----
 ----- Dialog -----
 ----- QuestIDs: PARTY_Q_041 | PARTY_Q_042 -----
@@ -146,7 +167,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_huevillage_58_1", -316, 371, -1375, 135, "npc_ETC_20150317_009100")

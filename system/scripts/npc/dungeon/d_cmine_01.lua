@@ -1,4 +1,18 @@
------ npc_mining_alchemist ----- 
+----- Miners' Village ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001153", "d_cmine_01", -1294, 318, -1710, -121, "npc_ETC_20150317_001153")
+function npc_ETC_20150317_001153()
+msg("WS_ACT4_1_ACT3")
+end
+
+----- Crystal Mine 2F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001156", "d_cmine_01", -1412, 154, 679, 196, "npc_ETC_20150317_001156")
+function npc_ETC_20150317_001156()
+msg("WS_ACT4_1_ACT4_2")
+end
+
+----- [Alchemist Master]Vaidotas ----- 
 ----- npcselectdialog.ies | ClassName: MINE_1_ALCHEMIST -----
 ----- Dialog -----
 ----- QuestIDs: MINE_1_ALCHEMIST | SOUT_Q_16 -----
@@ -50,7 +64,7 @@ msg("PARTY_Q_011_startnpc_prog01")
 msg("PARTY_Q_011_succ01")
 end
 
------ mine_purify_01 ----- 
+----- Entrance Purifier ----- 
 ----- npcselectdialog.ies | ClassName: MINE_1_PURIFY_1 -----
 ----- Dialog -----
 ----- QuestIDs: MINE_1_CRYSTAL_2 -----
@@ -60,7 +74,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ mine_purify_01 ----- 
+----- Passage Purifier ----- 
 ----- npcselectdialog.ies | ClassName: MINE_1_PURIFY_7 -----
 ----- Dialog -----
 ----- QuestIDs: MINE_1_CRYSTAL_13 | MINE_1_CRYSTAL_19 -----
@@ -70,7 +84,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ mine_purify_01 ----- 
+----- Central Purifier ----- 
 ----- npcselectdialog.ies | ClassName: MINE_1_PURIFY_5 -----
 ----- Dialog -----
 ----- QuestIDs: MINE_1_CRYSTAL_9 | MINE_1_CRYSTAL_8 -----
@@ -80,7 +94,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -91,7 +105,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_CMINE_01")
 end
 
------ TreasureBox1 ----- 
+----- Lv2 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40030, "ETC_20150317_009071", "d_cmine_01", 1316, 4, 730, 315, "npc_ETC_20150317_009071")
@@ -99,7 +113,7 @@ function npc_ETC_20150317_009071()
 msg("TREASUREBOX_LV")
 end
 
------ mine_purify_01_parts1 ----- 
+----- Entrance Purifier Parts ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151015, "ETC_20150317_009252", "d_cmine_01", -1036, 182, -1461, 45, "npc_ETC_20150317_009252")
@@ -107,7 +121,7 @@ function npc_ETC_20150317_009252()
 msg("MINE_1_CRYSTAL_4")
 end
 
------ mine_purify_01_parts1 ----- 
+----- Entrance Purifier Parts ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151015, "ETC_20150317_009252", "d_cmine_01", -743, 181, -86, 45, "npc_ETC_20150317_009252")
@@ -115,7 +129,7 @@ function npc_ETC_20150317_009252()
 msg("MINE_1_CRYSTAL_4")
 end
 
------ mine_purify_01 ----- 
+----- Spare Purifier ----- 
 ----- npcselectdialog.ies | ClassName: MINE_1_CRYSTAL_9_DEVICE -----
 ----- Dialog -----
 addnpc(151006, "ETC_20150317_009253", "d_cmine_01", 1418, 33, -914, -45, "npc_ETC_20150317_009253")
@@ -124,7 +138,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_cmine_01", 645, 18, -28, -45, "npc_ETC_20150317_009100")
@@ -132,7 +146,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_cmine_01", 331, 111, 495, -45, "npc_ETC_20150317_009100")
@@ -140,7 +154,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_cmine_01", -1543, 155, 494, 45, "npc_ETC_20150317_009100")

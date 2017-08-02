@@ -1,4 +1,18 @@
------ npc_pilgrim_m_1 ----- 
+----- Namu Temple Ruins ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011738", "f_remains_37_3", -545, 4, -1604, -44, "npc_ETC_20150714_011738")
+function npc_ETC_20150714_011738()
+msg("REMAINS37_3_REMAINS37_2")
+end
+
+----- Underground Grave of Ritinis ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011731", "f_remains_37_3", -3659, 52, 1659, 223, "npc_ETC_20150714_011731")
+function npc_ETC_20150714_011731()
+msg("REMAINS37_3_CATABOMB_04")
+end
+
+----- Archeologist Justas ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS37_3_JUSTAS -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS37_3_SQ_010 -----
@@ -38,7 +52,7 @@ msg("REMAINS37_3_SQ_100_COMP")
 msg("REMAINS37_3_SQ_100_COMP_2")
 end
 
------ npc_historian_odel_2 ----- 
+----- Archeologist Alruida ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS37_3_ALVYDA -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS37_3_SQ_070 | REMAINS37_3_SQ_080 | REMAINS37_3_SQ_090 | REMAINS37_3_SQ_091 | REMAINS37_3_SQ_100 -----
@@ -50,7 +64,7 @@ msg("REMAINS37_3_ALVYDA_BASIC04")
 msg("REMAINS37_3_ALVYDA_BASIC01")
 end
 
------ npc_pilgrim_m_1 ----- 
+----- Archeologist Justas ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS37_3_JUSTAS_AFTER -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS37_3_SQ_010 | REMAINS37_3_SQ_020 | REMAINS37_3_SQ_040 | REMAINS37_3_SQ_041 | REMAINS37_3_SQ_042 | REMAINS37_3_SQ_050 | REMAINS37_3_SQ_060 | REMAINS37_3_SQ_100 -----
@@ -90,7 +104,7 @@ msg("REMAINS37_3_SQ_100_COMP")
 msg("REMAINS37_3_SQ_100_COMP_2")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -101,7 +115,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_REMAINS_37_3")
 end
 
------ npc_DRG_master ----- 
+----- [Dragoon Master]Valeska Himil ----- 
 ----- npcselectdialog.ies | ClassName: DRAGOON_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_DRAGOON_7_1 | JOB_DRAGOON_8_1 -----
@@ -119,7 +133,7 @@ msg("JOB_DRAGOON_8_1_STD")
 msg("JOB_DRAGOON_8_1_SU")
 end
 
------ npc_KBL_master ----- 
+----- [Kabbalist Master]Libgar Hippathia ----- 
 ----- npcselectdialog.ies | ClassName: KABBALIST_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_KABBALIST_7_1 | JOB_KABBALIST_8_1 -----
@@ -137,7 +151,7 @@ msg("JOB_KABBALIST_8_1_PROG1")
 msg("JOB_KABBALIST_8_1_SUCC1")
 end
 
------ npc_PGD_master ----- 
+----- [Plague Doctor Master]Philip Aurellius ----- 
 ----- npcselectdialog.ies | ClassName: PLAGUEDOCTOR_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_PLAGUEDOCTOR_7_1 | JOB_PLAGUEDOCTOR_8_1 -----
@@ -156,7 +170,7 @@ msg("JOB_PLAGUEDOCTOR_8_1_PROG1")
 msg("JOB_PLAGUEDOCTOR_8_1_SUCC1")
 end
 
------ npc_gt_shop ----- 
+----- [Kedoran Merchant Alliance]Relic Collector ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154074, "ETC_20160224_020712", "f_remains_37_3", -2618, 52, 2692, -40, "npc_ETC_20160224_020712")
@@ -164,7 +178,7 @@ function npc_ETC_20160224_020712()
 msg("GT_RELICSHOP_NPC_SEL_1")
 end
 
------ id_gate_npc ----- 
+----- Earth Tower Notice Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154046, "ETC_20160224_020713", "f_remains_37_3", -2761, 52, 2669, 45, "npc_ETC_20160224_020713")
@@ -172,7 +186,7 @@ function npc_ETC_20160224_020713()
 msg("INSTANCE_GT_GROUNDTOWER_1")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_remains_37_3", -1766, 60, -970, 90, "npc_ETC_20150317_009100")
@@ -180,7 +194,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_HAC_master ----- 
+----- [Hackapell Master] Flyntess ----- 
 ----- npcselectdialog.ies | ClassName: HACKAPELL_MASTER -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_HACKAPELL_8_1 | REMAINS373_HQ1 -----
@@ -205,7 +219,7 @@ msg("JOB_HACKAPELL_8_1_SU")
 msg("HACKAPELL_MASTER_BASICK")
 end
 
------ npc_MER_master ----- 
+----- [Mergen Master]Vhangomont Breogen ----- 
 ----- npcselectdialog.ies | ClassName: MERGEN_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_MERGEN_8_1 -----
@@ -219,7 +233,7 @@ msg("MERGEN_MASTER")
 msg("MERGEN_MASTER_BASIC")
 end
 
------ npc_combat_transport_section_2_sit ----- 
+----- [Kedoran Merchant Alliance] Operator ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20100, "ETC_20161005_025531", "f_remains_37_3", -2808, 52, 2597, 45, "npc_ETC_20161005_025531")

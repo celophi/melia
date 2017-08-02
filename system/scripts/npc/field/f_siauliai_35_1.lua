@@ -1,4 +1,32 @@
------ statue_vakarine ----- 
+----- Fasika Plateau ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150918_014224", "f_siauliai_35_1", -1947, -5, -300, -119, "npc_ETC_20150918_014224")
+function npc_ETC_20150918_014224()
+msg("SIAULIAI_35_1_TO_PILGRIM_36_2")
+end
+
+----- Barha Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016517", "f_siauliai_35_1", 210, -61, 1970, 125, "npc_ETC_20151102_016517")
+function npc_ETC_20151102_016517()
+msg("SIAULIAI_35_1_ORCHARD34_3")
+end
+
+----- Elgos Monastery Annex ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_017818", "f_siauliai_35_1", 3, -135, -1348, -40, "npc_ETC_20151224_017818")
+function npc_ETC_20151224_017818()
+msg("SIAULIAI_35_1_ABBEY_35_3")
+end
+
+----- Vera Coast ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016519", "f_siauliai_35_1", 1625, -56, 359, 45, "npc_ETC_20151102_016519")
+function npc_ETC_20151102_016519()
+msg("SIAULIAI_35_1_CORAL35_2")
+end
+
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -9,7 +37,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_SIAULIAI_35_1")
 end
 
------ blank_npc ----- 
+----- Scarecrow ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "ETC_20150317_000557", "f_siauliai_35_1", 54, -158, 588, -45, "npc_ETC_20150317_000557")
@@ -17,7 +45,7 @@ function npc_ETC_20150317_000557()
 msg("SIAULIAI_35_1_NUMBER_BASEBALL")
 end
 
------ npc_alchemist_f ----- 
+----- Lucienne Winterspoon ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_35_1_LUCIEN -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_35_1_SQ_2 | SIAULIAI_35_1_SQ_3 | SIAULIAI_35_1_SQ_4 -----
@@ -27,7 +55,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_alchemist_f ----- 
+----- Lucienne Winterspoon ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_35_1_LUCIEN_2 -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_35_1_SQ_4 | SIAULIAI_35_1_SQ_5 | SIAULIAI_35_1_SQ_6 | SIAULIAI_35_1_SQ_7 | SIAULIAI_35_1_SQ_8 | SIAULIAI_35_1_SQ_11 | SIAULIAI_35_1_SQ_12 | ABBEY_35_3_SQ_9 | ABBEY_35_3_SQ_10 | SIAULIAI_351_HQ1 | ORCHARD343_HQ1 | ORCHARD343_HQ2 -----
@@ -76,7 +104,7 @@ msg("SIAULIAI_35_1_LUCIEN_2_basic_2")
 msg("SIAULIAI_35_1_SQ_4_agree")
 end
 
------ npc_alchemist_f ----- 
+----- Lucienne Winterspoon ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_35_1_LUCIEN_3 -----
 ----- Dialog -----
 ----- QuestIDs: ABBEY_35_3_SQ_9 | ABBEY_35_3_SQ_10 | SIAULIAI_35_1_SQ_10 -----
@@ -86,7 +114,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_matron6 ----- 
+----- Villager Nella ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_35_1_VILLAGE_A -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_35_1_SQ_13 -----
@@ -102,7 +130,7 @@ msg("SIAULIAI_35_1_VILLAGE_A_basic_01")
 msg("SIAULIAI_35_1_VILLAGE_A_basic_02")
 end
 
------ npc_village_uncle_8 ----- 
+----- Villager Duncan ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_35_1_VILLAGE_B -----
 ----- Dialog -----
 ----- QuestIDs: ABBEY353_HQ2 -----
@@ -119,7 +147,7 @@ msg("SIAULIAI_35_1_VILLAGE_B_basic_01")
 msg("SIAULIAI_35_1_VILLAGE_B_basic_02")
 end
 
------ npc_village_uncle_3 ----- 
+----- Villager James ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_35_1_VILLAGE_C -----
 ----- Dialog -----
 addnpc(20138, "QUEST_LV_0300_20160310_001209", "f_siauliai_35_1", 435, -158, 785, -90, "npc_QUEST_LV_0300_20160310_001209")
@@ -132,7 +160,7 @@ msg("SIAULIAI_35_1_VILLAGE_C_basic_01")
 msg("SIAULIAI_35_1_VILLAGE_C_basic_02")
 end
 
------ npc_alchemist_f ----- 
+----- Lucienne Winterspoon ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_35_1_SQ_8_NPC_END -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_35_1_SQ_9 | SIAULIAI_35_1_SQ_8 -----
@@ -142,7 +170,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_siauliai_35_1", -1349, -79, 108, 90, "npc_ETC_20150317_009100")

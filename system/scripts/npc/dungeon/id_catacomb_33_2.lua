@@ -1,4 +1,11 @@
------ npc_gintas ----- 
+----- Sienakal Graveyard ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150730_014033", "id_catacomb_33_2", -1575, 161, 649, 180, "npc_ETC_20150730_014033")
+function npc_ETC_20150730_014033()
+msg("CATACOMB_33_2_TO_CATACOMB_33_1")
+end
+
+----- Believer Gintas ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_33_2_GINTAS -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_33_2_SQ_01 | CATACOMB_33_2_SQ_02 | CATACOMB_33_2_SQ_03 | CATACOMB_33_2_SQ_04 -----
@@ -19,7 +26,7 @@ msg("CATACOMB_33_2_GINTAS_basic01")
 msg("CATACOMB_33_2_GINTAS_basic02")
 end
 
------ npc_margiris ----- 
+----- Margiris ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_33_2_MARGIRIS -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_33_2_SQ_04 | CATACOMB_33_2_SQ_05 -----
@@ -35,7 +42,7 @@ msg("CATACOMB_33_2_MARGIRIS_basic02")
 msg("CATACOMB_33_2_TRACK")
 end
 
------ npc_pilgrim_shrine ----- 
+----- Holy Relic of the Order ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_33_2_UNHOLY -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_33_2_SQ_06 -----
@@ -45,7 +52,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_village_uncle_12 ----- 
+----- Believer's Spirit ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_33_2_GHOST -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_33_2_SQ_03 | CATACOMB_33_2_SQ_04 -----
@@ -60,7 +67,7 @@ msg("CATACOMB_33_2_GHOST_basic02")
 msg("CATACOMB_33_2_SQ_03_succ_wait")
 end
 
------ npc_rich_m ----- 
+----- Carlyle's Spirit ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_33_2_KARLYLE -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_33_2_SQ_05 | CATACOMB_33_2_SQ_06 | CATACOMB_33_2_SQ_07 | CATACOMB_33_2_SQ_08 | CATACOMB_33_2_SQ_09 -----
@@ -82,7 +89,7 @@ msg("CATACOMB_33_2_KARLYLE_basic01")
 msg("CATACOMB_33_2_KARLYLE_basic02")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "id_catacomb_33_2", 1449, 153, 223, 45, "npc_ETC_20150317_009100")
@@ -90,7 +97,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_village_uncle_4 ----- 
+----- Wandering Believer's Soul ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB332_RP_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB332_RP_1 -----
@@ -102,7 +109,7 @@ msg("CATACOMB332_RP_1_3")
 msg("CATACOMB332_RP_1_NPC_basic1")
 end
 
------ prison_device_1 ----- 
+----- Suspicious Device ----- 
 ----- npcselectdialog.ies | ClassName: LOWLV_MASTER_ENCY_SQ_50 -----
 ----- Dialog -----
 ----- QuestIDs: LOWLV_MASTER_ENCY_SQ_50 -----

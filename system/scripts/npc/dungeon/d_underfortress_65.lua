@@ -1,4 +1,18 @@
------ npc_historian_odel_2 ----- 
+----- Inner Enceinte District ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001243", "d_underfortress_65", 586, 602, -2290, -67, "npc_ETC_20150317_001243")
+function npc_ETC_20150317_001243()
+msg("UNDERFORTRESS65_FLASH64")
+end
+
+----- Drill Ground of Confliction ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170330_027523", "d_underfortress_65", -438, 337, 1978, 170, "npc_ETC_20170330_027523")
+function npc_ETC_20170330_027523()
+msg("UNDERFORTRESS65_UNDERFORTRESS66")
+end
+
+----- [Amanda Grave Robbers]Amanda ----- 
 ----- npcselectdialog.ies | ClassName: AMANDA_65_1 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_65_MQ010 | UNDERFORTRESS_65_MQ020 -----
@@ -8,7 +22,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_historian_odel_2 ----- 
+----- [Amanda Grave Robbers]Amanda ----- 
 ----- npcselectdialog.ies | ClassName: AMANDA_65_2 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_65_MQ020 | UNDERFORTRESS_65_MQ030 | UNDERFORTRESS_65_MQ040 | UNDERFORTRESS_65_MQ050 -----
@@ -18,7 +32,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_historian_odel_2 ----- 
+----- [Amanda Grave Robbers]Amanda ----- 
 ----- npcselectdialog.ies | ClassName: AMANDA_65_3 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_65_MQ050 -----
@@ -114,7 +128,7 @@ msg("FLASH64_MQ_01_04")
 msg("UNDER_69_MQ060_succ01")
 end
 
------ Silvertransporter_Qm ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(103010, "ETC_20150317_005122", "d_underfortress_65", 458, 326, -709, 45, "npc_ETC_20150317_005122")
@@ -122,7 +136,7 @@ function npc_ETC_20150317_005122()
 msg("KINGDOM_GUARDIAN01")
 end
 
------ Silvertransporter_Qm ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(103010, "ETC_20150317_005122", "d_underfortress_65", 965, 99, -747, 45, "npc_ETC_20150317_005122")
@@ -130,7 +144,7 @@ function npc_ETC_20150317_005122()
 msg("KINGDOM_GUARDIAN02")
 end
 
------ Silvertransporter_Qm ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(103010, "ETC_20150317_005122", "d_underfortress_65", -23, 249, -447, 45, "npc_ETC_20150317_005122")
@@ -138,7 +152,7 @@ function npc_ETC_20150317_005122()
 msg("KINGDOM_GUARDIAN03")
 end
 
------ Silvertransporter_Qm ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(103010, "ETC_20150317_005122", "d_underfortress_65", -650, 252, -107, 45, "npc_ETC_20150317_005122")
@@ -146,7 +160,7 @@ function npc_ETC_20150317_005122()
 msg("KINGDOM_GUARDIAN04")
 end
 
------ Silvertransporter_Qm ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(103010, "ETC_20150317_005122", "d_underfortress_65", 550, 99, -1031, 45, "npc_ETC_20150317_005122")
@@ -154,7 +168,7 @@ function npc_ETC_20150317_005122()
 msg("KINGDOM_GUARDIAN05")
 end
 
------ npc_historian_odel_2 ----- 
+----- [Amanda Grave Robbers]Amanda ----- 
 ----- npcselectdialog.ies | ClassName: AMANDA_65_4 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_66_MQ070 -----
@@ -250,7 +264,7 @@ msg("FLASH64_MQ_01_04")
 msg("UNDER_69_MQ060_succ01")
 end
 
------ noshadow_npc ----- 
+----- Drill Ground of Confliction ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20170330_027523", "d_underfortress_65", -413, 303, 616, 45, "npc_ETC_20170330_027523")
@@ -258,7 +272,7 @@ function npc_ETC_20170330_027523()
 msg("UNDER65_TO_UNDER66_WARP")
 end
 
------ treasure_box4 ----- 
+----- Unknown Box ----- 
 ----- Enter -----
 ----- QuestIDs: UNDERFORTRESS_66_MQ070 -----
 addnpc(147394, "ETC_20151001_014751", "d_underfortress_65", -336, 303, 796, -72, "npc_ETC_20151001_014751")
@@ -267,7 +281,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -276,5 +290,12 @@ function npc_QUEST_20150317_000002()
 msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_UNDERFORTRESS_65")
+end
+
+----- Sventimas Exile ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009598", "d_underfortress_65", -1662, 113, 1215, 123, "npc_ETC_20150323_009598")
+function npc_ETC_20150323_009598()
+msg("UNDERFORTRESS65_TABLELAND72")
 end
 

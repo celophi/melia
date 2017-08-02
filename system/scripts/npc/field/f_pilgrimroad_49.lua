@@ -1,4 +1,25 @@
------ npc_pilgrim_m_2 ----- 
+----- Manahas ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150918_014225", "f_pilgrimroad_49", 2378, 348, 185, 79, "npc_ETC_20150918_014225")
+function npc_ETC_20150918_014225()
+msg("PILGRIM_49_TO_PILGRIM_48")
+end
+
+----- Pilgrim Path ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009582", "f_pilgrimroad_49", -2315, 289, -648, -60, "npc_ETC_20150323_009582")
+function npc_ETC_20150323_009582()
+msg("PILGRIM_49_TO_PILGRIM_47")
+end
+
+----- Altar Way ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009583", "f_pilgrimroad_49", -86, 348, 1319, 134, "npc_ETC_20150323_009583")
+function npc_ETC_20150323_009583()
+msg("PILGRIM_49_TO_PILGRIM_50")
+end
+
+----- Antanas ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_49_ANTANAS -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM_49_SQ_010 | PILGRIM_49_SQ_020 | PILGRIM_49_SQ_013 | PILGRIM_49_SQ_017 -----
@@ -20,7 +41,7 @@ msg("PILGRIM_49_ANTANAS_BASIC01")
 msg("PILGRIM_49_ANTANAS_BASIC02")
 end
 
------ npc_pilgrim_f_3 ----- 
+----- Giedra ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_49_GIEDRA -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM_49_SQ_030 | PILGRIM_49_SQ_040 -----
@@ -42,7 +63,7 @@ msg("HT3_PILGRIM_49_GIEDRA_BASIC06")
 msg("HT3_PILGRIM_49_GIEDRA_BASIC07")
 end
 
------ npc_pilgrim_m_5 ----- 
+----- Kestas ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_49_KESTAS -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM_49_SQ_050 | PILGRIM_49_SQ_060 -----
@@ -57,7 +78,7 @@ msg("PILGRIM_49_SQ_060_COMP")
 msg("PILGRIM_49_KESTAS_BASIC01")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_pilgrimroad_49", -170, 294, -1567, 180, "npc_ETC_20150317_009100")
@@ -65,7 +86,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_pilgrim_m_1 ----- 
+----- Tomalov ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM49_RP_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM49_RP_1 -----

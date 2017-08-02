@@ -1,4 +1,18 @@
------ mine_purify_01 ----- 
+----- Crystal Mine 1F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001154", "d_cmine_02", -2419, 73, -882, 205, "npc_ETC_20150317_001154")
+function npc_ETC_20150317_001154()
+msg("WS_ACT4_2_ACT4_1")
+end
+
+----- Crystal Mine 3F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001157", "d_cmine_02", 1821, 157, 1924, 122, "npc_ETC_20150317_001157")
+function npc_ETC_20150317_001157()
+msg("WS_ACT4_2_ACT4_3")
+end
+
+----- Circulation Purifier ----- 
 ----- npcselectdialog.ies | ClassName: MINE_2_PURIFY_1 -----
 ----- Dialog -----
 ----- QuestIDs: MINE_2_CRYSTAL_2 | MINE_2_CRYSTAL_4 -----
@@ -8,7 +22,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ mine_purify_01 ----- 
+----- Auxiliary Purifier ----- 
 ----- npcselectdialog.ies | ClassName: MINE_2_PURIFY_3 -----
 ----- Dialog -----
 ----- QuestIDs: MINE_2_CRYSTAL_5 | MINE_2_CRYSTAL_11 -----
@@ -18,7 +32,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ mine_purify_01 ----- 
+----- Main Purifier ----- 
 ----- npcselectdialog.ies | ClassName: MINE_2_PURIFY_7 -----
 ----- Dialog -----
 ----- QuestIDs: MINE_2_CRYSTAL_14 | MINE_2_CRYSTAL_21 -----
@@ -28,7 +42,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -39,7 +53,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_CMINE_02")
 end
 
------ blank_npc ----- 
+----- Book Shelf ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "QUEST_20150317_000763", "d_cmine_02", 1732, -10, 145, 45, "npc_QUEST_20150317_000763")
@@ -47,7 +61,7 @@ function npc_QUEST_20150317_000763()
 msg("BOOKSHELF_02")
 end
 
------ Board1 ----- 
+----- Business Guide ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000558", "d_cmine_02", 1537, 79, 417, 315, "npc_QUEST_20150317_000558")
@@ -55,7 +69,7 @@ function npc_QUEST_20150317_000558()
 msg("D_CMINE_02_BOARD01")
 end
 
------ noshadow_npc ----- 
+----- District 3 Purifier Pipe ----- 
 ----- npcselectdialog.ies | ClassName: MINE_2_CRYSTAL_2_PIPE -----
 ----- Dialog -----
 ----- QuestIDs: MINE_2_CRYSTAL_2 -----
@@ -65,7 +79,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ noshadow_npc_32 ----- 
+----- District 2 Purifier Pipe ----- 
 ----- npcselectdialog.ies | ClassName: MINE_2_CRYSTAL_3_PIPE -----
 ----- Dialog -----
 ----- QuestIDs: MINE_2_CRYSTAL_4 -----
@@ -75,7 +89,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ noshadow_npc ----- 
+----- Magic Supply Device ----- 
 ----- npcselectdialog.ies | ClassName: MINE_2_CRYSTAL_7_ENERGY -----
 ----- Dialog -----
 ----- QuestIDs: MINE_2_CRYSTAL_7 | MINE_2_CRYSTAL_10 -----
@@ -85,7 +99,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_cmine_02", 1510, 81, 854, 45, "npc_ETC_20150317_009100")
@@ -93,7 +107,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_cmine_02", -349, -27, 1235, 45, "npc_ETC_20150317_009100")
@@ -101,7 +115,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_cmine_02", 143, 9, 189, 45, "npc_ETC_20150317_009100")
