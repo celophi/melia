@@ -1,4 +1,32 @@
------ LOST_PAPER ----- 
+----- Starving Demon's Way ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001218", "f_pilgrimroad_47", -2462, 44, -2202, -98, "npc_ETC_20150317_001218")
+function npc_ETC_20150317_001218()
+msg("PILGRIM47_PILGRIM46")
+end
+
+----- Altar Way ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009583", "f_pilgrimroad_47", 2037, 246, 2357, 70, "npc_ETC_20150323_009583")
+function npc_ETC_20150323_009583()
+msg("PILGRIM47_PILGRIM50")
+end
+
+----- Mullers Passage ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001311", "f_pilgrimroad_47", 2209, 44, -586, 45, "npc_ETC_20150317_001311")
+function npc_ETC_20150317_001311()
+msg("PILGRIM47_PCATACOMB1")
+end
+
+----- Saalus Convent ----- 
+----- Enter -----
+addnpc(40001, "ETC_20160224_020147", "f_pilgrimroad_47", -1135, 154, 1471, 135, "npc_ETC_20160224_020147")
+function npc_ETC_20160224_020147()
+msg("PILGRIM47_NUNNERY")
+end
+
+----- Torn Letter ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147312, "QUEST_20150428_001898", "f_pilgrimroad_47", -843, 143, -1287, 45, "npc_QUEST_20150428_001898")
@@ -7,7 +35,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ poison_crystal_01 ----- 
+----- Tree Root Crystal of Fatigue ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM47_CRYST01 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM47_SQ_010 -----
@@ -17,7 +45,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ poison_crystal_01 ----- 
+----- Tree Root Crystal of Fatigue ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM47_CRYST02 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: PILGRIM47_SQ_020 | PILGRIM47_SQ_020 -----
@@ -28,7 +56,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ poison_crystal_01 ----- 
+----- Tree Root Crystal of Fatigue ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM47_CRYST03 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM47_SQ_030 -----
@@ -38,7 +66,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ poison_crystal_01 ----- 
+----- Tree Root Crystal of Fatigue ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM47_CRYST04 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM47_SQ_040 -----
@@ -48,7 +76,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ poison_crystal_01 ----- 
+----- Tree Root Crystal of Fatigue ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM47_CRYST05 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM47_SQ_050 -----
@@ -58,7 +86,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ poison_crystal_01 ----- 
+----- Tree Root Crystal of Fatigue ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM47_CRYST06 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM47_SQ_060 -----
@@ -68,7 +96,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ poison_crystal_02 ----- 
+----- Tree Root Crystal of Fatigue ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM47_CRYST07 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM47_SQ_070 -----
@@ -78,84 +106,84 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ spell_crystal_red ----- 
+----- Scattered Tree Root Crystal Core ----- 
 ----- Enter -----
 addnpc(151001, "ETC_20150317_009396", "f_pilgrimroad_47", -82, 137, -354, 45, "npc_ETC_20150317_009396")
 function npc_ETC_20150317_009396()
 msg("PILGRIM47_CRY_CORE")
 end
 
------ spell_crystal_red ----- 
+----- Scattered Tree Root Crystal Core ----- 
 ----- Enter -----
 addnpc(151001, "ETC_20150317_009396", "f_pilgrimroad_47", 151, 137, -459, 45, "npc_ETC_20150317_009396")
 function npc_ETC_20150317_009396()
 msg("PILGRIM47_CRY_CORE")
 end
 
------ spell_crystal_red ----- 
+----- Scattered Tree Root Crystal Core ----- 
 ----- Enter -----
 addnpc(151001, "ETC_20150317_009396", "f_pilgrimroad_47", 392, 137, -389, 45, "npc_ETC_20150317_009396")
 function npc_ETC_20150317_009396()
 msg("PILGRIM47_CRY_CORE")
 end
 
------ spell_crystal_red ----- 
+----- Scattered Tree Root Crystal Core ----- 
 ----- Enter -----
 addnpc(151001, "ETC_20150317_009396", "f_pilgrimroad_47", 142, 137, -143, 45, "npc_ETC_20150317_009396")
 function npc_ETC_20150317_009396()
 msg("PILGRIM47_CRY_CORE")
 end
 
------ spell_crystal_red ----- 
+----- Scattered Tree Root Crystal Core ----- 
 ----- Enter -----
 addnpc(151001, "ETC_20150317_009396", "f_pilgrimroad_47", 41, 137, 134, 45, "npc_ETC_20150317_009396")
 function npc_ETC_20150317_009396()
 msg("PILGRIM47_CRY_CORE")
 end
 
------ spell_crystal_red ----- 
+----- Scattered Tree Root Crystal Core ----- 
 ----- Enter -----
 addnpc(151001, "ETC_20150317_009396", "f_pilgrimroad_47", 526, 137, -31, 45, "npc_ETC_20150317_009396")
 function npc_ETC_20150317_009396()
 msg("PILGRIM47_CRY_CORE")
 end
 
------ spell_crystal_red ----- 
+----- Scattered Tree Root Crystal Core ----- 
 ----- Enter -----
 addnpc(151001, "ETC_20150317_009396", "f_pilgrimroad_47", -534, 143, -1107, 45, "npc_ETC_20150317_009396")
 function npc_ETC_20150317_009396()
 msg("PILGRIM47_CRY_CORE")
 end
 
------ spell_crystal_red ----- 
+----- Scattered Tree Root Crystal Core ----- 
 ----- Enter -----
 addnpc(151001, "ETC_20150317_009396", "f_pilgrimroad_47", -732, 143, -1343, 45, "npc_ETC_20150317_009396")
 function npc_ETC_20150317_009396()
 msg("PILGRIM47_CRY_CORE")
 end
 
------ spell_crystal_red ----- 
+----- Scattered Tree Root Crystal Core ----- 
 ----- Enter -----
 addnpc(151001, "ETC_20150317_009396", "f_pilgrimroad_47", -1086, 143, -1330, 45, "npc_ETC_20150317_009396")
 function npc_ETC_20150317_009396()
 msg("PILGRIM47_CRY_CORE")
 end
 
------ spell_crystal_red ----- 
+----- Scattered Tree Root Crystal Core ----- 
 ----- Enter -----
 addnpc(151001, "ETC_20150317_009396", "f_pilgrimroad_47", -1110, 143, -955, 45, "npc_ETC_20150317_009396")
 function npc_ETC_20150317_009396()
 msg("PILGRIM47_CRY_CORE")
 end
 
------ spell_crystal_red ----- 
+----- Scattered Tree Root Crystal Core ----- 
 ----- Enter -----
 addnpc(151001, "ETC_20150317_009396", "f_pilgrimroad_47", -913, 143, -1482, 45, "npc_ETC_20150317_009396")
 function npc_ETC_20150317_009396()
 msg("PILGRIM47_CRY_CORE")
 end
 
------ poison_crystal_01 ----- 
+----- Summoned Mutated Tree Root Crystal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155031, "ETC_20150428_011586", "f_pilgrimroad_47", 1671, 138, 885, 171, "npc_ETC_20150428_011586")
@@ -163,7 +191,7 @@ function npc_ETC_20150428_011586()
 msg("PILGRIM47_SQ_060_SUM")
 end
 
------ poison_crystal_01 ----- 
+----- Summoned Mutated Tree Root Crystal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155031, "ETC_20150428_011586", "f_pilgrimroad_47", 1469, 138, 1051, 171, "npc_ETC_20150428_011586")
@@ -171,7 +199,7 @@ function npc_ETC_20150428_011586()
 msg("PILGRIM47_SQ_060_SUM")
 end
 
------ poison_crystal_01 ----- 
+----- Summoned Mutated Tree Root Crystal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155031, "ETC_20150428_011586", "f_pilgrimroad_47", 1221, 138, 836, 171, "npc_ETC_20150428_011586")
@@ -179,7 +207,7 @@ function npc_ETC_20150428_011586()
 msg("PILGRIM47_SQ_060_SUM")
 end
 
------ poison_crystal_01 ----- 
+----- Summoned Mutated Tree Root Crystal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155031, "ETC_20150428_011586", "f_pilgrimroad_47", 1406, 138, 415, 171, "npc_ETC_20150428_011586")
@@ -187,7 +215,7 @@ function npc_ETC_20150428_011586()
 msg("PILGRIM47_SQ_060_SUM")
 end
 
------ poison_crystal_01 ----- 
+----- Summoned Mutated Tree Root Crystal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155031, "ETC_20150428_011586", "f_pilgrimroad_47", 1638, 138, 221, 171, "npc_ETC_20150428_011586")
@@ -195,7 +223,7 @@ function npc_ETC_20150428_011586()
 msg("PILGRIM47_SQ_060_SUM")
 end
 
------ poison_crystal_01 ----- 
+----- Summoned Mutated Tree Root Crystal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155031, "ETC_20150428_011586", "f_pilgrimroad_47", 1829, 96, 31, 171, "npc_ETC_20150428_011586")
@@ -203,7 +231,7 @@ function npc_ETC_20150428_011586()
 msg("PILGRIM47_SQ_060_SUM")
 end
 
------ poison_crystal_01 ----- 
+----- Summoned Mutated Tree Root Crystal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155031, "ETC_20150428_011586", "f_pilgrimroad_47", 1376, 168, 1236, 171, "npc_ETC_20150428_011586")
@@ -211,7 +239,7 @@ function npc_ETC_20150428_011586()
 msg("PILGRIM47_SQ_060_SUM")
 end
 
------ poison_crystal_01 ----- 
+----- Summoned Mutated Tree Root Crystal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155031, "ETC_20150428_011586", "f_pilgrimroad_47", 1195, 138, 976, 171, "npc_ETC_20150428_011586")
@@ -219,7 +247,7 @@ function npc_ETC_20150428_011586()
 msg("PILGRIM47_SQ_060_SUM")
 end
 
------ poison_crystal_01 ----- 
+----- Summoned Mutated Tree Root Crystal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155031, "ETC_20150428_011586", "f_pilgrimroad_47", 1924, 138, 496, 171, "npc_ETC_20150428_011586")
@@ -227,7 +255,7 @@ function npc_ETC_20150428_011586()
 msg("PILGRIM47_SQ_060_SUM")
 end
 
------ treasure_box1 ----- 
+----- Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM47_SQ_080_BOX -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM47_SQ_080 -----
@@ -237,7 +265,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ LOST_PAPER ----- 
+----- Pilgrim's Memo ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147312, "QUEST_LV_0200_20150317_000457", "f_pilgrimroad_47", 876, 68, -371, 45, "npc_QUEST_LV_0200_20150317_000457")
@@ -245,7 +273,7 @@ function npc_QUEST_LV_0200_20150317_000457()
 msg("PILGRIM47_DMSG02_BASIC01")
 end
 
------ LOST_PAPER ----- 
+----- Last Record ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147312, "QUEST_20150428_001900", "f_pilgrimroad_47", 1516, 138, 655, 45, "npc_QUEST_20150428_001900")
@@ -253,7 +281,7 @@ function npc_QUEST_20150428_001900()
 msg("PILGRIM47_DMSG04_BASIC01")
 end
 
------ LOST_PAPER ----- 
+----- Ripped Diary ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147312, "QUEST_20150428_001899", "f_pilgrimroad_47", -910, 155, 919, 45, "npc_QUEST_20150428_001899")
@@ -261,7 +289,7 @@ function npc_QUEST_20150428_001899()
 msg("PILGRIM47_DMSG03_BASIC01")
 end
 
------ poison_crystal_01 ----- 
+----- Tree Root Crystal of Fatigue ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM47_CRYST08 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: PILGRIM47_SQ_090 | PILGRIM47_SQ_090 -----
@@ -272,7 +300,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ LOST_PAPER_2 ----- 
+----- Will ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153057, "QUEST_20150428_001921", "f_pilgrimroad_47", 1371, 45, -161, 45, "npc_QUEST_20150428_001921")
@@ -280,7 +308,7 @@ function npc_QUEST_20150428_001921()
 msg("PILGRIM47_DMSG05_BASIC01")
 end
 
------ LOST_PAPER_2 ----- 
+----- Blackened Clue ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM47_DMSG06 -----
 ----- Dialog -----
 addnpc(153057, "QUEST_20150428_001923", "f_pilgrimroad_47", -1692, 195, 119, 45, "npc_QUEST_20150428_001923")
@@ -289,14 +317,21 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ spell_crystal_red ----- 
+----- Genar Field ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150918_014226", "f_pilgrimroad_47", 1361, 98, -1354, -2, "npc_ETC_20150918_014226")
+function npc_ETC_20150918_014226()
+msg("PILGRIM_47_TO_PILGRIM_49")
+end
+
+----- Scattered Tree Root Crystal Core ----- 
 ----- Enter -----
 addnpc(151001, "ETC_20150317_009396", "f_pilgrimroad_47", -810, 143, -1053, 45, "npc_ETC_20150317_009396")
 function npc_ETC_20150317_009396()
 msg("PILGRIM47_CRY_CORE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_pilgrimroad_47", 221, 137, 219, 45, "npc_ETC_20150317_009100")

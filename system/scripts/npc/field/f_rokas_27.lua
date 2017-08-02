@@ -1,4 +1,11 @@
------ npc_oldman_1 ----- 
+----- Overlong Bridge Valley ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001190", "f_rokas_27", -177, 1196, -3637, -47, "npc_ETC_20150317_001190")
+function npc_ETC_20150317_001190()
+msg("ROKAS27_ROKAS26")
+end
+
+----- Archaeologist Dezic ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS27_DESIG_01 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS27_QB_1 -----
@@ -16,7 +23,7 @@ msg("ROKAS27_DESIG_03_BASIC02")
 msg("ROKAS27_DESIG_02_basic")
 end
 
------ npc_low_lev_officer3_m ----- 
+----- Mercenary Glen ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS27_GLEN -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS27_QB_6 | ROKAS27_QB_7 -----
@@ -36,7 +43,7 @@ msg("ROKAS27_QB_11_GLEN_negative")
 msg("ROKAS27_QB_11_GLEN_qustion")
 end
 
------ npc_combat_transport_section_1 ----- 
+----- Technician Heinen ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS27_HEINEN -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS27_QB_2 | ROKAS27_QB_3 -----
@@ -55,7 +62,7 @@ msg("ROKAS27_QB_11_HEINEN_negative")
 msg("ROKAS27_QB_11_HEINEN_qustion")
 end
 
------ npc_wife_1 ----- 
+----- Assistant Airine ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS27_AIRINE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS27_QB_4 | ROKAS27_QB_5 | ROKAS27_QB_8 | ROKAS27_QB_10 -----
@@ -85,7 +92,7 @@ msg("ROKAS27_RP_1_2")
 msg("ROKAS27_RP_1_3")
 end
 
------ npc_paladin_follower1_2 ----- 
+----- Rolandas Jonas ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS27_REXITHER_1 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS27_MQ_1 | ROKAS27_MQ_6 | ROKAS26_MQ2 -----
@@ -103,7 +110,7 @@ msg("ROKAS27_QB_11DRUIDE_qustion")
 msg("ROKAS26_MQ2_COMP")
 end
 
------ npc_oldman_1 ----- 
+----- Archaeologist Dezic ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS27_DESIG_02 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS27_QB_4 -----
@@ -121,7 +128,7 @@ msg("ROKAS27_DESIG_03_BASIC02")
 msg("ROKAS27_DESIG_02_basic")
 end
 
------ npc_rokas_6 ----- 
+----- Canyon Barrier Device ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS27_QM_2 -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_009451", "f_rokas_27", 504, 1196, -2380, -45, "npc_ETC_20150317_009451")
@@ -130,7 +137,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_cube ----- 
+----- Western Barrier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47109, "ETC_20150317_009452", "f_rokas_27", 764, 1340, 239, 45, "npc_ETC_20150317_009452")
@@ -138,7 +145,7 @@ function npc_ETC_20150317_009452()
 msg("ROKAS27_QB_14_1")
 end
 
------ npc_rokas_cube ----- 
+----- Eastern Barrier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47109, "ETC_20150317_009453", "f_rokas_27", 1134, 1340, 341, 45, "npc_ETC_20150317_009453")
@@ -146,7 +153,7 @@ function npc_ETC_20150317_009453()
 msg("ROKAS27_QB_14_2")
 end
 
------ npc_rokas_cube ----- 
+----- Northern Barrier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47109, "ETC_20150317_009454", "f_rokas_27", 984, 1340, 606, 45, "npc_ETC_20150317_009454")
@@ -154,7 +161,14 @@ function npc_ETC_20150317_009454()
 msg("ROKAS27_QB_14_3")
 end
 
------ npc_miner2 ----- 
+----- Tiltas Valley ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009576", "f_rokas_27", -173, 1295, -1189, 194, "npc_ETC_20150323_009576")
+function npc_ETC_20150323_009576()
+msg("ROKAS27_ROKAS28")
+end
+
+----- William ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20150, "QUEST_20150317_000028", "f_rokas_27", 337, 1295, -1527, 3, "npc_QUEST_20150317_000028")
@@ -162,7 +176,7 @@ function npc_QUEST_20150317_000028()
 msg("ROKAS27_CABLE_LEFT_basic1")
 end
 
------ npc_miner ----- 
+----- Cyneburg ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20109, "QUEST_20150317_000030", "f_rokas_27", 888, 1209, -1158, -7, "npc_QUEST_20150317_000030")
@@ -170,7 +184,7 @@ function npc_QUEST_20150317_000030()
 msg("ROKAS27_CABLE_RIGHT_basic1")
 end
 
------ npc_rokas_cube ----- 
+----- Western Barrier ----- 
 ----- Enter -----
 ----- QuestIDs: ROKAS27_QB_3 -----
 addnpc(47109, "ETC_20150317_009452", "f_rokas_27", -819, 1295, -2247, 1, "npc_ETC_20150317_009452")
@@ -179,7 +193,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Box ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS27_MQ1BOX -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS27_MQ_1 -----
@@ -189,7 +203,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Box ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS27_MQ2BOX -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS27_MQ_2 -----
@@ -199,7 +213,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Box ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS27_MQ3BOX -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS27_MQ_3 -----
@@ -209,7 +223,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Box ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS27_MQ4BOX -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS27_MQ_4 -----
@@ -219,7 +233,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Box ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS27_MQ5BOX -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS27_MQ_5 | ROKAS27_MQ_6 -----
@@ -229,7 +243,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_oldman_1 ----- 
+----- Archaeologist Dezic ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS27_DESIG_03 -----
 ----- Dialog -----
 addnpc(152002, "QUEST_LV_0100_20150317_000111", "f_rokas_27", 1845, 1228, -110, -62, "npc_QUEST_LV_0100_20150317_000111")
@@ -246,7 +260,7 @@ msg("ROKAS27_DESIG_03_BASIC02")
 msg("ROKAS27_DESIG_02_basic")
 end
 
------ npc_wife_1 ----- 
+----- Assistant Airine ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS27_AIRINE2 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS27_QB_10 | ROKAS27_QB_11 | ROKAS27_RP_1 -----
@@ -276,7 +290,7 @@ msg("ROKAS27_RP_1_2")
 msg("ROKAS27_RP_1_3")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -287,7 +301,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_ROKAS_27")
 end
 
------ npc_COS_master ----- 
+----- [Corsair Master]Hayraven ----- 
 ----- npcselectdialog.ies | ClassName: JOB_CORSAIR4_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_CORSAIR4_1 | JOB_CORSAIR5_1 | JOB_CORSAIR_6_1 | ABBEY353_HQ1 -----
@@ -310,7 +324,7 @@ msg("ABBEY353_HQ1_prog2")
 msg("ABBEY353_HQ1_prog3")
 end
 
------ npc_SAD_master ----- 
+----- [Sadhu Master] Agota Hanska ----- 
 ----- npcselectdialog.ies | ClassName: JOB_SADU3_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_SADU3_1 | JOB_SADU4_1 | JOB_SADU5_1 | JOB_RANGER3_1 | FEDIMIAN_HQ_02 -----
@@ -347,7 +361,7 @@ msg("JOB_2_SADHU6_1_2")
 msg("JOB_2_SADHU6_1_3")
 end
 
------ npc_WRC_sub_master ----- 
+----- [Elementalist Submaster]Zeddie Berrant ----- 
 ----- npcselectdialog.ies | ClassName: JOB_WARLOCK3_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_WARLOCK3_1 | JOB_RANGER3_1 | JOB_RANGER3_2 | JOB_WARLOCK4_1 | JOB_WARLOCK5_1 -----
@@ -367,7 +381,7 @@ msg("JOB_WARLOCK5_1_COMP")
 msg("JOB_WARLOCK3_1_NPC_BASIC04")
 end
 
------ Board1 ----- 
+----- To the other side ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "ETC_20150406_010846", "f_rokas_27", 214, 1295, -1548, -15, "npc_ETC_20150406_010846")
@@ -375,7 +389,7 @@ function npc_ETC_20150406_010846()
 msg("ROKAS_27_CABLETEMP_01")
 end
 
------ Board1 ----- 
+----- To the other side ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "ETC_20150406_010846", "f_rokas_27", 924, 1210, -1164, -15, "npc_ETC_20150406_010846")
@@ -383,7 +397,7 @@ function npc_ETC_20150406_010846()
 msg("ROKAS_27_CABLETEMP_02")
 end
 
------ npc_PDN_master ----- 
+----- [Pardoner Master]Mistes Goldmund ----- 
 ----- npcselectdialog.ies | ClassName: JOB_PARDONER4_1 -----
 ----- Dialog -----
 ----- QuestIDs: JOB_PARDONER4_1 | JOB_PARDONER4_2 | JOB_PARDONER5_1 | JOB_PARDONER_6_1 | PILGRIM51_SQ_9 -----
@@ -405,7 +419,7 @@ msg("JOB_PARDONER_6_1_agree")
 msg("JOB_PARDONER_6_1_succ")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_rokas_27", 1149, 1232, -387, 45, "npc_ETC_20150317_009100")

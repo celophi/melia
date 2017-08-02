@@ -1,4 +1,4 @@
------ soldier7 ----- 
+----- Royal Army Guard Delus ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_DELLOOS01 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_66_MQ010 | UNDERFORTRESS_66_MQ020 | UNDERFORTRESS_66_MQ030 | UNDERFORTRESS_66_MQ040 -----
@@ -8,7 +8,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Silvertransporter_m ----- 
+----- Left-behind Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(10032, "ETC_20150717_013605", "d_underfortress_66", 127, 270, -739, 189, "npc_ETC_20150717_013605")
@@ -100,7 +100,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ soldier7 ----- 
+----- Royal Army Guard Delus ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_DELLOOS -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_66_MQ040 -----
@@ -110,7 +110,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ soldier7 ----- 
+----- Royal Army Guard Delus ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_DELLOOS03 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_66_MQ040 | UNDERFORTRESS_66_MQ050 | UNDERFORTRESS_66_MQ060 -----
@@ -120,7 +120,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ boxes_01 ----- 
+----- Supply Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151029, "ETC_20151001_015236", "d_underfortress_66", 1804, 217, 262, -118, "npc_ETC_20151001_015236")
@@ -128,7 +128,7 @@ function npc_ETC_20151001_015236()
 msg("BOMB_BOX")
 end
 
------ boxes_01 ----- 
+----- Supply Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151029, "ETC_20151001_015236", "d_underfortress_66", 1802, 217, 500, 140, "npc_ETC_20151001_015236")
@@ -136,7 +136,7 @@ function npc_ETC_20151001_015236()
 msg("BOMB_BOX")
 end
 
------ boxes_01 ----- 
+----- Supply Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151029, "ETC_20151001_015236", "d_underfortress_66", 1888, 217, 441, 45, "npc_ETC_20151001_015236")
@@ -144,7 +144,7 @@ function npc_ETC_20151001_015236()
 msg("BOMB_BOX")
 end
 
------ npc_historian_odel_2 ----- 
+----- [Amanda Grave Robbers]Amanda ----- 
 ----- npcselectdialog.ies | ClassName: AMANDA_66_1 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_66_MQ010 -----
@@ -240,7 +240,7 @@ msg("FLASH64_MQ_01_04")
 msg("UNDER_69_MQ060_succ01")
 end
 
------ npc_historian_odel_2 ----- 
+----- [Amanda Grave Robbers]Amanda ----- 
 ----- npcselectdialog.ies | ClassName: AMANDA_66_2 -----
 ----- Dialog -----
 addnpc(153040, "ETC_20150714_013166", "d_underfortress_66", 1933, 217, 285, 185, "npc_ETC_20150714_013166")
@@ -335,7 +335,21 @@ msg("FLASH64_MQ_01_04")
 msg("UNDER_69_MQ060_succ01")
 end
 
------ Silvertransporter_m ----- 
+----- Sentry Bailey ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170330_027522", "d_underfortress_66", 1287, 91, -311, -42, "npc_ETC_20170330_027522")
+function npc_ETC_20170330_027522()
+msg("UNDERFORTRESS66_UNDERFORTRESS65")
+end
+
+----- Resident Quarter ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170330_027524", "d_underfortress_66", -603, 163, -85, -131, "npc_ETC_20170330_027524")
+function npc_ETC_20170330_027524()
+msg("UNDERFORTRESS66_UNDERFORTRESS67")
+end
+
+----- Left-behind Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(10032, "ETC_20150717_013605", "d_underfortress_66", -705, 270, -516, 104, "npc_ETC_20150717_013605")
@@ -427,7 +441,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m ----- 
+----- Left-behind Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(10032, "ETC_20150717_013605", "d_underfortress_66", -194, 270, -530, 45, "npc_ETC_20150717_013605")
@@ -519,7 +533,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ Silvertransporter_m ----- 
+----- Left-behind Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(10032, "ETC_20150717_013605", "d_underfortress_66", 156, 270, -1266, 153, "npc_ETC_20150717_013605")
@@ -611,7 +625,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ soldier6 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_KINGDOM_GUADIAN01_1 -----
 ----- Dialog -----
 addnpc(20016, "ETC_20150317_005122", "d_underfortress_66", 1231, 137, 57, -57, "npc_ETC_20150317_005122")
@@ -703,7 +717,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ soldier6 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_KINGDOM_GUADIAN02_1 -----
 ----- Dialog -----
 addnpc(20016, "ETC_20150317_005122", "d_underfortress_66", 1175, 137, 19, -11, "npc_ETC_20150317_005122")
@@ -795,7 +809,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ soldier6 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_KINGDOM_GUADIAN03_1 -----
 ----- Dialog -----
 addnpc(20016, "ETC_20150317_005122", "d_underfortress_66", 1302, 137, -18, -78, "npc_ETC_20150317_005122")
@@ -887,7 +901,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ soldier6 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_KINGDOM_GUADIAN04_1 -----
 ----- Dialog -----
 addnpc(20016, "ETC_20150317_005122", "d_underfortress_66", 1172, 137, -121, 137, "npc_ETC_20150317_005122")
@@ -979,7 +993,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ soldier7 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_KINGDOM_GUADIAN -----
 ----- Dialog -----
 addnpc(20019, "ETC_20150317_005122", "d_underfortress_66", 1047, 137, -14, -94, "npc_ETC_20150317_005122")
@@ -1071,7 +1085,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ leather_bag ----- 
+----- Abandoned Kingdom Guard's Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155012, "ETC_20151001_015235", "d_underfortress_66", -205, 272, 394, 65, "npc_ETC_20151001_015235")
@@ -1079,7 +1093,7 @@ function npc_ETC_20151001_015235()
 msg("UNDER66_DEAD_KINGDOM_GUADIAN01")
 end
 
------ leather_bag ----- 
+----- Abandoned Kingdom Guard's Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155012, "ETC_20151001_015235", "d_underfortress_66", -32, 200, 670, 5, "npc_ETC_20151001_015235")
@@ -1087,7 +1101,7 @@ function npc_ETC_20151001_015235()
 msg("UNDER66_DEAD_KINGDOM_GUADIAN02")
 end
 
------ leather_bag ----- 
+----- Abandoned Kingdom Guard's Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155012, "ETC_20151001_015235", "d_underfortress_66", 47, 200, 953, -81, "npc_ETC_20151001_015235")
@@ -1095,7 +1109,7 @@ function npc_ETC_20151001_015235()
 msg("UNDER66_DEAD_KINGDOM_GUADIAN03")
 end
 
------ leather_bag ----- 
+----- Abandoned Kingdom Guard's Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155012, "ETC_20151001_015235", "d_underfortress_66", 35, 272, 179, -43, "npc_ETC_20151001_015235")
@@ -1103,7 +1117,7 @@ function npc_ETC_20151001_015235()
 msg("UNDER66_DEAD_KINGDOM_GUADIAN04")
 end
 
------ soldier7 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_MQ04 -----
 ----- Dialog -----
 addnpc(20019, "ETC_20150317_005122", "d_underfortress_66", 1531, 140, 413, -7, "npc_ETC_20150317_005122")
@@ -1195,7 +1209,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ soldier7 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_MQ04 -----
 ----- Dialog -----
 addnpc(20019, "ETC_20150317_005122", "d_underfortress_66", 1476, 137, 323, 74, "npc_ETC_20150317_005122")
@@ -1287,7 +1301,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ soldier7 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_MQ04 -----
 ----- Dialog -----
 addnpc(20019, "ETC_20150317_005122", "d_underfortress_66", 1501, 137, 403, -17, "npc_ETC_20150317_005122")
@@ -1379,7 +1393,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ soldier7 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_MQ04 -----
 ----- Dialog -----
 addnpc(20019, "ETC_20150317_005122", "d_underfortress_66", 1465, 137, 409, 3, "npc_ETC_20150317_005122")
@@ -1471,7 +1485,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ soldier7 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_MQ04 -----
 ----- Dialog -----
 addnpc(20019, "ETC_20150317_005122", "d_underfortress_66", 1537, 139, 350, 69, "npc_ETC_20150317_005122")
@@ -1563,7 +1577,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ soldier7 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_MQ04 -----
 ----- Dialog -----
 addnpc(20019, "ETC_20150317_005122", "d_underfortress_66", 1511, 137, 334, 131, "npc_ETC_20150317_005122")
@@ -1655,7 +1669,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ soldier7 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_MQ05 -----
 ----- Dialog -----
 addnpc(20019, "ETC_20150317_005122", "d_underfortress_66", 1911, 217, 438, 45, "npc_ETC_20150317_005122")
@@ -1747,7 +1761,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ soldier7 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_MQ05 -----
 ----- Dialog -----
 addnpc(20019, "ETC_20150317_005122", "d_underfortress_66", 1993, 217, 327, 223, "npc_ETC_20150317_005122")
@@ -1839,7 +1853,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ soldier7 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_MQ05 -----
 ----- Dialog -----
 addnpc(20019, "ETC_20150317_005122", "d_underfortress_66", 1827, 217, 276, 135, "npc_ETC_20150317_005122")
@@ -1931,7 +1945,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ soldier7 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_MQ05 -----
 ----- Dialog -----
 addnpc(20019, "ETC_20150317_005122", "d_underfortress_66", 1871, 217, 478, 161, "npc_ETC_20150317_005122")
@@ -2023,7 +2037,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ noshadow_npc ----- 
+----- Hidden Area ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "QUEST_LV_0200_20150317_002927", "d_underfortress_66", 1758, 217, 602, 45, "npc_QUEST_LV_0200_20150317_002927")
@@ -2031,7 +2045,7 @@ function npc_QUEST_LV_0200_20150317_002927()
 msg("UNDER66_TO_UNDER65_SECRET_ROOM")
 end
 
------ mon_paladin_follower1_2 ----- 
+----- Ruklys Army Officer's Spirit ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_MQ07_GHOST -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_66_MQ070 | UNDERFORTRESS_66_MQ060 -----
@@ -2041,7 +2055,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ soldier7 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_GUADIAN_WARDEN -----
 ----- Dialog -----
 addnpc(20019, "ETC_20150317_005122", "d_underfortress_66", 1041, 137, -98, 45, "npc_ETC_20150317_005122")
@@ -2133,7 +2147,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ soldier7 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_MQ05_WARDEN -----
 ----- Dialog -----
 addnpc(20019, "ETC_20150317_005122", "d_underfortress_66", 1753, 217, 440, -81, "npc_ETC_20150317_005122")
@@ -2225,7 +2239,7 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ soldier7 ----- 
+----- Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName: UNDER66_MQ05_WARDEN -----
 ----- Dialog -----
 addnpc(20019, "ETC_20150317_005122", "d_underfortress_66", 1750, 217, 336, 169, "npc_ETC_20150317_005122")
@@ -2317,56 +2331,56 @@ msg("UNDERFORTRESS_66_MQ050_startnpc02")
 msg("UNDERFORTRESS_66_MQ060_startnpc01")
 end
 
------ npc_flash_soldier_05 ----- 
+----- Petrified Kingdom Guard ----- 
 ----- Enter -----
 addnpc(154029, "ETC_20151001_015238", "d_underfortress_66", 1827, 217, 277, 152, "npc_ETC_20151001_015238")
 function npc_ETC_20151001_015238()
 msg("FLASH_SOLDIER01")
 end
 
------ npc_flash_soldier_05 ----- 
+----- Petrified Kingdom Guard ----- 
 ----- Enter -----
 addnpc(154029, "ETC_20151001_015238", "d_underfortress_66", 1771, 217, 330, 85, "npc_ETC_20151001_015238")
 function npc_ETC_20151001_015238()
 msg("FLASH_SOLDIER01")
 end
 
------ npc_flash_soldier_05 ----- 
+----- Petrified Kingdom Guard ----- 
 ----- Enter -----
 addnpc(154029, "ETC_20151001_015238", "d_underfortress_66", 1993, 217, 327, 161, "npc_ETC_20151001_015238")
 function npc_ETC_20151001_015238()
 msg("FLASH_SOLDIER01")
 end
 
------ npc_flash_soldier_05 ----- 
+----- Petrified Kingdom Guard ----- 
 ----- Enter -----
 addnpc(154029, "ETC_20151001_015238", "d_underfortress_66", 1911, 217, 438, 154, "npc_ETC_20151001_015238")
 function npc_ETC_20151001_015238()
 msg("FLASH_SOLDIER01")
 end
 
------ npc_flash_soldier_03 ----- 
+----- Petrified Kingdom Guard ----- 
 ----- Enter -----
 addnpc(154027, "ETC_20151001_015238", "d_underfortress_66", 1944, 217, 386, 144, "npc_ETC_20151001_015238")
 function npc_ETC_20151001_015238()
 msg("FLASH_SOLDIER02")
 end
 
------ npc_flash_soldier_02 ----- 
+----- Petrified Kingdom Guard ----- 
 ----- Enter -----
 addnpc(154026, "ETC_20151001_015238", "d_underfortress_66", 1769, 217, 424, 89, "npc_ETC_20151001_015238")
 function npc_ETC_20151001_015238()
 msg("FLASH_SOLDIER03")
 end
 
------ npc_flash_soldier_04 ----- 
+----- Petrified Kingdom Guard ----- 
 ----- Enter -----
 addnpc(154028, "ETC_20151001_015238", "d_underfortress_66", 1869, 217, 473, 123, "npc_ETC_20151001_015238")
 function npc_ETC_20151001_015238()
 msg("FLASH_SOLDIER04")
 end
 
------ npc_historian_odel_2 ----- 
+----- [Amanda Grave Robbers]Amanda ----- 
 ----- npcselectdialog.ies | ClassName: AMANDA_66_3 -----
 ----- Dialog -----
 addnpc(153040, "ETC_20150714_013166", "d_underfortress_66", 1611, 161, 395, -113, "npc_ETC_20150714_013166")

@@ -1,4 +1,18 @@
------ npc_lecifer ----- 
+----- Tiltas Valley ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009576", "f_rokas_29", 2612, 469, 819, 135, "npc_ETC_20150323_009576")
+function npc_ETC_20150323_009576()
+msg("ROKAS29_ROKAS28")
+end
+
+----- King's Plateau ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001194", "f_rokas_29", -1413, 617, -2079, -107, "npc_ETC_20150317_001194")
+function npc_ETC_20150317_001194()
+msg("ROKAS29_ROKAS30")
+end
+
+----- Rexipher ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS29_HALF_SUCCESS1 -----
 ----- Enter | Dialog -----
 addnpc(47413, "QUEST_LV_0100_20150317_000516", "f_rokas_29", -770, 617, -1564, 45, "npc_QUEST_LV_0100_20150317_000516")
@@ -8,7 +22,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_husband_1 ----- 
+----- Adventurer Varkis ----- 
 ----- npcselectdialog.ies | ClassName: VACYS_LIVE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS29_VACYS1 | ROKAS29_VACYS2 -----
@@ -22,7 +36,7 @@ msg("ROKAS29_VACYS3_agree1")
 msg("ROKAS29_VACYS9_succ2")
 end
 
------ pedlar_lose_2 ----- 
+----- Adventurer's Bag ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS29_BAG -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS29_VACYS1 -----
@@ -32,7 +46,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ bonfire_1 ----- 
+----- Bonfire ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS29_FIRE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS29_VACYS6 -----
@@ -42,7 +56,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_husband_1 ----- 
+----- Adventurer Varkis' Spirit ----- 
 ----- npcselectdialog.ies | ClassName: VACYS_SOUL -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS29_VACYS3 | ROKAS29_VACYS4 | ROKAS29_VACYS5 | ROKAS29_VACYS6 -----
@@ -52,7 +66,7 @@ msg("VACYS_SOUL_basic1")
 msg("VACYS_SOUL_basic2")
 end
 
------ npc_lecifer ----- 
+----- Historian Rexipher ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS29_MQ_REXITHER1 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS29_MQ1 -----
@@ -81,7 +95,7 @@ msg("ROKAS29_MQ_REXITHER2_BASIC01")
 msg("ROKAS29_MQ_REXITHER6_BASIC01")
 end
 
------ npc_lecifer ----- 
+----- Historian Rexipher ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS29_MQ_REXITHER6 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS29_MQ6 | ROKAS29_MQ5 -----
@@ -110,7 +124,7 @@ msg("ROKAS29_MQ_REXITHER2_BASIC01")
 msg("ROKAS29_MQ_REXITHER6_BASIC01")
 end
 
------ npc_lecifer ----- 
+----- Historian Rexipher ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS29_MQ_REXITHER2 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS29_MQ1 | ROKAS29_MQ2 -----
@@ -139,7 +153,7 @@ msg("ROKAS29_MQ_REXITHER2_BASIC01")
 msg("ROKAS29_MQ_REXITHER6_BASIC01")
 end
 
------ npc_lecifer ----- 
+----- Historian Rexipher ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS29_MQ_REXITHER3 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS29_MQ3 -----
@@ -149,7 +163,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_lecifer ----- 
+----- Historian Rexipher ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS29_MQ_REXITHER4 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS29_MQ3 | ROKAS29_MQ4 -----
@@ -159,7 +173,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_lecifer ----- 
+----- Historian Rexipher ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS29_MQ_REXITHER5 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS29_MQ4 | ROKAS29_MQ5 -----
@@ -169,7 +183,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zachariel_head_03 ----- 
+----- Zachariel's Epitaph ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS29_MQ_DEVICE1 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS29_MQ1 -----
@@ -179,7 +193,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zachariel_head_03 ----- 
+----- Zachariel's Epitaph ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS29_MQ_DEVICE2 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS29_MQ2 | ROKAS29_MQ2_BRIDGE -----
@@ -189,7 +203,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zachariel_head_03 ----- 
+----- Zachariel's Epitaph ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS29_MQ_DEVICE4 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS29_MQ4 | ROKAS29_MQ4_BRIDGE -----
@@ -199,7 +213,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zachariel_head_03 ----- 
+----- Zachariel's Epitaph ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS29_MQ_DEVICE5 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS29_MQ5 -----
@@ -209,10 +223,17 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ stone_monument1 ----- 
+----- Mullers Passage ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001311", "f_rokas_29", -2114, 782, 1614, 135, "npc_ETC_20150317_001311")
+function npc_ETC_20150317_001311()
+msg("ROKAS29_PCATACOMB1")
+end
+
+----- Epitaph ----- 
 addnpc(47190, "QUEST_20150317_000341", "f_rokas_29", -484, 617, -2083, 60, "npc_dummy")
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_rokas_29", 1115, 658, -1202, 45, "npc_ETC_20150317_009100")

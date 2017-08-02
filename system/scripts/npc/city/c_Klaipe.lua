@@ -1,4 +1,4 @@
------ npc_tool_merchants ----- 
+----- [Item Merchant] Mirina ----- 
 ----- npcselectdialog.ies | ClassName: EMILIA -----
 ----- Dialog -----
 ----- QuestIDs: JOB_SAPPER2_2 | JOB_DIEVDIRBYS3_1 | JOB_DIEVDIRBYS3_2 | JOB_DIEVDIRBYS3_3 | EAST_PREPARE_1 | EAST_PREPARE -----
@@ -20,7 +20,7 @@ msg("EAST_PREPARE_1_AC")
 msg("EAST_PREPARE_1_SUCST")
 end
 
------ npc_equipment_dealers ----- 
+----- [Equipment Merchant] Dunkel ----- 
 ----- npcselectdialog.ies | ClassName: AKALABETH -----
 ----- Dialog -----
 ----- QuestIDs: JOB_SAPPER2_2 -----
@@ -33,7 +33,7 @@ msg("Akalabeth_Select_2")
 msg("Akalabeth_Select_3")
 end
 
------ npc_accessary_merchant ----- 
+----- [Accessory Merchant]Ronesa ----- 
 ----- npcselectdialog.ies | ClassName: ALFONSO -----
 ----- Enter | Dialog -----
 ----- QuestIDs: EAST_PREPARE_1 -----
@@ -47,7 +47,7 @@ msg("EAST_PREPARE_1_COMP")
 msg("Alfonso_Select_1")
 end
 
------ npc_knight ----- 
+----- [Templar Master]Knight Commander Uska ----- 
 ----- npcselectdialog.ies | ClassName: KLAPEDA_USKA -----
 ----- Dialog -----
 ----- QuestIDs: KLAPEDA_GO_TO_EAST | CMINE6_TO_KATYN7_2 | JOB_PELTASTA2_2 | EAST_PREPARE | CMINE6_TO_KATYN7_3 | JOB_HIGHLANDER4_2 | JOB_HIGHLANDER4_3 | JOB_HIGHLANDER4_4 | JOB_TEMPLAR_7_1 | JOB_TEMPLAR_8_1 | KATYN_14_HQ_01 | PARTY_Q_040 | PARTY_Q_042 | TABLELAND_70_SQ10 | WHITETREES56_1_SQ10 -----
@@ -99,7 +99,7 @@ msg("JOB_TEMPLAR_8_1_STD")
 msg("JOB_TEMPLAR_8_1_SU")
 end
 
------ npc_healer ----- 
+----- [Cleric Master] Rozalija ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_CLERIC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_CLERIC1 | TUTO_CLERIC_TECH | JOB_SAPPER2_3 | JOB_CLERIC2_1 | JOB_CLERIC2_2 | JOB_CLERIC3_1 | JOB_KRIVI4_3 | JOB_DIEVDIRBYS4_1 | JOB_DIEVDIRBYS4_2 | JOB_CLERIC4_1 | JOB_CLERIC4_3 | JOB_CLERIC5_1 | KATYN_13_2_HQ_04 | PILGRIM51_SQ_5 | PILGRIM51_SQ_5_0 | FLASH_58_SQ_030 -----
@@ -150,7 +150,7 @@ msg("FLASH_58_SQ_035_ACC")
 msg("FLASH_58_SQ_035_COMPSUC")
 end
 
------ npc_village_uncle_12 ----- 
+----- Klaipeda Resident ----- 
 ----- npcselectdialog.ies | ClassName: ACT_VILLAGERS -----
 ----- Dialog -----
 addnpc(20158, "QUEST_LV_0100_20150317_000413", "c_Klaipe", -9, 156, 131, -23.96, "npc_QUEST_LV_0100_20150317_000413")
@@ -180,7 +180,7 @@ msg("KLAPEDA_Villagers_basic22")
 msg("KLAPEDA_NPC_08_02_basic01")
 end
 
------ npc_matron ----- 
+----- Mother of a Soldier ----- 
 ----- npcselectdialog.ies | ClassName: ACT_SMOM -----
 ----- Dialog -----
 addnpc(20114, "QUEST_LV_0100_20150317_000423", "c_Klaipe", -60, 148, 42, 36.57, "npc_QUEST_LV_0100_20150317_000423")
@@ -194,7 +194,7 @@ msg("KLAPEDA_Smom_basic6")
 msg("KLAPEDA_Smom_basic7")
 end
 
------ npc_PRS_master ----- 
+----- [Priest Master] Boruble ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_PRIEST -----
 ----- Dialog -----
 ----- QuestIDs: JOB_PRIEST1 | JOB_PRIEST2_1 | JOB_CLERIC2_1 | JOB_PRIEST3_1 | JOB_KRIVI4_1 | JOB_PRIEST4_1 | JOB_DIEVDIRBYS4_3 | JOB_DIEVDIRBYS4_4 | JOB_KRIVI4_2 | JOB_PRIEST5_1 | PILGRIM51_SQ_2_1 | PILGRIM51_SQ_2_2 | ABBEY_35_4_SQ_5 | CATACOMB_25_4_SQ_90 | THORN22_HQ1 -----
@@ -240,7 +240,14 @@ msg("CATACOMB_25_4_SQ_90_PG")
 msg("CATACOMB_25_4_SQ_90_AGD")
 end
 
------ Board3 ----- 
+----- West Siauliai Woods ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001151", "c_Klaipe", -201, -1, -1182, -55, "npc_ETC_20150317_001151")
+function npc_ETC_20150317_001151()
+msg("WS_KLAPEDA_SIAULST1")
+end
+
+----- Bulletin Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40090, "QUEST_20150317_000081", "c_Klaipe", -80, 148, 387, -15, "npc_QUEST_20150317_000081")
@@ -248,7 +255,7 @@ function npc_QUEST_20150317_000081()
 msg("KLAPEDA_SIGN9")
 end
 
------ npc_blacksmith ----- 
+----- [Blacksmith] Zaras ----- 
 ----- npcselectdialog.ies | ClassName: BLACKSMITH -----
 ----- Enter | Dialog -----
 ----- QuestIDs: ROKAS29_VACYS8 | ROKAS29_VACYS7 | REMAINS37_2_SQ_031 | REMAINS37_2_SQ_032 -----
@@ -267,7 +274,7 @@ msg("REMAINS37_2_SQ_032_ACC")
 msg("REMAINS37_2_SQ_032_SUCST")
 end
 
------ npc_KRV_master ----- 
+----- [Krivis Master] Herkus ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_KRIWI -----
 ----- Dialog -----
 ----- QuestIDs: JOB_KRIWI1 | JOB_KRIWI1_1 | JOB_KRIVI2_1 | JOB_CLERIC2_1 | JOB_KRIVI3_1 | JOB_KRIVI4_1 | JOB_KRIVI4_3 | JOB_BOCOR4_1 | JOB_BOCOR4_2 | JOB_BOCOR4_3 | JOB_BOCOR4_4 | JOB_DIEVDIRBYS4_2 | JOB_DIEVDIRBYS4_3 | JOB_KRIVI5_1 -----
@@ -307,7 +314,7 @@ msg("JOB_KRIVI5_1_AG")
 msg("MASTER_KRIWI_basic1")
 end
 
------ npc_matron ----- 
+----- Indifferent Widow ----- 
 ----- npcselectdialog.ies | ClassName: TUTO_GIRL -----
 ----- Dialog -----
 addnpc(20114, "QUEST_20150317_000083", "c_Klaipe", -409, -1, -647, -47.29, "npc_QUEST_20150317_000083")
@@ -319,7 +326,7 @@ msg("TUTO_GIRL_basic_01")
 msg("TUTO_GIRL_basic_02")
 end
 
------ npc_village_uncle_4 ----- 
+----- Refugee ----- 
 ----- npcselectdialog.ies | ClassName: KLAPEDA_NPC_14 -----
 ----- Dialog -----
 addnpc(20139, "QUEST_LV_0100_20150317_001418", "c_Klaipe", -60, 79, -446, -33.69, "npc_QUEST_LV_0100_20150317_001418")
@@ -332,7 +339,14 @@ msg("HT_KLAPEDA_NPC_14_BASIC02")
 msg("HT_KLAPEDA_NPC_14_BASIC03")
 end
 
------ npc_combat_transport_section_1_market ----- 
+----- East Siauliai Woods ----- 
+----- Enter -----
+addnpc(40001, "QUEST_20150317_000822", "c_Klaipe", 799, -1, 331, 90, "npc_QUEST_20150317_000822")
+function npc_QUEST_20150317_000822()
+msg("WS_KLAPEDA_SIAULST2")
+end
+
+----- [Market Manager] Logi ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(20169, "ETC_20150317_009211", "c_Klaipe", 278, 79, 137, 45, "npc_ETC_20150317_009211")
@@ -341,7 +355,15 @@ msg("TUTO_MARKET_NPC")
 msg("KLAPEDA_MARKET_SEL")
 end
 
------ peltasta ----- 
+----- Bokor Master's Home ----- 
+----- npcselectdialog.ies | ClassName:  -----
+----- Dialog -----
+addnpc(40001, "ETC_20150317_001146", "c_Klaipe", -976, -1, -502, 180, "npc_ETC_20150317_001146")
+function npc_ETC_20150317_001146()
+msg("WS_KLAPEDA_BOCORS")
+end
+
+----- [Peltasta Master]Maria Leed ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_PELTASTA -----
 ----- Dialog -----
 ----- QuestIDs: JOB_PELTASTA1 | JOB_HIGHLANDER2_1 | JOB_PELTASTA2_1 | JOB_PELTASTA3_1 | JOB_HIGHLANDER4_1 | JOB_HIGHLANDER4_2 | JOB_PELTASTA4_1 | JOB_PELTASTA4_4 | JOB_PELTASTA5_1 | JOB_PELTASTA2_2 -----
@@ -375,7 +397,23 @@ msg("JOB_PELTASTA5_1_succ")
 msg("JOB_PELTASTA5_1_AG")
 end
 
------ npc_cryomancer ----- 
+----- Highlander Master's Training Hall ----- 
+----- npcselectdialog.ies | ClassName:  -----
+----- Dialog -----
+addnpc(40001, "ETC_20150317_001145", "c_Klaipe", 223, 80, -95, 180, "npc_ETC_20150317_001145")
+function npc_ETC_20150317_001145()
+msg("WS_KLAPEDA_HIGHLANDER")
+end
+
+----- Pyromancer Master's Lab ----- 
+----- npcselectdialog.ies | ClassName:  -----
+----- Dialog -----
+addnpc(40001, "ETC_20150317_001147", "c_Klaipe", -2, 96, -290, 155, "npc_ETC_20150317_001147")
+function npc_ETC_20150317_001147()
+msg("WS_KLAPEDA_FIREMAGE")
+end
+
+----- [Cryomancer Master] Aleister Crowley ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_ICEMAGE -----
 ----- Dialog -----
 ----- QuestIDs: JOB_ICEMAGE1 | JOB_CRYOMANCER2_1 | JOB_CRYOMANCER2_2 | JOB_CRYOMANCER3_1 | JOB_CRYOMANCER4_1 | JOB_CRYOMANCER5_1 | SIAULIAI_50_1_SQ_090 | PARTY_Q_070 -----
@@ -408,7 +446,7 @@ msg("PARTY_Q_070_startnpc_prog01")
 msg("PARTY_Q_070_succ01")
 end
 
------ npc_QRS_master ----- 
+----- [Quarrel Shooter Master]Ream Toiler ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_QU -----
 ----- Dialog -----
 ----- QuestIDs: JOB_QUARRELSHOOTER1 | JOB_HUNTER2_2 | JOB_QUARREL2_1 | JOB_QUARREL2_2 | JOB_QUARREL2_3 | JOB_QUARREL2_4 | JOB_ARCHER2_3 | JOB_RANGER2_3 | JOB_QUARREL3_1 | JOB_QUARREL3_2 | JOB_QUARREL4_1 | JOB_QUARREL5_1 -----
@@ -450,7 +488,7 @@ msg("MASTER_QU_basic4")
 msg("MASTER_QU_basic1")
 end
 
------ npc_RAG_master ----- 
+----- [Ranger Master] Nemoken ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_RANGER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_HUNTER1 | JOB_HUNTER2_4 | JOB_QUARREL2_4 | JOB_ARCHER2_4 | JOB_RANGER2_1 | JOB_RANGER2_2 | JOB_RANGER2_3 | JOB_RANGER2_4 | JOB_RANGER2_5 | JOB_RANGER3_1 | JOB_RANGER3_2 | JOB_RANGER4_1 | JOB_RANGER5_1 | SIAULIAI_50_1_SQ_050 | SIAULIAI_50_1_SQ_060 | KATYN_45_3_SQ_15 -----
@@ -500,7 +538,7 @@ msg("KATYN_45_3_SQ_15_PG")
 msg("KATYN_45_3_SQ_15_SU1")
 end
 
------ swordmaster ----- 
+----- [Swordsman Master]Rashua ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_SWORDMAN -----
 ----- Dialog -----
 ----- QuestIDs: TUTO_SWORDMAN_TECH | JOB_SWORDMAN1 | JOB_WARRIOR2_1 | JOB_WARRIOR3_1 | JOB_SWORDMAN4_1 | JOB_SWORDMAN5_1 | KATYN_13_2_HQ_01 -----
@@ -533,7 +571,7 @@ msg("JOB_SWORDMAN5_1_prog")
 msg("JOB_SWORDMAN5_1_succ")
 end
 
------ wizardmaster ----- 
+----- [Wizard Master]Lucia ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_WIZARD -----
 ----- Dialog -----
 ----- QuestIDs: TUTO_WIZARD_TECH | JOB_WIZARD1 | JOB_WIZARD2_1 | JOB_WIZARD2_2 | JOB_WIZARD3_1 | JOB_WIZARD3_2 | JOB_WIZARD4_1 | JOB_WIZARD5_1 | KATYN_13_2_HQ_02 -----
@@ -576,7 +614,7 @@ msg("CASTLE203_KQ_1_3")
 msg("FTOWER691_KQ_1_3")
 end
 
------ npc_ARC_master ----- 
+----- [Archer Master] Edmundas Tiller ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_ARCHER -----
 ----- Dialog -----
 ----- QuestIDs: TUTO_ARCHER_TECH | JOB_ARCHER1 | JOB_HUNTER2_3 | JOB_QUARREL2_3 | JOB_ARCHER2_1 | JOB_ARCHER2_2 | JOB_ARCHER2_3 | JOB_ARCHER2_4 | JOB_RANGER2_4 | JOB_ARCHER3_1 | JOB_ARCHER3_3 | JOB_ARCHER4_1 | JOB_ARCHER4_3 | JOB_ARCHER5_1 | KATYN_13_2_HQ_03 -----
@@ -619,7 +657,7 @@ msg("JOB_ARCHER1_03")
 msg("JOB_ARCHER1_01_AG")
 end
 
------ Board1 ----- 
+----- Bulletin Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000081", "c_Klaipe", -66, -1, -752, -47.99, "npc_QUEST_20150317_000081")
@@ -627,7 +665,7 @@ function npc_QUEST_20150317_000081()
 msg("KLAPEDA_SIGN30")
 end
 
------ Board1 ----- 
+----- Bulletin Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000081", "c_Klaipe", 195, -1, -641, -33.69, "npc_QUEST_20150317_000081")
@@ -635,7 +673,7 @@ function npc_QUEST_20150317_000081()
 msg("KLAPEDA_SIGN31")
 end
 
------ Board1 ----- 
+----- Bulletin Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000081", "c_Klaipe", 58, 79, -359, -11.66, "npc_QUEST_20150317_000081")
@@ -643,7 +681,7 @@ function npc_QUEST_20150317_000081()
 msg("KLAPEDA_SIGN32")
 end
 
------ Board1 ----- 
+----- Bulletin Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000081", "c_Klaipe", -63, 148, -108, 37.87, "npc_QUEST_20150317_000081")
@@ -651,7 +689,7 @@ function npc_QUEST_20150317_000081()
 msg("KLAPEDA_SIGN33")
 end
 
------ Board1 ----- 
+----- Bulletin Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000081", "c_Klaipe", -165, -1, -958, 18.43, "npc_QUEST_20150317_000081")
@@ -659,7 +697,7 @@ function npc_QUEST_20150317_000081()
 msg("KLAPEDA_SIGN_WELCOME")
 end
 
------ Board1 ----- 
+----- Signboard ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000821", "c_Klaipe", 744, -1, 192, -81.23, "npc_QUEST_20150317_000821")
@@ -667,7 +705,7 @@ function npc_QUEST_20150317_000821()
 msg("KLAPEDA_SIGN35")
 end
 
------ Board1 ----- 
+----- About the Goddess Statue ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150729_002302", "c_Klaipe", -125, 148, -11, -3.009998, "npc_QUEST_20150729_002302")
@@ -675,7 +713,7 @@ function npc_QUEST_20150729_002302()
 msg("KLAPEDA_SIGN36")
 end
 
------ Board1 ----- 
+----- Holiday Notice ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000830", "c_Klaipe", 617, -1, 61, 45, "npc_QUEST_20150317_000830")
@@ -683,7 +721,7 @@ function npc_QUEST_20150317_000830()
 msg("KLAPEDA_BOARD_01")
 end
 
------ npc_village_female ----- 
+----- Lyliana ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_3_KLAIPEDA_NPC -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_3_HQ_01 -----
@@ -703,7 +741,7 @@ msg("HT4_HUEVILLAGE_58_3_KLAIPEDA_NPC_BASIC13")
 msg("HUEVILLAGE_58_3_HQ_01_succ01")
 end
 
------ npc_kristina ----- 
+----- [Companion Trader]Christina ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153005, "ETC_20150317_009212", "c_Klaipe", 6, -1, -760, 315, "npc_ETC_20150317_009212")
@@ -711,7 +749,7 @@ function npc_ETC_20150317_009212()
 msg("PETSHOP_KLAIPE_basic1")
 end
 
------ Velhider2_NPC ----- 
+----- Velheider ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47521, "ETC_20150317_007299", "c_Klaipe", -22, -1, -757, 315, "npc_ETC_20150317_007299")
@@ -719,7 +757,7 @@ function npc_ETC_20150317_007299()
 msg("PETSHOP_KLAIPE_PET")
 end
 
------ npc_rena ----- 
+----- [Wings of Vaivora]Lena ----- 
 ----- npcselectdialog.ies | ClassName: JOURNEY_SHOP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: REMAINS37_2_SQ_070 | BRACKEN42_1_SQ10 -----
@@ -740,7 +778,7 @@ msg("BRACKEN421_SQ_10_succ1")
 msg("BRACKEN421_SQ_10_succ2")
 end
 
------ npc_henrika ----- 
+----- [Klaipeda's Magic Association] Henrika ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(152004, "ETC_20150317_009215", "c_Klaipe", -345, 149, 284, 0, "npc_ETC_20150317_009215")
@@ -748,7 +786,15 @@ function npc_ETC_20150317_009215()
 msg("COLLECTION_SHOP")
 end
 
------ npc_warehouse ----- 
+----- Gytis Settlement Area ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009621", "c_Klaipe", 241, 149, 896, 109, "npc_ETC_20150323_009621")
+function npc_ETC_20150323_009621()
+msg("GM_QUEST_MODIFY_PC_SEL")
+msg("GM_NPC_HIDE_UNHIDE")
+end
+
+----- [Storage Keeper] Rita ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(154018, "ETC_20150414_011199", "c_Klaipe", 262, 79, 233, 45, "npc_ETC_20150414_011199")
@@ -757,7 +803,7 @@ msg("TUTO_STORAGE_NPC")
 msg("WAREHOUSE_FEDIMIAN_DLG")
 end
 
------ npc_ORC_master ----- 
+----- [Oracle Master]Apolonjia Barbora ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_ORACLE -----
 ----- Dialog -----
 ----- QuestIDs: JOB_ORACLE5_1 | JOB_ORACLE_6_1 | JOB_ORACLE_7_1 -----
@@ -781,7 +827,7 @@ msg("JOB_ORACLE_7_1_SUCC1")
 msg("JOB_ORACLE5_1_01_CANCLE")
 end
 
------ klaipeda_square_statue ----- 
+----- Statue of Goddess Ausrine ----- 
 ----- npcselectdialog.ies | ClassName: WARP_C_KLAIPE -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 | EAST_PREPARE -----
@@ -792,7 +838,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_letizia ----- 
+----- [TP Trader] Leticia ----- 
 ----- npcselectdialog.ies | ClassName: TP_NPC -----
 ----- Enter | Dialog -----
 addnpc(20068, "ETC_20151224_019887", "c_Klaipe", 285, 79, 78, 45, "npc_ETC_20151224_019887")
@@ -802,7 +848,7 @@ msg("TP_NPC_basic01")
 msg("TP_NPC_basic02")
 end
 
------ npc_fedimian_mercenary_1 ----- 
+----- Mercenary Post Manager Rota ----- 
 ----- npcselectdialog.ies | ClassName: FEDIMIAN_ROTA_02 -----
 ----- Dialog -----
 ----- QuestIDs: TUTO_REQUEST_MISSION -----
@@ -812,7 +858,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_village_male_b1 ----- 
+----- Receptionist Ramda ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147484, "QUEST_20150414_001802", "c_Klaipe", -290, 240, 786, 360, "npc_QUEST_20150414_001802")
@@ -820,7 +866,7 @@ function npc_QUEST_20150414_001802()
 msg("MISSIONSHOP_NPC_01_CANCLE1")
 end
 
------ npc_Galius_follower_1 ----- 
+----- Receptionist Liam ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154054, "QUEST_20151001_002454", "c_Klaipe", -385, 240, 740, 360, "npc_QUEST_20151001_002454")
@@ -828,7 +874,7 @@ function npc_QUEST_20151001_002454()
 msg("PARTYQUEST_NPC_01_SELECT1")
 end
 
------ npc_fedimian_mercenary_2 ----- 
+----- Receptionist Donnes ----- 
 ----- npcselectdialog.ies | ClassName: DROPITEM_REQUEST1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: DROPITEM_REQUEST1 -----
@@ -842,7 +888,7 @@ msg("TUTO_REQUEST_MISSION_dlg03")
 msg("TUTO_REQUEST_MISSION_dlg04")
 end
 
------ npc_village_female ----- 
+----- Selphie ----- 
 ----- npcselectdialog.ies | ClassName: LOWLV_GREEN_SELPHUI -----
 ----- Dialog -----
 ----- QuestIDs: LOWLV_GREEN_SQ_60 -----
@@ -854,7 +900,7 @@ msg("LOWLV_GREEN_SELPHUI_BASIC")
 msg("LOWLV_GREEN_SELPHUI_BASIC2")
 end
 
------ npc_rich_baron ----- 
+----- Baron Munchausen ----- 
 ----- npcselectdialog.ies | ClassName: LOWLV_BOASTER_MUENCHHAUSEN -----
 ----- Dialog -----
 ----- QuestIDs: LOWLV_BOASTER_SQ_10 | LOWLV_BOASTER_SQ_20 | LOWLV_BOASTER_SQ_50 | LOWLV_BOASTER_SQ_40 | LOWLV_BOASTER_SQ_30 -----
@@ -884,7 +930,7 @@ msg("MUENCHHAUSEN_BASIC1")
 msg("MUENCHHAUSEN_BASIC2")
 end
 
------ Board3 ----- 
+----- Event Notice Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40090, "QUEST_20160723_004066", "c_Klaipe", 95, 149, 391, 225, "npc_QUEST_20160723_004066")

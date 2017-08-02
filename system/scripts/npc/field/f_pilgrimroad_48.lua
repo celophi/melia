@@ -1,4 +1,20 @@
------ npc_village_male_b1 ----- 
+----- Fasika Plateau ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150918_014224", "f_pilgrimroad_48", -561, 547, 1498, 161, "npc_ETC_20150918_014224")
+function npc_ETC_20150918_014224()
+msg("PILGRIM_48_TO_PILGRIM_36_2")
+end
+
+----- Genar Field ----- 
+----- Enter -----
+----- QuestIDs: PILGRIM48_HQ1 -----
+addnpc(40001, "ETC_20150918_014226", "f_pilgrimroad_48", -1470, 383, -2172, -51, "npc_ETC_20150918_014226")
+function npc_ETC_20150918_014226()
+msg("GM_QUEST_MODIFY_PC_SEL")
+msg("GM_NPC_HIDE_UNHIDE")
+end
+
+----- [Kedoran Merchant Alliance] Leopoldas ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_48_LEOPOLDAS -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM_48_SQ_010 -----
@@ -14,7 +30,7 @@ msg("PILGRIM_48_LEOPOLDAS_BASIC04")
 msg("PILGRIM_48_LEOPOLDAS_BASIC01")
 end
 
------ npc_pilgrim_f_2 ----- 
+----- [Kedoran Merchant Alliance] Merrisa ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_48_JURATE -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM_48_SQ_040 | PILGRIM_48_SQ_050 | PILGRIM_48_SQ_060 | PILGRIM_48_SQ_070 | PILGRIM48_HQ1 -----
@@ -46,7 +62,7 @@ msg("PILGRIM48_HQ1_prog1")
 msg("PILGRIM48_HQ1_succ1")
 end
 
------ npc_village_male_b2 ----- 
+----- [Kedoran Merchant Alliance] Margellius ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_48_MARCELIJUS -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM_48_SQ_080 | PILGRIM_48_SQ_090 -----
@@ -66,7 +82,7 @@ msg("PILGRIM_48_MARCELIJUS_.BASIC01")
 msg("PILGRIM_48_MARCELIJUS_.BASIC02")
 end
 
------ npc_village_female ----- 
+----- [Kedoran Merchant Alliance] Gerda ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_48_GERDA -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM_48_SQ_020 -----
@@ -80,7 +96,7 @@ msg("PILGRIM_48_GERDA_BASIC01")
 msg("PILGRIM_48_GERDA_BASIC02")
 end
 
------ npc_village_male_a3 ----- 
+----- [Kedoran Merchant Alliance] Serapinas ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_48_SERAPINAS -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM_48_SQ_030 -----
@@ -94,7 +110,7 @@ msg("PILGRIM_48_SERAPINAS_BASIC01")
 msg("PILGRIM_48_SERAPINAS_BASIC02")
 end
 
------ npc_matron ----- 
+----- Record Member ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_48_NPC02 -----
 ----- Dialog -----
 addnpc(20114, "QUEST_LV_0300_20151022_000597", "f_pilgrimroad_48", 90, 383, -214, 29, "npc_QUEST_LV_0300_20151022_000597")
@@ -103,7 +119,7 @@ msg("PILGRIM_48_NPC02_BASIC01")
 msg("PILGRIM_48_NPC03_BASIC01")
 end
 
------ npc_village_uncle_12 ----- 
+----- Collection Member ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_48_NPC01 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM48_RP_1 -----
@@ -115,7 +131,7 @@ msg("PILGRIM48_RP_1_2")
 msg("PILGRIM48_RP_1_3")
 end
 
------ npc_village_uncle_10 ----- 
+----- Record Member ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_48_NPC03 -----
 ----- Dialog -----
 addnpc(20156, "QUEST_LV_0300_20151022_000597", "f_pilgrimroad_48", 148, 383, -200, -92, "npc_QUEST_LV_0300_20151022_000597")
@@ -124,7 +140,7 @@ msg("PILGRIM_48_NPC02_BASIC01")
 msg("PILGRIM_48_NPC03_BASIC01")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -135,7 +151,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_PILGRIMROAD_48")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_pilgrimroad_48", 234, 546, 1479, 45, "npc_ETC_20150317_009100")
@@ -143,7 +159,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", 310, 427, -1497, 45, "npc_ETC_20150406_010731")
@@ -151,7 +167,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", 71, 427, -1516, 45, "npc_ETC_20150406_010731")
@@ -159,7 +175,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", -115, 427, -1355, 45, "npc_ETC_20150406_010731")
@@ -167,7 +183,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", -117, 427, -1158, 45, "npc_ETC_20150406_010731")
@@ -175,7 +191,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", -116, 427, -968, 45, "npc_ETC_20150406_010731")
@@ -183,7 +199,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", 121, 427, -1110, 45, "npc_ETC_20150406_010731")
@@ -191,7 +207,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", 253, 427, -1165, 45, "npc_ETC_20150406_010731")
@@ -199,7 +215,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", 429, 427, -1267, 45, "npc_ETC_20150406_010731")
@@ -207,7 +223,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", 695, 427, -1366, 45, "npc_ETC_20150406_010731")
@@ -215,7 +231,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", 527, 427, -1433, 45, "npc_ETC_20150406_010731")
@@ -223,7 +239,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", 638, 427, -1153, 45, "npc_ETC_20150406_010731")
@@ -231,7 +247,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", 651, 427, -1006, 45, "npc_ETC_20150406_010731")
@@ -239,7 +255,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", 575, 427, -820, 45, "npc_ETC_20150406_010731")
@@ -247,7 +263,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", 390, 427, -777, 45, "npc_ETC_20150406_010731")
@@ -255,7 +271,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", 204, 427, -854, 45, "npc_ETC_20150406_010731")
@@ -263,7 +279,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", 354, 427, -1007, 45, "npc_ETC_20150406_010731")
@@ -271,7 +287,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", 683, 427, -898, 45, "npc_ETC_20150406_010731")
@@ -279,7 +295,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", 220, 427, -1335, 45, "npc_ETC_20150406_010731")
@@ -287,7 +303,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ dirt_heal_3 ----- 
+----- Pile of Soil ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155026, "ETC_20150406_010731", "f_pilgrimroad_48", 535, 427, -933, 45, "npc_ETC_20150406_010731")
@@ -295,7 +311,7 @@ function npc_ETC_20150406_010731()
 msg("PILGRIM48_RP_1_OBJ")
 end
 
------ npc_INQ_master ----- 
+----- [Inquisitor Master]Thomas Iquinostasys ----- 
 ----- npcselectdialog.ies | ClassName: INQUISITOR_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_INQUGITOR_8_1 | CATACOMB33_2_HQ1 -----

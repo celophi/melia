@@ -1,18 +1,18 @@
------ whorfzone ----- 
+----- Mage Tower 3F ----- 
 ----- Enter -----
 addnpc(147500, "ETC_20150317_001214", "d_firetower_44", 584, 281, -1319, 45, "npc_ETC_20150317_001214")
 function npc_ETC_20150317_001214()
 msg("FIRETOWER44_TO_FIRETOWER43")
 end
 
------ whorfzone ----- 
+----- Mage Tower 5F ----- 
 ----- Enter -----
 addnpc(147500, "ETC_20150317_001216", "d_firetower_44", -2718, 576, 62, 45, "npc_ETC_20150317_001216")
 function npc_ETC_20150317_001216()
 msg("FIRETOWER44_TO_FIRETOWER45")
 end
 
------ npc_grita ----- 
+----- Grita ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER44_GRITA_01 -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER44_MQ_01 -----
@@ -108,7 +108,7 @@ msg("FTOWER44_GRITA_01_basic02")
 msg("FEDIMIAN_GRITA_BASIC02")
 end
 
------ npc_matron2 ----- 
+----- Furry Odd ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER44_SQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER44_SQ_01 | FTOWER44_SQ_02 -----
@@ -133,7 +133,7 @@ msg("FTOWER44_SQ_01_basic01")
 msg("FTOWER44_SQ_02_IDLE")
 end
 
------ npc_matron2 ----- 
+----- Furry Odd ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER44_SQ_02 -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER44_SQ_03 | FTOWER44_SQ_02 | FIRETOWER_44_HQ_01 -----
@@ -158,7 +158,7 @@ msg("FTOWER44_SQ_01_basic01")
 msg("FTOWER44_SQ_02_IDLE")
 end
 
------ ftower_sealstorn ----- 
+----- Sealed Stone ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER44_SQ_04 -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER44_SQ_04 -----
@@ -168,7 +168,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ ftower_sealstorn ----- 
+----- Sealed Stone ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER44_SQ_05 -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER44_SQ_05 -----
@@ -178,7 +178,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Magic Stabilizing Device  ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER44_MQ_02 -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER44_MQ_02 -----
@@ -188,7 +188,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Board1 ----- 
+----- Warning ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000507", "d_firetower_44", -568, 356, -367, 45, "npc_QUEST_20150317_000507")
@@ -196,7 +196,7 @@ function npc_QUEST_20150317_000507()
 msg("FTOWER_44_WARING")
 end
 
------ noshadow_npc ----- 
+----- Spell Control Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER44_MQ_04_NPC -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER44_MQ_04 -----
@@ -206,7 +206,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_grita ----- 
+----- Grita ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER44_GRITA_REMAIN -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER44_MQ_04 | FTOWER44_MQ_05 -----
@@ -302,7 +302,7 @@ msg("FTOWER44_GRITA_01_basic02")
 msg("FEDIMIAN_GRITA_BASIC02")
 end
 
------ BOOK_01 ----- 
+----- Psychokino Tome Volume 4 ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147311, "QUEST_20151102_002928", "d_firetower_44", 1411, 433, -656, 45, "npc_QUEST_20151102_002928")
@@ -310,11 +310,18 @@ function npc_QUEST_20151102_002928()
 msg("JOB_2_PSYCHOKINO_5_1_BOOK_4")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_firetower_44", 745, 451, 555, 45, "npc_ETC_20150317_009100")
 function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
+end
+
+----- Mage Tower Guild Mission ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_017827", "d_firetower_44", -369, 367, -1505, -120, "npc_ETC_20151224_017827")
+function npc_ETC_20151224_017827()
+msg("FIRETOWER44_TO_GUILDMISSION")
 end
 

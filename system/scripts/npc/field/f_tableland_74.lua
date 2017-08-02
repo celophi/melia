@@ -1,4 +1,18 @@
------ soldier4 ----- 
+----- Kadumel Cliff ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009599", "f_tableland_74", -2359, 347, -1629, -45, "npc_ETC_20150323_009599")
+function npc_ETC_20150323_009599()
+msg("TABLELAND74_TABLELAND73")
+end
+
+----- Kalejimas Visiting Room ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009600", "f_tableland_74", 2040, 945, 2475, 123, "npc_ETC_20150323_009600")
+function npc_ETC_20150323_009600()
+msg("TABLELAND74_PRISON78")
+end
+
+----- Soldier ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_SOLDIER5 -----
 ----- Dialog -----
 addnpc(20014, "ETC_20150317_003191", "f_tableland_74", -1733, 347, -1324, -82, "npc_ETC_20150317_003191")
@@ -201,7 +215,7 @@ msg("SIAUL1_BOARD10")
 msg("TABLELAND_11_1_SQ_03_LASTMSG")
 end
 
------ soldier7 ----- 
+----- Soldier Andre ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_SOLDIER1 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_74_SQ1 | TABLELAND_74_SQ2 -----
@@ -217,7 +231,7 @@ msg("TABLELAND_74_SQ2_startnpc_prog1")
 msg("TABLELAND_74_SQ2_startnpc_prog2")
 end
 
------ soldier3 ----- 
+----- Soldier ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_SOLDIER5 -----
 ----- Dialog -----
 addnpc(20013, "ETC_20150317_003191", "f_tableland_74", -1711, 347, -1320, 25, "npc_ETC_20150317_003191")
@@ -420,7 +434,7 @@ msg("SIAUL1_BOARD10")
 msg("TABLELAND_11_1_SQ_03_LASTMSG")
 end
 
------ mon_intermediate_officer_men3 ----- 
+----- Assistant Commander Vilas ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_SOLDIER2 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_74_SQ2 | TABLELAND_74_SQ3 | TABLELAND_74_SQ6 -----
@@ -436,7 +450,7 @@ msg("TABLE74_SUBQ_SOLDIER2_basic1")
 msg("TABLE74_SUBQ_SOLDIER2_basic2")
 end
 
------ soldier7 ----- 
+----- Soldier ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_SOLDIER4 -----
 ----- Dialog -----
 addnpc(20019, "ETC_20150317_003191", "f_tableland_74", 233, 596, -491, -71, "npc_ETC_20150317_003191")
@@ -639,7 +653,7 @@ msg("SIAUL1_BOARD10")
 msg("TABLELAND_11_1_SQ_03_LASTMSG")
 end
 
------ soldier2 ----- 
+----- Soldier ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_SOLDIER4 -----
 ----- Dialog -----
 addnpc(20012, "ETC_20150317_003191", "f_tableland_74", 226, 594, 220, 139, "npc_ETC_20150317_003191")
@@ -842,7 +856,7 @@ msg("SIAUL1_BOARD10")
 msg("TABLELAND_11_1_SQ_03_LASTMSG")
 end
 
------ boxes_02 ----- 
+----- Supply Box ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_BOX1 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_74_SQ7 -----
@@ -852,7 +866,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ soldier7 ----- 
+----- Soldier ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_SOLDIER4 -----
 ----- Dialog -----
 addnpc(20019, "ETC_20150317_003191", "f_tableland_74", 149, 594, 218, 138, "npc_ETC_20150317_003191")
@@ -1055,7 +1069,7 @@ msg("SIAUL1_BOARD10")
 msg("TABLELAND_11_1_SQ_03_LASTMSG")
 end
 
------ soldier7 ----- 
+----- Soldier ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_SOLDIER4 -----
 ----- Dialog -----
 addnpc(20019, "ETC_20150317_003191", "f_tableland_74", 651, 594, -194, 45, "npc_ETC_20150317_003191")
@@ -1258,7 +1272,7 @@ msg("SIAUL1_BOARD10")
 msg("TABLELAND_11_1_SQ_03_LASTMSG")
 end
 
------ soldier2 ----- 
+----- Soldier ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_SOLDIER4 -----
 ----- Dialog -----
 addnpc(20012, "ETC_20150317_003191", "f_tableland_74", 648, 594, -129, 45, "npc_ETC_20150317_003191")
@@ -1461,7 +1475,7 @@ msg("SIAUL1_BOARD10")
 msg("TABLELAND_11_1_SQ_03_LASTMSG")
 end
 
------ soldier2 ----- 
+----- Soldier ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_SOLDIER4 -----
 ----- Dialog -----
 addnpc(20012, "ETC_20150317_003191", "f_tableland_74", 112, 600, -520, -40, "npc_ETC_20150317_003191")
@@ -1664,7 +1678,7 @@ msg("SIAUL1_BOARD10")
 msg("TABLELAND_11_1_SQ_03_LASTMSG")
 end
 
------ soldier6 ----- 
+----- Scout Boas ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_SOLDIER3_1 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_74_SQ4 | TABLELAND_74_SQ5 | TABLELAND_74_SQ3 -----
@@ -1674,7 +1688,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ soldier6 ----- 
+----- Scout Boas ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_SOLDIER3_2 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_74_SQ5 -----
@@ -1684,7 +1698,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ boxes_02 ----- 
+----- Supply Box ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_BOX1 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_74_SQ7 -----
@@ -1694,7 +1708,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ boxes_02 ----- 
+----- Supply Box ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_BOX1 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_74_SQ7 -----
@@ -1704,7 +1718,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ mon_intermediate_officer_men3 ----- 
+----- Assistant Commander Vilas ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_SOLDIER2_2 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_74_SQ6 -----
@@ -1714,7 +1728,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ soldier6 ----- 
+----- Scout Boas ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_SOLDIER3_3 -----
 ----- Dialog -----
 addnpc(20016, "QUEST_LV_0300_20160718_002237", "f_tableland_74", 339, 594, 128, 45, "npc_QUEST_LV_0300_20160718_002237")
@@ -1732,11 +1746,18 @@ msg("TABLE74_SUBQ_SOLDIER3_3_basic1")
 msg("TABLE74_SUBQ_SOLDIER3_3_basic2")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_tableland_74", 452, 594, 134, 45, "npc_ETC_20150317_009100")
 function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
+end
+
+----- Inner Wall District 8 ----- 
+----- Enter -----
+addnpc(40001, "ETC_20160718_022005", "f_tableland_74", -2255, 459, -91, 165, "npc_ETC_20160718_022005")
+function npc_ETC_20160718_022005()
+msg("TABLELAND74_CASTLE_20_3")
 end
 

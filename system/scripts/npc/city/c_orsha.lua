@@ -1,4 +1,4 @@
------ Board1 ----- 
+----- Orsha Bulletin Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20151224_003161", "c_orsha", -1077, 501, 333, -17, "npc_QUEST_20151224_003161")
@@ -6,7 +6,7 @@ function npc_QUEST_20151224_003161()
 msg("ORSHA_KEDORLA_BOARD01_BASIC01")
 end
 
------ npc_illanai ----- 
+----- [Blacksmith] Ilanai ----- 
 ----- npcselectdialog.ies | ClassName: ORSHA_BLACKSMITH -----
 ----- Enter | Dialog -----
 ----- QuestIDs: PILGRIM_49_SQ_013 | PILGRIM_49_SQ_017 | JOB_2_DIEVDIRBYS3_1 | JOB_2_DIEVDIRBYS3_2 | JOB_2_DIEVDIRBYS3_3 -----
@@ -29,7 +29,7 @@ msg("JOB_2_DIEVDIRBYS3_3_2")
 msg("JOB_2_DIEVDIRBYS3_3_3")
 end
 
------ npc_julla ----- 
+----- [Equipment Merchant]Jura ----- 
 ----- npcselectdialog.ies | ClassName: ORSHA_EQUIPMENT_DEALER -----
 ----- Enter | Dialog -----
 ----- QuestIDs: PILGRIM_49_SQ_017 -----
@@ -43,7 +43,7 @@ msg("ORSHA_EQUIPMENT_DEALER_basic01")
 msg("ORSHA_EQUIPMENT_DEALER_basic02")
 end
 
------ orsha_m_1 ----- 
+----- Orsha Resident ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20063, "QUEST_20151224_003163", "c_orsha", 385, 176, 232, -105, "npc_QUEST_20151224_003163")
@@ -51,7 +51,7 @@ function npc_QUEST_20151224_003163()
 msg("ORSHA_KEDORLA_MEMBER01_BASIC01")
 end
 
------ Inesa_Hamondail ----- 
+----- [Lord of Orsha]Inesa Hamondale ----- 
 ----- npcselectdialog.ies | ClassName: C_ORSHA_HAMONDAIL -----
 ----- Dialog -----
 ----- QuestIDs: SIAU16_MQ_07 | ORSHA_MQ1_01 | ORSHA_MQ1_02 | ORSHA_MQ1_04 | ORSHA_MQ2_01 | ORSHA_MQ2_02 | PRISON623_MQ_07 | ORSHA_MQ3_01 | SIAULIAI15_HQ1 -----
@@ -86,7 +86,7 @@ msg("ORSHA_MQ3_01_01")
 msg("ORSHA_MQ3_01_02")
 end
 
------ orsha_soldier_m ----- 
+----- Lord's Guard ----- 
 ----- npcselectdialog.ies | ClassName: C_ORSHA_SOLDIER_02 -----
 ----- Dialog -----
 addnpc(20060, "QUEST_20151102_002969", "c_orsha", 141, 176, 713, -65, "npc_QUEST_20151102_002969")
@@ -99,7 +99,7 @@ msg("C_ORSHA_SOLDIER_02_basic_01")
 msg("C_ORSHA_SOLDIER_01_basic_01")
 end
 
------ npc_Urbonas ----- 
+----- [Orsha Bishop]Urbonas ----- 
 ----- npcselectdialog.ies | ClassName: C_ORSHA_URBONAS -----
 ----- Dialog -----
 ----- QuestIDs: ORSHA_MQ3_01 -----
@@ -123,7 +123,7 @@ msg("ORSHA_MQ3_01_03")
 msg("PRISON621_MQ_06_TRACK_DLG_1")
 end
 
------ npc_alf ----- 
+----- [Item Merchant]Alf ----- 
 ----- npcselectdialog.ies | ClassName: ORSHA_TOOL_NPC -----
 ----- Dialog -----
 ----- QuestIDs: ORSHA_MQ1_02 | ORSHA_MQ1_03 | ORSHA_MQ2_02 -----
@@ -137,7 +137,7 @@ msg("ORSHA_MQ1_03_02")
 msg("ORSHA_MQ2_02_03")
 end
 
------ npc_yurrs ----- 
+----- [Accessory Merchant] Jurus ----- 
 ----- npcselectdialog.ies | ClassName: ORSHA_ACCESSARY_NPC -----
 ----- Enter | Dialog -----
 ----- QuestIDs: ORSHA_MQ1_03 | KATYN_12_SQ_01 | ORSHA_HQ1 -----
@@ -157,7 +157,7 @@ msg("JOB_APPRAISER5_1_NPC2")
 msg("ORSHA_MQ1_03_03")
 end
 
------ npc_PEL_sub_master ----- 
+----- [Peltasta Submaster]Nirin Dameoff ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_PELTASTA_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_PELTASTA2 | JOB_2_PELTASTA3 | JOB_2_PELTASTA4 -----
@@ -179,7 +179,7 @@ msg("JOB_2_PELTASTA4_1_3")
 msg("JOB_2_PELTASTA4_1_4")
 end
 
------ npc_HOP_master ----- 
+----- [Hoplite Master]Aidas Valor ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_HOPLITE_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_HOPLITE3 | JOB_2_HOPLITE4 | JOB_2_HOPLITE5 -----
@@ -204,7 +204,7 @@ msg("JOB_2_HOPLITE5_1_3")
 msg("JOB_2_HOPLITE5_1_4")
 end
 
------ npc_CRL_sub_master ----- 
+----- [Cleric Submaster] Tamara Easton ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_CLERIC_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_CLERIC2 | JOB_2_CLERIC3 | TUTO_2_CLERIC_TECH | BRACKEN_63_1_SQ040 | BRACKEN_63_1_SQ050 -----
@@ -229,7 +229,7 @@ msg("JOB_2_CLERIC3_1_3")
 msg("JOB_2_CLERIC3_1_4")
 end
 
------ npc_KRV_sub_master ----- 
+----- [Krivis Submaster] Mellinda Dicherin ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_KRIVIS_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_KRIVIS2 | JOB_2_KRIVIS3 | JOB_2_KRIVIS4 -----
@@ -253,7 +253,7 @@ msg("JOB_2_KRIVIS4_1_3")
 msg("JOB_2_KRIVIS4_1_4")
 end
 
------ npc_PRS_sub_master ----- 
+----- [Priest Submaster]Boira ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_PRIEST_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_PRIEST2 | JOB_2_PRIEST3 | JOB_2_PRIEST4 -----
@@ -275,7 +275,7 @@ msg("JOB_2_PRIEST4_1_3")
 msg("JOB_2_PRIEST4_1_4")
 end
 
------ npc_BKR_sub_master ----- 
+----- [Bokor Submaster]Bobo Icelin ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_BOKOR_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_BOKOR4 | JOB_2_BOKOR5 | JOB_2_BOKOR3 -----
@@ -299,7 +299,7 @@ msg("JOB_2_BOKOR5_1_3")
 msg("JOB_2_BOKOR5_1_4")
 end
 
------ npc_ROD_master ----- 
+----- [Rodelero Master]Kamiya ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_RODELERO_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_RODELERO4 | JOB_2_RODELERO5 | JOB_2_RODELERO6 -----
@@ -324,7 +324,7 @@ msg("JOB_2_RODELERO6_1_3")
 msg("JOB_2_RODELERO6_1_4")
 end
 
------ npc_CAT_master ----- 
+----- [Cataphract Master] Memet Culag ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_CATAPHRACT_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_CATAPHRACT4 | JOB_2_CATAPHRACT5 | JOB_2_CATAPHRACT6 -----
@@ -345,7 +345,7 @@ msg("JOB_2_CATAPHRACT6_1_2")
 msg("JOB_2_CATAPHRACT6_1_3")
 end
 
------ npc_PAL_sub_master ----- 
+----- [Paladin Submaster] Silvia Naimon ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_PALADIN_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_PALADIN4 | JOB_2_PALADIN5 | JOB_2_PALADIN6 -----
@@ -367,7 +367,7 @@ msg("JOB_2_PALADIN6_1_3")
 msg("JOB_2_PALADIN6_1_4")
 end
 
------ npc_friar_03 ----- 
+----- Priest Pranas ----- 
 ----- npcselectdialog.ies | ClassName: C_ORSHA_PRANAS -----
 ----- Dialog -----
 ----- QuestIDs: SIAU11RE_MQ_06 | ORSHA_MQ2_01 | ORSHA_MQ2_03 -----
@@ -407,7 +407,21 @@ msg("PRISON622_MQ_03_02")
 msg("PRISON622_SQ_01_add")
 end
 
------ orsha_soldier_f ----- 
+----- Lemprasa Pond ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009570", "c_orsha", -1423, 473, 368, 213, "npc_ETC_20150323_009570")
+function npc_ETC_20150323_009570()
+msg("ORSHA_TO_SIAULIAI16")
+end
+
+----- Woods of the Linked Bridges ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001178", "c_orsha", 1444, 22, 344, 45, "npc_ETC_20150317_001178")
+function npc_ETC_20150317_001178()
+msg("ORSHA_TO_SIAULIAI15RE")
+end
+
+----- Lord's Guard ----- 
 ----- npcselectdialog.ies | ClassName: C_ORSHA_SOLDIER_01 -----
 ----- Dialog -----
 addnpc(20059, "QUEST_20151102_002969", "c_orsha", 41, 176, 714, -31, "npc_QUEST_20151102_002969")
@@ -420,7 +434,7 @@ msg("C_ORSHA_SOLDIER_02_basic_01")
 msg("C_ORSHA_SOLDIER_01_basic_01")
 end
 
------ npc_SAD_master ----- 
+----- [Sadhu Master]Agota Hanska ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_SADHU_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_SADHU4 | JOB_2_SADHU5 | JOB_2_SADHU6 -----
@@ -457,7 +471,7 @@ msg("JOB_2_SADHU6_1_2")
 msg("JOB_2_SADHU6_1_3")
 end
 
------ npc_SWD_sub_master ----- 
+----- [Swordsman Submaster]Codill ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_SWORDMAN_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_SWORDMAN2 | JOB_2_SWORDMAN3 | TUTO_2_SWORDMAN_TECH -----
@@ -477,10 +491,10 @@ msg("JOB_2_SWORDMAN3_1_3")
 msg("JOB_2_SWORDMAN3_1_4")
 end
 
------ cathedral_torch ----- 
+----- Flameholder ----- 
 addnpc(47242, "ETC_20151022_016448", "c_orsha", -603, 368, 641, 33, "npc_dummy")
 
------ npc_orsha_goddess ----- 
+----- Statue of Goddess Ausrine ----- 
 ----- npcselectdialog.ies | ClassName: WARP_C_ORSHA -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 | ORSHA_MQ1_02 -----
@@ -491,7 +505,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_WIZ_sub_master ----- 
+----- [Wizard Submaster]Dejamis ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_WIZARD_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_WIZARD_2_1 | JOB_2_WIZARD_3_1 | TUTO_2_WIZARD_TECH | ABBAY_64_3_SQ020 | ABBAY_64_3_SQ030 | ABBAY_64_3_SQ040 -----
@@ -511,7 +525,7 @@ msg("TUTO_2_WIZARD_TECH_select")
 msg("TUTO_2_WIZARD_TECH_succ")
 end
 
------ npc_PYR_sub_master ----- 
+----- [Pyromancer Submaster]Cathy Naimos ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_PYROMANCER_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_PYROMANCER_2_1 | JOB_2_PYROMANCER_3_1 | JOB_2_PYROMANCER_4_1 -----
@@ -534,7 +548,7 @@ msg("JOB_2_PYROMANCER_MASTER_basic1")
 msg("JOB_2_PYROMANCER_MASTER_basic2")
 end
 
------ npc_CRY_sub_master ----- 
+----- [Cryomancer Submaster] Octavia Ifflyn ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_CRYOMANCER_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_CRYOMANCER_2_1 | JOB_2_CRYOMANCER_3_1 | JOB_2_CRYOMANCER_4_1 -----
@@ -557,7 +571,7 @@ msg("JOB_2_CRYOMANCER_MASTER_basic1")
 msg("JOB_2_CRYOMANCER_MASTER_basic2")
 end
 
------ npc_PSY_master ----- 
+----- [Psychokino Master]Ili Terid ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_PSYCHOKINO_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_PSYCHOKINO_3_1 | JOB_2_PSYCHOKINO_4_1 | JOB_2_PSYCHOKINO_5_1 -----
@@ -584,7 +598,7 @@ msg("JOB_2_PSYCHOKINO_MASTER_basic1")
 msg("JOB_2_PSYCHOKINO_MASTER_basic2")
 end
 
------ npc_LIN_master ----- 
+----- [Linker Master]Winona Ende ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_LINKER_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_LINKER_3_1 | JOB_2_LINKER_4_1 | JOB_2_LINKER_5_1 | LOWLV_EYEOFBAIGA_SQ_10 | LOWLV_EYEOFBAIGA_SQ_20 | LOWLV_EYEOFBAIGA_SQ_30 | LOWLV_EYEOFBAIGA_SQ_40 | LOWLV_EYEOFBAIGA_SQ_50 | LOWLV_EYEOFBAIGA_SQ_70 -----
@@ -632,7 +646,7 @@ msg("LOWLV_EYEOFBAIGA_SQ_70_ST")
 msg("LOWLV_EYEOFBAIGA_SQ_70_SU")
 end
 
------ npc_THA_sub_master ----- 
+----- [Thaumaturge Submaster]Diemer Fallon ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_THAUMATURGE_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_THAUMATURGE_4_1 | JOB_2_THAUMATURGE_5_1 | JOB_2_THAUMATURGE_6_1 -----
@@ -654,7 +668,7 @@ msg("JOB_2_THAUMATURGE_MASTER_basic1")
 msg("JOB_2_THAUMATURGE_MASTER_basic2")
 end
 
------ npc_WRC_master ----- 
+----- [Elementalist Master] Wican Celestic ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_ELEMENTALIST_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_ELEMENTALIST_4_1 | JOB_2_ELEMENTALIST_5_1 | JOB_2_ELEMENTALIST_6_1 -----
@@ -680,7 +694,7 @@ msg("JOB_2_ELEMENTALIST_MASTER_basic1")
 msg("JOB_2_ELEMENTALIST_MASTER_basic2")
 end
 
------ npc_ARC_sub_master ----- 
+----- [Archer Submaster] Gunnison ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_ARCHER_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_ARCHER_2_1 | JOB_2_ARCHER_3_1 | TUTO_2_ARCHER_TECH -----
@@ -700,7 +714,7 @@ msg("TUTO_2_ARCHER_TECH_select")
 msg("TUTO_2_ARCHER_TECH_succ")
 end
 
------ npc_RAG_sub_master ----- 
+----- [Ranger Submaster]Sheba ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_RANGER_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_RANGER_2_1 | JOB_2_RANGER_3_1 | JOB_2_RANGER_4_1 -----
@@ -722,7 +736,7 @@ msg("JOB_2_RANGER_MASTER_basic1")
 msg("JOB_2_RANGER_MASTER_basic2")
 end
 
------ npc_QRS_sub_master ----- 
+----- [Quarrel Shooter Submaster] Shorris ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_QUARRELSHOOTER_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_QUARRELSHOOTER_2_1 | JOB_2_QUARRELSHOOTER_3_1 | JOB_2_QUARRELSHOOTER_4_1 -----
@@ -744,7 +758,7 @@ msg("JOB_2_QUARRELSHOOTER_MASTER_basic1")
 msg("JOB_2_QUARRELSHOOTER_MASTER_basic2")
 end
 
------ npc_SAP_sub_master ----- 
+----- [Sapper Submaster] Zubin Katal ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_SAPPER_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_SAPPER_3_1 | JOB_2_SAPPER_4_1 | JOB_2_SAPPER_5_1 -----
@@ -766,7 +780,7 @@ msg("JOB_2_SAPPER_MASTER_basic1")
 msg("JOB_2_SAPPER_MASTER_basic2")
 end
 
------ npc_HUT_sub_master ----- 
+----- [Hunter Submaster] Belkin Vellon ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_HUNTER_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_HUNTER_3_1 | JOB_2_HUNTER_4_1 | JOB_2_HUNTER_5_1 -----
@@ -788,7 +802,7 @@ msg("JOB_2_HUNTER_MASTER_basic1")
 msg("JOB_2_HUNTER_MASTER_basic2")
 end
 
------ npc_WUG_master ----- 
+----- [Wugushi Master]Wor Pat ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_WUGUSHI_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_WUGUSHI_4_1 | JOB_2_WUGUSHI_5_1 | JOB_2_WUGUSHI_6_1 -----
@@ -810,7 +824,7 @@ msg("JOB_2_WUGUSHI_MASTER_basic1")
 msg("JOB_2_WUGUSHI_MASTER_basic2")
 end
 
------ npc_SCT_sub_master ----- 
+----- [Scout Submaster]Suina ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_SCOUT_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_SCOUT_4_1 | JOB_2_SCOUT_5_1 | JOB_2_SCOUT_6_1 -----
@@ -832,7 +846,7 @@ msg("JOB_2_SCOUT_MASTER_basic1")
 msg("JOB_2_SCOUT_MASTER_basic2")
 end
 
------ npc_toras ----- 
+----- [Companion Trader]Toras ----- 
 ----- npcselectdialog.ies | ClassName: ORSHA_PETSHOP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: ORSHA_HQ2 | ORSHA_HQ3 -----
@@ -843,7 +857,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Velhider2_NPC ----- 
+----- Velheider ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47521, "ETC_20150317_007299", "c_orsha", -126, 176, 395, 50, "npc_ETC_20150317_007299")
@@ -851,7 +865,7 @@ function npc_ETC_20150317_007299()
 msg("PETSHOP_KLAIPE_PET")
 end
 
------ orsha_tiliana ----- 
+----- [Market Manager]Tilliana ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(156008, "ETC_20151224_019913", "c_orsha", 214, 176, -13, -41, "npc_ETC_20151224_019913")
@@ -860,7 +874,7 @@ msg("TUTO_MARKET_NPC")
 msg("ORSHA_MARKET_SEL")
 end
 
------ npc_aisah ----- 
+----- [Storage Keeper] Aisa ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(20067, "ETC_20151224_019914", "c_orsha", 320, 176, 69, 45, "npc_ETC_20151224_019914")
@@ -869,7 +883,7 @@ msg("TUTO_STORAGE_NPC")
 msg("ORSHA_WAREHOUSE_DLG")
 end
 
------ npc_floana ----- 
+----- [Orsha's Magic Association] Florianna ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155102, "ETC_20151224_019915", "c_orsha", -986, 501, 416, 45, "npc_ETC_20151224_019915")
@@ -877,7 +891,7 @@ function npc_ETC_20151224_019915()
 msg("ORSHA_COLLECTION_SHOP_basic01")
 end
 
------ npc_racia ----- 
+----- [Wings of Vaivora]Rosia ----- 
 ----- npcselectdialog.ies | ClassName: ORSHA_JOURNEY_SHOP -----
 ----- Enter | Dialog -----
 addnpc(155103, "ETC_20151224_019916", "c_orsha", -452, 325, -90, 45, "npc_ETC_20151224_019916")
@@ -893,7 +907,7 @@ msg("ORSHA_GUILD_BATTLE_MASTERREWARD_SEL1")
 msg("ORSHA_JOURNEY_SHOP_basic01")
 end
 
------ npc_letizia ----- 
+----- [TP Trader] Leticia ----- 
 ----- npcselectdialog.ies | ClassName: TP_NPC -----
 ----- Enter | Dialog -----
 addnpc(20068, "ETC_20151224_019887", "c_orsha", 41, 176, -14, 45, "npc_ETC_20151224_019887")
@@ -903,7 +917,7 @@ msg("TP_NPC_basic01")
 msg("TP_NPC_basic02")
 end
 
------ orsha_f_2 ----- 
+----- Girl Settler ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20062, "QUEST_20151224_003174", "c_orsha", -42, 176, 207, 45, "npc_QUEST_20151224_003174")
@@ -911,7 +925,7 @@ function npc_QUEST_20151224_003174()
 msg("ORSHA_NPC01_basic01")
 end
 
------ orsha_m_2 ----- 
+----- Young Settler ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20064, "QUEST_20151224_003189", "c_orsha", -203, 176, 537, 45, "npc_QUEST_20151224_003189")
@@ -919,7 +933,7 @@ function npc_QUEST_20151224_003189()
 msg("ORSHA_NPC02_basic01")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "c_orsha", -462, 505, -277, -90, "npc_ETC_20150317_009100")
@@ -927,7 +941,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ Board3 ----- 
+----- Event Notice Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40090, "QUEST_20160723_004066", "c_orsha", -451, 325, -155, 45, "npc_QUEST_20160723_004066")

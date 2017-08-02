@@ -1,4 +1,18 @@
------ npc_paladin_follower1_2 ----- 
+----- Tenet Garden ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009561", "d_chapel_57_5", -1258, 1, 1163, 135, "npc_ETC_20150323_009561")
+function npc_ETC_20150323_009561()
+msg("CHAPEL575_GELE574")
+end
+
+----- Tenet Church 1F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001164", "d_chapel_57_5", 627, 1, -565, 135, "npc_ETC_20150317_001164")
+function npc_ETC_20150317_001164()
+msg("CHAPEL575_CHAPEL576")
+end
+
+----- Follower Tomas ----- 
 ----- npcselectdialog.ies | ClassName: CHAPEL_TOMAS -----
 ----- Dialog -----
 ----- QuestIDs: CHAPLE575_MQ_04 | CHAPLE575_MQ_02 | CHAPLE575_MQ_03 -----
@@ -15,7 +29,7 @@ msg("CHAPLE575_MQ_04_01")
 msg("CHAPEL_TOMAS_BASIC01")
 end
 
------ npc_paladin_follower1_3 ----- 
+----- Follower Tiberius ----- 
 ----- npcselectdialog.ies | ClassName: CHAPEL_TABERIJUS -----
 ----- Dialog -----
 ----- QuestIDs: CHAPLE575_MQ_05 | CHAPLE575_MQ_06 -----
@@ -33,7 +47,7 @@ msg("CHAPEL_TABERIJUS_BASIC01")
 msg("CHAPEL_TABERIJUS_BASIC03")
 end
 
------ npc_paladin_follower1_3 ----- 
+----- Follower Vaidas ----- 
 ----- npcselectdialog.ies | ClassName: CHAPEL_VIDAS -----
 ----- Dialog -----
 ----- QuestIDs: CHAPLE575_MQ_09 | CHAPLE575_MQ_07 | CHAPLE575_MQ_08 -----
@@ -49,14 +63,14 @@ msg("CHAPLE575_MQ_07_03")
 msg("CHAPLE575_MQ_08_01")
 end
 
------ holly_sphere_chapel_02 ----- 
+----- Underground Central Altar ----- 
 ----- Enter -----
 addnpc(147358, "ETC_20150317_009231", "d_chapel_57_5", -600, -17, 422, 0, "npc_ETC_20150317_009231")
 function npc_ETC_20150317_009231()
 msg("CHAPEL575_BASIC_1")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -67,7 +81,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_CHAPEL_57_5")
 end
 
------ holly_sphere_chapel_01 ----- 
+----- Altar of Purification ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147357, "ETC_20150317_005258", "d_chapel_57_5", 439, 1, -109, 0, "npc_ETC_20150317_005258")
@@ -75,7 +89,7 @@ function npc_ETC_20150317_005258()
 msg("CHAPLE575_MQ_05_01")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_chapel_57_5", 814, 1, -988, 45, "npc_ETC_20150317_009100")

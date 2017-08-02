@@ -5,5 +5,5 @@
 -----------------------------------------------------------------------------
 
 function npc_dummy()
-	msg("Auto_CheLyeogi")
+	msg("I don't have anything to say yet.")
 end

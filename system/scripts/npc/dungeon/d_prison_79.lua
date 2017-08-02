@@ -1,4 +1,18 @@
------ npc_zanas ----- 
+----- Kalejimas Visiting Room ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009600", "d_prison_79", 1583, 479, -13, 45, "npc_ETC_20150323_009600")
+function npc_ETC_20150323_009600()
+msg("PRISON79_PRISON78")
+end
+
+----- Solitary Cells ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170330_027527", "d_prison_79", 802, 481, 2073, -134, "npc_ETC_20170330_027527")
+function npc_ETC_20170330_027527()
+msg("PRISON79_PRISON80")
+end
+
+----- Zanas' Soul ----- 
 ----- npcselectdialog.ies | ClassName: PRISON_79_NPC_1 -----
 ----- Dialog -----
 ----- QuestIDs: PRISON_79_MQ_1 | PRISON_79_MQ_2 | PRISON_79_MQ_3 | PRISON_79_MQ_4 | PRISON_79_MQ_6 | PRISON_79_MQ_7 | PRISON_79_MQ_8 | PRISON_79_MQ_9 -----
@@ -8,7 +22,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zanas ----- 
+----- Zanas' Soul ----- 
 ----- npcselectdialog.ies | ClassName: PRISON_79_NPC_2 -----
 ----- Dialog -----
 ----- QuestIDs: PRISON_79_MQ_2 | PRISON_79_MQ_3 -----
@@ -18,7 +32,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Firetower_Defense ----- 
+----- Blue Lamp ----- 
 ----- npcselectdialog.ies | ClassName: PRISON_79_OBJ_3 -----
 ----- Dialog -----
 ----- QuestIDs: PRISON_79_MQ_4 | PRISON_79_MQ_5 -----
@@ -28,7 +42,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ pedlar_lose_1 ----- 
+----- Oil Pouch ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20160811_024106", "d_prison_79", -1064, 472, -965, 45, "npc_ETC_20160811_024106")
@@ -36,7 +50,7 @@ function npc_ETC_20160811_024106()
 msg("PRISON_79_OBJ_4")
 end
 
------ pedlar_lose_1 ----- 
+----- Oil Pouch ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20160811_024106", "d_prison_79", -828, 472, -843, 45, "npc_ETC_20160811_024106")
@@ -44,7 +58,7 @@ function npc_ETC_20160811_024106()
 msg("PRISON_79_OBJ_4")
 end
 
------ pedlar_lose_1 ----- 
+----- Oil Pouch ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20160811_024106", "d_prison_79", -404, 472, -977, 45, "npc_ETC_20160811_024106")
@@ -52,7 +66,7 @@ function npc_ETC_20160811_024106()
 msg("PRISON_79_OBJ_4")
 end
 
------ pedlar_lose_1 ----- 
+----- Oil Pouch ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20160811_024106", "d_prison_79", -848, 433, -1566, 45, "npc_ETC_20160811_024106")
@@ -60,7 +74,7 @@ function npc_ETC_20160811_024106()
 msg("PRISON_79_OBJ_4")
 end
 
------ pedlar_lose_1 ----- 
+----- Oil Pouch ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20160811_024106", "d_prison_79", -882, 404, -1877, 45, "npc_ETC_20160811_024106")
@@ -68,7 +82,7 @@ function npc_ETC_20160811_024106()
 msg("PRISON_79_OBJ_4")
 end
 
------ pedlar_lose_1 ----- 
+----- Oil Pouch ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20160811_024106", "d_prison_79", -1020, 472, -1167, 45, "npc_ETC_20160811_024106")
@@ -76,7 +90,7 @@ function npc_ETC_20160811_024106()
 msg("PRISON_79_OBJ_4")
 end
 
------ pedlar_lose_1 ----- 
+----- Oil Pouch ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20160811_024106", "d_prison_79", -67, 472, -1104, 45, "npc_ETC_20160811_024106")
@@ -84,7 +98,7 @@ function npc_ETC_20160811_024106()
 msg("PRISON_79_OBJ_4")
 end
 
------ Firetower_Defense ----- 
+----- Red Lamp ----- 
 ----- npcselectdialog.ies | ClassName: PRISON_79_OBJ_5 -----
 ----- Dialog -----
 ----- QuestIDs: PRISON_79_MQ_6 -----
@@ -94,7 +108,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Firetower_Defense ----- 
+----- Yellow Lamp ----- 
 ----- npcselectdialog.ies | ClassName: PRISON_79_OBJ_6 -----
 ----- Dialog -----
 ----- QuestIDs: PRISON_79_MQ_7 -----
@@ -104,7 +118,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ noshadow_npc ----- 
+----- Demon Barrier ----- 
 ----- npcselectdialog.ies | ClassName: PRISON_79_MQ_10_TRIGGER -----
 ----- Enter | Dialog -----
 ----- QuestIDs: PRISON_79_MQ_10 | PRISON_79_MQ_10 -----

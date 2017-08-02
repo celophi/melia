@@ -1,4 +1,4 @@
------ orsha_m_4 ----- 
+----- Edmundas ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY643_EDMONDA01 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_3_MQ010 | ABBAY_64_3_MQ020 -----
@@ -8,7 +8,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ orsha_m_4 ----- 
+----- Edmundas ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY643_EDMONDA02 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_3_MQ030 -----
@@ -18,7 +18,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ orsha_m_4 ----- 
+----- Edmundas ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY643_EDMONDA03 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_3_MQ040 -----
@@ -28,7 +28,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ orsha_m_4 ----- 
+----- Edmundas ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY643_EDMONDA04 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_3_SQ010 | ABBAY_64_3_SQ020 | ABBAY_64_3_SQ030 | ABBAY_64_3_SQ050 | ABBAY_64_3_SQ040 -----
@@ -72,7 +72,7 @@ msg("ABBAY_64_2_SQ020_MSG3")
 msg("ABBAY_64_2_SQ020_MSG4")
 end
 
------ npc_roze ----- 
+----- Traveling Merchant Rose ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY643_ROZE01 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_3_MQ040 | ABBAY_64_3_MQ050 | ABBAY_64_3_SQ060 | ABBAY64_3_HQ1 -----
@@ -161,7 +161,7 @@ msg("ABBAY64_3_HQ1_succ1")
 msg("BRACKEN632_ROZE02_basic01")
 end
 
------ pillarobb_crystal_Q ----- 
+----- Mind Control Crystal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153060, "ETC_20151224_019918", "d_abbey_64_3", -418, 262, -1477, -129, "npc_ETC_20151224_019918")
@@ -169,7 +169,7 @@ function npc_ETC_20151224_019918()
 msg("ABBEY643_MQ03_DEVICE02_1")
 end
 
------ pillarobb_crystal_Q ----- 
+----- Mind Control Crystal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153060, "ETC_20151224_019918", "d_abbey_64_3", -172, 263, -1375, -19, "npc_ETC_20151224_019918")
@@ -177,7 +177,7 @@ function npc_ETC_20151224_019918()
 msg("ABBEY643_MQ03_DEVICE02_2")
 end
 
------ pillarobb_crystal_Q ----- 
+----- Mind Control Crystal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153060, "ETC_20151224_019918", "d_abbey_64_3", -380, 262, -1215, 65, "npc_ETC_20151224_019918")
@@ -185,7 +185,7 @@ function npc_ETC_20151224_019918()
 msg("ABBEY643_MQ03_DEVICE02_3")
 end
 
------ pillarobb_crystal_Q ----- 
+----- Mind Control Crystal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153060, "ETC_20151224_019918", "d_abbey_64_3", -43, 262, -1216, 45, "npc_ETC_20151224_019918")
@@ -193,7 +193,14 @@ function npc_ETC_20151224_019918()
 msg("ABBEY643_MQ03_DEVICE02_5")
 end
 
------ pillarobb_crystal_Q ----- 
+----- Novaha Annex ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_017820", "d_abbey_64_3", 1534, 451, 227, 45, "npc_ETC_20151224_017820")
+function npc_ETC_20151224_017820()
+msg("ABBEY_64_3_ABBEY_64_2")
+end
+
+----- Mind Control Crystal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153060, "ETC_20151224_019918", "d_abbey_64_3", -115, 262, -1562, 45, "npc_ETC_20151224_019918")
@@ -201,7 +208,7 @@ function npc_ETC_20151224_019918()
 msg("ABBEY643_MQ03_DEVICE02_4")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -212,7 +219,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_ABBEY_64_3")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_abbey_64_3", 1372, 510, -812, 45, "npc_ETC_20150317_009100")

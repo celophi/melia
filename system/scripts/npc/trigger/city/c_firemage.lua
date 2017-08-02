@@ -1,4 +1,4 @@
------ HiddenTrigger2 ----- 
+----- Advancement Quest Trigger of Cryomancer ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_FIREMAGE_BOX_TRIGGER -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_ICEMAGE1 -----

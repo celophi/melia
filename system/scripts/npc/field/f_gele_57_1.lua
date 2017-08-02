@@ -1,4 +1,20 @@
------ npc_paladin_follower2_4 ----- 
+----- Miners' Village ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001153", "f_gele_57_1", -1662, 168, -1176, 225, "npc_ETC_20150317_001153")
+function npc_ETC_20150317_001153()
+msg("GM_QUEST_MODIFY_PC_SEL")
+msg("GM_NPC_HIDE_UNHIDE")
+end
+
+----- Gele Plateau ----- 
+----- Enter -----
+addnpc(40001, "QUEST_LV_0100_20150323_006604", "f_gele_57_1", 640, 267, 1489, 135, "npc_QUEST_LV_0100_20150323_006604")
+function npc_QUEST_LV_0100_20150323_006604()
+msg("GM_QUEST_MODIFY_PC_SEL")
+msg("GM_NPC_HIDE_UNHIDE")
+end
+
+----- Watcher Gilbert ----- 
 ----- npcselectdialog.ies | ClassName: GELE571_NPC_GILBERT -----
 ----- Dialog -----
 ----- QuestIDs: GELE571_MQ_01 | GELE571_MQ_02 | GELE571_MQ_03 -----
@@ -18,7 +34,7 @@ msg("GELE571_MQ_01_03")
 msg("GELE571_MQ_02_ST_add")
 end
 
------ siauliai_grass_4 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName: GELE571_MQ_03 -----
 ----- Dialog -----
 addnpc(47204, "ETC_20150317_009118", "f_gele_57_1", -1385, 276, 684, 45, "npc_ETC_20150317_009118")
@@ -27,7 +43,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ siauliai_grass_4 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName: GELE571_MQ_03 -----
 ----- Dialog -----
 addnpc(47204, "ETC_20150317_009118", "f_gele_57_1", -1228, 276, 118, 45, "npc_ETC_20150317_009118")
@@ -36,7 +52,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ siauliai_grass_4 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName: GELE571_MQ_03 -----
 ----- Dialog -----
 addnpc(47204, "ETC_20150317_009118", "f_gele_57_1", -1201, 276, 513, 45, "npc_ETC_20150317_009118")
@@ -45,7 +61,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ siauliai_grass_4 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName: GELE571_MQ_03 -----
 ----- Dialog -----
 addnpc(47204, "ETC_20150317_009118", "f_gele_57_1", -1502, 276, 400, 45, "npc_ETC_20150317_009118")
@@ -54,7 +70,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ siauliai_grass_4 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName: GELE571_MQ_03 -----
 ----- Dialog -----
 addnpc(47204, "ETC_20150317_009118", "f_gele_57_1", -1507, 276, 76, 45, "npc_ETC_20150317_009118")
@@ -63,7 +79,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ siauliai_grass_4 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName: GELE571_MQ_03 -----
 ----- Dialog -----
 addnpc(47204, "ETC_20150317_009118", "f_gele_57_1", -1192, 276, -130, 45, "npc_ETC_20150317_009118")
@@ -72,7 +88,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ siauliai_grass_4 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName: GELE571_MQ_03 -----
 ----- Dialog -----
 addnpc(47204, "ETC_20150317_009118", "f_gele_57_1", -1481, 276, -180, 45, "npc_ETC_20150317_009118")
@@ -81,7 +97,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ siauliai_grass_4 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName: GELE571_MQ_03 -----
 ----- Dialog -----
 addnpc(47204, "ETC_20150317_009118", "f_gele_57_1", -1393, 276, 130, 45, "npc_ETC_20150317_009118")
@@ -90,7 +106,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ siauliai_grass_4 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName: GELE571_MQ_03 -----
 ----- Dialog -----
 addnpc(47204, "ETC_20150317_009118", "f_gele_57_1", -1538, 276, -71, 45, "npc_ETC_20150317_009118")
@@ -99,7 +115,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -110,7 +126,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_GELE_57_1")
 end
 
------ npc_paladin_noinst3_1 ----- 
+----- Watcher Matthew ----- 
 ----- npcselectdialog.ies | ClassName: GELE571_NPC_MATTHEW -----
 ----- Dialog -----
 ----- QuestIDs: GELE571_MQ_05 | GELE571_MQ_06 -----
@@ -128,7 +144,7 @@ msg("GELE571_NPC_MATTHEW_basic1")
 msg("GELE571_MQ_06_AG")
 end
 
------ npc_paladin_noinst3_3 ----- 
+----- Watcher Molly ----- 
 ----- npcselectdialog.ies | ClassName: GELE571_NPC_MARLEY -----
 ----- Dialog -----
 ----- QuestIDs: PARTY_Q_030 | PARTY_Q_031 | GELE571_MQ_07 | GELE571_MQ_04 | GELE571_RP_1 -----
@@ -155,7 +171,7 @@ msg("GELE571_RP_1_2")
 msg("GELE571_RP_1_3")
 end
 
------ Board1 ----- 
+----- Bulletin Board ----- 
 ----- npcselectdialog.ies | ClassName: GELE1_BOARD01 -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000081", "f_gele_57_1", -1496, 168, -968, 45, "npc_QUEST_20150317_000081")
@@ -183,7 +199,7 @@ msg("ROYALRUMBLE_REMAINS37")
 msg("LIMESTONE_52_1_BOAT_DLG1")
 end
 
------ siauliai_grass_3_large ----- 
+----- Poata's Nest ----- 
 ----- npcselectdialog.ies | ClassName: GELE571_MQ_05 -----
 ----- Dialog -----
 ----- QuestIDs: GELE571_MQ_06 -----
@@ -193,7 +209,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Board1 ----- 
+----- To the other side ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "ETC_20150406_010846", "f_gele_57_1", -291, 169, -521, -45, "npc_ETC_20150406_010846")
@@ -201,7 +217,7 @@ function npc_ETC_20150406_010846()
 msg("GELE_57_1_CABLETEMP_01")
 end
 
------ Board1 ----- 
+----- To the other side ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "ETC_20150406_010846", "f_gele_57_1", -305, 96, 200, -45, "npc_ETC_20150406_010846")
@@ -209,7 +225,7 @@ function npc_ETC_20150406_010846()
 msg("GELE_57_1_CABLETEMP_02")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_gele_57_1", 22, 169, -979, 45, "npc_ETC_20150317_009100")
@@ -217,7 +233,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 1461, 167, 385, 45, "npc_ETC_20160323_021381")
@@ -225,7 +241,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 1248, 167, 626, 45, "npc_ETC_20160323_021381")
@@ -233,7 +249,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 1321, 167, 464, 45, "npc_ETC_20160323_021381")
@@ -241,7 +257,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 1561, 167, 501, 45, "npc_ETC_20160323_021381")
@@ -249,7 +265,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 1626, 167, 721, 45, "npc_ETC_20160323_021381")
@@ -257,7 +273,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 1485, 167, 924, 45, "npc_ETC_20160323_021381")
@@ -265,7 +281,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 1370, 167, 921, 45, "npc_ETC_20160323_021381")
@@ -273,7 +289,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 1202, 167, 970, 45, "npc_ETC_20160323_021381")
@@ -281,7 +297,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 1004, 229, 889, 45, "npc_ETC_20160323_021381")
@@ -289,7 +305,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 759, 267, 894, 45, "npc_ETC_20160323_021381")
@@ -297,7 +313,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 573, 267, 932, 45, "npc_ETC_20160323_021381")
@@ -305,7 +321,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 465, 267, 992, 45, "npc_ETC_20160323_021381")
@@ -313,7 +329,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 449, 267, 1161, 45, "npc_ETC_20160323_021381")
@@ -321,7 +337,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 434, 267, 1291, 45, "npc_ETC_20160323_021381")
@@ -329,7 +345,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 802, 267, 1412, 45, "npc_ETC_20160323_021381")
@@ -337,7 +353,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 935, 267, 1316, 45, "npc_ETC_20160323_021381")
@@ -345,7 +361,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 923, 267, 1128, 45, "npc_ETC_20160323_021381")
@@ -353,7 +369,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 1028, 251, 1049, 45, "npc_ETC_20160323_021381")
@@ -361,7 +377,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 1586, 167, 68, 45, "npc_ETC_20160323_021381")
@@ -369,7 +385,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 1665, 167, -46, 45, "npc_ETC_20160323_021381")
@@ -377,7 +393,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 1848, 167, -63, 45, "npc_ETC_20160323_021381")
@@ -385,7 +401,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 1961, 167, 62, 45, "npc_ETC_20160323_021381")
@@ -393,7 +409,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 1570, 167, 218, 45, "npc_ETC_20160323_021381")
@@ -401,7 +417,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 1918, 167, 207, 45, "npc_ETC_20160323_021381")
@@ -409,7 +425,7 @@ function npc_ETC_20160323_021381()
 msg("GELE571_RP_1_OBJ")
 end
 
------ siauliai_grass_2 ----- 
+----- Plateau Sugar Beet Stems ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47201, "ETC_20160323_021381", "f_gele_57_1", 1810, 167, 315, 45, "npc_ETC_20160323_021381")

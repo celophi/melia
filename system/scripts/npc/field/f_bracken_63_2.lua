@@ -1,4 +1,11 @@
------ npc_roze ----- 
+----- Khonot Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20160718_022016", "f_bracken_63_2", 437, 184, -1778, -69, "npc_ETC_20160718_022016")
+function npc_ETC_20160718_022016()
+msg("BRACKEN_63_2_BRACKEN_42_1")
+end
+
+----- Traveling Merchant Rose ----- 
 ----- npcselectdialog.ies | ClassName: BRACKEN632_ROZE01 -----
 ----- Dialog -----
 ----- QuestIDs: BRACKEN_63_2_MQ010 | BRACKEN_63_2_MQ020 -----
@@ -8,7 +15,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_roze ----- 
+----- Traveling Merchant Rose ----- 
 ----- npcselectdialog.ies | ClassName: BRACKEN632_ROZE02 -----
 ----- Dialog -----
 ----- QuestIDs: BRACKEN_63_2_MQ030 | BRACKEN_63_2_MQ020 -----
@@ -97,7 +104,7 @@ msg("ABBAY64_3_HQ1_succ1")
 msg("BRACKEN632_ROZE02_basic01")
 end
 
------ orsha_m_2 ----- 
+----- Tess ----- 
 ----- npcselectdialog.ies | ClassName: BRACKEN632_TOWN_PEAPLE -----
 ----- Dialog -----
 ----- QuestIDs: BRACKEN_63_2_MQ030 | BRACKEN_63_2_MQ040 | BRACKEN_63_2_MQ050 -----
@@ -107,7 +114,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_roze ----- 
+----- Traveling Merchant Rose ----- 
 ----- npcselectdialog.ies | ClassName: BRACKEN632_ROZE03 -----
 ----- Dialog -----
 ----- QuestIDs: BRACKEN_63_2_MQ040 | BRACKEN_63_2_MQ050 | BRACKEN_63_2_MQ060 -----
@@ -196,7 +203,7 @@ msg("ABBAY64_3_HQ1_succ1")
 msg("BRACKEN632_ROZE02_basic01")
 end
 
------ orsha_m_2 ----- 
+----- Tess ----- 
 ----- npcselectdialog.ies | ClassName: BRACKEN632_TOWN_PEAPLE_1 -----
 ----- Dialog -----
 ----- QuestIDs: BRACKEN_63_2_MQ040 | BRACKEN_63_2_MQ050 | BRACKEN632_RP_1 -----
@@ -215,7 +222,14 @@ msg("BRACKEN632_RP_1_2")
 msg("BRACKEN632_RP_1_3")
 end
 
------ npc_beekeeper4 ----- 
+----- Dadan Jungle ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016525", "f_bracken_63_2", -2175, -38, -463, -133, "npc_ETC_20151102_016525")
+function npc_ETC_20151102_016525()
+msg("BRACKEN_63_2_BRACKEN_63_3")
+end
+
+----- Herbalist Ash ----- 
 ----- npcselectdialog.ies | ClassName: BRACKEN632_PEAPLE01 -----
 ----- Dialog -----
 ----- QuestIDs: BRACKEN_63_2_SQ010 | BRACKEN_63_2_SQ020 | BRACKEN_63_3_SQ010 | BRACKEN_63_2_SQ030 | BRACKEN_63_2_SQ040 | BRACKEN_63_3_SQ020 | BRACKEN_63_3_SQ030 | BRACKEN_63_3_SQ040 | LOWLV_GREEN_SQ_20 | LOWLV_GREEN_SQ_30 | LOWLV_GREEN_SQ_40 -----
@@ -245,7 +259,14 @@ msg("LOWLV_GREEN_SQ_40_ST")
 msg("LOWLV_GREEN_SQ_40_STD")
 end
 
------ statue_vakarine ----- 
+----- Koru Jungle ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016523", "f_bracken_63_2", 691, 184, 2267, 128, "npc_ETC_20151102_016523")
+function npc_ETC_20151102_016523()
+msg("BRACKEN_63_2_BRACKEN_63_1")
+end
+
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -256,7 +277,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_BRACKEN_63_2")
 end
 
------ orsha_m_1 ----- 
+----- Kornas ----- 
 ----- npcselectdialog.ies | ClassName: BRACKEN632_TOWN_PEAPLE1 -----
 ----- Dialog -----
 addnpc(20063, "QUEST_LV_0100_20151224_012014", "f_bracken_63_2", 217, 284, 882, 45, "npc_QUEST_LV_0100_20151224_012014")
@@ -265,7 +286,7 @@ msg("BRACKEN632_TOWN_PEAPLE1_basic1")
 msg("BRACKEN632_TOWN_PEAPLE1_basic2")
 end
 
------ orsha_f_3 ----- 
+----- Rona ----- 
 ----- npcselectdialog.ies | ClassName: BRACKEN632_TOWN_PEAPLE2 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: ABBEY64_2_HQ1 | ABBEY64_2_HQ2 -----
@@ -278,7 +299,7 @@ msg("ABBEY64_2_HQ1_start1")
 msg("ABBEY64_2_HQ2_succ1")
 end
 
------ orsha_f_1 ----- 
+----- Anne ----- 
 ----- npcselectdialog.ies | ClassName: BRACKEN632_TOWN_PEAPLE3 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY64_3_HQ1 -----
@@ -291,7 +312,7 @@ msg("ABBAY64_3_HQ1_prog2")
 msg("ABBAY64_3_HQ1_prognpc_succ1")
 end
 
------ orsha_m_4 ----- 
+----- Allonas ----- 
 ----- npcselectdialog.ies | ClassName: BRACKEN632_TOWN_PEAPLE4 -----
 ----- Dialog -----
 addnpc(153110, "QUEST_LV_0100_20151224_011851", "f_bracken_63_2", 279, 284, 1157, 15, "npc_QUEST_LV_0100_20151224_011851")
@@ -300,7 +321,7 @@ msg("BRACKEN632_TOWN_PEAPLE4_basic1")
 msg("BRACKEN632_TOWN_PEAPLE4_basic2")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_bracken_63_2", 589, 84, -1976, 45, "npc_ETC_20150317_009100")
@@ -308,7 +329,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_SAG_master ----- 
+----- [Sage Master] Rhupas Kehel ----- 
 ----- npcselectdialog.ies | ClassName: SAGE_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_SAGE_8_1 | LOWLV_MASTER_ENCY_SQ_10 | PILGRIMROAD362_HQ1 | PILGRIMROAD362_HQ2 -----

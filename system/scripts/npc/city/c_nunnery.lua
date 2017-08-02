@@ -1,4 +1,11 @@
------ statue_vakarine ----- 
+----- Pilgrim Path ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009582", "c_nunnery", 591, -75, 146, 45, "npc_ETC_20150323_009582")
+function npc_ETC_20150323_009582()
+msg("NUNNERY_PILGRIM47")
+end
+
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -9,7 +16,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_C_NUNNERY")
 end
 
------ npc_nun_1 ----- 
+----- Sister Aiste ----- 
 ----- npcselectdialog.ies | ClassName: REQUEST_MISSION_ABBEY -----
 ----- Enter | Dialog -----
 ----- QuestIDs: TUTO_SAALUS_NUNNERY -----
@@ -20,7 +27,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_nun_2 ----- 
+----- Sister Lhasa ----- 
 ----- npcselectdialog.ies | ClassName: C_NUNNERY_NPC1 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: TUTO_UPHILL_DEFENSE | TUTO_SAALUS_NUNNERY -----
@@ -31,7 +38,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_ENC_master ----- 
+----- [Enchanter Master] Yena Havindar ----- 
 ----- npcselectdialog.ies | ClassName: ENCHANTER_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_ENCHANTER_8_1 | NUNNERY_KQ_1 | NUNNERY_KQ_2 | CASTLE_ID2_KQ_1 | LSCAVE551_KQ_1 | PRISON81_KQ_1 -----
@@ -50,7 +57,7 @@ msg("NUNNERY_KQ_1_1")
 msg("NUNNERY_KQ_2_3")
 end
 
------ npc_combat_transport_section_2 ----- 
+----- Merchant Running from the Petrifying Frost ----- 
 ----- npcselectdialog.ies | ClassName: HT_ESCAPE_MERCHANT -----
 ----- Dialog -----
 addnpc(20103, "QUEST_20161214_005130", "c_nunnery", 506, -29, -335, 45, "npc_QUEST_20161214_005130")
@@ -62,7 +69,7 @@ msg("HT_ESCAPE_MERCHANT_BASIC05")
 msg("HT_ESCAPE_MERCHANT_BASIC03")
 end
 
------ npc_village_uncle_10 ----- 
+----- Jewelry Collector ----- 
 ----- npcselectdialog.ies | ClassName: KEY_QUEST_NPC_NUNNERY -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM412_KQ_1 | LSCAVE521_KQ_1 -----

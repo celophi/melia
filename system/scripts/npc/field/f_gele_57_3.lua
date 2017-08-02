@@ -1,11 +1,32 @@
------ npc_gele_sanctuary_1 ----- 
+----- Gele Plateau ----- 
+----- Enter -----
+addnpc(40001, "QUEST_LV_0100_20150323_006604", "f_gele_57_3", -510, -107, -1594, -40, "npc_QUEST_LV_0100_20150323_006604")
+function npc_QUEST_LV_0100_20150323_006604()
+msg("GELE573_TO_GELE572")
+end
+
+----- Tenet Garden ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009561", "f_gele_57_3", 199, 284, 1157, 135, "npc_ETC_20150323_009561")
+function npc_ETC_20150323_009561()
+msg("GELE573_TO_GELE574")
+end
+
+----- Veja Ravine ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009562", "f_gele_57_3", -1358, 173, -740, -99, "npc_ETC_20150323_009562")
+function npc_ETC_20150323_009562()
+msg("GELE573_TO_HUE581")
+end
+
+----- Tree Guard Post Barrier ----- 
 ----- Enter -----
 addnpc(147413, "ETC_20150317_009336", "f_gele_57_3", 249, -21, -733, 45, "npc_ETC_20150317_009336")
 function npc_ETC_20150317_009336()
 msg("GELE573_BASIC_1")
 end
 
------ npc_gele_sanctuary_1 ----- 
+----- Pumpura Hill Barrier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(147413, "ETC_20150317_009337", "f_gele_57_3", 823, 122, 90, 45, "npc_ETC_20150317_009337")
@@ -14,7 +35,7 @@ msg("GELE573_BASIC_2")
 msg("GELE573_MQ_04_01")
 end
 
------ npc_paladin_noinst3_2 ----- 
+----- Watcher Allen ----- 
 ----- npcselectdialog.ies | ClassName: GELE573_ALLEN -----
 ----- Dialog -----
 ----- QuestIDs: GELE573_MQ_01 | GELE573_MQ_02 -----
@@ -32,7 +53,7 @@ msg("GELE573_MQ_02_01_R")
 msg("GELE573_MQ_02_01_Q")
 end
 
------ npc_paladin_follower1_3 ----- 
+----- Follower Kayetonas ----- 
 ----- npcselectdialog.ies | ClassName: GELE573_KAROLINA -----
 ----- Dialog -----
 ----- QuestIDs: GELE573_MQ_04 | GELE573_MQ_05 | GELE573_MQ_06 | GELE573_MQ_01 | GELE573_MQ_03 | GELE573_MQ_02 -----
@@ -49,7 +70,7 @@ msg("GELE573_MQ_06_add")
 msg("GELE573_KAROLINA_BASIC01")
 end
 
------ npc_paladinmaster ----- 
+----- [Paladin Master]  Valentinas Naimon ----- 
 ----- npcselectdialog.ies | ClassName: GELE573_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: GELE573_MQ_08 | GELE573_MQ_09 | GELE573_MQ_07 | JOB_PALADIN3_1 | JOB_PALADIN4_1 | JOB_PALADIN5_1 | CHAPLE577_MQ_10_AFTER | CHAPLE_57_6_HQ_01 -----
@@ -83,7 +104,7 @@ msg("CHAPLE_57_6_HQ_01_succ01")
 msg("CHAPLE_57_6_HQ_01_A")
 end
 
------ blank_npc ----- 
+----- Demon Summoning Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "QUEST_LV_0100_20150317_003179", "f_gele_57_3", 630, -31, -660, 45, "npc_QUEST_LV_0100_20150317_003179")
@@ -91,7 +112,7 @@ function npc_QUEST_LV_0100_20150317_003179()
 msg("GELE573_MQ_03_AI_KILL")
 end
 
------ blank_npc ----- 
+----- Demon Summoning Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "QUEST_LV_0100_20150317_003179", "f_gele_57_3", 736, -44, -760, 45, "npc_QUEST_LV_0100_20150317_003179")
@@ -99,7 +120,7 @@ function npc_QUEST_LV_0100_20150317_003179()
 msg("GELE573_MQ_03_AI_KILL")
 end
 
------ blank_npc ----- 
+----- Demon Summoning Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "QUEST_LV_0100_20150317_003179", "f_gele_57_3", 877, -76, -665, 45, "npc_QUEST_LV_0100_20150317_003179")
@@ -107,7 +128,7 @@ function npc_QUEST_LV_0100_20150317_003179()
 msg("GELE573_MQ_03_AI_KILL")
 end
 
------ blank_npc ----- 
+----- Demon Summoning Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "QUEST_LV_0100_20150317_003179", "f_gele_57_3", 1003, -109, -638, 45, "npc_QUEST_LV_0100_20150317_003179")
@@ -115,7 +136,7 @@ function npc_QUEST_LV_0100_20150317_003179()
 msg("GELE573_MQ_03_AI_KILL")
 end
 
------ blank_npc ----- 
+----- Demon Summoning Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "QUEST_LV_0100_20150317_003179", "f_gele_57_3", 1123, -109, -572, 45, "npc_QUEST_LV_0100_20150317_003179")
@@ -123,7 +144,7 @@ function npc_QUEST_LV_0100_20150317_003179()
 msg("GELE573_MQ_03_AI_KILL")
 end
 
------ blank_npc ----- 
+----- Demon Summoning Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "QUEST_LV_0100_20150317_003179", "f_gele_57_3", 1165, -109, -476, 45, "npc_QUEST_LV_0100_20150317_003179")
@@ -131,7 +152,7 @@ function npc_QUEST_LV_0100_20150317_003179()
 msg("GELE573_MQ_03_AI_KILL")
 end
 
------ blank_npc ----- 
+----- Demon Summoning Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "QUEST_LV_0100_20150317_003179", "f_gele_57_3", 1080, -68, -433, 45, "npc_QUEST_LV_0100_20150317_003179")
@@ -139,7 +160,7 @@ function npc_QUEST_LV_0100_20150317_003179()
 msg("GELE573_MQ_03_AI_KILL")
 end
 
------ blank_npc ----- 
+----- Demon Summoning Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "QUEST_LV_0100_20150317_003179", "f_gele_57_3", 940, -68, -473, 45, "npc_QUEST_LV_0100_20150317_003179")
@@ -147,7 +168,7 @@ function npc_QUEST_LV_0100_20150317_003179()
 msg("GELE573_MQ_03_AI_KILL")
 end
 
------ blank_npc ----- 
+----- Demon Summoning Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "QUEST_LV_0100_20150317_003179", "f_gele_57_3", 808, -36, -463, 45, "npc_QUEST_LV_0100_20150317_003179")
@@ -155,7 +176,7 @@ function npc_QUEST_LV_0100_20150317_003179()
 msg("GELE573_MQ_03_AI_KILL")
 end
 
------ blank_npc ----- 
+----- Demon Summoning Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "QUEST_LV_0100_20150317_003179", "f_gele_57_3", 719, -31, -537, 45, "npc_QUEST_LV_0100_20150317_003179")
@@ -163,7 +184,7 @@ function npc_QUEST_LV_0100_20150317_003179()
 msg("GELE573_MQ_03_AI_KILL")
 end
 
------ blank_npc ----- 
+----- Demon Summoning Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "QUEST_LV_0100_20150317_003179", "f_gele_57_3", 1019, -30, -304, 45, "npc_QUEST_LV_0100_20150317_003179")
@@ -171,7 +192,7 @@ function npc_QUEST_LV_0100_20150317_003179()
 msg("GELE573_MQ_03_AI_KILL")
 end
 
------ blank_npc ----- 
+----- Demon Summoning Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "QUEST_LV_0100_20150317_003179", "f_gele_57_3", 871, 29, -297, 45, "npc_QUEST_LV_0100_20150317_003179")
@@ -179,7 +200,7 @@ function npc_QUEST_LV_0100_20150317_003179()
 msg("GELE573_MQ_03_AI_KILL")
 end
 
------ blank_npc ----- 
+----- Demon Summoning Circle ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "QUEST_LV_0100_20150317_003179", "f_gele_57_3", 943, -97, -625, 45, "npc_QUEST_LV_0100_20150317_003179")
@@ -187,7 +208,7 @@ function npc_QUEST_LV_0100_20150317_003179()
 msg("GELE573_MQ_03_AI_KILL")
 end
 
------ npc_paladin_follower2_4 ----- 
+----- Watcher James ----- 
 ----- npcselectdialog.ies | ClassName: GELE_57_3_HQ01_NPC01 -----
 ----- Dialog -----
 ----- QuestIDs: GELE_57_3_HQ_01 -----
@@ -201,7 +222,7 @@ msg("GELE_57_3_HQ_01_succ01")
 msg("GELE_57_3_HQ_01_Q")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -212,7 +233,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_GELE_57_3")
 end
 
------ npc_paladin_noinst3_3 ----- 
+----- Watcher Kenneth ----- 
 ----- npcselectdialog.ies | ClassName: GELE573_KENNETH -----
 ----- Dialog -----
 ----- QuestIDs: GELE573_MQ_03 | GELE573_MQ_05 | GELE573_MQ_04 -----
@@ -230,7 +251,7 @@ msg("GELE573_MQ_05_01")
 msg("GELE573_MQ_05_02")
 end
 
------ mon_paladin_follower1_1 ----- 
+----- Follower Algis ----- 
 ----- npcselectdialog.ies | ClassName: GELE573_MQ_07_F -----
 ----- Dialog -----
 ----- QuestIDs: GELE573_MQ_07 -----
@@ -282,7 +303,14 @@ msg("d_chapel_57_7_dlg_11")
 msg("d_chapel_57_6_dlg_11")
 end
 
------ treasure_box1 ----- 
+----- Thaumas Trail ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016503", "f_gele_57_3", 1495, -109, -711, 45, "npc_ETC_20151102_016503")
+function npc_ETC_20151102_016503()
+msg("GELE57_3_PILGRIM41_1")
+end
+
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_gele_57_3", 1150, 218, 818, 45, "npc_ETC_20150317_009100")

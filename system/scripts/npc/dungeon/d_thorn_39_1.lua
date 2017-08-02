@@ -1,4 +1,18 @@
------ npc_friar_02 ----- 
+----- Glade Hillroad ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011734", "d_thorn_39_1", -745, 1216, 1667, 111, "npc_ETC_20150714_011734")
+function npc_ETC_20150714_011734()
+msg("THORN391_TO_THORN392")
+end
+
+----- Sirdgela Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009572", "d_thorn_39_1", 1206, 1277, -2884, -63, "npc_ETC_20150323_009572")
+function npc_ETC_20150323_009572()
+msg("THORN391_TO_THORN20")
+end
+
+----- Senior Monk Marko ----- 
 ----- npcselectdialog.ies | ClassName: THORN391_MQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_1_MQ01 | THORN39_1_MQ02 | THORN39_1_MQ07 -----
@@ -22,7 +36,7 @@ msg("THORN39_1_MQ_07_1")
 msg("THORN39_1_MQ_07_3")
 end
 
------ npc_paladin_follower2_2 ----- 
+----- Hunter Natasha ----- 
 ----- npcselectdialog.ies | ClassName: THORN391_MQ_04 -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_2_MQ06 | THORN39_1_MQ01 -----
@@ -66,7 +80,7 @@ msg("THORN39_3_MQ_06_5")
 msg("THORN39_3_MQ_06_add")
 end
 
------ npc_paladin_follower2_4 ----- 
+----- Hunter Bastille ----- 
 ----- npcselectdialog.ies | ClassName: THORN391_SQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_1_SQ01 | THORN39_1_SQ04 -----
@@ -83,7 +97,7 @@ msg("THORN39_1_SQ04_prog01")
 msg("THORN39_1_SQ04_succ01")
 end
 
------ npc_friar_04 ----- 
+----- Monk Chad ----- 
 ----- npcselectdialog.ies | ClassName: THORN391_SQ_02 -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_1_SQ02 | THORN39_1_SQ03 | THORN39_1_SQ05 | THORN39_1_SQ06 -----
@@ -107,21 +121,21 @@ msg("THORN39_1_SQ06_prog01")
 msg("THORN39_1_SQ06_succ01")
 end
 
------ Velhider2_NPC ----- 
+----- Baboon ----- 
 ----- Enter -----
 addnpc(47521, "ETC_20150714_013135", "d_thorn_39_1", 210, 1216, -138, 35, "npc_ETC_20150714_013135")
 function npc_ETC_20150714_013135()
 msg("THORN391_COMPANION_1")
 end
 
------ InfroHoglan ----- 
+----- Chevas ----- 
 ----- Enter -----
 addnpc(57037, "ETC_20150714_012581", "d_thorn_39_1", -2040, 1031, 497, -40, "npc_ETC_20150714_012581")
 function npc_ETC_20150714_012581()
 msg("THORN391_COMPANION_2")
 end
 
------ npc_friar_03 ----- 
+----- Monk Lotze ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155044, "QUEST_20150714_002043", "d_thorn_39_1", 1610, 1216, -336, -119, "npc_QUEST_20150714_002043")
@@ -129,7 +143,7 @@ function npc_QUEST_20150714_002043()
 msg("THORN391_MQ_02_basic01")
 end
 
------ npc_friar_04 ----- 
+----- Monk Zidas ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155045, "QUEST_20150714_002046", "d_thorn_39_1", 1589, 1216, -574, 71, "npc_QUEST_20150714_002046")
@@ -137,7 +151,7 @@ function npc_QUEST_20150714_002046()
 msg("THORN391_MQ_02_basic01")
 end
 
------ npc_friar_05 ----- 
+----- Monk Ortega ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155046, "QUEST_20150714_002049", "d_thorn_39_1", 1727, 1216, -519, -25, "npc_QUEST_20150714_002049")
@@ -145,14 +159,14 @@ function npc_QUEST_20150714_002049()
 msg("THORN391_MQ_02_basic01")
 end
 
------ npc_friar_down01 ----- 
+----- Guardian Bros ----- 
 ----- Enter -----
 addnpc(155047, "ETC_20150714_013136", "d_thorn_39_1", 110, 1216, 189, 45, "npc_ETC_20150714_013136")
 function npc_ETC_20150714_013136()
 msg("THORN391_MQ_03")
 end
 
------ npc_paladin_follower2_2 ----- 
+----- Hunter Natasha ----- 
 ----- npcselectdialog.ies | ClassName: THORN391_MQ_05 -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_1_MQ02 | THORN39_1_MQ03 | THORN39_1_MQ05 | THORN39_1_MQ06 | THORN39_1_MQ07 -----
@@ -196,7 +210,7 @@ msg("THORN39_3_MQ_06_5")
 msg("THORN39_3_MQ_06_add")
 end
 
------ noshadow_npc ----- 
+----- Abandoned Beehives ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20150714_013137", "d_thorn_39_1", -1204, 1216, 684, 45, "npc_ETC_20150714_013137")
@@ -204,7 +218,7 @@ function npc_ETC_20150714_013137()
 msg("THORN391_SQ_02_H")
 end
 
------ noshadow_npc ----- 
+----- Abandoned Beehives ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20150714_013137", "d_thorn_39_1", -1255, 1216, 643, 45, "npc_ETC_20150714_013137")
@@ -212,7 +226,7 @@ function npc_ETC_20150714_013137()
 msg("THORN391_SQ_02_H")
 end
 
------ noshadow_npc ----- 
+----- Abandoned Beehives ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20150714_013137", "d_thorn_39_1", -1143, 1216, -92, 45, "npc_ETC_20150714_013137")
@@ -220,7 +234,7 @@ function npc_ETC_20150714_013137()
 msg("THORN391_SQ_02_H")
 end
 
------ noshadow_npc ----- 
+----- Abandoned Beehives ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20150714_013137", "d_thorn_39_1", -1124, 1216, -154, 45, "npc_ETC_20150714_013137")
@@ -228,7 +242,7 @@ function npc_ETC_20150714_013137()
 msg("THORN391_SQ_02_H")
 end
 
------ noshadow_npc ----- 
+----- Abandoned Beehives ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20150714_013137", "d_thorn_39_1", 229, 1216, 896, 45, "npc_ETC_20150714_013137")
@@ -236,7 +250,7 @@ function npc_ETC_20150714_013137()
 msg("THORN391_SQ_02_H")
 end
 
------ noshadow_npc ----- 
+----- Abandoned Beehives ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20150714_013137", "d_thorn_39_1", 292, 1216, 971, 45, "npc_ETC_20150714_013137")
@@ -244,7 +258,7 @@ function npc_ETC_20150714_013137()
 msg("THORN391_SQ_02_H")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -255,7 +269,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_THORN_39_1")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_thorn_39_1", -798, 1216, -96, 90, "npc_ETC_20150317_009100")
@@ -263,28 +277,28 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ noshadow_npc ----- 
+----- Anti-Mobility Device ----- 
 ----- Enter -----
 addnpc(147469, "ETC_20170313_026481", "d_thorn_39_1", 1298, 1216, -1288, 225, "npc_ETC_20170313_026481")
 function npc_ETC_20170313_026481()
 msg("THORN39_1_SQ06_OBJ_PRE_CHECK")
 end
 
------ noshadow_npc ----- 
+----- Anti-Mobility Device ----- 
 ----- Enter -----
 addnpc(147469, "ETC_20170313_026481", "d_thorn_39_1", 1443, 1216, -1432, 45, "npc_ETC_20170313_026481")
 function npc_ETC_20170313_026481()
 msg("THORN39_1_SQ06_OBJ_PRE_CHECK")
 end
 
------ noshadow_npc ----- 
+----- Anti-Mobility Device ----- 
 ----- Enter -----
 addnpc(147469, "ETC_20170313_026481", "d_thorn_39_1", 1122, 1216, -1467, 45, "npc_ETC_20170313_026481")
 function npc_ETC_20170313_026481()
 msg("THORN39_1_SQ06_OBJ_PRE_CHECK")
 end
 
------ noshadow_npc ----- 
+----- Anti-Mobility Device ----- 
 ----- Enter -----
 addnpc(147469, "ETC_20170313_026481", "d_thorn_39_1", 1271, 1216, -1603, 45, "npc_ETC_20170313_026481")
 function npc_ETC_20170313_026481()

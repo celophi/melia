@@ -1,4 +1,25 @@
------ statue_vakarine ----- 
+----- Woods of the Linked Bridges ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001178", "f_siauliai_11_re", 2706, 172, -608, 45, "npc_ETC_20150317_001178")
+function npc_ETC_20150317_001178()
+msg("SIAULIAI11RE_TO_SIAULIAI15RE")
+end
+
+----- Koru Jungle ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016523", "f_siauliai_11_re", -1475, 85, 855, -122, "npc_ETC_20151102_016523")
+function npc_ETC_20151102_016523()
+msg("SIAULIAI11RE_TO_BRACKEN631")
+end
+
+----- Ashaq Underground Prison 1F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151001_014680", "f_siauliai_11_re", 510, 85, 1658, 63, "npc_ETC_20151001_014680")
+function npc_ETC_20151001_014680()
+msg("SIAULIAI11RE_TO_PRISON621")
+end
+
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -9,7 +30,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_SIAULIAI_11RE")
 end
 
------ npc_paladin_follower1_2 ----- 
+----- Chaser Talbasi ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI11RE_TALBASI -----
 ----- Dialog -----
 ----- QuestIDs: SIAU15RE_MQ_06 | SIAU11RE_MQ_01 | SIAU11RE_MQ_02 -----
@@ -32,7 +53,7 @@ msg("SIAU11RE_MQ_02_ITEM_3")
 msg("SIAULIAI11RE_TALBASI_basic_01")
 end
 
------ npc_paladin_follower1_3 ----- 
+----- Chaser Sendal ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI11RE_SENDAL -----
 ----- Dialog -----
 ----- QuestIDs: SIAU11RE_MQ_04 | SIAU11RE_MQ_05 -----
@@ -47,7 +68,7 @@ msg("SIAU11RE_MQ_05_02")
 msg("SIAULIAI11RE_SENDAL_basic_01")
 end
 
------ npc_paladin_follower2_3 ----- 
+----- Chaser Zegaus ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI11RE_JEGAUS -----
 ----- Dialog -----
 ----- QuestIDs: SIAU11RE_SQ_07 | SIAU11RE_SQ_08 -----
@@ -64,7 +85,7 @@ msg("SIAU11RE_SQ_08_03")
 msg("SIAULIAI11RE_JEGAUS_basic_01")
 end
 
------ npc_friar_03 ----- 
+----- Priest Pranas ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI11RE_PRANAS -----
 ----- Dialog -----
 ----- QuestIDs: SIAU11RE_MQ_05 | SIAU11RE_MQ_06 -----
@@ -74,7 +95,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ orsha_soldier_f_2 ----- 
+----- Agent Larena ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI11RE_RARENA -----
 ----- Dialog -----
 ----- QuestIDs: SIAU11RE_MQ_02 | SIAU11RE_MQ_03 | SIAU11RE_MQ_04 -----
@@ -91,7 +112,7 @@ msg("SIAU11RE_MQ_04_02")
 msg("SIAULIAI11RE_RARENA_basic_01")
 end
 
------ orsha_soldier_f_3 ----- 
+----- Agent Orwen ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI11RE_ORWEN -----
 ----- Dialog -----
 ----- QuestIDs: SIAU11RE_SQ_01 | SIAU11RE_SQ_02 -----
@@ -108,7 +129,7 @@ msg("SIAU11RE_SQ_02_03")
 msg("SIAULIAI11RE_ORWEN_basic_01")
 end
 
------ orsha_soldier_m ----- 
+----- Agent Notres ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI11RE_NOTORESU -----
 ----- Dialog -----
 ----- QuestIDs: SIAU11RE_SQ_03 | SIAU11RE_SQ_04 | SIAU11RE_SQ_05 -----
@@ -126,7 +147,7 @@ msg("SIAU11RE_SQ_05_03")
 msg("SIAULIAI11RE_NOTORESU_basic_01")
 end
 
------ npc_friar_03 ----- 
+----- Priest Pranas ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI11RE_PRANAS_1 -----
 ----- Dialog -----
 ----- QuestIDs: ORSHA_MQ2_03 | PRISON621_MQ_01 -----
@@ -136,7 +157,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_BAR_sub_master ----- 
+----- [Barbarian Submaster]Twinhal Koreont ----- 
 ----- npcselectdialog.ies | ClassName: JOB_2_BARBARIAN_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_2_BARBARIAN3 | JOB_2_BARBARIAN4 | JOB_2_BARBARIAN5 -----
@@ -158,7 +179,7 @@ msg("JOB_2_BARABARIAN5_1_3")
 msg("JOB_2_BARABARIAN5_1_4")
 end
 
------ wood_piece_01 ----- 
+----- Lumber Pile ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151031, "ETC_20151224_019969", "f_siauliai_11_re", 597, 281, -654, -53, "npc_ETC_20151224_019969")
@@ -166,7 +187,7 @@ function npc_ETC_20151224_019969()
 msg("JOB_2_PELTASTA2_WOOD")
 end
 
------ wood_piece_01 ----- 
+----- Lumber Pile ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151031, "ETC_20151224_019969", "f_siauliai_11_re", 547, 281, -484, -52, "npc_ETC_20151224_019969")
@@ -174,7 +195,7 @@ function npc_ETC_20151224_019969()
 msg("JOB_2_PELTASTA2_WOOD")
 end
 
------ wood_piece_01 ----- 
+----- Lumber Pile ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151031, "ETC_20151224_019969", "f_siauliai_11_re", 592, 281, -374, -67, "npc_ETC_20151224_019969")
@@ -182,7 +203,7 @@ function npc_ETC_20151224_019969()
 msg("JOB_2_PELTASTA2_WOOD")
 end
 
------ wood_piece_01 ----- 
+----- Lumber Pile ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151031, "ETC_20151224_019969", "f_siauliai_11_re", 788, 281, -692, -129, "npc_ETC_20151224_019969")
@@ -190,7 +211,7 @@ function npc_ETC_20151224_019969()
 msg("JOB_2_PELTASTA2_WOOD")
 end
 
------ wood_piece_01 ----- 
+----- Lumber Pile ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151031, "ETC_20151224_019969", "f_siauliai_11_re", 914, 281, -602, -106, "npc_ETC_20151224_019969")
@@ -198,7 +219,7 @@ function npc_ETC_20151224_019969()
 msg("JOB_2_PELTASTA2_WOOD")
 end
 
------ wood_piece_01 ----- 
+----- Lumber Pile ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151031, "ETC_20151224_019969", "f_siauliai_11_re", 940, 281, -482, -41, "npc_ETC_20151224_019969")
@@ -206,7 +227,7 @@ function npc_ETC_20151224_019969()
 msg("JOB_2_PELTASTA2_WOOD")
 end
 
------ npc_bonfire_Q1 ----- 
+----- Extinguished Bonfire ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154060, "ETC_20151102_017438", "f_siauliai_11_re", 1634, 284, 522, 45, "npc_ETC_20151102_017438")
@@ -214,7 +235,7 @@ function npc_ETC_20151102_017438()
 msg("SIAU11RE_MQ_02_NPC_02")
 end
 
------ pedlar_lose_1 ----- 
+----- Abandoned Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151102_017439", "f_siauliai_11_re", 1703, 284, 331, 45, "npc_ETC_20151102_017439")
@@ -222,7 +243,7 @@ function npc_ETC_20151102_017439()
 msg("SIAU11RE_MQ_02_NPC_03")
 end
 
------ LOST_PAPER ----- 
+----- Burnt Memo ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147312, "ETC_20151102_017440", "f_siauliai_11_re", 1566, 284, 469, 45, "npc_ETC_20151102_017440")
@@ -230,7 +251,7 @@ function npc_ETC_20151102_017440()
 msg("SIAU11RE_MQ_02_NPC_01")
 end
 
------ pedlar_lose_1 ----- 
+----- Lost Package ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151224_019970", "f_siauliai_11_re", -436, 85, 334, 45, "npc_ETC_20151224_019970")
@@ -238,7 +259,7 @@ function npc_ETC_20151224_019970()
 msg("SIAU11RE_SQ_08_NPC")
 end
 
------ pedlar_lose_1 ----- 
+----- Lost Package ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151224_019970", "f_siauliai_11_re", -934, 146, -14, 45, "npc_ETC_20151224_019970")
@@ -246,7 +267,7 @@ function npc_ETC_20151224_019970()
 msg("SIAU11RE_SQ_08_NPC")
 end
 
------ pedlar_lose_1 ----- 
+----- Lost Package ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151224_019970", "f_siauliai_11_re", -1061, 146, 221, 45, "npc_ETC_20151224_019970")
@@ -254,7 +275,7 @@ function npc_ETC_20151224_019970()
 msg("SIAU11RE_SQ_08_NPC")
 end
 
------ pedlar_lose_1 ----- 
+----- Lost Package ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151224_019970", "f_siauliai_11_re", -762, 146, 181, 45, "npc_ETC_20151224_019970")
@@ -262,7 +283,7 @@ function npc_ETC_20151224_019970()
 msg("SIAU11RE_SQ_08_NPC")
 end
 
------ pedlar_lose_1 ----- 
+----- Lost Package ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151224_019970", "f_siauliai_11_re", -1127, 86, 1581, 45, "npc_ETC_20151224_019970")
@@ -270,7 +291,7 @@ function npc_ETC_20151224_019970()
 msg("SIAU11RE_SQ_08_NPC")
 end
 
------ pedlar_lose_1 ----- 
+----- Lost Package ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151224_019970", "f_siauliai_11_re", -926, 146, 389, 45, "npc_ETC_20151224_019970")
@@ -278,7 +299,7 @@ function npc_ETC_20151224_019970()
 msg("SIAU11RE_SQ_08_NPC")
 end
 
------ pedlar_lose_1 ----- 
+----- Lost Package ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151224_019970", "f_siauliai_11_re", -28, 85, 823, 45, "npc_ETC_20151224_019970")
@@ -286,7 +307,7 @@ function npc_ETC_20151224_019970()
 msg("SIAU11RE_SQ_08_NPC")
 end
 
------ pedlar_lose_1 ----- 
+----- Lost Package ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151224_019970", "f_siauliai_11_re", -562, 85, 798, 45, "npc_ETC_20151224_019970")
@@ -294,7 +315,7 @@ function npc_ETC_20151224_019970()
 msg("SIAU11RE_SQ_08_NPC")
 end
 
------ pedlar_lose_1 ----- 
+----- Lost Package ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151224_019970", "f_siauliai_11_re", -525, 85, -22, 45, "npc_ETC_20151224_019970")
@@ -302,7 +323,7 @@ function npc_ETC_20151224_019970()
 msg("SIAU11RE_SQ_08_NPC")
 end
 
------ pedlar_lose_1 ----- 
+----- Lost Package ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151224_019970", "f_siauliai_11_re", -275, 85, 36, 45, "npc_ETC_20151224_019970")
@@ -310,7 +331,7 @@ function npc_ETC_20151224_019970()
 msg("SIAU11RE_SQ_08_NPC")
 end
 
------ pedlar_lose_1 ----- 
+----- Lost Package ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151224_019970", "f_siauliai_11_re", -1285, 85, 1001, 45, "npc_ETC_20151224_019970")
@@ -318,7 +339,7 @@ function npc_ETC_20151224_019970()
 msg("SIAU11RE_SQ_08_NPC")
 end
 
------ pedlar_lose_1 ----- 
+----- Lost Package ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151224_019970", "f_siauliai_11_re", 48, 85, 317, 45, "npc_ETC_20151224_019970")
@@ -326,7 +347,7 @@ function npc_ETC_20151224_019970()
 msg("SIAU11RE_SQ_08_NPC")
 end
 
------ pedlar_lose_1 ----- 
+----- Lost Package ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151224_019970", "f_siauliai_11_re", -1200, 85, 1273, 45, "npc_ETC_20151224_019970")
@@ -334,7 +355,7 @@ function npc_ETC_20151224_019970()
 msg("SIAU11RE_SQ_08_NPC")
 end
 
------ pedlar_lose_1 ----- 
+----- Lost Package ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151224_019970", "f_siauliai_11_re", -103, 85, 195, 45, "npc_ETC_20151224_019970")
@@ -342,7 +363,7 @@ function npc_ETC_20151224_019970()
 msg("SIAU11RE_SQ_08_NPC")
 end
 
------ pedlar_lose_1 ----- 
+----- Lost Package ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151224_019970", "f_siauliai_11_re", -1453, 85, 811, 45, "npc_ETC_20151224_019970")
@@ -350,7 +371,7 @@ function npc_ETC_20151224_019970()
 msg("SIAU11RE_SQ_08_NPC")
 end
 
------ pedlar_lose_1 ----- 
+----- Lost Package ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151224_019970", "f_siauliai_11_re", -955, 85, 647, 45, "npc_ETC_20151224_019970")
@@ -358,7 +379,7 @@ function npc_ETC_20151224_019970()
 msg("SIAU11RE_SQ_08_NPC")
 end
 
------ pedlar_lose_1 ----- 
+----- Lost Package ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20151224_019970", "f_siauliai_11_re", -917, 85, 872, 45, "npc_ETC_20151224_019970")
@@ -366,7 +387,7 @@ function npc_ETC_20151224_019970()
 msg("SIAU11RE_SQ_08_NPC")
 end
 
------ npc_paladin_follower2_1 ----- 
+----- Chaser Torvana ----- 
 ----- npcselectdialog.ies | ClassName: SIAU11RE_TORNAVA -----
 ----- Dialog -----
 addnpc(147403, "ETC_20151001_015228", "f_siauliai_11_re", 346, 85, 1655, 25, "npc_ETC_20151001_015228")
@@ -383,7 +404,7 @@ msg("PRISON621_SQ_02_02")
 msg("PRISON621_SQ_02_03")
 end
 
------ npc_paladin_follower2_4 ----- 
+----- Chaser Daramaus ----- 
 ----- npcselectdialog.ies | ClassName: SIAU11RE_DARAMAUS -----
 ----- Dialog -----
 addnpc(147406, "ETC_20151001_015229", "f_siauliai_11_re", 433, 85, 1680, -41, "npc_ETC_20151001_015229")
@@ -391,14 +412,14 @@ function npc_ETC_20151001_015229()
 msg("SIAU11RE_DARAMAUS_basic_01")
 end
 
------ npc_dog6 ----- 
+----- Jolly ----- 
 ----- Enter -----
 addnpc(154068, "ETC_20151102_017260", "f_siauliai_11_re", 346, 85, 797, -24, "npc_ETC_20151102_017260")
 function npc_ETC_20151102_017260()
 msg("SIAU11RE_MQ_03_DOG")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_siauliai_11_re", -1679, 150, 1345, 45, "npc_ETC_20150317_009100")
@@ -406,7 +427,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_siauliai_11_re", -707, 147, 1474, 45, "npc_ETC_20150317_009100")

@@ -1,4 +1,4 @@
------ pedlar_lose_1 ----- 
+----- The luggage of someone ----- 
 ----- npcselectdialog.ies | ClassName: JOB_DOPPELSOELDNER_6_1_OBJ01 -----
 ----- Dialog -----
 ----- QuestIDs: JOB_DOPPELSOELDNER_6_1 -----
@@ -8,7 +8,35 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_archaeologist_m_04 ----- 
+----- Galeed Plateau ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150918_014223", "f_pilgrimroad_36_2", 1702, 111, -604, 31, "npc_ETC_20150918_014223")
+function npc_ETC_20150918_014223()
+msg("PILGRIM_36_2_TO_ROKAS_36_1")
+end
+
+----- Manahas ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150918_014225", "f_pilgrimroad_36_2", -28, 225, -1000, -41, "npc_ETC_20150918_014225")
+function npc_ETC_20150918_014225()
+msg("PILGRIM_36_2_TO_PILGRIM_48")
+end
+
+----- Nahash Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016518", "f_pilgrimroad_36_2", 561, 98, 1586, 142, "npc_ETC_20151102_016518")
+function npc_ETC_20151102_016518()
+msg("PILGRIM_36_2_TO_SIAULIAI_35_1")
+end
+
+----- Alemeth Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016516", "f_pilgrimroad_36_2", -1703, 153, 1344, 224, "npc_ETC_20151102_016516")
+function npc_ETC_20151102_016516()
+msg("PILGRIM_36_2_TO_ORCHARD_34_1")
+end
+
+----- Albinas ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_36_2_ALBINAS -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM_36_2_SQ_020 -----
@@ -20,7 +48,7 @@ msg("PILGRIM_36_2_SQ_020_AC")
 msg("PILGRIM_36_2_ALBINAS_BASIC01")
 end
 
------ npc_pilgrim_m_2 ----- 
+----- Damijonas ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_36_2_DAMIJONAS -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM_36_2_SQ_155 | PILGRIM_36_2_SQ_040 | PILGRIM_36_2_SQ_050 | PILGRIM_36_2_SQ_060 | PILGRIM_36_2_SQ_080 | PILGRIM_36_2_SQ_055 -----
@@ -48,7 +76,7 @@ msg("PILGRIM_36_2_SQ_055_SELECT_03_A")
 msg("PILGRIM_36_2_SQ_155_PR_COMP")
 end
 
------ npc_pilgrim_m_3 ----- 
+----- Eduinas ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_36_2_EDVINAS -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM_36_2_SQ_060 | PILGRIM_36_2_SQ_070 | PILGRIM_36_2_SQ_140 | PILGRIM_36_2_SQ_155 -----
@@ -70,7 +98,7 @@ msg("PILGRIM_36_2_SQ_155_PR")
 msg("PILGRIM_36_2_SQ_155_SUCPR")
 end
 
------ npc_archaeologist_m_01 ----- 
+----- Gedas ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_36_2_GEDAS -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM_36_2_SQ_090 | PILGRIM_36_2_SQ_100 | PILGRIM_36_2_SQ_105 | PILGRIM_36_2_SQ_110 | PILGRIM_36_2_SQ_130 | PILGRIM_36_2_SQ_140 | PILGRIM_36_2_SQ_150 | PILGRIM_36_2_SQ_155 -----
@@ -105,7 +133,7 @@ msg("PILGRIM_36_2_SQ_155_PR_PRST")
 msg("PILGRIM_36_2_SQ_155_SUCST")
 end
 
------ npc_historian_odel_3 ----- 
+----- Barte ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_36_2_BARTE -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM_36_2_SQ_110 | PILGRIM_36_2_SQ_120 | PILGRIM_36_2_SQ_130 | PILGRIMROAD362_HQ1 -----
@@ -127,7 +155,7 @@ msg("PILGRIMROAD362_HQ1_agree1")
 msg("PILGRIMROAD362_HQ1_prog1")
 end
 
------ npc_pilgrim_f_1 ----- 
+----- Nijole ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_36_2_NIJOLE -----
 ----- Dialog -----
 addnpc(155033, "ETC_20151001_015264", "f_pilgrimroad_36_2", 1140, 131, 691, -56, "npc_ETC_20151001_015264")
@@ -137,7 +165,7 @@ msg("PILGRIM_36_2_NIJOLE_BASIC02")
 msg("PILGRIM_36_2_NIJOLE_BASIC03")
 end
 
------ npc_archaeologist_m_02 ----- 
+----- Fabijus ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_36_2_FABIJUS -----
 ----- Dialog -----
 addnpc(152059, "ETC_20151001_014736", "f_pilgrimroad_36_2", -1606, 95, -1055, 140, "npc_ETC_20151001_014736")
@@ -146,7 +174,7 @@ msg("PILGRIM_36_2_FABIJUS_BASIC01")
 msg("PILGRIM_36_2_FABIJUS_BASIC02")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_pilgrimroad_36_2", -297, 225, -546, 90, "npc_ETC_20150317_009100")
@@ -154,7 +182,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_archaeologist_m_03 ----- 
+----- Merchant Dolonas ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM362_RP_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM362_RP_1 -----

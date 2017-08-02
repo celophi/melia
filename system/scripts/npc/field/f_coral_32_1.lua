@@ -1,4 +1,4 @@
------ catacomb_skull_3 ----- 
+----- Old piles of bones ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(152016, "ETC_20150729_014022", "f_coral_32_1", -400, 141, 534, 45, "npc_ETC_20150729_014022")
@@ -6,7 +6,21 @@ function npc_ETC_20150729_014022()
 msg("JOB_CORSAIR_6_1_BONE")
 end
 
------ BOOK_01 ----- 
+----- Igti Coast ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016515", "f_coral_32_1", -347, 231, 910, 173, "npc_ETC_20151102_016515")
+function npc_ETC_20151102_016515()
+msg("CORAL32_1_CORAL32_2")
+end
+
+----- Barha Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016517", "f_coral_32_1", -153, 142, -1692, -37, "npc_ETC_20151102_016517")
+function npc_ETC_20151102_016517()
+msg("CORAL32_1_ORCHARD34_3")
+end
+
+----- Soggy Book ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147311, "ETC_20151224_019944", "f_coral_32_1", 267, 274, 16, 45, "npc_ETC_20151224_019944")
@@ -14,7 +28,7 @@ function npc_ETC_20151224_019944()
 msg("HATR_BOOK02")
 end
 
------ npc_village_male_a2 ----- 
+----- Refugee Salyamonas ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_32_1_PEOPLE2 -----
 ----- Dialog -----
 addnpc(147482, "ETC_20160224_020696", "f_coral_32_1", -212, 236, -1119, -100, "npc_ETC_20160224_020696")
@@ -26,7 +40,7 @@ msg("CORAL_32_1_PEOPLE2_BASIC1")
 msg("CORAL_32_1_PEOPLE2_BASIC2")
 end
 
------ npc_village_male_a3 ----- 
+----- Refugee Relyn ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_32_1_PEOPLE3 -----
 ----- Dialog -----
 addnpc(147483, "ETC_20160224_020697", "f_coral_32_1", -298, 236, -1186, 88, "npc_ETC_20160224_020697")
@@ -38,7 +52,7 @@ msg("CORAL_32_1_PEOPLE3_BASIC1")
 msg("CORAL_32_1_PEOPLE3_BASIC2")
 end
 
------ npc_village_uncle_2 ----- 
+----- Elder Frege ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_32_1_PEOPLE1 -----
 ----- Dialog -----
 ----- QuestIDs: CORAL_32_1_SQ_1 | CORAL_32_1_SQ_7 | CORAL_32_1_SQ_8 -----
@@ -60,7 +74,7 @@ msg("CORAL_32_1_PEOPLE1_BASIC1")
 msg("CORAL_32_1_PEOPLE1_BASIC2")
 end
 
------ npc_village_uncle_3 ----- 
+----- Refugee Elius ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_32_1_PEOPLE4 -----
 ----- Dialog -----
 ----- QuestIDs: CORAL_32_1_SQ_10 -----
@@ -76,7 +90,7 @@ msg("CORAL_32_1_SQ_10_SU")
 msg("CORAL_32_1_PEOPLE4_BASIC")
 end
 
------ npc_pilgrim_m_2 ----- 
+----- Merchant Simonas ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_32_1_MERCHANT1 -----
 ----- Dialog -----
 ----- QuestIDs: CORAL_32_1_SQ_2 | CORAL_32_1_SQ_3 | CORAL_32_1_SQ_4 | CORAL_32_1_SQ_6 | CORAL_32_1_SQ_5 -----
@@ -108,7 +122,7 @@ msg("CORAL_32_1_MERCHANT1_BASIC1")
 msg("CORAL_32_1_MERCHANT1_BASIC2")
 end
 
------ npc_pilgrim_f_3 ----- 
+----- Merchant Felicia ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_32_1_MERCHANT2 -----
 ----- Dialog -----
 ----- QuestIDs: CORAL_32_1_SQ_9 | CORAL_32_1_SQ_11 -----
@@ -128,7 +142,7 @@ msg("CORAL_32_1_MERCHANT2_BASIC1")
 msg("CORAL_32_1_MERCHANT2_BASIC2")
 end
 
------ SCS_M2_Mon_Guard ----- 
+----- Soldier Basilius ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_32_1_GUARD3 -----
 ----- Dialog -----
 addnpc(10022, "ETC_20160224_020702", "f_coral_32_1", -239, 236, -1494, -12, "npc_ETC_20160224_020702")
@@ -139,7 +153,7 @@ msg("CORAL_32_1_GUARD3_BASIC1")
 msg("CORAL_32_1_GUARD3_BASIC2")
 end
 
------ SCS_M2_Mon_Guard ----- 
+----- Soldier Ladal ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_32_1_GUARD1 -----
 ----- Dialog -----
 addnpc(10022, "ETC_20160224_020703", "f_coral_32_1", -69, 236, -1079, 45, "npc_ETC_20160224_020703")
@@ -150,7 +164,7 @@ msg("CORAL_32_1_GUARD1_BASIC1")
 msg("CORAL_32_1_GUARD1_BASIC2")
 end
 
------ SCS_M2_Mon_Guard ----- 
+----- Soldier Sloch ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_32_1_GUARD2 -----
 ----- Dialog -----
 addnpc(10022, "ETC_20160224_020704", "f_coral_32_1", -27, 236, -1163, 101, "npc_ETC_20160224_020704")
@@ -161,7 +175,7 @@ msg("CORAL_32_1_GUARD2_BASIC")
 msg("CORAL_32_1_GUARD2_BASIC2")
 end
 
------ orsha_m_14_1 ----- 
+----- Lord Lieutenant ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_32_1_SERVANT -----
 ----- Dialog -----
 addnpc(155118, "ETC_20160224_020705", "f_coral_32_1", -455, 236, -1172, 45, "npc_ETC_20160224_020705")
@@ -170,7 +184,7 @@ msg("CORAL_32_1_SERVANT_BASIC01")
 msg("CORAL_32_1_SERVANT_BASIC")
 end
 
------ soldier7 ----- 
+----- Soldier ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_32_1_GUARD4 -----
 ----- Dialog -----
 addnpc(20019, "ETC_20160224_020708", "f_coral_32_1", -438, 236, -1211, 160, "npc_ETC_20160224_020708")
@@ -193,7 +207,7 @@ msg("CORAL_32_1_GUARD4_BASIC1")
 msg("CORAL_32_1_GUARD5_BASIC1")
 end
 
------ soldier7 ----- 
+----- Soldier ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_32_1_GUARD5 -----
 ----- Dialog -----
 addnpc(20019, "ETC_20160224_020708", "f_coral_32_1", -409, 236, -1168, -120, "npc_ETC_20160224_020708")
@@ -216,16 +230,16 @@ msg("CORAL_32_1_GUARD4_BASIC1")
 msg("CORAL_32_1_GUARD5_BASIC1")
 end
 
------ soldier7 ----- 
+----- Injured Soldier ----- 
 addnpc(20019, "ETC_20160224_020709", "f_coral_32_1", -133, 236, -1345, 53, "npc_dummy")
 
------ npc_village_male_b2 ----- 
+----- Injured Refugee ----- 
 addnpc(147485, "ETC_20160224_020710", "f_coral_32_1", -142, 236, -1401, 45, "npc_dummy")
 
------ npc_village_male_b1 ----- 
+----- Injured Refugee ----- 
 addnpc(147484, "ETC_20160224_020710", "f_coral_32_1", -118, 236, -1321, 45, "npc_dummy")
 
------ npc_village_male_a3 ----- 
+----- Merchant Alliance Worker ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_32_1_WORKER1 -----
 ----- Dialog -----
 addnpc(147483, "QUEST_LV_0300_20160310_001092", "f_coral_32_1", -463, 236, -1322, 137, "npc_QUEST_LV_0300_20160310_001092")
@@ -240,7 +254,7 @@ msg("CORAL_32_1_WORKER2_basic03")
 msg("CORAL_32_1_WORKER2_basic04")
 end
 
------ npc_village_male_b2 ----- 
+----- Merchant Alliance Worker ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_32_1_WORKER2 -----
 ----- Dialog -----
 addnpc(147485, "QUEST_LV_0300_20160310_001092", "f_coral_32_1", -464, 236, -1251, -24, "npc_QUEST_LV_0300_20160310_001092")
@@ -255,7 +269,7 @@ msg("CORAL_32_1_WORKER2_basic03")
 msg("CORAL_32_1_WORKER2_basic04")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_coral_32_1", 376, 237, -1043, 180, "npc_ETC_20150317_009100")

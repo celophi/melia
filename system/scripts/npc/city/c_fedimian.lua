@@ -1,4 +1,4 @@
------ npc_grita ----- 
+----- Grita ----- 
 ----- npcselectdialog.ies | ClassName: FEDIMIAN_GRITA -----
 ----- Dialog -----
 ----- QuestIDs: TO_THE_TOWER_01 -----
@@ -94,7 +94,7 @@ msg("FTOWER44_GRITA_01_basic02")
 msg("FEDIMIAN_GRITA_BASIC02")
 end
 
------ npc_SQR_master ----- 
+----- [Squire Master] Justina Legwyn ----- 
 ----- npcselectdialog.ies | ClassName: JOB_SQUIRE3_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_SQUIRE3_1 | JOB_SQUIRE4_1 | JOB_SQUIRE5_1 | JOB_SQUIRE_6_1 | PILGRIM31_3_HQ1 -----
@@ -121,7 +121,7 @@ msg("PILGRIM31_3_HQ1_succ1")
 msg("ORCHARD_324_SQ_02_SQUIRE")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -132,7 +132,14 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_C_FEDIMIAN")
 end
 
------ soldier1 ----- 
+----- Fedimian Suburbs ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009581", "c_fedimian", 782, 160, -160, 35, "npc_ETC_20150323_009581")
+function npc_ETC_20150323_009581()
+msg("FEDMIAN_TO_REMAINS40")
+end
+
+----- Security Guard ----- 
 ----- npcselectdialog.ies | ClassName: FEDIMIAN_DETECTIVE_GUARD -----
 ----- Dialog -----
 addnpc(20011, "QUEST_LV_0100_20150317_001256", "c_fedimian", -493, 179, -534, 137.68, "npc_QUEST_LV_0100_20150317_001256")
@@ -209,7 +216,7 @@ msg("FLASH29_1_SQ_090_basic01")
 msg("FLASH29_1_SQ_090_basic02")
 end
 
------ soldier3 ----- 
+----- Guard Leaper ----- 
 ----- npcselectdialog.ies | ClassName: CRIMINAL -----
 ----- Enter | Dialog -----
 ----- QuestIDs: ROKAS_25_HQ_01 | REMAIN39_SQ04 -----
@@ -223,7 +230,7 @@ msg("ROKAS_25_HQ_01_prognpc")
 msg("ROKAS_25_HQ_01_W")
 end
 
------ npc_matron5 ----- 
+----- Girl ----- 
 ----- npcselectdialog.ies | ClassName: REMAIN39_SQ03_GIRL -----
 ----- Dialog -----
 ----- QuestIDs: REMAIN39_SQ04 -----
@@ -244,7 +251,7 @@ msg("ORCHARD342_GIRL_DISAPPEAR")
 msg("ORCHARD342_GIRL_GUIDE")
 end
 
------ npc_ROG_master ----- 
+----- [Rogue Master] Gema ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_ROGUE -----
 ----- Dialog -----
 ----- QuestIDs: JOB_ROGUE4_1 | JOB_ROGUE5_1 | JOB_ROGUE_6_1 -----
@@ -265,7 +272,7 @@ msg("JOB_ROGUE_6_1_succ")
 msg("ORCHARD_324_SQ_02_ROGUE")
 end
 
------ npc_fedimian_merchant ----- 
+----- [Item Merchant]Muras ----- 
 ----- npcselectdialog.ies | ClassName: FED_TOOL -----
 ----- Dialog -----
 ----- QuestIDs: JOB_PARDONER4_2 -----
@@ -282,7 +289,7 @@ msg("REMAINS37_1_SQ_030_PR_2")
 msg("REMAINS37_1_SQ_030_PR_3")
 end
 
------ npc_fedimian_merchant_1 ----- 
+----- [Equipment Merchant]Yorgis ----- 
 ----- npcselectdialog.ies | ClassName: FED_EQUIP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_PARDONER4_3 | JOB_PARDONER4_1 | FEDIMIAN_HQ_01 -----
@@ -302,7 +309,16 @@ msg("FED_EQUIP_BASIC02")
 msg("FED_EQUIP_BASIC03")
 end
 
------ Board1 ----- 
+----- Starving Demon's Way ----- 
+----- Enter -----
+----- QuestIDs: THORN_TO_PILGRIM -----
+addnpc(40001, "ETC_20150317_001218", "c_fedimian", 846, 680, 1137, 121, "npc_ETC_20150317_001218")
+function npc_ETC_20150317_001218()
+msg("GM_QUEST_MODIFY_PC_SEL")
+msg("GM_NPC_HIDE_UNHIDE")
+end
+
+----- Bulletin Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000081", "c_fedimian", 246, 478, 398, -37, "npc_QUEST_20150317_000081")
@@ -310,7 +326,7 @@ function npc_QUEST_20150317_000081()
 msg("FEDIMIAN_SIGN1_BASIC01")
 end
 
------ npc_c_sculptor ----- 
+----- Old Man ----- 
 ----- npcselectdialog.ies | ClassName: FEDIMIAN_OLDMAN1 -----
 ----- Dialog -----
 ----- QuestIDs: PRISON_81_SQ_1 -----
@@ -325,7 +341,7 @@ msg("PRISON_81_SQ_1_dlg1")
 msg("PRISON_81_SQ_1_succ")
 end
 
------ Board1 ----- 
+----- Bulletin Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000081", "c_fedimian", 671, 161, -84, -36, "npc_QUEST_20150317_000081")
@@ -333,7 +349,7 @@ function npc_QUEST_20150317_000081()
 msg("FEDIMIAN_SIGN2_BASIC01")
 end
 
------ Board1 ----- 
+----- Bulletin Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000081", "c_fedimian", -879, 448, 88, -25, "npc_QUEST_20150317_000081")
@@ -341,7 +357,7 @@ function npc_QUEST_20150317_000081()
 msg("FEDIMIAN_SIGN3_BASIC01")
 end
 
------ Board1 ----- 
+----- Bulletin Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000081", "c_fedimian", 631, 747, 1101, -26, "npc_QUEST_20150317_000081")
@@ -349,7 +365,7 @@ function npc_QUEST_20150317_000081()
 msg("FEDIMIAN_SIGN4_BASIC01")
 end
 
------ npc_HAC_master ----- 
+----- [Hackapell Master] Flint Boulder ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_HACKAPELL -----
 ----- Dialog -----
 ----- QuestIDs: JOB_HACKAPELL5_1 -----
@@ -373,7 +389,7 @@ msg("JOB_HACKAPELL_8_1_SU")
 msg("HACKAPELL_MASTER_BASICK")
 end
 
------ npc_DRU_master ----- 
+----- [Druid Master] Gina Greene ----- 
 ----- npcselectdialog.ies | ClassName: JOB_DRUID3_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_DRUID5_1 | JOB_DRUID_6_1 | JOB_DRUID_7_1 | ORCHARD_324_SQ_02 | LOWLV_MASTER_ENCY_SQ_20 | LOWLV_GREEN_SQ_10 | LOWLV_GREEN_SQ_20 | LOWLV_GREEN_SQ_60 -----
@@ -406,7 +422,7 @@ msg("LOWLV_GREEN_SQ_20_STD")
 msg("LOWLV_GREEN_SQ_60_SU")
 end
 
------ npc_village_uncle_1_nonwindow ----- 
+----- Fedimian Resident ----- 
 ----- npcselectdialog.ies | ClassName: FEDIMIAN_NPC_11 -----
 ----- Dialog -----
 addnpc(147437, "QUEST_LV_0100_20150317_002270", "c_fedimian", -658, 168, -250, 23.84, "npc_QUEST_LV_0100_20150317_002270")
@@ -416,7 +432,7 @@ msg("FEDIMIAN_NPC_11_basic02")
 msg("FEDIMIAN_NPC_11_basic03")
 end
 
------ npc_matron ----- 
+----- Klaipeda Peddler ----- 
 ----- npcselectdialog.ies | ClassName: FEDIMIAN_NPC_12 -----
 ----- Dialog -----
 addnpc(20114, "QUEST_LV_0100_20150317_002278", "c_fedimian", 11, 543, 550, 45, "npc_QUEST_LV_0100_20150317_002278")
@@ -425,7 +441,7 @@ msg("FEDIMIAN_NPC_12_basic01")
 msg("FEDIMIAN_NPC_12_basic02")
 end
 
------ pilgrim_statue_01 ----- 
+----- Notice for Pilgrims ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153020, "QUEST_20150323_001466", "c_fedimian", 807, 680, 1108, -30, "npc_QUEST_20150323_001466")
@@ -433,7 +449,7 @@ function npc_QUEST_20150323_001466()
 msg("PILGRIM_PRE_BOARD_BASIC")
 end
 
------ npc_DOP_master ----- 
+----- [Doppelsoeldner Master]Guerra ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_DOPPELSOELDNER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_DOPPELSOELDNER5_1 | JOB_DOPPELSOELDNER_6_1 | JOB_DOPPELSOELDNER_8_1 -----
@@ -453,7 +469,7 @@ msg("JOB_DOPPELSOELDNER_8_1_STD")
 msg("JOB_DOPPELSOELDNER_8_1_SU")
 end
 
------ npc_fedimian_merchant_4 ----- 
+----- [Blacksmith] Anna ----- 
 ----- npcselectdialog.ies | ClassName: BLACKSMITH_FEDIMIAN -----
 ----- Dialog -----
 addnpc(151036, "ETC_20150918_014647", "c_fedimian", 120, 160, -504, 29.74, "npc_ETC_20150918_014647")
@@ -463,7 +479,7 @@ msg("FEDIMIAN_Smith_basic3")
 msg("FEDIMIAN_Smith_basic1")
 end
 
------ npc_combat_transport_section_3_market ----- 
+----- [Market Manager] Molun ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20171, "ETC_20150918_014648", "c_fedimian", -391, 160, -266, -45, "npc_ETC_20150918_014648")
@@ -471,7 +487,7 @@ function npc_ETC_20150918_014648()
 msg("MARKET_FEDIMIAN")
 end
 
------ npc_fedimian_storekeeper ----- 
+----- [Storage Keeper]Zadan ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(156027, "ETC_20150918_014649", "c_fedimian", -187, 160, -235, -23.63, "npc_ETC_20150918_014649")
@@ -479,7 +495,7 @@ function npc_ETC_20150918_014649()
 msg("WAREHOUSE_FEDIMIAN_DLG")
 end
 
------ id_gate_npc ----- 
+----- Underground Catacombs Dungeon Entrance ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154046, "ETC_20151224_019886", "c_fedimian", -498, 169, -146, 115, "npc_ETC_20151224_019886")
@@ -487,7 +503,7 @@ function npc_ETC_20151224_019886()
 msg("INSTANCE_DUNGEON_CATACOM_04")
 end
 
------ npc_fedimian_merchant_3 ----- 
+----- [Accessory Merchant] Joana ----- 
 ----- npcselectdialog.ies | ClassName: FED_ACCESSORY -----
 ----- Dialog -----
 ----- QuestIDs: CORAL_32_2_SQ_7 | CORAL_32_2_SQ_8 -----
@@ -503,7 +519,14 @@ msg("CORAL_32_2_SQ_8_STD")
 msg("CORAL_32_2_SQ_8_SU")
 end
 
------ npc_letizia ----- 
+----- Seir Rainforest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151016_015625", "c_fedimian", -1001, 448, 32, -122, "npc_ETC_20151016_015625")
+function npc_ETC_20151016_015625()
+msg("FEDIMIAN_TO_ORCHARD_32_4")
+end
+
+----- [TP Trader] Leticia ----- 
 ----- npcselectdialog.ies | ClassName: TP_NPC -----
 ----- Dialog -----
 addnpc(20068, "ETC_20151224_019887", "c_fedimian", 140, 161, -179, -45, "npc_ETC_20151224_019887")
@@ -512,7 +535,7 @@ msg("TP_NPC_basic01")
 msg("TP_NPC_basic02")
 end
 
------ npc_paladin_follower1_3_copy ----- 
+----- Team Battle League Valis ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(158000, "ETC_20160224_020711", "c_fedimian", 529, 160, -109, 360, "npc_ETC_20160224_020711")
@@ -520,7 +543,7 @@ function npc_ETC_20160224_020711()
 msg("WORLDPVP_START")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- Fedimian Guard ----- 
 ----- npcselectdialog.ies | ClassName: FEDIMIAN_NPC_TEMPLE04 -----
 ----- Dialog -----
 addnpc(10033, "QUEST_20150317_000602", "c_fedimian", -96, 819, 605, 45, "npc_QUEST_20150317_000602")
@@ -540,7 +563,7 @@ msg("FEDIMIAN_NPC_TEMPLE09_basic01")
 msg("FEDIMIAN_NPC_TEMPLE04_basic01")
 end
 
------ npc_Appraiser ----- 
+----- [Identifier]Sandra ----- 
 ----- npcselectdialog.ies | ClassName: FEDIMIAN_APPRAISER -----
 ----- Enter | Dialog -----
 addnpc(157039, "ETC_20170313_027485", "c_fedimian", -41, 160, -223, 315, "npc_ETC_20170313_027485")
@@ -557,7 +580,7 @@ msg("CHAR313_MSTEP13_1_DLG3")
 msg("FEDIMIAN_APPRAISER_DLG2")
 end
 
------ npc_Appraiser ----- 
+----- [Appraiser Master]Sandra ----- 
 ----- npcselectdialog.ies | ClassName: FEDIMIAN_APPRAISER_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_APPRAISER5_1 | JOB_APPRAISER5_2 -----

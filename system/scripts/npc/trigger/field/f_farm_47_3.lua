@@ -1,4 +1,4 @@
------ HiddenTrigger6 ----- 
+----- Manticen appearance trigger ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_BOSS_TRIGGER -----
 ----- Enter | Dialog -----
 ----- QuestIDs: FARM47_3_SQ_100 -----

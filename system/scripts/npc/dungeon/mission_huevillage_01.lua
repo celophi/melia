@@ -1,4 +1,4 @@
------ npc_huevill_male_1 ----- 
+----- Innocent Spirit ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_3_HQ01_NPC03 -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_3_HQ_01 -----

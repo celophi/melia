@@ -1,4 +1,18 @@
------ npc_druid_leja ----- 
+----- Delmore Outskirts ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_017824", "f_orchard_32_3", 408, -69, -1620, -40, "npc_ETC_20151224_017824")
+function npc_ETC_20151224_017824()
+msg("ORCHARD323_TO_CASTLE653")
+end
+
+----- Zeraha ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151022_016078", "f_orchard_32_3", 57, 68, 1704, 180, "npc_ETC_20151022_016078")
+function npc_ETC_20151022_016078()
+msg("ORCHARD_32_3_TO_ORCHARD_34_2")
+end
+
+----- Druid Leja ----- 
 ----- npcselectdialog.ies | ClassName: ORCHARD323_LEJA -----
 ----- Dialog -----
 ----- QuestIDs: ORCHARD_323_MQ_01 | ORCHARD_323_MQ_03 | ORCHARD_323_MQ_02 -----
@@ -29,7 +43,7 @@ msg("ORCHARD342_LEJA_basic03")
 msg("ORCHARD342_LEJA_basic04")
 end
 
------ npc_village_male_b1 ----- 
+----- Mayor's Grandson ----- 
 ----- npcselectdialog.ies | ClassName: ORCHARD323_GRANDSON -----
 ----- Dialog -----
 ----- QuestIDs: ORCHARD_323_SQ_04 -----
@@ -43,7 +57,7 @@ msg("ORCHARD323_GRANDSON_basic03")
 msg("ORCHARD323_GRANDSON_basic04")
 end
 
------ npc_oldman_1 ----- 
+----- Village Headman ----- 
 ----- npcselectdialog.ies | ClassName: ORCHARD323_MAYOR -----
 ----- Enter | Dialog -----
 ----- QuestIDs: ORCHARD_323_MQ_04 | ORCHARD_323_MQ_05 | ORCHARD_323_MQ_06 | ORCHARD32_3_HQ1 -----
@@ -73,7 +87,7 @@ msg("ORCHARD323_MAYOR_basic07")
 msg("ORCHARD323_MAYOR_basic08")
 end
 
------ old_well ----- 
+----- Old Well ----- 
 ----- npcselectdialog.ies | ClassName: ORCHARD323_WELL -----
 ----- Dialog -----
 ----- QuestIDs: ORCHARD_323_SQ_02 -----
@@ -83,7 +97,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_village_female ----- 
+----- Village Resident ----- 
 ----- npcselectdialog.ies | ClassName: ORCHARD323_PEOPLE -----
 ----- Dialog -----
 ----- QuestIDs: ORCHARD_323_SQ_03 | ORCHARD_323_SQ_01 | ORCHARD_323_SQ_02 -----
@@ -146,7 +160,7 @@ msg("SIAULIAI_35_1_VILLAGE_B_basic_01")
 msg("SIAULIAI_35_1_VILLAGE_B_basic_02")
 end
 
------ npc_dievdirbys_m ----- 
+----- Dievdirbys Widas ----- 
 ----- npcselectdialog.ies | ClassName: ORCHARD323_VYDAS -----
 ----- Dialog -----
 ----- QuestIDs: ORCHARD_323_SQ_04 | ORCHARD_323_SQ_05 -----
@@ -162,7 +176,7 @@ msg("ORCHARD323_VYDAS_basic03")
 msg("ORCHARD323_VYDAS_basic04")
 end
 
------ bube_flag1 ----- 
+----- Demon Totem ----- 
 ----- npcselectdialog.ies | ClassName: ORCHARD323_EVIL -----
 ----- Dialog -----
 ----- QuestIDs: ORCHARD_323_MQ_05 -----
@@ -172,7 +186,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_huevill_male_1 ----- 
+----- Village Priest ----- 
 ----- npcselectdialog.ies | ClassName: ORCHARD323_PRIEST -----
 ----- Dialog -----
 addnpc(147407, "ETC_20151001_014705", "f_orchard_32_3", -537, 1, 919, 45, "npc_ETC_20151001_014705")
@@ -222,7 +236,7 @@ msg("ORCHARD324_PRIEST_basic02")
 msg("ORCHARD323_PRIEST_basic03")
 end
 
------ npc_huevill_male_2 ----- 
+----- Great Priest of the Village ----- 
 ----- npcselectdialog.ies | ClassName: ORCHARD323_FUZE -----
 ----- Dialog -----
 addnpc(147408, "QUEST_LV_0300_20151022_000659", "f_orchard_32_3", -564, 1, 1116, 135, "npc_QUEST_LV_0300_20151022_000659")
@@ -235,7 +249,7 @@ msg("ORCHARD324_FUZE_basic01")
 msg("ORCHARD324_FUZE_basic02")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -246,7 +260,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_ORCHARD_32_3")
 end
 
------ id_gate_npc ----- 
+----- Historic Site Ruins ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154046, "QUEST_20150918_002405", "f_orchard_32_3", -631, 1, 1114, 45, "npc_QUEST_20150918_002405")
@@ -254,7 +268,7 @@ function npc_QUEST_20150918_002405()
 msg("INSTANCE_DUNGEON_REMAINS_05")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_orchard_32_3", 156, 1, 627, -90, "npc_ETC_20150317_009100")
@@ -262,7 +276,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_huevill_male_3 ----- 
+----- Priest Rovli ----- 
 ----- npcselectdialog.ies | ClassName: ORCHARD323_RP_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: ORCHARD323_RP_1 -----

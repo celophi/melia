@@ -1,4 +1,25 @@
------ magicsquare_1 ----- 
+----- Spring Light Woods ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001226", "d_thorn_19", 215, 611, 3115, 180, "npc_ETC_20150317_001226")
+function npc_ETC_20150317_001226()
+msg("THORN19_SIAULIAI46_1")
+end
+
+----- Septyni Glen ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009564", "d_thorn_19", -286, 622, -3924, 214, "npc_ETC_20150323_009564")
+function npc_ETC_20150323_009564()
+msg("THORN19_HUEVILLAGE58_4")
+end
+
+----- Sirdgela Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009572", "d_thorn_19", 1980, 623, -1019, -124, "npc_ETC_20150323_009572")
+function npc_ETC_20150323_009572()
+msg("THORN19_THORN20")
+end
+
+----- Altar of Harmony ----- 
 ----- npcselectdialog.ies | ClassName: THORN19_HOLY01 -----
 ----- Dialog -----
 ----- QuestIDs: THORN19_MQ08 -----
@@ -8,7 +29,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_saule_male_2 ----- 
+----- Believer Domas ----- 
 ----- npcselectdialog.ies | ClassName: THORN19_BELIEVER -----
 ----- Dialog -----
 ----- QuestIDs: THORN19_MQ02 | THORN19_MQ03 | THORN19_MQ04 -----
@@ -29,7 +50,7 @@ msg("THORN19_BELIEVER_basic02")
 msg("THORN19_BELIEVER_basic03")
 end
 
------ pedlar_lose_1 ----- 
+----- Pocket Containing Something ----- 
 ----- npcselectdialog.ies | ClassName: THORN19_CHAFER_LURE -----
 ----- Dialog -----
 ----- QuestIDs: THORN19_MQ06 -----
@@ -39,7 +60,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ thorn_gateway_2_2 ----- 
+----- Thorn Gate ----- 
 ----- Enter -----
 addnpc(47088, "ETC_20150317_005382", "d_thorn_19", 103, 670, -1817, -45, "npc_ETC_20150317_005382")
 function npc_ETC_20150317_005382()
@@ -47,7 +68,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ thorn_gateway_4_2 ----- 
+----- Thorn Gate ----- 
 ----- Enter -----
 ----- QuestIDs: THORN19_MQ09 -----
 addnpc(47090, "ETC_20150317_005382", "d_thorn_19", 189, 607, 1388, -24, "npc_ETC_20150317_005382")
@@ -56,7 +77,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ thorn_gateway_1_2 ----- 
+----- Thorn Gate ----- 
 ----- Enter -----
 ----- QuestIDs: THORN19_MQ14 -----
 addnpc(47087, "ETC_20150317_005382", "d_thorn_19", 2123, 503, 956, -27, "npc_ETC_20150317_005382")
@@ -65,7 +86,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Altar1 ----- 
+----- Altar of Purification ----- 
 ----- npcselectdialog.ies | ClassName: THORN19_REFINE -----
 ----- Dialog -----
 ----- QuestIDs: THORN19_MQ13 -----
@@ -75,7 +96,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -86,7 +107,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_THORN_19")
 end
 
------ npc_saule_female_2 ----- 
+----- Believer Adele ----- 
 ----- npcselectdialog.ies | ClassName: THORN19_BELIEVER02 -----
 ----- Dialog -----
 ----- QuestIDs: THORN19_MQ05 | THORN19_MQ07 | THORN19_MQ08 | THORN19_MQ06 | THORN19_MQ09 -----
@@ -113,7 +134,7 @@ msg("THORN19_MQ06_succ")
 msg("THORN19_BELIEVER02_basic01")
 end
 
------ npc_saule_male_1 ----- 
+----- Believer Virgis ----- 
 ----- npcselectdialog.ies | ClassName: THORN19_BELIEVER03 -----
 ----- Dialog -----
 ----- QuestIDs: THORN19_MQ11 | THORN19_MQ12 -----
@@ -127,7 +148,7 @@ msg("THORN19_MQ11_add")
 msg("THORN19_BELIEVER03_basic01")
 end
 
------ npc_saule_male_1 ----- 
+----- Believer Nojus ----- 
 ----- npcselectdialog.ies | ClassName: THORN_BLACKMAN_TRIGGER2 -----
 ----- Dialog -----
 ----- QuestIDs: THORN19_MQ14_2 -----
@@ -139,7 +160,7 @@ msg("THORN19_MQ14_2_PG")
 msg("THORN_BLACKMAN_TRIGGER2_basic")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_thorn_19", 1762, 459, 1590, 135, "npc_ETC_20150317_009100")
@@ -147,7 +168,14 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ treasure_box1 ----- 
+----- Thorn Forest Guild Mission ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_017829", "d_thorn_19", 1467, 515, -3231, 135, "npc_ETC_20151224_017829")
+function npc_ETC_20151224_017829()
+msg("THORN19_TO_GUILDMISSION")
+end
+
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_thorn_19", 627, 600, 1910, -45, "npc_ETC_20150317_009100")

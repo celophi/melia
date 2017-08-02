@@ -1,4 +1,18 @@
------ npc_beekeeper2 ----- 
+----- Uskis Arable Land ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009586", "f_siauliai_46_3", 2224, 133, 1573, 135, "npc_ETC_20150323_009586")
+function npc_ETC_20150323_009586()
+msg("SIAULIAI46_3_SIAULIAI46_2")
+end
+
+----- Dina Bee Farm ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009588", "f_siauliai_46_3", -1358, -5, -1360, 46, "npc_ETC_20150323_009588")
+function npc_ETC_20150323_009588()
+msg("SIAULIAI46_3_SIAULIAI46_4")
+end
+
+----- Maras ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_3_MQ01_NPC -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_3_MQ_01 | SIAULIAI_46_3_MQ_02 | SIAULIAI_46_3_MQ_03 | SIAULIAI_46_3_MQ_04 -----
@@ -24,7 +38,7 @@ msg("SIAULIAI_46_3_MQ_04_select")
 msg("SIAULIAI_46_3_MQ_04_start_prog")
 end
 
------ npc_village_male_a2 ----- 
+----- Valda ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_3_SQ_03_NPC -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_3_SQ_03 -----
@@ -38,7 +52,7 @@ msg("SIAULIAI_46_3_SQ_03_start_PG")
 msg("SIAULIAI_46_3_SQ_03_succ")
 end
 
------ austeja_alter ----- 
+----- Bichiu Altar ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_3_AUSTEJA_ALTAR_01 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: SIAULIAI_46_3_MQ_03 | SIAULIAI_46_3_MQ_03 -----
@@ -49,7 +63,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ austeja_alter ----- 
+----- Gaudeji Altar  ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_3_AUSTEJA_ALTAR_02 -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_3_MQ_04 | SIAULIAI_46_3_SQ_01 -----
@@ -59,7 +73,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_investigation01 ----- 
+----- Lamar ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_3_MQ05_NPC -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_3_MQ_04 | SIAULIAI_46_3_MQ_05 -----
@@ -73,7 +87,7 @@ msg("SIAULIAI_46_3_MQ_04_succ")
 msg("SIAULIAI_46_3_MQ_05_select")
 end
 
------ npc_village_male_b1 ----- 
+----- Riesz ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_3_SQ_02_NPC -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_3_SQ_02 | SIAULIAI_46_3_SQ_04 -----
@@ -90,7 +104,7 @@ msg("SIAULIAI_46_3_SQ_04_succ")
 msg("SIAULIAI_46_3_SQ_02_NPC_basic01")
 end
 
------ beehive_1 ----- 
+----- Sweet-smelling Beehive ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151025, "ETC_20150317_009502", "f_siauliai_46_3", -409, 197, 1778, -45, "npc_ETC_20150317_009502")
@@ -98,7 +112,7 @@ function npc_ETC_20150317_009502()
 msg("SIAULIAI_46_3_BEEHIVE")
 end
 
------ beehive_1 ----- 
+----- Sweet-smelling Beehive ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151025, "ETC_20150317_009502", "f_siauliai_46_3", -602, 197, 1483, 0, "npc_ETC_20150317_009502")
@@ -106,7 +120,7 @@ function npc_ETC_20150317_009502()
 msg("SIAULIAI_46_3_BEEHIVE")
 end
 
------ beehive_1 ----- 
+----- Sweet-smelling Beehive ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151025, "ETC_20150317_009502", "f_siauliai_46_3", -99, 197, 1637, -80, "npc_ETC_20150317_009502")
@@ -114,7 +128,7 @@ function npc_ETC_20150317_009502()
 msg("SIAULIAI_46_3_BEEHIVE")
 end
 
------ beehive_1 ----- 
+----- Sweet-smelling Beehive ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151025, "ETC_20150317_009502", "f_siauliai_46_3", -244, 197, 1388, 135, "npc_ETC_20150317_009502")
@@ -122,7 +136,7 @@ function npc_ETC_20150317_009502()
 msg("SIAULIAI_46_3_BEEHIVE")
 end
 
------ npc_village_uncle_10 ----- 
+----- Den ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_3_INV_NPC_01 -----
 ----- Dialog -----
 addnpc(20156, "ETC_20150317_009503", "f_siauliai_46_3", -654, 134, 331, 46, "npc_ETC_20150317_009503")
@@ -131,7 +145,7 @@ msg("SIAULIAI_46_3_INV_NPC_01_basic02")
 msg("SIAULIAI_46_3_INV_NPC_01_basic01")
 end
 
------ npc_village_uncle_11 ----- 
+----- Renzo ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_3_INV_NPC_02 -----
 ----- Dialog -----
 addnpc(20157, "ETC_20150317_009504", "f_siauliai_46_3", -421, 134, 410, 225, "npc_ETC_20150317_009504")
@@ -140,7 +154,7 @@ msg("SIAULIAI_46_3_INV_NPC_02_basic02")
 msg("SIAULIAI_46_3_INV_NPC_02_basic01")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_siauliai_46_3", 2358, 202, -360, 45, "npc_ETC_20150317_009100")

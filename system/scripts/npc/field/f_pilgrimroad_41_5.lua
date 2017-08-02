@@ -1,4 +1,11 @@
------ npc_frair_f_03 ----- 
+----- Rasvoy Lake ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_017809", "f_pilgrimroad_41_5", -1941, -52, 576, -134, "npc_ETC_20151224_017809")
+function npc_ETC_20151224_017809()
+msg("PILGRIM41_5_PILGRIM41_3")
+end
+
+----- Monk Stella ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM415_SQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_5_SQ01 | PILGRIM41_5_SQ02 | PILGRIM41_5_SQ03 | PILGRIM41_5_SQ04 | PILGRIM41_5_SQ05 | PILGRIM41_5_SQ06 -----
@@ -107,7 +114,7 @@ msg("ABBEY416_SQ_11_prog")
 msg("ABBEY416_SQ_11_succ")
 end
 
------ npc_frair_f_03 ----- 
+----- Monk Stella ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM415_SQ_09 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_5_SQ09 -----
@@ -117,7 +124,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_frair_f_03 ----- 
+----- Monk Stella ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM415_SQ_10 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_5_SQ10 | ABBEY41_6_SQ01 -----
@@ -226,7 +233,7 @@ msg("ABBEY416_SQ_11_prog")
 msg("ABBEY416_SQ_11_succ")
 end
 
------ npc_friar_05 ----- 
+----- Monk Mattas ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM415_SQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_5_SQ03 | PILGRIM41_5_SQ04 -----
@@ -257,7 +264,7 @@ msg("PILGRIM415_SQ_10_prog2")
 msg("PILGRIM415_SQ_10_succ2")
 end
 
------ npc_friar_05 ----- 
+----- Monk Mattas ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM415_SQ_06 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: PILGRIM41_5_SQ06 | PILGRIM41_5_SQ08 | PILGRIM41_5_SQ09 -----
@@ -289,7 +296,7 @@ msg("PILGRIM415_SQ_10_prog2")
 msg("PILGRIM415_SQ_10_succ2")
 end
 
------ npc_friar_05 ----- 
+----- Monk Mattas ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM415_SQ_06_2 -----
 ----- Dialog -----
 addnpc(155046, "ETC_20160723_022870", "f_pilgrimroad_41_5", -743, -99, 361, -35, "npc_ETC_20160723_022870")
@@ -319,7 +326,7 @@ msg("PILGRIM415_SQ_10_prog2")
 msg("PILGRIM415_SQ_10_succ2")
 end
 
------ npc_frair_f_01 ----- 
+----- High Officer Medea ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM415_SQ_08 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_5_SQ07 | PILGRIM41_5_SQ08 -----
@@ -340,7 +347,7 @@ msg("PILGRIM415_SQ_09_prog2")
 msg("PILGRIM415_SQ_10_prog3")
 end
 
------ npc_frair_f_01 ----- 
+----- High Officer Medea ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM415_SQ_08_1 -----
 ----- Dialog -----
 addnpc(156006, "ETC_20160723_022873", "f_pilgrimroad_41_5", -774, -99, 324, 45, "npc_ETC_20160723_022873")
@@ -360,7 +367,7 @@ msg("PILGRIM415_SQ_09_prog2")
 msg("PILGRIM415_SQ_10_prog3")
 end
 
------ npc_zachariel_head_02 ----- 
+----- Unnamed Monk's Tombstone ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM415_SQ_11 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_5_SQ11 -----

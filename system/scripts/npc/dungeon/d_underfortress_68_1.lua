@@ -1,10 +1,10 @@
------ magicsquare_1 ----- 
+----- Dirva Magic Circle ----- 
 addnpc(47121, "ETC_20151224_019929", "d_underfortress_68_1", -839, 137, 922, 45, "npc_dummy")
 
------ magicsquare_1 ----- 
+----- Gemier Magic Circle ----- 
 addnpc(47121, "ETC_20151224_019930", "d_underfortress_68_1", -809, 489, -895, 45, "npc_dummy")
 
------ Huevillage_Altar ----- 
+----- Sicarius Altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147417, "ETC_20151224_019932", "d_underfortress_68_1", 1071, 489, -1117, 43, "npc_ETC_20151224_019932")
@@ -12,7 +12,7 @@ function npc_ETC_20151224_019932()
 msg("UNDERFORTRESS_68_1_ALTER")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -23,7 +23,21 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_UNDERFORTRESS_68_1")
 end
 
------ treasure_box4 ----- 
+----- Seir Rainforest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151016_015625", "d_underfortress_68_1", -1651, 303, 116, 221, "npc_ETC_20151016_015625")
+function npc_ETC_20151016_015625()
+msg("UNDERFOREST_68_1_TO_ORCHARD_32_4")
+end
+
+----- Sicarius 2F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016534", "d_underfortress_68_1", 1650, 182, 118, 45, "npc_ETC_20151102_016534")
+function npc_ETC_20151102_016534()
+msg("UNDERFORTRESS_68_1_TO_UNDERFORTRESS_68_2")
+end
+
+----- Sicarius Secret Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147394, "ETC_20151224_019931", "d_underfortress_68_1", 1002, 342, 1728, 3, "npc_ETC_20151224_019931")
@@ -31,7 +45,7 @@ function npc_ETC_20151224_019931()
 msg("UNDERFORTRESS_68_1_DAILY_BOX")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_underfortress_68_1", -519, 168, 720, 225, "npc_ETC_20150317_009100")

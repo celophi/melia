@@ -1,4 +1,25 @@
------ whorfzone ----- 
+----- Mokusul Chamber ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011746", "id_catacomb_04", -333, 193, -1979, 45, "npc_ETC_20150714_011746")
+function npc_ETC_20150714_011746()
+msg("CATACOMB_04_CATACOMB_38_2")
+end
+
+----- Videntis Shrine ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011745", "id_catacomb_04", 2267, 325, 1353, 135, "npc_ETC_20150714_011745")
+function npc_ETC_20150714_011745()
+msg("CATACOMB_04_CATACOMB_38_1")
+end
+
+----- Istora Ruins ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011739", "id_catacomb_04", -2243, 368, -430, 190, "npc_ETC_20150714_011739")
+function npc_ETC_20150714_011739()
+msg("CATACOMB_04_REMAINS37_3")
+end
+
+----- Teleport Device ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147500, "ETC_20150714_013180", "id_catacomb_04", 3280, 371, -948, 180, "npc_ETC_20150714_013180")
@@ -6,7 +27,7 @@ function npc_ETC_20150714_013180()
 msg("CATACOMB_04_SECRETOUT")
 end
 
------ npc_zachariel_cube_mini ----- 
+----- Magic Gem Fusion Device ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_04_OBJ_01 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_04_SQ_01 | CATACOMB_04_SQ_07 | CATACOMB_04_SQ_05 | CATACOMB_04_SQ_03 | CATACOMB_04_SQ_02 | CATACOMB_04_SQ_04 | CATACOMB_04_SQ_06 -----
@@ -16,7 +37,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ velniasprison_warp ----- 
+----- Magic Field of Preservation ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_04_OBJ_02 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_04_SQ_02 -----
@@ -26,7 +47,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_gele_sanctuary_1 ----- 
+----- Barrier Stone ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_04_OBJ_03 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_04_SQ_03 | CATACOMB_04_SQ_04 -----
@@ -36,7 +57,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Space_stone ----- 
+----- Sealed Spatial Magic Gem ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151058, "ETC_20150714_011778", "id_catacomb_04", 1589, 265, 861, 135, "npc_ETC_20150714_011778")
@@ -44,7 +65,7 @@ function npc_ETC_20150714_011778()
 msg("CATACOMB_04_OBJ_04")
 end
 
------ noshadow_npc ----- 
+----- Black Shadow ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_04_OBJ_05 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_04_SQ_06 -----
@@ -54,7 +75,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ whorfzone ----- 
+----- Teleport Device ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_04_OBJ_06 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_04_SQ_07 | CATACOMB_04_SQ_08 -----
@@ -64,7 +85,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zacharial_desk2 ----- 
+----- The Inheritance of the Master ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_04_OBJ_07 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_04_SQ_09 -----
@@ -74,7 +95,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "id_catacomb_04", -126, 265, 1200, -90, "npc_ETC_20150317_009100")

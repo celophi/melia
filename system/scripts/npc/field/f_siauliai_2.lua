@@ -1,4 +1,18 @@
------ npc_intermediate_officer_men2 ----- 
+----- Klaipeda ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001144", "f_siauliai_2", -2463, 243, -1168, -122, "npc_ETC_20150317_001144")
+function npc_ETC_20150317_001144()
+msg("WS_SIAULST2_KLAPEDA")
+end
+
+----- Miners' Village ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001153", "f_siauliai_2", 2684, 130, 1144, 61, "npc_ETC_20150317_001153")
+function npc_ETC_20150317_001153()
+msg("WS_SIAULST2_SIAULST3")
+end
+
+----- Knight Aras ----- 
 ----- npcselectdialog.ies | ClassName: SIAUL_EAST_MANAGER -----
 ----- Dialog -----
 ----- QuestIDs: SIAUL_EAST_RECLAIM1 | SIAUL_EAST_REQUEST1 | SIAUL_EAST_REQUEST3 | SIAUL_EAST_REQUEST7 | SIAUL_EAST_CAMP4 -----
@@ -23,7 +37,7 @@ msg("SIAUL_EAST_MANAGER_BASIC01")
 msg("SIAUL_EAST_CAMP4_ST")
 end
 
------ soldier3 ----- 
+----- Farm Sentinel ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20013, "QUEST_20150317_000119", "f_siauliai_2", 357, 130, 593, -45, "npc_QUEST_20150317_000119")
@@ -31,7 +45,7 @@ function npc_QUEST_20150317_000119()
 msg("SIAUL_EAST_SOLDIER6_basic1")
 end
 
------ soldier5 ----- 
+----- Farm Sentinel ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20015, "QUEST_20150317_000119", "f_siauliai_2", 210, 130, 260, -45, "npc_QUEST_20150317_000119")
@@ -39,7 +53,7 @@ function npc_QUEST_20150317_000119()
 msg("SIAUL_EAST_SOLDIER7_basic1")
 end
 
------ soldier6 ----- 
+----- Supply Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20016, "QUEST_LV_0100_20150317_000345", "f_siauliai_2", 615, 130, -196, -45, "npc_QUEST_LV_0100_20150317_000345")
@@ -47,7 +61,7 @@ function npc_QUEST_LV_0100_20150317_000345()
 msg("SIAUL_EAST_SOLDIER4_basic1")
 end
 
------ soldier1 ----- 
+----- Supply Soldier ----- 
 ----- npcselectdialog.ies | ClassName: SIAUL_EAST_SOLDIER5 -----
 ----- Dialog -----
 ----- QuestIDs: SIAUL_EAST_REQUEST4 | SIAUL_EAST_REQUEST5 -----
@@ -101,7 +115,7 @@ msg("TABLELAND28_2_SQ_04_3")
 msg("TABLELAND28_2_SQ_04_4")
 end
 
------ soldier6 ----- 
+----- Supply Officer ----- 
 ----- npcselectdialog.ies | ClassName: SIAUL_EAST_SUPPLY_MANAGER -----
 ----- Dialog -----
 ----- QuestIDs: ACT2_DISS1 | SIAUL_EAST_RECLAIM6 | SIAUL_EAST_RECLAIM7 | ACT2_DISS1_2_BOSS -----
@@ -121,7 +135,7 @@ msg("SIAUL_EAST_SUPPLY_MANAGER_basic1")
 msg("ACT2_DISS1_2_BOSS_succ1")
 end
 
------ Silvertransporter_m ----- 
+----- Eastern Woods Search Scout ----- 
 ----- npcselectdialog.ies | ClassName: SIAUL_EAST_SOLDIER8 -----
 ----- Dialog -----
 ----- QuestIDs: SIAUL_EAST_REQUEST6 -----
@@ -134,7 +148,7 @@ msg("SIAUL_EAST_SOLDIER8_basic1")
 msg("SIAUL_EAST_SOLDIER8_BASIC01")
 end
 
------ Silvertransporter_m ----- 
+----- Outpost Sentinel ----- 
 ----- npcselectdialog.ies | ClassName: SIAUL_EAST_SOLDIER10 -----
 ----- Dialog -----
 addnpc(10032, "QUEST_LV_0100_20150317_000316", "f_siauliai_2", 205, 151, 667, -45, "npc_QUEST_LV_0100_20150317_000316")
@@ -156,7 +170,7 @@ msg("f_katyn_18_dlg_5")
 msg("f_katyn_18_dlg_6")
 end
 
------ Silvertransporter_m ----- 
+----- Outpost Sentinel ----- 
 ----- npcselectdialog.ies | ClassName: SIAUL_EAST_SOLDIER9 -----
 ----- Dialog -----
 ----- QuestIDs: SIAUL_EAST_RECLAIM2 | SIAUL_EAST_RECLAIM3 -----
@@ -174,7 +188,7 @@ msg("SIAUL_EAST_SOLDIER9_BASIC02")
 msg("SIAUL_EAST_SOLDIER10_BASIC01")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName: ACT2_DISS1_BOX -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", 301, 130, -569, 132, "npc_ETC_20150317_009144")
@@ -183,7 +197,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName: ACT2_DISS1_BOX -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", 289, 130, -758, 132, "npc_ETC_20150317_009144")
@@ -192,7 +206,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName: ACT2_DISS1_BOX -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", 176, 130, -492, 132, "npc_ETC_20150317_009144")
@@ -201,7 +215,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName: ACT2_DISS1_BOX -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", 125, 130, -247, 132, "npc_ETC_20150317_009144")
@@ -210,7 +224,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName: ACT2_DISS1_BOX -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", -158, 130, -876, 132, "npc_ETC_20150317_009144")
@@ -219,7 +233,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName: ACT2_DISS1_BOX -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", -270, 130, -581, 132, "npc_ETC_20150317_009144")
@@ -228,7 +242,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName: ACT2_DISS1_BOX -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", -223, 130, -452, 132, "npc_ETC_20150317_009144")
@@ -237,7 +251,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName: ACT2_DISS1_BOX -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", 952, 130, -742, 132, "npc_ETC_20150317_009144")
@@ -246,7 +260,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName: ACT2_DISS1_BOX -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", 728, 130, -789, 132, "npc_ETC_20150317_009144")
@@ -255,7 +269,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName: ACT2_DISS1_BOX -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", 310, 130, -335, 132, "npc_ETC_20150317_009144")
@@ -264,7 +278,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName: ACT2_DISS1_BOX -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", 600, 130, -19, 132, "npc_ETC_20150317_009144")
@@ -273,7 +287,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -284,7 +298,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_SIAULIAI_EST")
 end
 
------ soldier4 ----- 
+----- Operations Officer ----- 
 ----- npcselectdialog.ies | ClassName: SIAUL_EAST_SUPPLY_MANAGER2 -----
 ----- Dialog -----
 ----- QuestIDs: SIAUL_EAST_REQUEST1 | SIAUL_EAST_REQUEST2 -----
@@ -299,7 +313,7 @@ msg("SIAUL_EAST_SUPPLY_MANAGER2_basic1")
 msg("SIAUL_EAST_SUPPLY_MANAGER2_BASIC01")
 end
 
------ npc_SAP_master ----- 
+----- [Sapper Master] Leonard Quicktongue ----- 
 ----- npcselectdialog.ies | ClassName: JOB_SAPPER2_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_SAPPER2_1 | JOB_SAPPER2_3 | JOB_SAPPER2_4 | JOB_QUARREL3_1 | JOB_QUARREL3_2 | JOB_SAPPER3_1 | JOB_SAPPER3_2 | JOB_SAPPER2_2 | JOB_SAPPER4_1 | JOB_SAPPER5_1 | UNDERFORTRESS_65_SQ010 | UNDERFORTRESS_65_SQ020 -----
@@ -337,7 +351,7 @@ msg("UNDERFORTRESS_65_SQ020_startnpc_prog01")
 msg("UNDERFORTRESS_65_SQ020_succ01")
 end
 
------ Board1 ----- 
+----- Warning ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000808", "f_siauliai_2", -969, 130, 63, 6, "npc_QUEST_20150317_000808")
@@ -345,7 +359,7 @@ function npc_QUEST_20150317_000808()
 msg("F_SIAULIA_2_BOARD01")
 end
 
------ npc_HUT_master ----- 
+----- [Hunter Master]Fiona Ieva ----- 
 ----- npcselectdialog.ies | ClassName: JOB_HUNTER2_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_HUNTER2_1 | JOB_HUNTER2_2 | JOB_HUNTER2_3 | JOB_HUNTER2_4 | JOB_QUARREL2_2 | JOB_ARCHER2_2 | JOB_RANGER2_2 | JOB_HUNTER3_1 | JOB_HUNTER4_1 | JOB_HUNTER5_1 | SIAULIAI_50_1_SQ_060 | SIAULIAI_50_1_SQ_070 -----
@@ -389,7 +403,7 @@ msg("SIAULIAI_50_1_SQ_070_starnpc02")
 msg("SIAULIAI_50_1_SQ_070_starnpc01")
 end
 
------ npc_BAR_master ----- 
+----- [Barbarian Master]Walder Junnot ----- 
 ----- npcselectdialog.ies | ClassName: JOB_BARBARIAN2_NPC -----
 ----- Dialog -----
 ----- QuestIDs: JOB_BARBARIAN2 | JOB_BARBARIAN3_1 | JOB_BARBARIAN4_1 | JOB_BARBARIAN5_1 -----
@@ -414,7 +428,7 @@ msg("JOB_BARBARIAN5_1_prog")
 msg("JOB_BARBARIAN5_1_succ")
 end
 
------ TreasureBox1 ----- 
+----- Lv2 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40030, "ETC_20150317_009071", "f_siauliai_2", 49, 130, -963, 45, "npc_ETC_20150317_009071")
@@ -422,7 +436,7 @@ function npc_ETC_20150317_009071()
 msg("TREASUREBOX_LV")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- Eastern Woods Sentinel ----- 
 ----- npcselectdialog.ies | ClassName: SAUI_EAST_GUARD_01 -----
 ----- Dialog -----
 addnpc(10033, "QUEST_20150317_000110", "f_siauliai_2", -2207, 244, -1057, -44, "npc_QUEST_20150317_000110")
@@ -436,7 +450,7 @@ msg("SAUI_EAST_GUARD_02_Chaplain_1")
 msg("SAUI_EAST_GUARD_02_Chaplain_2")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- Eastern Woods Sentinel ----- 
 ----- npcselectdialog.ies | ClassName: SAUI_EAST_GUARD_02 -----
 ----- Dialog -----
 addnpc(10033, "QUEST_20150317_000110", "f_siauliai_2", -2214, 244, -1112, 150, "npc_QUEST_20150317_000110")
@@ -450,7 +464,7 @@ msg("SAUI_EAST_GUARD_02_Chaplain_1")
 msg("SAUI_EAST_GUARD_02_Chaplain_2")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_siauliai_2", -2236, 130, 691, 45, "npc_ETC_20150317_009100")
@@ -458,7 +472,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", 224, 130, -455, 145, "npc_ETC_20150317_009144")
@@ -466,7 +480,7 @@ function npc_ETC_20150317_009144()
 msg("LOWLV_BOASTER_SQ_10_BOX")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", 279, 130, -214, 84, "npc_ETC_20150317_009144")
@@ -474,7 +488,7 @@ function npc_ETC_20150317_009144()
 msg("LOWLV_BOASTER_SQ_10_BOX")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", 321, 130, -702, 144, "npc_ETC_20150317_009144")
@@ -482,7 +496,7 @@ function npc_ETC_20150317_009144()
 msg("LOWLV_BOASTER_SQ_10_BOX")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", 440, 130, -344, 88, "npc_ETC_20150317_009144")
@@ -490,7 +504,7 @@ function npc_ETC_20150317_009144()
 msg("LOWLV_BOASTER_SQ_10_BOX")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", 486, 130, -162, 125, "npc_ETC_20150317_009144")
@@ -498,7 +512,7 @@ function npc_ETC_20150317_009144()
 msg("LOWLV_BOASTER_SQ_10_BOX")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", 492, 130, -580, 128, "npc_ETC_20150317_009144")
@@ -506,7 +520,7 @@ function npc_ETC_20150317_009144()
 msg("LOWLV_BOASTER_SQ_10_BOX")
 end
 
------ Box1 ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009144", "f_siauliai_2", 78, 130, -367, 150, "npc_ETC_20150317_009144")

@@ -1,4 +1,4 @@
------ highlander ----- 
+----- [Highlander Master]Douglas Black ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_HIGHLANDER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_HIGHLANDER1 | JOB_HIGHLANDER2_1 | JOB_HIGHLANDER2_2 | JOB_HIGHLANDER3_1 | JOB_HIGHLANDER4_1 | JOB_HIGHLANDER4_4 | JOB_PELTASTA4_1 | JOB_PELTASTA4_2 | JOB_HIGHLANDER5_1 | JOB_PELTASTA2_1 | HIGHLANDER_HQ_01 | HIGHLANDER_HQ_02 -----
@@ -35,15 +35,22 @@ msg("HIGHLANDER_HQ_02_succ01")
 msg("HIGHLANDER_HQ_01_02")
 end
 
------ wood_carving_fire ----- 
+----- Klaipeda ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001144", "c_highlander", -52, 71, 192, 225, "npc_ETC_20150317_001144")
+function npc_ETC_20150317_001144()
+msg("WS_HIGHLANDER_KLAPEDA")
+end
+
+----- Practice Post (Fire) ----- 
 addnpc(57253, "ETC_20150317_009191", "c_highlander", -32, 0, -31, 45, "npc_dummy")
 
------ wood_carving_Poison ----- 
+----- Practice Post (Poison) ----- 
 addnpc(57254, "ETC_20150317_009192", "c_highlander", 28, 0, -31, 45, "npc_dummy")
 
------ wood_carving_Lightning ----- 
+----- Practice Post (Lightning) ----- 
 addnpc(57255, "ETC_20150317_009193", "c_highlander", 146, 0, 92, 45, "npc_dummy")
 
------ wood_carving_Earth ----- 
+----- Practice Post (Earth) ----- 
 addnpc(57256, "ETC_20150317_009194", "c_highlander", 142, 0, 28, 45, "npc_dummy")
 

@@ -1,4 +1,32 @@
------ swordmaster ----- 
+----- Tenet Garden ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009561", "f_katyn_13_2", 522, 198, -1938, 45, "npc_ETC_20150323_009561")
+function npc_ETC_20150323_009561()
+msg("KATYN_13_2_GELE574")
+end
+
+----- Dvasia Peak ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009573", "f_katyn_13_2", -2252, 197, 1338, 225, "npc_ETC_20150323_009573")
+function npc_ETC_20150323_009573()
+msg("KATYN13_2_THORN22")
+end
+
+----- Septyni Glen ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009564", "f_katyn_13_2", -937, 197, -2022, 225, "npc_ETC_20150323_009564")
+function npc_ETC_20150323_009564()
+msg("KATYN13_2_HUEVILLAGE58_4")
+end
+
+----- Letas Stream ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009622", "f_katyn_13_2", -52, 201, 2609, 135, "npc_ETC_20150323_009622")
+function npc_ETC_20150323_009622()
+msg("KATYN13_2_KATYN12")
+end
+
+----- Sword Master ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_13_2_HQ_01_SMASTER -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_13_2_HQ_01 -----
@@ -8,7 +36,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ archermaster ----- 
+----- Archer Master ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_13_2_HQ_01_AMASTER -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_13_2_HQ_03 -----
@@ -18,7 +46,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ wizardmaster ----- 
+----- Wizard Master ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_13_2_HQ_01_WMASTER -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_13_2_HQ_02 -----
@@ -28,7 +56,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_healer ----- 
+----- Cleric Master ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_13_2_HQ_01_CMASTER -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_13_2_HQ_04 -----

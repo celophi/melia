@@ -1,4 +1,18 @@
------ statue_vakarine ----- 
+----- Solitary Cells ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170330_027527", "d_prison_81", -1689, 169, -961, 224, "npc_ETC_20170330_027527")
+function npc_ETC_20170330_027527()
+msg("PRISON81_PRISON80")
+end
+
+----- Investigation Room ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170330_027529", "d_prison_81", 499, 224, -740, 225, "npc_ETC_20170330_027529")
+function npc_ETC_20170330_027529()
+msg("PRISON81_PRISON82")
+end
+
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -9,7 +23,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_PRISON_81")
 end
 
------ npc_zanas ----- 
+----- Zanas' Soul ----- 
 ----- npcselectdialog.ies | ClassName: PRISON_81_NPC_1 -----
 ----- Dialog -----
 ----- QuestIDs: PRISON_81_MQ_1 | PRISON_81_MQ_2 -----
@@ -19,7 +33,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zanas ----- 
+----- Zanas' Soul ----- 
 ----- npcselectdialog.ies | ClassName: PRISON_81_NPC_2 -----
 ----- Dialog -----
 ----- QuestIDs: PRISON_81_MQ_4 | PRISON_81_MQ_5 | PRISON_81_MQ_6 -----
@@ -29,7 +43,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zanas ----- 
+----- Zanas' Soul ----- 
 ----- npcselectdialog.ies | ClassName: PRISON_81_NPC_3 -----
 ----- Dialog -----
 ----- QuestIDs: PRISON_81_MQ_8 | PRISON_81_MQ_9 -----
@@ -39,7 +53,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ noshadow_npc ----- 
+----- Demon Barrier ----- 
 ----- npcselectdialog.ies | ClassName: PRISON_81_MQ_10_TRIGGER -----
 ----- Enter | Dialog -----
 ----- QuestIDs: PRISON_81_MQ_10 | PRISON_81_MQ_10 -----
@@ -50,7 +64,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ LOST_PAPER ----- 
+----- Letter ----- 
 ----- npcselectdialog.ies | ClassName: PRISON_81_SQ_OBJ_1 -----
 ----- Dialog -----
 ----- QuestIDs: PRISON_81_SQ_1 -----

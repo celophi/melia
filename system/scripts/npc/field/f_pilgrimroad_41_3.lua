@@ -1,4 +1,25 @@
------ statue_vakarine ----- 
+----- Salvia Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016504", "f_pilgrimroad_41_3", -1543, 62, 688, -133, "npc_ETC_20151102_016504")
+function npc_ETC_20151102_016504()
+msg("PILGRIM41_3_PILGRIM41_2")
+end
+
+----- Ouaas Memorial ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_017811", "f_pilgrimroad_41_3", -1064, 173, -1412, -47, "npc_ETC_20151224_017811")
+function npc_ETC_20151224_017811()
+msg("PILGRIM41_3_PILGRIM41_5")
+end
+
+----- Maven Abbey ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_017812", "f_pilgrimroad_41_3", 305, 130, -1040, 34, "npc_ETC_20151224_017812")
+function npc_ETC_20151224_017812()
+msg("PILGRIM41_3_ABBEY41_6")
+end
+
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -9,7 +30,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_PILGRIMROAD_41_3")
 end
 
------ npc_frair_f_03 ----- 
+----- Monk Stella ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM413_SQ_02 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_3_SQ01 | PILGRIM41_3_SQ02 | PILGRIM41_3_SQ03 | PILGRIM41_3_SQ04 | PILGRIM41_3_SQ05 -----
@@ -118,7 +139,7 @@ msg("ABBEY416_SQ_11_prog")
 msg("ABBEY416_SQ_11_succ")
 end
 
------ npc_frair_f_03 ----- 
+----- Monk Stella ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM413_SQ_06 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_3_SQ05 | PILGRIM41_3_SQ06 | PILGRIM41_3_SQ07 -----
@@ -227,7 +248,7 @@ msg("ABBEY416_SQ_11_prog")
 msg("ABBEY416_SQ_11_succ")
 end
 
------ npc_frair_f_03 ----- 
+----- Monk Stella ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM413_SQ_08 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_3_SQ07 | PILGRIM41_3_SQ08 -----
@@ -336,7 +357,7 @@ msg("ABBEY416_SQ_11_prog")
 msg("ABBEY416_SQ_11_succ")
 end
 
------ npc_frair_f_03 ----- 
+----- Monk Stella ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM413_SQ_08_1 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_3_SQ08 -----
@@ -445,7 +466,7 @@ msg("ABBEY416_SQ_11_prog")
 msg("ABBEY416_SQ_11_succ")
 end
 
------ npc_pilgrim_m_2 ----- 
+----- Tired Pilgrim ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM413_SQ_06_1 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_3_SQ06 -----
@@ -461,7 +482,7 @@ msg("PILGRIM413_SQ_06_info3")
 msg("PILGRIM413_SQ_06_info4")
 end
 
------ npc_pilgrim_f_2 ----- 
+----- Tired Pilgrim ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM413_SQ_06_2 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_3_SQ06 -----
@@ -477,7 +498,7 @@ msg("PILGRIM413_SQ_06_info3")
 msg("PILGRIM413_SQ_06_info4")
 end
 
------ npc_pilgrim_m_6 ----- 
+----- Tired Pilgrim ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM413_SQ_06_3 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_3_SQ06 -----
@@ -493,7 +514,7 @@ msg("PILGRIM413_SQ_06_info3")
 msg("PILGRIM413_SQ_06_info4")
 end
 
------ npc_pilgrim_f_1 ----- 
+----- Tired Pilgrim ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM413_SQ_06_4 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_3_SQ06 -----
@@ -509,7 +530,7 @@ msg("PILGRIM413_SQ_06_info3")
 msg("PILGRIM413_SQ_06_info4")
 end
 
------ TreasureBox_KQ1 ----- 
+----- Hidden Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154098, "ETC_20170313_027482", "f_pilgrimroad_41_3", 669, 52, 1155, 36, "npc_ETC_20170313_027482")
@@ -517,7 +538,7 @@ function npc_ETC_20170313_027482()
 msg("PILGRIM413_KQ_1_BOX")
 end
 
------ TreasureBox_KQ1 ----- 
+----- Hidden Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154098, "ETC_20170313_027482", "f_pilgrimroad_41_3", 1301, 52, 272, -119, "npc_ETC_20170313_027482")
@@ -525,7 +546,7 @@ function npc_ETC_20170313_027482()
 msg("PILGRIM413_KQ_1_BOX")
 end
 
------ TreasureBox_KQ1 ----- 
+----- Hidden Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154098, "ETC_20170313_027482", "f_pilgrimroad_41_3", 1138, 138, -695, 155, "npc_ETC_20170313_027482")
@@ -533,7 +554,7 @@ function npc_ETC_20170313_027482()
 msg("PILGRIM413_KQ_1_BOX")
 end
 
------ TreasureBox_KQ1 ----- 
+----- Hidden Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154098, "ETC_20170313_027482", "f_pilgrimroad_41_3", -1379, 173, -1021, 50, "npc_ETC_20170313_027482")
@@ -541,7 +562,7 @@ function npc_ETC_20170313_027482()
 msg("PILGRIM413_KQ_1_BOX")
 end
 
------ TreasureBox_KQ1 ----- 
+----- Hidden Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154098, "ETC_20170313_027482", "f_pilgrimroad_41_3", -769, 137, -2, -70, "npc_ETC_20170313_027482")
@@ -549,7 +570,7 @@ function npc_ETC_20170313_027482()
 msg("PILGRIM413_KQ_1_BOX")
 end
 
------ TreasureBox_KQ1 ----- 
+----- Hidden Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154098, "ETC_20170313_027482", "f_pilgrimroad_41_3", -924, 62, 862, -46, "npc_ETC_20170313_027482")

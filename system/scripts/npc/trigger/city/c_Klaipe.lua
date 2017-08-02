@@ -1,7 +1,7 @@
------ HiddenTrigger2 ----- 
+----- Manage the hide and seek ----- 
 addnpc(20041, "ETC_20150317_009059", "c_Klaipe", -325, 148, 17, 216, "npc_dummy")
 
------ HiddenTrigger2 ----- 
+----- Advancement Quest Trigger of Cryomancer ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_FIREMAGE_BOX_TRIGGER -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_ICEMAGE1 -----

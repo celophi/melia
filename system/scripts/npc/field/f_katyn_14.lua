@@ -1,4 +1,4 @@
------ npc_intermediate_officer_men ----- 
+----- Officer Danus ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_LAIMUNAS -----
 ----- Dialog -----
 ----- QuestIDs: KATYN14_MQ_00 | KATYN14_MQ_01 | KATYN14_MQ_04 | KATYN14_MQ_06 -----
@@ -19,7 +19,7 @@ msg("KATYN14_MQ_00_21")
 msg("KATYN14_MQ_00_Q")
 end
 
------ soldier2 ----- 
+----- Rearguard Unit Soldier ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_LAIMUNAS_SOL -----
 ----- Enter | Dialog -----
 addnpc(20012, "QUEST_LV_0200_20150317_000388", "f_katyn_14", 2580, 82, -914, 136, "npc_QUEST_LV_0200_20150317_000388")
@@ -40,7 +40,7 @@ msg("KATYN14_LAIMUNAS_SOL_basic07")
 msg("KATYN14_LAIMUNAS_SOL_basic10")
 end
 
------ soldier2 ----- 
+----- Rearguard Unit Soldier ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_LAIMUNAS_SOL -----
 ----- Enter | Dialog -----
 addnpc(20012, "QUEST_LV_0200_20150317_000388", "f_katyn_14", 2638, 82, -935, 147, "npc_QUEST_LV_0200_20150317_000388")
@@ -61,7 +61,7 @@ msg("KATYN14_LAIMUNAS_SOL_basic07")
 msg("KATYN14_LAIMUNAS_SOL_basic10")
 end
 
------ npc_intermediate_officer_men2 ----- 
+----- Senior Officer Philipas ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_VACENIN -----
 ----- Dialog -----
 ----- QuestIDs: KATYN14_MQ_12 | KATYN14_MQ_24 -----
@@ -71,7 +71,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_intermediate_officer_men ----- 
+----- Supplies Officer ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_SUPP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: KATYN14_MQ_04 | KATYN14_MQ_05 | KATYN14_MQ_06 -----
@@ -87,7 +87,7 @@ msg("KATYN14_MQ_06_01")
 msg("KATYN14_MQ_06_02")
 end
 
------ Silvertransporter_m_Quest_3 ----- 
+----- Supply Soldier ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_SUPP_SOL -----
 ----- Enter | Dialog -----
 addnpc(10037, "QUEST_LV_0200_20150317_000914", "f_katyn_14", 2574, 81, -2059, 213, "npc_QUEST_LV_0200_20150317_000914")
@@ -102,7 +102,7 @@ msg("KATYN14_SUPP_SOL_basic10")
 msg("KATYN14_SUPP_SOL_basic11")
 end
 
------ Silvertransporter_m_Quest_3 ----- 
+----- Supply Soldier ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_SUPP_SOL -----
 ----- Enter | Dialog -----
 addnpc(10037, "QUEST_LV_0200_20150317_000914", "f_katyn_14", 2578, 81, -1994, 223, "npc_QUEST_LV_0200_20150317_000914")
@@ -117,7 +117,7 @@ msg("KATYN14_SUPP_SOL_basic10")
 msg("KATYN14_SUPP_SOL_basic11")
 end
 
------ Silvertransporter_m_Quest_3 ----- 
+----- Supply Soldier ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_SUPP_SOL -----
 ----- Enter | Dialog -----
 addnpc(10037, "QUEST_LV_0200_20150317_000914", "f_katyn_14", 2675, 81, -2089, 28, "npc_QUEST_LV_0200_20150317_000914")
@@ -132,7 +132,7 @@ msg("KATYN14_SUPP_SOL_basic10")
 msg("KATYN14_SUPP_SOL_basic11")
 end
 
------ Silvertransporter_m_Quest_3 ----- 
+----- Supply Soldier ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_SUPP_SOL -----
 ----- Enter | Dialog -----
 addnpc(10037, "QUEST_LV_0200_20150317_000914", "f_katyn_14", 2704, 80, -2021, 13, "npc_QUEST_LV_0200_20150317_000914")
@@ -147,7 +147,7 @@ msg("KATYN14_SUPP_SOL_basic10")
 msg("KATYN14_SUPP_SOL_basic11")
 end
 
------ soldier6 ----- 
+----- Soldier Roy ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_ROY -----
 ----- Dialog -----
 ----- QuestIDs: KATYN14_MQ_08 -----
@@ -160,7 +160,7 @@ msg("KATYN14_MQ_08_03")
 msg("KATYN14_ROY_basic1")
 end
 
------ soldier5 ----- 
+----- Squad Commander Johan ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_JOHN -----
 ----- Dialog -----
 ----- QuestIDs: KATYN14_MQ_18 | KATYN14_MQ_17 -----
@@ -170,7 +170,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ soldier6_KNOCKDOWN ----- 
+----- Dead Corpsman ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_JOHN_SOL -----
 ----- Dialog -----
 addnpc(20020, "ETC_20150317_009371", "f_katyn_14", -1620, 420, 889, -45, "npc_ETC_20150317_009371")
@@ -179,7 +179,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ soldier6_KNOCKDOWN ----- 
+----- Dead Corpsman ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_JOHN_SOL -----
 ----- Dialog -----
 addnpc(20020, "ETC_20150317_009371", "f_katyn_14", -1891, 464, 1107, 0, "npc_ETC_20150317_009371")
@@ -188,7 +188,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ soldier6_KNOCKDOWN ----- 
+----- Dead Corpsman ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_JOHN_SOL -----
 ----- Dialog -----
 addnpc(20020, "ETC_20150317_009371", "f_katyn_14", -2032, 466, 869, 45, "npc_ETC_20150317_009371")
@@ -197,7 +197,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ soldier6_KNOCKDOWN ----- 
+----- Dead Corpsman ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_JOHN_SOL -----
 ----- Dialog -----
 addnpc(20020, "ETC_20150317_009371", "f_katyn_14", -1577, 466, 1211, 45, "npc_ETC_20150317_009371")
@@ -206,7 +206,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ soldier6_KNOCKDOWN ----- 
+----- Dead Corpsman ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_JOHN_SOL -----
 ----- Dialog -----
 addnpc(20020, "ETC_20150317_009371", "f_katyn_14", -1823, 420, 665, 90, "npc_ETC_20150317_009371")
@@ -215,7 +215,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_intermediate_officer_men2 ----- 
+----- Senior Officer Philipas ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_VACENIN_AFTER -----
 ----- Dialog -----
 ----- QuestIDs: KATYN14_MQ_24 | KATYN14_MQ_25 -----
@@ -237,7 +237,7 @@ msg("KATYN14_MQ_12_01_a")
 msg("KATYN14_VACENIN_basic01")
 end
 
------ soldier6 ----- 
+----- Scout Danus ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_VACENIN_CHASE -----
 ----- Dialog -----
 ----- QuestIDs: KATYN14_MQ_01 | KATYN14_MQ_02 -----
@@ -247,7 +247,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ pedlar_lose_2 ----- 
+----- Scattered Supplies ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47161, "ETC_20150317_009372", "f_katyn_14", 2836, 80, -1994, -45, "npc_ETC_20150317_009372")
@@ -255,7 +255,7 @@ function npc_ETC_20150317_009372()
 msg("KATYN14_MQ_05_ITEM")
 end
 
------ pedlar_lose_2 ----- 
+----- Scattered Supplies ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47161, "ETC_20150317_009372", "f_katyn_14", 2958, 80, -1987, -45, "npc_ETC_20150317_009372")
@@ -263,7 +263,7 @@ function npc_ETC_20150317_009372()
 msg("KATYN14_MQ_05_ITEM")
 end
 
------ pedlar_lose_2 ----- 
+----- Scattered Supplies ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47161, "ETC_20150317_009372", "f_katyn_14", 3045, 80, -2227, -45, "npc_ETC_20150317_009372")
@@ -271,7 +271,7 @@ function npc_ETC_20150317_009372()
 msg("KATYN14_MQ_05_ITEM")
 end
 
------ pedlar_lose_2 ----- 
+----- Scattered Supplies ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47161, "ETC_20150317_009372", "f_katyn_14", 3013, 81, -2319, -45, "npc_ETC_20150317_009372")
@@ -279,7 +279,7 @@ function npc_ETC_20150317_009372()
 msg("KATYN14_MQ_05_ITEM")
 end
 
------ pedlar_lose_2 ----- 
+----- Scattered Supplies ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47161, "ETC_20150317_009372", "f_katyn_14", 3017, 80, -2116, -45, "npc_ETC_20150317_009372")
@@ -287,7 +287,7 @@ function npc_ETC_20150317_009372()
 msg("KATYN14_MQ_05_ITEM")
 end
 
------ pedlar_lose_2 ----- 
+----- Scattered Supplies ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47161, "ETC_20150317_009372", "f_katyn_14", 2848, 81, -2283, -45, "npc_ETC_20150317_009372")
@@ -295,7 +295,7 @@ function npc_ETC_20150317_009372()
 msg("KATYN14_MQ_05_ITEM")
 end
 
------ pedlar_lose_2 ----- 
+----- Scattered Supplies ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47161, "ETC_20150317_009372", "f_katyn_14", 2833, 81, -2193, -45, "npc_ETC_20150317_009372")
@@ -303,7 +303,21 @@ function npc_ETC_20150317_009372()
 msg("KATYN14_MQ_05_ITEM")
 end
 
------ soldier_article_1 ----- 
+----- Poslinkis Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009568", "f_katyn_14", 3516, 82, -887, 48, "npc_ETC_20150323_009568")
+function npc_ETC_20150323_009568()
+msg("WS_KATYN14_TO_KATYN13")
+end
+
+----- Dvasia Peak ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009573", "f_katyn_14", -3213, 306, -1446, -124, "npc_ETC_20150323_009573")
+function npc_ETC_20150323_009573()
+msg("KATYN14_THORN22")
+end
+
+----- Unknown Soldier's Memento ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_SUB_WOLF -----
 ----- Enter | Dialog -----
 ----- QuestIDs: KATYN14_SUB_08 | KATYN14_SUB_08 -----
@@ -314,7 +328,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Stone ----- 
+----- Brush ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(10001, "ETC_20150317_008111", "f_katyn_14", -2422, 421, 330, 45, "npc_ETC_20150317_008111")
@@ -322,7 +336,7 @@ function npc_ETC_20150317_008111()
 msg("KATYN14_SUB_08_STONE")
 end
 
------ npc_mushroom_mini ----- 
+----- Small Griba ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_SUB_02_MUSH -----
 ----- Dialog -----
 ----- QuestIDs: KATYN14_SUB_02 -----
@@ -332,7 +346,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_mushroom_mini ----- 
+----- Small Griba ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_SUB_02_MUSH -----
 ----- Dialog -----
 ----- QuestIDs: KATYN14_SUB_02 -----
@@ -342,7 +356,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_mushroom_mini ----- 
+----- Small Griba ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_SUB_02_MUSH -----
 ----- Dialog -----
 ----- QuestIDs: KATYN14_SUB_02 -----
@@ -352,7 +366,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_mushroom_mini ----- 
+----- Small Griba ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_SUB_02_MUSH -----
 ----- Dialog -----
 ----- QuestIDs: KATYN14_SUB_02 -----
@@ -362,7 +376,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_mushroom_mini ----- 
+----- Small Griba ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_SUB_02_MUSH -----
 ----- Dialog -----
 ----- QuestIDs: KATYN14_SUB_02 -----
@@ -372,7 +386,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_mushroom_mini ----- 
+----- Small Griba ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_SUB_02_MUSH -----
 ----- Dialog -----
 ----- QuestIDs: KATYN14_SUB_02 -----
@@ -382,7 +396,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_mushroom_mini ----- 
+----- Small Griba ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_SUB_02_MUSH -----
 ----- Dialog -----
 ----- QuestIDs: KATYN14_SUB_02 -----
@@ -392,7 +406,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_mushroom_mini ----- 
+----- Small Griba ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_SUB_02_MUSH -----
 ----- Dialog -----
 ----- QuestIDs: KATYN14_SUB_02 -----
@@ -402,7 +416,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_mushroom_mini ----- 
+----- Small Griba ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_SUB_02_MUSH -----
 ----- Dialog -----
 ----- QuestIDs: KATYN14_SUB_02 -----
@@ -412,7 +426,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ statue_zemina ----- 
+----- Statue of Goddess Zemyna ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(40110, "ETC_20150317_007030", "f_katyn_14", -2765, 306, -1058, -5, "npc_ETC_20150317_007030")
@@ -421,7 +435,7 @@ msg("F_KATYN_14_EV_55_001")
 msg("F_KATYN_14_EV_55_001")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_katyn_14", -379, 249, -1017, 45, "npc_ETC_20150317_009100")

@@ -1,4 +1,11 @@
------ npc_saule_male_1 ----- 
+----- Sirdgela Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009572", "d_thorn_21", -412, 221, -37, -127, "npc_ETC_20150323_009572")
+function npc_ETC_20150323_009572()
+msg("THORN21_THORN20")
+end
+
+----- Believer Bronius ----- 
 ----- npcselectdialog.ies | ClassName: THORN21_BELIEVER -----
 ----- Dialog -----
 ----- QuestIDs: THORN21_MQ01 | THORN21_RP_2 -----
@@ -11,7 +18,14 @@ msg("THORN21_MQ02_startnpc01")
 msg("THORN21_BELIEVER02_basic01")
 end
 
------ npc_saule_female_1 ----- 
+----- Sunset Flag Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_009282", "d_thorn_21", 985, 208, -1550, 315, "npc_ETC_20150317_009282")
+function npc_ETC_20150317_009282()
+msg("THORN21_THORN23")
+end
+
+----- Believer Samantha ----- 
 ----- npcselectdialog.ies | ClassName: THORN21_BELIEVER02 -----
 ----- Dialog -----
 ----- QuestIDs: THORN21_MQ02 -----
@@ -24,7 +38,7 @@ msg("THORN21_MQ02_startnpc01")
 msg("THORN21_BELIEVER02_basic01")
 end
 
------ npc_saule_male_2 ----- 
+----- Believer Kazis ----- 
 ----- npcselectdialog.ies | ClassName: THORN21_BELIEVER03 -----
 ----- Dialog -----
 ----- QuestIDs: THORN21_MQ06 | THORN21_RP_1 -----
@@ -41,7 +55,7 @@ msg("THORN21_RP_1_2")
 msg("THORN21_RP_1_3")
 end
 
------ npc_saule_female_2 ----- 
+----- Believer Jurga ----- 
 ----- npcselectdialog.ies | ClassName: THORN21_BELIEVER04 -----
 ----- Dialog -----
 ----- QuestIDs: THORN21_MQ09 | THORN21_MQ04 | THORN21_MQ03 | THORN21_MQ05 -----
@@ -65,7 +79,7 @@ msg("THORN21_BELIEVER04_basic01")
 msg("THORN21_BELIEVER04_after_basic01")
 end
 
------ npc_saule_female_2 ----- 
+----- Believer Jurga ----- 
 ----- npcselectdialog.ies | ClassName: THORN21_BELIEVER04_AFTER -----
 ----- Dialog -----
 ----- QuestIDs: THORN21_MQ07 -----
@@ -89,7 +103,7 @@ msg("THORN21_BELIEVER04_basic01")
 msg("THORN21_BELIEVER04_after_basic01")
 end
 
------ npc_bramble_root ----- 
+----- Bramble's Root ----- 
 ----- npcselectdialog.ies | ClassName: THORN21_BRAMBLE01_ROOT -----
 ----- Dialog -----
 ----- QuestIDs: THORN21_MQ03 -----
@@ -99,7 +113,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_bramble_root ----- 
+----- Bramble's Root ----- 
 ----- npcselectdialog.ies | ClassName: THORN21_BRAMBLE02_ROOT -----
 ----- Dialog -----
 ----- QuestIDs: THORN21_MQ05 -----
@@ -109,7 +123,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Altar1 ----- 
+----- Altar of Purification ----- 
 ----- npcselectdialog.ies | ClassName: THORN21_MQ02_TRACK -----
 ----- Dialog -----
 ----- QuestIDs: THORN21_MQ02 -----
@@ -119,7 +133,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Altar1 ----- 
+----- Altar of Purification ----- 
 ----- npcselectdialog.ies | ClassName: THORN21_MQ06_TRACK -----
 ----- Dialog -----
 ----- QuestIDs: THORN21_MQ06 -----
@@ -129,7 +143,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Board1 ----- 
+----- Warning ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000566", "d_thorn_21", 1085, 208, -1446, 135, "npc_QUEST_20150317_000566")
@@ -137,7 +151,7 @@ function npc_QUEST_20150317_000566()
 msg("UPPER_WARNING_D_THORN_21")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_thorn_21", -456, 221, -407, 45, "npc_ETC_20150317_009100")

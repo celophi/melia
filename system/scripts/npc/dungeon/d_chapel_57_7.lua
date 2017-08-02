@@ -1,4 +1,11 @@
------ npc_paladin_follower1_1 ----- 
+----- Tenet Church 1F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001164", "d_chapel_57_7", -683, 36, -831, 135, "npc_ETC_20150317_001164")
+function npc_ETC_20150317_001164()
+msg("CHAPEL577_CHAPEL576")
+end
+
+----- Follower Algis ----- 
 ----- npcselectdialog.ies | ClassName: CHAPLE577_ARUNE_02 -----
 ----- Dialog -----
 ----- QuestIDs: CHAPLE577_MQ_02 | CHAPLE577_MQ_03 | CHAPLE577_MQ_04 | CHAPLE577_MQ_09 | CHAPLE577_MQ_10 | CHAPLE577_MQ_05 | CHAPLE577_MQ_06 | CHAPLE577_MQ_07 -----
@@ -50,7 +57,7 @@ msg("d_chapel_57_7_dlg_11")
 msg("d_chapel_57_6_dlg_11")
 end
 
------ holly_sphere_chapel_02 ----- 
+----- Sventove Central Altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147358, "ETC_20150317_005085", "d_chapel_57_7", -27, 48, -137, 0, "npc_ETC_20150317_005085")
@@ -58,7 +65,7 @@ function npc_ETC_20150317_005085()
 msg("CHAPLE577_HOLY_1")
 end
 
------ holly_sphere_chapel_01 ----- 
+----- Malda Altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(147357, "ETC_20150317_006701", "d_chapel_57_7", 1516, 48, -104, 0, "npc_ETC_20150317_006701")
@@ -67,7 +74,7 @@ msg("CHAPEL577_BASIC_1")
 msg("CHAPLE577_HOLY_2")
 end
 
------ holly_sphere_chapel_01 ----- 
+----- Auka Altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(147357, "ETC_20150317_006699", "d_chapel_57_7", -942, 48, -106, 0, "npc_ETC_20150317_006699")
@@ -76,7 +83,7 @@ msg("CHAPEL577_BASIC_2")
 msg("CHAPLE577_HOLY_3")
 end
 
------ npc_paladin_follower1_1 ----- 
+----- Follower Algis ----- 
 ----- npcselectdialog.ies | ClassName: CHAPLE577_ARUNE_01 -----
 ----- Dialog -----
 ----- QuestIDs: CHAPLE577_MQ_01 | CHAPLE577_MQ_02 -----
@@ -128,14 +135,14 @@ msg("d_chapel_57_7_dlg_11")
 msg("d_chapel_57_6_dlg_11")
 end
 
------ npc_gesti ----- 
+----- Demon Queen Gesti ----- 
 ----- Enter -----
 addnpc(147371, "QUEST_20150317_000170", "d_chapel_57_7", -352, 36, 107, 45, "npc_QUEST_20150317_000170")
 function npc_QUEST_20150317_000170()
 msg("CHAPLE577_GESTI")
 end
 
------ blank_npc ----- 
+----- Destroyed Altar Fragment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "ETC_20150317_009234", "d_chapel_57_7", -347, 36, -198, 45, "npc_ETC_20150317_009234")
@@ -143,7 +150,7 @@ function npc_ETC_20150317_009234()
 msg("CHAPLE577_MQ_03_01")
 end
 
------ blank_npc ----- 
+----- Destroyed Altar Fragment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "ETC_20150317_009234", "d_chapel_57_7", -340, 36, -368, 45, "npc_ETC_20150317_009234")
@@ -151,7 +158,7 @@ function npc_ETC_20150317_009234()
 msg("CHAPLE577_MQ_03_01")
 end
 
------ blank_npc ----- 
+----- Destroyed Altar Fragment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "ETC_20150317_009234", "d_chapel_57_7", -132, 36, -380, 45, "npc_ETC_20150317_009234")
@@ -159,7 +166,7 @@ function npc_ETC_20150317_009234()
 msg("CHAPLE577_MQ_03_01")
 end
 
------ blank_npc ----- 
+----- Destroyed Altar Fragment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "ETC_20150317_009234", "d_chapel_57_7", 64, 36, -384, 45, "npc_ETC_20150317_009234")
@@ -167,7 +174,7 @@ function npc_ETC_20150317_009234()
 msg("CHAPLE577_MQ_03_01")
 end
 
------ blank_npc ----- 
+----- Destroyed Altar Fragment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "ETC_20150317_009234", "d_chapel_57_7", 248, 36, -377, 45, "npc_ETC_20150317_009234")
@@ -175,7 +182,7 @@ function npc_ETC_20150317_009234()
 msg("CHAPLE577_MQ_03_01")
 end
 
------ blank_npc ----- 
+----- Destroyed Altar Fragment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "ETC_20150317_009234", "d_chapel_57_7", 260, 36, -231, 45, "npc_ETC_20150317_009234")
@@ -183,7 +190,7 @@ function npc_ETC_20150317_009234()
 msg("CHAPLE577_MQ_03_01")
 end
 
------ blank_npc ----- 
+----- Destroyed Altar Fragment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "ETC_20150317_009234", "d_chapel_57_7", 258, 36, -47, 45, "npc_ETC_20150317_009234")
@@ -191,7 +198,7 @@ function npc_ETC_20150317_009234()
 msg("CHAPLE577_MQ_03_01")
 end
 
------ blank_npc ----- 
+----- Destroyed Altar Fragment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "ETC_20150317_009234", "d_chapel_57_7", 251, 36, 174, 45, "npc_ETC_20150317_009234")
@@ -199,7 +206,7 @@ function npc_ETC_20150317_009234()
 msg("CHAPLE577_MQ_03_01")
 end
 
------ blank_npc ----- 
+----- Destroyed Altar Fragment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "ETC_20150317_009234", "d_chapel_57_7", 54, 36, 150, 45, "npc_ETC_20150317_009234")
@@ -207,7 +214,7 @@ function npc_ETC_20150317_009234()
 msg("CHAPLE577_MQ_03_01")
 end
 
------ blank_npc ----- 
+----- Destroyed Altar Fragment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "ETC_20150317_009234", "d_chapel_57_7", -329, 36, 110, 45, "npc_ETC_20150317_009234")
@@ -215,7 +222,7 @@ function npc_ETC_20150317_009234()
 msg("CHAPLE577_MQ_03_01")
 end
 
------ blank_npc ----- 
+----- Destroyed Altar Fragment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "ETC_20150317_009234", "d_chapel_57_7", -350, 36, -12, 45, "npc_ETC_20150317_009234")
@@ -223,7 +230,7 @@ function npc_ETC_20150317_009234()
 msg("CHAPLE577_MQ_03_01")
 end
 
------ blank_npc ----- 
+----- Destroyed Altar Fragment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "ETC_20150317_009234", "d_chapel_57_7", -145, 36, 122, 45, "npc_ETC_20150317_009234")
@@ -231,7 +238,7 @@ function npc_ETC_20150317_009234()
 msg("CHAPLE577_MQ_03_01")
 end
 
------ blank_npc ----- 
+----- Hidden Sanctuary's Wall Painting ----- 
 ----- npcselectdialog.ies | ClassName: CHAPLE577_MQ_10 -----
 ----- Dialog -----
 ----- QuestIDs: CHAPLE577_MQ_10 -----
@@ -254,7 +261,7 @@ msg("ORCHARD324_MQ_07_TRACK2_17")
 msg("d_chapel_57_7_dlg_2")
 end
 
------ npc_Offset_1 ----- 
+----- Central Pillar 1 ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147457, "ETC_20150317_009237", "d_chapel_57_7", -229, 36, -309, 45, "npc_ETC_20150317_009237")
@@ -262,7 +269,7 @@ function npc_ETC_20150317_009237()
 msg("CHAPLE577_MQ_04_1")
 end
 
------ npc_Offset_1 ----- 
+----- Central Pillar 2 ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147457, "ETC_20150317_009238", "d_chapel_57_7", -34, 36, -298, 45, "npc_ETC_20150317_009238")
@@ -270,7 +277,7 @@ function npc_ETC_20150317_009238()
 msg("CHAPLE577_MQ_04_2")
 end
 
------ npc_Offset_1 ----- 
+----- Central Pillar 3 ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147457, "ETC_20150317_009239", "d_chapel_57_7", 168, 36, -298, 45, "npc_ETC_20150317_009239")
@@ -278,7 +285,7 @@ function npc_ETC_20150317_009239()
 msg("CHAPLE577_MQ_04_3")
 end
 
------ npc_Offset_1 ----- 
+----- Central Pillar 4 ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147457, "ETC_20150317_009240", "d_chapel_57_7", 164, 36, -133, 45, "npc_ETC_20150317_009240")
@@ -286,7 +293,7 @@ function npc_ETC_20150317_009240()
 msg("CHAPLE577_MQ_04_4")
 end
 
------ npc_Offset_1 ----- 
+----- Central Pillar 5 ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147457, "ETC_20150317_009241", "d_chapel_57_7", 162, 36, 41, 45, "npc_ETC_20150317_009241")
@@ -294,7 +301,7 @@ function npc_ETC_20150317_009241()
 msg("CHAPLE577_MQ_04_5")
 end
 
------ npc_Offset_1 ----- 
+----- Central Pillar 6 ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147457, "ETC_20150317_009242", "d_chapel_57_7", -34, 36, 39, 45, "npc_ETC_20150317_009242")
@@ -302,7 +309,7 @@ function npc_ETC_20150317_009242()
 msg("CHAPLE577_MQ_04_6")
 end
 
------ npc_Offset_1 ----- 
+----- Central Pillar 7 ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147457, "ETC_20150317_009243", "d_chapel_57_7", -237, 36, 37, 45, "npc_ETC_20150317_009243")
@@ -310,7 +317,7 @@ function npc_ETC_20150317_009243()
 msg("CHAPLE577_MQ_04_7")
 end
 
------ npc_Offset_1 ----- 
+----- Central Pillar 8 ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147457, "ETC_20150317_009244", "d_chapel_57_7", -237, 36, -134, 45, "npc_ETC_20150317_009244")
@@ -318,7 +325,7 @@ function npc_ETC_20150317_009244()
 msg("CHAPLE577_MQ_04_8")
 end
 
------ blank_npc ----- 
+----- Reading Desk ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "QUEST_20150317_000986", "d_chapel_57_7", 844, 36, -1210, 45, "npc_QUEST_20150317_000986")
@@ -326,7 +333,7 @@ function npc_QUEST_20150317_000986()
 msg("SANCTUM_BOOK_NO")
 end
 
------ blank_npc ----- 
+----- Reading Desk ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147372, "QUEST_20150317_000986", "d_chapel_57_7", 1017, 36, -1213, 45, "npc_QUEST_20150317_000986")
@@ -334,7 +341,7 @@ function npc_QUEST_20150317_000986()
 msg("SANCTUM_BOOK_OK")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_chapel_57_7", -739, 36, 126, 45, "npc_ETC_20150317_009100")
