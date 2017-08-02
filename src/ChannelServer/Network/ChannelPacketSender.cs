@@ -239,6 +239,32 @@ namespace Melia.Channel.Network
 			conn.Send(packet);
 		}
 
+		public static void ZC_SESSION_OBJ_ADD(ChannelConnection conn)
+		{
+			var pkts = new List<string>
+			{
+				"90 5f 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+
+				//"90 5f 01 00 50 b1 eb 01 a6 bf 12 00 2d df 00 00 00 00 00 00 00 00 53 fa 00 00 00 00",
+				//"80 38 01 00 00 00 00 00 a7 bf 12 00 2d df 00 00 00 00 00 00 00 00 50 01 00 00 00 00",
+				//"18 73 01 00 00 00 00 00 a8 bf 12 00 2d df 00 00 00 00 00 00 00 00 50 01 00 00 00 00",
+				//"81 38 01 00 00 00 00 00 a9 bf 12 00 2d df 00 00 00 00 00 00 00 00 50 01 00 00 00 00",
+				//"a0 86 01 00 50 b1 eb 01 aa bf 12 00 2d df 00 00 00 00 00 00 00 00 53 fa 00 00 00 00",
+				//"03 00 00 00 00 00 00 00 ab bf 12 00 2d df 00 00 00 00 00 00 00 00 50 01 00 00 00 00",
+				//"00 77 01 00 00 00 00 00 ac bf 12 00 2d df 00 00 00 00 00 00 00 00 50 01 00 00 00 00",
+				//"60 ea 00 00 00 00 00 00 ad bf 12 00 2d df 00 00 00 00 00 00 00 00 50 01 00 00 00 00",
+				//"a0 3a 00 00 00 00 00 00 ae bf 12 00 2d df 00 00 00 00 00 00 00 00 50 01 00 00 00 00",
+				//"d1 bf 0b 00 f4 f3 eb 01 b1 bf 12 00 2d df 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+			};
+
+			foreach (var s in pkts)
+			{
+				var packet = new Packet(Op.ZC_SESSION_OBJ_ADD);
+				packet.PutBinFromHex(s);
+				conn.Send(packet);
+			}
+		}
+
 		/// <summary>
 		/// Sends the faction for the handle.
 		/// 1 : character, 2: ?, 3: NPC
@@ -1133,6 +1159,17 @@ namespace Melia.Channel.Network
 			packet.PutShort(1); // 0 shows a blue effect when the entity disappears
 
 			conn.Send(packet);
+		}
+
+		public static void ZC_SET_NPC_STATE(Character character)
+		{
+			var packet = new Packet(Op.ZC_SET_NPC_STATE);
+			packet.PutInt(1021); //mapid
+			packet.PutInt(55); //?
+			packet.PutShort(1); //?
+			packet.PutShort(1); //?
+
+			character.Connection.Send(packet);
 		}
 
 		/// <summary>

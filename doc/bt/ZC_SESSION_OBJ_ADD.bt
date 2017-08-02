@@ -1,0 +1,18 @@
+//------------------------------------------------
+//--- 010 Editor v8.0 Binary Template
+//
+//      File: ZC_SESSION_OBJ_ADD.bt
+//   Authors: celophi
+//   Version: 164556
+//   Purpose: Updates field with quest markers.
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+short op<format=hex>;
+int reserved;
+short packetLength;
+
+int sessionEventId;

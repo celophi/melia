@@ -1,0 +1,28 @@
+//------------------------------------------------
+//--- 010 Editor v8.0 Binary Template
+//
+//      File: ZC_SESSION_OBJECTS.bt
+//   Authors: celophi
+//   Version: 164556
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+typedef struct {
+  int objectId;
+  byte u0[20];
+} SessionObject;
+
+short op<format=hex>;
+int reserved;
+short packetLength;
+
+short objectCount;
+
+local int i<hidden=true>;
+for (i = 0; i < objectCount; i++)
+    SessionObject sessionObject;
+

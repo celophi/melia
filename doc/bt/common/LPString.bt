@@ -1,0 +1,29 @@
+//------------------------------------------------
+//--- 010 Editor v8.0 Binary Template
+//
+//      File: LPString.bt
+//   Authors: exec, celophi
+//   Version: 164556
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+// Length-prefixed string
+typedef struct
+{
+    short length;
+    if(length > 0)
+        char text[length];
+}
+LPString <read=LPStringRead>;
+
+string LPStringRead(LPString &v)
+{
+    if(v.length > 0)
+        return v.text;
+    else
+        return "";
+}

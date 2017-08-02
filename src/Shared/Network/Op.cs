@@ -957,8 +957,8 @@ namespace Melia.Shared.Network
 		public const int CZ_REQ_FORGERY = 0x0E4B; // Size: 30
 		public const int CZ_REQ_BUILD_FOODTABLE = 0x0E4C; // Size: 79
 		public const int CZ_REQ_UNDERSTAFF_ENTER_ALLOW = 0x0E4D; // Size: 10
-		public const int CZ_REQ_UNDERSTAFF_ENTER_ALLOW_WITH_PARTY = 0x0E4E; // Size: 14
-		public const int ZC_PLAY_PAIR_ANIMATION = 0x0E4F; // Size: 30
+		public const int ZC_PLAY_PAIR_ANIMATION = 0x0E4E; // Size: 30
+		public const int CZ_DISCONNECT_REASON_FOR_LOG = 0x0E4F; // Size: 0
 
 		private static readonly Dictionary<int, int> _sizes = new Dictionary<int, int>();
 		private static readonly Dictionary<int, string> _names = new Dictionary<int, string>();
@@ -1628,8 +1628,9 @@ namespace Melia.Shared.Network
 			_sizes[Op.CZ_REQ_FORGERY] = 30;
 			_sizes[Op.CZ_REQ_BUILD_FOODTABLE] = 79;
 			_sizes[Op.CZ_REQ_UNDERSTAFF_ENTER_ALLOW] = 10;
-			_sizes[Op.CZ_REQ_UNDERSTAFF_ENTER_ALLOW_WITH_PARTY] = 14;
 			_sizes[Op.ZC_PLAY_PAIR_ANIMATION] = 30;
+			_sizes[Op.CZ_DISCONNECT_REASON_FOR_LOG] = 0;
+			
 
 			foreach (var field in typeof(Op).GetFields(BindingFlags.Public | BindingFlags.Static))
 				_names[(int)field.GetValue(null)] = field.Name;

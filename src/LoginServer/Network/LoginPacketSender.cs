@@ -49,6 +49,15 @@ namespace Melia.Login.Network
 			conn.Send(packet);
 		}
 
+		public static void BC_NORMAL_U(LoginConnection conn)
+		{
+			var packet = new Packet(Op.BC_NORMAL);
+			packet.PutInt(0x02);
+			packet.PutLong(conn.Account.Id);
+			packet.PutBinFromHex(@"02 00 00 00 42 f0 96 8f 41 00 00 10 c1");
+			conn.Send(packet);
+		}
+
 		public static void BC_COMMANDER_LIST(LoginConnection conn)
 		{
 			var characters = conn.Account.GetCharacters();
@@ -97,6 +106,52 @@ namespace Melia.Login.Network
 			packet.PutShort(conn.Account.GetCharacters().Count()); // unk
 
 			conn.Send(packet);
+
+			Send.BC_NORMAL_U(conn);
+
+
+			//
+			var p = new Packet(Op.BC_NORMAL);
+			p.PutInt(0x10);
+
+			p.BeginZlib();
+
+			p.PutEmptyBin(5); // these must be here or it crashes the client v.v;;
+			p.PutInt(1);
+
+			p.PutLpString("celophi");
+			p.PutLpString("Welcome to Melia~");
+			p.PutLpString("Please enjoy your stay!");			
+			
+			p.PutLong(131416798110000000); // date message sent
+			p.PutLong(131416798110000000); // reedemable date?
+			p.PutLong(121016798110000000);
+
+			p.PutLong(1); //ID
+
+			p.PutByte(0); //?
+			p.PutShort(10); // ?
+			p.PutShort(3); // takenCount
+
+			p.PutByte(1); // ?
+			p.PutByte(0); //dbtype
+
+			int attachments = 2;
+			p.PutInt(attachments);
+			for (int i = 0; i < attachments; i++)
+			{
+				p.PutInt(274997); //?
+
+				p.PutInt(640014); //item ID
+
+				p.PutInt(100); //item amount
+				p.PutInt(0); // IsRetrieved (boolean)
+			}
+			
+			p.EndZlib();
+
+			conn.Send(p);
+			//
 		}
 
 		public static void BC_COMMANDER_CREATE(LoginConnection conn, Character character)

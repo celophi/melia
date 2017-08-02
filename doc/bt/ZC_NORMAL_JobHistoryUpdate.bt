@@ -1,0 +1,19 @@
+//------------------------------------------------
+//--- 010 Editor v8.0 Binary Template
+//
+//      File: ZC_NORMAL_JobHistoryUpdate.bt
+//   Authors: celophi
+//   Version: 164556
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+short op<format=hex>;
+int reserved;
+short packetLength;
+int subOp<format=hex>;
+
+__int64 characterId;

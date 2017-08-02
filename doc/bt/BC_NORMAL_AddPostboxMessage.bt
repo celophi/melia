@@ -1,0 +1,53 @@
+//------------------------------------------------
+//--- 010 Editor v8.0 Binary Template
+//
+//      File: BC_NORMAL_AddPostboxMessage.bt
+//   Authors: celophi
+//   Version: 164556
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+#include "common/LPString.bt"
+
+typedef struct {
+    LPString fromName;
+    LPString title;
+    LPString body;
+    __int64 time2;
+    __int64 time;
+    __int64 anotherTime;
+    __int64 ID;
+    byte u10;
+    short itemCount;
+    short itemTakeCount;
+    byte u13;
+    byte dbType;
+    int attachmentCount;
+    int u16;
+    int item;
+    int u17;
+    int u18;
+} PostboxMessage;
+
+short op<format=hex>;
+int reserved;
+short packetLength;
+int subOp<format=hex>;
+
+short compressionFlag<format=hex>;
+short compressedLength;
+
+// decompressed data
+
+byte u0;
+int u1;
+int count;
+
+local int i<hidden=true>;
+for (i = 0; i < count; i++)
+    PostboxMessage message;
+

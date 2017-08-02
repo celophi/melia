@@ -135,6 +135,12 @@ namespace Melia.Channel.Network
 			// For first time playing
 			Send.ZC_PC_PROP_UPDATE(character, ObjectProperty.PCEtc.FirstPlay, 1);
 			Send.ZC_ADDON_MSG(character, ZCAddonMsg.KEYBOARD_TUTORIAL);
+			Send.ZC_SET_NPC_STATE(character);
+			//Send.ZC_SESSION_OBJ_ADD(conn);
+
+			var pac = new Packet(Op.ZC_SESSION_OBJECTS);
+			pac.PutBinFromHex(@"0a 00 d1 bf 0b 00 93 79 cd c9 b1 bf 12 00 2d df 00 00 00 00 00 00 00 00 06 08 a0 3a 00 00 21 d8 35 9c ae bf 12 00 2d df 00 00 00 00 00 00 00 00 54 9d 60 ea 00 00 0e 06 06 3d ad bf 12 00 2d df 00 00 00 00 00 00 00 00 d4 ed 00 77 01 00 f8 f2 18 ac ac bf 12 00 2d df 00 00 00 00 00 00 00 00 18 18 03 00 00 00 00 00 00 00 ab bf 12 00 2d df 00 00 00 00 00 00 00 00 2f 47 a0 86 01 00 08 00 00 00 aa bf 12 00 2d df 00 00 00 00 00 00 00 00 00 00 81 38 01 00 00 00 00 00 a9 bf 12 00 2d df 00 00 00 00 00 00 00 00 00 c0 18 73 01 00 00 00 00 b5 a8 bf 12 00 2d df 00 00 00 00 00 00 00 00 00 00 80 38 01 00 00 00 00 00 a7 bf 12 00 2d df 00 00 00 00 00 00 00 00 00 00 90 5f 01 00 00 00 00 00 a6 bf 12 00 2d df 00 00 00 00 00 00 29 00 00 00 24 07 00 00 00 00 96 43 b5 04 00 00 00 40 7f 44 30 05 00 00 0b 00 53 74 61 72 74 4c 69 6e 65 31 00 85 0a 00 00 00 00 96 43");
+			conn.Send(pac);
 
 			Send.ZC_SHARED_MSG(character, SharedMsgType.QuestUpdate);
 			character.OpenEyes();
@@ -1206,6 +1212,20 @@ namespace Melia.Channel.Network
 		public void CZ_VISIT_BARRACK(ChannelConnection conn, Packet packet)
 		{
 			var teamName = packet.GetString(64);
+		}
+
+		/// <summary>
+		/// Sent from the client requesting quest state.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CZ_QUEST_NPC_STATE_CHECK)]
+		public void CZ_QUEST_NPC_STATE_CHECK(ChannelConnection conn, Packet packet)
+		{
+			// I thought this was the classId, but it doesn't look like it is.
+			// On real servers, you can change this to anything and it still works.
+			// It could be a counter of some sort.
+			var unk =  packet.GetInt(); 
 		}
 	}
 
