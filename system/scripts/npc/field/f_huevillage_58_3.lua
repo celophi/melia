@@ -1,4 +1,18 @@
------ npc_huevill_male_2 ----- 
+----- Vieta Gorge ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009563", "f_huevillage_58_3", 418, -87, -1834, -50, "npc_ETC_20150323_009563")
+function npc_ETC_20150323_009563()
+msg("HUEVILLAGE58_3_TO_HUEVILLAGE58_2")
+end
+
+----- Septyni Glen ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009564", "f_huevillage_58_3", -1130, 22, -30, 162, "npc_ETC_20150323_009564")
+function npc_ETC_20150323_009564()
+msg("HUEVILLAGE58_3_TO_HUEVILLAGE58_4")
+end
+
+----- Andale Village Priest ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_3_MQ01_NPC -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_3_MQ01 | HUEVILLAGE_58_3_MQ02 -----
@@ -18,7 +32,7 @@ msg("HUEVILLAGE_58_3_MQ02_basic01")
 msg("HUEVILLAGE_58_3_MQ02_basic02")
 end
 
------ huevill_chief ----- 
+----- Andale Village Headman ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_3_MQ03_NPC -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_3_MQ03 | HUEVILLAGE_58_3_MQ04 -----
@@ -34,7 +48,7 @@ msg("HUEVILLAGE_58_3_MQ04_progstartnpc01")
 msg("HUEVILLAGE_58_3_MQ04_basic01")
 end
 
------ Board1 ----- 
+----- Warning ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000507", "f_huevillage_58_3", 1113, -87, -213, -18, "npc_QUEST_20150317_000507")
@@ -42,7 +56,7 @@ function npc_QUEST_20150317_000507()
 msg("HUVILLAGE_58_3_WELL_WARING_BOARD")
 end
 
------ Upent ----- 
+----- Sleeping Upent ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_3_MQ04_NPC01 -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_3_MQ04 -----
@@ -52,28 +66,28 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Upent ----- 
+----- Sleeping Upent ----- 
 ----- Enter -----
 addnpc(57019, "ETC_20150317_009348", "f_huevillage_58_3", -1460, -1, -1384, 105, "npc_ETC_20150317_009348")
 function npc_ETC_20150317_009348()
 msg("HUEVILLAGE_58_3_MQ04_NPC02")
 end
 
------ Upent ----- 
+----- Sleeping Upent ----- 
 ----- Enter -----
 addnpc(57019, "ETC_20150317_009348", "f_huevillage_58_3", -1432, -1, -1312, -111, "npc_ETC_20150317_009348")
 function npc_ETC_20150317_009348()
 msg("HUEVILLAGE_58_3_MQ04_NPC02")
 end
 
------ Upent ----- 
+----- Sleeping Upent ----- 
 ----- Enter -----
 addnpc(57019, "ETC_20150317_009348", "f_huevillage_58_3", -1389, -1, -1346, 12, "npc_ETC_20150317_009348")
 function npc_ETC_20150317_009348()
 msg("HUEVILLAGE_58_3_MQ04_NPC02")
 end
 
------ npc_drum_M ----- 
+----- Barrel of Explosives ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147458, "ETC_20150317_009349", "f_huevillage_58_3", -156, -117, 234, 45, "npc_ETC_20150317_009349")
@@ -81,7 +95,7 @@ function npc_ETC_20150317_009349()
 msg("HUEVILLAGE_58_3_MQ03_DRUM_FAKE")
 end
 
------ npc_drum_M ----- 
+----- Barrel of Explosives ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147458, "ETC_20150317_009349", "f_huevillage_58_3", -240, -117, 228, 45, "npc_ETC_20150317_009349")
@@ -89,7 +103,7 @@ function npc_ETC_20150317_009349()
 msg("HUEVILLAGE_58_3_MQ03_DRUM_FAKE")
 end
 
------ npc_drum_M ----- 
+----- Barrel of Explosives ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147458, "ETC_20150317_009349", "f_huevillage_58_3", -120, -117, 328, 45, "npc_ETC_20150317_009349")
@@ -97,7 +111,7 @@ function npc_ETC_20150317_009349()
 msg("HUEVILLAGE_58_3_MQ03_DRUM_FAKE")
 end
 
------ npc_drum_M ----- 
+----- Barrel of Explosives ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147458, "ETC_20150317_009349", "f_huevillage_58_3", -236, -117, 141, 45, "npc_ETC_20150317_009349")
@@ -105,7 +119,7 @@ function npc_ETC_20150317_009349()
 msg("HUEVILLAGE_58_3_MQ03_DRUM_FAKE")
 end
 
------ npc_drum_M ----- 
+----- Barrel of Explosives ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147458, "ETC_20150317_009349", "f_huevillage_58_3", -328, -117, 118, 45, "npc_ETC_20150317_009349")
@@ -113,7 +127,7 @@ function npc_ETC_20150317_009349()
 msg("HUEVILLAGE_58_3_MQ03_DRUM_FAKE")
 end
 
------ npc_drum_S ----- 
+----- Barrel of Explosives ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147459, "ETC_20150317_009349", "f_huevillage_58_3", -322, -117, 216, 45, "npc_ETC_20150317_009349")
@@ -121,7 +135,7 @@ function npc_ETC_20150317_009349()
 msg("HUEVILLAGE_58_3_MQ03_DRUM")
 end
 
------ npc_drum_S ----- 
+----- Barrel of Explosives ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147459, "ETC_20150317_009349", "f_huevillage_58_3", -241, -117, 352, 45, "npc_ETC_20150317_009349")
@@ -129,7 +143,7 @@ function npc_ETC_20150317_009349()
 msg("HUEVILLAGE_58_3_MQ03_DRUM")
 end
 
------ noshadow_npc ----- 
+----- Old Well ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_3_SQ01_NPC01 -----
 ----- Dialog -----
 ----- QuestIDs: HUEVILLAGE_58_3_SQ01 -----
@@ -139,7 +153,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ noshadow_npc ----- 
+----- Old Tent ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20150317_009352", "f_huevillage_58_3", -681, -3, -1153, 45, "npc_ETC_20150317_009352")
@@ -147,7 +161,14 @@ function npc_ETC_20150317_009352()
 msg("HUEVILLAGE_58_3_SQ01_NPC03")
 end
 
------ treasure_box1 ----- 
+----- Tenants' Farm ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009636", "f_huevillage_58_3", -223, -88, -1546, -39, "npc_ETC_20150323_009636")
+function npc_ETC_20150323_009636()
+msg("HUEVILL_58_3_TO_FARM_47_1")
+end
+
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_huevillage_58_3", 40, -117, -641, 45, "npc_ETC_20150317_009100")

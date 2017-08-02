@@ -1,4 +1,32 @@
------ npc_saule_female_1 ----- 
+----- Main Building ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170330_027518", "d_cathedral_54", 1219, 5, -380, 47, "npc_ETC_20170330_027518")
+function npc_ETC_20170330_027518()
+msg("CATHEDRAL54_CATHEDRAL53")
+end
+
+----- Penitence Route ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170330_027520", "d_cathedral_54", -1824, 3, -566, 225, "npc_ETC_20170330_027520")
+function npc_ETC_20170330_027520()
+msg("CATHEDRAL54_PILGRIM55")
+end
+
+----- Penitence Route ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170330_027520", "d_cathedral_54", -1474, 24, 1122, 135, "npc_ETC_20170330_027520")
+function npc_ETC_20170330_027520()
+msg("CATHEDRAL54_PILGRIM55_RE")
+end
+
+----- Sanctuary ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170330_027521", "d_cathedral_54", 1177, 50, 593, 42, "npc_ETC_20170330_027521")
+function npc_ETC_20170330_027521()
+msg("CATHEDRAL54_CATHEDRAL56")
+end
+
+----- Priest Daram ----- 
 ----- npcselectdialog.ies | ClassName: CHATHEDRAL54_SQ01_PART1 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: CHATHEDRAL54_SQ03_PART1 | CHATHEDRAL54_SQ04_PART2 | CHATHEDRAL54_HQ1 -----
@@ -22,7 +50,7 @@ msg("CHATHEDRAL54_SQ04_PART2_prog_startnpc01")
 msg("CHATHEDRAL54_SQ04_PART2_succ01")
 end
 
------ npc_saule_female_2 ----- 
+----- Priest Yosana ----- 
 ----- npcselectdialog.ies | ClassName: CHATHEDRAL54_SQ03_PART1 -----
 ----- Dialog -----
 ----- QuestIDs: CHATHEDRAL54_SQ02_PART1 -----
@@ -36,7 +64,7 @@ msg("CHATHEDRAL54_SQ02_PART1_select01")
 msg("CHATHEDRAL54_SQ02_PART1_succ01")
 end
 
------ npc_saule_male_2 ----- 
+----- Priest Ruodell ----- 
 ----- npcselectdialog.ies | ClassName: CHATHEDRAL54_SQ04_PART2 -----
 ----- Dialog -----
 ----- QuestIDs: CHATHEDRAL54_SQ01_PART1 | CHATHEDRAL53_SQ09 | CHATHEDRAL54_SQ06 | CHATHEDRAL54_SQ07 -----
@@ -56,7 +84,7 @@ msg("CHATHEDRAL54_SQ07_agree01")
 msg("CHATHEDRAL54_SQ07_prog01")
 end
 
------ npc_zacharial_desk ----- 
+----- Karuna Altar ----- 
 ----- npcselectdialog.ies | ClassName: CHATHEDRAL54_MQ04_PART2 -----
 ----- Dialog -----
 ----- QuestIDs: CHATHEDRAL54_MQ04_PART2 | CHATHEDRAL54_SQ05_PART2 -----
@@ -66,7 +94,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_aurelius ----- 
+----- Bishop Aurelius' Spirit ----- 
 ----- npcselectdialog.ies | ClassName: CHATHEDRAL54_PART1_BISHOP -----
 ----- Dialog -----
 ----- QuestIDs: CHATHEDRAL54_MQ01_PART1 -----
@@ -131,7 +159,7 @@ msg("CHATHEDRAL56_BISHOP_DIALOG08")
 msg("BISHOP_TRACK_DLG")
 end
 
------ BOOK_01 ----- 
+----- Books dropped on the floor ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147311, "ETC_20150317_009230", "d_cathedral_54", 184, 3, 1075, 39, "npc_ETC_20150317_009230")
@@ -139,7 +167,7 @@ function npc_ETC_20150317_009230()
 msg("CHATHEDRAL54_SQ01_PART1_BOOK1")
 end
 
------ BOOK_02 ----- 
+----- Old Book ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153014, "ETC_20150323_010348", "d_cathedral_54", 109, 3, 1367, 103, "npc_ETC_20150323_010348")
@@ -147,7 +175,7 @@ function npc_ETC_20150323_010348()
 msg("CHATHEDRAL54_SQ01_PART1_BOOK2")
 end
 
------ BOOK_02 ----- 
+----- Old Book ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153014, "ETC_20150323_010348", "d_cathedral_54", 371, 3, 1333, 45, "npc_ETC_20150323_010348")
@@ -155,7 +183,7 @@ function npc_ETC_20150323_010348()
 msg("CHATHEDRAL54_SQ01_PART1_BOOK3")
 end
 
------ npc_aurelius ----- 
+----- Bishop Aurelius' Spirit ----- 
 ----- npcselectdialog.ies | ClassName: CHATHEDRAL54_BISHOP_AFTER -----
 ----- Dialog -----
 ----- QuestIDs: CHATHEDRAL54_MQ02_PART2 | CHATHEDRAL54_MQ03_PART2 | CHATHEDRAL54_MQ04_PART2 -----
@@ -165,7 +193,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zacharial_desk ----- 
+----- Platform of Love ----- 
 ----- npcselectdialog.ies | ClassName: CHATHEDRAL54_MQ01_PUZZLE -----
 ----- Dialog -----
 ----- QuestIDs: CHATHEDRAL54_MQ01_PART1 -----
@@ -175,7 +203,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zacharial_desk ----- 
+----- Maven's Message ----- 
 ----- npcselectdialog.ies | ClassName: CHATHEDRAL54_MQ06_BOOK -----
 ----- Dialog -----
 ----- QuestIDs: CHATHEDRAL54_MQ05_PART3 -----
@@ -185,7 +213,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ noshadow_npc_16 ----- 
+----- Portal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151019, "ETC_20150317_005172", "d_cathedral_54", 1543, 0, -2296, 45, "npc_ETC_20150317_005172")
@@ -193,7 +221,7 @@ function npc_ETC_20150317_005172()
 msg("CHATHEDRAL54_POTAL")
 end
 
------ BOOK_02 ----- 
+----- Old Book ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153014, "ETC_20150323_010348", "d_cathedral_54", 334, 3, 855, 45, "npc_ETC_20150323_010348")
@@ -201,7 +229,7 @@ function npc_ETC_20150323_010348()
 msg("CHATHEDRAL54_SQ01_PART1_BOOK4")
 end
 
------ npc_paladinmaster_gate ----- 
+----- Priest of Evidence ----- 
 ----- npcselectdialog.ies | ClassName: MQ05_PROOF_PRIST -----
 ----- Dialog -----
 ----- QuestIDs: CHATHEDRAL54_MQ05_PART3 | CHATHEDRAL54_MQ06_PART3 | CATHEDRAL_TO_VELNIASPRISON -----
@@ -211,7 +239,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_cathedral_54", -1354, 4, -736, 45, "npc_ETC_20150317_009100")

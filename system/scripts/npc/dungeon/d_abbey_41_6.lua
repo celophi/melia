@@ -1,4 +1,11 @@
------ npc_frair_f_03 ----- 
+----- Rasvoy Lake ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_017809", "d_abbey_41_6", -892, -123, -1430, 225, "npc_ETC_20151224_017809")
+function npc_ETC_20151224_017809()
+msg("ABBEY41_6_PILGRIM41_3")
+end
+
+----- Monk Stella ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY416_SQ_02 -----
 ----- Dialog -----
 ----- QuestIDs: ABBEY41_6_SQ01 | ABBEY41_6_SQ02 | ABBEY41_6_SQ03 -----
@@ -8,7 +15,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_frair_f_03 ----- 
+----- Monk Stella ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY416_SQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: ABBEY41_6_SQ03 | ABBEY41_6_SQ04 | ABBEY41_6_SQ05 | ABBEY41_6_SQ06 | ABBEY41_6_SQ07 | ABBEY41_6_SQ08 -----
@@ -117,7 +124,7 @@ msg("ABBEY416_SQ_11_prog")
 msg("ABBEY416_SQ_11_succ")
 end
 
------ npc_frair_f_03 ----- 
+----- Monk Stella ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY416_SQ_08 -----
 ----- Dialog -----
 ----- QuestIDs: ABBEY41_6_SQ08 | ABBEY41_6_SQ09 | ABBEY41_6_SQ10 | ABBEY41_6_SQ11 -----
@@ -226,7 +233,7 @@ msg("ABBEY416_SQ_11_prog")
 msg("ABBEY416_SQ_11_succ")
 end
 
------ npc_friar_01 ----- 
+----- Fallen Monk ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155042, "ETC_20160811_024103", "d_abbey_41_6", 744, 0, 1069, -45, "npc_ETC_20160811_024103")
@@ -234,7 +241,7 @@ function npc_ETC_20160811_024103()
 msg("ABBEY416_SQ_09_1")
 end
 
------ npc_friar_03 ----- 
+----- Fallen Monk ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155044, "ETC_20160811_024103", "d_abbey_41_6", 700, 0, 1019, -45, "npc_ETC_20160811_024103")
@@ -242,7 +249,7 @@ function npc_ETC_20160811_024103()
 msg("ABBEY416_SQ_09_2")
 end
 
------ npc_friar_04 ----- 
+----- Fallen Monk ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155045, "ETC_20160811_024103", "d_abbey_41_6", 791, 0, 1028, -45, "npc_ETC_20160811_024103")

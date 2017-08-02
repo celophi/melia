@@ -1,4 +1,11 @@
------ statue_zemina ----- 
+----- Downtown ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001242", "f_flash_64", 12, 825, -2596, -54.46, "npc_ETC_20150317_001242")
+function npc_ETC_20150317_001242()
+msg("FLASH64_FLASH63")
+end
+
+----- Statue of Goddess Zemyna ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(40110, "ETC_20150317_007030", "f_flash_64", -570, 885, 1374, 60, "npc_ETC_20150317_007030")
@@ -7,7 +14,7 @@ msg("F_FLASH_64_EV_55_001")
 msg("F_FLASH_64_EV_55_001")
 end
 
------ npc_intermediate_officer_female ----- 
+----- [Knights of Kaliss]Wilhelmina Carriot ----- 
 ----- npcselectdialog.ies | ClassName: FLASH64_KARRIAT -----
 ----- Dialog -----
 ----- QuestIDs: FLASH64_MQ_02 | UNDERFORTRESS_67_SQ010 | FLASH64_SQ_01 | FLASH64_SQ_02 | FLASH64_SQ_03 | UNDERFORTRESS_66_SQ010 | UNDERFORTRESS67_HQ1 | FLASH63_HQ1 -----
@@ -39,7 +46,7 @@ msg("FLASH63_HQ1_prog1")
 msg("FLASH63_HQ1_succ1")
 end
 
------ npc_CNN_master ----- 
+----- [Cannoneer Master]Eda Saker Bazaras ----- 
 ----- npcselectdialog.ies | ClassName: CANNONEER_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_CANNONEER_7_1 | JOB_CANNONEER_8_1 -----
@@ -57,7 +64,7 @@ msg("JOB_CANNONEER_8_1_SU")
 msg("JOB_CANNONEER_8_1_AG")
 end
 
------ npc_MSK_master ----- 
+----- [Musketeer Master]Alloden Marzarine ----- 
 ----- npcselectdialog.ies | ClassName: MUSKETEER_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_MUSKETEER_7_1 | JOB_MUSKETEER_8_1 -----
@@ -75,7 +82,7 @@ msg("JOB_MUSKETEER_8_1_PG")
 msg("JOB_MUSKETEER_8_1_SU")
 end
 
------ npc_bocor_edita ----- 
+----- [Knights of Kaliss]Bokor Edita ----- 
 ----- npcselectdialog.ies | ClassName: FLASH64_EDITA -----
 ----- Dialog -----
 ----- QuestIDs: FLASH64_SQ_05 | FLASH64_SQ_06 | FLASH64_SQ_07 -----
@@ -96,7 +103,7 @@ msg("FLASH64_SQ_05_01_add")
 msg("FLASH64_EDITA_basic_2")
 end
 
------ npc_ALC_saliamonas ----- 
+-----  [Knights of Kaliss]Alchemist Salliamornas ----- 
 ----- npcselectdialog.ies | ClassName: FLASH64_SALIAMONS -----
 ----- Dialog -----
 ----- QuestIDs: FLASH64_SQ_08 | FLASH64_SQ_09 | FLASH64_SQ_10 -----
@@ -117,7 +124,7 @@ msg("FLASH64_SQ_08_01_add")
 msg("FLASH64_SALIAMONS_basic_2")
 end
 
------ npc_historian_odel_2 ----- 
+----- [Amanda Grave Robbers]Amanda ----- 
 ----- npcselectdialog.ies | ClassName: FLASH64_AMANDA -----
 ----- Dialog -----
 ----- QuestIDs: FLASH64_MQ_01 | FLASH64_MQ_02 | FLASH64_MQ_03 -----
@@ -213,7 +220,7 @@ msg("FLASH64_MQ_01_04")
 msg("UNDER_69_MQ060_succ01")
 end
 
------ npc_flash_soldier_01 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154023, "ETC_20150714_013156", "f_flash_64", -1488, 578, -135, 45, "npc_ETC_20150714_013156")
@@ -221,7 +228,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_soldier_01 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154023, "ETC_20150714_013156", "f_flash_64", -1339, 572, -231, 45, "npc_ETC_20150714_013156")
@@ -229,7 +236,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_soldier_01 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154023, "ETC_20150714_013156", "f_flash_64", -1294, 578, 93, 45, "npc_ETC_20150714_013156")
@@ -237,7 +244,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_soldier_01 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154023, "ETC_20150714_013156", "f_flash_64", -919, 537, -600, 45, "npc_ETC_20150714_013156")
@@ -245,7 +252,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_soldier_01 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154023, "ETC_20150714_013156", "f_flash_64", -943, 565, -296, 45, "npc_ETC_20150714_013156")
@@ -253,7 +260,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_soldier_01 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154023, "ETC_20150714_013156", "f_flash_64", -987, 564, 186, 45, "npc_ETC_20150714_013156")
@@ -261,7 +268,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_soldier_01 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154023, "ETC_20150714_013156", "f_flash_64", -1223, 564, 333, 45, "npc_ETC_20150714_013156")
@@ -269,7 +276,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_soldier_01 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154023, "ETC_20150714_013156", "f_flash_64", -880, 587, 721, 45, "npc_ETC_20150714_013156")
@@ -277,7 +284,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_male_01 ----- 
+----- Petrified Grave Robber ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154024, "ETC_20150317_009332", "f_flash_64", -1495, 578, -19, 45, "npc_ETC_20150317_009332")
@@ -285,7 +292,7 @@ function npc_ETC_20150317_009332()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_male_01 ----- 
+----- Petrified Grave Robber ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154024, "ETC_20150317_009332", "f_flash_64", -1180, 537, -516, 45, "npc_ETC_20150317_009332")
@@ -293,7 +300,7 @@ function npc_ETC_20150317_009332()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_male_01 ----- 
+----- Petrified Grave Robber ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154024, "ETC_20150317_009332", "f_flash_64", -1236, 587, 539, 45, "npc_ETC_20150317_009332")
@@ -301,7 +308,7 @@ function npc_ETC_20150317_009332()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_male_01 ----- 
+----- Petrified Grave Robber ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154024, "ETC_20150317_009332", "f_flash_64", -910, 587, 534, 45, "npc_ETC_20150317_009332")
@@ -309,7 +316,7 @@ function npc_ETC_20150317_009332()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_soldier_01 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154023, "ETC_20150714_013156", "f_flash_64", 124, 688, -518, -114, "npc_ETC_20150714_013156")
@@ -317,7 +324,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_03_NPC")
 end
 
------ npc_flash_soldier_01 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154023, "ETC_20150714_013156", "f_flash_64", -230, 688, -520, 45, "npc_ETC_20150714_013156")
@@ -325,7 +332,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_03_NPC")
 end
 
------ npc_flash_soldier_01 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154023, "ETC_20150714_013156", "f_flash_64", -347, 688, -441, -11, "npc_ETC_20150714_013156")
@@ -333,7 +340,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_03_NPC")
 end
 
------ npc_flash_soldier_01 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154023, "ETC_20150714_013156", "f_flash_64", -187, 688, -349, 45, "npc_ETC_20150714_013156")
@@ -341,7 +348,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_03_NPC")
 end
 
------ bonfire_1 ----- 
+----- Bonfire ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46011, "ETC_20150317_000359", "f_flash_64", -1181, 565, -354, 45, "npc_ETC_20150317_000359")
@@ -349,7 +356,7 @@ function npc_ETC_20150317_000359()
 msg("FLASH64_SQ_07_NPC")
 end
 
------ bonfire_1 ----- 
+----- Bonfire ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46011, "ETC_20150317_000359", "f_flash_64", -1246, 564, 238, 45, "npc_ETC_20150317_000359")
@@ -357,7 +364,7 @@ function npc_ETC_20150317_000359()
 msg("FLASH64_SQ_07_NPC")
 end
 
------ bonfire_1 ----- 
+----- Bonfire ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46011, "ETC_20150317_000359", "f_flash_64", -1072, 587, 657, 45, "npc_ETC_20150317_000359")
@@ -365,7 +372,7 @@ function npc_ETC_20150317_000359()
 msg("FLASH64_SQ_07_NPC")
 end
 
------ bonfire_1 ----- 
+----- Bonfire ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46011, "ETC_20150317_000359", "f_flash_64", -686, 587, 754, 45, "npc_ETC_20150317_000359")
@@ -373,7 +380,7 @@ function npc_ETC_20150317_000359()
 msg("FLASH64_SQ_07_NPC")
 end
 
------ bonfire_1 ----- 
+----- Bonfire ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46011, "ETC_20150317_000359", "f_flash_64", -1437, 513, -450, 45, "npc_ETC_20150317_000359")
@@ -381,25 +388,25 @@ function npc_ETC_20150317_000359()
 msg("FLASH64_SQ_07_NPC")
 end
 
------ Lemuria ----- 
+----- Petrifying Monster ----- 
 addnpc(47307, "ETC_20150317_009334", "f_flash_64", 1113, 458, 378, 45, "npc_dummy")
 
------ Lemuria ----- 
+----- Petrifying Monster ----- 
 addnpc(47307, "ETC_20150317_009334", "f_flash_64", 976, 458, 557, 45, "npc_dummy")
 
------ Lemuria ----- 
+----- Petrifying Monster ----- 
 addnpc(47307, "ETC_20150317_009334", "f_flash_64", 1365, 458, 749, 45, "npc_dummy")
 
------ Lemuria ----- 
+----- Petrifying Monster ----- 
 addnpc(47307, "ETC_20150317_009334", "f_flash_64", 1483, 458, 664, 45, "npc_dummy")
 
------ Lemuria ----- 
+----- Petrifying Monster ----- 
 addnpc(47307, "ETC_20150317_009334", "f_flash_64", 1461, 458, 519, 45, "npc_dummy")
 
------ Lemuria ----- 
+----- Petrifying Monster ----- 
 addnpc(47307, "ETC_20150317_009334", "f_flash_64", 1164, 458, 661, 45, "npc_dummy")
 
------ npc_flash_soldier_02 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154026, "ETC_20150714_013156", "f_flash_64", -318, 688, -657, 102, "npc_ETC_20150714_013156")
@@ -407,7 +414,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_03_NPC")
 end
 
------ npc_flash_soldier_05 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154029, "ETC_20150714_013156", "f_flash_64", -131, 688, -522, 215, "npc_ETC_20150714_013156")
@@ -415,7 +422,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_03_NPC")
 end
 
------ npc_flash_soldier_02 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154026, "ETC_20150714_013156", "f_flash_64", 13, 688, -387, 45, "npc_ETC_20150714_013156")
@@ -423,7 +430,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_03_NPC")
 end
 
------ npc_flash_soldier_02 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154026, "ETC_20150714_013156", "f_flash_64", -194, 688, -221, 141, "npc_ETC_20150714_013156")
@@ -431,7 +438,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_03_NPC")
 end
 
------ npc_flash_soldier_05 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154029, "ETC_20150714_013156", "f_flash_64", -489, 688, -603, 26, "npc_ETC_20150714_013156")
@@ -439,7 +446,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_03_NPC")
 end
 
------ npc_flash_soldier_05 ----- 
+----- Petrified Soldier ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154029, "ETC_20150714_013156", "f_flash_64", -91, 688, -738, 103, "npc_ETC_20150714_013156")
@@ -447,7 +454,7 @@ function npc_ETC_20150714_013156()
 msg("FLASH64_SQ_03_NPC")
 end
 
------ npc_flash_male_02 ----- 
+----- Petrified Grave Robber ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154030, "ETC_20150317_009332", "f_flash_64", -1137, 565, -106, 215, "npc_ETC_20150317_009332")
@@ -455,7 +462,7 @@ function npc_ETC_20150317_009332()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_male_02 ----- 
+----- Petrified Grave Robber ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154030, "ETC_20150317_009332", "f_flash_64", -1284, 564, 237, 45, "npc_ETC_20150317_009332")
@@ -463,7 +470,7 @@ function npc_ETC_20150317_009332()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_male_02 ----- 
+----- Petrified Grave Robber ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154030, "ETC_20150317_009332", "f_flash_64", -706, 587, 760, 45, "npc_ETC_20150317_009332")
@@ -471,7 +478,7 @@ function npc_ETC_20150317_009332()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_male_02 ----- 
+----- Petrified Grave Robber ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154030, "ETC_20150317_009332", "f_flash_64", -1179, 587, 642, -30, "npc_ETC_20150317_009332")
@@ -479,7 +486,7 @@ function npc_ETC_20150317_009332()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_male_02 ----- 
+----- Petrified Grave Robber ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154030, "ETC_20150317_009332", "f_flash_64", -1529, 513, -517, 45, "npc_ETC_20150317_009332")
@@ -487,7 +494,7 @@ function npc_ETC_20150317_009332()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_male_03 ----- 
+----- Petrified Grave Robber ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154031, "ETC_20150317_009332", "f_flash_64", -1397, 513, -293, -107, "npc_ETC_20150317_009332")
@@ -495,7 +502,7 @@ function npc_ETC_20150317_009332()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_male_03 ----- 
+----- Petrified Grave Robber ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154031, "ETC_20150317_009332", "f_flash_64", -1028, 565, -157, 45, "npc_ETC_20150317_009332")
@@ -503,7 +510,7 @@ function npc_ETC_20150317_009332()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ npc_flash_male_03 ----- 
+----- Petrified Grave Robber ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154031, "ETC_20150317_009332", "f_flash_64", -871, 533, 396, 45, "npc_ETC_20150317_009332")
@@ -511,7 +518,7 @@ function npc_ETC_20150317_009332()
 msg("FLASH64_SQ_06_NPC")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -522,7 +529,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_FLASH_64")
 end
 
------ bonfire_1 ----- 
+----- Bonfire ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46011, "ETC_20150317_000359", "f_flash_64", -1371, 578, 16, 45, "npc_ETC_20150317_000359")
@@ -530,7 +537,7 @@ function npc_ETC_20150317_000359()
 msg("FLASH64_SQ_07_NPC")
 end
 
------ bonfire_1 ----- 
+----- Bonfire ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46011, "ETC_20150317_000359", "f_flash_64", -960, 565, -225, 45, "npc_ETC_20150317_000359")
@@ -538,7 +545,7 @@ function npc_ETC_20150317_000359()
 msg("FLASH64_SQ_07_NPC")
 end
 
------ bonfire_1 ----- 
+----- Bonfire ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46011, "ETC_20150317_000359", "f_flash_64", -1044, 564, 98, 45, "npc_ETC_20150317_000359")
@@ -546,11 +553,32 @@ function npc_ETC_20150317_000359()
 msg("FLASH64_SQ_07_NPC")
 end
 
------ bonfire_1 ----- 
+----- Bonfire ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46011, "ETC_20150317_000359", "f_flash_64", -974, 587, 513, 45, "npc_ETC_20150317_000359")
 function npc_ETC_20150317_000359()
 msg("FLASH64_SQ_07_NPC")
+end
+
+----- Sentry Bailey ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001244", "f_flash_64", -2, 843, 2339, 101, "npc_ETC_20150317_001244")
+function npc_ETC_20150317_001244()
+msg("FLASH64_UNDERFORTRESS65")
+end
+
+----- Ibre Plateau ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009596", "f_flash_64", -374, 843, 2045, 153, "npc_ETC_20150323_009596")
+function npc_ETC_20150323_009596()
+msg("FLASH64_TABLELAND70")
+end
+
+----- Dingofasil District ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011743", "f_flash_64", -1644, 513, -424, 225, "npc_ETC_20150714_011743")
+function npc_ETC_20150714_011743()
+msg("FLASH_64_TO_FLASH_58")
 end
 

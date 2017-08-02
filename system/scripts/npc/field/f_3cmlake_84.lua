@@ -1,4 +1,4 @@
------ npc_oldman_1 ----- 
+----- Elder Eloizard ----- 
 ----- npcselectdialog.ies | ClassName: 3CMLAKE_84_OLDMAN -----
 ----- Dialog -----
 ----- QuestIDs: F_3CMLAKE_83_MQ_05 | F_3CMLAKE_84_MQ_01 | F_3CMLAKE_84_MQ_02 | F_3CMLAKE_84_MQ_03 | F_3CMLAKE_84_MQ_06 | F_3CMLAKE_83_MQ_06 -----
@@ -38,7 +38,7 @@ msg("3CMLAKE_83_OLDMAN1_basic03")
 msg("3CMLAKE_83_OLDMAN1_basic04")
 end
 
------ npc_sout_hunter ----- 
+----- Hunter Modis ----- 
 ----- npcselectdialog.ies | ClassName: 3CMLAKE_84_HUNTER -----
 ----- Dialog -----
 ----- QuestIDs: F_3CMLAKE_84_MQ_03 | F_3CMLAKE_84_MQ_04 | F_3CMLAKE_84_MQ_05 | F_3CMLAKE_84_MQ_02 | F_3CMLAKE_84_MQ_06 | F_3CMLAKE_84_SQ_01 -----
@@ -68,7 +68,7 @@ msg("3CMLAKE_84_HUNTER2_basic04")
 msg("3CMLAKE_84_HUNTER2_basic05")
 end
 
------ npc_village_male_a1 ----- 
+----- Lanaldas ----- 
 ----- npcselectdialog.ies | ClassName: 3CMLAKE_84_PEOPLE1 -----
 ----- Dialog -----
 ----- QuestIDs: F_3CMLAKE_84_SQ_02 | F_3CMLAKE_84_SQ_03 -----
@@ -85,7 +85,14 @@ msg("3CMLAKE_84_SQ_02_AG")
 msg("3CMLAKE_84_PEOPLE1_CLEAR")
 end
 
------ treasure_box4 ----- 
+----- Pelke Shrine Ruins ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016509", "f_3cmlake_84", 1094, 265, -927, 39, "npc_ETC_20151102_016509")
+function npc_ETC_20151102_016509()
+msg("3CMLAKE_84_TO_3CMLAKE_83")
+end
+
+----- Lv4 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(147394, "ETC_20150714_013115", "f_3cmlake_84", -406, 261, -1097, 45, "npc_ETC_20150714_013115")
@@ -94,7 +101,21 @@ msg("ORCHARD_32_4_FLAMINGO_TRACK_BOX")
 msg("TREASUREBOX_LV")
 end
 
------ treasure_box1 ----- 
+----- Sienakal Graveyard ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150730_014033", "f_3cmlake_84", -1305, 292, 1659, 134, "npc_ETC_20150730_014033")
+function npc_ETC_20150730_014033()
+msg("3CMLAKE_84_CATACOMB_33_1")
+end
+
+----- Delmore Hamlet ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_017822", "f_3cmlake_84", -1960, 274, -379, 225, "npc_ETC_20151224_017822")
+function npc_ETC_20151224_017822()
+msg("3CMLAKE84_TO_CASTLE651")
+end
+
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_3cmlake_84", 808, 273, -339, 225, "npc_ETC_20150317_009100")

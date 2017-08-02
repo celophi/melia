@@ -1,4 +1,4 @@
------ npc_village_uncle_2 ----- 
+----- Coben ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS_40_DRUNK_01 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS40_MQ_01 | REMAINS40_MQ_02 | REMAINS40_MQ_03 -----
@@ -40,7 +40,7 @@ msg("PARTY_Q_081_startnpc_prog01")
 msg("FEDIMIAN_POTTERY_08")
 end
 
------ npc_village_female ----- 
+----- Tara Miles ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS_40_TARA_01 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS40_SQ_03 -----
@@ -60,7 +60,7 @@ msg("REMAINS_40_TARA_01_BASIC01")
 msg("REMAINS_40_TARA_02_BASIC02")
 end
 
------ npc_village_uncle_10 ----- 
+----- Stonemason Canolyn ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS_40_CANOLIN_01 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS40_SQ_01 | REMAINS40_SQ_02 | REMAINS40_RP_1 -----
@@ -80,14 +80,30 @@ msg("REMAINS40_RP_1_2")
 msg("REMAINS40_RP_1_3")
 end
 
------ whorfzone ----- 
+----- Escanciu Village ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009580", "f_remains_40", 111, 304, -2598, 0, "npc_ETC_20150323_009580")
+function npc_ETC_20150323_009580()
+msg("WS_REMAINS40_TO_REMAINS39")
+end
+
+----- Fedimian ----- 
+----- Enter -----
+----- QuestIDs: ZACHA_TO_FEDIMIAN -----
+addnpc(40001, "QUEST_LV_0100_20150317_006373", "f_remains_40", -2393, 315, -1377, 160, "npc_QUEST_LV_0100_20150317_006373")
+function npc_QUEST_LV_0100_20150317_006373()
+msg("GM_QUEST_MODIFY_PC_SEL")
+msg("GM_NPC_HIDE_UNHIDE")
+end
+
+----- Mage Tower 1F ----- 
 ----- Enter -----
 addnpc(147500, "ETC_20150317_001211", "f_remains_40", 3541, 645, 2726, 45, "npc_ETC_20150317_001211")
 function npc_ETC_20150317_001211()
 msg("WS_REMAINS40_TO_FIRETOWER41")
 end
 
------ stone_monument2 ----- 
+----- Forgotten Thief's Monument ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS_40_MQ_02 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS40_MQ_02 -----
@@ -105,7 +121,7 @@ msg("REMAINS_40_MQ_05_BASIC01")
 msg("REMAINS_40_MQ_06_BASIC01")
 end
 
------ stone_monument2 ----- 
+----- Forgotten Thief's Monument ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS_40_MQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS40_MQ_03 -----
@@ -123,7 +139,7 @@ msg("REMAINS_40_MQ_05_BASIC01")
 msg("REMAINS_40_MQ_06_BASIC01")
 end
 
------ stone_monument2 ----- 
+----- Forgotten Thief's Monument ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS_40_MQ_04 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS40_MQ_04 -----
@@ -141,7 +157,7 @@ msg("REMAINS_40_MQ_05_BASIC01")
 msg("REMAINS_40_MQ_06_BASIC01")
 end
 
------ stone_monument2 ----- 
+----- Forgotten Thief's Monument ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS_40_MQ_05 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS40_MQ_05 -----
@@ -159,7 +175,7 @@ msg("REMAINS_40_MQ_05_BASIC01")
 msg("REMAINS_40_MQ_06_BASIC01")
 end
 
------ stone_monument2 ----- 
+----- Forgotten Thief's Monument ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS_40_MQ_06 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS40_MQ_06 -----
@@ -177,7 +193,7 @@ msg("REMAINS_40_MQ_05_BASIC01")
 msg("REMAINS_40_MQ_06_BASIC01")
 end
 
------ stone_monument2 ----- 
+----- Commanding Monument ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS_40_MQ_07 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS40_MQ_07 -----
@@ -187,7 +203,7 @@ msg("REMAINS40_MQ_07_04")
 msg("REMAINS_40_MQ_07_BASIC01")
 end
 
------ npc_village_female ----- 
+----- Tara Miles ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS_40_TARA_02 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS40_SQ_04 | REMAINS40_SQ_05 -----
@@ -207,7 +223,7 @@ msg("REMAINS_40_TARA_01_BASIC01")
 msg("REMAINS_40_TARA_02_BASIC02")
 end
 
------ npc_village_uncle_2 ----- 
+----- Coben ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS_40_DRUNK_02 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS40_MQ_04 | REMAINS40_MQ_05 | REMAINS40_MQ_06 -----
@@ -217,7 +233,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_village_uncle_2 ----- 
+----- Coben ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS_40_DRUNK_03 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS40_MQ_07 | REMAINS_40_HQ_01 | PARTY_Q_080 | PARTY_Q_081 -----
@@ -259,7 +275,7 @@ msg("PARTY_Q_081_startnpc_prog01")
 msg("FEDIMIAN_POTTERY_08")
 end
 
------ Box1 ----- 
+----- Old Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009434", "f_remains_40", -1716, 340, -800, 134, "npc_ETC_20150317_009434")
@@ -267,7 +283,7 @@ function npc_ETC_20150317_009434()
 msg("REMAINS_40_MQ_01")
 end
 
------ Box1 ----- 
+----- Old Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009434", "f_remains_40", -1723, 340, -590, 134, "npc_ETC_20150317_009434")
@@ -275,7 +291,7 @@ function npc_ETC_20150317_009434()
 msg("REMAINS_40_MQ_01")
 end
 
------ Box1 ----- 
+----- Old Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009434", "f_remains_40", -1719, 340, -482, 134, "npc_ETC_20150317_009434")
@@ -283,7 +299,7 @@ function npc_ETC_20150317_009434()
 msg("REMAINS_40_MQ_01")
 end
 
------ Box1 ----- 
+----- Old Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009434", "f_remains_40", -1414, 340, -517, 134, "npc_ETC_20150317_009434")
@@ -291,7 +307,7 @@ function npc_ETC_20150317_009434()
 msg("REMAINS_40_MQ_01")
 end
 
------ Box1 ----- 
+----- Old Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009434", "f_remains_40", -1415, 303, -1087, 134, "npc_ETC_20150317_009434")
@@ -299,7 +315,7 @@ function npc_ETC_20150317_009434()
 msg("REMAINS_40_MQ_01")
 end
 
------ Box1 ----- 
+----- Old Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009434", "f_remains_40", -1288, 303, -924, 134, "npc_ETC_20150317_009434")
@@ -307,7 +323,7 @@ function npc_ETC_20150317_009434()
 msg("REMAINS_40_MQ_01")
 end
 
------ Box1 ----- 
+----- Old Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009434", "f_remains_40", -1495, 340, -577, 134, "npc_ETC_20150317_009434")
@@ -315,7 +331,7 @@ function npc_ETC_20150317_009434()
 msg("REMAINS_40_MQ_01")
 end
 
------ Box1 ----- 
+----- Old Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009434", "f_remains_40", -1042, 340, -768, 134, "npc_ETC_20150317_009434")
@@ -323,7 +339,7 @@ function npc_ETC_20150317_009434()
 msg("REMAINS_40_MQ_01")
 end
 
------ Box1 ----- 
+----- Old Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009434", "f_remains_40", -2036, 368, -55, 134, "npc_ETC_20150317_009434")
@@ -331,7 +347,7 @@ function npc_ETC_20150317_009434()
 msg("REMAINS_40_MQ_01")
 end
 
------ Box1 ----- 
+----- Old Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46212, "ETC_20150317_009434", "f_remains_40", -1847, 368, -164, 134, "npc_ETC_20150317_009434")
@@ -339,7 +355,7 @@ function npc_ETC_20150317_009434()
 msg("REMAINS_40_MQ_01")
 end
 
------ npc_grita ----- 
+----- Grita ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS40_GRITA -----
 ----- Dialog -----
 ----- QuestIDs: TO_THE_TOWER_01 | TO_THE_TOWER_02 -----
@@ -349,7 +365,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ TreasureBox1 ----- 
+----- Secret Box ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS_40_HQ_01_TB -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS_40_HQ_01 -----
@@ -359,7 +375,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Board2 ----- 
+----- Notice ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40080, "QUEST_20150317_000344", "f_remains_40", -2413, 315, -1453, 61, "npc_QUEST_20150317_000344")
@@ -367,7 +383,7 @@ function npc_QUEST_20150317_000344()
 msg("REMAINS40_BOARD01_BASIC01")
 end
 
------ Treasure_box_green ----- 
+----- Zubeck's Box ----- 
 ----- npcselectdialog.ies | ClassName: TRESURE01_BOX -----
 ----- Dialog -----
 ----- QuestIDs: PARTY_Q_081 -----
@@ -377,7 +393,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Treasure_box_green ----- 
+----- Zubeck's Box ----- 
 ----- npcselectdialog.ies | ClassName: TRESURE01_BOX -----
 ----- Dialog -----
 ----- QuestIDs: PARTY_Q_081 -----
@@ -387,7 +403,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Treasure_box_green ----- 
+----- Zubeck's Box ----- 
 ----- npcselectdialog.ies | ClassName: TRESURE01_BOX -----
 ----- Dialog -----
 ----- QuestIDs: PARTY_Q_081 -----
@@ -397,7 +413,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Treasure_box_green ----- 
+----- Zubeck's Box ----- 
 ----- npcselectdialog.ies | ClassName: TRESURE01_BOX -----
 ----- Dialog -----
 ----- QuestIDs: PARTY_Q_081 -----
@@ -407,7 +423,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ id_gate_npc ----- 
+----- Archmage Tower Dungeon Notice Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154046, "ETC_20150918_014662", "f_remains_40", 3385, 646, 2902, -66, "npc_ETC_20150918_014662")
@@ -415,7 +431,7 @@ function npc_ETC_20150918_014662()
 msg("INSTANCE_DUNGEON_FIRETOWER_02")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_remains_40", -1601, 315, -3955, 45, "npc_ETC_20150317_009100")
@@ -423,7 +439,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ id_gate_npc ----- 
+----- Monument of Desire Dungeon ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154046, "ETC_20151224_017833", "f_remains_40", 3120, 646, 2675, 45, "npc_ETC_20151224_017833")
@@ -431,7 +447,7 @@ function npc_ETC_20151224_017833()
 msg("INSTANCE_DUNGEON_REMAINS3_10")
 end
 
------ npc_friar_02 ----- 
+----- Judge Rymis ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_25_4_LAIMIS -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_25_4_SQ_90 | CATACOMB_25_4_SQ_100 | CATACOMB_25_4_SQ_110 -----

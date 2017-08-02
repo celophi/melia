@@ -1,4 +1,25 @@
------ npc_pilgrim_m_1 ----- 
+----- Grynas Trails ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009611", "f_pilgrimroad_41_1", 1347, -69, -118, -31, "npc_ETC_20150323_009611")
+function npc_ETC_20150323_009611()
+msg("PILGRIM41_1_KATYN45_1")
+end
+
+----- Nefritas Cliff ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009560", "f_pilgrimroad_41_1", -1204, 61, -1056, 225, "npc_ETC_20150323_009560")
+function npc_ETC_20150323_009560()
+msg("PILGRIM41_1_GELE57_3")
+end
+
+----- Salvia Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016504", "f_pilgrimroad_41_1", 1291, -69, 888, 45, "npc_ETC_20151102_016504")
+function npc_ETC_20151102_016504()
+msg("PILGRIM41_1_PILGRIM41_2")
+end
+
+----- Outsider Mark ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM411_SQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_1_SQ01 -----
@@ -12,7 +33,7 @@ msg("PILGRIM411_SQ_01_prog")
 msg("PILGRIM411_SQ_01_succ")
 end
 
------ npc_pilgrim_f_3 ----- 
+----- Pilgrim Phylia ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM411_SQ_02 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_1_SQ02 -----
@@ -26,7 +47,7 @@ msg("PILGRIM411_SQ_02_prog")
 msg("PILGRIM411_SQ_02_succ")
 end
 
------ npc_pilgrim_old ----- 
+----- Pilgrim Jacob ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM411_SQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_1_SQ03 | PILGRIM41_1_SQ04 | PILGRIM41_1_SQ05 -----
@@ -60,7 +81,7 @@ msg("PILGRIM411_SQ_10_prog1")
 msg("PILGRIM411_SQ_10_succ")
 end
 
------ npc_pilgrim_m_4 ----- 
+----- Pilgrim Brad ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM411_SQ_06 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_1_SQ06 | PILGRIM41_1_SQ07 -----
@@ -79,7 +100,7 @@ msg("PILGRIM411_SQ_09_prog2")
 msg("PILGRIM411_SQ_09_prog5")
 end
 
------ npc_pilgrim_f_1 ----- 
+----- Pilgrim Angela ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM411_SQ_07 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_1_SQ07 -----
@@ -96,7 +117,7 @@ msg("PILGRIM411_SQ_07_succ")
 msg("PILGRIM411_SQ_09_prog3")
 end
 
------ npc_friar_down03 ----- 
+----- Monk Ethan ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM411_SQ_09 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_1_SQ09 -----
@@ -109,7 +130,7 @@ msg("PILGRIM411_SQ_09_prog7")
 msg("PILGRIM411_SQ_10_prog2")
 end
 
------ npc_pilgrim_old ----- 
+----- Pilgrim Jacob ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM411_SQ_08 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM41_1_SQ05 | PILGRIM41_1_SQ08 | PILGRIM41_1_SQ10 | PILGRIM41_1_SQ09 -----

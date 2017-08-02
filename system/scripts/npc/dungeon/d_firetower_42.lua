@@ -1,11 +1,18 @@
------ whorfzone ----- 
+----- Mage Tower 1F ----- 
 ----- Enter -----
 addnpc(147500, "ETC_20150317_001211", "d_firetower_42", 2547, 72, -125, 45, "npc_ETC_20150317_001211")
 function npc_ETC_20150317_001211()
 msg("FIRETOWER42_TO_FIRETOWER41")
 end
 
------ npc_grita ----- 
+----- Mage Tower 3F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001214", "d_firetower_42", -933, 2, -2391, 50, "npc_ETC_20150317_001214")
+function npc_ETC_20150317_001214()
+msg("FIRETOWER42_TO_FIRETOWER43")
+end
+
+----- Grita ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER42_GRITA_01 -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER42_MQ_01 -----
@@ -101,7 +108,7 @@ msg("FTOWER44_GRITA_01_basic02")
 msg("FEDIMIAN_GRITA_BASIC02")
 end
 
------ Firetower_Offense ----- 
+----- Flame Fusion Machine ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER42_MQ_05 -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER42_MQ_05 | FTOWER42_SQ_06 -----
@@ -111,7 +118,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ ftower_sealstorn ----- 
+----- Sealed Stone ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER42_SQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER42_SQ_01 -----
@@ -121,7 +128,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ ftower_sealstorn ----- 
+----- Sealed Stone ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER42_SQ_02 -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER42_SQ_02 | FTOWER42_SQ_03 -----
@@ -131,7 +138,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ ftower_sealstorn ----- 
+----- Sealed Stone ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER42_SQ_04 -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER42_SQ_03 | FTOWER42_SQ_04 -----
@@ -141,7 +148,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ ftower_sealstorn ----- 
+----- Sealed Stone ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER42_SQ_05 -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER42_SQ_05 -----
@@ -151,7 +158,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ BOOK_01 ----- 
+----- Psychokino Tome Volume 2 ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147311, "QUEST_20151102_002924", "d_firetower_42", 952, 71, 331, 45, "npc_QUEST_20151102_002924")
@@ -159,7 +166,7 @@ function npc_QUEST_20151102_002924()
 msg("JOB_2_PSYCHOKINO_5_1_BOOK_2")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_firetower_42", 2067, 21, -594, 45, "npc_ETC_20150317_009100")

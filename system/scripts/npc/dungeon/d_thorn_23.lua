@@ -1,4 +1,46 @@
------ soldier1 ----- 
+----- Dvasia Peak ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009573", "d_thorn_23", -2159, 1137, -2969, 207.9, "npc_ETC_20150323_009573")
+function npc_ETC_20150323_009573()
+msg("THORN23_THORN22")
+end
+
+----- Gateway of the Great King ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001187", "d_thorn_23", 2420, 289, 2163, 118, "npc_ETC_20150317_001187")
+function npc_ETC_20150317_001187()
+msg("THORN23_ROKAS24")
+end
+
+----- Sunset Flag Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001186", "d_thorn_23", -1528, 1041, -1792, 170, "npc_ETC_20150317_001186")
+function npc_ETC_20150317_001186()
+msg("THORN23_1_THORN23_2")
+end
+
+----- Sunset Flag Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001186", "d_thorn_23", -1631, 1026, -1637, -20, "npc_ETC_20150317_001186")
+function npc_ETC_20150317_001186()
+msg("THORN23_2_THORN23_1")
+end
+
+----- Sunset Flag Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001186", "d_thorn_23", 2295, 384, 937, 99, "npc_ETC_20150317_001186")
+function npc_ETC_20150317_001186()
+msg("THORN23_2_THORN23_3")
+end
+
+----- Sunset Flag Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001186", "d_thorn_23", 2581, 384, 1036, -128, "npc_ETC_20150317_001186")
+function npc_ETC_20150317_001186()
+msg("THORN23_3_THORN23_2")
+end
+
+----- Soldier Alan ----- 
 ----- npcselectdialog.ies | ClassName: THORN23_ALAN -----
 ----- Dialog -----
 ----- QuestIDs: THORN23_Q_4 | THORN23_Q_6 -----
@@ -13,7 +55,7 @@ msg("THORN23_Q_6_startnpc01")
 msg("THORN23_ALAN_basic1")
 end
 
------ npc_intermediate_officer_men ----- 
+----- Commander Wallace ----- 
 ----- npcselectdialog.ies | ClassName: THORN23_WALLACE -----
 ----- Dialog -----
 ----- QuestIDs: THORN23_Q_6 | THORN23_Q_10 | THORN23_Q_12 -----
@@ -30,7 +72,7 @@ msg("THORN23_Q_12_succ1")
 msg("THORN23_WALLACE_basic1")
 end
 
------ soldier3 ----- 
+----- Soldier Weiz ----- 
 ----- npcselectdialog.ies | ClassName: THORN23_WISE -----
 ----- Dialog -----
 ----- QuestIDs: THORN23_Q_11 | THORN23_Q_13 -----
@@ -44,7 +86,7 @@ msg("THORN23_Q_13_prog1_startnpc")
 msg("THORN23_WISE_basic1")
 end
 
------ f_katyn_owl04 ----- 
+----- Old Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: THORN23_OWL2 -----
 ----- Dialog -----
 ----- QuestIDs: THORN23_Q_15 | THORN23_Q_16 -----
@@ -62,7 +104,7 @@ msg("THORN23_OWL2_basic1")
 msg("THORN23_OWL2_after1")
 end
 
------ f_katyn_owl01 ----- 
+----- Worrying Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: THORN23_OWL3 -----
 ----- Dialog -----
 ----- QuestIDs: THORN_TO_PILGRIM | THORN23_Q_17 -----
@@ -78,7 +120,7 @@ msg("THORN23_OWL3_basic2")
 msg("THORN23_OWL3_after1")
 end
 
------ f_katyn_owl02_Q ----- 
+----- Sleeping Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153036, "QUEST_20150317_000528", "d_thorn_23", 1346, 514, 164, -50.78, "npc_QUEST_20150317_000528")
@@ -86,7 +128,7 @@ function npc_QUEST_20150317_000528()
 msg("THORN23_OWL4_basic01")
 end
 
------ f_katyn_owl03_Q ----- 
+----- Sleeping Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153037, "QUEST_20150317_000528", "d_thorn_23", 1429, 516, -119, -50.78, "npc_QUEST_20150317_000528")
@@ -94,7 +136,7 @@ function npc_QUEST_20150317_000528()
 msg("THORN23_OWL5_basic01")
 end
 
------ f_katyn_owl04_Q ----- 
+----- Sleeping Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName: THORN23_OWL6 -----
 ----- Dialog -----
 addnpc(153038, "QUEST_20150317_000528", "d_thorn_23", 1030, 516, 39, -29, "npc_QUEST_20150317_000528")
@@ -103,7 +145,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ soldier_article_1 ----- 
+----- Tomb ----- 
 ----- npcselectdialog.ies | ClassName: THORN23_Q_7_TRIGGER -----
 ----- Dialog -----
 ----- QuestIDs: THORN23_Q_7 -----
@@ -113,7 +155,14 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Kvailas Forest ----- 
+----- Enter -----
+addnpc(40001, "QUEST_LV_0100_20150323_006602", "d_thorn_23", -588, 544, 899, 135, "npc_QUEST_LV_0100_20150323_006602")
+function npc_QUEST_LV_0100_20150323_006602()
+msg("THORN23_THORN21")
+end
+
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_thorn_23", -1370, 1042, -1848, 45, "npc_ETC_20150317_009100")

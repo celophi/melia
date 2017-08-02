@@ -1,4 +1,18 @@
------ npc_mardas ----- 
+----- Dadan Jungle ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016525", "f_katyn_10", 4560, 74, -1508, 45, "npc_ETC_20151102_016525")
+function npc_ETC_20151102_016525()
+msg("KATYN_10_BRACKEN_63_3")
+end
+
+----- Letas Stream ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009622", "f_katyn_10", -2196, 244, 467, 225, "npc_ETC_20150323_009622")
+function npc_ETC_20150323_009622()
+msg("KATYN_10_KATYN_12")
+end
+
+----- Liaison Officer Mardas ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_10_NPC_01 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_10_MQ_01 | KATYN_10_MQ_02 -----
@@ -34,7 +48,7 @@ msg("KATYN_10_NPC_01_AFTER_basic01")
 msg("KATYN_10_MQ_10_succ2")
 end
 
------ npc_wizdom_owl ----- 
+----- Owl Chief Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_10_NPC_02 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_10_MQ_04 | KATYN_10_MQ_07 | KATYN_10_MQ_08 | KATYN_10_MQ_09 | KATYN_10_MQ_10 | KATYN_10_MQ_03 | KATYN_10_MQ_06 | KATYN_10_MQ_11 -----
@@ -68,7 +82,7 @@ msg("KATYN_10_NPC_02_basic05")
 msg("KATYN_10_NPC_02_basic06")
 end
 
------ f_katyn_owl01 ----- 
+----- Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_10_NPC_03_1 -----
 ----- Dialog -----
 addnpc(12081, "ETC_20150317_000345", "f_katyn_10", 2726, 74, -1028, -45, "npc_ETC_20150317_000345")
@@ -89,7 +103,7 @@ msg("KATYN_10_MQ_08_basic07")
 msg("KATYN_10_MQ_08_basic08")
 end
 
------ f_katyn_owl02 ----- 
+----- Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_10_NPC_03_2 -----
 ----- Dialog -----
 addnpc(48002, "ETC_20150317_000345", "f_katyn_10", 2763, 135, -819, -45, "npc_ETC_20150317_000345")
@@ -110,7 +124,7 @@ msg("KATYN_10_MQ_08_basic07")
 msg("KATYN_10_MQ_08_basic08")
 end
 
------ f_katyn_owl03 ----- 
+----- Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_10_NPC_03_3 -----
 ----- Dialog -----
 addnpc(48003, "ETC_20150317_000345", "f_katyn_10", 3518, 135, -299, -45, "npc_ETC_20150317_000345")
@@ -131,7 +145,7 @@ msg("KATYN_10_MQ_08_basic07")
 msg("KATYN_10_MQ_08_basic08")
 end
 
------ f_katyn_owl04 ----- 
+----- Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_10_NPC_03_4 -----
 ----- Dialog -----
 addnpc(48004, "ETC_20150317_000345", "f_katyn_10", 3073, 135, 294, -45, "npc_ETC_20150317_000345")
@@ -152,7 +166,7 @@ msg("KATYN_10_MQ_08_basic07")
 msg("KATYN_10_MQ_08_basic08")
 end
 
------ f_katyn_owl02 ----- 
+----- Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_10_NPC_03_5 -----
 ----- Dialog -----
 addnpc(48002, "ETC_20150317_000345", "f_katyn_10", 2307, 135, 163, -45, "npc_ETC_20150317_000345")
@@ -173,7 +187,7 @@ msg("KATYN_10_MQ_08_basic07")
 msg("KATYN_10_MQ_08_basic08")
 end
 
------ f_katyn_owl03 ----- 
+----- Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_10_NPC_03_6 -----
 ----- Dialog -----
 addnpc(48003, "ETC_20150317_000345", "f_katyn_10", 1979, 201, 270, -45, "npc_ETC_20150317_000345")
@@ -194,7 +208,7 @@ msg("KATYN_10_MQ_08_basic07")
 msg("KATYN_10_MQ_08_basic08")
 end
 
------ Altar1 ----- 
+----- Karolis Altar ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_10_OBJ_01 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: KATYN_10_MQ_06 | KATYN_10_MQ_06 -----
@@ -205,7 +219,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ noshadow_npc ----- 
+----- Karolis' Light ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20151016_015909", "f_katyn_10", 1261, 201, -566, 45, "npc_ETC_20151016_015909")
@@ -213,7 +227,7 @@ function npc_ETC_20151016_015909()
 msg("KATYN_10_OBJ_02_1")
 end
 
------ noshadow_npc ----- 
+----- Karolis' Light ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20151016_015909", "f_katyn_10", 1276, 201, -431, 45, "npc_ETC_20151016_015909")
@@ -221,7 +235,7 @@ function npc_ETC_20151016_015909()
 msg("KATYN_10_OBJ_02_2")
 end
 
------ noshadow_npc ----- 
+----- Karolis' Light ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20151016_015909", "f_katyn_10", 1412, 201, -428, 45, "npc_ETC_20151016_015909")
@@ -229,7 +243,7 @@ function npc_ETC_20151016_015909()
 msg("KATYN_10_OBJ_02_3")
 end
 
------ noshadow_npc ----- 
+----- Karolis' Light ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20151016_015909", "f_katyn_10", 1403, 201, -572, 45, "npc_ETC_20151016_015909")
@@ -237,7 +251,7 @@ function npc_ETC_20151016_015909()
 msg("KATYN_10_OBJ_02_4")
 end
 
------ npc_Obelisk ----- 
+----- Mind Control Tower ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_10_OBJ_03 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_10_MQ_09 -----
@@ -247,14 +261,14 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_Obelisk_broken ----- 
+----- Mind Control Tower ----- 
 ----- Enter -----
 addnpc(147501, "ETC_20151224_019950", "f_katyn_10", 1232, 201, 450, -45, "npc_ETC_20151224_019950")
 function npc_ETC_20151224_019950()
 msg("KATYN_10_OBJ_03_AFTER")
 end
 
------ npc_mardas ----- 
+----- Liaison Officer Mardas ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_10_NPC_01_AFTER -----
 ----- Dialog -----
 addnpc(151077, "ETC_20151016_015906", "f_katyn_10", 2025, 201, -535, 225, "npc_ETC_20151016_015906")
@@ -289,7 +303,7 @@ msg("KATYN_10_NPC_01_AFTER_basic01")
 msg("KATYN_10_MQ_10_succ2")
 end
 
------ treasure_box1 ----- 
+----- 3cm lake 83 ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_10_SQ_NPC_01 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_10_SQ_01 -----
@@ -299,7 +313,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_katyn_10", -969, 165, -605, 45, "npc_ETC_20150317_009100")
@@ -307,7 +321,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ f_katyn_owl04 ----- 
+----- Gloomy Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN10_RP_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: KATYN10_RP_1 -----

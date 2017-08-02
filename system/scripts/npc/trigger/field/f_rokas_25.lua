@@ -1,4 +1,4 @@
------ HiddenTrigger2 ----- 
+----- Bramble ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_REXIPHER2_MBOSS -----
 ----- Enter | Dialog -----
 ----- QuestIDs: ROKAS25_REXIPHER2 -----

@@ -1,4 +1,26 @@
------ npc_rokas_2 ----- 
+----- Gateway of the Great King ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001187", "f_rokas_25", -2368, 268, -1192, -94, "npc_ETC_20150317_001187")
+function npc_ETC_20150317_001187()
+msg("ROKAS25_ROKAS24")
+end
+
+----- Overlong Bridge Valley ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001190", "f_rokas_25", 2769, 71, -1105, 45, "npc_ETC_20150317_001190")
+function npc_ETC_20150317_001190()
+msg("ROKAS25_ROKAS26")
+end
+
+----- Sanctum ----- 
+----- Enter -----
+addnpc(40001, "QUEST_LV_0200_20150317_000568", "f_rokas_25", 2049, 164, -286, 165, "npc_QUEST_LV_0200_20150317_000568")
+function npc_QUEST_LV_0200_20150317_000568()
+msg("GM_QUEST_MODIFY_PC_SEL")
+msg("GM_NPC_HIDE_UNHIDE")
+end
+
+----- Sanctum's First Seal ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_SWITCH1 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: ROKAS25_REXIPHER1_SEAL1 | ROKAS25_REXIPHER1_SEAL1 -----
@@ -9,7 +31,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_village_uncle_2 ----- 
+----- 1st Disciple of Gustas ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_REXIPHER2 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS25_REXIPHER1 -----
@@ -27,7 +49,7 @@ msg("ROKAS25_REXIPHER1_SUCCPR")
 msg("ROKAS25_REXIPHER4_AC")
 end
 
------ npc_village_uncle_4 ----- 
+----- 2nd Disciple of Gustas ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_REXIPHER3 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS25_REXIPHER4 | ROKAS25_REXIPHER1 -----
@@ -45,7 +67,7 @@ msg("ROKAS25_REXIPHER1_SUCCPR")
 msg("ROKAS25_REXIPHER4_AC")
 end
 
------ npc_rokas_2 ----- 
+----- Sanctum's Second Seal ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_SWITCH3 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: ROKAS25_REXIPHER4_SEAL1 | ROKAS25_REXIPHER4_SEAL1 -----
@@ -56,7 +78,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_village_uncle_1 ----- 
+----- Mercenary Toby ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_SUB1 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS25_EX1 | ROKAS25_EX2 -----
@@ -73,7 +95,7 @@ msg("ROKAS25_SUB1_basic1")
 msg("ROKAS25_SUB1_after1")
 end
 
------ npc_rokas_2 ----- 
+----- Device ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_SWITCH4 -----
 ----- Enter | Dialog -----
 addnpc(47102, "ETC_20150317_009447", "f_rokas_25", 2096, 189, 393, 8, "npc_ETC_20150317_009447")
@@ -83,7 +105,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_2 ----- 
+----- Sanctum's Third Seal ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_SWITCH5 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS25_REXIPHER6_SEAL1 -----
@@ -93,7 +115,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_2 ----- 
+----- Device ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_SWITCH6 -----
 ----- Dialog -----
 addnpc(47102, "ETC_20150317_009447", "f_rokas_25", 2513, 71, -1065, 8, "npc_ETC_20150317_009447")
@@ -102,7 +124,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Grill ----- 
+----- Molding Pot ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40064, "ETC_20150317_005289", "f_rokas_25", 205, 268, 805, -66, "npc_ETC_20150317_005289")
@@ -110,7 +132,7 @@ function npc_ETC_20150317_005289()
 msg("ROKAS25_CALDRON1")
 end
 
------ npc_miner2 ----- 
+----- Kevin ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_KEBIN -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS25_SQ_01 | ROKAS25_SQ_02 -----
@@ -128,7 +150,7 @@ msg("ROKAS25_KEBIN_BASIC")
 msg("FEDIMIAN_POTTERY_09")
 end
 
------ npc_village_uncle_3 ----- 
+----- Vincent ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_BINSENT -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS25_SQ_04 | ROKAS25_SQ_BRIDGE2 -----
@@ -142,7 +164,7 @@ msg("ROKAS25_BINSENT_BASIC_01")
 msg("ROKAS25_BINSENT_BASIC_02")
 end
 
------ npc_village_uncle_4 ----- 
+----- Sculptor Hilda ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_HILDA1 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS25_SQ_06 -----
@@ -160,7 +182,7 @@ msg("ROKAS25_SQ_08_select_01")
 msg("ROKAS25_SQ_08_succ_01")
 end
 
------ npc_village_uncle_4 ----- 
+----- Sculptor Hilda ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_HILDA2 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS25_SQ_07 -----
@@ -178,7 +200,7 @@ msg("ROKAS25_SQ_08_select_01")
 msg("ROKAS25_SQ_08_succ_01")
 end
 
------ npc_village_uncle_4 ----- 
+----- Sculptor Hilda ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_HILDA3 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS25_SQ_08 -----
@@ -196,7 +218,7 @@ msg("ROKAS25_SQ_08_select_01")
 msg("ROKAS25_SQ_08_succ_01")
 end
 
------ Grill ----- 
+----- Molding Pot ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40064, "ETC_20150317_005289", "f_rokas_25", 249, 268, 800, -35, "npc_ETC_20150317_005289")
@@ -204,7 +226,7 @@ function npc_ETC_20150317_005289()
 msg("ROKAS25_CALDRON2")
 end
 
------ pedlar_lose_1 ----- 
+----- Abandoned Graverobbing Equipment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20150317_009448", "f_rokas_25", -1966, 268, -1105, 45, "npc_ETC_20150317_009448")
@@ -212,7 +234,7 @@ function npc_ETC_20150317_009448()
 msg("ROKAS25_EX2_STRUCTURE")
 end
 
------ pedlar_lose_1 ----- 
+----- Abandoned Graverobbing Equipment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20150317_009448", "f_rokas_25", -2161, 268, -1273, 45, "npc_ETC_20150317_009448")
@@ -220,7 +242,7 @@ function npc_ETC_20150317_009448()
 msg("ROKAS25_EX2_STRUCTURE")
 end
 
------ pedlar_lose_1 ----- 
+----- Abandoned Graverobbing Equipment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20150317_009448", "f_rokas_25", -1939, 268, -712, 45, "npc_ETC_20150317_009448")
@@ -228,7 +250,7 @@ function npc_ETC_20150317_009448()
 msg("ROKAS25_EX2_STRUCTURE")
 end
 
------ pedlar_lose_1 ----- 
+----- Abandoned Graverobbing Equipment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20150317_009448", "f_rokas_25", -2404, 268, -1053, 45, "npc_ETC_20150317_009448")
@@ -236,7 +258,7 @@ function npc_ETC_20150317_009448()
 msg("ROKAS25_EX2_STRUCTURE")
 end
 
------ pedlar_lose_1 ----- 
+----- Abandoned Graverobbing Equipment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20150317_009448", "f_rokas_25", -2469, 268, -676, 45, "npc_ETC_20150317_009448")
@@ -244,7 +266,7 @@ function npc_ETC_20150317_009448()
 msg("ROKAS25_EX2_STRUCTURE")
 end
 
------ pedlar_lose_1 ----- 
+----- Abandoned Graverobbing Equipment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20150317_009448", "f_rokas_25", -2320, 268, -876, 45, "npc_ETC_20150317_009448")
@@ -252,7 +274,7 @@ function npc_ETC_20150317_009448()
 msg("ROKAS25_EX2_STRUCTURE")
 end
 
------ pedlar_lose_1 ----- 
+----- Abandoned Graverobbing Equipment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20150317_009448", "f_rokas_25", -1622, 268, -905, 45, "npc_ETC_20150317_009448")
@@ -260,7 +282,7 @@ function npc_ETC_20150317_009448()
 msg("ROKAS25_EX2_STRUCTURE")
 end
 
------ pedlar_lose_1 ----- 
+----- Abandoned Graverobbing Equipment ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47160, "ETC_20150317_009448", "f_rokas_25", -1747, 268, -1257, 45, "npc_ETC_20150317_009448")
@@ -268,7 +290,7 @@ function npc_ETC_20150317_009448()
 msg("ROKAS25_EX2_STRUCTURE")
 end
 
------ npc_rokas_6 ----- 
+----- Ancient Pillars ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_HILDA_STRUCTURE -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_005286", "f_rokas_25", -803, 267, 856, 132, "npc_ETC_20150317_005286")
@@ -277,7 +299,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_paladin_follower1_1 ----- 
+----- Gustas Jonas ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_REXIPHER5 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS25_TO_26_ZACHA01 | ROKAS25_REXIPHER6 | ROKAS25_REXIPHER4 -----
@@ -296,7 +318,7 @@ msg("ROKAS25_REXIPHER5_BASIC02")
 msg("ROKAS25_TO_26_ZACHA01_AC")
 end
 
------ npc_rokas_6 ----- 
+----- Ancient Pillars ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_HILDA_STRUCTURE -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_005286", "f_rokas_25", -722, 267, 428, 45, "npc_ETC_20150317_005286")
@@ -305,7 +327,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_6 ----- 
+----- Ancient Pillars ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_HILDA_STRUCTURE -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_005286", "f_rokas_25", -1155, 268, 782, 45, "npc_ETC_20150317_005286")
@@ -314,7 +336,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_6 ----- 
+----- Ancient Pillars ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_HILDA_STRUCTURE -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_005286", "f_rokas_25", -489, 268, 735, 45, "npc_ETC_20150317_005286")
@@ -323,7 +345,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_6 ----- 
+----- Ancient Pillars ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_HILDA_STRUCTURE -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_005286", "f_rokas_25", -917, 268, 344, 45, "npc_ETC_20150317_005286")
@@ -332,7 +354,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_6 ----- 
+----- Ancient Pillars ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS25_HILDA_STRUCTURE -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_005286", "f_rokas_25", -1399, 268, 702, 45, "npc_ETC_20150317_005286")
@@ -341,7 +363,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_6 ----- 
+----- Ancient Pillars ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_005286", "f_rokas_25", -1054, 270, 824, 45, "npc_ETC_20150317_005286")
@@ -349,7 +371,7 @@ function npc_ETC_20150317_005286()
 msg("ROKAS25_HILDA_STRUCTURE_TRUE1")
 end
 
------ npc_rokas_6 ----- 
+----- Ancient Pillars ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_005286", "f_rokas_25", -527, 268, 413, 45, "npc_ETC_20150317_005286")
@@ -357,7 +379,7 @@ function npc_ETC_20150317_005286()
 msg("ROKAS25_HILDA_STRUCTURE_TRUE2")
 end
 
------ npc_rokas_6 ----- 
+----- Ancient Pillars ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_005286", "f_rokas_25", -51, 268, 661, 45, "npc_ETC_20150317_005286")
@@ -365,7 +387,7 @@ function npc_ETC_20150317_005286()
 msg("ROKAS25_HILDA_STRUCTURE_TRUE3")
 end
 
------ LOST_PAPER ----- 
+----- 1 sheet of Magic Research Reference  ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147312, "ETC_20150317_007626", "f_rokas_25", -1908, 359, 573, 45, "npc_ETC_20150317_007626")
@@ -373,7 +395,7 @@ function npc_ETC_20150317_007626()
 msg("JOB_THAUMATURGE3_1_PAPER1")
 end
 
------ LOST_PAPER ----- 
+----- 2 sheet of Magic Research Reference  ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147312, "ETC_20150317_007627", "f_rokas_25", -2061, 359, 574, 45, "npc_ETC_20150317_007627")
@@ -381,7 +403,7 @@ function npc_ETC_20150317_007627()
 msg("JOB_THAUMATURGE3_1_PAPER2")
 end
 
------ LOST_PAPER ----- 
+----- 3 sheet of Magic Research Reference  ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147312, "ETC_20150317_007628", "f_rokas_25", -2128, 359, 638, 45, "npc_ETC_20150317_007628")
@@ -389,7 +411,7 @@ function npc_ETC_20150317_007628()
 msg("JOB_THAUMATURGE3_1_PAPER3")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_rokas_25", -2482, 269, -913, 45, "npc_ETC_20150317_009100")

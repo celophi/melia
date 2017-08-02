@@ -1,4 +1,25 @@
------ statue_vakarine ----- 
+----- Kadumel Cliff ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009599", "f_tableland_72", 778, 452, 2021, 138, "npc_ETC_20150323_009599")
+function npc_ETC_20150323_009599()
+msg("TABLELAND72_TABLELAND73")
+end
+
+----- Grand Yard Mesa ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009597", "f_tableland_72", 1030, 509, -1489, 3, "npc_ETC_20150323_009597")
+function npc_ETC_20150323_009597()
+msg("TABLELAND72_TABLELAND71")
+end
+
+----- Sentry Bailey ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170330_027522", "f_tableland_72", 2132, 288, 222, 54, "npc_ETC_20170330_027522")
+function npc_ETC_20170330_027522()
+msg("TABLELAND72_UNDERFORTRESS65")
+end
+
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -9,7 +30,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_TABLELAND_72")
 end
 
------ npc_circle_trigger ----- 
+----- Unidentified Pillar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155051, "QUEST_20151224_003281", "f_tableland_72", -510, 406, 19, -19, "npc_QUEST_20151224_003281")
@@ -17,7 +38,7 @@ function npc_QUEST_20151224_003281()
 msg("TABLELAND72_BASE_BALL")
 end
 
------ npc_figurine ----- 
+----- Cursed Statue ----- 
 ----- npcselectdialog.ies | ClassName: TABLE72_ARTIFACT -----
 ----- Enter | Dialog -----
 ----- QuestIDs: TABLELAND_72_SQ1 | TABLELAND_72_SQ9 -----
@@ -28,7 +49,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_friar_02 ----- 
+----- Village Priest Chaleims ----- 
 ----- npcselectdialog.ies | ClassName: TABLE72_PEAPLE1_1 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_72_SQ1 | TABLELAND_72_SQ2 | TABLELAND_72_SQ4 | TABLELAND_72_SQ5 | TABLELAND_72_SQ6 | TABLELAND_72_SQ7 | TABLELAND_72_SQ9 -----
@@ -60,7 +81,7 @@ msg("TABLELAND_72_SQ9_succ1")
 msg("TABLELAND_72_SQ2_startnpc2")
 end
 
------ npc_pilgrim_m_2 ----- 
+----- Villager Argis ----- 
 ----- npcselectdialog.ies | ClassName: TABLE72_PEAPLE2 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_72_SQ2 | TABLELAND_72_SQ3 | TABLELAND_72_SQ4 -----
@@ -77,7 +98,7 @@ msg("TABLELAND_72_SQ4_startnpc_prog1")
 msg("TABLELAND_72_SQ2_succ1")
 end
 
------ npc_pilgrim_m_5 ----- 
+----- Villager Deailan ----- 
 ----- npcselectdialog.ies | ClassName: TABLE72_PEAPLE3 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_72_SQ10 -----
@@ -90,7 +111,7 @@ msg("TABLELAND_72_SQ10_prog1")
 msg("TABLELAND_72_SQ10_succ1")
 end
 
------ npc_pilgrim_f_3 ----- 
+----- Villager Emils ----- 
 ----- npcselectdialog.ies | ClassName: TABLE72_PEAPLE4 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_72_SQ11 -----
@@ -103,7 +124,7 @@ msg("TABLELAND_72_SQ11_prog1")
 msg("TABLELAND_72_SQ11_succ1")
 end
 
------ npc_figurine_device ----- 
+----- Observation Orb ----- 
 ----- npcselectdialog.ies | ClassName: TABLE72_MONITORING -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_72_SQ4 -----
@@ -113,7 +134,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_friar_02 ----- 
+----- Village Priest Chaleims ----- 
 ----- npcselectdialog.ies | ClassName: TABLE72_PEAPLE1_2 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_72_SQ3 | TABLELAND_72_SQ8 | TABLELAND_72_SQ9 | TABLELAND_72_SQ2 -----
@@ -123,7 +144,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_friar_05 ----- 
+----- Village Priest Arntas ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155046, "QUEST_20160718_003944", "f_tableland_72", -394, 406, 83, -67, "npc_QUEST_20160718_003944")
@@ -131,7 +152,7 @@ function npc_QUEST_20160718_003944()
 msg("TABLE72_PEAPLE5_DLG1")
 end
 
------ npc_friar_02 ----- 
+----- Village Priest Chaleims ----- 
 ----- npcselectdialog.ies | ClassName: TABLE72_PEAPLE1_3 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_72_SQ1 | TABLELAND_72_SQ2 -----
@@ -141,7 +162,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_friar_05 ----- 
+----- Village Priest Arntas ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(155046, "QUEST_20160718_003944", "f_tableland_72", -440, 406, -644, -49, "npc_QUEST_20160718_003944")
@@ -150,7 +171,7 @@ msg("TABLE72_PEAPLE5_2")
 msg("TABLE72_PEAPLE5_1")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_tableland_72", -581, 487, 150, 0, "npc_ETC_20150317_009100")

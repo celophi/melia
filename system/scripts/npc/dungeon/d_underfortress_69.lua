@@ -1,4 +1,11 @@
------ npc_PremierEminent ----- 
+----- Storage Quarter ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170330_027525", "d_underfortress_69", 2245, 567, 25, 59, "npc_ETC_20170330_027525")
+function npc_ETC_20170330_027525()
+msg("UNDERFORTRESS69_UNDERFORTRESS68")
+end
+
+----- Premier Eminent ----- 
 ----- npcselectdialog.ies | ClassName: EMINENT_69_1 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_69_MQ020 -----
@@ -8,7 +15,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_PremierEminent ----- 
+----- Premier Eminent ----- 
 ----- npcselectdialog.ies | ClassName: EMINENT_69_2 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_69_MQ050 -----
@@ -27,7 +34,7 @@ msg("UNDER_69_MQ020_AG")
 msg("UNDER_69_MQ020_startnpc_prog01")
 end
 
------ npc_historian_odel_2 ----- 
+----- [Amanda Grave Robbers]Amanda ----- 
 ----- npcselectdialog.ies | ClassName: AMANDA_69_1 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_69_MQ010 -----
@@ -123,7 +130,7 @@ msg("FLASH64_MQ_01_04")
 msg("UNDER_69_MQ060_succ01")
 end
 
------ npc_historian_odel_2 ----- 
+----- [Amanda Grave Robbers]Amanda ----- 
 ----- npcselectdialog.ies | ClassName: AMANDA_69_2 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: UNDERFORTRESS_69_MQ030 | UNDERFORTRESS_69_MQ040 | UNDERFORTRESS_69_MQ060 | UNDERFORTRESS_69_MQ050 | UNDERFORTRESS_69_MQ020 | UNDERFORTRESS_69_SQ010 | UNDERFORTRESS_69_SQ020 | UNDERFORTRESS69_HQ1 -----
@@ -220,7 +227,7 @@ msg("FLASH64_MQ_01_04")
 msg("UNDER_69_MQ060_succ01")
 end
 
------ npc_Obelisk ----- 
+----- Defensive Magic Circle Foundation Stone ----- 
 ----- npcselectdialog.ies | ClassName: UNDER69_MQ3_DEVICE_REPAIR -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_69_MQ030 -----
@@ -230,7 +237,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_Obelisk ----- 
+----- Defensive Magic Circle Foundation Stone ----- 
 ----- npcselectdialog.ies | ClassName: UNDER69_MQ4_DEVICE -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_69_MQ040 -----
@@ -240,7 +247,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ closing_device_m ----- 
+----- Ruklys' Device ----- 
 ----- npcselectdialog.ies | ClassName: UNDER69_MQ5 -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_69_MQ060 -----
@@ -250,7 +257,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_paladin_follower1_2 ----- 
+----- Ruklys Army Soldier's Spirit ----- 
 ----- npcselectdialog.ies | ClassName: UNDER69_SQ030_GHOST -----
 ----- Dialog -----
 ----- QuestIDs: UNDERFORTRESS_69_SQ030 -----
@@ -263,7 +270,7 @@ msg("UNDER_69_SQ030_prog01")
 msg("UNDER_69_SQ030_succ01")
 end
 
------ npc_rokas_7 ----- 
+----- Defensive Battle Field Trap ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47107, "ETC_20151016_015901", "d_underfortress_69", 1869, 1011, 1546, 45, "npc_ETC_20151016_015901")
@@ -271,7 +278,7 @@ function npc_ETC_20151016_015901()
 msg("UNDER69_MQ020_DEVICE01")
 end
 
------ npc_rokas_7 ----- 
+----- Defensive Battle Field Trap ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47107, "ETC_20151016_015901", "d_underfortress_69", 1985, 923, 1233, 45, "npc_ETC_20151016_015901")
@@ -279,7 +286,7 @@ function npc_ETC_20151016_015901()
 msg("UNDER69_MQ020_DEVICE02")
 end
 
------ npc_rokas_7 ----- 
+----- Defensive Battle Field Trap ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47107, "ETC_20151016_015901", "d_underfortress_69", 1748, 998, 1712, 45, "npc_ETC_20151016_015901")
@@ -287,7 +294,7 @@ function npc_ETC_20151016_015901()
 msg("UNDER69_MQ020_DEVICE03")
 end
 
------ npc_rokas_7 ----- 
+----- Defensive Battle Field Trap ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47107, "ETC_20151016_015901", "d_underfortress_69", 1517, 779, 1188, 45, "npc_ETC_20151016_015901")
@@ -295,7 +302,7 @@ function npc_ETC_20151016_015901()
 msg("UNDER69_MQ020_DEVICE04")
 end
 
------ npc_rokas_7 ----- 
+----- Defensive Battle Field Trap ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47107, "ETC_20151016_015901", "d_underfortress_69", 1667, 792, 1191, 45, "npc_ETC_20151016_015901")
@@ -303,7 +310,7 @@ function npc_ETC_20151016_015901()
 msg("UNDER69_MQ020_DEVICE05")
 end
 
------ bube_flag1_Q ----- 
+----- Demon Totem ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153070, "ETC_20151001_014711", "d_underfortress_69", -940, 732, -1999, -6, "npc_ETC_20151001_014711")
@@ -311,7 +318,7 @@ function npc_ETC_20151001_014711()
 msg("UNDER69_MQ4_FLAG01")
 end
 
------ bube_flag1_Q ----- 
+----- Demon Totem ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153070, "ETC_20151001_014711", "d_underfortress_69", -759, 747, -2294, 27, "npc_ETC_20151001_014711")
@@ -319,7 +326,7 @@ function npc_ETC_20151001_014711()
 msg("UNDER69_MQ4_FLAG02")
 end
 
------ bube_flag1_Q ----- 
+----- Demon Totem ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153070, "ETC_20151001_014711", "d_underfortress_69", -615, 737, -2083, -15, "npc_ETC_20151001_014711")
@@ -327,7 +334,7 @@ function npc_ETC_20151001_014711()
 msg("UNDER69_MQ4_FLAG03")
 end
 
------ bube_flag1_Q ----- 
+----- Demon Totem ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153070, "ETC_20151001_014711", "d_underfortress_69", -1050, 732, -2229, 45, "npc_ETC_20151001_014711")
@@ -335,10 +342,10 @@ function npc_ETC_20151001_014711()
 msg("UNDER69_MQ4_FLAG04")
 end
 
------ npc_Obelisk ----- 
+----- Defensive Magic Circle Foundation Stone ----- 
 addnpc(147414, "ETC_20151016_015900", "d_underfortress_69", 940, 744, -136, 27, "npc_dummy")
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----

@@ -1,4 +1,4 @@
------ npc_kupole_3 ----- 
+----- Kupole Daiva ----- 
 ----- npcselectdialog.ies | ClassName: VPRISON513_MQ_DAIVA_01 -----
 ----- Dialog -----
 ----- QuestIDs: VPRISON513_MQ_01 | VPRISON513_MQ_02 -----
@@ -30,7 +30,7 @@ msg("VPRISON513_SQ_03_03")
 msg("VPRISON513_MQ_DAIVA_02_basic_2")
 end
 
------ npc_kupole_3 ----- 
+----- Kupole Daiva ----- 
 ----- npcselectdialog.ies | ClassName: VPRISON513_MQ_DAIVA_02 -----
 ----- Dialog -----
 ----- QuestIDs: VPRISON513_MQ_03 | VPRISON513_MQ_02 | VPRISON513_MQ_04 | VPRISON513_SQ_01 -----
@@ -62,7 +62,7 @@ msg("VPRISON513_SQ_03_03")
 msg("VPRISON513_MQ_DAIVA_02_basic_2")
 end
 
------ npc_kupole_2 ----- 
+----- Kupole Sigita ----- 
 ----- npcselectdialog.ies | ClassName: VPRISON513_MQ_SIGITA -----
 ----- Dialog -----
 ----- QuestIDs: VPRISON513_MQ_04 | VPRISON513_MQ_05 -----
@@ -85,7 +85,7 @@ msg("VPRISON515_SQ_03_02")
 msg("VPRISON515_SQ_03_03")
 end
 
------ velniasprison_warp ----- 
+----- Demon Prison District 3 ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154000, "ETC_20150323_010356", "d_velniasprison_51_3", -3317, 161, -807, 45, "npc_ETC_20150323_010356")
@@ -93,7 +93,7 @@ function npc_ETC_20150323_010356()
 msg("VELNIASP513_TO_VELNIASP514")
 end
 
------ velniasprison_warp ----- 
+----- Demon Prison District 5 ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154000, "ETC_20150323_010357", "d_velniasprison_51_3", 2867, 131, -751, 45, "npc_ETC_20150323_010357")
@@ -101,7 +101,7 @@ function npc_ETC_20150323_010357()
 msg("VELNIASP513_TO_VELNIASP515")
 end
 
------ npc_hauberk ----- 
+----- Demon Lord Hauberk ----- 
 ----- Enter -----
 ----- QuestIDs: VPRISON513_MQ_01 -----
 addnpc(57840, "QUEST_20150323_001573", "d_velniasprison_51_3", -2518, 93, -401, 126, "npc_QUEST_20150323_001573")
@@ -110,7 +110,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_kupole_3 ----- 
+----- Kupole Daiva ----- 
 ----- npcselectdialog.ies | ClassName: VPRISON513_MQ_DAIVA_03 -----
 ----- Dialog -----
 ----- QuestIDs: VPRISON513_SQ_02 | VPRISON513_SQ_03 -----
@@ -142,7 +142,7 @@ msg("VPRISON513_SQ_03_03")
 msg("VPRISON513_MQ_DAIVA_02_basic_2")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_velniasprison_51_3", 1736, 128, -1242, 45, "npc_ETC_20150317_009100")

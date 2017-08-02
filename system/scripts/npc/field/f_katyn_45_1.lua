@@ -1,4 +1,25 @@
------ statue_vakarine ----- 
+----- Gele Plateau ----- 
+----- Enter -----
+addnpc(40001, "QUEST_LV_0100_20150323_006604", "f_katyn_45_1", -2572, 128, -494, 225, "npc_QUEST_LV_0100_20150323_006604")
+function npc_QUEST_LV_0100_20150323_006604()
+msg("KATYN45_1_GELE57_2")
+end
+
+----- Thaumas Trail ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016503", "f_katyn_45_1", -912, 127, 1047, 135, "npc_ETC_20151102_016503")
+function npc_ETC_20151102_016503()
+msg("KATYN45_1_PILGRIM41_1")
+end
+
+----- Grynas Training Camp ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009613", "f_katyn_45_1", 1627, 81, 607, 47, "npc_ETC_20150323_009613")
+function npc_ETC_20150323_009613()
+msg("KATYN45_1_KATYN45_2")
+end
+
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -9,7 +30,14 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_KATYN_45_1")
 end
 
------ npc_circle_trigger ----- 
+----- Sekta Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_017810", "f_katyn_45_1", 951, 81, 1053, 133, "npc_ETC_20151224_017810")
+function npc_ETC_20151224_017810()
+msg("KATYN45_1_PILGRIM41_4")
+end
+
+----- Charged Device ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155051, "ETC_20151224_019952", "f_katyn_45_1", 567, 81, 249, 45, "npc_ETC_20151224_019952")
@@ -17,7 +45,7 @@ function npc_ETC_20151224_019952()
 msg("DELIVERY_CHARGES_GAME")
 end
 
------ npc_dievdirbys_m_2 ----- 
+----- Dievdirbys Asel ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_1_AJEL1 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_1_SQ_1 | KATYN_45_1_SQ_2 | KATYN_45_1_SQ_3 | KATYN_45_1_SQ_8 -----
@@ -105,7 +133,7 @@ msg("KATYN_45_1_SQ_1_BG")
 msg("KATYN_45_1_SQ_1_BG2")
 end
 
------ f_katyn_owl04 ----- 
+----- Sleeping Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_1_OWL1 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_1_SQ_1 | KATYN_45_1_SQ_2 -----
@@ -115,7 +143,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_dievdirbys_m_2 ----- 
+----- Dievdirbys Asel ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_1_AJEL2 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_1_SQ_4 | KATYN_45_1_SQ_5 | KATYN_45_1_SQ_6 | KATYN_45_1_SQ_7 | KATYN_45_1_SQ_3 -----
@@ -125,7 +153,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ f_katyn_owl04 ----- 
+----- Sleeping Owl Statue ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_1_OWL2 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_1_SQ_7 -----
@@ -135,7 +163,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ f_katyn_owl04 ----- 
+----- Raucous Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_1_OWL3 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_1_SQ_10 | KATYN_45_1_SQ_11 | KATYN_45_1_SQ_8 | KATYN_45_1_SQ_9 -----
@@ -158,7 +186,7 @@ msg("KATYN_45_1_SQ_9_BS")
 msg("KATYN_45_1_SQ_8_SU1")
 end
 
------ npc_dievdirbys_m_2 ----- 
+----- Dievdirbys Asel ----- 
 ----- npcselectdialog.ies | ClassName: KATYN_45_1_AJEL3 -----
 ----- Dialog -----
 ----- QuestIDs: KATYN_45_1_SQ_8 -----
@@ -168,7 +196,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_katyn_45_1", -490, 160, 627, -90, "npc_ETC_20150317_009100")

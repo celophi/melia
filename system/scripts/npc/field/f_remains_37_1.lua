@@ -1,4 +1,25 @@
------ npc_pilgrim_m_4 ----- 
+----- Valius' Eternal Resting Place ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011730", "f_remains_37_1", -66, 221, -1794, 106, "npc_ETC_20150714_011730")
+function npc_ETC_20150714_011730()
+msg("REMAINS37_1_CATACOMB_02")
+end
+
+----- Stele Road ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009579", "f_remains_37_1", 2123, 314, -745, 3, "npc_ETC_20150323_009579")
+function npc_ETC_20150323_009579()
+msg("REMAINS37_1_REMAINS37")
+end
+
+----- Namu Temple Ruins ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011738", "f_remains_37_1", -2786, 297, 1351, -31, "npc_ETC_20150714_011738")
+function npc_ETC_20150714_011738()
+msg("REMAINS37_1_REMAINS37_2")
+end
+
+----- Adrijus ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS37_1_ADRIJUS -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS37_1_SQ_010 | REMAINS37_1_SQ_011 | REMAINS37_1_SQ_021 | REMAINS37_1_SQ_030 | REMAINS37_1_SQ_031 | REMAINS37_1_SQ_040 | REMAINS37_1_SQ_041 | REMAINS37_1_SQ_025 | REMAINS37_1_SQ_050 | REMAINS37_1_SQ_070 | REMAINS37_1_SQ_080 -----
@@ -39,7 +60,7 @@ msg("REMAINS37_1_ADRIJUS_BASIC04")
 msg("REMAINS37_1_ADRIJUS_BASIC03")
 end
 
------ Board1 ----- 
+----- Adrijus' Notice Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150714_002145", "f_remains_37_1", -229, 275, -1954, 1, "npc_QUEST_20150714_002145")
@@ -47,7 +68,7 @@ function npc_QUEST_20150714_002145()
 msg("REMAINS37_1_BOARD_BASIC01")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_remains_37_1", -836, 445, 1575, -45, "npc_ETC_20150317_009100")

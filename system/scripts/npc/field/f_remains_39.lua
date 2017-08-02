@@ -1,4 +1,4 @@
------ stone_monument2 ----- 
+----- Epitaph of Agailla Flurry ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS39_MQ_MONUMENT1 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS39_MQ01 -----
@@ -19,7 +19,7 @@ msg("REMAINS39_MQ_MONUMENT2_BASIC02")
 msg("REMAINS39_MQ_MONUMENT3_BASIC01")
 end
 
------ stone_monument2 ----- 
+----- Epitaph of Agailla Flurry ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS39_MQ_MONUMENT2 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS39_MQ02 -----
@@ -40,7 +40,7 @@ msg("REMAINS39_MQ_MONUMENT2_BASIC02")
 msg("REMAINS39_MQ_MONUMENT3_BASIC01")
 end
 
------ Stone03 ----- 
+----- Destroyed inscription wreckage ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS39_MQ_MONUMENT3 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS39_MQ03 -----
@@ -61,7 +61,7 @@ msg("REMAINS39_MQ_MONUMENT2_BASIC02")
 msg("REMAINS39_MQ_MONUMENT3_BASIC01")
 end
 
------ stone_monument2 ----- 
+----- Epitaph of Agailla Flurry ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS39_MQ_MONUMENT4 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS39_MQ05 -----
@@ -82,7 +82,7 @@ msg("REMAINS39_MQ_MONUMENT2_BASIC02")
 msg("REMAINS39_MQ_MONUMENT3_BASIC01")
 end
 
------ stone_monument2 ----- 
+----- Epitaph of Agailla Flurry ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS39_MQ_MONUMENT5 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS39_MQ06 -----
@@ -103,7 +103,7 @@ msg("REMAINS39_MQ_MONUMENT2_BASIC02")
 msg("REMAINS39_MQ_MONUMENT3_BASIC01")
 end
 
------ stone_monument2 ----- 
+----- Epitaph of Agailla Flurry ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS39_MQ_MONUMENT6 -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS39_MQ07 -----
@@ -124,7 +124,7 @@ msg("REMAINS39_MQ_MONUMENT2_BASIC02")
 msg("REMAINS39_MQ_MONUMENT3_BASIC01")
 end
 
------ pedlar_lose_2 ----- 
+----- Military Backpack ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS39_GHOST_BAG_1 -----
 ----- Dialog -----
 ----- QuestIDs: REMAIN39_SQ01 | REMAIN39_SQ02 -----
@@ -134,7 +134,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_village_uncle_3 ----- 
+----- Villager ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS39_PEAPLE -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS39_MQ03 | REMAINS39_MQ05 -----
@@ -147,7 +147,21 @@ msg("REMAINS39_MQ04_select01")
 msg("REMAINS39_MQ05_02")
 end
 
------ npc_ghost_soldier ----- 
+----- Goddess' Ancient Garden ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001208", "f_remains_39", -479, 194, -656, 0, "npc_ETC_20150317_001208")
+function npc_ETC_20150317_001208()
+msg("REMAINS39_REMAINS38")
+end
+
+----- Fedimian Suburbs ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009581", "f_remains_39", 873, 174, 1635, 145, "npc_ETC_20150323_009581")
+function npc_ETC_20150323_009581()
+msg("REMAINS39_REMAINS40")
+end
+
+----- Wandering Spirit ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS39_GHOST -----
 ----- Dialog -----
 ----- QuestIDs: REMAIN39_SQ01 | REMAIN39_SQ03 | REMAIN39_SQ04 -----
@@ -159,7 +173,7 @@ msg("REMAINS39_GHOST_basic_01")
 msg("REMAINS39_GHOST_basic_02")
 end
 
------ npc_village_uncle_2 ----- 
+----- Old Man Moses ----- 
 ----- npcselectdialog.ies | ClassName: REMAIN39_SQ_MOJE -----
 ----- Dialog -----
 ----- QuestIDs: REMAIN39_SQ05 | REMAIN39_SQ06 | REMAIN39_SQ07 | REMAIN39_SQ08 -----
@@ -177,7 +191,7 @@ msg("REMAIN39_SQ07_startnpc01")
 msg("REMAIN39_SQ07_succ01")
 end
 
------ npc_village_uncle_8 ----- 
+----- Villager Cahill ----- 
 ----- npcselectdialog.ies | ClassName: REMAIN39_SQ_MAN -----
 ----- Dialog -----
 ----- QuestIDs: REMAIN39_SQ08 | REMAIN39_SQ05 -----
@@ -191,7 +205,14 @@ msg("REMAIN39_SQ05_startnpc01")
 msg("REMAIN39_SQ08_succ01")
 end
 
------ pedlar_lose_1 ----- 
+----- King's Plateau ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001194", "f_remains_39", 1261, 173, -325, 45, "npc_ETC_20150317_001194")
+function npc_ETC_20150317_001194()
+msg("REMAINS39_ROKAS30")
+end
+
+----- Abandoned Bag ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS39_GHOST_BAG_2 -----
 ----- Dialog -----
 ----- QuestIDs: REMAIN39_SQ02 | REMAIN39_SQ03 -----
@@ -201,7 +222,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_remains_39", 480, 193, 656, 45, "npc_ETC_20150317_009100")
@@ -209,7 +230,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_village_uncle_12 ----- 
+----- Lumberjack Luoval ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS39_RP_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: REMAINS39_RP_1 -----

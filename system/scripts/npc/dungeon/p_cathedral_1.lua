@@ -1,4 +1,18 @@
------ statue_vakarine ----- 
+----- Stele Road ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009579", "p_cathedral_1", 61, 0, 363, 135, "npc_ETC_20150323_009579")
+function npc_ETC_20150323_009579()
+msg("PCATHEDRAL1_REMAINS37")
+end
+
+----- Sirdgela Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009572", "p_cathedral_1", -437, 0, -1059, 315, "npc_ETC_20150323_009572")
+function npc_ETC_20150323_009572()
+msg("PCATHEDRAL1_THORN20")
+end
+
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -9,7 +23,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_P_CATHEDRAL_1")
 end
 
------ Board1 ----- 
+----- Warning ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000566", "p_cathedral_1", 10, 0, 295, 45, "npc_QUEST_20150317_000566")
@@ -17,7 +31,7 @@ function npc_QUEST_20150317_000566()
 msg("UPPER_WARNING_P_CATHEDRAL_1")
 end
 
------ npc_MIKO_master ----- 
+----- [Miko Master] Hitomiko ----- 
 ----- npcselectdialog.ies | ClassName: MIKO_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_MIKO_6_1 | CATHEDRAL1_HQ1 -----
@@ -43,7 +57,7 @@ msg("CATHEDRAL1_HQ1_prog1")
 msg("CATHEDRAL1_HQ1_succ1")
 end
 
------ noshadow_npc_8 ----- 
+----- Divine Spirit ----- 
 ----- npcselectdialog.ies | ClassName: MIKO_SOUL_SPIRIT -----
 ----- Dialog -----
 addnpc(151018, "QUEST_20161005_004420", "p_cathedral_1", 542, 0, -321, 45, "npc_QUEST_20161005_004420")

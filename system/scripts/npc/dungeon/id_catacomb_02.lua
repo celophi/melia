@@ -1,4 +1,18 @@
------ npc_grita ----- 
+----- Videntis Shrine ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011745", "id_catacomb_02", -713, 326, -1848, 0, "npc_ETC_20150714_011745")
+function npc_ETC_20150714_011745()
+msg("CATACOMB_02_CATACOMB_38_1")
+end
+
+----- Nuoridin Falls ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011737", "id_catacomb_02", 2713, 346, 1786, 180, "npc_ETC_20150714_011737")
+function npc_ETC_20150714_011737()
+msg("CATACOMB_02_REMAINS37_1")
+end
+
+----- Jane's Spirit ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_02_NPC_01 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_02_SQ_01 | CATACOMB_02_SQ_02 | CATACOMB_02_SQ_03 | CATACOMB_02_SQ_04 | CATACOMB_02_SQ_05 | CATACOMB_02_SQ_06 | CATACOMB_02_SQ_07 -----
@@ -39,7 +53,7 @@ msg("CATACOMB_02_NPC_01_basic02")
 msg("CATACOMB_02_NPC_01_basic03")
 end
 
------ boss_archon_thorn21 ----- 
+----- Sealed Archon ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(41360, "ETC_20150714_013176", "id_catacomb_02", -834, 279, 1159, 45, "npc_ETC_20150714_013176")
@@ -47,7 +61,7 @@ function npc_ETC_20150714_013176()
 msg("CATACOMB_02_NPC_02")
 end
 
------ Link_stone ----- 
+----- Magic Stone of Mutuality ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_02_OBJ_01 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_02_SQ_07 -----
@@ -57,7 +71,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ stone_monument1 ----- 
+----- Memorial Stone ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47190, "QUEST_20150714_002131", "id_catacomb_02", -2326, 326, -1219, 45, "npc_QUEST_20150714_002131")
@@ -65,7 +79,7 @@ function npc_QUEST_20150714_002131()
 msg("CATACOMB_02_RECORD_01")
 end
 
------ stone_monument2 ----- 
+----- Memorial Stone ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47191, "QUEST_20150714_002131", "id_catacomb_02", -2139, 306, -1365, 180, "npc_QUEST_20150714_002131")
@@ -73,7 +87,7 @@ function npc_QUEST_20150714_002131()
 msg("CATACOMB_02_RECORD_02")
 end
 
------ stone_monument3 ----- 
+----- Memorial Stone ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47192, "QUEST_20150714_002131", "id_catacomb_02", -1955, 287, -1537, 135, "npc_QUEST_20150714_002131")
@@ -81,7 +95,7 @@ function npc_QUEST_20150714_002131()
 msg("CATACOMB_02_RECORD_03")
 end
 
------ BOOK_01 ----- 
+----- Records of Investigation ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147311, "QUEST_20150714_002135", "id_catacomb_02", -2295, 306, -1468, 135, "npc_QUEST_20150714_002135")
@@ -89,7 +103,7 @@ function npc_QUEST_20150714_002135()
 msg("CATACOMB_02_BOOK_01")
 end
 
------ BOOK_01 ----- 
+----- Proposal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147311, "QUEST_20150714_002138", "id_catacomb_02", -1900, 306, -1090, 45, "npc_QUEST_20150714_002138")
@@ -97,7 +111,7 @@ function npc_QUEST_20150714_002138()
 msg("CATACOMB_02_BOOK_02")
 end
 
------ LOST_PAPER ----- 
+----- Design Proposal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147312, "QUEST_20150714_002142", "id_catacomb_02", -2132, 326, -1194, 45, "npc_QUEST_20150714_002142")
@@ -105,7 +119,7 @@ function npc_QUEST_20150714_002142()
 msg("CATACOMB_02_BOOK_03")
 end
 
------ holyark_black ----- 
+----- Relics Archive ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(45321, "ETC_20150714_013177", "id_catacomb_02", -1156, 326, -85, 45, "npc_ETC_20150714_013177")
@@ -113,7 +127,7 @@ function npc_ETC_20150714_013177()
 msg("CATACOMB_02_OBJ_02")
 end
 
------ holyark_black ----- 
+----- Relics Archive ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(45321, "ETC_20150714_013177", "id_catacomb_02", -1069, 326, -128, 135, "npc_ETC_20150714_013177")
@@ -121,7 +135,7 @@ function npc_ETC_20150714_013177()
 msg("CATACOMB_02_OBJ_02")
 end
 
------ holyark_black ----- 
+----- Relics Archive ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(45321, "ETC_20150714_013177", "id_catacomb_02", -606, 326, 402, 225, "npc_ETC_20150714_013177")
@@ -129,7 +143,7 @@ function npc_ETC_20150714_013177()
 msg("CATACOMB_02_OBJ_02")
 end
 
------ holyark_black ----- 
+----- Relics Archive ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(45321, "ETC_20150714_013177", "id_catacomb_02", -604, 326, 319, 225, "npc_ETC_20150714_013177")
@@ -138,7 +152,7 @@ msg("CATACOMB_02_OBJ_03")
 msg("CATACOMB_02_OBJ_03")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151057, "ETC_20150714_011769", "id_catacomb_02", -207, 305, 1010, 45, "npc_ETC_20150714_011769")
@@ -146,7 +160,7 @@ function npc_ETC_20150714_011769()
 msg("CATACOMB_02_OBJ_04")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151057, "ETC_20150714_011769", "id_catacomb_02", -207, 304, 1573, 45, "npc_ETC_20150714_011769")
@@ -154,7 +168,7 @@ function npc_ETC_20150714_011769()
 msg("CATACOMB_02_OBJ_04")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151057, "ETC_20150714_011769", "id_catacomb_02", 70, 288, 1535, 45, "npc_ETC_20150714_011769")
@@ -162,7 +176,7 @@ function npc_ETC_20150714_011769()
 msg("CATACOMB_02_OBJ_04")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151057, "ETC_20150714_011769", "id_catacomb_02", 81, 268, 1250, 45, "npc_ETC_20150714_011769")
@@ -170,7 +184,7 @@ function npc_ETC_20150714_011769()
 msg("CATACOMB_02_OBJ_04")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151057, "ETC_20150714_011769", "id_catacomb_02", 375, 267, 1004, 45, "npc_ETC_20150714_011769")
@@ -178,7 +192,7 @@ function npc_ETC_20150714_011769()
 msg("CATACOMB_02_OBJ_04")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151057, "ETC_20150714_011769", "id_catacomb_02", 374, 268, 1274, 45, "npc_ETC_20150714_011769")
@@ -186,7 +200,7 @@ function npc_ETC_20150714_011769()
 msg("CATACOMB_02_OBJ_04")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151057, "ETC_20150714_011769", "id_catacomb_02", -163, 285, 1286, 45, "npc_ETC_20150714_011769")
@@ -194,7 +208,7 @@ function npc_ETC_20150714_011769()
 msg("CATACOMB_02_OBJ_05_1")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151057, "ETC_20150714_011769", "id_catacomb_02", 89, 288, 963, 45, "npc_ETC_20150714_011769")
@@ -202,7 +216,7 @@ function npc_ETC_20150714_011769()
 msg("CATACOMB_02_OBJ_05_2")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151057, "ETC_20150714_011769", "id_catacomb_02", 388, 288, 1578, 45, "npc_ETC_20150714_011769")
@@ -210,7 +224,7 @@ function npc_ETC_20150714_011769()
 msg("CATACOMB_02_OBJ_05_3")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_02_OBJ_06 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: CATACOMB_02_SQ_05 | CATACOMB_02_SQ_05 -----
@@ -221,7 +235,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_02_OBJ_06 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: CATACOMB_02_SQ_05 | CATACOMB_02_SQ_05 -----
@@ -232,7 +246,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_02_OBJ_06 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: CATACOMB_02_SQ_05 | CATACOMB_02_SQ_05 -----
@@ -243,7 +257,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_02_OBJ_06 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: CATACOMB_02_SQ_05 | CATACOMB_02_SQ_05 -----
@@ -254,7 +268,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_02_OBJ_06 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: CATACOMB_02_SQ_05 | CATACOMB_02_SQ_05 -----
@@ -265,7 +279,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_02_OBJ_06 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: CATACOMB_02_SQ_05 | CATACOMB_02_SQ_05 -----
@@ -276,7 +290,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_02_OBJ_06 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: CATACOMB_02_SQ_05 | CATACOMB_02_SQ_05 -----
@@ -287,7 +301,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_02_OBJ_06 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: CATACOMB_02_SQ_05 | CATACOMB_02_SQ_05 -----
@@ -298,7 +312,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_02_OBJ_06 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: CATACOMB_02_SQ_05 | CATACOMB_02_SQ_05 -----
@@ -309,7 +323,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Firetower_Defense ----- 
+----- Lamp of Proof ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147305, "ETC_20150714_013178", "id_catacomb_02", 1481, 317, 438, 45, "npc_ETC_20150714_013178")
@@ -317,7 +331,7 @@ function npc_ETC_20150714_013178()
 msg("CATACOMB_02_OBJ_07")
 end
 
------ Firetower_Defense ----- 
+----- Lamp of Proof ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147305, "ETC_20150714_013178", "id_catacomb_02", 1473, 317, 152, 45, "npc_ETC_20150714_013178")
@@ -325,7 +339,7 @@ function npc_ETC_20150714_013178()
 msg("CATACOMB_02_OBJ_08")
 end
 
------ Firetower_Defense ----- 
+----- Lamp of Proof ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147305, "ETC_20150714_013178", "id_catacomb_02", 1778, 317, 141, 45, "npc_ETC_20150714_013178")
@@ -333,7 +347,7 @@ function npc_ETC_20150714_013178()
 msg("CATACOMB_02_OBJ_09")
 end
 
------ Firetower_Defense ----- 
+----- Lamp of Proof ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147305, "ETC_20150714_013178", "id_catacomb_02", 1773, 317, 432, 45, "npc_ETC_20150714_013178")
@@ -341,7 +355,7 @@ function npc_ETC_20150714_013178()
 msg("CATACOMB_02_OBJ_10")
 end
 
------ npc_catacomb_tomb_01 ----- 
+----- Sealed Valius' Artifact ----- 
 ----- npcselectdialog.ies | ClassName: CATACOMB_02_OBJ_11 -----
 ----- Dialog -----
 ----- QuestIDs: CATACOMB_02_SQ_06 -----
@@ -351,21 +365,21 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ whorfzone ----- 
+----- Warp Portal ----- 
 ----- Enter -----
 addnpc(147500, "ETC_20150317_007245", "id_catacomb_02", -487, 324, 932, 45, "npc_ETC_20150317_007245")
 function npc_ETC_20150317_007245()
 msg("CATACOMB_02_WARP_A")
 end
 
------ whorfzone ----- 
+----- Warp Portal ----- 
 ----- Enter -----
 addnpc(147500, "ETC_20150317_007245", "id_catacomb_02", -3, 332, -403, 45, "npc_ETC_20150317_007245")
 function npc_ETC_20150317_007245()
 msg("CATACOMB_02_WARP_B")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151057, "ETC_20150714_011769", "id_catacomb_02", -163, 285, 1286, 45, "npc_ETC_20150714_011769")
@@ -373,7 +387,7 @@ function npc_ETC_20150714_011769()
 msg("CATACOMB_02_OBJ_05_1_AFTER")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151057, "ETC_20150714_011769", "id_catacomb_02", 89, 288, 963, 45, "npc_ETC_20150714_011769")
@@ -381,7 +395,7 @@ function npc_ETC_20150714_011769()
 msg("CATACOMB_02_OBJ_05_2_AFTER")
 end
 
------ regenerative_stone ----- 
+----- Magic Generating Stones ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151057, "ETC_20150714_011769", "id_catacomb_02", 388, 288, 1578, 45, "npc_ETC_20150714_011769")
@@ -389,7 +403,7 @@ function npc_ETC_20150714_011769()
 msg("CATACOMB_02_OBJ_05_3_AFTER")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "id_catacomb_02", -1201, 290, 1646, 180, "npc_ETC_20150317_009100")

@@ -1,4 +1,4 @@
------ npc_oldman_1 ----- 
+----- Elder Eloizard ----- 
 ----- npcselectdialog.ies | ClassName: 3CMLAKE_83_OLDMAN1 -----
 ----- Dialog -----
 ----- QuestIDs: F_3CMLAKE_83_MQ_01 | F_3CMLAKE_83_MQ_02 -----
@@ -38,7 +38,7 @@ msg("3CMLAKE_83_OLDMAN1_basic03")
 msg("3CMLAKE_83_OLDMAN1_basic04")
 end
 
------ npc_oldman_1 ----- 
+----- Elder Eloizard ----- 
 ----- npcselectdialog.ies | ClassName: 3CMLAKE_83_OLDMAN2 -----
 ----- Dialog -----
 ----- QuestIDs: F_3CMLAKE_83_MQ_01 | F_3CMLAKE_83_MQ_03 | F_3CMLAKE_83_MQ_04 | F_3CMLAKE_83_MQ_06 -----
@@ -78,7 +78,7 @@ msg("3CMLAKE_83_OLDMAN1_basic03")
 msg("3CMLAKE_83_OLDMAN1_basic04")
 end
 
------ npc_village_female ----- 
+----- Elder's Granddaughter ----- 
 ----- npcselectdialog.ies | ClassName: 3CMLAKE_83_LADY -----
 ----- Dialog -----
 ----- QuestIDs: F_3CMLAKE_83_MQ_02 | F_3CMLAKE_83_MQ_03 | F_3CMLAKE_83_MQ_05 | F_3CMLAKE_83_MQ_06 | CM3LAKE83_RP_1 | F3CMLAKE83_HQ1 -----
@@ -110,7 +110,7 @@ msg("3CMLAKE_83_MQ_05_DLG_05")
 msg("3CMLAKE_83_MQ_03_DLG_AG")
 end
 
------ npc_village_male_a1 ----- 
+----- Samsonas ----- 
 ----- npcselectdialog.ies | ClassName: 3CMLAKE_83_PEOPLE1 -----
 ----- Dialog -----
 ----- QuestIDs: F_3CMLAKE_83_SQ_01 | F_3CMLAKE_83_SQ_02 -----
@@ -129,7 +129,7 @@ msg("3CMLAKE_83_PEOPLE8_basic01")
 msg("3CMLAKE_83_PEOPLE8_basic02")
 end
 
------ npc_village_uncle_1 ----- 
+----- Nikodemas ----- 
 ----- npcselectdialog.ies | ClassName: 3CMLAKE_83_PEOPLE2 -----
 ----- Dialog -----
 ----- QuestIDs: F_3CMLAKE_83_SQ_03 -----
@@ -143,7 +143,7 @@ msg("3CMLAKE_83_PEOPLE2_basic01")
 msg("3CMLAKE_83_PEOPLE2_CLEAR")
 end
 
------ npc_village_uncle_2 ----- 
+----- Scalvis ----- 
 ----- npcselectdialog.ies | ClassName: 3CMLAKE_83_PEOPLE3 -----
 ----- Dialog -----
 ----- QuestIDs: F_3CMLAKE_83_SQ_04 -----
@@ -157,7 +157,7 @@ msg("3CMLAKE_83_PEOPLE3_2")
 msg("3CMLAKE_83_SQ_04_DLG_04")
 end
 
------ npc_oldman_1 ----- 
+----- Elder Eloizard ----- 
 ----- npcselectdialog.ies | ClassName: 3CMLAKE_83_OLDMAN3 -----
 ----- Dialog -----
 ----- QuestIDs: F_3CMLAKE_83_MQ_04 | F_3CMLAKE_83_MQ_03 -----
@@ -167,7 +167,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_village_male_a2 ----- 
+----- Town Youth ----- 
 ----- npcselectdialog.ies | ClassName: 3CMLAKE_83_PEOPLE4 -----
 ----- Dialog -----
 ----- QuestIDs: F_3CMLAKE_83_SQ_03 -----
@@ -201,7 +201,7 @@ msg("3CMLAKE_83_PEOPLE6")
 msg("3CMLAKE_83_PEOPLE4_basic01")
 end
 
------ npc_village_male_a3 ----- 
+----- Napalis ----- 
 ----- npcselectdialog.ies | ClassName: 3CMLAKE_83_PEOPLE5 -----
 ----- Dialog -----
 ----- QuestIDs: F_3CMLAKE_83_SQ_03 -----
@@ -211,10 +211,10 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_Obelisk ----- 
+----- Mysterious Obelisk ----- 
 addnpc(147414, "ETC_20151224_019939", "f_3cmlake_83", -892, 368, 1045, 39, "npc_dummy")
 
------ npc_Obelisk ----- 
+----- Mysterious Obelisk ----- 
 ----- npcselectdialog.ies | ClassName: 3CMLAKE_83_OBELISK1 -----
 ----- Dialog -----
 ----- QuestIDs: F_3CMLAKE_83_SQ_02 -----
@@ -224,7 +224,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_Obelisk ----- 
+----- Mysterious Obelisk ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147414, "ETC_20151224_019939", "f_3cmlake_83", -2450, 304, -488, 45, "npc_ETC_20151224_019939")
@@ -232,7 +232,7 @@ function npc_ETC_20151224_019939()
 msg("3CMLAKE_83_OBELISK2")
 end
 
------ npc_village_male_a2 ----- 
+----- Town Youth ----- 
 ----- npcselectdialog.ies | ClassName: 3CMLAKE_83_PEOPLE6 -----
 ----- Dialog -----
 addnpc(147482, "QUEST_LV_0100_20151102_010956", "f_3cmlake_83", -37, 312, 130, -59, "npc_QUEST_LV_0100_20151102_010956")
@@ -265,7 +265,14 @@ msg("3CMLAKE_83_PEOPLE6")
 msg("3CMLAKE_83_PEOPLE4_basic01")
 end
 
------ npc_village_male_a3 ----- 
+----- Absenta Reservoir ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016510", "f_3cmlake_83", -1801, 360, 217, -134, "npc_ETC_20151102_016510")
+function npc_ETC_20151102_016510()
+msg("3CMLAKE_83_TO_3CMLAKE_84")
+end
+
+----- Napalis ----- 
 ----- npcselectdialog.ies | ClassName: 3CMLAKE_83_PEOPLE7 -----
 ----- Dialog -----
 addnpc(147483, "QUEST_LV_0100_20151224_013309", "f_3cmlake_83", -310, 312, -46, 55, "npc_QUEST_LV_0100_20151224_013309")
@@ -275,7 +282,7 @@ msg("3CMLAKE_83_PEOPLE7")
 msg("3CMLAKE_83_PEOPLE7_basic01")
 end
 
------ npc_village_male_a1 ----- 
+----- Samsonas ----- 
 ----- npcselectdialog.ies | ClassName: 3CMLAKE_83_PEOPLE8 -----
 ----- Dialog -----
 addnpc(147481, "QUEST_UNUSED_20151102_002769", "f_3cmlake_83", -249, 312, -110, 97, "npc_QUEST_UNUSED_20151102_002769")
@@ -293,11 +300,25 @@ msg("3CMLAKE_83_PEOPLE8_basic01")
 msg("3CMLAKE_83_PEOPLE8_basic02")
 end
 
------ treasure_box1 ----- 
+----- Letas Stream ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009622", "f_3cmlake_83", 895, 309, -36, 45, "npc_ETC_20150323_009622")
+function npc_ETC_20150323_009622()
+msg("3CMLAKE_83_KATYN_12")
+end
+
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_3cmlake_83", -664, 303, 819, 315, "npc_ETC_20150317_009100")
 function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
+end
+
+----- Arcus Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20161005_024600", "f_3cmlake_83", 146, 313, 869, 91, "npc_ETC_20161005_024600")
+function npc_ETC_20161005_024600()
+msg("3CMLAKE83_BRACKEN43_1")
 end
 

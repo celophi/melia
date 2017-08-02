@@ -1,4 +1,11 @@
------ npc_kabbalist_m ----- 
+----- Nahash Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016518", "f_coral_35_2", -1460, 11, 1176, 215, "npc_ETC_20151102_016518")
+function npc_ETC_20151102_016518()
+msg("CORAL35_2_SIAULIAI_35_1")
+end
+
+----- Kabbalist Lutas ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_35_2_LUTAS -----
 ----- Dialog -----
 ----- QuestIDs: CORAL_35_2_SQ_4 | CORAL_35_2_SQ_5 | CORAL_35_2_SQ_12 | CORAL_35_2_SQ_13 | CORAL_35_2_SQ_14 -----
@@ -42,7 +49,7 @@ msg("CORAL_35_2_SQ_12_AG")
 msg("CORAL_35_2_SQ_13_AG")
 end
 
------ npc_kabbalist_m ----- 
+----- Kabbalist Lutas ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_35_2_LUTAS_2 -----
 ----- Dialog -----
 ----- QuestIDs: CORAL_35_2_SQ_5 | CORAL_35_2_SQ_6 | CORAL_35_2_SQ_7 | CORAL_35_2_SQ_8 | CORAL_35_2_SQ_9 -----
@@ -52,7 +59,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_kabbalist_m ----- 
+----- Kabbalist Lutas ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_35_2_LUTAS_3 -----
 ----- Dialog -----
 ----- QuestIDs: CORAL_35_2_SQ_9 | CORAL_35_2_SQ_10 -----
@@ -62,7 +69,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_kabbalist_m ----- 
+----- Kabbalist Lutas ----- 
 ----- npcselectdialog.ies | ClassName: CORAL_35_2_LUTAS_4 -----
 ----- Dialog -----
 ----- QuestIDs: CORAL_35_2_SQ_10 | CORAL_35_2_SQ_11 | CORAL_35_2_SQ_12 -----
@@ -72,7 +79,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_coral_35_2", -275, 3, 684, 135, "npc_ETC_20150317_009100")

@@ -1,4 +1,25 @@
------ npc_paladin_follower1_3 ----- 
+----- Tenet Church B1 ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001162", "d_chapel_57_6", 744, -73, -320, -45, "npc_ETC_20150317_001162")
+function npc_ETC_20150317_001162()
+msg("CHAPEL576_CHAPEL575")
+end
+
+----- Tenet Garden ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009561", "d_chapel_57_6", -1767, 0, 423, 225, "npc_ETC_20150323_009561")
+function npc_ETC_20150323_009561()
+msg("CHAPEL576_GELE574")
+end
+
+----- Tenet Church 2F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001165", "d_chapel_57_6", -1481, 31, 179, -45, "npc_ETC_20150317_001165")
+function npc_ETC_20150317_001165()
+msg("CHAPEL576_CHAPEL577_1")
+end
+
+----- Follower Vaidutis ----- 
 ----- npcselectdialog.ies | ClassName: CHAPEL_VIRGINIJA -----
 ----- Dialog -----
 ----- QuestIDs: CHAPLE575_MQ_09 | CHAPLE576_MQ_01 | CHAPLE576_MQ_02 | CHAPLE576_MQ_04 | CHAPLE576_RP_1 -----
@@ -21,7 +42,7 @@ msg("CHAPLE576_RP_1_3")
 msg("CHAPLE576_RP_1_1_AG")
 end
 
------ npc_paladin_follower1_2 ----- 
+----- Follower Donatas ----- 
 ----- npcselectdialog.ies | ClassName: CHAPEL576_DONATAS -----
 ----- Dialog -----
 ----- QuestIDs: CHAPLE576_MQ_04_1 | CHAPLE576_MQ_05 | CHAPLE576_MQ_06 | CHAPLE576_MQ_07 | CHAPLE576_MQ_08 | CHAPLE576_MQ_09 -----
@@ -48,7 +69,7 @@ msg("CHAPLE576_MQ_09_03")
 msg("CHAPLE576_MQ_09_add")
 end
 
------ holly_sphere_chapel_02 ----- 
+----- Central Altar ----- 
 ----- npcselectdialog.ies | ClassName: CHAPLE576_MQ_09 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: CHAPLE576_MQ_09 -----
@@ -59,7 +80,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ holly_sphere_chapel_01 ----- 
+----- Globejas Altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(147357, "ETC_20150317_006693", "d_chapel_57_6", -523, 13, 1948, 0, "npc_ETC_20150317_006693")
@@ -68,14 +89,14 @@ msg("CHAPEL576_BASIC_1")
 msg("CHAPEL576_NORTH")
 end
 
------ holly_sphere_chapel_01 ----- 
+----- Apsauga Altar ----- 
 ----- Enter -----
 addnpc(147357, "ETC_20150317_006692", "d_chapel_57_6", -526, 11, -1092, 0, "npc_ETC_20150317_006692")
 function npc_ETC_20150317_006692()
 msg("CHAPEL576_BASIC_2")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -86,7 +107,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_CHAPEL_57_6")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_chapel_57_6", -661, 1, 117, 45, "npc_ETC_20150317_009100")

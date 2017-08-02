@@ -1,4 +1,11 @@
------ npc_druid_m ----- 
+----- Shaton Farm ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009617", "f_farm_49_3", 829, 245, -949, -41, "npc_ETC_20150323_009617")
+function npc_ETC_20150323_009617()
+msg("FARM493_TO_FARM492")
+end
+
+----- Druid Martinek ----- 
 ----- npcselectdialog.ies | ClassName: FARM493_MQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_2_MQ07 | FARM49_3_MQ01 | FARM49_3_MQ06 -----
@@ -38,7 +45,7 @@ msg("FARM49_3_MQ_06_2")
 msg("FARM49_3_MQ_06_7")
 end
 
------ npc_rich_shaton ----- 
+----- Gord Shaton ----- 
 ----- npcselectdialog.ies | ClassName: FARM493_MQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_3_MQ01 | FARM49_3_MQ03 | FARM49_3_MQ04 | FARM49_3_MQ05 -----
@@ -60,7 +67,7 @@ msg("FARM49_3_MQ_04_1")
 msg("FARM49_3_MQ_05_1")
 end
 
------ npc_rich_f ----- 
+----- Vanessa Shaton ----- 
 ----- npcselectdialog.ies | ClassName: FARM493_MQ_02 -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_3_MQ02 | FARM49_3_MQ06 -----
@@ -78,7 +85,7 @@ msg("FARM49_3_MQ_02_5")
 msg("FARM49_3_MQ_06_4")
 end
 
------ npc_intermediate_officer_men2 ----- 
+----- General Buros ----- 
 ----- npcselectdialog.ies | ClassName: FARM493_SQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_3_SQ03 | FARM49_3_SQ04 | FARM49_3_SQ06 -----
@@ -98,7 +105,7 @@ msg("FARM49_3_SQ_04_4")
 msg("FARM49_3_SQ_06_3")
 end
 
------ npc_village_uncle_8 ----- 
+----- Steward Valen ----- 
 ----- npcselectdialog.ies | ClassName: FARM493_SQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_3_SQ01 | FARM49_3_SQ02 -----
@@ -115,7 +122,7 @@ msg("FARM49_3_SQ_02_3")
 msg("FARM49_3_SQ_02_4")
 end
 
------ soldier6 ----- 
+----- Farm Soldier Upham ----- 
 ----- npcselectdialog.ies | ClassName: FARM493_SQ_06 -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_3_SQ06 -----
@@ -125,7 +132,7 @@ msg("FARM493_SQ_06_basic01")
 msg("FARM493_SQ_06_basic02")
 end
 
------ tunnel_ent_1 ----- 
+----- Underground Tunnel Entrance ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(155010, "ETC_20150323_010388", "f_farm_49_3", -562, 245, -585, 45, "npc_ETC_20150323_010388")
@@ -134,7 +141,7 @@ msg("HT2_FARM493_CAVEWARP01_BLM01")
 msg("FARM493_CAVEWARP01")
 end
 
------ tunnel_ent_1 ----- 
+----- Underground Tunnel Entrance ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(155010, "ETC_20150323_010388", "f_farm_49_3", -650, 293, -104, 45, "npc_ETC_20150323_010388")
@@ -143,7 +150,7 @@ msg("HT2_FARM493_CAVEWARP02_BLM01")
 msg("FARM493_CAVEWARP02")
 end
 
------ tunnel_ent_1 ----- 
+----- Underground Tunnel Entrance ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(155010, "ETC_20150323_010388", "f_farm_49_3", -807, 259, 592, 145, "npc_ETC_20150323_010388")
@@ -152,7 +159,7 @@ msg("HT2_FARM493_CAVEWARP03_BLM01")
 msg("FARM493_CAVEWARP03")
 end
 
------ tunnel_ent_1 ----- 
+----- Underground Tunnel Entrance ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(155010, "ETC_20150323_010388", "f_farm_49_3", -1972, 275, -204, 45, "npc_ETC_20150323_010388")
@@ -161,7 +168,7 @@ msg("HT2_FARM493_CAVEWARP04_BLM01")
 msg("FARM493_CAVEWARP04")
 end
 
------ tunnel_ent_1 ----- 
+----- Underground Tunnel Entrance ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(155010, "ETC_20150323_010388", "f_farm_49_3", -721, 222, 1786, 45, "npc_ETC_20150323_010388")
@@ -170,7 +177,7 @@ msg("HT2_FARM493_CAVEWARP05_BLM01")
 msg("FARM493_CAVEWARP05")
 end
 
------ tunnel_ent_1 ----- 
+----- Underground Tunnel Entrance ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(155010, "ETC_20150323_010388", "f_farm_49_3", 1046, 238, 1026, 126, "npc_ETC_20150323_010388")
@@ -179,7 +186,7 @@ msg("HT2_FARM493_CAVEWARP06_BLM01")
 msg("FARM493_CAVEWARP06")
 end
 
------ tunnel_ent_1 ----- 
+----- Underground Tunnel Entrance ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(155010, "ETC_20150323_010388", "f_farm_49_3", 1214, 238, 1314, -71, "npc_ETC_20150323_010388")
@@ -188,7 +195,7 @@ msg("HT2_FARM493_CAVEWARP07_BLM01")
 msg("FARM493_CAVEWARP07")
 end
 
------ tunnel_ent_1 ----- 
+----- Underground Tunnel Entrance ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(155010, "ETC_20150323_010388", "f_farm_49_3", -1624, 274, -1275, 46, "npc_ETC_20150323_010388")
@@ -197,7 +204,7 @@ msg("HT2_FARM493_CAVEWARP08_BLM01")
 msg("FARM493_CAVEWARP08")
 end
 
------ tunnel_ent_1 ----- 
+----- Underground Tunnel Entrance ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(155010, "ETC_20150323_010388", "f_farm_49_3", -1286, 309, 156, -32, "npc_ETC_20150323_010388")
@@ -206,7 +213,7 @@ msg("HT2_FARM493_CAVEWARP09_BLM01")
 msg("FARM493_CAVEWARP09")
 end
 
------ tunnel_ent_1 ----- 
+----- Underground Tunnel Entrance ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(155010, "ETC_20150323_010388", "f_farm_49_3", -1231, 246, 1089, -126, "npc_ETC_20150323_010388")
@@ -215,7 +222,7 @@ msg("HT2_FARM493_CAVEWARP10_BLM01")
 msg("FARM493_CAVEWARP10")
 end
 
------ tunnel_ent_1 ----- 
+----- Underground Tunnel Entrance ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
 addnpc(155010, "ETC_20150323_010388", "f_farm_49_3", -1709, 246, -661, 45, "npc_ETC_20150323_010388")
@@ -224,7 +231,7 @@ msg("HT2_FARM493_CAVEWARP11_BLM01")
 msg("FARM493_CAVEWARP11")
 end
 
------ tunnel_ent_2 ----- 
+----- Underground Tunnel Exit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155011, "ETC_20150323_010389", "f_farm_49_3", -1109, 274, -783, 45, "npc_ETC_20150323_010389")
@@ -232,7 +239,7 @@ function npc_ETC_20150323_010389()
 msg("FARM493_CAVEEXIT")
 end
 
------ tunnel_ent_2 ----- 
+----- Underground Tunnel Exit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155011, "ETC_20150323_010389", "f_farm_49_3", -1026, 259, 716, 45, "npc_ETC_20150323_010389")
@@ -240,7 +247,7 @@ function npc_ETC_20150323_010389()
 msg("FARM493_CAVEEXIT")
 end
 
------ tunnel_ent_2 ----- 
+----- Underground Tunnel Exit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155011, "ETC_20150323_010389", "f_farm_49_3", -1249, 275, -117, 45, "npc_ETC_20150323_010389")
@@ -248,7 +255,7 @@ function npc_ETC_20150323_010389()
 msg("FARM493_CAVEEXIT")
 end
 
------ tunnel_ent_2 ----- 
+----- Underground Tunnel Exit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155011, "ETC_20150323_010389", "f_farm_49_3", 91, 249, 1898, 45, "npc_ETC_20150323_010389")
@@ -256,7 +263,7 @@ function npc_ETC_20150323_010389()
 msg("FARM493_CAVEEXIT")
 end
 
------ tunnel_ent_2 ----- 
+----- Underground Tunnel Exit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155011, "ETC_20150323_010389", "f_farm_49_3", 662, 238, 1191, 45, "npc_ETC_20150323_010389")
@@ -264,7 +271,7 @@ function npc_ETC_20150323_010389()
 msg("FARM493_CAVEEXIT")
 end
 
------ tunnel_ent_2 ----- 
+----- Underground Tunnel Exit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155011, "ETC_20150323_010389", "f_farm_49_3", 1718, 198, 423, 45, "npc_ETC_20150323_010389")
@@ -272,7 +279,7 @@ function npc_ETC_20150323_010389()
 msg("FARM493_CAVEEXIT")
 end
 
------ tunnel_ent_2 ----- 
+----- Underground Tunnel Exit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155011, "ETC_20150323_010389", "f_farm_49_3", -1263, 274, -1462, 45, "npc_ETC_20150323_010389")
@@ -280,7 +287,7 @@ function npc_ETC_20150323_010389()
 msg("FARM493_CAVEEXIT")
 end
 
------ tunnel_ent_2 ----- 
+----- Underground Tunnel Exit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155011, "ETC_20150323_010389", "f_farm_49_3", 922, 293, 601, 45, "npc_ETC_20150323_010389")
@@ -288,7 +295,7 @@ function npc_ETC_20150323_010389()
 msg("FARM493_CAVEEXIT")
 end
 
------ tunnel_ent_2 ----- 
+----- Underground Tunnel Exit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155011, "ETC_20150323_010389", "f_farm_49_3", -1478, 246, 468, 45, "npc_ETC_20150323_010389")
@@ -296,7 +303,7 @@ function npc_ETC_20150323_010389()
 msg("FARM493_CAVEEXIT")
 end
 
------ tunnel_ent_2 ----- 
+----- Underground Tunnel Exit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155011, "ETC_20150323_010389", "f_farm_49_3", -711, 259, 926, 45, "npc_ETC_20150323_010389")
@@ -304,7 +311,7 @@ function npc_ETC_20150323_010389()
 msg("FARM493_CAVEEXIT")
 end
 
------ tunnel_ent_2 ----- 
+----- Underground Tunnel Exit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155011, "ETC_20150323_010389", "f_farm_49_3", 1139, 245, -707, 45, "npc_ETC_20150323_010389")
@@ -312,7 +319,7 @@ function npc_ETC_20150323_010389()
 msg("FARM493_CAVEEXIT")
 end
 
------ old_sack ----- 
+----- Dropped Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155005, "ETC_20150406_010845", "f_farm_49_3", -107, 245, -553, -45, "npc_ETC_20150406_010845")
@@ -320,7 +327,7 @@ function npc_ETC_20150406_010845()
 msg("FARM493_SQ_02")
 end
 
------ old_sack ----- 
+----- Dropped Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155005, "ETC_20150406_010845", "f_farm_49_3", -96, 245, -736, -45, "npc_ETC_20150406_010845")
@@ -328,7 +335,7 @@ function npc_ETC_20150406_010845()
 msg("FARM493_SQ_02")
 end
 
------ old_sack ----- 
+----- Dropped Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155005, "ETC_20150406_010845", "f_farm_49_3", 72, 245, -774, -45, "npc_ETC_20150406_010845")
@@ -336,7 +343,7 @@ function npc_ETC_20150406_010845()
 msg("FARM493_SQ_02")
 end
 
------ old_sack ----- 
+----- Dropped Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155005, "ETC_20150406_010845", "f_farm_49_3", 207, 245, -714, -45, "npc_ETC_20150406_010845")
@@ -344,7 +351,7 @@ function npc_ETC_20150406_010845()
 msg("FARM493_SQ_02")
 end
 
------ old_sack ----- 
+----- Dropped Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155005, "ETC_20150406_010845", "f_farm_49_3", 89, 245, -546, -45, "npc_ETC_20150406_010845")
@@ -352,7 +359,7 @@ function npc_ETC_20150406_010845()
 msg("FARM493_SQ_02")
 end
 
------ old_sack ----- 
+----- Dropped Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155005, "ETC_20150406_010845", "f_farm_49_3", 28, 293, -260, -45, "npc_ETC_20150406_010845")
@@ -360,7 +367,7 @@ function npc_ETC_20150406_010845()
 msg("FARM493_SQ_02")
 end
 
------ old_sack ----- 
+----- Dropped Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155005, "ETC_20150406_010845", "f_farm_49_3", 134, 293, -82, -45, "npc_ETC_20150406_010845")
@@ -368,7 +375,7 @@ function npc_ETC_20150406_010845()
 msg("FARM493_SQ_02")
 end
 
------ old_sack ----- 
+----- Dropped Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155005, "ETC_20150406_010845", "f_farm_49_3", -156, 293, -122, -45, "npc_ETC_20150406_010845")
@@ -376,7 +383,7 @@ function npc_ETC_20150406_010845()
 msg("FARM493_SQ_02")
 end
 
------ old_sack ----- 
+----- Dropped Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155005, "ETC_20150406_010845", "f_farm_49_3", -4, 293, -253, -45, "npc_ETC_20150406_010845")
@@ -384,7 +391,7 @@ function npc_ETC_20150406_010845()
 msg("FARM493_SQ_02")
 end
 
------ old_sack ----- 
+----- Dropped Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155005, "ETC_20150406_010845", "f_farm_49_3", 1424, 293, 7, -45, "npc_ETC_20150406_010845")
@@ -392,7 +399,7 @@ function npc_ETC_20150406_010845()
 msg("FARM493_SQ_02")
 end
 
------ old_sack ----- 
+----- Dropped Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155005, "ETC_20150406_010845", "f_farm_49_3", 1546, 293, 131, -45, "npc_ETC_20150406_010845")
@@ -400,7 +407,7 @@ function npc_ETC_20150406_010845()
 msg("FARM493_SQ_02")
 end
 
------ old_sack ----- 
+----- Dropped Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155005, "ETC_20150406_010845", "f_farm_49_3", 1675, 293, -55, -45, "npc_ETC_20150406_010845")
@@ -408,7 +415,7 @@ function npc_ETC_20150406_010845()
 msg("FARM493_SQ_02")
 end
 
------ old_sack ----- 
+----- Dropped Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155005, "ETC_20150406_010845", "f_farm_49_3", 1614, 293, -210, -45, "npc_ETC_20150406_010845")
@@ -416,7 +423,7 @@ function npc_ETC_20150406_010845()
 msg("FARM493_SQ_02")
 end
 
------ old_sack ----- 
+----- Dropped Bag ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155005, "ETC_20150406_010845", "f_farm_49_3", 1478, 293, -189, -45, "npc_ETC_20150406_010845")
@@ -424,7 +431,7 @@ function npc_ETC_20150406_010845()
 msg("FARM493_SQ_02")
 end
 
------ noshadow_npc ----- 
+----- Second Demon Prison ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20150428_011584", "f_farm_49_3", -1735, 286, 1753, 45, "npc_ETC_20150428_011584")
@@ -432,7 +439,7 @@ function npc_ETC_20150428_011584()
 msg("FARM49_3_TO_VELNIASP54_1")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -443,7 +450,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_FARM_49_3")
 end
 
------ TreasureBox1 ----- 
+----- Lv2 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40030, "ETC_20150317_009071", "f_farm_49_3", 241, 293, -120, 45, "npc_ETC_20150317_009071")
@@ -451,7 +458,7 @@ function npc_ETC_20150317_009071()
 msg("TREASUREBOX_LV")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_farm_49_3", 691, 388, 192, 270, "npc_ETC_20150317_009100")
@@ -459,7 +466,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_village_uncle_7 ----- 
+----- Edward ----- 
 ----- npcselectdialog.ies | ClassName: FARM493_SQ_07 -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_3_SQ07 | FARM49_3_SQ08 -----
@@ -469,7 +476,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_thorn_flower_yellow ----- 
+----- Rare Flower ----- 
 ----- npcselectdialog.ies | ClassName: FARM493_SQ_08_OBJ1 -----
 ----- Dialog -----
 ----- QuestIDs: FARM49_3_SQ08 -----

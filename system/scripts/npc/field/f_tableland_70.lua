@@ -1,4 +1,18 @@
------ soldier6 ----- 
+----- Inner Enceinte District ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001243", "f_tableland_70", 4605, 707, -4493, 20, "npc_ETC_20150317_001243")
+function npc_ETC_20150317_001243()
+msg("TABLELAND70_FLASH64")
+end
+
+----- Grand Yard Mesa ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009597", "f_tableland_70", 780, 561, -3002, 225, "npc_ETC_20150323_009597")
+function npc_ETC_20150323_009597()
+msg("TABLELAND70_TABLELAND71")
+end
+
+----- Soldier Guylens ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER1_1 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_70_SQ1 -----
@@ -11,7 +25,7 @@ msg("TABLE70_SOLDIER1_2_basic2")
 msg("TABLE70_SOLDIER1_3_basic1")
 end
 
------ mon_intermediate_officer_men3 ----- 
+----- Assistant Commander Talon ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_CAPTIN1_1 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_70_SQ1 | TABLELAND_70_SQ2 | TABLELAND_70_SQ3 | TABLELAND_70_SQ4 | TABLELAND_70_SQ5 | TABLELAND_70_SQ6 | TABLELAND_70_SQ9 | TABLELAND_70_SQ10 | TABLELAND_70_SQ11 -----
@@ -63,7 +77,7 @@ msg("TABLE70_CAPTIN1_3_basic2")
 msg("TABLELAND_70_SQ11_repeat3_succ01")
 end
 
------ soldier6 ----- 
+----- Supply Soldier Herntas ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER2_1 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_70_SQ2 -----
@@ -81,7 +95,7 @@ msg("TABLE70_SOLDIER2_3_basic2")
 msg("TABLE70_SOLDIER2_4_basic1")
 end
 
------ soldier6 ----- 
+----- Supply Soldier Delyn ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER2_2 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_70_SQ3 -----
@@ -91,7 +105,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ mon_intermediate_officer_men3 ----- 
+----- Assistant Commander Talon ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_CAPTIN1_2 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_70_SQ3 | TABLELAND_70_SQ4 -----
@@ -101,7 +115,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ soldier6 ----- 
+----- Supply Soldier Herntas ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER2_3 -----
 ----- Dialog -----
 addnpc(20016, "QUEST_20160718_003949", "f_tableland_70", 2410, 628, -1667, -49, "npc_QUEST_20160718_003949")
@@ -118,7 +132,7 @@ msg("TABLE70_SOLDIER2_3_basic2")
 msg("TABLE70_SOLDIER2_4_basic1")
 end
 
------ soldier6 ----- 
+----- Soldier Guylens ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER1_2 -----
 ----- Dialog -----
 addnpc(20016, "QUEST_LV_0300_20160718_002085", "f_tableland_70", 2267, 628, -1756, -30, "npc_QUEST_LV_0300_20160718_002085")
@@ -130,7 +144,7 @@ msg("TABLE70_SOLDIER1_2_basic2")
 msg("TABLE70_SOLDIER1_3_basic1")
 end
 
------ soldier6 ----- 
+----- Soldier Callans ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER3_1 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_70_SQ7 | TABLELAND_70_SQ8 -----
@@ -152,7 +166,7 @@ msg("TABLE70_SOLDIER3_2_basic2")
 msg("TABLE70_SOLDIER3_3_basic1")
 end
 
------ soldier6 ----- 
+----- Soldier Callans ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER3_2 -----
 ----- Dialog -----
 addnpc(20016, "QUEST_LV_0300_20160718_002038", "f_tableland_70", 2456, 628, -1664, -67, "npc_QUEST_LV_0300_20160718_002038")
@@ -173,7 +187,7 @@ msg("TABLE70_SOLDIER3_2_basic2")
 msg("TABLE70_SOLDIER3_3_basic1")
 end
 
------ soldier6 ----- 
+----- Soldier Hyrance ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER4_1 -----
 ----- Dialog -----
 addnpc(20016, "QUEST_LV_0300_20160718_002258", "f_tableland_70", 2919, 562, -2276, 45, "npc_QUEST_LV_0300_20160718_002258")
@@ -185,7 +199,7 @@ msg("TABLE70_SOLDIER4_2_basic2")
 msg("TABLE70_SOLDIER4_3_basic1")
 end
 
------ soldier6 ----- 
+----- Soldier Kuijlen ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER5_1 -----
 ----- Dialog -----
 addnpc(20016, "QUEST_LV_0300_20160718_002260", "f_tableland_70", 3060, 562, -2615, 99, "npc_QUEST_LV_0300_20160718_002260")
@@ -199,7 +213,7 @@ msg("TABLE70_SOLDIER6_2_basic2")
 msg("TABLE70_SOLDIER5_3_basic1")
 end
 
------ soldier6 ----- 
+----- Soldier Heulen ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER6_1 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND70_HQ1 -----
@@ -217,7 +231,7 @@ msg("TABLELAND70_HQ1_prog1")
 msg("TABLELAND70_HQ1_succ1")
 end
 
------ soldier6 ----- 
+----- Soldier Kuijlen ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER5_2 -----
 ----- Dialog -----
 addnpc(20016, "QUEST_LV_0300_20160718_002260", "f_tableland_70", 2195, 628, -1725, -37, "npc_QUEST_LV_0300_20160718_002260")
@@ -231,7 +245,7 @@ msg("TABLE70_SOLDIER6_2_basic2")
 msg("TABLE70_SOLDIER5_3_basic1")
 end
 
------ soldier6 ----- 
+----- Soldier Heulen ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER6_2 -----
 ----- Dialog -----
 addnpc(20016, "QUEST_LV_0300_20160718_002263", "f_tableland_70", 2383, 628, -1679, -40, "npc_QUEST_LV_0300_20160718_002263")
@@ -245,7 +259,7 @@ msg("TABLE70_SOLDIER6_2_basic2")
 msg("TABLE70_SOLDIER5_3_basic1")
 end
 
------ old_wooden_box ----- 
+----- Supplies Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155008, "ETC_20150317_009144", "f_tableland_70", 3030, 562, -2570, -90, "npc_ETC_20150317_009144")
@@ -253,7 +267,7 @@ function npc_ETC_20150317_009144()
 msg("TABLE70_BOX")
 end
 
------ soldier6 ----- 
+----- Soldier Hyrance ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER4_2 -----
 ----- Dialog -----
 addnpc(20016, "QUEST_LV_0300_20160718_002258", "f_tableland_70", 2222, 628, -1750, 45, "npc_QUEST_LV_0300_20160718_002258")
@@ -265,7 +279,7 @@ msg("TABLE70_SOLDIER4_2_basic2")
 msg("TABLE70_SOLDIER4_3_basic1")
 end
 
------ soldier7 ----- 
+----- Supply Soldier Herntas ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER2_4 -----
 ----- Dialog -----
 addnpc(20019, "QUEST_20160718_003949", "f_tableland_70", 3375, 562, -2192, -128, "npc_QUEST_20160718_003949")
@@ -282,7 +296,7 @@ msg("TABLE70_SOLDIER2_3_basic2")
 msg("TABLE70_SOLDIER2_4_basic1")
 end
 
------ soldier7 ----- 
+----- Soldier Callans ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER3_3 -----
 ----- Dialog -----
 addnpc(20019, "QUEST_LV_0300_20160718_002038", "f_tableland_70", 3346, 562, -2284, 182, "npc_QUEST_LV_0300_20160718_002038")
@@ -303,7 +317,7 @@ msg("TABLE70_SOLDIER3_2_basic2")
 msg("TABLE70_SOLDIER3_3_basic1")
 end
 
------ soldier7 ----- 
+----- Soldier Guylens ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER1_3 -----
 ----- Dialog -----
 addnpc(20019, "QUEST_LV_0300_20160718_002085", "f_tableland_70", 3364, 562, -2242, -117, "npc_QUEST_LV_0300_20160718_002085")
@@ -315,7 +329,7 @@ msg("TABLE70_SOLDIER1_2_basic2")
 msg("TABLE70_SOLDIER1_3_basic1")
 end
 
------ soldier7 ----- 
+----- Soldier Hyrance ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER4_3 -----
 ----- Dialog -----
 addnpc(20019, "QUEST_LV_0300_20160718_002258", "f_tableland_70", 3246, 562, -2310, 87, "npc_QUEST_LV_0300_20160718_002258")
@@ -327,7 +341,7 @@ msg("TABLE70_SOLDIER4_2_basic2")
 msg("TABLE70_SOLDIER4_3_basic1")
 end
 
------ soldier7 ----- 
+----- Soldier Kuijlen ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER5_3 -----
 ----- Dialog -----
 addnpc(20019, "QUEST_LV_0300_20160718_002260", "f_tableland_70", 3283, 562, -2309, 140, "npc_QUEST_LV_0300_20160718_002260")
@@ -341,7 +355,7 @@ msg("TABLE70_SOLDIER6_2_basic2")
 msg("TABLE70_SOLDIER5_3_basic1")
 end
 
------ soldier7 ----- 
+----- Soldier Heulen ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER6_3 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND70_HQ1 -----
@@ -359,7 +373,7 @@ msg("TABLELAND70_HQ1_prog1")
 msg("TABLELAND70_HQ1_succ1")
 end
 
------ soldier6 ----- 
+----- Supply Soldier Telyn ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER7_1 -----
 ----- Dialog -----
 addnpc(20016, "ETC_20160718_022664", "f_tableland_70", 2929, 562, -2424, 12, "npc_ETC_20160718_022664")
@@ -371,7 +385,7 @@ msg("TABLE70_SOLDIER7_3_basic1")
 msg("TABLE70_SOLDIER7_3_basic2")
 end
 
------ soldier6 ----- 
+----- Supply Soldier Telyn ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER7_2 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_70_SQ3 -----
@@ -381,7 +395,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ soldier6 ----- 
+----- Supply Soldier Telyn ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SOLDIER7_3 -----
 ----- Dialog -----
 addnpc(20016, "ETC_20160718_022664", "f_tableland_70", 3266, 562, -2346, 104, "npc_ETC_20160718_022664")
@@ -393,7 +407,7 @@ msg("TABLE70_SOLDIER7_3_basic1")
 msg("TABLE70_SOLDIER7_3_basic2")
 end
 
------ boxes_01 ----- 
+----- Supply Box ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_SUBQ3_BOX -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_70_SQ3 -----
@@ -403,7 +417,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ mon_intermediate_officer_men3 ----- 
+----- Assistant Commander Talon ----- 
 ----- npcselectdialog.ies | ClassName: TABLE70_CAPTIN1_3 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND_70_SQ5 | TABLELAND_70_SQ6 | TABLELAND_70_SQ9 | TABLELAND_70_SQ10 | TABLELAND_70_SQ11 -----
@@ -455,7 +469,7 @@ msg("TABLE70_CAPTIN1_3_basic2")
 msg("TABLELAND_70_SQ11_repeat3_succ01")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_tableland_70", 4625, 640, -2557, -90, "npc_ETC_20150317_009100")

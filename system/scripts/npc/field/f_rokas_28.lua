@@ -1,11 +1,25 @@
------ cablecar ----- 
+----- Broken device ----- 
 ----- Enter -----
 addnpc(147336, "ETC_20150317_009456", "f_rokas_28", -337, 1187, 299, 180, "npc_ETC_20150317_009456")
 function npc_ETC_20150317_009456()
 msg("ROKAS28_BLOCK")
 end
 
------ npc_rokas_7 ----- 
+----- Akmens Ridge ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009575", "f_rokas_28", -717, 1121, -1692, -130, "npc_ETC_20150323_009575")
+function npc_ETC_20150323_009575()
+msg("ROKAS28_ROKAS27")
+end
+
+----- Rukas Plateau ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009577", "f_rokas_28", -1892, 1298, -545, 214, "npc_ETC_20150323_009577")
+function npc_ETC_20150323_009577()
+msg("ROKAS28_ROKAS29")
+end
+
+----- Stone Pillar ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS28_ENTICE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS28_ENTICE | ROKAS28_EXPOSURE -----
@@ -15,7 +29,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_intermediate_officer_men2 ----- 
+----- Liaison Officer Nian ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS28_MQ1_1 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: ROKAS28_MQ1 | ROKAS28_MQ1 -----
@@ -29,7 +43,7 @@ msg("ROKAS28_MQ1_1_BASIC01")
 msg("ROKAS28_MQ1_1_BASIC02")
 end
 
------ npc_historian_odel_2 ----- 
+----- Historian Adelle ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS28_ODEL_MQ4_DLG -----
 ----- Dialog -----
 addnpc(153040, "QUEST_LV_0100_20150317_000557", "f_rokas_28", 1616, 1161, 1791, 45, "npc_QUEST_LV_0100_20150317_000557")
@@ -44,7 +58,7 @@ msg("ROKAS28_ODEL_MQ6_BASIC01")
 msg("ROKAS28_ODEL_basic01")
 end
 
------ npc_historian_odel_2 ----- 
+----- Historian Adelle ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS28_ODEL_MQ6 -----
 ----- Dialog -----
 addnpc(153040, "QUEST_LV_0100_20150317_000557", "f_rokas_28", -475, 1183, -506, 45, "npc_QUEST_LV_0100_20150317_000557")
@@ -59,7 +73,7 @@ msg("ROKAS28_ODEL_MQ6_BASIC01")
 msg("ROKAS28_ODEL_basic01")
 end
 
------ npc_rokas_6 ----- 
+----- Seal Device ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_009460", "f_rokas_28", -216, 1187, -69, 45, "npc_ETC_20150317_009460")
@@ -67,7 +81,7 @@ function npc_ETC_20150317_009460()
 msg("ROKAS28_SEAL_FAKE")
 end
 
------ npc_rokas_6 ----- 
+----- Seal Device ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_009460", "f_rokas_28", -638, 1184, -617, 45, "npc_ETC_20150317_009460")
@@ -75,7 +89,7 @@ function npc_ETC_20150317_009460()
 msg("ROKAS28_SEAL_FAKE")
 end
 
------ npc_rokas_6 ----- 
+----- Seal Device ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_009460", "f_rokas_28", -42, 1121, -1502, 45, "npc_ETC_20150317_009460")
@@ -83,7 +97,7 @@ function npc_ETC_20150317_009460()
 msg("ROKAS28_SEAL_FAKE")
 end
 
------ npc_rokas_6 ----- 
+----- Seal Device ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_009460", "f_rokas_28", 733, 1159, -446, 45, "npc_ETC_20150317_009460")
@@ -91,7 +105,7 @@ function npc_ETC_20150317_009460()
 msg("ROKAS28_SEAL_FAKE")
 end
 
------ npc_rokas_6 ----- 
+----- Seal Device ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_009460", "f_rokas_28", 777, 1241, 724, 45, "npc_ETC_20150317_009460")
@@ -99,7 +113,7 @@ function npc_ETC_20150317_009460()
 msg("ROKAS28_SEAL_FAKE")
 end
 
------ npc_rokas_6 ----- 
+----- Seal Device ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_009460", "f_rokas_28", 1156, 1159, 1125, 45, "npc_ETC_20150317_009460")
@@ -107,7 +121,7 @@ function npc_ETC_20150317_009460()
 msg("ROKAS28_SEAL_FAKE")
 end
 
------ npc_rokas_6 ----- 
+----- Seal Device ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_009460", "f_rokas_28", -616, 1297, 14, 45, "npc_ETC_20150317_009460")
@@ -115,7 +129,7 @@ function npc_ETC_20150317_009460()
 msg("ROKAS28_SEAL_TRUE2")
 end
 
------ npc_rokas_6 ----- 
+----- Seal Device ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_009460", "f_rokas_28", 371, 1349, 646, 45, "npc_ETC_20150317_009460")
@@ -123,7 +137,7 @@ function npc_ETC_20150317_009460()
 msg("ROKAS28_SEAL_TRUE3")
 end
 
------ npc_rokas_6 ----- 
+----- Seal Device ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47106, "ETC_20150317_009460", "f_rokas_28", 1650, 1161, 1715, 45, "npc_ETC_20150317_009460")
@@ -131,7 +145,7 @@ function npc_ETC_20150317_009460()
 msg("ROKAS28_SEAL_TRUE1")
 end
 
------ npc_miner2 ----- 
+----- Archaeologist Friedka ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS28_FRIDKA -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS28_EXPOSURE | ROKAS28_MQ5 | ROKAS28_MQ3 -----
@@ -148,7 +162,7 @@ msg("ROKAS28_FRIDKA_BASIC02")
 msg("ROKAS28_EXPOSURE_03")
 end
 
------ npc_combat_transport_section_1 ----- 
+----- Technician Orion ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS28_ORION -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS28_SET_TRAP | ROKAS28_TRAP -----
@@ -163,7 +177,7 @@ msg("ROKAS28_ORION_basic02")
 msg("ROKAS28_ORION_BASIC01")
 end
 
------ npc_historian_odel_2 ----- 
+----- Historian Adelle ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS28_ODEL -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS28_MQ2 | ROKAS28_MQ6 -----
@@ -179,7 +193,14 @@ msg("ROKAS28_ODEL_MQ6_BASIC01")
 msg("ROKAS28_ODEL_basic01")
 end
 
------ treasure_box1 ----- 
+----- Royal Mausoleum Workers Lodge ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150401_010449", "f_rokas_28", 1191, 1007, 2320, 207, "npc_ETC_20150401_010449")
+function npc_ETC_20150401_010449()
+msg("ROKAS28_TO_UNDERF591")
+end
+
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_rokas_28", 631, 1157, -160, 225, "npc_ETC_20150317_009100")

@@ -1,4 +1,47 @@
------ Silvertransporter_m ----- 
+----- Saknis Plains ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009569", "d_thorn_22", -986, 470, -2219, -45, "npc_ETC_20150323_009569")
+function npc_ETC_20150323_009569()
+msg("THORN22_KATYN14")
+end
+
+----- Sunset Flag Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001186", "d_thorn_22", 987, 289, 1109, 111, "npc_ETC_20150317_001186")
+function npc_ETC_20150317_001186()
+msg("THORN22_THORN23")
+end
+
+----- Dvasia Peak ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009573", "d_thorn_22", -1020, 554, -891, 138, "npc_ETC_20150323_009573")
+function npc_ETC_20150323_009573()
+msg("THORN22_1_THORN22_2")
+end
+
+----- Dvasia Peak ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009573", "d_thorn_22", -1216, 554, -387, -22, "npc_ETC_20150323_009573")
+function npc_ETC_20150323_009573()
+msg("THORN22_2_THORN22_1")
+end
+
+----- Dvasia Peak ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009573", "d_thorn_22", -1035, 553, 664, 117, "npc_ETC_20150323_009573")
+function npc_ETC_20150323_009573()
+msg("GM_QUEST_MODIFY_PC_SEL")
+msg("GM_NPC_HIDE_UNHIDE")
+end
+
+----- Dvasia Peak ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009573", "d_thorn_22", -689, 554, 846, -75, "npc_ETC_20150323_009573")
+function npc_ETC_20150323_009573()
+msg("THORN22_3_THORN22_2")
+end
+
+----- Soldier Rudolfas ----- 
 ----- npcselectdialog.ies | ClassName: THORN22_ADD_SUB_02 -----
 ----- Dialog -----
 ----- QuestIDs: THORN22_ADD_SUB_02 -----
@@ -10,7 +53,7 @@ msg("THORN22_ADD_SUB_02_basic01")
 msg("THORN22_ADD_SUB_02_basic02")
 end
 
------ SCS_M2_Mon_Guard ----- 
+----- Soldier Aspas ----- 
 ----- npcselectdialog.ies | ClassName: THORN22_ADD_SUB_05 -----
 ----- Dialog -----
 ----- QuestIDs: THORN22_ADD_SUB_05 -----
@@ -21,7 +64,7 @@ msg("THORN22_ADD_SUB_05_succ01")
 msg("THORN22_ADD_SUB_05_basic01")
 end
 
------ soldier1 ----- 
+----- Soldier Dominic ----- 
 ----- npcselectdialog.ies | ClassName: THORN22_DOMINIC -----
 ----- Dialog -----
 ----- QuestIDs: THORN22_Q_1 -----
@@ -37,7 +80,7 @@ msg("THORN22_Q_6_succ1")
 msg("THORN22_DOMINIC_basic1")
 end
 
------ soldier2 ----- 
+----- Soldier Samson ----- 
 ----- npcselectdialog.ies | ClassName: THORN22_SAMSON -----
 ----- Dialog -----
 ----- QuestIDs: THORN22_Q_3 | THORN22_Q_4 | THORN22_Q_6 -----
@@ -54,7 +97,7 @@ msg("THORN22_SAMSON_basic1")
 msg("THORN22_Q_3_startnpc01")
 end
 
------ bonfire_1 ----- 
+----- Pile of Branches ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46011, "ETC_20150317_009283", "d_thorn_22", -1504, 490, -2162, 45, "npc_ETC_20150317_009283")
@@ -62,7 +105,7 @@ function npc_ETC_20150317_009283()
 msg("THORN22_FIREWOOD_1")
 end
 
------ bonfire_1 ----- 
+----- Pile of Branches ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(46011, "ETC_20150317_009283", "d_thorn_22", -1702, 490, -2214, 45, "npc_ETC_20150317_009283")
@@ -70,7 +113,7 @@ function npc_ETC_20150317_009283()
 msg("THORN22_FIREWOOD_2")
 end
 
------ npc_intermediate_officer_men2 ----- 
+----- Commander O'Rourke ----- 
 ----- npcselectdialog.ies | ClassName: THORN22_OROURKE -----
 ----- Dialog -----
 ----- QuestIDs: THORN22_Q_13 | THORN22_Q_16 -----
@@ -84,7 +127,7 @@ msg("THORN22_OROURKE_basic1")
 msg("THORN22_Q_13_prog02")
 end
 
------ npc_intermediate_officer_men ----- 
+----- Commander Julian ----- 
 ----- npcselectdialog.ies | ClassName: THORN22_JULIAN -----
 ----- Dialog -----
 ----- QuestIDs: THORN22_Q_10 | THORN22_Q_13 | SIAUL_WEST_HQ_01 -----
@@ -102,7 +145,7 @@ msg("SIAUL_WEST_HQ_01_prog01")
 msg("SIAUL_WEST_HQ_01_succ01")
 end
 
------ soldier3 ----- 
+----- Soldier Poulter ----- 
 ----- npcselectdialog.ies | ClassName: THORN22_POULLTER -----
 ----- Dialog -----
 ----- QuestIDs: THORN22_Q_10 | THORN22_Q_11 -----
@@ -115,7 +158,7 @@ msg("THORN22_Q_10_succ1")
 msg("THORN22_POULLTER_basic1")
 end
 
------ soldier2 ----- 
+----- Soldier Dainus ----- 
 ----- npcselectdialog.ies | ClassName: THORN22_BOSSKILL_1_TRIGGER -----
 ----- Dialog -----
 ----- QuestIDs: THORN22_BOSSKILL_1 -----
@@ -128,7 +171,7 @@ msg("THORN22_BOSSKILL_1_TRIGGER_basic02")
 msg("THORN22_BOSSKILL_1_succ01")
 end
 
------ f_katyn_owl01 ----- 
+----- Substitute Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: THORN22_OWL1 -----
 ----- Dialog -----
 ----- QuestIDs: THORN22_Q_15 -----
@@ -141,7 +184,7 @@ msg("THORN22_OWL1_basic1")
 msg("THORN22_OWL1_after1")
 end
 
------ f_katyn_owl02 ----- 
+----- Settled Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: THORN22_OWL2 -----
 ----- Dialog -----
 ----- QuestIDs: THORN22_Q_17 -----
@@ -154,7 +197,7 @@ msg("THORN22_OWL2_basic1")
 msg("THORN22_OWL2_after1")
 end
 
------ Altar1 ----- 
+----- Rotten Tree Stump ----- 
 ----- npcselectdialog.ies | ClassName: THORN22_Q_9_TRIGGER -----
 ----- Dialog -----
 ----- QuestIDs: THORN22_Q_9 -----
@@ -164,7 +207,14 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ soldier3 ----- 
+----- Sirdgela Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009572", "d_thorn_22", -2299, 440, -1493, -130, "npc_ETC_20150323_009572")
+function npc_ETC_20150323_009572()
+msg("THORN22_THORN20")
+end
+
+----- Soldier Kallus ----- 
 ----- npcselectdialog.ies | ClassName: THORN22_Q_18 -----
 ----- Dialog -----
 ----- QuestIDs: THORN22_Q_16 -----
@@ -175,7 +225,7 @@ msg("THORN22_Q_18_basic01")
 msg("THORN22_Q_18_basic02")
 end
 
------ Board1 ----- 
+----- Warning ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40070, "QUEST_20150317_000507", "d_thorn_22", -2103, 441, -1348, -43, "npc_QUEST_20150317_000507")
@@ -183,7 +233,7 @@ function npc_QUEST_20150317_000507()
 msg("THORN22_AREA_WARING01")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -194,7 +244,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_THORN_22")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_thorn_22", 1109, 447, -1282, 45, "npc_ETC_20150317_009100")
@@ -202,7 +252,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_ceslovas ----- 
+----- [Chaplain Master]Ceslovas ----- 
 ----- npcselectdialog.ies | ClassName: CHAPLAIN_MASTER -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_CHAPLAIN_5_1 | THORN22_HQ1 -----

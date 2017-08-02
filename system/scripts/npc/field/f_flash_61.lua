@@ -1,4 +1,18 @@
------ statue_vakarine ----- 
+----- Roxona Market ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009593", "f_flash_61", -100, 435, 1555, 135, "npc_ETC_20150323_009593")
+function npc_ETC_20150323_009593()
+msg("FLASH61_FLASH60")
+end
+
+----- Verkti Square ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009591", "f_flash_61", -875, 510, -378, 315, "npc_ETC_20150323_009591")
+function npc_ETC_20150323_009591()
+msg("FLASH61_FLASH59")
+end
+
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -9,7 +23,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_FLASH_61")
 end
 
------ npc_CHR_sabina ----- 
+----- [Knights of Kaliss]Chronomancer Sabina ----- 
 ----- npcselectdialog.ies | ClassName: FLASH61_SABINA -----
 ----- Dialog -----
 ----- QuestIDs: FLASH61_SQ_07 | FLASH61_SQ_09 | FLASH61_SQ_10 | FLASH61_SQ_11 -----
@@ -35,7 +49,7 @@ msg("FLASH61_SABINA_basic_02")
 msg("f_flash_61_track_dlg_2")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army] Nomabis ----- 
 ----- npcselectdialog.ies | ClassName: FLASH61_NOBAVIS -----
 ----- Dialog -----
 ----- QuestIDs: FLASH61_SQ_04 | FLASH61_SQ_06 -----
@@ -54,7 +68,7 @@ msg("FLASH61_NOBAVIS_basic_01")
 msg("FLASH61_NOBAVIS_basic_02")
 end
 
------ Silvertransporter_m_Quest ----- 
+----- [Royal Army]Lyle ----- 
 ----- npcselectdialog.ies | ClassName: FLASH61_LAIL -----
 ----- Dialog -----
 ----- QuestIDs: FLASH61_SQ_01 | FLASH61_SQ_02 -----
@@ -71,7 +85,7 @@ msg("FLASH61_LAIL_basic_01")
 msg("FLASH61_LAIL_basic_02")
 end
 
------ magicsquare_2 ----- 
+----- Fortress of the Land Warp Portal ----- 
 ----- npcselectdialog.ies | ClassName: FLASH61_SQ_09_1 -----
 ----- Dialog -----
 ----- QuestIDs: FLASH61_SQ_11 -----
@@ -81,7 +95,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ magicsquare_2 ----- 
+----- Fortress of the Land Warp Portal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47122, "ETC_20150317_009321", "f_flash_61", 1079, 620, 445, 45, "npc_ETC_20150317_009321")
@@ -89,7 +103,7 @@ function npc_ETC_20150317_009321()
 msg("FLASH61_SQ_09_2")
 end
 
------ magicsquare_2 ----- 
+----- Fortress of the Land Warp Portal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47122, "ETC_20150317_009321", "f_flash_61", 1352, 499, 1315, 45, "npc_ETC_20150317_009321")
@@ -97,7 +111,7 @@ function npc_ETC_20150317_009321()
 msg("FLASH61_SQ_09_3")
 end
 
------ magicsquare_2 ----- 
+----- Fortress of the Land Warp Portal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47122, "ETC_20150317_009321", "f_flash_61", -749, 441, 1334, 45, "npc_ETC_20150317_009321")
@@ -105,7 +119,7 @@ function npc_ETC_20150317_009321()
 msg("FLASH61_SQ_09_4")
 end
 
------ npc_flash_book_1 ----- 
+----- Petrified Books ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154037, "ETC_20150317_009325", "f_flash_61", -978, 511, -325, -101, "npc_ETC_20150317_009325")
@@ -113,7 +127,7 @@ function npc_ETC_20150317_009325()
 msg("FLASH61_SQ_07_NPC")
 end
 
------ npc_flash_book_1 ----- 
+----- Petrified Books ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154037, "ETC_20150317_009325", "f_flash_61", -1054, 511, -236, 44, "npc_ETC_20150317_009325")
@@ -121,7 +135,7 @@ function npc_ETC_20150317_009325()
 msg("FLASH61_SQ_07_NPC")
 end
 
------ npc_flash_book_1 ----- 
+----- Petrified Books ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154037, "ETC_20150317_009325", "f_flash_61", -1110, 511, -68, 183, "npc_ETC_20150317_009325")
@@ -129,7 +143,7 @@ function npc_ETC_20150317_009325()
 msg("FLASH61_SQ_07_NPC")
 end
 
------ npc_flash_book_1 ----- 
+----- Petrified Books ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154037, "ETC_20150317_009325", "f_flash_61", -751, 511, -171, 141, "npc_ETC_20150317_009325")
@@ -137,7 +151,7 @@ function npc_ETC_20150317_009325()
 msg("FLASH61_SQ_07_NPC")
 end
 
------ npc_flash_book_1 ----- 
+----- Petrified Books ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154037, "ETC_20150317_009325", "f_flash_61", -796, 511, 21, 45, "npc_ETC_20150317_009325")
@@ -145,7 +159,7 @@ function npc_ETC_20150317_009325()
 msg("FLASH61_SQ_07_NPC")
 end
 
------ npc_flash_book_1 ----- 
+----- Petrified Books ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154037, "ETC_20150317_009325", "f_flash_61", -555, 511, 71, 45, "npc_ETC_20150317_009325")
@@ -153,7 +167,7 @@ function npc_ETC_20150317_009325()
 msg("FLASH61_SQ_07_NPC")
 end
 
------ npc_flash_book_1 ----- 
+----- Petrified Books ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154037, "ETC_20150317_009325", "f_flash_61", -574, 511, -52, 45, "npc_ETC_20150317_009325")
@@ -161,7 +175,7 @@ function npc_ETC_20150317_009325()
 msg("FLASH61_SQ_07_NPC")
 end
 
------ npc_flash_book_1 ----- 
+----- Petrified Books ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154037, "ETC_20150317_009325", "f_flash_61", -319, 393, 119, 9, "npc_ETC_20150317_009325")
@@ -169,7 +183,7 @@ function npc_ETC_20150317_009325()
 msg("FLASH61_SQ_07_NPC")
 end
 
------ npc_flash_book_1 ----- 
+----- Petrified Books ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154037, "ETC_20150317_009325", "f_flash_61", -152, 393, 238, 45, "npc_ETC_20150317_009325")
@@ -177,7 +191,7 @@ function npc_ETC_20150317_009325()
 msg("FLASH61_SQ_07_NPC")
 end
 
------ npc_flash_book_1 ----- 
+----- Petrified Books ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154037, "ETC_20150317_009325", "f_flash_61", -111, 393, 46, 45, "npc_ETC_20150317_009325")
@@ -185,7 +199,7 @@ function npc_ETC_20150317_009325()
 msg("FLASH61_SQ_07_NPC")
 end
 
------ npc_flash_book_1 ----- 
+----- Petrified Books ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(154037, "ETC_20150317_009325", "f_flash_61", -774, 511, 140, 100, "npc_ETC_20150317_009325")
@@ -193,43 +207,50 @@ function npc_ETC_20150317_009325()
 msg("FLASH61_SQ_07_NPC")
 end
 
------ npc_flash_soldier_01 ----- 
+----- Petrified Soldier ----- 
 addnpc(154023, "ETC_20150714_013156", "f_flash_61", -281, 415, 945, 4, "npc_dummy")
 
------ npc_flash_soldier_01 ----- 
+----- Petrified Soldier ----- 
 addnpc(154023, "ETC_20150714_013156", "f_flash_61", 222, 415, 1047, -32, "npc_dummy")
 
------ npc_flash_soldier_01 ----- 
+----- Petrified Soldier ----- 
 addnpc(154023, "ETC_20150714_013156", "f_flash_61", 467, 415, 1072, -112, "npc_dummy")
 
------ npc_flash_soldier_01 ----- 
+----- Petrified Soldier ----- 
 addnpc(154023, "ETC_20150714_013156", "f_flash_61", 385, 415, 913, 142, "npc_dummy")
 
------ npc_flash_soldier_01 ----- 
+----- Petrified Soldier ----- 
 addnpc(154023, "ETC_20150714_013156", "f_flash_61", 90, 393, 776, 196, "npc_dummy")
 
------ npc_flash_soldier_04 ----- 
+----- Petrified Soldier ----- 
 addnpc(154028, "ETC_20150714_013156", "f_flash_61", -278, 403, 830, -2, "npc_dummy")
 
------ npc_flash_soldier_04 ----- 
+----- Petrified Soldier ----- 
 addnpc(154028, "ETC_20150714_013156", "f_flash_61", -159, 432, 1080, -53, "npc_dummy")
 
------ npc_flash_soldier_04 ----- 
+----- Petrified Soldier ----- 
 addnpc(154028, "ETC_20150714_013156", "f_flash_61", 115, 415, 906, 210, "npc_dummy")
 
------ npc_flash_soldier_04 ----- 
+----- Petrified Soldier ----- 
 addnpc(154028, "ETC_20150714_013156", "f_flash_61", -184, 393, 709, 6, "npc_dummy")
 
------ npc_flash_soldier_05 ----- 
+----- Petrified Soldier ----- 
 addnpc(154029, "ETC_20150714_013156", "f_flash_61", 84, 415, 1061, 45, "npc_dummy")
 
------ npc_flash_soldier_05 ----- 
+----- Petrified Soldier ----- 
 addnpc(154029, "ETC_20150714_013156", "f_flash_61", -170, 393, 606, 132, "npc_dummy")
 
------ npc_flash_soldier_05 ----- 
+----- Petrified Soldier ----- 
 addnpc(154029, "ETC_20150714_013156", "f_flash_61", -22, 393, 497, 138, "npc_dummy")
 
------ treasure_box1 ----- 
+----- Vedas Plateau ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016522", "f_flash_61", 452, 435, 1631, 87, "npc_ETC_20151102_016522")
+function npc_ETC_20151102_016522()
+msg("FLASH61_TABLELAND11_1")
+end
+
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_flash_61", -736, 511, 189, -45, "npc_ETC_20150317_009100")
@@ -237,10 +258,17 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ blank_npc_warp ----- 
+----- Tatenye Prison ----- 
 ----- Enter -----
 addnpc(147507, "ETC_20161214_025801", "f_flash_61", -613, 435, 1451, 45, "npc_ETC_20161214_025801")
 function npc_ETC_20161214_025801()
 msg("FLASH_61_TO_VELNIASPRISON_77_1")
+end
+
+----- Roxona Underground Facility Mission ----- 
+----- Enter -----
+addnpc(40001, "ETC_20170313_026459", "f_flash_61", 554, 415, 1062, 45, "npc_ETC_20170313_026459")
+function npc_ETC_20170313_026459()
+msg("FLASH61_TO_CASTLE_MISSION_RN")
 end
 

@@ -1,4 +1,18 @@
------ npc_low_lev_officer5_m ----- 
+----- Ramstis Ridge ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009574", "f_rokas_26", 483, 1738, -2502, -45, "npc_ETC_20150323_009574")
+function npc_ETC_20150323_009574()
+msg("ROKAS26_ROKAS25")
+end
+
+----- Akmens Ridge ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009575", "f_rokas_26", -1090, 1767, -1740, 223, "npc_ETC_20150323_009575")
+function npc_ETC_20150323_009575()
+msg("ROKAS26_ROKAS27")
+end
+
+----- Supply Commander Vio ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_BIO -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_SUB_Q01 | ROKAS26_SUB_Q12 -----
@@ -12,7 +26,7 @@ msg("ROKAS26_SUB_Q12_select_01")
 msg("ROKAS26_SUB_Q12_succ_01")
 end
 
------ soldier6 ----- 
+----- Mercenary Eta ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_EHTA -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_SUB_Q08 | ROKAS26_SUB_Q09 | ROKAS26_SUB_Q10 | ROKAS26_SUB_Q11 | ROKAS26_SUB_Q12 -----
@@ -34,7 +48,7 @@ msg("ROKAS26_SUB_Q08_04")
 msg("ROKAS26_SUB_Q10_04")
 end
 
------ soldier6 ----- 
+----- Mercenary Lindt ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_LINT -----
 ----- Enter | Dialog -----
 ----- QuestIDs: ROKAS26_SUB_Q03 | ROKAS26_SUB_Q05 | ROKAS26_SUB_Q02 | ROKAS_26_HQ_01 -----
@@ -58,7 +72,7 @@ msg("ROKAS_26_HQ_01_succ01")
 msg("ROKAS_26_HQ_01_W")
 end
 
------ npc_village_uncle_2 ----- 
+----- Archaeologist Laudi ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_REXIPHER1 -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_QUEST01 | ROKAS26_QUEST02 | ROKAS26_QUEST02_AFTER -----
@@ -67,7 +81,7 @@ function npc_QUEST_LV_0100_20150317_001284()
 msg("ROKAS26_REXIPHER1_basic1")
 end
 
------ blank_npc ----- 
+----- Place to put the Stone ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_SUB_Q10_TRIGGER -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_SUB_Q10 -----
@@ -77,7 +91,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_paladin_follower2_3 ----- 
+----- Morkus Jonas ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 | ROKAS25_TO_26 -----
@@ -91,7 +105,7 @@ msg("ROKAS26_MQ1_end1")
 msg("ROKAS25_TO_26_COMP")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -101,7 +115,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -111,7 +125,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -121,7 +135,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -131,7 +145,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -141,7 +155,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -151,7 +165,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -161,7 +175,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -171,7 +185,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -181,7 +195,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -191,7 +205,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -201,7 +215,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -211,7 +225,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -221,7 +235,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -231,7 +245,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -241,7 +255,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -251,7 +265,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -261,7 +275,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -271,7 +285,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -281,7 +295,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -291,7 +305,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -301,7 +315,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -311,7 +325,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -321,7 +335,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -331,7 +345,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -341,7 +355,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -351,7 +365,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -361,7 +375,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -371,7 +385,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Space Gap ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_MQ1_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_MQ1 -----
@@ -381,7 +395,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_6 ----- 
+----- Stone Pillar ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_QUEST03_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_QUEST03 -----
@@ -391,7 +405,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_6 ----- 
+----- Stone Pillar ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_QUEST04_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_QUEST04 -----
@@ -401,7 +415,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_6 ----- 
+----- Stone Pillar ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS26_QUEST05_STONE -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_QUEST05 -----
@@ -411,7 +425,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_rokas_26", 2048, 1723, 204, 45, "npc_ETC_20150317_009100")
@@ -419,7 +433,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_village_uncle_4 ----- 
+----- Epigraphist Deltran ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS24_RP_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: ROKAS26_RP_1 -----

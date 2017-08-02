@@ -1,4 +1,25 @@
------ npc_paladin_follower2_3 ----- 
+----- Spring Light Woods ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001226", "d_thorn_39_2", -2054, -246, -1604, -45, "npc_ETC_20150317_001226")
+function npc_ETC_20150317_001226()
+msg("THORN392_TO_SIAULIAI461")
+end
+
+----- Viltis Forest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011733", "d_thorn_39_2", -76, -118, -1811, -85, "npc_ETC_20150714_011733")
+function npc_ETC_20150714_011733()
+msg("THORN392_TO_THORN391")
+end
+
+----- Laukyme Swamp ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011735", "d_thorn_39_2", -2372, 0, 1310, 218, "npc_ETC_20150714_011735")
+function npc_ETC_20150714_011735()
+msg("THORN392_TO_THORN393")
+end
+
+----- Hunter Tracker Capt. Mintz ----- 
 ----- npcselectdialog.ies | ClassName: THORN392_MQ_02 -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_2_MQ01 | THORN39_2_MQ02 | THORN39_2_MQ03 | THORN39_2_MQ04 | THORN39_2_MQ06 | THORN39_1_MQ08 | THORN39_1_MQ07 -----
@@ -45,7 +66,7 @@ msg("ABBEY39_4_MQ_10_3")
 msg("ABBEY39_4_MQ_10_4")
 end
 
------ npc_friar_02 ----- 
+----- Senior Monk Potos ----- 
 ----- npcselectdialog.ies | ClassName: THORN392_MQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_2_MQ02 | THORN39_2_MQ03 | THORN39_2_MQ06 -----
@@ -81,7 +102,7 @@ msg("ABBEY39_4_SQ_01_3")
 msg("ABBEY39_4_SQ_01_4")
 end
 
------ npc_friar_03 ----- 
+----- Monk Wiley ----- 
 ----- npcselectdialog.ies | ClassName: THORN392_SQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_2_SQ01 | THORN39_2_SQ02 | THORN39_2_SQ03 -----
@@ -101,7 +122,7 @@ msg("THORN39_2_SQ_03_3")
 msg("THORN39_2_SQ_03_4")
 end
 
------ npc_paladin_follower2_2 ----- 
+----- Hunter Reina ----- 
 ----- npcselectdialog.ies | ClassName: THORN392_MQ_05 -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_2_MQ04 | THORN39_2_MQ05 | THORN39_2_SQ05 | THORN39_2_SQ04 | THORN39_2_SQ06 | THORN39_2_SQ07 -----
@@ -132,21 +153,21 @@ msg("THORN39_2_SQ_06_succ01")
 msg("THORN39_2_SQ_07_succ01")
 end
 
------ InfroHoglan ----- 
+----- Kreutzer ----- 
 ----- Enter -----
 addnpc(57037, "ETC_20150714_011751", "d_thorn_39_2", -2, -80, 849, -53, "npc_ETC_20150714_011751")
 function npc_ETC_20150714_011751()
 msg("THORN392_MQ_02_COMPANION")
 end
 
------ Velhider2_NPC ----- 
+----- Jareth ----- 
 ----- Enter -----
 addnpc(47521, "ETC_20150714_012569", "d_thorn_39_2", 1436, 0, 605, -37, "npc_ETC_20150714_012569")
 function npc_ETC_20150714_012569()
 msg("THORN392_COMPANION")
 end
 
------ npc_friar_down01 ----- 
+----- Poisoned Monk ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155047, "ETC_20150714_013138", "d_thorn_39_2", -1243, -120, 448, -42, "npc_ETC_20150714_013138")
@@ -154,7 +175,7 @@ function npc_ETC_20150714_013138()
 msg("THORN392_MQ_03_P1")
 end
 
------ npc_friar_down01 ----- 
+----- Poisoned Monk ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155047, "ETC_20150714_013138", "d_thorn_39_2", -1313, -120, 441, -42, "npc_ETC_20150714_013138")
@@ -162,7 +183,7 @@ function npc_ETC_20150714_013138()
 msg("THORN392_MQ_03_P2")
 end
 
------ npc_friar_down02 ----- 
+----- Poisoned Monk ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(155048, "ETC_20150714_013138", "d_thorn_39_2", -1278, -120, 445, -44, "npc_ETC_20150714_013138")
@@ -170,7 +191,7 @@ function npc_ETC_20150714_013138()
 msg("THORN392_MQ_03_P3")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_thorn_39_2", -2216, -235, -876, 45, "npc_ETC_20150317_009100")
@@ -178,7 +199,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ ExplosionTrap ----- 
+----- Suspicious Trap ----- 
 ----- npcselectdialog.ies | ClassName: THORN392_SQ07_OBJ1 -----
 ----- Dialog -----
 ----- QuestIDs: THORN39_2_SQ07 -----

@@ -1,4 +1,18 @@
------ npc_kupole_3 ----- 
+----- Downtown ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001242", "f_flash_29_1", -2077, 0, -43, 132, "npc_ETC_20150317_001242")
+function npc_ETC_20150317_001242()
+msg("FLASH_29_1_TO_FLASH_63")
+end
+
+----- Dingofasil District ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011743", "f_flash_29_1", 58, 201, 1353, 137, "npc_ETC_20150714_011743")
+function npc_ETC_20150714_011743()
+msg("FLASH_29_1_TO_FLASH_58")
+end
+
+----- Kupole Meile ----- 
 ----- npcselectdialog.ies | ClassName: FLASH_29_1_KUPOLE_MEILE -----
 ----- Dialog -----
 ----- QuestIDs: FLASH_29_1_SQ_020 | FLASH_29_1_SQ_030 | FLASH_29_1_SQ_050 | FLASH_29_1_SQ_070 | FLASH_29_1_SQ_045 | FLASH29_1_HQ1 -----
@@ -29,7 +43,7 @@ msg("FLASH29_1_HQ1_prog1")
 msg("FLASH29_1_HQ1_succ1")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_flash_29_1", -1129, 0, -836, 90, "npc_ETC_20150317_009100")

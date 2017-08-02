@@ -1,4 +1,18 @@
------ npc_roze ----- 
+----- Novaha Assembly Hall ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_017819", "d_abbey_64_2", 1663, 399, -29, 45, "npc_ETC_20151224_017819")
+function npc_ETC_20151224_017819()
+msg("ABBEY_64_2_ABBEY_64_1")
+end
+
+----- Novaha Institute ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_017821", "d_abbey_64_2", -1968, 0, 71, 223, "npc_ETC_20151224_017821")
+function npc_ETC_20151224_017821()
+msg("ABBEY_64_2_ABBEY_64_3")
+end
+
+----- Traveling Merchant Rose ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY642_ROZE01 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_2_MQ010 -----
@@ -8,7 +22,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ orsha_m_4 ----- 
+----- Edmundas ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY642_EDMONDAS -----
 ----- Enter | Dialog -----
 ----- QuestIDs: ABBAY_64_2_MQ030 | ABBAY_64_2_MQ040 -----
@@ -19,7 +33,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_roze ----- 
+----- Traveling Merchant Rose ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY642_ROZE02 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_2_MQ020 | ABBAY_64_2_MQ030 -----
@@ -29,7 +43,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ orsha_m_1 ----- 
+----- Experiment Victim Hilbeth ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY642_PEAPLE01 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_2_SQ010 | ABBAY_64_2_SQ020 | ABBAY_64_2_SQ030 -----
@@ -51,46 +65,46 @@ msg("ABBEY642_PEAPLE01_basic1")
 msg("ABBEY642_PEAPLE01_basic2")
 end
 
------ firetower_device_01_Q ----- 
+----- Demons' Experimental Tools ----- 
 addnpc(153063, "ETC_20151102_017413", "d_abbey_64_2", -1136, 400, 670, -73, "npc_dummy")
 
------ firetower_valve_Q ----- 
+----- Demons' Experimental Tools ----- 
 addnpc(153065, "ETC_20151102_017413", "d_abbey_64_2", -1263, 399, 867, 45, "npc_dummy")
 
------ firetower_valve_Q ----- 
+----- Demons' Experimental Tools ----- 
 addnpc(153065, "ETC_20151102_017413", "d_abbey_64_2", -849, 400, 634, -112, "npc_dummy")
 
------ firetower_device_01_Q ----- 
+----- Demons' Experimental Tools ----- 
 addnpc(153063, "ETC_20151102_017413", "d_abbey_64_2", -922, 400, 864, -46, "npc_dummy")
 
------ firetower_valve_Q ----- 
+----- Demons' Experimental Tools ----- 
 addnpc(153065, "ETC_20151102_017413", "d_abbey_64_2", -1277, 399, 461, -59, "npc_dummy")
 
------ firetower_valve_Q ----- 
+----- Demons' Experimental Tools ----- 
 addnpc(153065, "ETC_20151102_017413", "d_abbey_64_2", -970, 399, 466, 128, "npc_dummy")
 
------ npc_plant_repress_S ----- 
+----- Novaha Relic ----- 
 ----- Enter -----
 addnpc(153026, "ETC_20151224_019917", "d_abbey_64_2", 45, 300, 988, 0, "npc_ETC_20151224_019917")
 function npc_ETC_20151224_019917()
 msg("ABBEY642_ORB_SET01")
 end
 
------ npc_plant_repress_S ----- 
+----- Novaha Relic ----- 
 ----- Enter -----
 addnpc(153026, "ETC_20151224_019917", "d_abbey_64_2", -926, 0, 2107, -3, "npc_ETC_20151224_019917")
 function npc_ETC_20151224_019917()
 msg("ABBEY642_ORB_SET02")
 end
 
------ npc_plant_repress_S ----- 
+----- Novaha Relic ----- 
 ----- Enter -----
 addnpc(153026, "ETC_20151224_019917", "d_abbey_64_2", -586, 300, 249, -16, "npc_ETC_20151224_019917")
 function npc_ETC_20151224_019917()
 msg("ABBEY642_ORB_SET03")
 end
 
------ npc_friar_03 ----- 
+----- Monk Abels ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY642_MONK01 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_2_SQ040 | ABBAY_64_2_SQ050 -----
@@ -106,7 +120,7 @@ msg("ABBEY642_MONK01_basic1")
 msg("ABBEY642_MONK01_basic2")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_abbey_64_2", 97, 981, -1895, 0, "npc_ETC_20150317_009100")

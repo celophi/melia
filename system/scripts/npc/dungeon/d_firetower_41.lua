@@ -1,18 +1,18 @@
------ whorfzone ----- 
+----- Fedimian Suburbs ----- 
 ----- Enter -----
 addnpc(147500, "ETC_20150323_009581", "d_firetower_41", -2301, 1553, -1410, 45, "npc_ETC_20150323_009581")
 function npc_ETC_20150323_009581()
 msg("FIRETOWER41_TO_REMAINS40")
 end
 
------ whorfzone ----- 
+----- Mage Tower 2F ----- 
 ----- Enter -----
 addnpc(147500, "ETC_20150317_001213", "d_firetower_41", 2956, 1460, -1409, 45, "npc_ETC_20150317_001213")
 function npc_ETC_20150317_001213()
 msg("FIRETOWER41_TO_FIRETOWER42")
 end
 
------ npc_grita ----- 
+----- Grita ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER41_GRITA_01 -----
 ----- Dialog -----
 ----- QuestIDs: TO_THE_TOWER_02 | FTOWER41_MQ_01 -----
@@ -108,7 +108,7 @@ msg("FTOWER44_GRITA_01_basic02")
 msg("FEDIMIAN_GRITA_BASIC02")
 end
 
------ closing_device ----- 
+----- Defense Activation Device  ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER41_MQ_05 -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER41_MQ_05 | FTOWER41_SQ_06 -----
@@ -118,7 +118,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ whorfzone ----- 
+----- 2nd Transport Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER41_MQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER41_MQ_03 -----
@@ -128,7 +128,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_village_uncle_1 ----- 
+----- Owyn ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER41_SQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER41_SQ_01 | FTOWER41_SQ_02 -----
@@ -147,7 +147,7 @@ msg("FIRETOWER_45_HQ_01_1")
 msg("FIRETOWER_45_HQ_01_2")
 end
 
------ npc_matron3 ----- 
+----- Cordelier ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER41_SQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER41_SQ_03 | FTOWER41_SQ_04 | FTOWER41_SQ_05 -----
@@ -169,7 +169,7 @@ msg("FIRETOWER_45_HQ_01_4")
 msg("FTOWER41_SQ_04_succ01")
 end
 
------ blank_npc ----- 
+----- Book Shelf ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER41_SQ_05_NPC -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER41_SQ_05 -----
@@ -179,7 +179,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ whorfzone ----- 
+----- 1st Transport Magic Circle ----- 
 ----- npcselectdialog.ies | ClassName: FTOWER41_MQ_02_NPC -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER41_MQ_02 -----
@@ -189,7 +189,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -200,7 +200,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_FIRETOWER_41")
 end
 
------ BOOK_01 ----- 
+----- Psychokino Tome Volume 1 ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147311, "QUEST_20151102_002922", "d_firetower_41", 1252, 1334, -2283, 45, "npc_QUEST_20151102_002922")
@@ -208,7 +208,7 @@ function npc_QUEST_20151102_002922()
 msg("JOB_2_PSYCHOKINO_5_1_BOOK_1")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_firetower_41", -2715, 1553, -1437, 45, "npc_ETC_20150317_009100")

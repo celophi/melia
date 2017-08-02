@@ -1,4 +1,18 @@
------ npc_zacharial_desk ----- 
+----- Royal Mausoleum 3F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001199", "d_zachariel_35", 1631, 93, -1277, 148, "npc_ETC_20150317_001199")
+function npc_ETC_20150317_001199()
+msg("ZACHARIEL35_1_ZACHARIEL34_1")
+end
+
+----- Royal Mausoleum 5F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001201", "d_zachariel_35", -202, -75, 692, -11.31, "npc_ETC_20150317_001201")
+function npc_ETC_20150317_001201()
+msg("ZACHARIEL35_ZACHARIEL36")
+end
+
+----- Royal Mausoleum Blueprint ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA4F_MQ -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA4F_MQ_05 | ZACHA4F_MQ_01 | ZACHA4F_MQ_02 | ZACHA4F_MQ_03 | ZACHA4F_MQ_04 -----
@@ -16,7 +30,7 @@ msg("ZACHA4F_MQ_basic01")
 msg("HT_ZACHA_DESK01_BASIC01")
 end
 
------ npc_zachariel_head_02 ----- 
+----- Royal Mausoleum Blueprint ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA4F_MQ_02 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA4F_MQ_02 -----
@@ -26,7 +40,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zachariel_head_02 ----- 
+----- Royal Mausoleum Blueprint ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA4F_MQ_04 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA4F_MQ_04 -----
@@ -36,7 +50,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zacharial_desk ----- 
+----- Royal Mausoleum Archives ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA4F_SQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA4F_SQ_01 -----
@@ -51,7 +65,7 @@ msg("ZACHA4F_SQ_03_basic01")
 msg("ZACHA4F_SQ_05_basic01")
 end
 
------ npc_zacharial_desk ----- 
+----- Royal Mausoleum Archives ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA4F_SQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA4F_SQ_03 -----
@@ -66,7 +80,7 @@ msg("ZACHA4F_SQ_03_basic01")
 msg("ZACHA4F_SQ_05_basic01")
 end
 
------ npc_zacharial_desk ----- 
+----- Royal Mausoleum Archives ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA4F_SQ_05 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA4F_SQ_05 -----
@@ -81,7 +95,7 @@ msg("ZACHA4F_SQ_03_basic01")
 msg("ZACHA4F_SQ_05_basic01")
 end
 
------ zachariel_guardian ----- 
+----- Guardian Stone Statue ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA4F_GUARDIAN01 -----
 ----- Dialog -----
 addnpc(47260, "QUEST_LV_0100_20150317_000597", "d_zachariel_35", -26, -27, -33, 44, "npc_QUEST_LV_0100_20150317_000597")
@@ -140,7 +154,7 @@ msg("ZACHA3F_MQ_basic01")
 msg("ZACHA3F_MQ_basic02")
 end
 
------ zachariel_guardian ----- 
+----- Guardian Stone Statue ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA4F_GUARDIAN02 -----
 ----- Dialog -----
 addnpc(47260, "QUEST_LV_0100_20150317_000597", "d_zachariel_35", 241, -27, -32, 48, "npc_QUEST_LV_0100_20150317_000597")
@@ -148,7 +162,7 @@ function npc_QUEST_LV_0100_20150317_000597()
 msg("ZACHARIEL33_GUARDIAN2_basic02")
 end
 
------ zachariel_guardian ----- 
+----- Guardian Stone Statue ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA4F_MQ05 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA4F_MQ_05 -----
@@ -158,7 +172,7 @@ msg("ZACHA4F_MQ05_basic01")
 msg("ZACHA4F_MQ05_basic02")
 end
 
------ npc_zacharial_desk ----- 
+----- Royal Mausoleum Blueprint ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA4F_MQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA4F_MQ_03 -----
@@ -168,7 +182,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ zachariel_guardian ----- 
+----- Guardian Stone Statue ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA4F_MQ_02_HIDE -----
 ----- Dialog -----
 addnpc(47260, "QUEST_LV_0100_20150317_000597", "d_zachariel_35", 1143, -23, -40, 40.6, "npc_QUEST_LV_0100_20150317_000597")
@@ -176,7 +190,7 @@ function npc_QUEST_LV_0100_20150317_000597()
 msg("ZACHARIEL33_GUARDIAN2_basic02")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_zachariel_35", -111, -54, 1350, 225, "npc_ETC_20150317_009100")
@@ -184,7 +198,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_zachariel_cube_0 ----- 
+----- Mystery Cube ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(152077, "ETC_20161214_026343", "d_zachariel_35", -17, -27, -1556, 45, "npc_ETC_20161214_026343")
@@ -192,7 +206,7 @@ function npc_ETC_20161214_026343()
 msg("HT_ZACHA_CUBE01")
 end
 
------ npc_zacharial_desk ----- 
+----- Royal Mausoleum Blueprint ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47254, "QUEST_LV_0100_20150317_000608", "d_zachariel_35", -190, -27, -1670, 45, "npc_QUEST_LV_0100_20150317_000608")

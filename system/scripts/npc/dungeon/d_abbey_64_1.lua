@@ -1,4 +1,4 @@
------ npc_roze ----- 
+----- Traveling Merchant Rose ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY641_ROZE01 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_1_MQ010 | ABBAY_64_1_MQ020 | ABBAY_64_1_MQ050 -----
@@ -87,7 +87,7 @@ msg("ABBAY64_3_HQ1_succ1")
 msg("BRACKEN632_ROZE02_basic01")
 end
 
------ npc_roze ----- 
+----- Traveling Merchant Rose ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY641_ROZE02 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_1_MQ020 | ABBAY_64_1_MQ050 -----
@@ -97,7 +97,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_friar_05 ----- 
+----- Monk Goss ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY641_MONK01 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_1_MQ020 -----
@@ -120,7 +120,7 @@ msg("ABBAY_64_1_MQ040_startnpc_prog01")
 msg("ABBAY_64_1_MQ040_succ01")
 end
 
------ orsha_m_1 ----- 
+----- Experiment Victim Tilis ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY641_PEAPLE01 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_1_MQ010 | ABBAY_64_1_SQ010 | ABBAY_64_1_SQ020 -----
@@ -138,35 +138,35 @@ msg("ABBAY_64_1_SQ020_startnpc_prog01")
 msg("ABBAY_64_1_SQ020_succ01")
 end
 
------ orsha_f_3 ----- 
+----- Rona ----- 
 ----- Enter -----
 addnpc(153111, "QUEST_LV_0100_20151224_012017", "d_abbey_64_1", -549, 210, -2071, 45, "npc_QUEST_LV_0100_20151224_012017")
 function npc_QUEST_LV_0100_20151224_012017()
 msg("ABBEY641_TOWN_PEAPLE01")
 end
 
------ orsha_f_1 ----- 
+----- Anne ----- 
 ----- Enter -----
 addnpc(20061, "QUEST_LV_0100_20151224_011847", "d_abbey_64_1", -457, 210, -2135, 102, "npc_QUEST_LV_0100_20151224_011847")
 function npc_QUEST_LV_0100_20151224_011847()
 msg("ABBEY641_TOWN_PEAPLE01")
 end
 
------ orsha_m_2 ----- 
+----- Zacaras ----- 
 ----- Enter -----
 addnpc(20064, "ETC_20151224_017841", "d_abbey_64_1", -469, 210, -2203, 113, "npc_ETC_20151224_017841")
 function npc_ETC_20151224_017841()
 msg("ABBEY641_TOWN_PEAPLE01")
 end
 
------ orsha_m_3 ----- 
+----- Litas ----- 
 ----- Enter -----
 addnpc(153109, "ETC_20151224_017842", "d_abbey_64_1", -618, 210, -2056, -14, "npc_ETC_20151224_017842")
 function npc_ETC_20151224_017842()
 msg("ABBEY641_TOWN_PEAPLE01")
 end
 
------ npc_roze ----- 
+----- Traveling Merchant Rose ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY641_ROZE03 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_1_MQ050 -----
@@ -176,21 +176,21 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ orsha_m_4 ----- 
+----- Allonas ----- 
 ----- Enter -----
 addnpc(153110, "QUEST_LV_0100_20151224_011851", "d_abbey_64_1", -517, 210, -2008, 45, "npc_QUEST_LV_0100_20151224_011851")
 function npc_QUEST_LV_0100_20151224_011851()
 msg("ABBEY641_TOWN_PEAPLE01")
 end
 
------ orsha_m_1 ----- 
+----- Kornas ----- 
 ----- Enter -----
 addnpc(20063, "QUEST_LV_0100_20151224_012014", "d_abbey_64_1", -463, 210, -2035, 89, "npc_QUEST_LV_0100_20151224_012014")
 function npc_QUEST_LV_0100_20151224_012014()
 msg("ABBEY641_TOWN_PEAPLE01")
 end
 
------ npc_friar_05 ----- 
+----- Monk Goss ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY641_MONK02 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_1_MQ030 | ABBAY_64_1_MQ040 -----
@@ -213,7 +213,7 @@ msg("ABBAY_64_1_MQ040_startnpc_prog01")
 msg("ABBAY_64_1_MQ040_succ01")
 end
 
------ orsha_m_2 ----- 
+----- Experiment Victim Fils ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY641_PEAPLE02 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_1_SQ030 -----
@@ -226,7 +226,23 @@ msg("ABBAY_64_1_SQ030_succ01")
 msg("ABBAY_64_1_SQ030_startnpc01")
 end
 
------ npc_roze ----- 
+----- Dadan Jungle ----- 
+----- Enter -----
+----- QuestIDs: ABBEY64_2_HQ1 -----
+addnpc(40001, "ETC_20151102_016525", "d_abbey_64_1", 911, 2, 857, 45, "npc_ETC_20151102_016525")
+function npc_ETC_20151102_016525()
+msg("GM_QUEST_MODIFY_PC_SEL")
+msg("GM_NPC_HIDE_UNHIDE")
+end
+
+----- Novaha Annex ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_017820", "d_abbey_64_1", -1503, 367, -1706, -134, "npc_ETC_20151224_017820")
+function npc_ETC_20151224_017820()
+msg("ABBEY_64_1_ABBAY_64_2")
+end
+
+----- Traveling Merchant Rose ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY641_ROZE04 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_1_MQ020 -----
@@ -315,7 +331,7 @@ msg("ABBAY64_3_HQ1_succ1")
 msg("BRACKEN632_ROZE02_basic01")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -326,7 +342,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_ABBEY_64_1")
 end
 
------ npc_roze ----- 
+----- Traveling Merchant Rose ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY641_ROZE05 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_1_MQ050 -----
@@ -415,7 +431,7 @@ msg("ABBAY64_3_HQ1_succ1")
 msg("BRACKEN632_ROZE02_basic01")
 end
 
------ npc_friar_05 ----- 
+----- Monk Goss ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY641_MONK03 -----
 ----- Dialog -----
 ----- QuestIDs: ABBAY_64_1_MQ040 -----
@@ -438,49 +454,49 @@ msg("ABBAY_64_1_MQ040_startnpc_prog01")
 msg("ABBAY_64_1_MQ040_succ01")
 end
 
------ orsha_f_3 ----- 
+----- Rona ----- 
 ----- Enter -----
 addnpc(153111, "QUEST_LV_0100_20151224_012017", "d_abbey_64_1", -504, 210, -2037, 45, "npc_QUEST_LV_0100_20151224_012017")
 function npc_QUEST_LV_0100_20151224_012017()
 msg("ABBEY641_TOWN_PEAPLE02")
 end
 
------ orsha_m_1 ----- 
+----- Kornas ----- 
 ----- Enter -----
 addnpc(20063, "QUEST_LV_0100_20151224_012014", "d_abbey_64_1", -463, 210, -2035, 89, "npc_QUEST_LV_0100_20151224_012014")
 function npc_QUEST_LV_0100_20151224_012014()
 msg("ABBEY641_TOWN_PEAPLE02")
 end
 
------ orsha_f_1 ----- 
+----- Anne ----- 
 ----- Enter -----
 addnpc(20061, "QUEST_LV_0100_20151224_011847", "d_abbey_64_1", -453, 210, -2079, 101, "npc_QUEST_LV_0100_20151224_011847")
 function npc_QUEST_LV_0100_20151224_011847()
 msg("ABBEY641_TOWN_PEAPLE02")
 end
 
------ orsha_m_2 ----- 
+----- Zacaras ----- 
 ----- Enter -----
 addnpc(20064, "ETC_20151224_017841", "d_abbey_64_1", -475, 210, -2090, 112, "npc_ETC_20151224_017841")
 function npc_ETC_20151224_017841()
 msg("ABBEY641_TOWN_PEAPLE02")
 end
 
------ orsha_m_4 ----- 
+----- Allonas ----- 
 ----- Enter -----
 addnpc(153110, "QUEST_LV_0100_20151224_011851", "d_abbey_64_1", -517, 210, -2008, 89, "npc_QUEST_LV_0100_20151224_011851")
 function npc_QUEST_LV_0100_20151224_011851()
 msg("ABBEY641_TOWN_PEAPLE02")
 end
 
------ orsha_m_3 ----- 
+----- Litas ----- 
 ----- Enter -----
 addnpc(153109, "ETC_20151224_017842", "d_abbey_64_1", -531, 210, -2035, -14, "npc_ETC_20151224_017842")
 function npc_ETC_20151224_017842()
 msg("ABBEY641_TOWN_PEAPLE02")
 end
 
------ id_gate_npc ----- 
+----- Underground Chapel Dungeon ----- 
 ----- npcselectdialog.ies | ClassName: INSTANCE_DUNGEON_CHAPLE_03 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: TUTO_INSTANT_DUNGEON -----
@@ -491,7 +507,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_abbey_64_1", 797, 33, 362, 45, "npc_ETC_20150317_009100")
@@ -499,7 +515,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ monument_03_small ----- 
+----- Monument ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY64_2_HIDDENQ2_OBJ1 -----
 ----- Dialog -----
 ----- QuestIDs: ABBEY64_2_HQ2 -----

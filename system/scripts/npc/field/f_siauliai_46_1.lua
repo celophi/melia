@@ -1,4 +1,18 @@
------ npc_austeja_female_2 ----- 
+----- Gate Route ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001182", "f_siauliai_46_1", -624, 262, -1920, 25, "npc_ETC_20150317_001182")
+function npc_ETC_20150317_001182()
+msg("SIAULIAI46_1_THORN19")
+end
+
+----- Uskis Arable Land ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009586", "f_siauliai_46_1", -1872, 260, -427, 225, "npc_ETC_20150323_009586")
+function npc_ETC_20150323_009586()
+msg("SIAULIAI46_1_SIAULIAI46_2")
+end
+
+----- Priest Dazine ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_1_MQ01_NPC -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_1_MQ_01 | SIAULIAI_46_1_MQ_02 | SIAULIAI_46_1_MQ_03 | SIAULIAI_46_1_MQ_04 -----
@@ -20,7 +34,7 @@ msg("SIAULIAI_46_1_MQ_04_add")
 msg("SIAULIAI_46_1_MQ_04_start_prog")
 end
 
------ austeja_alter ----- 
+----- Austeja Altar ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_1_ALTAR -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_1_MQ_02 | SIAULIAI_46_1_SQ_01 -----
@@ -30,7 +44,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_Obelisk_broken ----- 
+----- Rankis Seal Tower ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_1_DEADTREE01 -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_1_MQ_04 | SIAULIAI_46_1_SQ_02 -----
@@ -40,7 +54,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_Obelisk_broken ----- 
+----- Ranka Seal Tower ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_1_DEADTREE02 -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_1_MQ_05 -----
@@ -50,7 +64,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_combat_transport_section_1 ----- 
+----- Merchant Dulke ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_1_SQ_03_NPC -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_1_SQ_03 -----
@@ -64,7 +78,7 @@ msg("SIAULIAI_46_1_SQ_03_start_prog")
 msg("SIAULIAI_46_1_SQ_03_succ")
 end
 
------ npc_village_male_b1 ----- 
+----- Villager Emil ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_1_SQ_04_NPC -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_1_SQ_04 -----
@@ -77,7 +91,7 @@ msg("SIAULIAI_46_1_SQ_04_start_prog")
 msg("SIAULIAI_46_1_SQ_04_succ")
 end
 
------ npc_cleric_f_2 ----- 
+----- Pharmacist Tiana ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_1_SQ_05_NPC -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_46_1_SQ_05 -----
@@ -90,7 +104,14 @@ msg("SIAULIAI_46_1_SQ_05_start_prog")
 msg("SIAULIAI_46_1_SQ_05_succ")
 end
 
------ treasure_box1 ----- 
+----- Glade Hillroad ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150714_011734", "f_siauliai_46_1", 586, 391, 1320, 155, "npc_ETC_20150714_011734")
+function npc_ETC_20150714_011734()
+msg("SIAULIAI46_1_THORN39_2")
+end
+
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_siauliai_46_1", 954, 391, 1021, 45, "npc_ETC_20150317_009100")

@@ -1,4 +1,25 @@
------ npc_sadhu ----- 
+----- Delmore Manor ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_017823", "f_castle_65_3", -1782, 1, -1544, -42, "npc_ETC_20151224_017823")
+function npc_ETC_20151224_017823()
+msg("CASTLE653_TO_CASTLE652")
+end
+
+----- Bellai Rainforest ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151016_015624", "f_castle_65_3", -158, 275, 1714, 125, "npc_ETC_20151016_015624")
+function npc_ETC_20151016_015624()
+msg("CASTLE653_TO_ORCHARD323")
+end
+
+----- Topes Fortress 1F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016531", "f_castle_65_3", 1129, 333, 297, 140, "npc_ETC_20151102_016531")
+function npc_ETC_20151102_016531()
+msg("CASTLE653_TO_CASTLE671")
+end
+
+----- Revelator Yane ----- 
 ----- npcselectdialog.ies | ClassName: CASTLE653_MQ_01_1 -----
 ----- Dialog -----
 ----- QuestIDs: CASTLE65_3_MQ01 | CASTLE65_2_MQ05 -----
@@ -35,7 +56,7 @@ msg("CASTLE653_SQ_03_prog")
 msg("CASTLE653_SQ_03_succ")
 end
 
------ npc_sapper ----- 
+----- Revelator Mihail ----- 
 ----- npcselectdialog.ies | ClassName: CASTLE653_MQ_01_2 -----
 ----- Dialog -----
 ----- QuestIDs: CASTLE65_3_MQ01 -----
@@ -100,7 +121,7 @@ msg("CASTLE653_SQ_04_prog")
 msg("CASTLE653_SQ_04_succ")
 end
 
------ npc_highlander_2 ----- 
+----- Revelator Connor ----- 
 ----- npcselectdialog.ies | ClassName: CASTLE653_MQ_01_3 -----
 ----- Dialog -----
 addnpc(155096, "QUEST_LV_0100_20151224_013055", "f_castle_65_3", -1634, 1, -430, -52, "npc_QUEST_LV_0100_20151224_013055")
@@ -118,7 +139,7 @@ msg("CASTLE653_MQ_04_3_basic3")
 msg("CASTLE653_MQ_04_3_basic4")
 end
 
------ npc_sapper ----- 
+----- Revelator Mihail ----- 
 ----- npcselectdialog.ies | ClassName: CASTLE653_MQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: CASTLE65_3_MQ02 | CASTLE65_3_MQ03 -----
@@ -128,7 +149,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_sadhu ----- 
+----- Revelator Yane ----- 
 ----- npcselectdialog.ies | ClassName: CASTLE653_MQ_04_1 -----
 ----- Dialog -----
 ----- QuestIDs: CASTLE65_3_MQ03 | CASTLE65_3_MQ04 | CASTLE65_3_SQ03 -----
@@ -165,7 +186,7 @@ msg("CASTLE653_SQ_03_prog")
 msg("CASTLE653_SQ_03_succ")
 end
 
------ npc_sapper ----- 
+----- Revelator Mihail ----- 
 ----- npcselectdialog.ies | ClassName: CASTLE653_MQ_04_2 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: CASTLE65_3_SQ04 | CASTLE653_RP_1 | CASTLE65_3_HQ1 -----
@@ -231,7 +252,7 @@ msg("CASTLE653_SQ_04_prog")
 msg("CASTLE653_SQ_04_succ")
 end
 
------ npc_highlander_2 ----- 
+----- Revelator Connor ----- 
 ----- npcselectdialog.ies | ClassName: CASTLE653_MQ_04_3 -----
 ----- Dialog -----
 ----- QuestIDs: CASTLE653_RP_2 -----
@@ -250,14 +271,14 @@ msg("CASTLE653_MQ_04_3_basic3")
 msg("CASTLE653_MQ_04_3_basic4")
 end
 
------ castle_wizard ----- 
+----- Mage Melchioras ----- 
 ----- Enter -----
 addnpc(155113, "QUEST_LV_0100_20151102_010884", "f_castle_65_3", 102, 68, -148, -45, "npc_QUEST_LV_0100_20151102_010884")
 function npc_QUEST_LV_0100_20151102_010884()
 msg("CASTLE653_MQ_04_5")
 end
 
------ npc_sadhu ----- 
+----- Revelator Yane ----- 
 ----- npcselectdialog.ies | ClassName: CASTLE653_MQ_05_1 -----
 ----- Dialog -----
 ----- QuestIDs: CASTLE65_3_MQ04 | CASTLE65_3_MQ05 -----
@@ -294,7 +315,7 @@ msg("CASTLE653_SQ_03_prog")
 msg("CASTLE653_SQ_03_succ")
 end
 
------ npc_sapper ----- 
+----- Revelator Mihail ----- 
 ----- npcselectdialog.ies | ClassName: CASTLE653_MQ_05_2 -----
 ----- Dialog -----
 addnpc(155094, "QUEST_LV_0100_20151102_010887", "f_castle_65_3", 158, 68, -162, -44, "npc_QUEST_LV_0100_20151102_010887")
@@ -358,7 +379,7 @@ msg("CASTLE653_SQ_04_prog")
 msg("CASTLE653_SQ_04_succ")
 end
 
------ castle_wizard ----- 
+----- Mage Melchioras ----- 
 ----- npcselectdialog.ies | ClassName: CASTLE653_MQ_06 -----
 ----- Dialog -----
 ----- QuestIDs: CASTLE65_3_MQ06 -----
@@ -368,7 +389,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_sapper ----- 
+----- Revelator Mihail ----- 
 ----- npcselectdialog.ies | ClassName: CASTLE653_MQ_07_2 -----
 ----- Dialog -----
 ----- QuestIDs: CASTLE65_3_MQ07 | CASTLE65_3_MQ08 | CASTLE65_3_MQ09 | CASTLE65_3_HQ1 -----
@@ -378,7 +399,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ castle_wizard ----- 
+----- Mage Melchioras ----- 
 ----- npcselectdialog.ies | ClassName: CASTLE653_MQ_09 -----
 ----- Dialog -----
 ----- QuestIDs: CASTLE65_3_MQ09 | CASTLE65_3_SQ01 | CASTLE65_3_SQ02 -----
@@ -434,7 +455,7 @@ msg("CASTLE653_SQ_02_prog")
 msg("CASTLE653_SQ_02_succ")
 end
 
------ old_wooden_box_S ----- 
+----- Hunter Testing Case ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151067, "ETC_20151102_017430", "f_castle_65_3", 705, 333, -39, 41, "npc_ETC_20151102_017430")
@@ -442,7 +463,7 @@ function npc_ETC_20151102_017430()
 msg("JOB_2_HUNTER_4_1_BOX_3")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_castle_65_3", -1597, 45, 87, -90, "npc_ETC_20150317_009100")

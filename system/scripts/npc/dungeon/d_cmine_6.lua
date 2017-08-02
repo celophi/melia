@@ -1,4 +1,25 @@
------ mine_crystal ----- 
+----- Crystal Mine 2F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001156", "d_cmine_6", -2147, 360, -1590, 207, "npc_ETC_20150317_001156")
+function npc_ETC_20150317_001156()
+msg("WS_ACT4_3_ACT4_2")
+end
+
+----- Closed Area ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_009264", "d_cmine_6", 170, 183, -162, 70, "npc_ETC_20150317_009264")
+function npc_ETC_20150317_009264()
+msg("WS_ACT4_3_ACT4_BOSS")
+end
+
+----- Outside the Closed Area ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_009265", "d_cmine_6", 1625, 289, 2069, -112, "npc_ETC_20150317_009265")
+function npc_ETC_20150317_009265()
+msg("WS_ACT4_BOSS_ACT4_3")
+end
+
+----- Crystal Wall of the Closed Area ----- 
 ----- npcselectdialog.ies | ClassName: CMINE3_BOSSROOM_OPEN -----
 ----- Dialog -----
 ----- QuestIDs: ACT4_MINE3_ENTER -----
@@ -8,7 +29,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_mining_alchemist ----- 
+----- [Alchemist Master]Vaidotas ----- 
 ----- npcselectdialog.ies | ClassName: MINE_3_ALCHEMIST -----
 ----- Dialog -----
 ----- QuestIDs: MINE_3_RESQUE1 -----
@@ -60,7 +81,7 @@ msg("PARTY_Q_011_startnpc_prog01")
 msg("PARTY_Q_011_succ01")
 end
 
------ mine_miner ----- 
+----- Miner ----- 
 ----- npcselectdialog.ies | ClassName: MINE_3_RESIENT1_BIND -----
 ----- Dialog -----
 ----- QuestIDs: MINE_3_RESQUE1 -----
@@ -70,7 +91,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ mine_Laima ----- 
+----- Girl ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151012, "QUEST_LV_0100_20150317_000851", "d_cmine_6", -1207, 303, 87, 27, "npc_QUEST_LV_0100_20150317_000851")
@@ -78,7 +99,7 @@ function npc_QUEST_LV_0100_20150317_000851()
 msg("MINE_3_GIRL_BIND")
 end
 
------ mine_matron ----- 
+----- Village Aunt ----- 
 ----- npcselectdialog.ies | ClassName: D_CMINE_NPC01_BIND -----
 ----- Dialog -----
 addnpc(151010, "QUEST_LV_0100_20150317_000206", "d_cmine_6", -1170, 303, 120, 32, "npc_QUEST_LV_0100_20150317_000206")
@@ -92,7 +113,7 @@ msg("D_CMINE_NPC01_basic01")
 msg("D_CMINE_NPC01_basic02")
 end
 
------ mine_village_female ----- 
+----- Village Girl ----- 
 ----- npcselectdialog.ies | ClassName: D_CMINE_NPC02_BIND -----
 ----- Dialog -----
 addnpc(151011, "QUEST_LV_0100_20150317_000209", "d_cmine_6", -1200, 303, 98, -40, "npc_QUEST_LV_0100_20150317_000209")
@@ -106,7 +127,7 @@ msg("F_SIAU_OUT_NPC03_basic02")
 msg("F_SIAU_OUT_NPC03_basic03")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -117,7 +138,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_CMINE_6")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_cmine_6", -1145, 304, 103, -45, "npc_ETC_20150317_009100")
@@ -125,7 +146,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_miner2 ----- 
+----- Miner ----- 
 ----- npcselectdialog.ies | ClassName: MINE_3_RESIENT1 -----
 ----- Dialog -----
 ----- QuestIDs: MINE_3_RESQUE1 -----
@@ -138,7 +159,7 @@ msg("F_SIAU_OUT_NPC02_basic01")
 msg("F_SIAU_OUT_NPC02_basic02")
 end
 
------ npc_Laima_little ----- 
+----- Girl ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47236, "QUEST_LV_0100_20150317_000851", "d_cmine_6", -1207, 303, 87, 27, "npc_QUEST_LV_0100_20150317_000851")
@@ -146,7 +167,7 @@ function npc_QUEST_LV_0100_20150317_000851()
 msg("MINE_3_GIRL1")
 end
 
------ npc_matron ----- 
+----- Village Aunt ----- 
 ----- npcselectdialog.ies | ClassName: D_CMINE_NPC01 -----
 ----- Dialog -----
 addnpc(20114, "QUEST_LV_0100_20150317_000206", "d_cmine_6", -1170, 303, 120, 32, "npc_QUEST_LV_0100_20150317_000206")
@@ -160,7 +181,7 @@ msg("D_CMINE_NPC01_basic01")
 msg("D_CMINE_NPC01_basic02")
 end
 
------ npc_village_female ----- 
+----- Village Girl ----- 
 ----- npcselectdialog.ies | ClassName: D_CMINE_NPC02 -----
 ----- Dialog -----
 addnpc(147473, "QUEST_LV_0100_20150317_000209", "d_cmine_6", -1200, 303, 98, -40, "npc_QUEST_LV_0100_20150317_000209")
@@ -174,7 +195,7 @@ msg("F_SIAU_OUT_NPC03_basic02")
 msg("F_SIAU_OUT_NPC03_basic03")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_cmine_6", -875, 184, -970, 45, "npc_ETC_20150317_009100")
@@ -182,7 +203,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ mine_purify_01 ----- 
+----- 3F Purifier ----- 
 ----- npcselectdialog.ies | ClassName: CMINE6_RP_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: CMINE6_RP_1 -----

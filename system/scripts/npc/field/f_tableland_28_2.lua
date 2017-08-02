@@ -1,4 +1,18 @@
------ soldier7 ----- 
+----- Mesafasla ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150804_014153", "f_tableland_28_2", 1694, 341, 1816, 115, "npc_ETC_20150804_014153")
+function npc_ETC_20150804_014153()
+msg("TABLELAND282_TO_TABLELAND281")
+end
+
+----- Roxona Market ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009593", "f_tableland_28_2", -13, 0, -2126, -51, "npc_ETC_20150323_009593")
+function npc_ETC_20150323_009593()
+msg("TABLELAND282_TO_FLASH60")
+end
+
+----- Military Courier Rochez ----- 
 ----- npcselectdialog.ies | ClassName: TABLELAND282_SQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND28_2_SQ01 -----
@@ -13,7 +27,7 @@ msg("TABLELAND28_2_SQ_01_R_basic01")
 msg("TABLELAND28_2_SQ_01_R_basic02")
 end
 
------ soldier7 ----- 
+----- Supply Officer Ronda ----- 
 ----- npcselectdialog.ies | ClassName: TABLELAND282_SQ_02 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND28_2_SQ02 | TABLELAND28_2_SQ03 | TABLELAND28_2_SQ04 -----
@@ -35,7 +49,7 @@ msg("TABLELAND28_2_SQ_04_3")
 msg("TABLELAND28_2_SQ_04_4")
 end
 
------ npc_low_lev_officer4_m ----- 
+----- Stogas Commanding Officer Ades ----- 
 ----- npcselectdialog.ies | ClassName: TABLELAND282_SQ_05 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND28_2_SQ01 | TABLELAND28_2_SQ05 -----
@@ -54,7 +68,7 @@ msg("TABLELAND28_2_SQ_05_5")
 msg("TABLELAND28_2_SQ_05_1_add")
 end
 
------ npc_pilgrim_m_1 ----- 
+----- Mage Horace ----- 
 ----- npcselectdialog.ies | ClassName: TABLELAND282_SQ_06 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND28_2_SQ06 -----
@@ -68,7 +82,7 @@ msg("TABLELAND28_2_SQ_06_3")
 msg("TABLELAND28_2_SQ_06_4")
 end
 
------ soldier7 ----- 
+----- Soldier Motimer ----- 
 ----- npcselectdialog.ies | ClassName: TABLELAND282_SQ_07 -----
 ----- Dialog -----
 ----- QuestIDs: TABLELAND28_2_SQ07 | TABLELAND28_2_SQ08 -----
@@ -85,7 +99,7 @@ msg("TABLELAND28_2_SQ_08_2")
 msg("TABLELAND28_2_SQ_08_1_1")
 end
 
------ soldier7 ----- 
+----- Military Courier Rochez ----- 
 ----- npcselectdialog.ies | ClassName: TABLELAND282_SQ_01_R -----
 ----- Dialog -----
 addnpc(20019, "QUEST_LV_0300_20151001_000313", "f_tableland_28_2", 264, 40, -474, -42, "npc_QUEST_LV_0300_20151001_000313")
@@ -99,7 +113,14 @@ msg("TABLELAND28_2_SQ_01_R_basic01")
 msg("TABLELAND28_2_SQ_01_R_basic02")
 end
 
------ statue_vakarine ----- 
+----- Vedas Plateau ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016522", "f_tableland_28_2", 2113, 267, 554, 125, "npc_ETC_20151102_016522")
+function npc_ETC_20151102_016522()
+msg("TABLELAND28_2_TABLELAND11_1")
+end
+
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -110,7 +131,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_TABLELAND_28_2")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_tableland_28_2", 1084, 248, 1424, 45, "npc_ETC_20150317_009100")
@@ -118,14 +139,14 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ blank_npc_warp ----- 
+----- Neighport Church East Building ----- 
 ----- Enter -----
 addnpc(147507, "ETC_20161214_025803", "f_tableland_28_2", -355, 38, -717, 45, "npc_ETC_20161214_025803")
 function npc_ETC_20161214_025803()
 msg("TABLELAND_28_2_TO_CATHEDRAL_78_1")
 end
 
------ Board2 ----- 
+----- Warning ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(40080, "QUEST_20150317_000808", "f_tableland_28_2", -194, 38, -659, 208, "npc_QUEST_20150317_000808")

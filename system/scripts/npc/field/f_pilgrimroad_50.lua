@@ -1,4 +1,18 @@
------ Firetower_GateOpen ----- 
+----- Pilgrim Path ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009582", "f_pilgrimroad_50", -1934, 506, -1179, 225, "npc_ETC_20150323_009582")
+function npc_ETC_20150323_009582()
+msg("PILGRIM50_PILGRIM47")
+end
+
+----- Forest of Prayer ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009584", "f_pilgrimroad_50", 2243, 507, -1306, 25, "npc_ETC_20150323_009584")
+function npc_ETC_20150323_009584()
+msg("PILGRIM50_PILGRIM51")
+end
+
+----- Pilgrim's Way Gate ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147306, "ETC_20150317_009399", "f_pilgrimroad_50", 695, 656, 112, -34, "npc_ETC_20150317_009399")
@@ -6,7 +20,7 @@ function npc_ETC_20150317_009399()
 msg("REQ_SEMPLE_04")
 end
 
------ npc_pilgrim_m_3 ----- 
+----- Pilgrim Gracius ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM50_NPC01 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM50_SQ_010 | PILGRIM50_SQ_020 | PILGRIM50_SQ_030 | PILGRIM50_SQ_040 | PILGRIM50_SQ_028 | PILGRIM50_SQ_029 -----
@@ -42,7 +56,7 @@ msg("PILGRIM50_NPC01_basic03")
 msg("PILGRIM50_NPC01_basic04")
 end
 
------ Ghost_Soldier ----- 
+----- Soul restrained to the altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(15000, "ETC_20150317_009401", "f_pilgrimroad_50", 36, 507, -485, 45, "npc_ETC_20150317_009401")
@@ -51,7 +65,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Ghost_Soldier ----- 
+----- Soul restrained to the altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(15000, "ETC_20150317_009401", "f_pilgrimroad_50", 66, 507, -232, 45, "npc_ETC_20150317_009401")
@@ -60,7 +74,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Ghost_Soldier ----- 
+----- Soul restrained to the altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(15000, "ETC_20150317_009401", "f_pilgrimroad_50", -234, 507, -248, 45, "npc_ETC_20150317_009401")
@@ -69,7 +83,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Ghost_Soldier ----- 
+----- Soul restrained to the altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(15000, "ETC_20150317_009401", "f_pilgrimroad_50", -167, 507, -523, 45, "npc_ETC_20150317_009401")
@@ -78,7 +92,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Ghost_Soldier ----- 
+----- Soul restrained to the altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(15000, "ETC_20150317_009401", "f_pilgrimroad_50", -569, 507, -212, 45, "npc_ETC_20150317_009401")
@@ -87,7 +101,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Ghost_Soldier ----- 
+----- Soul restrained to the altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(15000, "ETC_20150317_009401", "f_pilgrimroad_50", -482, 507, -22, 45, "npc_ETC_20150317_009401")
@@ -96,7 +110,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Ghost_Soldier ----- 
+----- Soul restrained to the altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(15000, "ETC_20150317_009401", "f_pilgrimroad_50", 237, 507, -456, 45, "npc_ETC_20150317_009401")
@@ -105,7 +119,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_pilgrim_m_1 ----- 
+----- Raging Pilgrim's Soul ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM50_GHOST2 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM50_SQ_060 -----
@@ -115,21 +129,21 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ LOST_PAPER ----- 
+----- Sign of Scripture with blood small ----- 
 ----- Enter -----
 addnpc(147312, "ETC_20150317_009403", "f_pilgrimroad_50", 1078, 657, 78, 45, "npc_ETC_20150317_009403")
 function npc_ETC_20150317_009403()
 msg("PILGRIM50_BIBLE")
 end
 
------ npc_pilgrim_m_4 ----- 
+----- Altar-bound Pilgrim's Soul ----- 
 ----- Enter -----
 addnpc(155037, "ETC_20150428_011588", "f_pilgrimroad_50", 1034, 680, 56, 135, "npc_ETC_20150428_011588")
 function npc_ETC_20150428_011588()
 msg("PILGRIM50_GHOST3")
 end
 
------ npc_pilgrim_m_5 ----- 
+----- Merge-bound Soul ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM50_GHOST4 -----
 ----- Dialog -----
 ----- QuestIDs: PILGRIM50_SQ_090 -----
@@ -139,7 +153,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Ghost_Soldier ----- 
+----- Soul restrained to the altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(15000, "ETC_20150317_009401", "f_pilgrimroad_50", 485, 507, -480, 45, "npc_ETC_20150317_009401")
@@ -148,7 +162,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Ghost_Soldier ----- 
+----- Soul restrained to the altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(15000, "ETC_20150317_009401", "f_pilgrimroad_50", -645, 507, -53, 45, "npc_ETC_20150317_009401")
@@ -157,7 +171,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Ghost_Soldier ----- 
+----- Soul restrained to the altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(15000, "ETC_20150317_009401", "f_pilgrimroad_50", -116, 507, -33, 45, "npc_ETC_20150317_009401")
@@ -166,7 +180,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Ghost_Soldier ----- 
+----- Soul restrained to the altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(15000, "ETC_20150317_009401", "f_pilgrimroad_50", -751, 507, -252, 45, "npc_ETC_20150317_009401")
@@ -175,7 +189,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ BOOK_02 ----- 
+----- Abandoned Diary ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153014, "QUEST_20150428_001901", "f_pilgrimroad_50", -1612, 507, -872, 45, "npc_QUEST_20150428_001901")
@@ -183,7 +197,7 @@ function npc_QUEST_20150428_001901()
 msg("PILGRIM50_DIARY")
 end
 
------ LOST_PAPER ----- 
+----- Diary written in Anger ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147312, "QUEST_20150428_001925", "f_pilgrimroad_50", 959, 507, -890, 45, "npc_QUEST_20150428_001925")
@@ -191,7 +205,14 @@ function npc_QUEST_20150428_001925()
 msg("PILGRIM50_LOSTPAPER_BASIC01")
 end
 
------ treasure_box1 ----- 
+----- Genar Field ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150918_014226", "f_pilgrimroad_50", -161, 507, -725, -55, "npc_ETC_20150918_014226")
+function npc_ETC_20150918_014226()
+msg("PILGRIM_50_TO_PILGRIM_49")
+end
+
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_pilgrimroad_50", -970, 558, 1143, 45, "npc_ETC_20150317_009100")

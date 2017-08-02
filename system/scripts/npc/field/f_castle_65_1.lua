@@ -1,4 +1,18 @@
------ castle_wizard ----- 
+----- Absenta Reservoir ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151102_016510", "f_castle_65_1", 1519, -8, -757, 47, "npc_ETC_20151102_016510")
+function npc_ETC_20151102_016510()
+msg("CASTLE651_TO_3CMLAKE84")
+end
+
+----- Delmore Manor ----- 
+----- Enter -----
+addnpc(40001, "ETC_20151224_017823", "f_castle_65_1", -2032, -8, 812, -134, "npc_ETC_20151224_017823")
+function npc_ETC_20151224_017823()
+msg("CASTLE651_TO_CASTLE652")
+end
+
+----- Mage Melchioras ----- 
 ----- npcselectdialog.ies | ClassName: CASTLE651_MQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: CASTLE65_1_MQ01 | CASTLE65_1_MQ02 | CASTLE65_1_MQ04 | CASTLE65_1_MQ05 | CASTLE65_1_MQ06 -----
@@ -54,7 +68,7 @@ msg("CASTLE653_SQ_02_prog")
 msg("CASTLE653_SQ_02_succ")
 end
 
------ npc_sapper ----- 
+----- Revelator Mihail ----- 
 ----- npcselectdialog.ies | ClassName: CASTLE651_MQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: CASTLE65_1_MQ03 | CASTLE65_1_MQ04 -----
@@ -119,7 +133,7 @@ msg("CASTLE653_SQ_04_prog")
 msg("CASTLE653_SQ_04_succ")
 end
 
------ npc_sapper ----- 
+----- Revelator Mihail ----- 
 ----- npcselectdialog.ies | ClassName: CASTLE651_MQ_05 -----
 ----- Dialog -----
 ----- QuestIDs: CASTLE65_1_MQ05 -----
@@ -129,7 +143,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_pilgrim_f_2 ----- 
+----- Follower Andrea ----- 
 ----- npcselectdialog.ies | ClassName: CASTLE651_SQ_01 -----
 ----- Dialog -----
 ----- QuestIDs: CASTLE65_1_SQ01 | CASTLE65_1_SQ02 -----
@@ -147,7 +161,7 @@ msg("CASTLE651_SQ_02_prog")
 msg("CASTLE651_SQ_02_succ")
 end
 
------ npc_pilgrim_m_1 ----- 
+----- Follower Nuodas ----- 
 ----- npcselectdialog.ies | ClassName: CASTLE651_SQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: CASTLE65_1_SQ03 | CASTLE65_1_SQ04 -----
@@ -165,21 +179,21 @@ msg("CASTLE651_SQ_04_prog")
 msg("CASTLE651_SQ_04_succ")
 end
 
------ kruvina_pillar ----- 
+----- Demonic Power Supply Device ----- 
 ----- Enter -----
 addnpc(155105, "ETC_20151224_018476", "f_castle_65_1", 46, 82, 534, 45, "npc_ETC_20151224_018476")
 function npc_ETC_20151224_018476()
 msg("CASTLE651_MQ_05_PILLAR")
 end
 
------ kruvina_pillar2 ----- 
+----- Demonic Power Supply Device ----- 
 ----- Enter -----
 addnpc(155116, "ETC_20151224_018476", "f_castle_65_1", 46, 82, 534, 45, "npc_ETC_20151224_018476")
 function npc_ETC_20151224_018476()
 msg("CASTLE651_MQ_05_PILLAR_B")
 end
 
------ old_wooden_box_S ----- 
+----- Hunter Testing Case ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151067, "ETC_20151102_017430", "f_castle_65_1", -52, -8, 1467, 86, "npc_ETC_20151102_017430")
@@ -187,7 +201,7 @@ function npc_ETC_20151102_017430()
 msg("JOB_2_HUNTER_4_1_BOX_1")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -198,7 +212,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_CASTLE_65_1")
 end
 
------ BOOK_01 ----- 
+----- Officer's Journal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147311, "ETC_20151224_019942", "f_castle_65_1", -1638, 205, -1105, 45, "npc_ETC_20151224_019942")
@@ -206,7 +220,7 @@ function npc_ETC_20151224_019942()
 msg("ORSHA_BOOK_DELDIARY01")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_castle_65_1", 1317, -8, 1574, -45, "npc_ETC_20150317_009100")

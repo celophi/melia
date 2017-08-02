@@ -1,4 +1,11 @@
------ npc_village_uncle_8 ----- 
+----- Baron Allerno  ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009589", "f_siauliai_50_1", -795, -44, 1714, 112, "npc_ETC_20150323_009589")
+function npc_ETC_20150323_009589()
+msg("SIAUL50_1_TO_FARM_47_4")
+end
+
+----- Gytis ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_50_1_SQ_GYTIS -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_50_1_SQ_010 | SIAULIAI_50_1_SQ_020 | SIAULIAI_50_1_SQ_070 | SIAULIAI_50_1_SQ_080 | SIAULIAI_50_1_SQ_090 -----
@@ -25,7 +32,7 @@ msg("SIAULIAI_50_1_SQ_090_startnpc01")
 msg("SIAULIAI_50_1_SQ_090_startnpc02")
 end
 
------ npc_village_male_b1 ----- 
+----- Researcher Gareth ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_50_1_SQ_RESEARCHER -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_50_1_SQ_170 | SIAULIAI_50_1_SQ_180 -----
@@ -44,7 +51,7 @@ msg("SIAULIAI_50_1_SQ_180_prog01")
 msg("SIAULIAI_50_1_SQ_180_succ01")
 end
 
------ soldier6 ----- 
+----- Soldier Dennis ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_50_1_SQ_SOLDIER01 -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_50_1_SQ_100 | SIAULIAI_50_1_SQ_110 | SIAULIAI_50_1_SQ_120 -----
@@ -65,7 +72,7 @@ msg("SIAULIAI_50_1_SQ_120_startnpc01")
 msg("SIAULIAI_50_1_SQ_120_succ01")
 end
 
------ Silvertransporter_m_Quest_3 ----- 
+----- Soldier Alan ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_50_1_SQ_SOLDIER02 -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_50_1_SQ_110 -----
@@ -79,7 +86,7 @@ msg("SIAULIAI_50_1_SQ_110_prog")
 msg("SIAULIAI_50_1_SQ_110_prognpc01")
 end
 
------ soldier7 ----- 
+----- Soldier Peirce ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_50_1_SQ_SOLDIER03 -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_50_1_SQ_120 -----
@@ -92,7 +99,7 @@ msg("SIAULIAI_50_1_SQ_SOLDIER03_AFTER_basic02")
 msg("SIAULIAI_50_1_SQ_120_prognpc01")
 end
 
------ npc_village_uncle_2 ----- 
+----- Louise ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_50_1_SQ_MAN01 -----
 ----- Dialog -----
 ----- QuestIDs: SIAULIAI_50_1_SQ_130 | SIAULIAI_50_1_SQ_140 | SIAULIAI_50_1_SQ_150 | SIAULIAI_50_1_SQ_160 -----
@@ -118,7 +125,28 @@ msg("SIAULIAI_50_1_SQ_160_prog01")
 msg("SIAULIAI_50_1_SQ_160_succ01")
 end
 
------ soldier7 ----- 
+----- Klaipeda ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001144", "f_siauliai_50_1", 1638, 0, -1425, 74, "npc_ETC_20150317_001144")
+function npc_ETC_20150317_001144()
+msg("SIAUL50_1_TO_KLAPEDA")
+end
+
+----- Veja Ravine ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009562", "f_siauliai_50_1", 2334, 22, 537, 45, "npc_ETC_20150323_009562")
+function npc_ETC_20150323_009562()
+msg("SIAUL50_1_TO_HUEVILLAGE_58_1")
+end
+
+----- Vieta Gorge ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009563", "f_siauliai_50_1", 905, -44, 1759, 125, "npc_ETC_20150323_009563")
+function npc_ETC_20150323_009563()
+msg("SIAUL50_1_TO_HUEVILLAGE_58_2")
+end
+
+----- Soldier Peirce ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_50_1_SQ_SOLDIER03_AFTER -----
 ----- Dialog -----
 addnpc(20019, "QUEST_LV_0200_20150323_003871", "f_siauliai_50_1", -248, 0, -315, 17, "npc_QUEST_LV_0200_20150323_003871")
@@ -130,7 +158,7 @@ msg("SIAULIAI_50_1_SQ_SOLDIER03_AFTER_basic02")
 msg("SIAULIAI_50_1_SQ_120_prognpc01")
 end
 
------ soldier5 ----- 
+----- Soldier Gatus ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_50_1_SQ_SOLDIER04 -----
 ----- Dialog -----
 addnpc(20015, "ETC_20150323_009682", "f_siauliai_50_1", 67, 0, -502, 145, "npc_ETC_20150323_009682")
@@ -139,7 +167,7 @@ msg("SIAULIAI_50_1_SQ_SOLDIER04_basic01")
 msg("SIAULIAI_50_1_SQ_SOLDIER04_basic02")
 end
 
------ soldier4 ----- 
+----- Soldier Turan ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_50_1_SQ_SOLDIER05 -----
 ----- Dialog -----
 addnpc(20014, "ETC_20150323_009683", "f_siauliai_50_1", -122, 0, -343, -47, "npc_ETC_20150323_009683")
@@ -148,7 +176,7 @@ msg("SIAULIAI_50_1_SQ_SOLDIER05_basic02")
 msg("SIAULIAI_50_1_SQ_SOLDIER05_basic01")
 end
 
------ soldier3 ----- 
+----- Soldier Ramos ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_50_1_SQ_SOLDIER06 -----
 ----- Dialog -----
 addnpc(20013, "ETC_20150323_009684", "f_siauliai_50_1", -247, 0, -383, 45, "npc_ETC_20150323_009684")
@@ -157,7 +185,7 @@ msg("SIAULIAI_50_1_SQ_SOLDIER06_basic01")
 msg("SIAULIAI_50_1_SQ_SOLDIER06_basic02")
 end
 
------ soldier1 ----- 
+----- Soldier Varan ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_50_1_SQ_SOLDIER07 -----
 ----- Dialog -----
 addnpc(20011, "ETC_20150323_009685", "f_siauliai_50_1", -241, 0, -456, 65, "npc_ETC_20150323_009685")
@@ -166,7 +194,7 @@ msg("SIAULIAI_50_1_SQ_SOLDIER07_basic01")
 msg("SIAULIAI_50_1_SQ_SOLDIER07_basic02")
 end
 
------ npc_plant_repress_L ----- 
+----- Anti-Monster Proliferation Device ----- 
 ----- Enter -----
 ----- QuestIDs: SIAULIAI_50_1_SQ_180 -----
 addnpc(153025, "ETC_20150323_009688", "f_siauliai_50_1", 34, -118, 710, -29, "npc_ETC_20150323_009688")
@@ -175,7 +203,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_village_uncle_2 ----- 
+----- Farm Worker ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_50_1_SQ_MAN02 -----
 ----- Dialog -----
 addnpc(20118, "ETC_20150401_010679", "f_siauliai_50_1", 360, 0, -311, -56, "npc_ETC_20150401_010679")
@@ -194,7 +222,7 @@ msg("SIAULIAI_50_1_SQ_MAN04_basic04")
 msg("SIAULIAI_50_1_SQ_MAN04_basic01")
 end
 
------ npc_village_uncle_3 ----- 
+----- Farm Worker ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_50_1_SQ_MAN03 -----
 ----- Dialog -----
 addnpc(20138, "ETC_20150401_010679", "f_siauliai_50_1", 103, 0, -505, 108, "npc_ETC_20150401_010679")
@@ -213,7 +241,7 @@ msg("SIAULIAI_50_1_SQ_MAN04_basic04")
 msg("SIAULIAI_50_1_SQ_MAN04_basic01")
 end
 
------ npc_village_uncle_5 ----- 
+----- Farm Worker ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_50_1_SQ_MAN04 -----
 ----- Dialog -----
 addnpc(20151, "ETC_20150401_010679", "f_siauliai_50_1", 216, 0, -348, -25, "npc_ETC_20150401_010679")
@@ -232,7 +260,7 @@ msg("SIAULIAI_50_1_SQ_MAN04_basic04")
 msg("SIAULIAI_50_1_SQ_MAN04_basic01")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_siauliai_50_1", -262, 0, -659, 45, "npc_ETC_20150317_009100")
@@ -240,7 +268,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_village_uncle_3 ----- 
+----- Settler Rodonas ----- 
 ----- npcselectdialog.ies | ClassName: SIAU501_RP_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: SIAU501_RP_1 -----
@@ -252,7 +280,7 @@ msg("SIAU501_RP_1_3")
 msg("SIAU501_RP_1_NPC_basic1")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_siauliai_50_1", -1142, 0, -1367, 0, "npc_ETC_20150317_009100")
@@ -260,14 +288,14 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ blank_npc_warp ----- 
+----- Narcon Prison ----- 
 ----- Enter -----
 addnpc(147507, "ETC_20161214_025799", "f_siauliai_50_1", 17, 0, -1938, 45, "npc_ETC_20161214_025799")
 function npc_ETC_20161214_025799()
 msg("SIAULIAI_50_1_TO_PRISON_75_1")
 end
 
------ Board2 ----- 
+----- Warning ----- 
 ----- npcselectdialog.ies | ClassName: FREE_DUNGEON_SIGN1 -----
 ----- Enter | Dialog -----
 ----- QuestIDs: TUTO_FREE_DUNGEON -----

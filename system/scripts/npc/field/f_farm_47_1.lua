@@ -1,4 +1,25 @@
------ npc_pilgrim_m_3 ----- 
+----- Baron Allerno  ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009589", "f_farm_47_1", 1527, 6, -1336, -21, "npc_ETC_20150323_009589")
+function npc_ETC_20150323_009589()
+msg("FARM_47_1_TO_FARM_47_4")
+end
+
+----- Aqueduct Bridge Area ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009637", "f_farm_47_1", -1546, -41, -35, 222, "npc_ETC_20150323_009637")
+function npc_ETC_20150323_009637()
+msg("FARM_47_1_TO_FARM_47_2")
+end
+
+----- Cobalt Forest ----- 
+----- Enter -----
+addnpc(40001, "QUEST_JOBSTEP_20150323_002351", "f_farm_47_1", 236, 1, 1471, 133, "npc_QUEST_JOBSTEP_20150323_002351")
+function npc_QUEST_JOBSTEP_20150323_002351()
+msg("FARM_47_1_TO_HUEVILL_58_3")
+end
+
+----- Leader Horacius ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_LEADER -----
 ----- Dialog -----
 ----- QuestIDs: FARM47_1_SQ_010 | FARM47_1_SQ_020 | FARM47_1_SQ_030 | FARM47_1_SQ_040 | FARM47_1_SQ_120 | FARM47_1_SQ_121 -----
@@ -33,7 +54,7 @@ msg("FARM47_LEADER_BASIC01")
 msg("FARM47_LEADER_BASIC02")
 end
 
------ npc_village_male_a1 ----- 
+----- Tauras ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_TAURAS -----
 ----- Dialog -----
 ----- QuestIDs: FARM47_1_SQ_050 | FARM47_1_SQ_060 | FARM47_1_SQ_070 -----
@@ -57,7 +78,7 @@ msg("FARM47_TAURAS_BASIC01")
 msg("FARM47_1_SQ_070_COMP")
 end
 
------ npc_village_female ----- 
+----- Albina ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_ALBINA -----
 ----- Dialog -----
 ----- QuestIDs: FARM47_1_SQ_080 | FARM47_1_SQ_090 | FARM47_1_SQ_100 | FARM47_1_SQ_110 -----
@@ -85,7 +106,7 @@ msg("PILGRIM_36_2_SQ_020_AC")
 msg("PILGRIM_36_2_ALBINAS_BASIC01")
 end
 
------ farm47_dryer_01 ----- 
+----- Food Dryer ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_DRYER -----
 ----- Dialog -----
 ----- QuestIDs: FARM47_1_SQ_060 -----
@@ -95,7 +116,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ blank_npc ----- 
+----- Food Storage ----- 
 ----- Enter -----
 ----- QuestIDs: FARM47_1_SQ_070 -----
 addnpc(147372, "ETC_20150323_010363", "f_farm_47_1", 362, -41, 554, 45, "npc_ETC_20150323_010363")
@@ -104,7 +125,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_village_uncle_1 ----- 
+----- Farmer ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20117, "QUEST_20150323_001497", "f_farm_47_1", -956, 6, -1306, 45, "npc_QUEST_20150323_001497")
@@ -112,7 +133,7 @@ function npc_QUEST_20150323_001497()
 msg("FARM47_FARMER01_QUESTION")
 end
 
------ npc_village_uncle_2 ----- 
+----- Farmer ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20118, "QUEST_20150323_001497", "f_farm_47_1", -916, 37, -1116, -45, "npc_QUEST_20150323_001497")
@@ -120,7 +141,7 @@ function npc_QUEST_20150323_001497()
 msg("FARM47_FARMER02_QUESTION")
 end
 
------ npc_village_uncle_5 ----- 
+----- Farmer ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20151, "QUEST_20150323_001497", "f_farm_47_1", -233, -204, -361, -54, "npc_QUEST_20150323_001497")
@@ -128,7 +149,7 @@ function npc_QUEST_20150323_001497()
 msg("FARM47_FARMER03_COOPERATION")
 end
 
------ npc_matron2 ----- 
+----- Farmer ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(20145, "QUEST_20150323_001497", "f_farm_47_1", -666, -122, -857, -94, "npc_QUEST_20150323_001497")
@@ -136,7 +157,7 @@ function npc_QUEST_20150323_001497()
 msg("FARM47_FARMER04_BASIC01")
 end
 
------ farm47_dryer_01 ----- 
+----- Food Dryer ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_DRYER -----
 ----- Dialog -----
 ----- QuestIDs: FARM47_1_SQ_060 -----
@@ -146,7 +167,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ farm47_dryer_01 ----- 
+----- Food Dryer ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_DRYER -----
 ----- Dialog -----
 ----- QuestIDs: FARM47_1_SQ_060 -----
@@ -156,7 +177,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ farm47_dryer_01 ----- 
+----- Food Dryer ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_DRYER -----
 ----- Dialog -----
 ----- QuestIDs: FARM47_1_SQ_060 -----
@@ -166,7 +187,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ farm47_dryer_01 ----- 
+----- Food Dryer ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_DRYER -----
 ----- Dialog -----
 ----- QuestIDs: FARM47_1_SQ_060 -----
@@ -176,7 +197,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -187,7 +208,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_FARM_47_1")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_farm_47_1", -1173, 41, -1324, 45, "npc_ETC_20150317_009100")
@@ -195,7 +216,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_village_matron ----- 
+----- Farmer Deluma ----- 
 ----- npcselectdialog.ies | ClassName: FARM471_RP_1_NPC -----
 ----- Dialog -----
 ----- QuestIDs: FARM471_RP_1 -----
@@ -207,7 +228,7 @@ msg("FARM471_RP_1_3")
 msg("FARM471_RP_1_NPC_basic1")
 end
 
------ siauliai_grass_3 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20150317_009118", "f_farm_47_1", -204, 6, -1338, 45, "npc_ETC_20150317_009118")
@@ -215,7 +236,7 @@ function npc_ETC_20150317_009118()
 msg("FARM471_RP_1_OBJ")
 end
 
------ siauliai_grass_3 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20150317_009118", "f_farm_47_1", -103, 6, -1032, 45, "npc_ETC_20150317_009118")
@@ -223,7 +244,7 @@ function npc_ETC_20150317_009118()
 msg("FARM471_RP_1_OBJ")
 end
 
------ siauliai_grass_3 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20150317_009118", "f_farm_47_1", 86, 25, -1076, 45, "npc_ETC_20150317_009118")
@@ -231,7 +252,7 @@ function npc_ETC_20150317_009118()
 msg("FARM471_RP_1_OBJ")
 end
 
------ siauliai_grass_3 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20150317_009118", "f_farm_47_1", 537, 58, -1260, 45, "npc_ETC_20150317_009118")
@@ -239,7 +260,7 @@ function npc_ETC_20150317_009118()
 msg("FARM471_RP_1_OBJ")
 end
 
------ siauliai_grass_3 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20150317_009118", "f_farm_47_1", 412, 58, -1270, 45, "npc_ETC_20150317_009118")
@@ -247,7 +268,7 @@ function npc_ETC_20150317_009118()
 msg("FARM471_RP_1_OBJ")
 end
 
------ siauliai_grass_3 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20150317_009118", "f_farm_47_1", 621, 58, -1102, 45, "npc_ETC_20150317_009118")
@@ -255,7 +276,7 @@ function npc_ETC_20150317_009118()
 msg("FARM471_RP_1_OBJ")
 end
 
------ siauliai_grass_3 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20150317_009118", "f_farm_47_1", 512, 58, -924, 45, "npc_ETC_20150317_009118")
@@ -263,7 +284,7 @@ function npc_ETC_20150317_009118()
 msg("FARM471_RP_1_OBJ")
 end
 
------ siauliai_grass_3 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20150317_009118", "f_farm_47_1", 381, 58, -962, 45, "npc_ETC_20150317_009118")
@@ -271,7 +292,7 @@ function npc_ETC_20150317_009118()
 msg("FARM471_RP_1_OBJ")
 end
 
------ siauliai_grass_3 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20150317_009118", "f_farm_47_1", 253, 58, -1046, 45, "npc_ETC_20150317_009118")
@@ -279,7 +300,7 @@ function npc_ETC_20150317_009118()
 msg("FARM471_RP_1_OBJ")
 end
 
------ siauliai_grass_3 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20150317_009118", "f_farm_47_1", 275, 58, -1191, 45, "npc_ETC_20150317_009118")
@@ -287,7 +308,7 @@ function npc_ETC_20150317_009118()
 msg("FARM471_RP_1_OBJ")
 end
 
------ siauliai_grass_3 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20150317_009118", "f_farm_47_1", -323, 6, -1197, 45, "npc_ETC_20150317_009118")
@@ -295,7 +316,7 @@ function npc_ETC_20150317_009118()
 msg("FARM471_RP_1_OBJ")
 end
 
------ siauliai_grass_3 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20150317_009118", "f_farm_47_1", 448, 58, -1106, 45, "npc_ETC_20150317_009118")
@@ -303,7 +324,7 @@ function npc_ETC_20150317_009118()
 msg("FARM471_RP_1_OBJ")
 end
 
------ siauliai_grass_3 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20150317_009118", "f_farm_47_1", -114, 6, -1192, 45, "npc_ETC_20150317_009118")
@@ -311,7 +332,7 @@ function npc_ETC_20150317_009118()
 msg("FARM471_RP_1_OBJ")
 end
 
------ siauliai_grass_3 ----- 
+----- Grass Dummy ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47202, "ETC_20150317_009118", "f_farm_47_1", -457, 6, -1097, 45, "npc_ETC_20150317_009118")

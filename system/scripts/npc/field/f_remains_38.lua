@@ -1,4 +1,4 @@
------ stone_monument1 ----- 
+----- Monument of Lydia Schaffen ----- 
 ----- npcselectdialog.ies | ClassName: REMAIN38_MQ_MONUMENT1 -----
 ----- Dialog -----
 ----- QuestIDs: REMAIN38_MQ01 -----
@@ -16,7 +16,7 @@ msg("REMAIN38_MQ_MONUMENT5_BASIC01")
 msg("REMAIN38_MQ02_succ")
 end
 
------ stone_monument1 ----- 
+----- Monument of Lydia Schaffen ----- 
 ----- npcselectdialog.ies | ClassName: REMAIN38_MQ_MONUMENT2 -----
 ----- Dialog -----
 ----- QuestIDs: REMAIN38_MQ02 -----
@@ -34,7 +34,7 @@ msg("REMAIN38_MQ_MONUMENT5_BASIC01")
 msg("REMAIN38_MQ02_succ")
 end
 
------ stone_monument1 ----- 
+----- Monument of Lydia Schaffen ----- 
 ----- npcselectdialog.ies | ClassName: REMAIN38_MQ_MONUMENT3 -----
 ----- Dialog -----
 ----- QuestIDs: REMAIN38_MQ03 -----
@@ -52,7 +52,7 @@ msg("REMAIN38_MQ_MONUMENT5_BASIC01")
 msg("REMAIN38_MQ02_succ")
 end
 
------ stone_monument1 ----- 
+----- Monument of Lydia Schaffen ----- 
 ----- npcselectdialog.ies | ClassName: REMAIN38_MQ_MONUMENT4 -----
 ----- Dialog -----
 ----- QuestIDs: REMAIN38_MQ04 -----
@@ -70,7 +70,7 @@ msg("REMAIN38_MQ_MONUMENT5_BASIC01")
 msg("REMAIN38_MQ02_succ")
 end
 
------ stone_monument1 ----- 
+----- Monument of Lydia Schaffen ----- 
 ----- npcselectdialog.ies | ClassName: REMAIN38_MQ_MONUMENT5 -----
 ----- Dialog -----
 ----- QuestIDs: REMAIN38_MQ05 | REMAIN38_MQ06 -----
@@ -88,7 +88,21 @@ msg("REMAIN38_MQ_MONUMENT5_BASIC01")
 msg("REMAIN38_MQ02_succ")
 end
 
------ pedlar_lose_1 ----- 
+----- Stele Road ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009579", "f_remains_38", -1400, 325, -2214, -45, "npc_ETC_20150323_009579")
+function npc_ETC_20150323_009579()
+msg("REMAINS38_REMAINS37")
+end
+
+----- Escanciu Village ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009580", "f_remains_38", 1358, 372, 1740, 180, "npc_ETC_20150323_009580")
+function npc_ETC_20150323_009580()
+msg("REMAINS38_REMAINS39")
+end
+
+----- Strange Sack ----- 
 ----- npcselectdialog.ies | ClassName: REMAIN38_SQ01 -----
 ----- Dialog -----
 ----- QuestIDs: REMAIN38_SQ01 -----
@@ -98,7 +112,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_ALC_saliamonas ----- 
+----- Necromancer Drasius ----- 
 ----- npcselectdialog.ies | ClassName: REMAIN38_SQ_DRASIUS -----
 ----- Dialog -----
 ----- QuestIDs: REMAIN38_SQ01 | REMAIN38_SQ02 | REMAIN38_SQ03 | REMAIN38_SQ04 | REMAIN38_SQ05 | REMAIN38_SQ06 | REMAINS38_RP_1 -----
@@ -128,7 +142,7 @@ msg("REMAINS38_RP_1_2")
 msg("REMAINS38_RP_1_3")
 end
 
------ statue_vakarine ----- 
+----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
 ----- QuestIDs: JOB_KRIVI4_3 -----
@@ -139,7 +153,7 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_REMAINS_38")
 end
 
------ npc_sout_hunter ----- 
+----- Hunter Talus ----- 
 ----- npcselectdialog.ies | ClassName: REMAIN38_HUNTER -----
 ----- Dialog -----
 ----- QuestIDs: REMAIN38_MQ01 | REMAIN38_MQ02 | REMAIN38_MQ03 | REMAIN38_MQ04 | REMAIN38_MQ05 | REMAIN38_MQ07 -----
@@ -168,7 +182,7 @@ msg("HTA_REMAIN38_HUNTER_BASIC03")
 msg("HTA_REMAIN38_HUNTER_BASIC04")
 end
 
------ rokas_pot3 ----- 
+----- Jar of Sacrifice ----- 
 ----- npcselectdialog.ies | ClassName: REMAIN38_SQ06 -----
 ----- Dialog -----
 ----- QuestIDs: REMAIN38_SQ06 | REMAIN38_SQ05 -----
@@ -178,7 +192,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box3 ----- 
+----- Lv3 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147393, "ETC_20150317_009082", "f_remains_38", 973, 244, -1043, -45, "npc_ETC_20150317_009082")
@@ -186,7 +200,7 @@ function npc_ETC_20150317_009082()
 msg("TREASUREBOX_LV")
 end
 
------ npc_FLT_master ----- 
+----- [Fletcher Master]Visvaldas Black ----- 
 ----- npcselectdialog.ies | ClassName: MASTER_FLETCHER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_PELTASTA4_2 | JOB_PELTASTA4_3 | JOB_PELTASTA4_4 | JOB_ARCHER4_2 | JOB_ARCHER4_3 | JOB_ARCHER4_1 | JOB_FLETCHER4_1 | JOB_FLETCHER5_1 | JOB_FLETCHER_6_1 | BRACKEN43_3_SQ7 | BRACKEN43_3_SQ11 -----
@@ -221,7 +235,7 @@ msg("BRACKEN43_3_SQ7_PROG2")
 msg("BRACKEN43_3_SQ7_START_SUCC1")
 end
 
------ npc_MNK_master ----- 
+----- [Monk Master] Olfas Grimm ----- 
 ----- npcselectdialog.ies | ClassName: JOB_MONK4_1 -----
 ----- Dialog -----
 ----- QuestIDs: JOB_MONK4_1 | JOB_MONK5_1 | JOB_MONK_6_1 -----
@@ -245,7 +259,7 @@ msg("JOB_MONK_6_1_agree2")
 msg("JOB_MONK_6_1_agree3")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_remains_38", 1725, 370, 1207, 45, "npc_ETC_20150317_009100")
@@ -253,7 +267,7 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ npc_RUN_master ----- 
+----- [Rune Caster Master]Shelly Pennington ----- 
 ----- npcselectdialog.ies | ClassName: RUNECASTER_MASTER -----
 ----- Dialog -----
 ----- QuestIDs: JOB_RUNECASTER_6_1 | REMAINS38_HQ1 -----
@@ -273,7 +287,7 @@ msg("REMAINS38_HQ1_start1")
 msg("REMAINS38_HQ1_succ1")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", -100, 479, 1242, 45, "npc_ETC_20160718_022662")
@@ -281,7 +295,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", -220, 479, 1229, 45, "npc_ETC_20160718_022662")
@@ -289,7 +303,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", -41, 479, 1000, 45, "npc_ETC_20160718_022662")
@@ -297,7 +311,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", 215, 479, 1215, 45, "npc_ETC_20160718_022662")
@@ -305,7 +319,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", 347, 479, 1156, 45, "npc_ETC_20160718_022662")
@@ -313,7 +327,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", 438, 479, 1036, 45, "npc_ETC_20160718_022662")
@@ -321,7 +335,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", 360, 479, 1003, 45, "npc_ETC_20160718_022662")
@@ -329,7 +343,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", 288, 479, 902, 45, "npc_ETC_20160718_022662")
@@ -337,7 +351,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", 299, 479, 836, 45, "npc_ETC_20160718_022662")
@@ -345,7 +359,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", 67, 479, 862, 45, "npc_ETC_20160718_022662")
@@ -353,7 +367,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", 186, 471, 765, 45, "npc_ETC_20160718_022662")
@@ -361,7 +375,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", 230, 423, 571, 45, "npc_ETC_20160718_022662")
@@ -369,7 +383,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", 66, 423, 473, 45, "npc_ETC_20160718_022662")
@@ -377,7 +391,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", 271, 423, 436, 45, "npc_ETC_20160718_022662")
@@ -385,7 +399,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", 352, 423, 252, 45, "npc_ETC_20160718_022662")
@@ -393,7 +407,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", 298, 423, 338, 45, "npc_ETC_20160718_022662")
@@ -401,7 +415,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", 192, 423, 34, 45, "npc_ETC_20160718_022662")
@@ -409,7 +423,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", 106, 423, 53, 45, "npc_ETC_20160718_022662")
@@ -417,7 +431,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", 248, 423, 72, 45, "npc_ETC_20160718_022662")
@@ -425,7 +439,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", 127, 423, 559, 45, "npc_ETC_20160718_022662")
@@ -433,7 +447,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", -117, 423, 222, 45, "npc_ETC_20160718_022662")
@@ -441,7 +455,7 @@ function npc_ETC_20160718_022662()
 msg("REMAINS38_RP_1_OBJ")
 end
 
------ Stone04 ----- 
+----- Loosely Strewn Rock ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(153149, "ETC_20160718_022662", "f_remains_38", -142, 423, 311, 45, "npc_ETC_20160718_022662")

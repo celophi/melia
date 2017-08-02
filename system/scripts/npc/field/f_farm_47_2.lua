@@ -1,4 +1,25 @@
------ npc_wife_1 ----- 
+----- Myrkiti Farm ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009638", "f_farm_47_2", 2560, 222, -1203, 67, "npc_ETC_20150323_009638")
+function npc_ETC_20150323_009638()
+msg("FARM_47_2_TO_FARM_47_3")
+end
+
+----- Tenants' Farm ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009636", "f_farm_47_2", 1888, -43, 1062, 47, "npc_ETC_20150323_009636")
+function npc_ETC_20150323_009636()
+msg("FARM_47_2_TO_FARM_47_1")
+end
+
+----- Greene Manor ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150323_009615", "f_farm_47_2", -1806, -63, 978, -132, "npc_ETC_20150323_009615")
+function npc_ETC_20150323_009615()
+msg("FARM_47_2_TO_FARM_49_1")
+end
+
+----- Joana ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_JOANA -----
 ----- Dialog -----
 ----- QuestIDs: FARM47_2_SQ_010 | FARM47_2_SQ_020 | FARM47_2_SQ_040 | FARM47_2_SQ_050 | FARM47_2_SQ_060 | FARM47_2_SQ_080 | FARM47_2_SQ_045 -----
@@ -23,7 +44,7 @@ msg("FARM47_2_SQ_045_ST")
 msg("FARM47_2_SQ_045_COMP")
 end
 
------ npc_husband_1 ----- 
+----- Varas ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_JONARIS -----
 ----- Dialog -----
 ----- QuestIDs: FARM47_2_SQ_080 | FARM47_2_SQ_070 | FARM47_2_SQ_081 -----
@@ -44,7 +65,7 @@ msg("FARM47_2_SQ_080_STN")
 msg("FARM47_JONARIS_BASIC01")
 end
 
------ npc_village_uncle_1 ----- 
+----- Jugas ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_DZIUGAS -----
 ----- Dialog -----
 ----- QuestIDs: FARM47_2_SQ_090 -----
@@ -54,7 +75,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ farm47_goddess_head_01 ----- 
+----- Head of Goddess Statue ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_HEAD_D -----
 ----- Enter | Dialog -----
 ----- QuestIDs: FARM47_2_SQ_010 -----
@@ -65,7 +86,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ farm47_wing_01 ----- 
+----- Wing of Goddess Statue ----- 
 ----- npcselectdialog.ies | ClassName: FARM47_WING_D -----
 ----- Enter | Dialog -----
 ----- QuestIDs: FARM47_2_SQ_040 -----
@@ -76,10 +97,10 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ farm47_circle_02 ----- 
+----- Unstable Magic Circle ----- 
 addnpc(153048, "ETC_20150414_011208", "f_farm_47_2", -14, -72, -487, 45, "npc_dummy")
 
------ dialog_warp_npc_1 ----- 
+----- Demon Prison District 1 ----- 
 ----- npcselectdialog.ies | ClassName: FARM_47_2_TO_VELNIASP511 -----
 ----- Dialog -----
 ----- QuestIDs: CATHEDRAL_TO_VELNIASPRISON -----
@@ -89,7 +110,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_velniasp_mage ----- 
+----- [Baron Allerno]Asta ----- 
 ----- npcselectdialog.ies | ClassName: VELNIASP511_PORTAL_MAGE -----
 ----- Dialog -----
 ----- QuestIDs: VPRISON511_MQ_PRE_01 -----
@@ -100,7 +121,7 @@ msg("VELNIASP511_PORTAL_MAGE_basic_1")
 msg("VELNIASP511_PORTAL_MAGE_01")
 end
 
------ npc_hauberk ----- 
+----- Demon Lord Hauberk ----- 
 ----- npcselectdialog.ies | ClassName: VELNIASP511_PORTAL_HAUBERK -----
 ----- Dialog -----
 ----- QuestIDs: VPRISON511_MQ_PRE_01 | VPRISON511_MQ_PRE_02 -----
@@ -110,7 +131,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ BOOK_01 ----- 
+----- Baron Secretary Andol's Journal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147311, "QUEST_LV_0200_20150414_006606", "f_farm_47_2", -1141, 0, -1268, 45, "npc_QUEST_LV_0200_20150414_006606")
@@ -118,7 +139,7 @@ function npc_QUEST_LV_0200_20150414_006606()
 msg("FARM47_2_DIARY")
 end
 
------ LOST_PAPER ----- 
+----- Crumbling Document ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147312, "QUEST_20150428_001968", "f_farm_47_2", -1351, 0, -1162, 45, "npc_QUEST_20150428_001968")
@@ -126,7 +147,7 @@ function npc_QUEST_20150428_001968()
 msg("VPRISON_PAPER02")
 end
 
------ magicsquare_1 ----- 
+----- Demon Summoning Circle ----- 
 ----- npcselectdialog.ies | ClassName: PARTY_Q9_TRIGGER -----
 ----- Dialog -----
 ----- QuestIDs: PARTY_Q_090 -----
@@ -136,7 +157,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_farm_47_2", 1364, -116, -57, 45, "npc_ETC_20150317_009100")

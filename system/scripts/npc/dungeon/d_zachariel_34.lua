@@ -1,4 +1,4 @@
------ rokas_pot2 ----- 
+----- Pot with Magic Source ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47257, "ETC_20150317_009310", "d_zachariel_34", -1035, 286, 165, 45, "npc_ETC_20150317_009310")
@@ -6,7 +6,7 @@ function npc_ETC_20150317_009310()
 msg("ZACHA3F_POT")
 end
 
------ zachariel_guardian ----- 
+----- Guardian Stone Statue ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA3F_MQ -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA3F_MQ_01 | ZACHA3F_SQ_01 -----
@@ -66,7 +66,7 @@ msg("ZACHA3F_MQ_basic01")
 msg("ZACHA3F_MQ_basic02")
 end
 
------ rokas_pot2 ----- 
+----- Pot with Magic Source ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47257, "ETC_20150317_009310", "d_zachariel_34", 829, 280, 354, 45, "npc_ETC_20150317_009310")
@@ -74,7 +74,7 @@ function npc_ETC_20150317_009310()
 msg("ZACHA3F_POT")
 end
 
------ rokas_pot2 ----- 
+----- Pot with Magic Source ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47257, "ETC_20150317_009310", "d_zachariel_34", 903, 280, 184, 45, "npc_ETC_20150317_009310")
@@ -82,7 +82,7 @@ function npc_ETC_20150317_009310()
 msg("ZACHA3F_POT")
 end
 
------ rokas_pot2 ----- 
+----- Pot with Magic Source ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47257, "ETC_20150317_009310", "d_zachariel_34", 1048, 280, 351, 45, "npc_ETC_20150317_009310")
@@ -90,7 +90,14 @@ function npc_ETC_20150317_009310()
 msg("ZACHA3F_POT")
 end
 
------ npc_orb1 ----- 
+----- Royal Mausoleum 2F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001198", "d_zachariel_34", 3568, 465, 208, 146.31, "npc_ETC_20150317_001198")
+function npc_ETC_20150317_001198()
+msg("ZACHARIEL34_ZACHARIEL33")
+end
+
+----- Corrupted Core ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151022, "ETC_20150317_009311", "d_zachariel_34", 2507, 310, -47, 45, "npc_ETC_20150317_009311")
@@ -98,7 +105,7 @@ function npc_ETC_20150317_009311()
 msg("ZACHA3F_SQ_01_01")
 end
 
------ npc_orb1 ----- 
+----- Corrupted Core ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151022, "ETC_20150317_009311", "d_zachariel_34", 2606, 319, 30, 45, "npc_ETC_20150317_009311")
@@ -106,7 +113,14 @@ function npc_ETC_20150317_009311()
 msg("ZACHA3F_SQ_01_01")
 end
 
------ rokas_pot2 ----- 
+----- Royal Mausoleum 4F ----- 
+----- Enter -----
+addnpc(40001, "ETC_20150317_001200", "d_zachariel_34", -2943, 266, 143, -128.05, "npc_ETC_20150317_001200")
+function npc_ETC_20150317_001200()
+msg("ZACHARIEL34_3_ZACHARIEL35_3")
+end
+
+----- Pot with Magic Source ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47257, "ETC_20150317_009310", "d_zachariel_34", 1118, 280, 176, 45, "npc_ETC_20150317_009310")
@@ -114,7 +128,7 @@ function npc_ETC_20150317_009310()
 msg("ZACHA3F_POT")
 end
 
------ rokas_pot2 ----- 
+----- Pot with Magic Source ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47257, "ETC_20150317_009310", "d_zachariel_34", 348, 286, 153, 45, "npc_ETC_20150317_009310")
@@ -122,7 +136,7 @@ function npc_ETC_20150317_009310()
 msg("ZACHA3F_POT")
 end
 
------ rokas_pot2 ----- 
+----- Pot with Magic Source ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47257, "ETC_20150317_009310", "d_zachariel_34", 67, 286, 248, 45, "npc_ETC_20150317_009310")
@@ -130,7 +144,7 @@ function npc_ETC_20150317_009310()
 msg("ZACHA3F_POT")
 end
 
------ rokas_pot2 ----- 
+----- Pot with Magic Source ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47257, "ETC_20150317_009310", "d_zachariel_34", -153, 289, 144, 45, "npc_ETC_20150317_009310")
@@ -138,7 +152,7 @@ function npc_ETC_20150317_009310()
 msg("ZACHA3F_POT")
 end
 
------ rokas_pot2 ----- 
+----- Pot with Magic Source ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(47257, "ETC_20150317_009310", "d_zachariel_34", -634, 289, 264, 45, "npc_ETC_20150317_009310")
@@ -146,22 +160,22 @@ function npc_ETC_20150317_009310()
 msg("ZACHA3F_POT")
 end
 
------ wolf_statue_mage_pollution ----- 
+----- Corrupt Vikaras Mage ----- 
 addnpc(57054, "ETC_20150317_000919", "d_zachariel_34", -1267, 292, 331, 45, "npc_dummy")
 
------ wolf_statue_mage_pollution ----- 
+----- Corrupt Vikaras Mage ----- 
 addnpc(57054, "ETC_20150317_000919", "d_zachariel_34", -1223, 292, 106, -56, "npc_dummy")
 
------ wolf_statue_mage_pollution ----- 
+----- Corrupt Vikaras Mage ----- 
 addnpc(57054, "ETC_20150317_000919", "d_zachariel_34", -1478, 292, 7, 149, "npc_dummy")
 
------ wolf_statue_mage_pollution ----- 
+----- Corrupt Vikaras Mage ----- 
 addnpc(57054, "ETC_20150317_000919", "d_zachariel_34", -1721, 292, 308, -26, "npc_dummy")
 
------ wolf_statue_mage_pollution ----- 
+----- Corrupt Vikaras Mage ----- 
 addnpc(57054, "ETC_20150317_000919", "d_zachariel_34", -1678, 291, 23, 45, "npc_dummy")
 
------ npc_orb1 ----- 
+----- Corrupted Core ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151022, "ETC_20150317_009311", "d_zachariel_34", 2445, 321, -144, 45, "npc_ETC_20150317_009311")
@@ -169,7 +183,7 @@ function npc_ETC_20150317_009311()
 msg("ZACHA3F_SQ_01_01")
 end
 
------ npc_orb1 ----- 
+----- Corrupted Core ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151022, "ETC_20150317_009311", "d_zachariel_34", 2168, 321, -149, 45, "npc_ETC_20150317_009311")
@@ -177,7 +191,7 @@ function npc_ETC_20150317_009311()
 msg("ZACHA3F_SQ_01_01")
 end
 
------ npc_orb1 ----- 
+----- Corrupted Core ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151022, "ETC_20150317_009311", "d_zachariel_34", 2289, 306, 37, 45, "npc_ETC_20150317_009311")
@@ -185,7 +199,7 @@ function npc_ETC_20150317_009311()
 msg("ZACHA3F_SQ_01_01")
 end
 
------ npc_orb1 ----- 
+----- Corrupted Core ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151022, "ETC_20150317_009311", "d_zachariel_34", 2109, 323, 50, 45, "npc_ETC_20150317_009311")
@@ -193,7 +207,7 @@ function npc_ETC_20150317_009311()
 msg("ZACHA3F_SQ_01_01")
 end
 
------ npc_orb1 ----- 
+----- Corrupted Core ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151022, "ETC_20150317_009311", "d_zachariel_34", 1959, 309, -177, 45, "npc_ETC_20150317_009311")
@@ -201,7 +215,7 @@ function npc_ETC_20150317_009311()
 msg("ZACHA3F_SQ_01_01")
 end
 
------ npc_orb1 ----- 
+----- Corrupted Core ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(151022, "ETC_20150317_009311", "d_zachariel_34", 1854, 308, 222, 45, "npc_ETC_20150317_009311")
@@ -209,7 +223,7 @@ function npc_ETC_20150317_009311()
 msg("ZACHA3F_SQ_01_01")
 end
 
------ npc_zachariel_lantern ----- 
+----- Corrupted Stone Lantern ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA3F_SQ_02 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA3F_SQ_02 -----
@@ -219,7 +233,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_zachariel_lantern ----- 
+----- Corrupted Stone Lantern ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA3F_SQ_03 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA3F_SQ_03 -----
@@ -229,7 +243,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_6 ----- 
+----- Corrupt Royal Mausoleum Magic Control Device ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA3F_SQ_04 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA3F_SQ_04 -----
@@ -239,7 +253,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ npc_rokas_6 ----- 
+----- Corrupt Royal Mausoleum Magic Control Device ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA3F_SQ_04 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA3F_SQ_04 -----
@@ -249,7 +263,7 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ zachariel_guardian ----- 
+----- Guardian Stone Statue ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA3F_MQ03_MQ04 -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA3F_MQ_02 | ZACHA3F_MQ_03 -----
@@ -309,7 +323,7 @@ msg("ZACHA3F_MQ_basic01")
 msg("ZACHA3F_MQ_basic02")
 end
 
------ zachariel_guardian ----- 
+----- Guardian Stone Statue ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA3F_SQ02_GUARD -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA3F_SQ_02 -----
@@ -369,7 +383,7 @@ msg("ZACHA3F_MQ_basic01")
 msg("ZACHA3F_MQ_basic02")
 end
 
------ zachariel_guardian ----- 
+----- Guardian Stone Statue ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA3F_SQ04_GUARD -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA3F_SQ_04 -----
@@ -429,7 +443,7 @@ msg("ZACHA3F_MQ_basic01")
 msg("ZACHA3F_MQ_basic02")
 end
 
------ zachariel_guardian ----- 
+----- Guardian Stone Statue ----- 
 ----- npcselectdialog.ies | ClassName: ZACHA3F_MQ04_GUARD -----
 ----- Dialog -----
 ----- QuestIDs: ZACHA3F_MQ_04 -----
@@ -489,7 +503,7 @@ msg("ZACHA3F_MQ_basic01")
 msg("ZACHA3F_MQ_basic02")
 end
 
------ treasure_box1 ----- 
+----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "d_zachariel_34", -3222, 297, -22, 45, "npc_ETC_20150317_009100")
