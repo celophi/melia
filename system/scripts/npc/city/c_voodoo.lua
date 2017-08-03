@@ -54,10 +54,3 @@ msg("PARTY_Q_050_prog01")
 msg("PARTY_Q_052_succ01")
 end
 
------ Klaipeda ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001144", "c_voodoo", 43, 0, -129, -25, "npc_ETC_20150317_001144")
-function npc_ETC_20150317_001144()
-msg("WS_BOCORS_KLAPEDA")
-end
-

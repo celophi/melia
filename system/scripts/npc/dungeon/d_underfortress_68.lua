@@ -15,20 +15,6 @@ function npc_ETC_20151016_015899()
 msg("UNDER68_DEVICE01")
 end
 
------ Resident Quarter ----- 
------ Enter -----
-addnpc(40001, "ETC_20170330_027524", "d_underfortress_68", -2898, 485, -1228, 217, "npc_ETC_20170330_027524")
-function npc_ETC_20170330_027524()
-msg("UNDERFORTRESS68_UNDERFORTRESS67")
-end
-
------ Fortress Battlegrounds ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009595", "d_underfortress_68", 1746, 344, 1810, 155, "npc_ETC_20150323_009595")
-function npc_ETC_20150323_009595()
-msg("UNDERFORTRESS68_UNDERFORTRESS69")
-end
-
 ----- Ruklys' Squad Member Spirit ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----

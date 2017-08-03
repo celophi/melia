@@ -6,34 +6,6 @@ function npc_ETC_20150317_009158()
 msg("TABLELAND_11_1_CART_MANAGER")
 end
 
------ Ruklys Street ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001241", "f_tableland_11_1", 616, -164, -1537, -22, "npc_ETC_20150317_001241")
-function npc_ETC_20150317_001241()
-msg("TABLELAND11_1_FLASH61")
-end
-
------ Mesafasla ----- 
------ Enter -----
-addnpc(40001, "ETC_20150804_014153", "f_tableland_11_1", -2261, 802, 2342, 150, "npc_ETC_20150804_014153")
-function npc_ETC_20150804_014153()
-msg("TABLELAND11_1_TABLELAND28_1")
-end
-
------ Stogas Plateau ----- 
------ Enter -----
-addnpc(40001, "ETC_20150804_014154", "f_tableland_11_1", -1070, -92, -1327, 225, "npc_ETC_20150804_014154")
-function npc_ETC_20150804_014154()
-msg("TABLELAND11_1_TABLELAND28_2")
-end
-
------ Grand Yard Mesa ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009597", "f_tableland_11_1", 487, 94, 2231, 117, "npc_ETC_20150323_009597")
-function npc_ETC_20150323_009597()
-msg("TABLELAND11_1_TABLELAND71")
-end
-
 ----- Necromancer Adomas ----- 
 ----- npcselectdialog.ies | ClassName: TABLELAND_11_1_ADOMAS -----
 ----- Enter | Dialog -----

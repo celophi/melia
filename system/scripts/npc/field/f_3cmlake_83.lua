@@ -265,13 +265,6 @@ msg("3CMLAKE_83_PEOPLE6")
 msg("3CMLAKE_83_PEOPLE4_basic01")
 end
 
------ Absenta Reservoir ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016510", "f_3cmlake_83", -1801, 360, 217, -134, "npc_ETC_20151102_016510")
-function npc_ETC_20151102_016510()
-msg("3CMLAKE_83_TO_3CMLAKE_84")
-end
-
 ----- Napalis ----- 
 ----- npcselectdialog.ies | ClassName: 3CMLAKE_83_PEOPLE7 -----
 ----- Dialog -----
@@ -300,25 +293,11 @@ msg("3CMLAKE_83_PEOPLE8_basic01")
 msg("3CMLAKE_83_PEOPLE8_basic02")
 end
 
------ Letas Stream ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009622", "f_3cmlake_83", 895, 309, -36, 45, "npc_ETC_20150323_009622")
-function npc_ETC_20150323_009622()
-msg("3CMLAKE_83_KATYN_12")
-end
-
 ----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_3cmlake_83", -664, 303, 819, 315, "npc_ETC_20150317_009100")
 function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
-end
-
------ Arcus Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20161005_024600", "f_3cmlake_83", 146, 313, 869, 91, "npc_ETC_20161005_024600")
-function npc_ETC_20161005_024600()
-msg("3CMLAKE83_BRACKEN43_1")
 end
 

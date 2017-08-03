@@ -1,17 +1,3 @@
------ Verkti Square ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009591", "f_flash_63", -582, 122, -2292, 270, "npc_ETC_20150323_009591")
-function npc_ETC_20150323_009591()
-msg("FLASH63_FLASH59")
-end
-
------ Inner Enceinte District ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001243", "f_flash_63", -140, 224, 1456, 155, "npc_ETC_20150317_001243")
-function npc_ETC_20150317_001243()
-msg("FLASH63_FLASH64")
-end
-
 ----- [Royal Army]Rofdel ----- 
 ----- npcselectdialog.ies | ClassName: FLASH63_ROFHDEL -----
 ----- Dialog -----
@@ -2092,13 +2078,6 @@ end
 addnpc(40070, "ETC_20150714_013160", "f_flash_63", 203, 197, 962, 25, "npc_ETC_20150714_013160")
 function npc_ETC_20150714_013160()
 msg("FLASH63_SQ_12_04_NPC")
-end
-
------ Coastal Fortress ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_017432", "f_flash_63", 1775, 46, 1001, 81, "npc_ETC_20151102_017432")
-function npc_ETC_20151102_017432()
-msg("FLASH63_FLASH29_1")
 end
 
 ----- Lv1 Treasure Chest ----- 

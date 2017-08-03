@@ -1,24 +1,3 @@
------ Spring Light Woods ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001226", "f_siauliai_46_2", 1378, 0, 4293, 45, "npc_ETC_20150317_001226")
-function npc_ETC_20150317_001226()
-msg("SIAULIAI46_2_SIAULIAI46_1")
-end
-
------ Vilna Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009587", "f_siauliai_46_2", -2410, 166, 3233, -125, "npc_ETC_20150323_009587")
-function npc_ETC_20150323_009587()
-msg("SIAULIAI46_2_SIAULIAI46_3")
-end
-
------ Dina Bee Farm ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009588", "f_siauliai_46_2", -1149, 166, 3225, 25, "npc_ETC_20150323_009588")
-function npc_ETC_20150323_009588()
-msg("SIAULIAI46_2_SIAULIAI46_4")
-end
-
 ----- Priest Raeli ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_2_MQ01_NPC -----
 ----- Dialog -----
@@ -181,13 +160,6 @@ end
 addnpc(151031, "ETC_20150323_010406", "f_siauliai_46_2", -1218, 166, 3779, 145, "npc_ETC_20150323_010406")
 function npc_ETC_20150323_010406()
 msg("SIAULIAI_46_2_WOODPIECE")
-end
-
------ Laukyme Swamp ----- 
------ Enter -----
-addnpc(40001, "ETC_20150714_011735", "f_siauliai_46_2", 1198, -35, 7571, 175, "npc_ETC_20150714_011735")
-function npc_ETC_20150714_011735()
-msg("SIAULIAI46_2_THORN39_3")
 end
 
 ----- Lv1 Treasure Chest ----- 

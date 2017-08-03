@@ -1,17 +1,3 @@
------ Ashaq Underground Prison 1F ----- 
------ Enter -----
-addnpc(40001, "ETC_20151001_014680", "d_prison_62_2", -3, 371, 1623, 135, "npc_ETC_20151001_014680")
-function npc_ETC_20151001_014680()
-msg("PRISON622_TO_PRISON621")
-end
-
------ Ashaq Underground Prison 3F ----- 
------ Enter -----
-addnpc(40001, "ETC_20151001_014682", "d_prison_62_2", 164, -724, -1132, 138, "npc_ETC_20151001_014682")
-function npc_ETC_20151001_014682()
-msg("PRISON622_TO_PRISON623")
-end
-
 ----- Priest Pranas ----- 
 ----- npcselectdialog.ies | ClassName: PRISON622_PRANAS -----
 ----- Dialog -----
@@ -125,20 +111,6 @@ addnpc(47150, "ETC_20151224_017912", "d_prison_62_2", -1182, 546, -49, 45, "npc_
 function npc_ETC_20151224_017912()
 msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
-end
-
------ Special Prison District ----- 
------ Enter -----
-addnpc(40001, "ETC_20151224_018351", "d_prison_62_2", 648, 241, -1323, -56, "npc_ETC_20151224_018351")
-function npc_ETC_20151224_018351()
-msg("PRISON622_TO_PRISON622_1")
-end
-
------ Ashaq Underground Prison 2F ----- 
------ Enter -----
-addnpc(40001, "ETC_20151001_014681", "d_prison_62_2", 43, 416, -1910, 45, "npc_ETC_20151001_014681")
-function npc_ETC_20151001_014681()
-msg("PRISON622_1_TO_PRISON622")
 end
 
 ----- Lv1 Treasure Chest ----- 

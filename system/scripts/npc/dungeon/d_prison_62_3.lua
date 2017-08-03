@@ -50,13 +50,6 @@ msg("PRISON623_MQ_06_01")
 msg("PRISON623_MQ_06_02")
 end
 
------ Ashaq Underground Prison 2F ----- 
------ Enter -----
-addnpc(40001, "ETC_20151001_014681", "d_prison_62_3", 890, 1146, -707, -45, "npc_ETC_20151001_014681")
-function npc_ETC_20151001_014681()
-msg("PRISON623_TO_PRISON622")
-end
-
 ----- Priest Gelija ----- 
 ----- npcselectdialog.ies | ClassName: PRISON623_GELIYA -----
 ----- Dialog -----

@@ -781,13 +781,6 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Orsha ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001150", "f_siauliai_16", 2353, 25, 392, 69, "npc_ETC_20150317_001150")
-function npc_ETC_20150317_001150()
-msg("SIAULIAI16_TO_ORSHA")
-end
-
 ----- Somebody's Diary ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----

@@ -1,17 +1,3 @@
------ Fasika Plateau ----- 
------ Enter -----
-addnpc(40001, "ETC_20150918_014224", "f_orchard_34_1", 1160, -2, -1071, 16, "npc_ETC_20150918_014224")
-function npc_ETC_20150918_014224()
-msg("ORCHARD_34_1_TO_PILGRIM_36_2")
-end
-
------ Forest of Prayer ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009584", "f_orchard_34_1", -479, 1, 1533, 137, "npc_ETC_20150323_009584")
-function npc_ETC_20150323_009584()
-msg("ORCHARD34_1_PILGRIM51")
-end
-
 ----- Gatre ----- 
 ----- npcselectdialog.ies | ClassName: ORCHARD_34_1_SQ_NPC_1 -----
 ----- Dialog -----
@@ -266,13 +252,6 @@ addnpc(151067, "ETC_20150714_013116", "f_orchard_34_1", 723, -2, 337, 45, "npc_E
 function npc_ETC_20150714_013116()
 msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
-end
-
------ Barha Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016517", "f_orchard_34_1", 1067, -2, 269, 45, "npc_ETC_20151102_016517")
-function npc_ETC_20151102_016517()
-msg("ORCHARD34_1_ORCHARD34_3")
 end
 
 ----- Lv1 Treasure Chest ----- 

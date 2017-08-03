@@ -54,13 +54,6 @@ function npc_ETC_20151224_019938()
 msg("UNDERFORTRESS_68_2_HEAL2")
 end
 
------ Sicarius 1F ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016533", "d_underfortress_68_2", -1112, 226, -89, 221, "npc_ETC_20151102_016533")
-function npc_ETC_20151102_016533()
-msg("UNDERFORTRESS_68_2_TO_UNDERFORTRESS_68_1")
-end
-
 ----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----

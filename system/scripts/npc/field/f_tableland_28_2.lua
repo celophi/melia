@@ -1,17 +1,3 @@
------ Mesafasla ----- 
------ Enter -----
-addnpc(40001, "ETC_20150804_014153", "f_tableland_28_2", 1694, 341, 1816, 115, "npc_ETC_20150804_014153")
-function npc_ETC_20150804_014153()
-msg("TABLELAND282_TO_TABLELAND281")
-end
-
------ Roxona Market ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009593", "f_tableland_28_2", -13, 0, -2126, -51, "npc_ETC_20150323_009593")
-function npc_ETC_20150323_009593()
-msg("TABLELAND282_TO_FLASH60")
-end
-
 ----- Military Courier Rochez ----- 
 ----- npcselectdialog.ies | ClassName: TABLELAND282_SQ_01 -----
 ----- Dialog -----
@@ -111,13 +97,6 @@ msg("TABLELAND28_2_SQ_01_2")
 msg("TABLELAND28_2_SQ_01_3")
 msg("TABLELAND28_2_SQ_01_R_basic01")
 msg("TABLELAND28_2_SQ_01_R_basic02")
-end
-
------ Vedas Plateau ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016522", "f_tableland_28_2", 2113, 267, 554, 125, "npc_ETC_20151102_016522")
-function npc_ETC_20151102_016522()
-msg("TABLELAND28_2_TABLELAND11_1")
 end
 
 ----- Statue of Goddess Vakarine ----- 

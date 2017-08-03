@@ -90,13 +90,6 @@ function npc_ETC_20150317_009310()
 msg("ZACHA3F_POT")
 end
 
------ Royal Mausoleum 2F ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001198", "d_zachariel_34", 3568, 465, 208, 146.31, "npc_ETC_20150317_001198")
-function npc_ETC_20150317_001198()
-msg("ZACHARIEL34_ZACHARIEL33")
-end
-
 ----- Corrupted Core ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
@@ -111,13 +104,6 @@ end
 addnpc(151022, "ETC_20150317_009311", "d_zachariel_34", 2606, 319, 30, 45, "npc_ETC_20150317_009311")
 function npc_ETC_20150317_009311()
 msg("ZACHA3F_SQ_01_01")
-end
-
------ Royal Mausoleum 4F ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001200", "d_zachariel_34", -2943, 266, 143, -128.05, "npc_ETC_20150317_001200")
-function npc_ETC_20150317_001200()
-msg("ZACHARIEL34_3_ZACHARIEL35_3")
 end
 
 ----- Pot with Magic Source ----- 

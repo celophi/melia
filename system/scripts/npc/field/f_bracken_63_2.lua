@@ -1,10 +1,3 @@
------ Khonot Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20160718_022016", "f_bracken_63_2", 437, 184, -1778, -69, "npc_ETC_20160718_022016")
-function npc_ETC_20160718_022016()
-msg("BRACKEN_63_2_BRACKEN_42_1")
-end
-
 ----- Traveling Merchant Rose ----- 
 ----- npcselectdialog.ies | ClassName: BRACKEN632_ROZE01 -----
 ----- Dialog -----
@@ -222,13 +215,6 @@ msg("BRACKEN632_RP_1_2")
 msg("BRACKEN632_RP_1_3")
 end
 
------ Dadan Jungle ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016525", "f_bracken_63_2", -2175, -38, -463, -133, "npc_ETC_20151102_016525")
-function npc_ETC_20151102_016525()
-msg("BRACKEN_63_2_BRACKEN_63_3")
-end
-
 ----- Herbalist Ash ----- 
 ----- npcselectdialog.ies | ClassName: BRACKEN632_PEAPLE01 -----
 ----- Dialog -----
@@ -257,13 +243,6 @@ msg("LOWLV_GREEN_SQ_30_STD")
 msg("LOWLV_GREEN_SQ_30_SU")
 msg("LOWLV_GREEN_SQ_40_ST")
 msg("LOWLV_GREEN_SQ_40_STD")
-end
-
------ Koru Jungle ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016523", "f_bracken_63_2", 691, 184, 2267, 128, "npc_ETC_20151102_016523")
-function npc_ETC_20151102_016523()
-msg("BRACKEN_63_2_BRACKEN_63_1")
 end
 
 ----- Statue of Goddess Vakarine ----- 

@@ -1,17 +1,3 @@
------ Apsimesti Crossroads ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009585", "f_pilgrimroad_51", -1496, 563, 1415, 135, "npc_ETC_20150323_009585")
-function npc_ETC_20150323_009585()
-msg("PILGRIM51_PILGRIM52")
-end
-
------ Altar Way ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009583", "f_pilgrimroad_51", -942, 548, -2184, 315, "npc_ETC_20150323_009583")
-function npc_ETC_20150323_009583()
-msg("PILGRIM51_PILGRIM50")
-end
-
 ----- Decoy Altar ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
@@ -325,13 +311,6 @@ function npc_ETC_20150323_010400()
 msg("PILGRIM51_SHOP")
 end
 
------ Residence of the Fallen Legwyn Family ----- 
------ Enter -----
-addnpc(40001, "ETC_20150401_010452", "f_pilgrimroad_51", 1332, 571, 2182, 135, "npc_ETC_20150401_010452")
-function npc_ETC_20150401_010452()
-msg("PILGRIMROAD_51_TO_STOWERTOWER_60_1")
-end
-
 ----- Wrinkled Letter ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
@@ -425,13 +404,6 @@ msg("LOWLV_MASTER_ENCY_SQ_30_AU")
 msg("LOWLV_MASTER_ENCY_SQ_30_STD")
 msg("LOWLV_MASTER_ENCY_SQ_40_SU")
 msg("LOWLV_MASTER_ENCY_SQ_40_DIALOG")
-end
-
------ Alemeth Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016516", "f_pilgrimroad_51", 2022, 144, -2034, 4, "npc_ETC_20151102_016516")
-function npc_ETC_20151102_016516()
-msg("PILGRIM51_ORCHARD34_1")
 end
 
 ----- Fencer Sword Pell ----- 

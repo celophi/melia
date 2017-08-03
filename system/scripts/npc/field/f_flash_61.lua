@@ -1,17 +1,3 @@
------ Roxona Market ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009593", "f_flash_61", -100, 435, 1555, 135, "npc_ETC_20150323_009593")
-function npc_ETC_20150323_009593()
-msg("FLASH61_FLASH60")
-end
-
------ Verkti Square ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009591", "f_flash_61", -875, 510, -378, 315, "npc_ETC_20150323_009591")
-function npc_ETC_20150323_009591()
-msg("FLASH61_FLASH59")
-end
-
 ----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
@@ -243,13 +229,6 @@ addnpc(154029, "ETC_20150714_013156", "f_flash_61", -170, 393, 606, 132, "npc_du
 ----- Petrified Soldier ----- 
 addnpc(154029, "ETC_20150714_013156", "f_flash_61", -22, 393, 497, 138, "npc_dummy")
 
------ Vedas Plateau ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016522", "f_flash_61", 452, 435, 1631, 87, "npc_ETC_20151102_016522")
-function npc_ETC_20151102_016522()
-msg("FLASH61_TABLELAND11_1")
-end
-
 ----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
@@ -263,12 +242,5 @@ end
 addnpc(147507, "ETC_20161214_025801", "f_flash_61", -613, 435, 1451, 45, "npc_ETC_20161214_025801")
 function npc_ETC_20161214_025801()
 msg("FLASH_61_TO_VELNIASPRISON_77_1")
-end
-
------ Roxona Underground Facility Mission ----- 
------ Enter -----
-addnpc(40001, "ETC_20170313_026459", "f_flash_61", 554, 415, 1062, 45, "npc_ETC_20170313_026459")
-function npc_ETC_20170313_026459()
-msg("FLASH61_TO_CASTLE_MISSION_RN")
 end
 

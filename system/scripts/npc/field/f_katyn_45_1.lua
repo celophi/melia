@@ -1,24 +1,3 @@
------ Gele Plateau ----- 
------ Enter -----
-addnpc(40001, "QUEST_LV_0100_20150323_006604", "f_katyn_45_1", -2572, 128, -494, 225, "npc_QUEST_LV_0100_20150323_006604")
-function npc_QUEST_LV_0100_20150323_006604()
-msg("KATYN45_1_GELE57_2")
-end
-
------ Thaumas Trail ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016503", "f_katyn_45_1", -912, 127, 1047, 135, "npc_ETC_20151102_016503")
-function npc_ETC_20151102_016503()
-msg("KATYN45_1_PILGRIM41_1")
-end
-
------ Grynas Training Camp ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009613", "f_katyn_45_1", 1627, 81, 607, 47, "npc_ETC_20150323_009613")
-function npc_ETC_20150323_009613()
-msg("KATYN45_1_KATYN45_2")
-end
-
 ----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
@@ -28,13 +7,6 @@ function npc_QUEST_20150317_000002()
 msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_F_KATYN_45_1")
-end
-
------ Sekta Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20151224_017810", "f_katyn_45_1", 951, 81, 1053, 133, "npc_ETC_20151224_017810")
-function npc_ETC_20151224_017810()
-msg("KATYN45_1_PILGRIM41_4")
 end
 
 ----- Charged Device ----- 

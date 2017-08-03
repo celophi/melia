@@ -6,20 +6,6 @@ function npc_ETC_20150729_014022()
 msg("JOB_CORSAIR_6_1_BONE")
 end
 
------ Igti Coast ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016515", "f_coral_32_1", -347, 231, 910, 173, "npc_ETC_20151102_016515")
-function npc_ETC_20151102_016515()
-msg("CORAL32_1_CORAL32_2")
-end
-
------ Barha Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016517", "f_coral_32_1", -153, 142, -1692, -37, "npc_ETC_20151102_016517")
-function npc_ETC_20151102_016517()
-msg("CORAL32_1_ORCHARD34_3")
-end
-
 ----- Soggy Book ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----

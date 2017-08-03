@@ -1,17 +1,3 @@
------ Rukas Plateau ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009577", "f_rokas_30", 1019, 148, -1097, 0, "npc_ETC_20150323_009577")
-function npc_ETC_20150323_009577()
-msg("ROKAS30_ROKAS29")
-end
-
------ Zachariel Crossroads ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009578", "f_rokas_30", -1773, 215, -116, 218, "npc_ETC_20150323_009578")
-function npc_ETC_20150323_009578()
-msg("ROKAS30_ROKAS31")
-end
-
 ----- Stonemason Pipoti ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS30_PIPOTI -----
 ----- Dialog -----
@@ -180,13 +166,6 @@ addnpc(147345, "QUEST_LV_0100_20150317_001304", "f_rokas_30", 145, 325, 385, 45,
 function npc_QUEST_LV_0100_20150317_001304()
 msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
-end
-
------ Escanciu Village ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009580", "f_rokas_30", -209, 347, 893, 135, "npc_ETC_20150323_009580")
-function npc_ETC_20150323_009580()
-msg("ROKAS30_REMAINS39")
 end
 
 ----- Statue of Goddess Vakarine ----- 

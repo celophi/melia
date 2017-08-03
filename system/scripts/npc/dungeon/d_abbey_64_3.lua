@@ -193,13 +193,6 @@ function npc_ETC_20151224_019918()
 msg("ABBEY643_MQ03_DEVICE02_5")
 end
 
------ Novaha Annex ----- 
------ Enter -----
-addnpc(40001, "ETC_20151224_017820", "d_abbey_64_3", 1534, 451, 227, 45, "npc_ETC_20151224_017820")
-function npc_ETC_20151224_017820()
-msg("ABBEY_64_3_ABBEY_64_2")
-end
-
 ----- Mind Control Crystal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----

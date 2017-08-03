@@ -5,20 +5,6 @@ function npc_ETC_20150317_009456()
 msg("ROKAS28_BLOCK")
 end
 
------ Akmens Ridge ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009575", "f_rokas_28", -717, 1121, -1692, -130, "npc_ETC_20150323_009575")
-function npc_ETC_20150323_009575()
-msg("ROKAS28_ROKAS27")
-end
-
------ Rukas Plateau ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009577", "f_rokas_28", -1892, 1298, -545, 214, "npc_ETC_20150323_009577")
-function npc_ETC_20150323_009577()
-msg("ROKAS28_ROKAS29")
-end
-
 ----- Stone Pillar ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS28_ENTICE -----
 ----- Dialog -----
@@ -191,13 +177,6 @@ msg("ROKAS28_MQ6_select1")
 msg("ROKAS28_ODEL_MQ4_DLG_BASIC01")
 msg("ROKAS28_ODEL_MQ6_BASIC01")
 msg("ROKAS28_ODEL_basic01")
-end
-
------ Royal Mausoleum Workers Lodge ----- 
------ Enter -----
-addnpc(40001, "ETC_20150401_010449", "f_rokas_28", 1191, 1007, 2320, 207, "npc_ETC_20150401_010449")
-function npc_ETC_20150401_010449()
-msg("ROKAS28_TO_UNDERF591")
 end
 
 ----- Lv1 Treasure Chest ----- 

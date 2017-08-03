@@ -1,10 +1,3 @@
------ Overlong Bridge Valley ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001190", "f_rokas_27", -177, 1196, -3637, -47, "npc_ETC_20150317_001190")
-function npc_ETC_20150317_001190()
-msg("ROKAS27_ROKAS26")
-end
-
 ----- Archaeologist Dezic ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS27_DESIG_01 -----
 ----- Dialog -----
@@ -159,13 +152,6 @@ end
 addnpc(47109, "ETC_20150317_009454", "f_rokas_27", 984, 1340, 606, 45, "npc_ETC_20150317_009454")
 function npc_ETC_20150317_009454()
 msg("ROKAS27_QB_14_3")
-end
-
------ Tiltas Valley ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009576", "f_rokas_27", -173, 1295, -1189, 194, "npc_ETC_20150323_009576")
-function npc_ETC_20150323_009576()
-msg("ROKAS27_ROKAS28")
 end
 
 ----- William ----- 

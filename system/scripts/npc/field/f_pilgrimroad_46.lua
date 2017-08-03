@@ -70,20 +70,6 @@ function npc_ETC_20150317_009386()
 msg("JOB_CLERIC_GRASS")
 end
 
------ Fedimian ----- 
------ Enter -----
-addnpc(40001, "QUEST_LV_0100_20150317_006373", "f_pilgrimroad_46", -2073, 120, -2455, -90, "npc_QUEST_LV_0100_20150317_006373")
-function npc_QUEST_LV_0100_20150317_006373()
-msg("PILGRIM46_FEDMIAN")
-end
-
------ Pilgrim Path ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009582", "f_pilgrimroad_46", 601, 119, 1714, 135, "npc_ETC_20150323_009582")
-function npc_ETC_20150323_009582()
-msg("PILGRIM46_PILGRIM47")
-end
-
 ----- Pilgrim Liliya ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM46_NPC01 -----
 ----- Dialog -----

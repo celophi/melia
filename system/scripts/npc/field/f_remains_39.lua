@@ -147,20 +147,6 @@ msg("REMAINS39_MQ04_select01")
 msg("REMAINS39_MQ05_02")
 end
 
------ Goddess' Ancient Garden ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001208", "f_remains_39", -479, 194, -656, 0, "npc_ETC_20150317_001208")
-function npc_ETC_20150317_001208()
-msg("REMAINS39_REMAINS38")
-end
-
------ Fedimian Suburbs ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009581", "f_remains_39", 873, 174, 1635, 145, "npc_ETC_20150323_009581")
-function npc_ETC_20150323_009581()
-msg("REMAINS39_REMAINS40")
-end
-
 ----- Wandering Spirit ----- 
 ----- npcselectdialog.ies | ClassName: REMAINS39_GHOST -----
 ----- Dialog -----
@@ -203,13 +189,6 @@ msg("REMAINS39_MQ03_add")
 msg("REMAIN39_SQ05_select01")
 msg("REMAIN39_SQ05_startnpc01")
 msg("REMAIN39_SQ08_succ01")
-end
-
------ King's Plateau ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001194", "f_remains_39", 1261, 173, -325, 45, "npc_ETC_20150317_001194")
-function npc_ETC_20150317_001194()
-msg("REMAINS39_ROKAS30")
 end
 
 ----- Abandoned Bag ----- 

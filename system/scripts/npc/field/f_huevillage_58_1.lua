@@ -49,20 +49,6 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Nefritas Cliff ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009560", "f_huevillage_58_1", 1562, 371, -1188, 33.69, "npc_ETC_20150323_009560")
-function npc_ETC_20150323_009560()
-msg("HUEVILLAGE58_1_TO_GELE573")
-end
-
------ Vieta Gorge ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009563", "f_huevillage_58_1", -720, 236, -403, -96, "npc_ETC_20150323_009563")
-function npc_ETC_20150323_009563()
-msg("HUEVILLAGE58_1_TO_HUEVILLAGE58_2")
-end
-
 ----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
@@ -132,13 +118,6 @@ addnpc(147372, "ETC_20150317_009344", "f_huevillage_58_1", -330, 231, 810, 45, "
 function npc_ETC_20150317_009344()
 msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
-end
-
------ Gytis Settlement Area ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009621", "f_huevillage_58_1", 222, 371, -1974, -67, "npc_ETC_20150323_009621")
-function npc_ETC_20150323_009621()
-msg("HUEVILLAGE_58_1_SIAUL50_1")
 end
 
 ----- To the other side ----- 

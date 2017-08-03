@@ -192,13 +192,6 @@ msg("SIAUL_ST1_ST2_basic1")
 msg("SIAUL_ST1_ST2_basic2")
 end
 
------ Klaipeda ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001144", "f_siauliai_west", 1691, 210, -755, 23, "npc_ETC_20150317_001144")
-function npc_ETC_20150317_001144()
-msg("WS_SIAULST1_KLAPEDA")
-end
-
 ----- Klaipeda Guard ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
@@ -382,13 +375,6 @@ function npc_ETC_20150317_007030()
 msg("GM_NPC_HIDE_UNHIDE")
 msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
-end
-
------ West Siauliai Woods ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001151", "f_siauliai_west", 2755, 423, 443, -69, "npc_ETC_20150317_001151")
-function npc_ETC_20150317_001151()
-msg("SIAULIAI_WEST_OUT_OF_SECRET")
 end
 
 ----- Lv1 Treasure Chest ----- 

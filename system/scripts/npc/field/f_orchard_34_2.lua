@@ -72,20 +72,6 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Bellai Rainforest ----- 
------ Enter -----
-addnpc(40001, "ETC_20151016_015624", "f_orchard_34_2", 1534, 0, 1335, 45, "npc_ETC_20151016_015624")
-function npc_ETC_20151016_015624()
-msg("ORCHARD_34_2_TO_ORCHARD_32_3")
-end
-
------ Seir Rainforest ----- 
------ Enter -----
-addnpc(40001, "ETC_20151016_015625", "f_orchard_34_2", -1677, -82, 1775, 180, "npc_ETC_20151016_015625")
-function npc_ETC_20151016_015625()
-msg("ORCHARD_34_2_TO_ORCHARD_32_4")
-end
-
 ----- Mysterious Girl ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----

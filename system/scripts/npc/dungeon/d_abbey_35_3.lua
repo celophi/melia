@@ -46,20 +46,6 @@ function npc_ETC_20151001_015225()
 msg("JOB_PARDONER_6_1_NOTE06")
 end
 
------ Nahash Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016518", "d_abbey_35_3", 21, 0, 1663, 136, "npc_ETC_20151102_016518")
-function npc_ETC_20151102_016518()
-msg("ABBEY_35_3_SIAULIAI_35_1")
-end
-
------ Elgos Abbey Main Building ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016521", "d_abbey_35_3", 11, -95, -1657, -45, "npc_ETC_20151102_016521")
-function npc_ETC_20151102_016521()
-msg("ABBEY_35_3_ABBEY_35_4")
-end
-
 ----- Priest Dominikas ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY_35_3_DOMINIKAS -----
 ----- Dialog -----

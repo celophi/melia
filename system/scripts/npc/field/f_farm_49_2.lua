@@ -1,17 +1,3 @@
------ Greene Manor ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009615", "f_farm_49_2", 666, 128, -2161, -67, "npc_ETC_20150323_009615")
-function npc_ETC_20150323_009615()
-msg("FARM492_TO_FARM491")
-end
-
------ Shaton Reservoir ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009618", "f_farm_49_2", -2288, 78, 1096, 130, "npc_ETC_20150323_009618")
-function npc_ETC_20150323_009618()
-msg("FARM492_TO_FARM493")
-end
-
 ----- Farm Supervisor Dorn ----- 
 ----- npcselectdialog.ies | ClassName: FARM492_MQ_01 -----
 ----- Dialog -----
@@ -373,13 +359,6 @@ end
 addnpc(47160, "ETC_20150323_010382", "f_farm_49_2", -543, 53, -16, 45, "npc_ETC_20150323_010382")
 function npc_ETC_20150323_010382()
 msg("FARM492_SQ_06")
-end
-
------ Dina Bee Farm ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009588", "f_farm_49_2", 1977, 205, 1481, 100, "npc_ETC_20150323_009588")
-function npc_ETC_20150323_009588()
-msg("FARM492_TO_SIAULIAI464")
 end
 
 ----- Cured Tenant Farmer ----- 

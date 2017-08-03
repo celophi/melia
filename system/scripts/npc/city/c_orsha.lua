@@ -407,20 +407,6 @@ msg("PRISON622_MQ_03_02")
 msg("PRISON622_SQ_01_add")
 end
 
------ Lemprasa Pond ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009570", "c_orsha", -1423, 473, 368, 213, "npc_ETC_20150323_009570")
-function npc_ETC_20150323_009570()
-msg("ORSHA_TO_SIAULIAI16")
-end
-
------ Woods of the Linked Bridges ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001178", "c_orsha", 1444, 22, 344, 45, "npc_ETC_20150317_001178")
-function npc_ETC_20150317_001178()
-msg("ORSHA_TO_SIAULIAI15RE")
-end
-
 ----- Lord's Guard ----- 
 ----- npcselectdialog.ies | ClassName: C_ORSHA_SOLDIER_01 -----
 ----- Dialog -----
