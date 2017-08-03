@@ -132,13 +132,6 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_C_FEDIMIAN")
 end
 
------ Fedimian Suburbs ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009581", "c_fedimian", 782, 160, -160, 35, "npc_ETC_20150323_009581")
-function npc_ETC_20150323_009581()
-msg("FEDMIAN_TO_REMAINS40")
-end
-
 ----- Security Guard ----- 
 ----- npcselectdialog.ies | ClassName: FEDIMIAN_DETECTIVE_GUARD -----
 ----- Dialog -----
@@ -307,15 +300,6 @@ msg("FEDIMIAN_HQ_01_COMP")
 msg("FED_EQUIP_BASIC01")
 msg("FED_EQUIP_BASIC02")
 msg("FED_EQUIP_BASIC03")
-end
-
------ Starving Demon's Way ----- 
------ Enter -----
------ QuestIDs: THORN_TO_PILGRIM -----
-addnpc(40001, "ETC_20150317_001218", "c_fedimian", 846, 680, 1137, 121, "npc_ETC_20150317_001218")
-function npc_ETC_20150317_001218()
-msg("GM_QUEST_MODIFY_PC_SEL")
-msg("GM_NPC_HIDE_UNHIDE")
 end
 
 ----- Bulletin Board ----- 
@@ -517,13 +501,6 @@ msg("CORAL_32_2_SQ_8_ST")
 msg("CORAL_32_2_SQ_8_AG")
 msg("CORAL_32_2_SQ_8_STD")
 msg("CORAL_32_2_SQ_8_SU")
-end
-
------ Seir Rainforest ----- 
------ Enter -----
-addnpc(40001, "ETC_20151016_015625", "c_fedimian", -1001, 448, 32, -122, "npc_ETC_20151016_015625")
-function npc_ETC_20151016_015625()
-msg("FEDIMIAN_TO_ORCHARD_32_4")
 end
 
 ----- [TP Trader] Leticia ----- 

@@ -1,10 +1,3 @@
------ Delmore Outskirts ----- 
------ Enter -----
-addnpc(40001, "ETC_20151224_017824", "d_castle_67_1", -1635, 0, -1579, -39, "npc_ETC_20151224_017824")
-function npc_ETC_20151224_017824()
-msg("CASTLE671_TO_CASTLE653")
-end
-
 ----- Guardian Statue ----- 
 addnpc(153018, "ETC_20151224_019919", "d_castle_67_1", 397, 234, -1035, 0, "npc_dummy")
 
@@ -58,13 +51,6 @@ function npc_QUEST_20150317_000002()
 msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_CASTLE_67_1")
-end
-
------ Topes Fortress 2F ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016532", "d_castle_67_1", 878, 53, 1210, 67, "npc_ETC_20151102_016532")
-function npc_ETC_20151102_016532()
-msg("CASTLE_67_1_TO_CASTLE_67_2")
 end
 
 ----- Lv1 Treasure Chest ----- 

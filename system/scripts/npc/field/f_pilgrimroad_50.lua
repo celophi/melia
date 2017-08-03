@@ -1,17 +1,3 @@
------ Pilgrim Path ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009582", "f_pilgrimroad_50", -1934, 506, -1179, 225, "npc_ETC_20150323_009582")
-function npc_ETC_20150323_009582()
-msg("PILGRIM50_PILGRIM47")
-end
-
------ Forest of Prayer ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009584", "f_pilgrimroad_50", 2243, 507, -1306, 25, "npc_ETC_20150323_009584")
-function npc_ETC_20150323_009584()
-msg("PILGRIM50_PILGRIM51")
-end
-
 ----- Pilgrim's Way Gate ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
@@ -203,13 +189,6 @@ end
 addnpc(147312, "QUEST_20150428_001925", "f_pilgrimroad_50", 959, 507, -890, 45, "npc_QUEST_20150428_001925")
 function npc_QUEST_20150428_001925()
 msg("PILGRIM50_LOSTPAPER_BASIC01")
-end
-
------ Genar Field ----- 
------ Enter -----
-addnpc(40001, "ETC_20150918_014226", "f_pilgrimroad_50", -161, 507, -725, -55, "npc_ETC_20150918_014226")
-function npc_ETC_20150918_014226()
-msg("PILGRIM_50_TO_PILGRIM_49")
 end
 
 ----- Lv1 Treasure Chest ----- 

@@ -1,10 +1,3 @@
------ Roxona Reconstruction Agency West Building ----- 
------ Enter -----
-addnpc(40001, "ETC_20150714_011747", "d_firetower_61_2", -1892, 268, -1703, -45, "npc_ETC_20150714_011747")
-function npc_ETC_20150714_011747()
-msg("FIRETOWER612_TO_FIRETOWER611")
-end
-
 ----- Demons' Sealed Sphere ----- 
 addnpc(147306, "ETC_20150714_013127", "d_firetower_61_2", -31, 143, -1505, 131, "npc_dummy")
 

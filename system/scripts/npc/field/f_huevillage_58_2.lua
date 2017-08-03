@@ -92,20 +92,6 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Veja Ravine ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009562", "f_huevillage_58_2", 440, 274, -1641, 50, "npc_ETC_20150323_009562")
-function npc_ETC_20150323_009562()
-msg("HUEVILLAGE58_2_TO_HUEVILLAGE58_1")
-end
-
------ Cobalt Forest ----- 
------ Enter -----
-addnpc(40001, "QUEST_JOBSTEP_20150323_002351", "f_huevillage_58_2", 1462, -10, 1157, 128, "npc_QUEST_JOBSTEP_20150323_002351")
-function npc_QUEST_JOBSTEP_20150323_002351()
-msg("HUEVILLAGE58_2_TO_HUEVILLAGE58_3")
-end
-
 ----- Gravestone ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
@@ -130,13 +116,6 @@ end
 addnpc(147414, "ETC_20150317_007189", "f_huevillage_58_2", 859, 0, 205, -25, "npc_ETC_20150317_007189")
 function npc_ETC_20150317_007189()
 msg("HUEVILLAGE_58_2_OBELISK_AFTER")
-end
-
------ Gytis Settlement Area ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009621", "f_huevillage_58_2", -390, 272, -1618, -53, "npc_ETC_20150323_009621")
-function npc_ETC_20150323_009621()
-msg("HUEVILLAGE_58_2_SIAUL50_1")
 end
 
 ----- Lv1 Treasure Chest ----- 

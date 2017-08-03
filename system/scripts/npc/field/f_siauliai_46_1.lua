@@ -1,17 +1,3 @@
------ Gate Route ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001182", "f_siauliai_46_1", -624, 262, -1920, 25, "npc_ETC_20150317_001182")
-function npc_ETC_20150317_001182()
-msg("SIAULIAI46_1_THORN19")
-end
-
------ Uskis Arable Land ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009586", "f_siauliai_46_1", -1872, 260, -427, 225, "npc_ETC_20150323_009586")
-function npc_ETC_20150323_009586()
-msg("SIAULIAI46_1_SIAULIAI46_2")
-end
-
 ----- Priest Dazine ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_46_1_MQ01_NPC -----
 ----- Dialog -----
@@ -102,13 +88,6 @@ msg("SIAULIAI_46_1_SQ_05_NPC_basic02")
 msg("SIAULIAI_46_1_SQ_05_select")
 msg("SIAULIAI_46_1_SQ_05_start_prog")
 msg("SIAULIAI_46_1_SQ_05_succ")
-end
-
------ Glade Hillroad ----- 
------ Enter -----
-addnpc(40001, "ETC_20150714_011734", "f_siauliai_46_1", 586, 391, 1320, 155, "npc_ETC_20150714_011734")
-function npc_ETC_20150714_011734()
-msg("SIAULIAI46_1_THORN39_2")
 end
 
 ----- Lv1 Treasure Chest ----- 

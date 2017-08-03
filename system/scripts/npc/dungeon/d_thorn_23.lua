@@ -1,45 +1,3 @@
------ Dvasia Peak ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009573", "d_thorn_23", -2159, 1137, -2969, 207.9, "npc_ETC_20150323_009573")
-function npc_ETC_20150323_009573()
-msg("THORN23_THORN22")
-end
-
------ Gateway of the Great King ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001187", "d_thorn_23", 2420, 289, 2163, 118, "npc_ETC_20150317_001187")
-function npc_ETC_20150317_001187()
-msg("THORN23_ROKAS24")
-end
-
------ Sunset Flag Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001186", "d_thorn_23", -1528, 1041, -1792, 170, "npc_ETC_20150317_001186")
-function npc_ETC_20150317_001186()
-msg("THORN23_1_THORN23_2")
-end
-
------ Sunset Flag Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001186", "d_thorn_23", -1631, 1026, -1637, -20, "npc_ETC_20150317_001186")
-function npc_ETC_20150317_001186()
-msg("THORN23_2_THORN23_1")
-end
-
------ Sunset Flag Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001186", "d_thorn_23", 2295, 384, 937, 99, "npc_ETC_20150317_001186")
-function npc_ETC_20150317_001186()
-msg("THORN23_2_THORN23_3")
-end
-
------ Sunset Flag Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001186", "d_thorn_23", 2581, 384, 1036, -128, "npc_ETC_20150317_001186")
-function npc_ETC_20150317_001186()
-msg("THORN23_3_THORN23_2")
-end
-
 ----- Soldier Alan ----- 
 ----- npcselectdialog.ies | ClassName: THORN23_ALAN -----
 ----- Dialog -----
@@ -153,13 +111,6 @@ addnpc(47170, "ETC_20150317_005406", "d_thorn_23", -833, 1070, -1295, -8, "npc_E
 function npc_ETC_20150317_005406()
 msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
-end
-
------ Kvailas Forest ----- 
------ Enter -----
-addnpc(40001, "QUEST_LV_0100_20150323_006602", "d_thorn_23", -588, 544, 899, 135, "npc_QUEST_LV_0100_20150323_006602")
-function npc_QUEST_LV_0100_20150323_006602()
-msg("THORN23_THORN21")
 end
 
 ----- Lv1 Treasure Chest ----- 

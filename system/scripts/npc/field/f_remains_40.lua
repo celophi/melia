@@ -80,22 +80,6 @@ msg("REMAINS40_RP_1_2")
 msg("REMAINS40_RP_1_3")
 end
 
------ Escanciu Village ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009580", "f_remains_40", 111, 304, -2598, 0, "npc_ETC_20150323_009580")
-function npc_ETC_20150323_009580()
-msg("WS_REMAINS40_TO_REMAINS39")
-end
-
------ Fedimian ----- 
------ Enter -----
------ QuestIDs: ZACHA_TO_FEDIMIAN -----
-addnpc(40001, "QUEST_LV_0100_20150317_006373", "f_remains_40", -2393, 315, -1377, 160, "npc_QUEST_LV_0100_20150317_006373")
-function npc_QUEST_LV_0100_20150317_006373()
-msg("GM_QUEST_MODIFY_PC_SEL")
-msg("GM_NPC_HIDE_UNHIDE")
-end
-
 ----- Mage Tower 1F ----- 
 ----- Enter -----
 addnpc(147500, "ETC_20150317_001211", "f_remains_40", 3541, 645, 2726, 45, "npc_ETC_20150317_001211")

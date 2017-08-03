@@ -1,24 +1,3 @@
------ Spring Light Woods ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001226", "d_thorn_19", 215, 611, 3115, 180, "npc_ETC_20150317_001226")
-function npc_ETC_20150317_001226()
-msg("THORN19_SIAULIAI46_1")
-end
-
------ Septyni Glen ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009564", "d_thorn_19", -286, 622, -3924, 214, "npc_ETC_20150323_009564")
-function npc_ETC_20150323_009564()
-msg("THORN19_HUEVILLAGE58_4")
-end
-
------ Sirdgela Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009572", "d_thorn_19", 1980, 623, -1019, -124, "npc_ETC_20150323_009572")
-function npc_ETC_20150323_009572()
-msg("THORN19_THORN20")
-end
-
 ----- Altar of Harmony ----- 
 ----- npcselectdialog.ies | ClassName: THORN19_HOLY01 -----
 ----- Dialog -----
@@ -166,13 +145,6 @@ end
 addnpc(147392, "ETC_20150317_009100", "d_thorn_19", 1762, 459, 1590, 135, "npc_ETC_20150317_009100")
 function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
-end
-
------ Thorn Forest Guild Mission ----- 
------ Enter -----
-addnpc(40001, "ETC_20151224_017829", "d_thorn_19", 1467, 515, -3231, 135, "npc_ETC_20151224_017829")
-function npc_ETC_20151224_017829()
-msg("THORN19_TO_GUILDMISSION")
 end
 
 ----- Lv1 Treasure Chest ----- 

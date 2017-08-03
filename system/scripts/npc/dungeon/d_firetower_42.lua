@@ -5,14 +5,7 @@ function npc_ETC_20150317_001211()
 msg("FIRETOWER42_TO_FIRETOWER41")
 end
 
------ Mage Tower 3F ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001214", "d_firetower_42", -933, 2, -2391, 50, "npc_ETC_20150317_001214")
-function npc_ETC_20150317_001214()
-msg("FIRETOWER42_TO_FIRETOWER43")
-end
-
------ Grita ----- 
+----- Grita -----
 ----- npcselectdialog.ies | ClassName: FTOWER42_GRITA_01 -----
 ----- Dialog -----
 ----- QuestIDs: FTOWER42_MQ_01 -----

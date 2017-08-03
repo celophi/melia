@@ -1,17 +1,3 @@
------ Vieta Gorge ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009563", "f_huevillage_58_3", 418, -87, -1834, -50, "npc_ETC_20150323_009563")
-function npc_ETC_20150323_009563()
-msg("HUEVILLAGE58_3_TO_HUEVILLAGE58_2")
-end
-
------ Septyni Glen ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009564", "f_huevillage_58_3", -1130, 22, -30, 162, "npc_ETC_20150323_009564")
-function npc_ETC_20150323_009564()
-msg("HUEVILLAGE58_3_TO_HUEVILLAGE58_4")
-end
-
 ----- Andale Village Priest ----- 
 ----- npcselectdialog.ies | ClassName: HUEVILLAGE_58_3_MQ01_NPC -----
 ----- Dialog -----
@@ -159,13 +145,6 @@ end
 addnpc(147469, "ETC_20150317_009352", "f_huevillage_58_3", -681, -3, -1153, 45, "npc_ETC_20150317_009352")
 function npc_ETC_20150317_009352()
 msg("HUEVILLAGE_58_3_SQ01_NPC03")
-end
-
------ Tenants' Farm ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009636", "f_huevillage_58_3", -223, -88, -1546, -39, "npc_ETC_20150323_009636")
-function npc_ETC_20150323_009636()
-msg("HUEVILL_58_3_TO_FARM_47_1")
 end
 
 ----- Lv1 Treasure Chest ----- 

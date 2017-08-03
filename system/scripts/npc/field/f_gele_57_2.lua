@@ -1,18 +1,3 @@
------ Srautas Gorge ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009559", "f_gele_57_2", 35, 375, -1102, -45, "npc_ETC_20150323_009559")
-function npc_ETC_20150323_009559()
-msg("GELE572_GELE571")
-end
-
------ Nefritas Cliff ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009560", "f_gele_57_2", 100, 375, 1532, 135, "npc_ETC_20150323_009560")
-function npc_ETC_20150323_009560()
-msg("GM_QUEST_MODIFY_PC_SEL")
-msg("GM_NPC_HIDE_UNHIDE")
-end
-
 ----- Watcher Basil ----- 
 ----- npcselectdialog.ies | ClassName: GELE572_NPC_BASIL -----
 ----- Dialog -----
@@ -79,13 +64,6 @@ end
 addnpc(147395, "ETC_20150714_013114", "f_gele_57_2", -659, 419, -72, 45, "npc_ETC_20150714_013114")
 function npc_ETC_20150714_013114()
 msg("TREASUREBOX_LV")
-end
-
------ Grynas Trails ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009611", "f_gele_57_2", 1579, 504, -336, 78, "npc_ETC_20150323_009611")
-function npc_ETC_20150323_009611()
-msg("GELE57_2_KATYN45_1")
 end
 
 ----- Lv1 Treasure Chest ----- 

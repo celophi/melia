@@ -1,10 +1,3 @@
------ Royal Mausoleum Constructors' Chapel ----- 
------ Enter -----
-addnpc(40001, "ETC_20150428_011234", "d_underfortress_59_3", -1689, 141, -1200, 225, "npc_ETC_20150428_011234")
-function npc_ETC_20150428_011234()
-msg("UNDERF593_TO_UNDERF592")
-end
-
 ----- Collapse Debris ----- 
 addnpc(154006, "ETC_20150401_010669", "d_underfortress_59_3", -84, 1, 328, 45, "npc_dummy")
 

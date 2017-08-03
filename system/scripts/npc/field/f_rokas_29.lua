@@ -1,17 +1,3 @@
------ Tiltas Valley ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009576", "f_rokas_29", 2612, 469, 819, 135, "npc_ETC_20150323_009576")
-function npc_ETC_20150323_009576()
-msg("ROKAS29_ROKAS28")
-end
-
------ King's Plateau ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001194", "f_rokas_29", -1413, 617, -2079, -107, "npc_ETC_20150317_001194")
-function npc_ETC_20150317_001194()
-msg("ROKAS29_ROKAS30")
-end
-
 ----- Rexipher ----- 
 ----- npcselectdialog.ies | ClassName: ROKAS29_HALF_SUCCESS1 -----
 ----- Enter | Dialog -----
@@ -221,13 +207,6 @@ addnpc(153053, "ETC_20150804_014186", "f_rokas_29", -332, 680, -398, -18, "npc_E
 function npc_ETC_20150804_014186()
 msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
-end
-
------ Mullers Passage ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001311", "f_rokas_29", -2114, 782, 1614, 135, "npc_ETC_20150317_001311")
-function npc_ETC_20150317_001311()
-msg("ROKAS29_PCATACOMB1")
 end
 
 ----- Epitaph ----- 

@@ -1,19 +1,3 @@
------ Sunset Flag Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001186", "f_rokas_24", 930, 123, -3045, -45, "npc_ETC_20150317_001186")
-function npc_ETC_20150317_001186()
-msg("GM_QUEST_MODIFY_PC_SEL")
-msg("GM_NPC_HIDE_UNHIDE")
-end
-
------ Ramstis Ridge ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009574", "f_rokas_24", 904, 261, 1240, 131, "npc_ETC_20150323_009574")
-function npc_ETC_20150323_009574()
-msg("GM_QUEST_MODIFY_PC_SEL")
-msg("GM_NPC_HIDE_UNHIDE")
-end
-
 ----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
@@ -875,26 +859,12 @@ msg("JOB_WUGU3_1_NPC_BASIC03")
 msg("JOB_WUGU3_1_NPC_BASIC04")
 end
 
------ Canyon Guild Mission ----- 
------ Enter -----
-addnpc(40001, "ETC_20151224_019966", "f_rokas_24", -1885, 893, 2120, 225, "npc_ETC_20151224_019966")
-function npc_ETC_20151224_019966()
-msg("ROKAS24_TO_GUILDMISSION")
-end
-
 ----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147392, "ETC_20150317_009100", "f_rokas_24", -678, 724, -2528, 45, "npc_ETC_20150317_009100")
 function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
-end
-
------ Letas Stream ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009622", "f_rokas_24", 1653, 124, -1051, 45, "npc_ETC_20150323_009622")
-function npc_ETC_20150323_009622()
-msg("ROKAS24_KATYN12")
 end
 
 ----- Historian Grenus ----- 

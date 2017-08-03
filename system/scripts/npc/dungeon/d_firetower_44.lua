@@ -318,10 +318,3 @@ function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
 end
 
------ Mage Tower Guild Mission ----- 
------ Enter -----
-addnpc(40001, "ETC_20151224_017827", "d_firetower_44", -369, 367, -1505, -120, "npc_ETC_20151224_017827")
-function npc_ETC_20151224_017827()
-msg("FIRETOWER44_TO_GUILDMISSION")
-end
-

@@ -70,20 +70,6 @@ function npc_ETC_20150317_009130()
 msg("JOB_ARCHER4_2_01")
 end
 
------ Grand Corridor ----- 
------ Enter -----
-addnpc(40001, "ETC_20170330_027519", "f_pilgrimroad_55", 1615, 242, 41, 105, "npc_ETC_20170330_027519")
-function npc_ETC_20170330_027519()
-msg("PILGRIM55_CATHEDRAL54")
-end
-
------ Grand Corridor ----- 
------ Enter -----
-addnpc(40001, "ETC_20170330_027519", "f_pilgrimroad_55", -576, 332, 776, 124, "npc_ETC_20170330_027519")
-function npc_ETC_20170330_027519()
-msg("PILGRIM55_CATHEDRAL54_RE")
-end
-
 ----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
@@ -280,13 +266,6 @@ end
 addnpc(147394, "ETC_20150714_013115", "f_pilgrimroad_55", -106, 243, 77, 45, "npc_ETC_20150714_013115")
 function npc_ETC_20150714_013115()
 msg("TREASUREBOX_LV")
-end
-
------ Barha Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016517", "f_pilgrimroad_55", 1752, 143, -637, -6, "npc_ETC_20151102_016517")
-function npc_ETC_20151102_016517()
-msg("PILGRIM55_ORCHARD34_3")
 end
 
 ----- Lv1 Treasure Chest ----- 

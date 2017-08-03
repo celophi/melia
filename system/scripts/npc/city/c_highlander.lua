@@ -35,13 +35,6 @@ msg("HIGHLANDER_HQ_02_succ01")
 msg("HIGHLANDER_HQ_01_02")
 end
 
------ Klaipeda ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001144", "c_highlander", -52, 71, 192, 225, "npc_ETC_20150317_001144")
-function npc_ETC_20150317_001144()
-msg("WS_HIGHLANDER_KLAPEDA")
-end
-
 ----- Practice Post (Fire) ----- 
 addnpc(57253, "ETC_20150317_009191", "c_highlander", -32, 0, -31, 45, "npc_dummy")
 

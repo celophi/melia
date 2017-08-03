@@ -40,20 +40,6 @@ msg("HTA_REMAIN37_RAYMOND_BASIC05")
 msg("HTA_REMAIN37_RAYMOND_BASIC06")
 end
 
------ Zachariel Crossroads ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009578", "f_remains_37", -1292, 989, -2944, 0, "npc_ETC_20150323_009578")
-function npc_ETC_20150323_009578()
-msg("REMAINS37_ROKAS31")
-end
-
------ Goddess' Ancient Garden ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001208", "f_remains_37", 564, 1428, 3367, 131, "npc_ETC_20150317_001208")
-function npc_ETC_20150317_001208()
-msg("REMAINS37_REMAINS38")
-end
-
 ----- Treasure Hunter Eden ----- 
 ----- npcselectdialog.ies | ClassName: REMAIN37_SQ6_UNCLE1 -----
 ----- Dialog -----
@@ -94,13 +80,6 @@ msg("REMAIN37_SMEADE_BASIC01")
 msg("REMAIN37_SMEADE_BASIC02")
 msg("REMAIN37_SQ06_select01")
 msg("REMAIN37_SQ06_succ01")
-end
-
------ Passage of the Recluse ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001309", "f_remains_37", 485, 1121, -2623, 315, "npc_ETC_20150317_001309")
-function npc_ETC_20150317_001309()
-msg("REMAINS37_PCATHEDRAL1")
 end
 
 ----- [Chronomancer Master] Lucid Winterspoon ----- 
@@ -370,13 +349,6 @@ msg("JOB_FALCONER_8_1_STD")
 msg("JOB_FALCONER_8_1_SU")
 end
 
------ Nuoridin Falls ----- 
------ Enter -----
-addnpc(40001, "ETC_20150714_011737", "f_remains_37", -72, 1297, 2797, 115, "npc_ETC_20150714_011737")
-function npc_ETC_20150714_011737()
-msg("REMAINS37_REMAINS37_1")
-end
-
 ----- Rith ----- 
 addnpc(151061, "ETC_20150918_014661", "f_remains_37", 596, 1008, -1573, -45, "npc_dummy")
 
@@ -386,12 +358,5 @@ addnpc(151061, "ETC_20150918_014661", "f_remains_37", 596, 1008, -1573, -45, "np
 addnpc(147392, "ETC_20150317_009100", "f_remains_37", -62, 1301, 2787, 45, "npc_ETC_20150317_009100")
 function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
-end
-
------ Zima Suecourt ----- 
------ Enter -----
-addnpc(40001, "ETC_20161005_024609", "f_remains_37", 1165, 1057, -2714, -46, "npc_ETC_20161005_024609")
-function npc_ETC_20161005_024609()
-msg("REMAINS37_TO_FIRETOWER691")
 end
 

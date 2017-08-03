@@ -1,10 +1,3 @@
------ Baron Allerno  ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009589", "f_siauliai_50_1", -795, -44, 1714, 112, "npc_ETC_20150323_009589")
-function npc_ETC_20150323_009589()
-msg("SIAUL50_1_TO_FARM_47_4")
-end
-
 ----- Gytis ----- 
 ----- npcselectdialog.ies | ClassName: SIAULIAI_50_1_SQ_GYTIS -----
 ----- Dialog -----
@@ -123,27 +116,6 @@ msg("SIAULIAI_50_1_SQ_150_succ01")
 msg("SIAULIAI_50_1_SQ_160_select01")
 msg("SIAULIAI_50_1_SQ_160_prog01")
 msg("SIAULIAI_50_1_SQ_160_succ01")
-end
-
------ Klaipeda ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001144", "f_siauliai_50_1", 1638, 0, -1425, 74, "npc_ETC_20150317_001144")
-function npc_ETC_20150317_001144()
-msg("SIAUL50_1_TO_KLAPEDA")
-end
-
------ Veja Ravine ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009562", "f_siauliai_50_1", 2334, 22, 537, 45, "npc_ETC_20150323_009562")
-function npc_ETC_20150323_009562()
-msg("SIAUL50_1_TO_HUEVILLAGE_58_1")
-end
-
------ Vieta Gorge ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009563", "f_siauliai_50_1", 905, -44, 1759, 125, "npc_ETC_20150323_009563")
-function npc_ETC_20150323_009563()
-msg("SIAUL50_1_TO_HUEVILLAGE_58_2")
 end
 
 ----- Soldier Peirce ----- 

@@ -1,31 +1,3 @@
------ Starving Demon's Way ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001218", "f_pilgrimroad_47", -2462, 44, -2202, -98, "npc_ETC_20150317_001218")
-function npc_ETC_20150317_001218()
-msg("PILGRIM47_PILGRIM46")
-end
-
------ Altar Way ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009583", "f_pilgrimroad_47", 2037, 246, 2357, 70, "npc_ETC_20150323_009583")
-function npc_ETC_20150323_009583()
-msg("PILGRIM47_PILGRIM50")
-end
-
------ Mullers Passage ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001311", "f_pilgrimroad_47", 2209, 44, -586, 45, "npc_ETC_20150317_001311")
-function npc_ETC_20150317_001311()
-msg("PILGRIM47_PCATACOMB1")
-end
-
------ Saalus Convent ----- 
------ Enter -----
-addnpc(40001, "ETC_20160224_020147", "f_pilgrimroad_47", -1135, 154, 1471, 135, "npc_ETC_20160224_020147")
-function npc_ETC_20160224_020147()
-msg("PILGRIM47_NUNNERY")
-end
-
 ----- Torn Letter ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
@@ -315,13 +287,6 @@ addnpc(153057, "QUEST_20150428_001923", "f_pilgrimroad_47", -1692, 195, 119, 45,
 function npc_QUEST_20150428_001923()
 msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
-end
-
------ Genar Field ----- 
------ Enter -----
-addnpc(40001, "ETC_20150918_014226", "f_pilgrimroad_47", 1361, 98, -1354, -2, "npc_ETC_20150918_014226")
-function npc_ETC_20150918_014226()
-msg("PILGRIM_47_TO_PILGRIM_49")
 end
 
 ----- Scattered Tree Root Crystal Core ----- 

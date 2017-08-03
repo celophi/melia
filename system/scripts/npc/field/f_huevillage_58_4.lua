@@ -126,40 +126,12 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Cobalt Forest ----- 
------ Enter -----
-addnpc(40001, "QUEST_JOBSTEP_20150323_002351", "f_huevillage_58_4", 1292, -22, -1061, -52, "npc_QUEST_JOBSTEP_20150323_002351")
-function npc_QUEST_JOBSTEP_20150323_002351()
-msg("HUEVILLAGE58_4_TO_HUEVILLAGE58_3")
-end
-
------ Gate Route ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001182", "f_huevillage_58_4", 993, -22, 1273, 130, "npc_ETC_20150317_001182")
-function npc_ETC_20150317_001182()
-msg("HUEVILLAGE58_4_TO_THORN19")
-end
-
 ----- Portal ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
 addnpc(147469, "ETC_20150317_005172", "f_huevillage_58_4", 28, 34, -189, 45, "npc_ETC_20150317_005172")
 function npc_ETC_20150317_005172()
 msg("HUEVILLAGE_58_4_PORTAL_AFTER")
-end
-
------ Poslinkis Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009568", "f_huevillage_58_4", 1470, -24, 359, 46, "npc_ETC_20150323_009568")
-function npc_ETC_20150323_009568()
-msg("HUEVILLAGE58_4_KATYN13")
-end
-
------ Dina Bee Farm ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009588", "f_huevillage_58_4", 471, -8, 982, 135, "npc_ETC_20150323_009588")
-function npc_ETC_20150323_009588()
-msg("HUEVILLAGE58_4_SIAULIAI46_4")
 end
 
 ----- Statue ----- 

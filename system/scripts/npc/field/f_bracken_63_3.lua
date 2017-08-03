@@ -1,24 +1,3 @@
------ Knidos Jungle ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016524", "f_bracken_63_3", 1650, 0, -48, 3, "npc_ETC_20151102_016524")
-function npc_ETC_20151102_016524()
-msg("BRACKEN_63_3_BRACKEN_63_2")
-end
-
------ Novaha Assembly Hall ----- 
------ Enter -----
-addnpc(40001, "ETC_20151224_017819", "f_bracken_63_3", 325, 16, -1197, -12, "npc_ETC_20151224_017819")
-function npc_ETC_20151224_017819()
-msg("BRACKEN_63_3_ABBAY_64_1")
-end
-
------ Karolis Springs ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009566", "f_bracken_63_3", -1446, 189, 545, 163, "npc_ETC_20150323_009566")
-function npc_ETC_20150323_009566()
-msg("BRACKEN_63_3_KATYN_10")
-end
-
 ----- Traveling Merchant Rose ----- 
 ----- npcselectdialog.ies | ClassName: BRACKEN633_ROZE01 -----
 ----- Dialog -----
@@ -74,13 +53,6 @@ end
 addnpc(47107, "ETC_20151224_019940", "f_bracken_63_3", -1158, 0, 713, 45, "npc_ETC_20151224_019940")
 function npc_ETC_20151224_019940()
 msg("BRACKEN633_DEVICE01")
-end
-
------ Nevellet Quarry 1F ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016529", "f_bracken_63_3", 528, -70, 1608, 120, "npc_ETC_20151102_016529")
-function npc_ETC_20151102_016529()
-msg("BRACKEN633_TO_CMINE661")
 end
 
 ----- Demon Cauldron ----- 

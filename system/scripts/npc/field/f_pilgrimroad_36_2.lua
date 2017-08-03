@@ -8,34 +8,6 @@ msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 end
 
------ Galeed Plateau ----- 
------ Enter -----
-addnpc(40001, "ETC_20150918_014223", "f_pilgrimroad_36_2", 1702, 111, -604, 31, "npc_ETC_20150918_014223")
-function npc_ETC_20150918_014223()
-msg("PILGRIM_36_2_TO_ROKAS_36_1")
-end
-
------ Manahas ----- 
------ Enter -----
-addnpc(40001, "ETC_20150918_014225", "f_pilgrimroad_36_2", -28, 225, -1000, -41, "npc_ETC_20150918_014225")
-function npc_ETC_20150918_014225()
-msg("PILGRIM_36_2_TO_PILGRIM_48")
-end
-
------ Nahash Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016518", "f_pilgrimroad_36_2", 561, 98, 1586, 142, "npc_ETC_20151102_016518")
-function npc_ETC_20151102_016518()
-msg("PILGRIM_36_2_TO_SIAULIAI_35_1")
-end
-
------ Alemeth Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016516", "f_pilgrimroad_36_2", -1703, 153, 1344, 224, "npc_ETC_20151102_016516")
-function npc_ETC_20151102_016516()
-msg("PILGRIM_36_2_TO_ORCHARD_34_1")
-end
-
 ----- Albinas ----- 
 ----- npcselectdialog.ies | ClassName: PILGRIM_36_2_ALBINAS -----
 ----- Dialog -----

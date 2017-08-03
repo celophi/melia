@@ -1,46 +1,3 @@
------ Saknis Plains ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009569", "d_thorn_22", -986, 470, -2219, -45, "npc_ETC_20150323_009569")
-function npc_ETC_20150323_009569()
-msg("THORN22_KATYN14")
-end
-
------ Sunset Flag Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001186", "d_thorn_22", 987, 289, 1109, 111, "npc_ETC_20150317_001186")
-function npc_ETC_20150317_001186()
-msg("THORN22_THORN23")
-end
-
------ Dvasia Peak ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009573", "d_thorn_22", -1020, 554, -891, 138, "npc_ETC_20150323_009573")
-function npc_ETC_20150323_009573()
-msg("THORN22_1_THORN22_2")
-end
-
------ Dvasia Peak ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009573", "d_thorn_22", -1216, 554, -387, -22, "npc_ETC_20150323_009573")
-function npc_ETC_20150323_009573()
-msg("THORN22_2_THORN22_1")
-end
-
------ Dvasia Peak ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009573", "d_thorn_22", -1035, 553, 664, 117, "npc_ETC_20150323_009573")
-function npc_ETC_20150323_009573()
-msg("GM_QUEST_MODIFY_PC_SEL")
-msg("GM_NPC_HIDE_UNHIDE")
-end
-
------ Dvasia Peak ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009573", "d_thorn_22", -689, 554, 846, -75, "npc_ETC_20150323_009573")
-function npc_ETC_20150323_009573()
-msg("THORN22_3_THORN22_2")
-end
-
 ----- Soldier Rudolfas ----- 
 ----- npcselectdialog.ies | ClassName: THORN22_ADD_SUB_02 -----
 ----- Dialog -----
@@ -205,13 +162,6 @@ addnpc(46213, "ETC_20150317_005397", "d_thorn_22", 76, 539, -606, 32, "npc_ETC_2
 function npc_ETC_20150317_005397()
 msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
-end
-
------ Sirdgela Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009572", "d_thorn_22", -2299, 440, -1493, -130, "npc_ETC_20150323_009572")
-function npc_ETC_20150323_009572()
-msg("THORN22_THORN20")
 end
 
 ----- Soldier Kallus ----- 

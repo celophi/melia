@@ -88,20 +88,6 @@ msg("REMAIN38_MQ_MONUMENT5_BASIC01")
 msg("REMAIN38_MQ02_succ")
 end
 
------ Stele Road ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009579", "f_remains_38", -1400, 325, -2214, -45, "npc_ETC_20150323_009579")
-function npc_ETC_20150323_009579()
-msg("REMAINS38_REMAINS37")
-end
-
------ Escanciu Village ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009580", "f_remains_38", 1358, 372, 1740, 180, "npc_ETC_20150323_009580")
-function npc_ETC_20150323_009580()
-msg("REMAINS38_REMAINS39")
-end
-
 ----- Strange Sack ----- 
 ----- npcselectdialog.ies | ClassName: REMAIN38_SQ01 -----
 ----- Dialog -----

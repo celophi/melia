@@ -1,19 +1,3 @@
------ Gate Route ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001182", "d_thorn_20", -1549, 602, -1884, 215, "npc_ETC_20150317_001182")
-function npc_ETC_20150317_001182()
-msg("THORN20_THORN19")
-end
-
------ Kvailas Forest ----- 
------ Enter -----
------ QuestIDs: HUEVILLAGE_58_4_MQ09 -----
-addnpc(40001, "QUEST_LV_0100_20150323_006602", "d_thorn_20", 2575, 489, 1060, 122, "npc_QUEST_LV_0100_20150323_006602")
-function npc_QUEST_LV_0100_20150323_006602()
-msg("GM_QUEST_MODIFY_PC_SEL")
-msg("GM_NPC_HIDE_UNHIDE")
-end
-
 ----- Corrupted Altar ----- 
 ----- Enter -----
 addnpc(153019, "ETC_20150323_009886", "d_thorn_20", 2529, 489, -1250, 31, "npc_ETC_20150323_009886")
@@ -33,20 +17,6 @@ end
 addnpc(153019, "ETC_20150323_009886", "d_thorn_20", -1079, 583, -384, 31, "npc_ETC_20150323_009886")
 function npc_ETC_20150323_009886()
 msg("THORN_MQ04MAGIC_UNHIDE")
-end
-
------ Passage of the Recluse ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001309", "d_thorn_20", 3049, 491, -816, 135, "npc_ETC_20150317_001309")
-function npc_ETC_20150317_001309()
-msg("THORN20_PCATHEDRAL1")
-end
-
------ Dvasia Peak ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009573", "d_thorn_20", 1241, 438, -1506, 225, "npc_ETC_20150323_009573")
-function npc_ETC_20150323_009573()
-msg("THORN20_THORN22")
 end
 
 ----- Believer Alvydas ----- 
@@ -162,13 +132,6 @@ end
 addnpc(147393, "ETC_20150317_009082", "d_thorn_20", 581, 490, -2066, 45, "npc_ETC_20150317_009082")
 function npc_ETC_20150317_009082()
 msg("TREASUREBOX_LV")
-end
-
------ Viltis Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20150714_011733", "d_thorn_20", -911, 522, 1739, 145, "npc_ETC_20150714_011733")
-function npc_ETC_20150714_011733()
-msg("THORN20_THORN39_1")
 end
 
 ----- Lv1 Treasure Chest ----- 

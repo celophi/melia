@@ -123,13 +123,6 @@ function npc_ETC_20150401_010663()
 msg("STARTOWER_60_1_STARSTORN_01_MSG01")
 end
 
------ Forest of Prayer ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009584", "d_startower_60_1", -81, -93, -2129, 225, "npc_ETC_20150323_009584")
-function npc_ETC_20150323_009584()
-msg("STOWERTOWER_60_1_TO_PILGRIMROAD_51")
-end
-
 ----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----

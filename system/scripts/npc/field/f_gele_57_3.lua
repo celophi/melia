@@ -1,24 +1,3 @@
------ Gele Plateau ----- 
------ Enter -----
-addnpc(40001, "QUEST_LV_0100_20150323_006604", "f_gele_57_3", -510, -107, -1594, -40, "npc_QUEST_LV_0100_20150323_006604")
-function npc_QUEST_LV_0100_20150323_006604()
-msg("GELE573_TO_GELE572")
-end
-
------ Tenet Garden ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009561", "f_gele_57_3", 199, 284, 1157, 135, "npc_ETC_20150323_009561")
-function npc_ETC_20150323_009561()
-msg("GELE573_TO_GELE574")
-end
-
------ Veja Ravine ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009562", "f_gele_57_3", -1358, 173, -740, -99, "npc_ETC_20150323_009562")
-function npc_ETC_20150323_009562()
-msg("GELE573_TO_HUE581")
-end
-
 ----- Tree Guard Post Barrier ----- 
 ----- Enter -----
 addnpc(147413, "ETC_20150317_009336", "f_gele_57_3", 249, -21, -733, 45, "npc_ETC_20150317_009336")
@@ -301,13 +280,6 @@ msg("CHAPLE577_ARUNE_02_BASIC02")
 msg("CHAPLE577_ARUNE_02_BASIC03")
 msg("d_chapel_57_7_dlg_11")
 msg("d_chapel_57_6_dlg_11")
-end
-
------ Thaumas Trail ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016503", "f_gele_57_3", 1495, -109, -711, 45, "npc_ETC_20151102_016503")
-function npc_ETC_20151102_016503()
-msg("GELE57_3_PILGRIM41_1")
 end
 
 ----- Lv1 Treasure Chest ----- 

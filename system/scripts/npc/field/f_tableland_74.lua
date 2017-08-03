@@ -1,17 +1,3 @@
------ Kadumel Cliff ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009599", "f_tableland_74", -2359, 347, -1629, -45, "npc_ETC_20150323_009599")
-function npc_ETC_20150323_009599()
-msg("TABLELAND74_TABLELAND73")
-end
-
------ Kalejimas Visiting Room ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009600", "f_tableland_74", 2040, 945, 2475, 123, "npc_ETC_20150323_009600")
-function npc_ETC_20150323_009600()
-msg("TABLELAND74_PRISON78")
-end
-
 ----- Soldier ----- 
 ----- npcselectdialog.ies | ClassName: TABLE74_SUBQ_SOLDIER5 -----
 ----- Dialog -----
@@ -1752,12 +1738,5 @@ end
 addnpc(147392, "ETC_20150317_009100", "f_tableland_74", 452, 594, 134, 45, "npc_ETC_20150317_009100")
 function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
-end
-
------ Inner Wall District 8 ----- 
------ Enter -----
-addnpc(40001, "ETC_20160718_022005", "f_tableland_74", -2255, 459, -91, 165, "npc_ETC_20160718_022005")
-function npc_ETC_20160718_022005()
-msg("TABLELAND74_CASTLE_20_3")
 end
 
