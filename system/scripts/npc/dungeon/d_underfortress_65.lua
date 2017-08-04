@@ -1,17 +1,3 @@
------ Inner Enceinte District ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001243", "d_underfortress_65", 586, 602, -2290, -67, "npc_ETC_20150317_001243")
-function npc_ETC_20150317_001243()
-msg("UNDERFORTRESS65_FLASH64")
-end
-
------ Drill Ground of Confliction ----- 
------ Enter -----
-addnpc(40001, "ETC_20170330_027523", "d_underfortress_65", -438, 337, 1978, 170, "npc_ETC_20170330_027523")
-function npc_ETC_20170330_027523()
-msg("UNDERFORTRESS65_UNDERFORTRESS66")
-end
-
 ----- [Amanda Grave Robbers]Amanda ----- 
 ----- npcselectdialog.ies | ClassName: AMANDA_65_1 -----
 ----- Dialog -----
@@ -290,12 +276,5 @@ function npc_QUEST_20150317_000002()
 msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_UNDERFORTRESS_65")
-end
-
------ Sventimas Exile ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009598", "d_underfortress_65", -1662, 113, 1215, 123, "npc_ETC_20150323_009598")
-function npc_ETC_20150323_009598()
-msg("UNDERFORTRESS65_TABLELAND72")
 end
 

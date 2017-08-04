@@ -94,13 +94,6 @@ msg("FTOWER44_GRITA_01_basic02")
 msg("FEDIMIAN_GRITA_BASIC02")
 end
 
------ Mage Tower 2F ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001213", "d_firetower_43", -2473, 494, -294, 20, "npc_ETC_20150317_001213")
-function npc_ETC_20150317_001213()
-msg("FIRETOWER43_TO_FIRETOWER42")
-end
-
 ----- Mage Tower 4F ----- 
 ----- Enter -----
 addnpc(147500, "ETC_20150317_001215", "d_firetower_43", 1809, 527, 694, 45, "npc_ETC_20150317_001215")

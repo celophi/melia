@@ -29,13 +29,6 @@ function npc_ETC_20151224_019925()
 msg("FD_CASTLE672_DAILY_BOX")
 end
 
------ Topes Fortress 1F ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016531", "d_castle_67_2", -1885, 1, -1296, -132, "npc_ETC_20151102_016531")
-function npc_ETC_20151102_016531()
-msg("CASTLE_67_2_TO_CASTLE_67_1")
-end
-
 ----- Demon Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----

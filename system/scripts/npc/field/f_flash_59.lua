@@ -1,24 +1,3 @@
------ Apsimesti Crossroads ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009585", "f_flash_59", -452, 109, 881, 175.76, "npc_ETC_20150323_009585")
-function npc_ETC_20150323_009585()
-msg("FLASH59_PILGRIM52")
-end
-
------ Roxona Market ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009593", "f_flash_59", 157, 134, 765, 136.25, "npc_ETC_20150323_009593")
-function npc_ETC_20150323_009593()
-msg("FLASH59_FLASH60")
-end
-
------ Ruklys Street ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001241", "f_flash_59", 1373, 134, 1084, 139, "npc_ETC_20150317_001241")
-function npc_ETC_20150317_001241()
-msg("FLASH59_FLASH61")
-end
-
 ----- [Royal Army]Guard ----- 
 ----- npcselectdialog.ies | ClassName: FLASH59_BENJAMINAS -----
 ----- Dialog -----
@@ -1145,13 +1124,6 @@ addnpc(147372, "ETC_20150317_009316", "f_flash_59", 161, 135, 550, 45, "npc_dumm
 
 ----- Faint Petrifying Frost ----- 
 addnpc(147372, "ETC_20150317_009316", "f_flash_59", 6, 135, 494, 45, "npc_dummy")
-
------ Downtown ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001242", "f_flash_59", 1426, 62, 635, 45, "npc_ETC_20150317_001242")
-function npc_ETC_20150317_001242()
-msg("FLASH59_FLASH63")
-end
 
 ----- Lv1 Treasure Chest ----- 
 ----- npcselectdialog.ies | ClassName:  -----

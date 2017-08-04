@@ -1,17 +1,3 @@
------ Drill Ground of Confliction ----- 
------ Enter -----
-addnpc(40001, "ETC_20170330_027523", "d_underfortress_67", 32, 288, -1661, -78, "npc_ETC_20170330_027523")
-function npc_ETC_20170330_027523()
-msg("UNDERFORTRESS67_UNDERFORTRESS66")
-end
-
------ Storage Quarter ----- 
------ Enter -----
-addnpc(40001, "ETC_20170330_027525", "d_underfortress_67", 351, 179, 546, 131, "npc_ETC_20170330_027525")
-function npc_ETC_20170330_027525()
-msg("UNDERFORTRESS67_UNDERFORTRESS68")
-end
-
 ----- [Amanda Grave Robbers]Amanda ----- 
 ----- npcselectdialog.ies | ClassName: AMANDA_67_1 -----
 ----- Dialog -----
@@ -157,12 +143,5 @@ addnpc(11283, "ETC_20150803_014081", "d_underfortress_67", 1776, 371, 802, -45, 
 function npc_ETC_20150803_014081()
 msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
-end
-
------ Ruklys Hall of Fame ----- 
------ Enter -----
-addnpc(40001, "ETC_20170330_027530", "d_underfortress_67", 884, 185, 3, -68, "npc_ETC_20170330_027530")
-function npc_ETC_20170330_027530()
-msg("UNDERFORTRESS67_UNDERFORTRESS30_1")
 end
 

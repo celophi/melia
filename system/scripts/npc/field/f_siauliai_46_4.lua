@@ -1,24 +1,3 @@
------ Uskis Arable Land ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009586", "f_siauliai_46_4", 1478, 225, 343, 46, "npc_ETC_20150323_009586")
-function npc_ETC_20150323_009586()
-msg("SIAULIAI46_4_SIAULIAI46_2")
-end
-
------ Septyni Glen ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009564", "f_siauliai_46_4", 303, 147, -1135, 315, "npc_ETC_20150323_009564")
-function npc_ETC_20150323_009564()
-msg("SIAULIAI46_4_HUEVILLAGE58_4")
-end
-
------ Vilna Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009587", "f_siauliai_46_4", -282, 225, 1041, 135, "npc_ETC_20150323_009587")
-function npc_ETC_20150323_009587()
-msg("SIAULIAI46_4_SIAULIAI46_3")
-end
-
 ----- Statue of Goddess Vakarine ----- 
 ----- npcselectdialog.ies | ClassName: STOUP_CAMP -----
 ----- Enter | Dialog -----
@@ -172,13 +151,6 @@ addnpc(147485, "QUEST_LV_0200_20150317_001010", "f_siauliai_46_4", 1093, 225, 79
 function npc_QUEST_LV_0200_20150317_001010()
 msg("SIAULIAI_46_4_SQ04_NPC02_basic01")
 msg("SIAULIAI_46_4_SQ04_NPC02_basic02")
-end
-
------ Shaton Farm ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009617", "f_siauliai_46_4", -555, 148, -1059, 225, "npc_ETC_20150323_009617")
-function npc_ETC_20150323_009617()
-msg("SIAULIAI46_4_FARM492")
 end
 
 ----- Lv1 Treasure Chest ----- 

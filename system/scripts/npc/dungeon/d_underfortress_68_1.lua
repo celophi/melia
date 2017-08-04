@@ -23,20 +23,6 @@ msg("GM_NPC_HIDE_UNHIDE")
 msg("WARP_D_UNDERFORTRESS_68_1")
 end
 
------ Seir Rainforest ----- 
------ Enter -----
-addnpc(40001, "ETC_20151016_015625", "d_underfortress_68_1", -1651, 303, 116, 221, "npc_ETC_20151016_015625")
-function npc_ETC_20151016_015625()
-msg("UNDERFOREST_68_1_TO_ORCHARD_32_4")
-end
-
------ Sicarius 2F ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016534", "d_underfortress_68_1", 1650, 182, 118, 45, "npc_ETC_20151102_016534")
-function npc_ETC_20151102_016534()
-msg("UNDERFORTRESS_68_1_TO_UNDERFORTRESS_68_2")
-end
-
 ----- Sicarius Secret Box ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----

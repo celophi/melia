@@ -335,20 +335,6 @@ msg("FLASH64_MQ_01_04")
 msg("UNDER_69_MQ060_succ01")
 end
 
------ Sentry Bailey ----- 
------ Enter -----
-addnpc(40001, "ETC_20170330_027522", "d_underfortress_66", 1287, 91, -311, -42, "npc_ETC_20170330_027522")
-function npc_ETC_20170330_027522()
-msg("UNDERFORTRESS66_UNDERFORTRESS65")
-end
-
------ Resident Quarter ----- 
------ Enter -----
-addnpc(40001, "ETC_20170330_027524", "d_underfortress_66", -603, 163, -85, -131, "npc_ETC_20170330_027524")
-function npc_ETC_20170330_027524()
-msg("UNDERFORTRESS66_UNDERFORTRESS67")
-end
-
 ----- Left-behind Royal Army Guard ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----

@@ -1,24 +1,3 @@
------ Forest of Prayer ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009584", "f_pilgrimroad_52", -1184, 140, -3332, 305, "npc_ETC_20150323_009584")
-function npc_ETC_20150323_009584()
-msg("PILGRIM52_PILGRIM51")
-end
-
------ Verkti Square ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009591", "f_pilgrimroad_52", -471, 245, 2056, 135, "npc_ETC_20150323_009591")
-function npc_ETC_20150323_009591()
-msg("PILGRIM52_FLASH59")
-end
-
------ Main Building ----- 
------ Enter -----
-addnpc(40001, "ETC_20170330_027518", "f_pilgrimroad_52", 1033, 47, -691, 70, "npc_ETC_20170330_027518")
-function npc_ETC_20170330_027518()
-msg("PILGRIM52_CATHEDRAL53")
-end
-
 ----- Great Merchant Gilliam ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
@@ -137,13 +116,6 @@ function npc_ETC_20150317_009416()
 msg("PILGRIM52_PLACE03")
 end
 
------ Apsimesti Crossroads ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009585", "f_pilgrimroad_52", 2646, 156, 282, 144, "npc_ETC_20150323_009585")
-function npc_ETC_20150323_009585()
-msg("WS_OUT_OF_SECRET")
-end
-
 ----- Warning ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
@@ -206,13 +178,6 @@ addnpc(40030, "ETC_20150428_011591", "f_pilgrimroad_52", 2652, 157, -374, 45, "n
 function npc_ETC_20150428_011591()
 msg("GM_QUEST_MODIFY_PC_SEL")
 msg("GM_NPC_HIDE_UNHIDE")
-end
-
------ Roxona Reconstruction Agency West Building ----- 
------ Enter -----
-addnpc(40001, "ETC_20150714_011747", "f_pilgrimroad_52", -1865, 165, -79, 225, "npc_ETC_20150714_011747")
-function npc_ETC_20150714_011747()
-msg("PILGRIMROAD52_TO_FIRETOWER611")
 end
 
 ----- Lv1 Treasure Chest ----- 

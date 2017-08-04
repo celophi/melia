@@ -395,13 +395,6 @@ function npc_ETC_20151102_017428()
 msg("JOB_2_RANGER_3_1_OBJ_STONE")
 end
 
------ Paupys Crossing ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009567", "f_bracken_63_1", 1440, 2, 1228, 93, "npc_ETC_20150323_009567")
-function npc_ETC_20150323_009567()
-msg("BRACKEN_63_1_SIAULIAI_11_RE")
-end
-
 ----- Hard Building Stone ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
@@ -424,13 +417,6 @@ end
 addnpc(10043, "ETC_20151102_017428", "f_bracken_63_1", 677, 1, 1104, 45, "npc_ETC_20151102_017428")
 function npc_ETC_20151102_017428()
 msg("JOB_2_RANGER_3_1_OBJ_STONE")
-end
-
------ Knidos Jungle ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016524", "f_bracken_63_1", -1984, 303, -1360, -134, "npc_ETC_20151102_016524")
-function npc_ETC_20151102_016524()
-msg("BRACKEN_63_1_BRACKEN_63_2")
 end
 
 ----- Laswi ----- 

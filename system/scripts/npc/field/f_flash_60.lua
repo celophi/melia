@@ -1,17 +1,3 @@
------ Verkti Square ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009591", "f_flash_60", 1232, 150, -104, 52, "npc_ETC_20150323_009591")
-function npc_ETC_20150323_009591()
-msg("FLASH60_FLASH59")
-end
-
------ Ruklys Street ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001241", "f_flash_60", 1005, 195, 1644, 81, "npc_ETC_20150317_001241")
-function npc_ETC_20150317_001241()
-msg("FLASH60_FLASH61")
-end
-
 ----- Wild Flower ----- 
 ----- npcselectdialog.ies | ClassName: JOB_CLERIC5_1_TRACK -----
 ----- Dialog -----
@@ -574,12 +560,5 @@ end
 addnpc(154027, "ETC_20150714_013149", "f_flash_60", 22, 173, 545, -2, "npc_ETC_20150714_013149")
 function npc_ETC_20150714_013149()
 msg("FLASH60_SQ_03_01")
-end
-
------ Stogas Plateau ----- 
------ Enter -----
-addnpc(40001, "ETC_20150804_014154", "f_flash_60", -1377, 152, 715, 180, "npc_ETC_20150804_014154")
-function npc_ETC_20150804_014154()
-msg("FLASH60_TABLELAND28_2")
 end
 

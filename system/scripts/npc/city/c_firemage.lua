@@ -41,10 +41,3 @@ msg("SIAULIAI_50_1_SQ_090_prog01")
 msg("SIAULIAI_50_1_SQ_090_prognpc01")
 end
 
------ Klaipeda ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001144", "c_firemage", 253, 2, 2, 46, "npc_ETC_20150317_001144")
-function npc_ETC_20150317_001144()
-msg("WS_FIREMAGE_KLAPEDA")
-end
-

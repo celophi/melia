@@ -1,10 +1,3 @@
------ Owl Burial Ground ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009565", "f_katyn_13", 71, 123, -2123, 49.57, "npc_ETC_20150323_009565")
-function npc_ETC_20150323_009565()
-msg("KATYN13_KATYN7_2")
-end
-
 ----- Sincere Owl Sculpture ----- 
 ----- npcselectdialog.ies | ClassName: KATYN13_1_OWLBOSS -----
 ----- Dialog -----
@@ -210,20 +203,6 @@ msg("KATYN13_ADDQUEST1_01")
 msg("KATYN13_ADDQUEST1_02")
 msg("KATYN13_ADDQUEST1_AG")
 msg("KATYN13_ADDQUEST5_succ")
-end
-
------ Saknis Plains ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009569", "f_katyn_13", -2725, 240, 1296, 225, "npc_ETC_20150323_009569")
-function npc_ETC_20150323_009569()
-msg("KATYN13_KATYN14")
-end
-
------ Septyni Glen ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009564", "f_katyn_13", -1079, 201, -2373, 225, "npc_ETC_20150323_009564")
-function npc_ETC_20150323_009564()
-msg("KATYN13_HUEVILLAGE58_4")
 end
 
 ----- Lv1 Treasure Chest ----- 

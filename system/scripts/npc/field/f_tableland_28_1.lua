@@ -1,17 +1,3 @@
------ Svalphinghas Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20160718_022008", "f_tableland_28_1", -845, 695, 1762, 132, "npc_ETC_20160718_022008")
-function npc_ETC_20160718_022008()
-msg("TABLELAND281_TO_MAPLE252")
-end
-
------ Stogas Plateau ----- 
------ Enter -----
-addnpc(40001, "ETC_20150804_014154", "f_tableland_28_1", -2889, 266, 712, -13, "npc_ETC_20150804_014154")
-function npc_ETC_20150804_014154()
-msg("TABLELAND281_TO_TABLELAND282")
-end
-
 ----- Mesafasla Assistant Commander Gomen ----- 
 ----- npcselectdialog.ies | ClassName: TABLELAND281_SQ_01 -----
 ----- Dialog -----
@@ -126,13 +112,6 @@ msg("JOB_SHINOBI_HIDDEN_SHINOBI_MASTER_dlg2")
 msg("JOB_SHINOBI_HIDDEN_SHINOBI_MASTER_dlg3")
 msg("TABLELAND28_1_HQ1_start1")
 msg("TABLELAND28_1_HQ1_succ1")
-end
-
------ Vedas Plateau ----- 
------ Enter -----
-addnpc(40001, "ETC_20151102_016522", "f_tableland_28_1", 550, 333, -862, -56, "npc_ETC_20151102_016522")
-function npc_ETC_20151102_016522()
-msg("TABLELAND28_1_TABLELAND11_1")
 end
 
 ----- Lv1 Treasure Chest ----- 

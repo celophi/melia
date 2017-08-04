@@ -226,22 +226,6 @@ msg("ABBAY_64_1_SQ030_succ01")
 msg("ABBAY_64_1_SQ030_startnpc01")
 end
 
------ Dadan Jungle ----- 
------ Enter -----
------ QuestIDs: ABBEY64_2_HQ1 -----
-addnpc(40001, "ETC_20151102_016525", "d_abbey_64_1", 911, 2, 857, 45, "npc_ETC_20151102_016525")
-function npc_ETC_20151102_016525()
-msg("GM_QUEST_MODIFY_PC_SEL")
-msg("GM_NPC_HIDE_UNHIDE")
-end
-
------ Novaha Annex ----- 
------ Enter -----
-addnpc(40001, "ETC_20151224_017820", "d_abbey_64_1", -1503, 367, -1706, -134, "npc_ETC_20151224_017820")
-function npc_ETC_20151224_017820()
-msg("ABBEY_64_1_ABBAY_64_2")
-end
-
 ----- Traveling Merchant Rose ----- 
 ----- npcselectdialog.ies | ClassName: ABBEY641_ROZE04 -----
 ----- Dialog -----

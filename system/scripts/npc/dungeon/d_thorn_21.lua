@@ -1,10 +1,3 @@
------ Sirdgela Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009572", "d_thorn_21", -412, 221, -37, -127, "npc_ETC_20150323_009572")
-function npc_ETC_20150323_009572()
-msg("THORN21_THORN20")
-end
-
 ----- Believer Bronius ----- 
 ----- npcselectdialog.ies | ClassName: THORN21_BELIEVER -----
 ----- Dialog -----
@@ -16,13 +9,6 @@ msg("THORN21_MQ02_startnpc_prog01")
 msg("THORN21_MQ02_succ01")
 msg("THORN21_MQ02_startnpc01")
 msg("THORN21_BELIEVER02_basic01")
-end
-
------ Sunset Flag Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_009282", "d_thorn_21", 985, 208, -1550, 315, "npc_ETC_20150317_009282")
-function npc_ETC_20150317_009282()
-msg("THORN21_THORN23")
 end
 
 ----- Believer Samantha ----- 

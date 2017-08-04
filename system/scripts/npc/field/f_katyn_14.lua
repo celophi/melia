@@ -303,20 +303,6 @@ function npc_ETC_20150317_009372()
 msg("KATYN14_MQ_05_ITEM")
 end
 
------ Poslinkis Forest ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009568", "f_katyn_14", 3516, 82, -887, 48, "npc_ETC_20150323_009568")
-function npc_ETC_20150323_009568()
-msg("WS_KATYN14_TO_KATYN13")
-end
-
------ Dvasia Peak ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009573", "f_katyn_14", -3213, 306, -1446, -124, "npc_ETC_20150323_009573")
-function npc_ETC_20150323_009573()
-msg("KATYN14_THORN22")
-end
-
 ----- Unknown Soldier's Memento ----- 
 ----- npcselectdialog.ies | ClassName: KATYN14_SUB_WOLF -----
 ----- Enter | Dialog -----

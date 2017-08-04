@@ -1,10 +1,3 @@
------ Downtown ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001242", "f_flash_64", 12, 825, -2596, -54.46, "npc_ETC_20150317_001242")
-function npc_ETC_20150317_001242()
-msg("FLASH64_FLASH63")
-end
-
 ----- Statue of Goddess Zemyna ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
@@ -559,26 +552,5 @@ end
 addnpc(46011, "ETC_20150317_000359", "f_flash_64", -974, 587, 513, 45, "npc_ETC_20150317_000359")
 function npc_ETC_20150317_000359()
 msg("FLASH64_SQ_07_NPC")
-end
-
------ Sentry Bailey ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001244", "f_flash_64", -2, 843, 2339, 101, "npc_ETC_20150317_001244")
-function npc_ETC_20150317_001244()
-msg("FLASH64_UNDERFORTRESS65")
-end
-
------ Ibre Plateau ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009596", "f_flash_64", -374, 843, 2045, 153, "npc_ETC_20150323_009596")
-function npc_ETC_20150323_009596()
-msg("FLASH64_TABLELAND70")
-end
-
------ Dingofasil District ----- 
------ Enter -----
-addnpc(40001, "ETC_20150714_011743", "f_flash_64", -1644, 513, -424, 225, "npc_ETC_20150714_011743")
-function npc_ETC_20150714_011743()
-msg("FLASH_64_TO_FLASH_58")
 end
 

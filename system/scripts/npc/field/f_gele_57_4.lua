@@ -1,24 +1,3 @@
------ Nefritas Cliff ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009560", "f_gele_57_4", -841, -80, -155, -39, "npc_ETC_20150323_009560")
-function npc_ETC_20150323_009560()
-msg("GELE574_TO_GELE573")
-end
-
------ Tenet Church First Floor ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_009339", "f_gele_57_4", 1296, -79, 2145, 138, "npc_ETC_20150317_009339")
-function npc_ETC_20150317_009339()
-msg("GELE574_TO_CHAPEL576")
-end
-
------ Tenet Church B1 ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001162", "f_gele_57_4", 1073, -79, 2046, 136, "npc_ETC_20150317_001162")
-function npc_ETC_20150317_001162()
-msg("GELE574_TO_CHAPEL575_1")
-end
-
 ----- Follower Alfonsas ----- 
 ----- npcselectdialog.ies | ClassName: GELE574_ADRIJA -----
 ----- Dialog -----
@@ -108,13 +87,6 @@ end
 addnpc(147380, "ETC_20150317_009342", "f_gele_57_4", 159, -80, 796, 45, "npc_ETC_20150317_009342")
 function npc_ETC_20150317_009342()
 msg("GELE574_MQ_08_01")
-end
-
------ Entrance of Kateen Forest ----- 
------ Enter -----
-addnpc(40001, "QUEST_LV_0100_20150317_005052", "f_gele_57_4", -912, -80, 2474, 135, "npc_QUEST_LV_0100_20150317_005052")
-function npc_QUEST_LV_0100_20150317_005052()
-msg("GELE574_KATYN_7")
 end
 
 ----- Follower Rikke ----- 
@@ -269,13 +241,6 @@ function npc_QUEST_20150317_000566()
 msg("UPPER_WARNING_F_GELE_57_4")
 end
 
------ Guards Graveyard ----- 
------ Enter -----
-addnpc(40001, "ETC_20150401_010447", "f_gele_57_4", -442, -80, 2142, 135, "npc_ETC_20150401_010447")
-function npc_ETC_20150401_010447()
-msg("GELE_57_4_TO_CATACOMB_01")
-end
-
 ----- Underground Chapel Dungeon Notice Board ----- 
 ----- npcselectdialog.ies | ClassName: INSTANCE_DUNGEON_CHAPLE_03 -----
 ----- Enter | Dialog -----
@@ -293,12 +258,5 @@ end
 addnpc(147392, "ETC_20150317_009100", "f_gele_57_4", -1855, -30, 159, -45, "npc_ETC_20150317_009100")
 function npc_ETC_20150317_009100()
 msg("TREASUREBOX_LV")
-end
-
------ Gele Plateau Mission ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001364", "f_gele_57_4", -251, -5, -814, -98, "npc_ETC_20150317_001364")
-function npc_ETC_20150317_001364()
-msg("GELE574_TO_GUILDMISSION")
 end
 

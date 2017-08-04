@@ -240,13 +240,6 @@ msg("CATACOMB_25_4_SQ_90_PG")
 msg("CATACOMB_25_4_SQ_90_AGD")
 end
 
------ West Siauliai Woods ----- 
------ Enter -----
-addnpc(40001, "ETC_20150317_001151", "c_Klaipe", -201, -1, -1182, -55, "npc_ETC_20150317_001151")
-function npc_ETC_20150317_001151()
-msg("WS_KLAPEDA_SIAULST1")
-end
-
 ----- Bulletin Board ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Dialog -----
@@ -339,13 +332,6 @@ msg("HT_KLAPEDA_NPC_14_BASIC02")
 msg("HT_KLAPEDA_NPC_14_BASIC03")
 end
 
------ East Siauliai Woods ----- 
------ Enter -----
-addnpc(40001, "QUEST_20150317_000822", "c_Klaipe", 799, -1, 331, 90, "npc_QUEST_20150317_000822")
-function npc_QUEST_20150317_000822()
-msg("WS_KLAPEDA_SIAULST2")
-end
-
 ----- [Market Manager] Logi ----- 
 ----- npcselectdialog.ies | ClassName:  -----
 ----- Enter | Dialog -----
@@ -353,14 +339,6 @@ addnpc(20169, "ETC_20150317_009211", "c_Klaipe", 278, 79, 137, 45, "npc_ETC_2015
 function npc_ETC_20150317_009211()
 msg("TUTO_MARKET_NPC")
 msg("KLAPEDA_MARKET_SEL")
-end
-
------ Bokor Master's Home ----- 
------ npcselectdialog.ies | ClassName:  -----
------ Dialog -----
-addnpc(40001, "ETC_20150317_001146", "c_Klaipe", -976, -1, -502, 180, "npc_ETC_20150317_001146")
-function npc_ETC_20150317_001146()
-msg("WS_KLAPEDA_BOCORS")
 end
 
 ----- [Peltasta Master]Maria Leed ----- 
@@ -395,22 +373,6 @@ msg("JOB_PELTASTA5_1_select")
 msg("JOB_PELTASTA5_1_prog")
 msg("JOB_PELTASTA5_1_succ")
 msg("JOB_PELTASTA5_1_AG")
-end
-
------ Highlander Master's Training Hall ----- 
------ npcselectdialog.ies | ClassName:  -----
------ Dialog -----
-addnpc(40001, "ETC_20150317_001145", "c_Klaipe", 223, 80, -95, 180, "npc_ETC_20150317_001145")
-function npc_ETC_20150317_001145()
-msg("WS_KLAPEDA_HIGHLANDER")
-end
-
------ Pyromancer Master's Lab ----- 
------ npcselectdialog.ies | ClassName:  -----
------ Dialog -----
-addnpc(40001, "ETC_20150317_001147", "c_Klaipe", -2, 96, -290, 155, "npc_ETC_20150317_001147")
-function npc_ETC_20150317_001147()
-msg("WS_KLAPEDA_FIREMAGE")
 end
 
 ----- [Cryomancer Master] Aleister Crowley ----- 
@@ -784,14 +746,6 @@ end
 addnpc(152004, "ETC_20150317_009215", "c_Klaipe", -345, 149, 284, 0, "npc_ETC_20150317_009215")
 function npc_ETC_20150317_009215()
 msg("COLLECTION_SHOP")
-end
-
------ Gytis Settlement Area ----- 
------ Enter -----
-addnpc(40001, "ETC_20150323_009621", "c_Klaipe", 241, 149, 896, 109, "npc_ETC_20150323_009621")
-function npc_ETC_20150323_009621()
-msg("GM_QUEST_MODIFY_PC_SEL")
-msg("GM_NPC_HIDE_UNHIDE")
 end
 
 ----- [Storage Keeper] Rita ----- 
