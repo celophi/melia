@@ -946,19 +946,20 @@ namespace Melia.Shared.Network
 		public const int CZ_FIXED_NOTICE_SHOW = 0x0E3F; // Size: 10
 		public const int CZ_SAGE_SKILL_GO_FRIEND = 0x0E40; // Size: 90
 		public const int CZ_REQUEST_CHANGE_NAME = 0x0E41; // Size: 66
-		public const int ZC_HOLD_EXP_BOOK_TIME = 0x0E43; // Size: 25
-		public const int CZ_HOLD_EXP_BOOK_TIME = 0x0E44; // Size: 14
-		public const int CZ_SCREENSHOT_HASH = 0x0E45; // Size: 43
-		public const int CZ_REQ_MOVE_TO_INDUN = 0x0E46; // Size: 18
-		public const int CZ_CLEAR_INDUN_REG = 0x0E47; // Size: 10
-		public const int CZ_REQ_REGISTER_TO_INDUN = 0x0E48; // Size: 14
-		public const int CZ_REQ_GUILD_MEMBER_AUTHORITY = 0x0E49; // Size: 23
-		public const int CZ_TPSHOP_RTPP_FOR_TEST = 0x0E4A; // Size: 10
-		public const int CZ_REQ_FORGERY = 0x0E4B; // Size: 30
-		public const int CZ_REQ_BUILD_FOODTABLE = 0x0E4C; // Size: 79
-		public const int CZ_REQ_UNDERSTAFF_ENTER_ALLOW = 0x0E4D; // Size: 10
-		public const int CZ_REQ_UNDERSTAFF_ENTER_ALLOW_WITH_PARTY = 0x0E4E; // Size: 14
-		public const int ZC_PLAY_PAIR_ANIMATION = 0x0E4F; // Size: 30
+		public const int ZC_HOLD_EXP_BOOK_TIME = 0x0E42; // Size: 25
+		public const int CZ_HOLD_EXP_BOOK_TIME = 0x0E43; // Size: 14
+		public const int CZ_SCREENSHOT_HASH = 0x0E44; // Size: 43
+		public const int CZ_REQ_MOVE_TO_INDUN = 0x0E45; // Size: 18
+		public const int CZ_CLEAR_INDUN_REG = 0x0E46; // Size: 10
+		public const int CZ_REQ_REGISTER_TO_INDUN = 0x0E47; // Size: 14
+		public const int CZ_REQ_GUILD_MEMBER_AUTHORITY = 0x0E48; // Size: 23
+		public const int CZ_TPSHOP_RTPP_FOR_TEST = 0x0E49; // Size: 10
+		public const int CZ_REQ_FORGERY = 0x0E4A; // Size: 30
+		public const int CZ_REQ_BUILD_FOODTABLE = 0x0E4B; // Size: 79
+		public const int CZ_REQ_UNDERSTAFF_ENTER_ALLOW = 0x0E4C; // Size: 10
+		public const int CZ_REQ_UNDERSTAFF_ENTER_ALLOW_WITH_PARTY = 0x0E4D; // Size: 14
+		public const int ZC_PLAY_PAIR_ANIMATION = 0x0E4E; // Size: 30
+		public const int CZ_DISCONNECT_REASON_FOR_LOG = 0x0E4F; // Size: 0
 
 		private static readonly Dictionary<int, int> _sizes = new Dictionary<int, int>();
 		private static readonly Dictionary<int, string> _names = new Dictionary<int, string>();
@@ -1630,6 +1631,7 @@ namespace Melia.Shared.Network
 			_sizes[Op.CZ_REQ_UNDERSTAFF_ENTER_ALLOW] = 10;
 			_sizes[Op.CZ_REQ_UNDERSTAFF_ENTER_ALLOW_WITH_PARTY] = 14;
 			_sizes[Op.ZC_PLAY_PAIR_ANIMATION] = 30;
+			_sizes[Op.CZ_DISCONNECT_REASON_FOR_LOG] = 0;
 
 			foreach (var field in typeof(Op).GetFields(BindingFlags.Public | BindingFlags.Static))
 				_names[(int)field.GetValue(null)] = field.Name;
