@@ -87,6 +87,11 @@ namespace Melia.Shared
 					this.LoadDb(this.Data.JobDb, "db/jobs.txt", reload);
 				}
 
+				if ((toLoad & DataToLoad.Help) != 0)
+				{
+					this.LoadDb(this.Data.HelpDb, "db/help.txt", reload);
+				}
+
 				if ((toLoad & DataToLoad.Maps) != 0)
 				{
 					this.LoadDb(this.Data.MapDb, "db/maps.txt", reload);
@@ -233,6 +238,7 @@ namespace Melia.Shared
 		Dialogues = 0x100,
 		Shops = 0x200,
 		StartingCities = 0x400,
+		Help = 0x800,
 
 		All = 0x7FFFFFFF,
 	}

@@ -337,6 +337,64 @@ namespace Melia.Channel.Network
 		}
 
 		/// <summary>
+		/// Sends a list of help topics to the character.
+		/// </summary>
+		/// <param name="character"></param>
+		public static void ZC_HELP_LIST(Character character)
+		{
+			// initial help topics
+			var initial = new List<string>
+			{
+				"TUTO_MOVE_KB",
+				"TUTO_MOVE_JUMP",
+				"TUTO_ATTACK_KB",
+				"TUTO_MAP",
+				"TUTO_INVEN",
+				"TUTO_QUEST",
+				"TUTO_ACHIEVEMENT",
+				"TUTO_C_MONSTER",
+				"TUTO_PARTY",
+				"TUTO_PVP",
+				"TUTO_TELEPORT",
+				"TUTO_CARDBATTLE",
+				"TUTO_BARRACK",
+				"TUTO_CAPTURE",
+				"TUTO_PC_TRADE",
+				"TUTO_GUILD",
+				"TUTO_GUILD_AGIT",
+				"TUTO_GUILD_EVENT",
+				"TUTO_GROWING_NORMAL",
+				"TUTO_GROWING_SPECIAL",
+				"TUTO_CLASS",
+				"TUTO_POINT_SHOP",
+				"TUTO_ESCAPE_ORB",
+				"TUTO_STREET_STALL",
+				"TUTO_OBLATION",
+				"TUTO_CHATTING_COMMAND",
+				"TUTO_FIELD_BOSS",
+				"TUTO_GUILD_WAR",
+				"TUTO_GUILD_BATTLE"
+			};
+
+			var packet = new Packet(Op.ZC_HELP_LIST);
+			packet.PutInt(initial.Count);
+			foreach (var topic in initial)
+			{
+				var data = ChannelServer.Instance.Data.HelpDb.FirstOrDefault(x => x.Name == topic);
+				if (data == null)
+				{
+					Log.Error("ZC_HELP_LIST: Help data '{0}' not found.", topic);
+					return;
+				}
+
+				packet.PutInt(data.HelpId);
+				packet.PutByte(0); //?
+			}
+			
+			character.Connection.Send(packet);
+		}
+
+		/// <summary>
 		/// Sends ZC_ACHIEVE_POINT_LIST to character.
 		/// </summary>
 		/// <param name="character"></param>
