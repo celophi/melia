@@ -1328,28 +1328,7 @@ namespace Melia.Channel.Network
 			packet.PutInt(0x4C); // subop
 
 			packet.PutLong(conn.Account.Id);
-
-			var length = conn.Account.MapVisibility.Count * 8;
-			foreach (var pair in conn.Account.MapVisibility)
-			{
-				string key = null;
-				int id = -1;
-
-				try
-				{
-					key = "HadVisited_" + pair.Key;
-					id = ObjectProperty.Account[key];
-				}
-				catch (Exception e)
-				{
-					Log.Error("ZC_NORMAL_AccountUpdate: Error. Unable to index object property '{0}'", key);
-					Log.Error(e.Message, e.TargetSite, e.StackTrace);
-					return;
-				}
-
-				packet.PutInt(id);
-				packet.PutFloat(1);
-			}
+			AccountHelper.AddAccountProperties(packet, conn.Account);
 
 			conn.Send(packet);
 		}
