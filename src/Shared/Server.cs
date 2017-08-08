@@ -92,6 +92,11 @@ namespace Melia.Shared
 					this.LoadDb(this.Data.HelpDb, "db/help.txt", reload);
 				}
 
+				if ((toLoad & DataToLoad.CustomCommand) != 0)
+				{
+					this.LoadDb(this.Data.CustomCommandDb, "db/customcommand.txt", reload);
+				}
+
 				if ((toLoad & DataToLoad.Maps) != 0)
 				{
 					this.LoadDb(this.Data.MapDb, "db/maps.txt", reload);
@@ -239,6 +244,7 @@ namespace Melia.Shared
 		Shops = 0x200,
 		StartingCities = 0x400,
 		Help = 0x800,
+		CustomCommand = 0x1000,
 
 		All = 0x7FFFFFFF,
 	}

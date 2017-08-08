@@ -132,6 +132,7 @@ namespace Melia.Channel.Network
 			Send.ZC_MOVE_SPEED(character);
 			Send.ZC_NORMAL_WorldMapNeedsUpdate(conn);
 
+
 			// For first time playing
 			Send.ZC_PC_PROP_UPDATE(character, ObjectProperty.PCEtc.FirstPlay, 1);
 			Send.ZC_ADDON_MSG(character, ZCAddonMsg.KEYBOARD_TUTORIAL);
@@ -905,6 +906,28 @@ namespace Melia.Channel.Network
 		public void CZ_CHECK_PING(ChannelConnection conn, Packet packet)
 		{
 			// No parameters, no response.
+		}
+
+		/// <summary>
+		/// Specifies various commands found in 'customcommand.ies'.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CZ_CUSTOM_COMMAND)]
+		public void CZ_CUSTOM_COMMAND(ChannelConnection conn, Packet packet)
+		{
+			var command = packet.GetInt();
+			var classId = packet.GetInt();
+			var cmdArg = packet.GetInt();
+
+			var data = ChannelServer.Instance.Data.CustomCommandDb.FirstOrDefault(x => x.ClassId == command);
+			if (data == null)
+			{
+				Log.Error("CZ_CUSTOM_COMMAND: Custom command data '{0}' not found.", command);
+				return;
+			}
+
+			Log.Info("CZ_CUSTOM_COMMAND: Received command '{0}' for classId '{1}' with arg '{2}'", data.ClassName, classId, cmdArg);
 		}
 
 		/// <summary>
