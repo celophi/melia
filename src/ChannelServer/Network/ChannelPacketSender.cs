@@ -390,7 +390,7 @@ namespace Melia.Channel.Network
 				packet.PutInt(data.HelpId);
 				packet.PutByte(0); //?
 			}
-			
+
 			character.Connection.Send(packet);
 		}
 
@@ -423,7 +423,7 @@ namespace Melia.Channel.Network
 				packet.PutString(macro.Message, 128);
 				packet.PutInt(macro.Pose);
 			}
-			
+
 			character.Connection.Send(packet);
 		}
 
@@ -1316,6 +1316,42 @@ namespace Melia.Channel.Network
 			packet.PutEmptyBin(8);
 
 			character.Map.Broadcast(packet, character);
+		}
+
+		/// <summary>
+		/// Sends account properties.
+		/// </summary>
+		/// <param name="conn"></param>
+		public static void ZC_NORMAL_AccountUpdate(ChannelConnection conn)
+		{
+			var packet = new Packet(Op.ZC_NORMAL);
+			packet.PutInt(0x4C); // subop
+
+			packet.PutLong(conn.Account.Id);
+
+			var length = conn.Account.MapVisibility.Count * 8;
+			foreach (var pair in conn.Account.MapVisibility)
+			{
+				string key = null;
+				int id = -1;
+
+				try
+				{
+					key = "HadVisited_" + pair.Key;
+					id = ObjectProperty.Account[key];
+				}
+				catch (Exception e)
+				{
+					Log.Error("ZC_NORMAL_AccountUpdate: Error. Unable to index object property '{0}'", key);
+					Log.Error(e.Message, e.TargetSite, e.StackTrace);
+					return;
+				}
+
+				packet.PutInt(id);
+				packet.PutFloat(1);
+			}
+
+			conn.Send(packet);
 		}
 
 		/// <summary>
