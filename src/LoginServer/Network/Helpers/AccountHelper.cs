@@ -29,23 +29,23 @@ namespace Melia.Login.Network.Helpers
 			}
 
 			// Free TP
-			packet.PutInt(ObjectProperty.Account.Medal);
+			packet.PutInt(ObjectProperty.Account["Medal"]);
 			packet.PutFloat(account.Medals);
 
-			packet.PutInt(ObjectProperty.Account.Medal_Get_Date);
+			packet.PutInt(ObjectProperty.Account["Medal_Get_Date"]);
 
 			packet.PutShort(5); // length of the next string
 			packet.PutString("None");
 			
 			//Event TP
-			packet.PutInt(ObjectProperty.Account.GiftMedal);
+			packet.PutInt(ObjectProperty.Account["GiftMedal"]);
 			packet.PutFloat(10);
 
 			// TP
-			packet.PutInt(ObjectProperty.Account.PremiumMedal);
+			packet.PutInt(ObjectProperty.Account["PremiumMedal"]);
 			packet.PutFloat(0);
 
-			packet.PutInt(ObjectProperty.Account.SelectedBarrack);
+			packet.PutInt(ObjectProperty.Account["SelectedBarrack"]);
 			packet.PutFloat(account.SelectedBarrack);
 		}
 	}
