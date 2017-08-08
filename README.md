@@ -14,7 +14,8 @@ in the context of its license.
 Compatibility
 ------------------------------
 Melia is compatible to version 164556 of the iTOS client.  
-Compatibility to any other clients or versions is not guaranteed, and in fact unlikely.
+Compatibility to any other clients or versions is not guaranteed, and in fact unlikely.  
+Please consult the [wiki](https://github.com/aura-project/melia/wiki) first if you are having trouble during setup.
 
 Requirements
 ------------------------------
