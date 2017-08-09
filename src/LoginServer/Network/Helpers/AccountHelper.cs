@@ -30,7 +30,7 @@ namespace Melia.Login.Network.Helpers
 
 			// Free TP
 			packet.PutInt(ObjectProperty.Account["Medal"]);
-			packet.PutFloat(account.Medals);
+			packet.PutFloat(account.Medal);
 
 			packet.PutInt(ObjectProperty.Account["Medal_Get_Date"]);
 

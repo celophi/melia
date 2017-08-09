@@ -33,6 +33,19 @@ namespace Melia.Login.Database
 		public string Password { get; set; }
 
 		/// <summary>
+		/// Id of the barrack map
+		/// </summary>
+		public int SelectedBarrack { get; set; }
+
+		public int Medal { get; set; } = 500;
+
+		public int GiftMedal { get; set; } = 100;
+
+		public int PremiumMedal { get; set; } = 50;
+
+		public int ReceiveGiftMedal { get; set; }
+
+		/// <summary>
 		/// Gets or sets account's team name, also updates all characters.
 		/// </summary>
 		public string TeamName
@@ -45,26 +58,13 @@ namespace Melia.Login.Database
 			}
 		}
 		private string _teamName;
-
-		/// <summary>
-		/// Amount of medals (iCoins).
-		/// </summary>
-		public int Medals { get; set; }
-
-		/// <summary>
-		/// Id of the barrack map.
-		/// </summary>
-		public int SelectedBarrack { get; set; }
-
+		
 		/// <summary>
 		/// Creates new account.
 		/// </summary>
 		public Account()
 		{
 			_characters = new List<Character>();
-
-			this.Medals = 500;
-			this.SelectedBarrack = 11;
 		}
 
 		/// <summary>

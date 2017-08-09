@@ -426,13 +426,13 @@ namespace Melia.Login.Network
 				return;
 
 			// Check medals
-			if (conn.Account.Medals < barrackData.Price)
+			if (conn.Account.Medal < barrackData.Price)
 			{
 				Log.Warning("CB_BUY_THEMA: User '{0}' tried to buy barrack without having the necessary coins.");
 				return;
 			}
 
-			conn.Account.Medals -= barrackData.Price;
+			conn.Account.Medal -= barrackData.Price;
 			conn.Account.SelectedBarrack = newMapId;
 
 			Send.BC_ACCOUNT_PROP(conn, conn.Account);
