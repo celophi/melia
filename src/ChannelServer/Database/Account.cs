@@ -47,6 +47,17 @@ namespace Melia.Channel.Database
 		/// </summary>
 		public Variables Variables { get; private set; }
 
+
+		/// <summary>
+		/// Amount of medals (iCoins).
+		/// </summary>
+		public int Medals { get; set; }
+
+		/// <summary>
+		/// Id of the barrack map.
+		/// </summary>
+		public int SelectedBarrack { get; set; }
+
 		/// <summary>
 		/// Contains all visible portions of maps.
 		/// </summary>
@@ -67,6 +78,9 @@ namespace Melia.Channel.Database
 		/// </summary>
 		public Account()
 		{
+			this.Medals = 500;
+			this.SelectedBarrack = 11;
+
 			this.Settings = new AccountSettings();
 			this.Variables = new Variables();
 			this._chatMacros = new List<ChatMacro>();

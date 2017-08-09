@@ -1,17 +1,16 @@
-﻿// Copyright (c) Aura development team - Licensed under GNU GPL
-// For more information, see license file in the main folder
-
-using Melia.Login.Database;
+﻿using Melia.Channel.Database;
 using Melia.Shared.Const;
 using Melia.Shared.Network;
+using Melia.Shared.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Login.Network.Helpers
+namespace Melia.Channel.Network.Helpers
 {
+	// Merge this with the account helper in the login server project.
 	public static class AccountHelper
 	{
 		/// <summary>
@@ -21,12 +20,10 @@ namespace Melia.Login.Network.Helpers
 		/// <param name="account"></param>
 		public static void AddAccountProperties(this Packet packet, Account account)
 		{
-			packet.PutShort(43); // Account properties size
+			var length = account.MapVisibility.Count * 8;
+			length += 43;
 
-			// [i11257 (2016-03-25)] ?
-			{
-				packet.PutShort(1004);
-			}
+			packet.PutShort(length); // Account properties size
 
 			// Free TP
 			packet.PutInt(ObjectProperty.Account["Medal"]);
@@ -36,7 +33,7 @@ namespace Melia.Login.Network.Helpers
 
 			packet.PutShort(5); // length of the next string
 			packet.PutString("None");
-			
+
 			//Event TP
 			packet.PutInt(ObjectProperty.Account["GiftMedal"]);
 			packet.PutFloat(10);
@@ -47,6 +44,13 @@ namespace Melia.Login.Network.Helpers
 
 			packet.PutInt(ObjectProperty.Account["SelectedBarrack"]);
 			packet.PutFloat(account.SelectedBarrack);
+
+			foreach (var pair in account.MapVisibility)
+			{
+				var id = ObjectProperty.Account["HadVisited_" + pair.Key];
+				packet.PutInt(id);
+				packet.PutFloat(1);
+			}
 		}
 	}
 }

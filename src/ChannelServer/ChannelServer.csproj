@@ -59,6 +59,7 @@
     <Compile Include="Network\ChannelConnection.cs" />
     <Compile Include="Network\ChannelPacketHandler.cs" />
     <Compile Include="Network\ChannelPacketSender.cs" />
+    <Compile Include="Network\Helpers\AccountHelper.cs" />
     <Compile Include="Network\Helpers\MonsterHelper.cs" />
     <Compile Include="Network\Helpers\SkillHelper.cs" />
     <Compile Include="Program.cs" />

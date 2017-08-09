@@ -131,10 +131,11 @@ namespace Melia.Channel.Network
 			Send.ZC_JOB_PTS(character);
 			Send.ZC_MOVE_SPEED(character);
 			Send.ZC_NORMAL_WorldMapNeedsUpdate(conn);
+			Send.ZC_NORMAL_AccountUpdate(conn);
 
 
 			// For first time playing
-			Send.ZC_PC_PROP_UPDATE(character, ObjectProperty.PCEtc.FirstPlay, 1);
+			Send.ZC_PC_PROP_UPDATE(character, ObjectProperty.PCEtc["FirstPlay"], 1);
 			Send.ZC_ADDON_MSG(character, ZCAddonMsg.KEYBOARD_TUTORIAL);
 
 			Send.ZC_SHARED_MSG(character, SharedMsgType.QuestUpdate);
@@ -877,8 +878,8 @@ namespace Melia.Channel.Network
 
 					// Official doesn't update UsedStat with this packet =<
 					Send.ZC_OBJECT_PROPERTY(character,
-						ObjectProperty.PC.STR, ObjectProperty.PC.CON, ObjectProperty.PC.INT, ObjectProperty.PC.MNA, ObjectProperty.PC.DEX,
-						ObjectProperty.PC.UsedStat
+						ObjectProperty.PC["STR"], ObjectProperty.PC["CON"], ObjectProperty.PC["INT"], ObjectProperty.PC["MNA"], ObjectProperty.PC["DEX"],
+						ObjectProperty.PC["UsedStat"]
 					);
 
 					//Send.ZC_PC_PROP_UPDATE(character, ObjectProperty.PC.STR_STAT, 0);
