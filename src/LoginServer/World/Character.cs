@@ -17,17 +17,17 @@ namespace Melia.Login.World
 		/// <summary>
 		/// Index of character in character list.
 		/// </summary>
-		public byte Index { get; set; }
+		public virtual byte Index { get; set; }
 
 		/// <summary>
 		/// Ids of equipped items.
 		/// </summary>
-		public int[] Equipment { get; private set; }
+		public virtual IList<int> Equipment { get; protected set; }
 
 		/// <summary>
 		/// Character's position in barracks.
 		/// </summary>
-		public Position BarrackPosition { get; set; }
+		public virtual Position BarrackPosition { get; set; }
 
 		/// <summary>
 		/// Creates new character.
@@ -41,7 +41,7 @@ namespace Melia.Login.World
 		/// <summary>
 		/// Initializes equipment for first time creation.
 		/// </summary>
-		public void InitEquipment()
+		public virtual void InitEquipment()
 		{
 			// TODO: This belongs in a constructor (complicated with data persistence).
 			switch (this.Job)
@@ -71,9 +71,9 @@ namespace Melia.Login.World
 		/// Returns ids of equipped items.
 		/// </summary>
 		/// <returns></returns>
-		public int[] GetEquipIds()
+		public virtual int[] GetEquipIds()
 		{
-			return this.Equipment;
+			return this.Equipment.ToArray();
 		}
 	}
 }

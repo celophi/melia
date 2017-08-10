@@ -2,6 +2,7 @@
 // For more information, see license file in the main folder
 
 using Melia.Login.World;
+using NHibernate.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,27 +16,27 @@ namespace Melia.Login.Database
 	/// </summary>
 	public class Account
 	{
-		private List<Character> _characters;
+		private IList<Character> _characters { get; set; }
 
 		/// <summary>
 		/// Account id.
 		/// </summary>
-		public long Id { get; set; }
+		public virtual long Id { get; set; }
 
 		/// <summary>
 		/// Account name.
 		/// </summary>
-		public string Name { get; set; }
+		public virtual string Name { get; set; }
 
 		/// <summary>
 		/// Account password.
 		/// </summary>
-		public string Password { get; set; }
+		public virtual string Password { get; set; }
 
 		/// <summary>
 		/// Gets or sets account's team name, also updates all characters.
 		/// </summary>
-		public string TeamName
+		public virtual string TeamName
 		{
 			get { return _teamName; }
 			set
@@ -49,12 +50,12 @@ namespace Melia.Login.Database
 		/// <summary>
 		/// Amount of medals (iCoins).
 		/// </summary>
-		public int Medals { get; set; }
+		public virtual int Medals { get; set; }
 
 		/// <summary>
 		/// Id of the barrack map.
 		/// </summary>
-		public int SelectedBarrack { get; set; }
+		public virtual int SelectedBarrack { get; set; }
 
 		/// <summary>
 		/// Creates new account.
@@ -71,7 +72,7 @@ namespace Melia.Login.Database
 		/// Returns list of all characters on account.
 		/// </summary>
 		/// <returns></returns>
-		public Character[] GetCharacters()
+		public virtual Character[] GetCharacters()
 		{
 			lock (_characters)
 				return _characters.ToArray();
@@ -82,7 +83,7 @@ namespace Melia.Login.Database
 		/// </summary>
 		/// <param name="index"></param>
 		/// <returns></returns>
-		public Character GetCharacterByIndex(byte index)
+		public virtual  Character GetCharacterByIndex(byte index)
 		{
 			lock (_characters)
 				return _characters.FirstOrDefault(a => a.Index == index);
@@ -93,7 +94,7 @@ namespace Melia.Login.Database
 		/// </summary>
 		/// <param name="id"></param>
 		/// <returns></returns>
-		public Character GetCharacterById(long id)
+		public virtual Character GetCharacterById(long id)
 		{
 			lock (_characters)
 				return _characters.FirstOrDefault(a => a.Id == id);
@@ -140,7 +141,7 @@ namespace Melia.Login.Database
 		/// <returns></returns>
 		public static Account LoadFromDb(string accountName)
 		{
-			var account = LoginServer.Instance.Database.GetAccount(accountName);
+			var account = LoginServer.Instance.Database.GetByName(accountName);
 			if (account == null)
 				return null;
 
@@ -161,7 +162,7 @@ namespace Melia.Login.Database
 		/// </summary>
 		/// <param name="character"></param>
 		/// <returns></returns>
-		public bool DeleteCharacter(Character character)
+		public virtual bool DeleteCharacter(Character character)
 		{
 			if (!_characters.Contains(character))
 				return false;
@@ -172,14 +173,15 @@ namespace Melia.Login.Database
 			// do this regardless of the query result.
 			this.RemoveCharacter(character);
 
-			return LoginServer.Instance.Database.DeleteCharacter(character.Id);
+			LoginServer.Instance.Database.DeleteCharacter(character);
+			return true;
 		}
 
 		/// <summary>
 		/// Adds character to account and the database.
 		/// </summary>
 		/// <param name="character"></param>
-		public void CreateCharacter(Character character)
+		public virtual void CreateCharacter(Character character)
 		{
 			LoginServer.Instance.Database.CreateCharacter(this.Id, character);
 			this.AddCharacter(character);
@@ -188,11 +190,9 @@ namespace Melia.Login.Database
 		/// <summary>
 		/// Saves account and characters in database.
 		/// </summary>
-		public void Save()
+		public virtual void Save()
 		{
-			LoginServer.Instance.Database.SaveAccount(this);
-			foreach (var character in _characters)
-				LoginServer.Instance.Database.SaveCharacter(character);
+			LoginServer.Instance.Database.SaveOrUpdate(this);
 		}
 	}
 }

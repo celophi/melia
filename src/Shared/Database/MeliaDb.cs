@@ -15,7 +15,7 @@ namespace Melia.Shared.Database
 {
 	public class MeliaDb
 	{
-		private string _connectionString;
+		public string _connectionString;
 
 		/// <summary>
 		/// Sets connection string and calls TestConnection.
