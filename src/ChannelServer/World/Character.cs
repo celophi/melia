@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 
 namespace Melia.Channel.World
 {
-	public class Character : Shared.World.BaseCharacter, IEntity, ICommander
+	public class Character : Shared.World.BaseCharacter, IEntity
 	{
 		private bool _warping;
 
@@ -27,12 +27,12 @@ namespace Melia.Channel.World
 		/// <summary>
 		/// Connection this character uses.
 		/// </summary>
-		public ChannelConnection Connection { get; set; }
+		public virtual ChannelConnection Connection { get; set; }
 
 		/// <summary>
 		/// Index in world collection?
 		/// </summary>
-		public int Handle { get; set; }
+		public virtual int Handle { get; set; }
 
 		private Map _map = Map.Limbo;
 		/// <summary>
@@ -42,59 +42,61 @@ namespace Melia.Channel.World
 		/// Since every map change includes a reconnect, the map reference
 		/// will only ever be set once, upon connection.
 		/// </remarks>
-		public Map Map { get { return _map; } set { _map = value ?? Map.Limbo; } }
+		public virtual Map Map { get { return _map; } set { _map = value ?? Map.Limbo; } }
 
 		/// <summary>
 		/// Gets or sets whether the character is moving.
 		/// </summary>
-		public bool IsMoving { get; set; }
+		public virtual bool IsMoving { get; set; }
+
+		public virtual int Hp { get { return this.Stats.HP; } protected set { } }
 
 		/// <summary>
 		/// Gets or sets whether the character is sitting.
 		/// </summary>
-		public bool IsSitting { get; set; }
+		public virtual bool IsSitting { get; set; }
 
 		/// <summary>
 		/// Gets or sets whether the character is standing on the ground.
 		/// </summary>
-		public bool IsGrounded { get; set; }
+		public virtual bool IsGrounded { get; set; }
 
 		/// <summary>
 		/// Holds the order of successive changes in character HP.
 		/// A higher value indicates the latest damage taken.
 		/// I'm not sure when this gets rolled over.
 		/// </summary>
-		public int HPChangeCounter { get; set; } = 0;
+		public virtual int HPChangeCounter { get; set; } = 0;
 
 		/// <summary>
 		/// The character's inventory.
 		/// </summary>
-		public Inventory Inventory { get; protected set; }
+		public virtual Inventory Inventory { get; protected set; }
 
 		/// <summary>
 		/// Returns combined weight of all items the character is currently carrying.
 		/// </summary>
-		public float NowWeight { get { return this.Inventory.GetNowWeight(); } }
+		public virtual float NowWeight { get { return this.Inventory.GetNowWeight(); } }
 
 		/// <summary>
 		/// Stat points.
 		/// </summary>
-		public float StatPoints { get { return (this.StatByLevel + this.StatByBonus - this.UsedStat); } }
+		public virtual float StatPoints { get { return (this.StatByLevel + this.StatByBonus - this.UsedStat); } }
 
 		/// <summary>
 		/// Stat points acquired by leveling?
 		/// </summary>
-		public float StatByLevel { get; set; }
+		public virtual float StatByLevel { get; set; }
 
 		/// <summary>
 		/// Bonus stat points?
 		/// </summary>
-		public float StatByBonus { get; set; }
+		public virtual float StatByBonus { get; set; }
 
 		/// <summary>
 		/// Amount of stat points spent.
 		/// </summary>
-		public float UsedStat { get; set; }
+		public virtual float UsedStat { get; set; }
 
 		/// <summary>
 		/// Returns maximum weight the character can carry.
@@ -102,51 +104,48 @@ namespace Melia.Channel.World
 		/// <remarks>
 		/// Base 5000, plus 5 for each Str/Con.
 		/// </remarks>
-		public float MaxWeight { get { return (5000 + this.Str * 5 + this.Con * 5); } }
+		public virtual float MaxWeight { get { return (5000 + this.Stats.STR * 5 + this.Stats.CON * 5); } }
 
 		/// <summary>
 		/// Returns ratio between NowWeight and MaxWeight.
 		/// </summary>
-		public float WeightRatio { get { return 100f / this.MaxWeight * this.NowWeight; } }
+		public virtual float WeightRatio { get { return 100f / this.MaxWeight * this.NowWeight; } }
 
 		/// <summary>
 		/// Character's current speed.
 		/// </summary>
-		public float Speed { get; set; }
+		public virtual float Speed { get; set; }
 
 		/// <summary>
 		/// Specifies whether the character currently updates the visible
 		/// entities around the character.
 		/// </summary>
-		public bool EyesOpen { get; private set; }
+		public virtual bool EyesOpen { get; protected set; }
 
 		/// <summary>
 		/// Character's scripting variables.
 		/// </summary>
-		public Variables Variables { get; private set; }
+		public virtual Variables Variables { get; protected set; }
+
+		public virtual Stats Stats { get; protected set; }
 
 		/// <summary>
 		/// Creates new character.
 		/// </summary>
 		public Character()
 		{
-			this.Level = 1;
-			this.Str = 1;
-			this.Con = 1;
-			this.Int = 1;
-			this.Spr = 1;
-			this.Dex = 1;
 			this.Handle = ChannelServer.Instance.World.CreateHandle();
 			this.Inventory = new Inventory(this);
 			this.Variables = new Variables();
 			this.Speed = 30;
+			this.Direction = new Direction(0);
 		}
 
 		/// <summary>
 		/// Returns character's current speed.
 		/// </summary>
 		/// <returns></returns>
-		public float GetSpeed()
+		public virtual float GetSpeed()
 		{
 			return this.Speed;
 		}
@@ -155,7 +154,7 @@ namespace Melia.Channel.World
 		/// Returns character's current jump strength.
 		/// </summary>
 		/// <returns></returns>
-		public float GetJumpStrength()
+		public virtual float GetJumpStrength()
 		{
 			return 300;
 		}
@@ -164,7 +163,7 @@ namespace Melia.Channel.World
 		/// Returns character's jump type.
 		/// </summary>
 		/// <returns></returns>
-		public int GetJumpType()
+		public virtual int GetJumpType()
 		{
 			return 1;
 		}
@@ -177,7 +176,7 @@ namespace Melia.Channel.World
 		/// <param name="z"></param>
 		/// <param name="dx"></param>
 		/// <param name="dy"></param>
-		public void Move(float x, float y, float z, float dx, float dy, float unkFloat)
+		public virtual void Move(float x, float y, float z, float dx, float dy, float unkFloat)
 		{
 			this.SetPosition(x, y, z);
 			this.SetDirection(dx, dy);
@@ -194,7 +193,7 @@ namespace Melia.Channel.World
 		/// <param name="z"></param>
 		/// <param name="dx"></param>
 		/// <param name="dy"></param>
-		public void StopMove(float x, float y, float z, float dx, float dy)
+		public virtual void StopMove(float x, float y, float z, float dx, float dy)
 		{
 			this.SetPosition(x, y, z);
 			this.SetDirection(dx, dy);
@@ -214,7 +213,7 @@ namespace Melia.Channel.World
 		/// <param name="y"></param>
 		/// <param name="z"></param>
 		/// <exception cref="ArgumentException">Thrown if map doesn't exist in data.</exception>
-		public void Warp(string mapName, float x, float y, float z)
+		public virtual void Warp(string mapName, float x, float y, float z)
 		{
 			var map = ChannelServer.Instance.Data.MapDb.Find(mapName);
 			if (map == null)
@@ -227,7 +226,7 @@ namespace Melia.Channel.World
 		/// Warps character to given location.
 		/// </summary>
 		/// <param name="loc"></param>
-		public void Warp(Location loc)
+		public virtual void Warp(Location loc)
 		{
 			this.Warp(loc.MapId, loc.X, loc.Y, loc.Z);
 		}
@@ -240,7 +239,7 @@ namespace Melia.Channel.World
 		/// <param name="y"></param>
 		/// <param name="z"></param>
 		/// <exception cref="ArgumentException">Thrown if map doesn't exist in world.</exception>
-		public void Warp(int mapId, float x, float y, float z)
+		public virtual void Warp(int mapId, float x, float y, float z)
 		{
 			var map = ChannelServer.Instance.World.GetMap(mapId);
 			if (map == null)
@@ -264,7 +263,7 @@ namespace Melia.Channel.World
 		/// <summary>
 		/// Finalizes warp, after client announced readiness.
 		/// </summary>
-		public void FinalizeWarp()
+		public virtual void FinalizeWarp()
 		{
 			// Check permission
 			if (!_warping)
@@ -292,11 +291,11 @@ namespace Melia.Channel.World
 		/// <summary>
 		/// Increases character's level by the given amount of levels.
 		/// </summary>
-		public void LevelUp(int amount)
+		public virtual void LevelUp(int amount)
 		{
-			this.Level += amount;
+			this.Stats.Level += amount;
 			this.StatByLevel += amount;
-			this.MaxExp = ChannelServer.Instance.Data.ExpDb.GetExp(this.Level);
+			this.Stats.MaxExp = ChannelServer.Instance.Data.ExpDb.GetExp(this.Stats.Level);
 
 			// packet = new Packet(Op.ZC_OBJECT_PROPERTY);
 			//packet.PutLong(target.Id);
@@ -331,7 +330,7 @@ namespace Melia.Channel.World
 		/// <summary>
 		/// Increases character's level by one.
 		/// </summary>
-		public void LevelUp()
+		public virtual void LevelUp()
 		{
 			this.LevelUp(1);
 		}
@@ -340,17 +339,17 @@ namespace Melia.Channel.World
 		/// Grants exp to character and handles level ups.
 		/// </summary>
 		/// <param name="exp"></param>
-		public void GiveExp(int exp, int jobExp, Monster monster)
+		public virtual void GiveExp(int exp, int jobExp, Monster monster)
 		{
-			this.Exp += exp;
+			this.Stats.Exp += exp;
 			// TODO: jobExp
 
 			Send.ZC_EXP_UP_BY_MONSTER(this, exp, 0, monster);
 			Send.ZC_EXP_UP(this, exp, 0);
 
-			while (this.Exp >= this.MaxExp)
+			while (this.Stats.Exp >= this.Stats.MaxExp)
 			{
-				this.Exp -= this.MaxExp;
+				this.Stats.Exp -= this.Stats.MaxExp;
 				this.LevelUp();
 			}
 		}
@@ -359,7 +358,7 @@ namespace Melia.Channel.World
 		/// Returns ids of equipped items.
 		/// </summary>
 		/// <returns></returns>
-		public int[] GetEquipIds()
+		public virtual int[] GetEquipIds()
 		{
 			return this.Inventory.GetEquipIds();
 		}
@@ -367,7 +366,7 @@ namespace Melia.Channel.World
 		/// <summary>
 		/// Updates visible entities around character.
 		/// </summary>
-		public void LookAround()
+		public virtual void LookAround()
 		{
 			if (!this.EyesOpen)
 				return;
@@ -412,7 +411,7 @@ namespace Melia.Channel.World
 		/// <summary>
 		/// Starts auto-updates of visible entities.
 		/// </summary>
-		public void OpenEyes()
+		public virtual void OpenEyes()
 		{
 			this.EyesOpen = true;
 			this.LookAround();
@@ -421,7 +420,7 @@ namespace Melia.Channel.World
 		/// <summary>
 		/// Stops auto-updates of visible entities.
 		/// </summary>
-		public void CloseEyes()
+		public virtual void CloseEyes()
 		{
 			this.EyesOpen = false;
 
@@ -443,7 +442,7 @@ namespace Melia.Channel.World
 		/// </summary>
 		/// <param name="d1"></param>
 		/// <param name="d2"></param>
-		public void Rotate(float d1, float d2)
+		public virtual void Rotate(float d1, float d2)
 		{
 			this.SetDirection(d1, d2);
 			Send.ZC_ROTATE(this);
@@ -454,7 +453,7 @@ namespace Melia.Channel.World
 		/// </summary>
 		/// <param name="d1"></param>
 		/// <param name="d2"></param>
-		public void RotateHead(float d1, float d2)
+		public virtual void RotateHead(float d1, float d2)
 		{
 			this.SetHeadDirection(d1, d2);
 			Send.ZC_HEAD_ROTATE(this);

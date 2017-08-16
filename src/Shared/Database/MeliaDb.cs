@@ -15,7 +15,7 @@ namespace Melia.Shared.Database
 {
 	public class MeliaDb
 	{
-		private string _connectionString;
+		public string _connectionString;
 
 		/// <summary>
 		/// Sets connection string and calls TestConnection.
@@ -61,61 +61,7 @@ namespace Melia.Shared.Database
 					conn.Close();
 			}
 		}
-
-		/// <summary>
-		/// Returns true if accounts exists.
-		/// </summary>
-		/// <param name="name"></param>
-		/// <returns></returns>
-		public bool AccountExists(string name)
-		{
-			using (var conn = this.GetConnection())
-			using (var mc = new MySqlCommand("SELECT `name` FROM `accounts` WHERE `name` = @name", conn))
-			{
-				mc.Parameters.AddWithValue("@name", name);
-
-				using (var reader = mc.ExecuteReader())
-					return reader.HasRows;
-			}
-		}
-
-		/// <summary>
-		/// Creates new account with given information.
-		/// </summary>
-		/// <param name="name"></param>
-		/// <param name="password"></param>
-		/// <returns></returns>
-		/// <exception cref="ArgumentNullException">Thrown if name or password is empty.</exception>
-		public bool CreateAccount(string name, string password)
-		{
-			if (string.IsNullOrWhiteSpace(name))
-				throw new ArgumentNullException("name");
-
-			if (string.IsNullOrWhiteSpace(password))
-				throw new ArgumentNullException("password");
-
-			// Wrap password in BCrypt
-			password = BCrypt.HashPassword(password, BCrypt.GenerateSalt());
-
-			using (var conn = this.GetConnection())
-			using (var cmd = new InsertCommand("INSERT INTO `accounts` {0}", conn))
-			{
-				cmd.Set("name", name);
-				cmd.Set("password", password);
-
-				try
-				{
-					cmd.Execute();
-					return true;
-				}
-				catch (Exception ex)
-				{
-					Log.Exception(ex, "Failed to create account '{0}'.", name);
-				}
-			}
-
-			return false;
-		}
+		
 
 		/// <summary>
 		/// Returns true if a character with the given name exists on account.
@@ -132,40 +78,6 @@ namespace Melia.Shared.Database
 
 				using (var reader = mc.ExecuteReader())
 					return reader.HasRows;
-			}
-		}
-
-		/// <summary>
-		/// Returns true if team name exists.
-		/// </summary>
-		/// <param name="name"></param>
-		/// <returns></returns>
-		public bool TeamNameExists(string teamName)
-		{
-			using (var conn = this.GetConnection())
-			using (var mc = new MySqlCommand("SELECT `accountId` FROM `accounts` WHERE `teamName` = @teamName", conn))
-			{
-				mc.Parameters.AddWithValue("@teamName", teamName);
-
-				using (var reader = mc.ExecuteReader())
-					return reader.HasRows;
-			}
-		}
-
-		/// <summary>
-		/// Changes team name for account.
-		/// </summary>
-		/// <param name="account"></param>
-		/// <returns></returns>
-		public bool UpdateTeamName(long accountId, string teamName)
-		{
-			using (var conn = this.GetConnection())
-			using (var cmd = new UpdateCommand("UPDATE `accounts` SET {0} WHERE `accountId` = @accountId", conn))
-			{
-				cmd.AddParameter("@accountId", accountId);
-				cmd.Set("teamName", teamName);
-
-				return cmd.Execute() > 0;
 			}
 		}
 	}

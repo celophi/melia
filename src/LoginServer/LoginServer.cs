@@ -49,6 +49,7 @@ namespace Melia.Login
 			// Database
 			this.Database = new LoginDb();
 			this.InitDatabase(this.Database);
+			SessionFactory.Init(this.Database._connectionString);
 
 			// Check if there are any updates
 			this.CheckDatabaseUpdates();

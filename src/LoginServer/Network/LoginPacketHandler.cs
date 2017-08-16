@@ -29,9 +29,6 @@ namespace Melia.Login.Network
 		/// </summary>
 		/// <param name="conn"></param>
 		/// <param name="packet"></param>
-		/// <example>
-		/// ([03 00] [00 00 00 00] [0A 06 00 00]) 61 73 64 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 78 15 69 6E CB F1 C9 6E 68 94 B7 79 45 6D 33 0E 00 01 C0 A8 B2 14 52 93 3A 5C F0 16 79
-		/// </example>
 		[PacketHandler(Op.CB_LOGIN)]
 		public void CB_LOGIN(LoginConnection conn, Packet packet)
 		{
@@ -47,16 +44,22 @@ namespace Melia.Login.Network
 
 			Send.BC_LOGIN_PACKET_RECEIVED(conn);
 
+			Account account = null;
+
 			// Create new account
 			if (accountName.StartsWith("new__") || accountName.StartsWith("new//"))
 			{
 				accountName = accountName.Substring("new__".Length);
 				if (!LoginServer.Instance.Database.AccountExists(accountName))
-					LoginServer.Instance.Database.CreateAccount(accountName, password);
+				{
+					account = Account.New(accountName, password);
+					LoginServer.Instance.Database.SaveAccount(account);
+				}
+					
 			}
 
-			// Check account
-			if (!LoginServer.Instance.Database.AccountExists(accountName))
+			account = LoginServer.Instance.Database.GetAccount(accountName);
+			if (account == null)
 			{
 				Send.BC_MESSAGE(conn, MsgType.UsernameOrPasswordIncorrect1);
 				conn.Close();
@@ -64,7 +67,6 @@ namespace Melia.Login.Network
 			}
 
 			// Check password
-			var account = Account.LoadFromDb(accountName);
 			if (!BCrypt.CheckPassword(password, account.Password))
 			{
 				Send.BC_MESSAGE(conn, MsgType.UsernameOrPasswordIncorrect2);
@@ -87,9 +89,6 @@ namespace Melia.Login.Network
 		/// </summary>
 		/// <param name="conn"></param>
 		/// <param name="packet"></param>
-		/// <example>
-		/// ([03 00] [00 00 00 00] [0A 06 00 00]) (00*1016) 01 01 XX XX XX 02 01 00 10 01 XX XX XX 14 00 00 00 00
-		/// </example>
 		[PacketHandler(Op.CB_LOGIN_BY_PASSPORT)]
 		public void CB_LOGIN_BY_PASSPORT(LoginConnection conn, Packet packet)
 		{
@@ -102,9 +101,6 @@ namespace Melia.Login.Network
 		/// </summary>
 		/// <param name="conn"></param>
 		/// <param name="packet"></param>
-		/// <example>
-		/// ([05 00] [04 00 00 00] [01 00 00 00]) 92 0B 79 73 19 ED
-		/// </example>
 		[PacketHandler(Op.CB_LOGOUT)]
 		public void CB_LOGOUT(LoginConnection conn, Packet packet)
 		{
@@ -164,27 +160,17 @@ namespace Melia.Login.Network
 		/// </summary>
 		/// <param name="conn"></param>
 		/// <param name="packet"></param>
-		/// <example>
-		/// ([0A 00] [03 00 00 00] [18 02 00 00]) 53 6F 6D 65 4E 61 6D 65 32 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 99 0C 9A C2 A8 6A
-		/// </example>
 		[PacketHandler(Op.CB_BARRACKNAME_CHANGE)]
 		public void CB_BARRACKNAME_CHANGE(LoginConnection conn, Packet packet)
 		{
 			var name = packet.GetString(64);
-
-			// Don't do anything if nothing's changed
-			if (name == conn.Account.TeamName)
-				return;
-
-			// Check validity
-			var valid = (name.Length >= 2 && name.Length <= 16 && !name.Any(a => Char.IsWhiteSpace(a)));
-			if (!valid)
+			
+			if (!conn.Account.IsTeamNameValid(name))
 			{
 				Send.BC_BARRACKNAME_CHANGE(conn, TeamNameChangeResult.TeamChangeFailed);
 				return;
 			}
 
-			// Check availability
 			var exists = LoginServer.Instance.Database.TeamNameExists(name);
 			if (exists)
 			{
@@ -192,10 +178,8 @@ namespace Melia.Login.Network
 				return;
 			}
 
-			// Set team name
-			conn.Account.TeamName = name;
-			LoginServer.Instance.Database.UpdateTeamName(conn.Account.Id, name);
-
+			conn.Account.AssignTeamName(name);
+			LoginServer.Instance.Database.SaveAccount(conn.Account);
 			Send.BC_BARRACKNAME_CHANGE(conn, TeamNameChangeResult.Okay);
 		}
 
@@ -204,9 +188,6 @@ namespace Melia.Login.Network
 		/// </summary>
 		/// <param name="conn"></param>
 		/// <param name="packet"></param>
-		/// <example>
-		/// ([07 00] [03 00 00 00] [9F 04 00 00]) 01 5A 65 72 6F 6E 6F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 E9 03 01 00 00 98 41 C9 1F DE 41 00 00 E8 41 15 | 00 00 00 00
-		/// </example>
 		[PacketHandler(Op.CB_COMMANDER_CREATE)]
 		public void CB_COMMANDER_CREATE(LoginConnection conn, Packet packet)
 		{
@@ -219,6 +200,14 @@ namespace Melia.Login.Network
 			var bz = packet.GetFloat();
 			var hair = packet.GetByte();
 
+			// character exist check
+			if(conn.Account.GetCharacters().Any(x => x.Name == name))
+			{
+				Send.BC_MESSAGE(conn, MsgType.CannotCreateCharacter);
+				return;
+			}
+
+			
 			var startingCity = StartingCity.Klaipeda;
 
 			// Check starting city
@@ -278,31 +267,9 @@ namespace Melia.Login.Network
 				Send.BC_MESSAGE(conn, MsgType.CannotCreateCharacter);
 				return;
 			}
-
-
-			// Create
-			var character = new Character();
-			character.Name = name;
-			character.Gender = gender;
-			character.Hair = hair;
-			character.Job = job;
-
-			character.MapId = mapData.Id;
-			character.Position = new Position(startingCityData.X, startingCityData.Y, startingCityData.Z);
-			character.BarrackPosition = new Position(bx, by, bz);
-
-			character.Hp = character.MaxHp = 100;
-			character.Sp = character.MaxSp = 50;
-			character.Stamina = character.MaxStamina = 25000;
-			character.Str = jobData.Str;
-			character.Con = jobData.Con;
-			character.Int = jobData.Int;
-			character.Spr = jobData.Spr;
-			character.Dex = jobData.Dex;
-
-			character.InitEquipment();
-
-			conn.Account.CreateCharacter(character);
+			
+			var pos = new Position(startingCityData.X, startingCityData.Y, startingCityData.Z);
+			var character = conn.Account.CreateCharacter(name, gender, hair, jobData, mapData, pos);
 
 			Send.BC_COMMANDER_CREATE_SLOTID(conn, character);
 			Send.BC_COMMANDER_CREATE(conn, character);
@@ -313,15 +280,11 @@ namespace Melia.Login.Network
 		/// </summary>
 		/// <param name="conn"></param>
 		/// <param name="packet"></param>
-		/// <example>
-		/// ([08 00] [05 00 00 00] [0C 00 00 00]) 01 | 3A 72 F6 59 1A
-		/// </example>
 		[PacketHandler(Op.CB_COMMANDER_DESTROY)]
 		public void CB_COMMANDER_DESTROY(LoginConnection conn, Packet packet)
 		{
 			var characterId = packet.GetLong();
 
-			// Get character
 			var character = conn.Account.GetCharacterById(characterId);
 			if (character == null)
 			{
@@ -330,15 +293,10 @@ namespace Melia.Login.Network
 				return;
 			}
 
-			// Delete
-			if (!conn.Account.DeleteCharacter(character))
-			{
-				Log.Warning("CB_COMMANDER_DESTROY: Deleting '{0}' from account '{1}' failed.", character.Name, conn.Account.Name);
-				Send.BC_MESSAGE(conn, MsgType.CannotDeleteCharacter1);
-				return;
-			}
-
-			Send.BC_COMMANDER_DESTROY(conn, character.Index);
+			var index = conn.Account.DeleteCharacter(character);
+			
+			LoginServer.Instance.Database.SaveAccount(conn.Account);
+			Send.BC_COMMANDER_DESTROY(conn, index);
 			Send.BC_NORMAL_TeamUI(conn);
 		}
 
@@ -367,9 +325,8 @@ namespace Melia.Login.Network
 				Log.Warning("CB_COMMANDER_MOVE: User '{0}' tried to move invalid character ({1}).", conn.Account.Name, index);
 				return;
 			}
-
-			// Move
-			character.BarrackPosition = new Position(x, y, z);
+			
+			character.Move(new Position(x, y, z));
 		}
 
 		/// <summary>
@@ -404,15 +361,14 @@ namespace Melia.Login.Network
 				return;
 			}
 
+
+
 			Send.BC_START_GAMEOK(conn, character, channelServer.Ip, channelServer.Port);
 		}
 
 		/// <summary>
 		/// Sent when clicking [Purchase] on a barrack.
 		/// </summary>
-		/// <example>
-		/// ([4C 00] [15 00 00 00] [5E 00 00 00]) 00 00 00 00 0C 00 00 00 0B 00 00 00 | 0E 30
-		/// </example>
 		[PacketHandler(Op.CB_BUY_THEMA)]
 		public void CB_BUY_THEMA(LoginConnection conn, Packet packet)
 		{
@@ -425,15 +381,13 @@ namespace Melia.Login.Network
 			if (barrackData == null)
 				return;
 
-			// Check medals
-			if (conn.Account.Medals < barrackData.Price)
+			if (!conn.Account.Money.CanAfford(barrackData.Price))
 			{
 				Log.Warning("CB_BUY_THEMA: User '{0}' tried to buy barrack without having the necessary coins.");
 				return;
 			}
 
-			conn.Account.Medals -= barrackData.Price;
-			conn.Account.SelectedBarrack = newMapId;
+			conn.Account.PurchaseBarrack(newMapId, barrackData.Price);
 
 			Send.BC_ACCOUNT_PROP(conn, conn.Account);
 			Send.BC_NORMAL_Run(conn, BCNormalMsg.THEMA_BUY_SUCCESS);

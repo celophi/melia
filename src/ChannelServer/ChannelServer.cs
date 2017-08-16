@@ -79,6 +79,7 @@ namespace Melia.Channel
 			// Database
 			this.Database = new ChannelDb();
 			this.InitDatabase(this.Database);
+			SessionFactory.Init(this.Database._connectionString);
 
 			// Data
 			this.LoadData(DataToLoad.All, true);

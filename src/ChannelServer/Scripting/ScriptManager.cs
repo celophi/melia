@@ -966,7 +966,7 @@ namespace Melia.Channel.Scripting
 			Melua.lua_settable(L, -3);
 
 			Melua.lua_pushstring(L, "level");
-			Melua.lua_pushinteger(L, character.Level);
+			Melua.lua_pushinteger(L, character.Stats.Level);
 			Melua.lua_settable(L, -3);
 
 			Melua.lua_pushstring(L, "hp");
@@ -974,19 +974,19 @@ namespace Melia.Channel.Scripting
 			Melua.lua_settable(L, -3);
 
 			Melua.lua_pushstring(L, "maxHp");
-			Melua.lua_pushinteger(L, character.MaxHp);
+			Melua.lua_pushinteger(L, character.Stats.MaxHP);
 			Melua.lua_settable(L, -3);
 
 			Melua.lua_pushstring(L, "sp");
-			Melua.lua_pushinteger(L, character.Sp);
+			Melua.lua_pushinteger(L, character.Stats.SP);
 			Melua.lua_settable(L, -3);
 
 			Melua.lua_pushstring(L, "maxSp");
-			Melua.lua_pushinteger(L, character.MaxSp);
+			Melua.lua_pushinteger(L, character.Stats.MaxSP);
 			Melua.lua_settable(L, -3);
 
 			Melua.lua_pushstring(L, "stamina");
-			Melua.lua_pushinteger(L, character.Stamina);
+			Melua.lua_pushinteger(L, character.Stats.Stamina);
 			Melua.lua_settable(L, -3);
 
 			Melua.lua_pushstring(L, "hair");
@@ -1169,18 +1169,18 @@ namespace Melia.Channel.Scripting
 			var conn = this.GetConnectionFromState(L);
 			var character = conn.SelectedCharacter;
 
-			character.StatByLevel += character.Str - 1;
-			character.StatByLevel += character.Con - 1;
-			character.StatByLevel += character.Int - 1;
-			character.StatByLevel += character.Spr - 1;
-			character.StatByLevel += character.Dex - 1;
+			character.StatByLevel += character.Stats.STR - 1;
+			character.StatByLevel += character.Stats.CON - 1;
+			character.StatByLevel += character.Stats.INT - 1;
+			character.StatByLevel += character.Stats.SPR - 1;
+			character.StatByLevel += character.Stats.DEX - 1;
 			character.UsedStat = 0;
 
-			character.Str = 1;
-			character.Con = 1;
-			character.Int = 1;
-			character.Spr = 1;
-			character.Dex = 1;
+			character.Stats.STR = 1;
+			character.Stats.CON = 1;
+			character.Stats.INT = 1;
+			character.Stats.SPR = 1;
+			character.Stats.DEX = 1;
 
 			Send.ZC_OBJECT_PROPERTY(character,
 				ObjectProperty.PC["STR"], ObjectProperty.PC["CON"], ObjectProperty.PC["INT"], ObjectProperty.PC["MNA"], ObjectProperty.PC["DEX"],
