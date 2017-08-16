@@ -76,6 +76,18 @@ namespace Melia.Channel.World
 		}
 
 		/// <summary>
+		/// Temporary for FNH loading
+		/// </summary>
+		/// <param name="item"></param>
+		/// <param name="itemId"></param>
+		public Item(int itemId)
+		{
+			this.Id = itemId;
+			this.WorldId = Interlocked.Increment(ref _worldId);
+			this.Amount = 1;
+		}
+
+		/// <summary>
 		/// Loads item data from data files.
 		/// </summary>
 		private void LoadData()

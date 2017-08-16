@@ -91,19 +91,19 @@ namespace Melia.Channel.Network
 			packet.PutFloat(character.Position.X);
 			packet.PutFloat(character.Position.Y);
 			packet.PutFloat(character.Position.Z);
-			packet.PutInt(character.Exp);
-			packet.PutInt(character.MaxExp);
+			packet.PutInt(character.Stats.Exp);
+			packet.PutInt(character.Stats.MaxExp);
 			packet.PutInt(0);
 
 			packet.PutLong(character.Id);
 			packet.PutLong(character.Id + 1); // PCEtc GUID? socialInfoId
 
-			packet.PutInt(character.Hp);
-			packet.PutInt(character.MaxHp);
-			packet.PutShort(character.Sp);
-			packet.PutShort(character.MaxSp);
-			packet.PutInt(character.Stamina);
-			packet.PutInt(character.MaxStamina);
+			packet.PutInt(character.Stats.HP);
+			packet.PutInt(character.Stats.MaxHP);
+			packet.PutShort(character.Stats.SP);
+			packet.PutShort(character.Stats.MaxSP);
+			packet.PutInt(character.Stats.Stamina);
+			packet.PutInt(character.Stats.MaxStamina);
 			packet.PutShort(0); // Shield
 			packet.PutShort(0); // MaxShield
 
@@ -181,13 +181,13 @@ namespace Melia.Channel.Network
 			packet.PutByte(0); // Pose
 			packet.PutFloat(character.GetSpeed());
 			packet.PutInt(0);
-			packet.PutInt(character.Hp);
-			packet.PutInt(character.MaxHp);
-			packet.PutShort(character.Sp);
-			packet.PutShort(character.MaxSp);
+			packet.PutInt(character.Stats.HP);
+			packet.PutInt(character.Stats.MaxHP);
+			packet.PutShort(character.Stats.SP);
+			packet.PutShort(character.Stats.MaxSP);
 			packet.PutInt(0); // [i11025 (2016-02-26)]
-			packet.PutInt(character.Stamina);
-			packet.PutInt(character.MaxStamina);
+			packet.PutInt(character.Stats.Stamina);
+			packet.PutInt(character.Stats.MaxStamina);
 			packet.PutByte(0);
 			packet.PutShort(0);
 			packet.PutInt(-1); // titleAchievmentId
@@ -1000,15 +1000,15 @@ namespace Melia.Channel.Network
 				switch (stat.Key)
 				{
 					case "HP": packet.PutFloat(character.Hp); break;
-					case "MHP": packet.PutFloat(character.MaxHp); break;
-					case "SP": packet.PutFloat(character.Sp); break;
-					case "MSP": packet.PutFloat(character.MaxSp); break;
+					case "MHP": packet.PutFloat(character.Stats.MaxHP); break;
+					case "SP": packet.PutFloat(character.Stats.SP); break;
+					case "MSP": packet.PutFloat(character.Stats.MaxSP); break;
 
-					case "STR": packet.PutFloat(character.Str); break;
-					case "CON": packet.PutFloat(character.Con); break;
-					case "INT": packet.PutFloat(character.Int); break;
-					case "MNA": packet.PutFloat(character.Spr); break;
-					case "DEX": packet.PutFloat(character.Dex); break;
+					case "STR": packet.PutFloat(character.Stats.STR); break;
+					case "CON": packet.PutFloat(character.Stats.CON); break;
+					case "INT": packet.PutFloat(character.Stats.INT); break;
+					case "MNA": packet.PutFloat(character.Stats.SPR); break;
+					case "DEX": packet.PutFloat(character.Stats.DEX); break;
 
 					case "NowWeight": packet.PutFloat(character.NowWeight); break;
 					case "MaxWeight": packet.PutFloat(character.MaxWeight); break;
@@ -1181,6 +1181,16 @@ namespace Melia.Channel.Network
 			entity.Map.Broadcast(packet);
 		}
 
+		public static void ZC_LEAVE(Character character)
+		{
+			var packet = new Packet(Op.ZC_LEAVE);
+
+			packet.PutInt(character.Handle);
+			packet.PutShort(1); // 0 shows a blue effect when the entity disappears
+
+			character.Map.Broadcast(packet);
+		}
+
 		/// <summary>
 		/// Sends ZC_LEAVE to conn, making it disappear.
 		/// </summary>
@@ -1275,7 +1285,7 @@ namespace Melia.Channel.Network
 		{
 			var packet = new Packet(Op.ZC_PC_LEVELUP);
 			packet.PutInt(character.Handle);
-			packet.PutInt(character.Level);
+			packet.PutInt(character.Stats.Level);
 
 			character.Connection.Send(packet);
 		}
@@ -1343,8 +1353,8 @@ namespace Melia.Channel.Network
 			var packet = new Packet(Op.ZC_MAX_EXP_CHANGED);
 
 			packet.PutInt(exp); // acquired exp (not used)
-			packet.PutInt(character.Exp); // current level exp
-			packet.PutInt(character.MaxExp); // total exp needed to level (look at db array)
+			packet.PutInt(character.Stats.Exp); // current level exp
+			packet.PutInt(character.Stats.MaxExp); // total exp needed to level (look at db array)
 			packet.PutInt(0); // total exp earned 
 
 			character.Connection.Send(packet);
@@ -1375,11 +1385,11 @@ namespace Melia.Channel.Network
 		{
 			var packet = new Packet(Op.ZC_MAP_REVEAL_LIST);
 
-			packet.PutInt(conn.Account.MapVisibility.Count());
-			foreach (var pair in conn.Account.MapVisibility)
+			packet.PutInt(conn.Account.ExploredMaps.Count());
+			foreach (var portion in conn.Account.ExploredMaps)
 			{
-				packet.PutInt(pair.Key);
-				packet.PutBin(pair.Value);
+				packet.PutInt(portion.Map);
+				packet.PutBin(portion.Visible);
 			}
 
 			conn.Send(packet);
@@ -1495,7 +1505,7 @@ namespace Melia.Channel.Network
 			int healing = (isDamage ? 1 : amount);
 			packet.PutInt(healing);
 
-			character.Hp += (isDamage ? -amount : amount);
+			character.Stats.HP += (isDamage ? -amount : amount);
 			packet.PutInt(character.Hp);
 
 			packet.PutInt(character.HPChangeCounter);

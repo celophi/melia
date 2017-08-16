@@ -20,7 +20,7 @@ namespace Melia.Channel.Network.Helpers
 		/// <param name="account"></param>
 		public static void AddAccountProperties(this Packet packet, Account account)
 		{
-			var length = account.MapVisibility.Count * 8;
+			var length = account.ExploredMaps.Count * 8;
 			length += 43;
 
 			packet.PutShort(length); // Account properties size
@@ -45,9 +45,9 @@ namespace Melia.Channel.Network.Helpers
 			packet.PutInt(ObjectProperty.Account["SelectedBarrack"]);
 			packet.PutFloat(account.SelectedBarrack);
 
-			foreach (var pair in account.MapVisibility)
+			foreach (var pair in account.ExploredMaps)
 			{
-				var id = ObjectProperty.Account["HadVisited_" + pair.Key];
+				var id = ObjectProperty.Account["HadVisited_" + pair.Map];
 				packet.PutInt(id);
 				packet.PutFloat(1);
 			}

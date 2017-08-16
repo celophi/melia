@@ -15,132 +15,64 @@ namespace Melia.Shared.World
 		/// <summary>
 		/// Character's id.
 		/// </summary>
-		public long Id { get; set; }
+		public virtual long Id { get; set; }
 
 		/// <summary>
 		/// Id of the character's account.
 		/// </summary>
-		public long AccountId { get; set; }
+		public virtual long AccountId { get; set; }
 
 		/// <summary>
 		/// Character's name.
 		/// </summary>
-		public string Name { get; set; }
+		public virtual string Name { get; set; }
 
 		/// <summary>
 		/// Character's team name.
 		/// </summary>
-		public string TeamName { get; set; }
+		public virtual string TeamName { get; set; }
 
 		/// <summary>
 		/// Character's job.
 		/// </summary>
-		public Job Job { get; set; }
+		public virtual Job Job { get; set; }
 
 		/// <summary>
 		/// Character's gender.
 		/// </summary>
-		public Gender Gender { get; set; }
+		public virtual Gender Gender { get; set; }
 
 		/// <summary>
 		/// Character's hair style.
 		/// </summary>
-		public byte Hair { get; set; }
-
-		/// <summary>
-		/// Character's level.
-		/// </summary>
-		public int Level { get; set; }
+		public virtual byte Hair { get; set; }
+		
 
 		/// <summary>
 		/// The map the character is in.
 		/// </summary>
-		public int MapId { get; set; }
+		public virtual int MapId { get; set; }
 
 		/// <summary>
 		/// Character's position.
 		/// </summary>
-		public Position Position { get; set; }
+		public virtual Position Position { get; set; }
 
 		/// <summary>
 		/// Character's direction.
 		/// </summary>
-		public Direction Direction { get; set; }
+		public virtual Direction Direction { get; set; }
 
 		/// <summary>
 		/// Character's head's direction.
 		/// </summary>
-		public Direction HeadDirection { get; set; }
-
-		/// <summary>
-		/// Current experience points.
-		/// </summary>
-		public int Exp { get; set; }
-
-		/// <summary>
-		/// Current maximum experience points.
-		/// </summary>
-		public int MaxExp { get; set; }
-
-		/// <summary>
-		/// Health points.
-		/// </summary>
-		public int Hp { get; set; }
-
-		/// <summary>
-		/// Maximum health points.
-		/// </summary>
-		public int MaxHp { get; set; }
-
-		/// <summary>
-		/// Spell points.
-		/// </summary>
-		public int Sp { get; set; }
-
-		/// <summary>
-		/// Maximum spell points.
-		/// </summary>
-		public int MaxSp { get; set; }
-
-		/// <summary>
-		/// Stamina points.
-		/// </summary>
-		public int Stamina { get; set; }
-
-		/// <summary>
-		/// Maximum stamina points.
-		/// </summary>
-		public int MaxStamina { get; set; }
-
-		/// <summary>
-		/// Gets or sets character's strength (STR).
-		/// </summary>
-		public float Str { get; set; }
-
-		/// <summary>
-		/// Gets or sets character's vitality (CON).
-		/// </summary>
-		public float Con { get; set; }
-
-		/// <summary>
-		/// Gets or sets character's intelligence (INT).
-		/// </summary>
-		public float Int { get; set; }
-
-		/// <summary>
-		/// Gets or sets character's spirit (SPR/MNA).
-		/// </summary>
-		public float Spr { get; set; }
-
-		/// <summary>
-		/// Gets or sets character's agility (DEX).
-		/// </summary>
-		public float Dex { get; set; }
+		public virtual Direction HeadDirection { get; set; }
+	
 
 		/// <summary>
 		/// Returns stance, based on job and other factors.
 		/// </summary>
-		public int Stance
+		public virtual int Stance
 		{
 			get
 			{
@@ -178,7 +110,7 @@ namespace Melia.Shared.World
 		/// <param name="x"></param>
 		/// <param name="y"></param>
 		/// <param name="z"></param>
-		public void SetPosition(float x, float y, float z)
+		public virtual void SetPosition(float x, float y, float z)
 		{
 			this.Position = new Position(x, y, z);
 		}
@@ -188,7 +120,7 @@ namespace Melia.Shared.World
 		/// </summary>
 		/// <param name="x"></param>
 		/// <param name="y"></param>
-		public void SetDirection(float x, float y)
+		public virtual void SetDirection(float x, float y)
 		{
 			this.Direction = new Direction(x, y);
 		}
@@ -198,7 +130,7 @@ namespace Melia.Shared.World
 		/// </summary>
 		/// <param name="x"></param>
 		/// <param name="y"></param>
-		public void SetHeadDirection(float x, float y)
+		public virtual void SetHeadDirection(float x, float y)
 		{
 			this.HeadDirection = new Direction(x, y);
 		}

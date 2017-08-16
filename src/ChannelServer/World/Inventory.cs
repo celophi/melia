@@ -729,9 +729,6 @@ namespace Melia.Channel.World
 
 	public class DummyEquipItem : Item
 	{
-		public DummyEquipItem(EquipSlot slot)
-			: base(Items.DefaultItems[(int)slot], 1)
-		{
-		}
+		public DummyEquipItem(EquipSlot slot) : base(Items.DefaultItems[(int)slot]) { }
 	}
 }

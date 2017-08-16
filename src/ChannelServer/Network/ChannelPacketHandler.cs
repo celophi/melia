@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
+using Melia.Channel.Database;
 using Melia.Channel.World;
 using Melia.Shared.Const;
 using Melia.Shared.Data.Database;
@@ -779,9 +780,16 @@ namespace Melia.Channel.Network
 		public void CZ_MAP_REVEAL_INFO(ChannelConnection conn, Packet packet)
 		{
 			var mapId = packet.GetInt();
-			var explored = packet.GetBin(128);
+			var visible = packet.GetBin(128);
 
-			conn.Account.MapVisibility[mapId] = explored;
+			var mapData = ChannelServer.Instance.Data.MapDb.Find(mapId);
+			if (mapData == null)
+			{
+				Log.Error("CZ_MAP_REVEAL_INFO: Error map '{0}' not found.", mapId);
+				return;
+			}
+
+			conn.Account.AddExploredMap(mapId, visible);
 		}
 
 		/// <summary>
@@ -866,11 +874,11 @@ namespace Melia.Channel.Network
 
 						switch (i)
 						{
-							case 0: character.Str += stat; break;
-							case 1: character.Con += stat; break;
-							case 2: character.Int += stat; break;
-							case 3: character.Spr += stat; break;
-							case 4: character.Dex += stat; break;
+							case 0: character.Stats.STR += stat; break;
+							case 1: character.Stats.CON += stat; break;
+							case 2: character.Stats.INT += stat; break;
+							case 3: character.Stats.SPR += stat; break;
+							case 4: character.Stats.DEX += stat; break;
 						}
 					}
 
@@ -1196,7 +1204,10 @@ namespace Melia.Channel.Network
 		[PacketHandler(Op.CZ_SAVE_INFO)]
 		public void CZ_SAVE_INFO(ChannelConnection conn, Packet packet)
 		{
-			// Save something if needed?
+			using (var session = SessionFactory.OpenSession())
+			{
+				session.Clear();
+			}
 		}
 
 		/// <summary>
@@ -1217,7 +1228,9 @@ namespace Melia.Channel.Network
 			if (String.IsNullOrEmpty(message) && pose == 0)
 				return;
 
-			var macro = new Database.ChatMacro(slot, message, pose);
+
+
+			var macro = new Database.ChatMacro(conn.Account, slot, message, pose);
 			conn.Account.AddChatMacro(macro);
 		}
 

@@ -19,54 +19,54 @@ namespace Melia.Channel.Database
 		/// <summary>
 		/// Account id
 		/// </summary>
-		public long Id { get; set; }
+		public virtual long Id { get; protected set; }
 
 		/// <summary>
 		/// Account name
 		/// </summary>
-		public string Name { get; set; }
+		public virtual string Name { get; protected set; }
 
 		/// <summary>
 		/// Account's team name
 		/// </summary>
-		public string TeamName { get; set; }
+		public virtual string TeamName { get; protected set; }
 
 		/// <summary>
 		/// The account's authority level, used to determine if a character
 		/// can use a specific GM command.
 		/// </summary>
-		public int Authority { get; set; }
+		public virtual int Authority { get; protected set; }
 
 		/// <summary>
 		/// The account's settings.
 		/// </summary>
-		public AccountSettings Settings { get; private set; }
+		public virtual AccountSettings Settings { get; protected set; }
 
 		/// <summary>
 		/// Account's scripting variables.
 		/// </summary>
-		public Variables Variables { get; private set; }
+		public virtual Variables Variables { get; protected set; }
 
 
 		/// <summary>
 		/// Amount of medals (iCoins).
 		/// </summary>
-		public int Medals { get; set; }
+		public virtual int Medals { get; protected set; }
 
 		/// <summary>
 		/// Id of the barrack map.
 		/// </summary>
-		public int SelectedBarrack { get; set; }
+		public virtual int SelectedBarrack { get; protected set; }
 
 		/// <summary>
 		/// Contains all visible portions of maps.
 		/// </summary>
-		public Dictionary<int, byte[]> MapVisibility { get; set; }
+		public virtual IList<MapVisibility> ExploredMaps { get; protected set; }
 
 		/// <summary>
 		/// List of chat macros.
 		/// </summary>
-		private List<ChatMacro> _chatMacros;
+		public virtual IList<ChatMacro> ChatMacros { get; protected set; }
 
 		/// <summary>
 		/// lock for updating the account
@@ -83,48 +83,59 @@ namespace Melia.Channel.Database
 
 			this.Settings = new AccountSettings();
 			this.Variables = new Variables();
-			this._chatMacros = new List<ChatMacro>();
+			this.ChatMacros = new List<ChatMacro>();
 		}
 
 		/// <summary>
 		/// Returns the chat macros for an account.
 		/// </summary>
 		/// <returns></returns>
-		public IReadOnlyList<ChatMacro> GetChatMacros()
+		public virtual IReadOnlyList<ChatMacro> GetChatMacros()
 		{
-			return this._chatMacros.AsReadOnly();
+			return this.ChatMacros.ToList().AsReadOnly();
 		}
 
 		/// <summary>
 		/// Adds a chat macro to the account.
 		/// </summary>
 		/// <param name="macro"></param>
-		public void AddChatMacro(ChatMacro macro)
+		public virtual void AddChatMacro(ChatMacro macro)
 		{
 			lock(this._key)
 			{
-				var old = this._chatMacros.FirstOrDefault(x => x.Slot == macro.Slot);
-				if (old != null)
-					this._chatMacros.Remove(old);
+				if (macro.Slot > 10)
+					return;
 
-				this._chatMacros.Add(macro);
+				var old = this.ChatMacros.FirstOrDefault(x => x.Slot == macro.Slot);
+				if (old != null)
+				{
+					old.Update(macro.Message, macro.Pose);
+					return;
+				}
+
+				this.ChatMacros.Add(macro);
 			}
 		}
 
-		/// <summary>
-		/// Loads account with given name from database and returns it.
-		/// </summary>
-		/// <param name="accountName"></param>
-		/// <returns></returns>
-		public static Account LoadFromDb(string accountName)
+		public virtual void AddExploredMap(int map, byte[] visible)
 		{
-			return ChannelServer.Instance.Database.GetAccount(accountName);
+			lock(this._key)
+			{
+				var explored = this.ExploredMaps.Where(x => x.Map == map).FirstOrDefault();
+				if (explored == null)
+				{
+					this.ExploredMaps.Add(new MapVisibility(this, map, visible));
+					return;
+				}
+
+				explored.Visible = visible;
+			}
 		}
 
 		/// <summary>
 		/// Saves account database.
 		/// </summary>
-		public void Save()
+		public virtual void Save()
 		{
 			ChannelServer.Instance.Database.SaveAccount(this);
 		}

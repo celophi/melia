@@ -39,12 +39,33 @@
     <Externalconsole>true</Externalconsole>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Dapper.1.50.0\lib\net45\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dapper.Contrib, Version=1.50.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Dapper.Contrib.1.50.0\lib\net45\Dapper.Contrib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FluentNHibernate.2.0.3.0\lib\net40\FluentNHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NHibernate.4.0.0.4000\lib\net40\NHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -53,13 +74,19 @@
   <ItemGroup>
     <Compile Include="ChannelServer.cs" />
     <Compile Include="Database\Account.cs" />
+    <Compile Include="Database\AccountMap.cs" />
     <Compile Include="Database\ChannelDb.cs" />
     <Compile Include="Database\AccountSettings.cs" />
     <Compile Include="Database\ChatMacro.cs" />
+    <Compile Include="Database\ChatMacroMap.cs" />
+    <Compile Include="Database\MapVisibililtyMap.cs" />
+    <Compile Include="Database\MapVisibility.cs" />
+    <Compile Include="Database\SessionFactory.cs" />
     <Compile Include="Network\ChannelConnection.cs" />
     <Compile Include="Network\ChannelPacketHandler.cs" />
     <Compile Include="Network\ChannelPacketSender.cs" />
     <Compile Include="Network\Helpers\AccountHelper.cs" />
+    <Compile Include="Network\Helpers\CommanderHelper.cs" />
     <Compile Include="Network\Helpers\MonsterHelper.cs" />
     <Compile Include="Network\Helpers\SkillHelper.cs" />
     <Compile Include="Program.cs" />
@@ -70,15 +97,18 @@
     <Compile Include="Scripting\Variables.cs" />
     <Compile Include="Util\GmCommands.cs" />
     <Compile Include="World\Character.cs" />
+    <Compile Include="World\CharacterMap.cs" />
     <Compile Include="World\Entity.cs" />
     <Compile Include="World\Inventory.cs" />
     <Compile Include="World\Item.cs" />
     <Compile Include="World\Map.cs" />
     <Compile Include="World\Monster.cs" />
+    <Compile Include="World\Stats.cs" />
     <Compile Include="World\WorldManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Melua\MeluaLib.csproj">

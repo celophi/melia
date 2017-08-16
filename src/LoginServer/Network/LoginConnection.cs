@@ -36,7 +36,7 @@ namespace Melia.Login.Network
 			if (this.Account == null)
 				return;
 
-			this.Account.Save();
+			LoginServer.Instance.Database.SaveAccount(this.Account);
 		}
 	}
 }

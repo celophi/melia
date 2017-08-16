@@ -18,7 +18,42 @@ namespace Melia.Login.Network.Helpers
 	{
 		public static void AddCharacter(this Packet packet, Character character)
 		{
-			packet.AddCommander(character);
+			// Commander
+			packet.PutString(character.Name, 65);
+			packet.PutString(character.Account.TeamName, 64);
+			packet.PutEmptyBin(7);
+			packet.PutLong(character.Account.Id);
+			packet.PutShort(character.Stance);
+			packet.PutShort(0);
+			packet.PutShort((short)character.Job);
+			packet.PutByte((byte)character.Gender);
+			packet.PutByte(0);
+			packet.PutInt(character.Stats.Level);
+
+			// Items
+			var equipIds = character.GetEquipIds();
+			if (equipIds.Length != Items.EquipSlotCount)
+				throw new InvalidOperationException("Incorrect amount of equipment (" + equipIds.Length + ").");
+
+			for (int i = 0; i < equipIds.Length; ++i)
+				packet.PutInt(equipIds[i]);
+
+			// [i10671, 2015-10-26 iCBT2] ?
+			{
+				packet.PutInt(0);
+				packet.PutInt(0);
+			}
+
+			packet.PutShort(character.Hair);
+			packet.PutShort(0); // Pose
+
+			// [i11025 (2016-02-26)] ?
+			{
+				packet.PutInt(0);
+			}
+
+			// End commander
+
 			packet.PutLong(character.Id);
 
 			// [i11025 (2016-02-26)]

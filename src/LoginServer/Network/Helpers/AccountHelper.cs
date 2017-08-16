@@ -25,7 +25,7 @@ namespace Melia.Login.Network.Helpers
 
 			// [i11257 (2016-03-25)] ?
 			{
-				packet.PutShort(1004);
+				packet.PutShort(1003);
 			}
 
 			// Free TP

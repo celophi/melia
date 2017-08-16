@@ -171,6 +171,12 @@ namespace Melia.Login.Network
 			packet.PutByte(0); // Only connects if 0
 			packet.PutByte(1); // Passed to a function if ^ is 0
 
+			// Force FNH to treat data as dirty since the channel server will handle it.
+			using (var session = SessionFactory.OpenSession())
+			{
+				session.Clear();
+			}
+
 			conn.Send(packet);
 		}
 

@@ -8,6 +8,8 @@ using Melia.Shared.Database;
 using Melia.Shared.Util;
 using Melia.Shared.World;
 using MySql.Data.MySqlClient;
+using NHibernate;
+using NHibernate.Linq;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -20,30 +22,19 @@ namespace Melia.Channel.Database
 	public class ChannelDb : MeliaDb
 	{
 		/// <summary>
-		/// Saves account.
+		/// Saves account
 		/// </summary>
 		/// <param name="account"></param>
-		/// <returns></returns>
 		public bool SaveAccount(Account account)
 		{
-			if (account == null)
-				throw new ArgumentNullException("account");
-
-			using (var conn = this.GetConnection())
-			using (var cmd = new UpdateCommand("UPDATE `accounts` SET {0} WHERE `accountId` = @accountId", conn))
+			using (ISession session = SessionFactory.OpenSession())
+			using (var tx = session.BeginTransaction())
 			{
-				cmd.AddParameter("@accountId", account.Id);
-				cmd.Set("settings", account.Settings.ToString());
-
-				if (cmd.Execute() == 0)
-					return false;
+				session.SaveOrUpdate(account);
+				this.SaveVariables("account:" + account.Id, account.Variables.Perm);
+				tx.Commit();
+				return true;
 			}
-
-			this.SaveVariables("account:" + account.Id, account.Variables.Perm);
-			this.SaveMapVisibility(account);
-			this.SaveChatMacros(account);
-
-			return true;
 		}
 
 		/// <summary>
@@ -53,138 +44,44 @@ namespace Melia.Channel.Database
 		/// <returns></returns>
 		public Account GetAccount(string name)
 		{
-			var account = new Account();
-
-			using (var conn = this.GetConnection())
-			using (var mc = new MySqlCommand("SELECT * FROM `accounts` WHERE `name` = @name", conn))
+			using (ISession session = SessionFactory.OpenSession())
 			{
-				mc.Parameters.AddWithValue("@name", name);
+				var account = session.Query<Account>()
+					.Where(x => x.Name == name)
+					.FirstOrDefault();
 
-				using (var reader = mc.ExecuteReader())
-				{
-					if (!reader.Read())
-						return null;
+				this.LoadVars("account:" + account.Id, account.Variables.Perm);
 
-					account.Id = reader.GetInt64("accountId");
-					account.Name = reader.GetStringSafe("name");
-					account.TeamName = reader.GetStringSafe("teamName");
-					account.Authority = reader.GetInt32("authority");
-					account.Settings.Parse(reader.GetStringSafe("settings"));
-
-				}
+				return account;
 			}
-
-			this.LoadVars("account:" + account.Id, account.Variables.Perm);
-			this.LoadMapVisibility(account);
-			this.LoadChatMacros(account);
-
-			return account;
 		}
 
-		/// <summary>
-		/// Returns given character, or null if it doesn't exist.
-		/// </summary>
-		/// <param name="characterId"></param>
-		/// <returns></returns>
 		public Character GetCharacter(long accountId, long characterId)
 		{
-			var character = new Character();
-
-			using (var conn = this.GetConnection())
-			using (var mc = new MySqlCommand("SELECT * FROM `characters` WHERE `accountId` = @accountId AND `characterId` = @characterId", conn))
+			using (ISession session = SessionFactory.OpenSession())
 			{
-				mc.Parameters.AddWithValue("@accountId", accountId);
-				mc.Parameters.AddWithValue("@characterId", characterId);
+				var character = session.Query<Character>()
+					.Where(x => x.AccountId == accountId)
+					.Where(x => x.Id == characterId)
+					.FirstOrDefault();
 
-				using (var reader = mc.ExecuteReader())
-				{
-					if (!reader.Read())
-						return null;
+				this.LoadCharacterItems(character);
+				this.LoadVars("character:" + character.Id, character.Variables.Perm);
 
-					character.Id = reader.GetInt64("characterId");
-					character.AccountId = accountId;
-					character.Name = reader.GetStringSafe("name");
-					character.TeamName = reader.GetStringSafe("teamName");
-					character.Job = (Job)reader.GetInt16("job");
-					character.Gender = (Gender)reader.GetByte("gender");
-					character.Hair = reader.GetByte("hair");
-					character.Level = reader.GetInt32("level");
-					character.MapId = reader.GetInt32("zone");
-					character.Exp = reader.GetInt32("exp");
-					character.MaxExp = reader.GetInt32("maxExp");
-					character.Hp = reader.GetInt32("hp");
-					character.MaxHp = reader.GetInt32("maxHp");
-					character.Sp = reader.GetInt32("sp");
-					character.MaxSp = reader.GetInt32("maxSp");
-					character.Stamina = reader.GetInt32("stamina");
-					character.MaxStamina = reader.GetInt32("maxStamina");
-					character.Str = reader.GetFloat("str");
-					character.Con = reader.GetFloat("con");
-					character.Int = reader.GetFloat("int");
-					character.Spr = reader.GetFloat("spr");
-					character.Dex = reader.GetFloat("dex");
-					character.StatByLevel = reader.GetFloat("statByLevel");
-					character.StatByBonus = reader.GetFloat("statByBonus");
-					character.UsedStat = reader.GetFloat("usedStat");
-
-					var x = reader.GetFloat("x");
-					var y = reader.GetFloat("y");
-					var z = reader.GetFloat("z");
-					character.Position = new Position(x, y, z);
-					character.Direction = new Direction(0);
-				}
+				return character;
 			}
-
-			this.LoadCharacterItems(character);
-			this.LoadVars("character:" + character.Id, character.Variables.Perm);
-
-			return character;
 		}
 
-		/// <summary>
-		/// Saves character information.
-		/// </summary>
-		/// <param name="character"></param>
-		/// <returns></returns>
-		public bool SaveCharacter(Character character)
+		public void SaveCharacter(Character character)
 		{
-			using (var conn = this.GetConnection())
-			using (var cmd = new UpdateCommand("UPDATE `characters` SET {0} WHERE `characterId` = @characterId", conn))
+			using (ISession session = SessionFactory.OpenSession())
+			using (var tx = session.BeginTransaction())
 			{
-				cmd.AddParameter("@characterId", character.Id);
-				cmd.Set("name", character.Name);
-				cmd.Set("job", (short)character.Job);
-				cmd.Set("gender", (byte)character.Gender);
-				cmd.Set("hair", character.Hair);
-				cmd.Set("level", character.Level);
-				cmd.Set("zone", character.MapId);
-				cmd.Set("x", character.Position.X);
-				cmd.Set("y", character.Position.Y);
-				cmd.Set("z", character.Position.Z);
-				cmd.Set("exp", character.Exp);
-				cmd.Set("maxExp", character.MaxExp);
-				cmd.Set("hp", character.Hp);
-				cmd.Set("maxHp", character.MaxHp);
-				cmd.Set("sp", character.Sp);
-				cmd.Set("maxSp", character.MaxSp);
-				cmd.Set("stamina", character.Stamina);
-				cmd.Set("maxStamina", character.MaxStamina);
-				cmd.Set("str", character.Str);
-				cmd.Set("con", character.Con);
-				cmd.Set("int", character.Int);
-				cmd.Set("spr", character.Spr);
-				cmd.Set("dex", character.Dex);
-				cmd.Set("statByLevel", character.StatByLevel);
-				cmd.Set("statByBonus", character.StatByBonus);
-				cmd.Set("usedStat", character.UsedStat);
-
-				cmd.Execute();
+				session.SaveOrUpdate(character);
+				this.SaveCharacterItems(character);
+				this.SaveVariables("character:" + character.Id, character.Variables.Perm);
+				tx.Commit();
 			}
-
-			this.SaveCharacterItems(character);
-			this.SaveVariables("character:" + character.Id, character.Variables.Perm);
-
-			return false;
 		}
 
 		/// <summary>
@@ -403,107 +300,6 @@ namespace Melia.Channel.Database
 							Log.Warning("LoadVars: Value '{2}' of variable '{0}' doesn't fit into type '{1}'. Owner: '{3}'", name, type, val, owner);
 							continue;
 						}
-					}
-				}
-			}
-		}
-
-		/// Updates explored maps for an account.
-		/// </summary>
-		/// <param name="account"></param>
-		public void SaveMapVisibility(Account account)
-		{
-			using (var conn = this.GetConnection())
-			using (var trans = conn.BeginTransaction())
-			{
-				foreach (var pair in account.MapVisibility)
-				{
-					using (var mc = new MySqlCommand("DELETE FROM `MapVisibility` WHERE `accountId` = @accountId AND `map` = @map", conn, trans))
-					{
-						mc.Parameters.AddWithValue("@accountId", account.Id);
-						mc.Parameters.AddWithValue("@map", pair.Key);
-						mc.ExecuteNonQuery();
-					}
-
-					using (var cmd = new InsertCommand("INSERT INTO `MapVisibility` {0}", conn))
-					{
-						cmd.Set("accountId", account.Id);
-						cmd.Set("map", pair.Key);
-						cmd.Set("explored", pair.Value);
-						cmd.Execute();
-					}
-				}
-				trans.Commit();
-			}
-		}
-
-		/// <summary>
-		/// Returns a dictionary of explored maps for an account.
-		/// </summary>
-		/// <param name="account"></param>
-		public void LoadMapVisibility(Account account)
-		{
-			account.MapVisibility = new Dictionary<int, byte[]>();
-
-			using (var conn = this.GetConnection())
-			using (var mc = new MySqlCommand("SELECT * FROM `MapVisibility` WHERE `accountId` = @accountId", conn))
-			{
-				mc.Parameters.AddWithValue("accountId", account.Id);
-
-				using (var reader = mc.ExecuteReader())
-				{
-					while (reader.Read())
-					{
-						var map = reader.GetInt32("map");
-						var explored = reader["explored"] as byte[];
-						account.MapVisibility[map] = explored;
-					}
-				}
-			}
-		}
-
-		/// <summary>
-		/// Persists chat macros to the database.
-		/// </summary>
-		/// <param name="account"></param>
-		public void SaveChatMacros(Account account)
-		{
-			using (var conn = this.GetConnection())
-			{
-				foreach (var macro in account.GetChatMacros())
-				{
-					using (var cmd = new InsertCommand("INSERT INTO `ChatMacro` {0} ON DUPLICATE KEY UPDATE `message` = @message, `pose` = @pose", conn))
-					{
-						cmd.Set("accountId", account.Id);
-						cmd.Set("slot", macro.Slot);
-						cmd.Set("message", macro.Message);
-						cmd.Set("pose", macro.Pose);
-
-						cmd.Execute();
-					}
-				}
-			}
-		}
-
-		/// <summary>
-		/// Loads chat macros for an account.
-		/// </summary>
-		/// <param name="account"></param>
-		public void LoadChatMacros(Account account)
-		{
-			using (var conn = this.GetConnection())
-			using (var mc = new MySqlCommand("SELECT * FROM `ChatMacro` WHERE `accountId` = @accountId", conn))
-			{
-				mc.Parameters.AddWithValue("accountId", account.Id); 
-				
-				using (var reader = mc.ExecuteReader())
-				{
-					while (reader.Read())
-					{
-						var slot = reader.GetInt32("slot");
-						var message = reader.GetString("message");
-						var pose = reader.GetInt32("pose");
-						account.AddChatMacro(new ChatMacro(slot, message, pose));
 					}
 				}
 			}
