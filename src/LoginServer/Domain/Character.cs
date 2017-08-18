@@ -12,21 +12,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Login.World
+namespace Melia.Login.Domain
 {
 	public class Character
 	{
+		private object _key = new object();
+		
 		public virtual long Id { get; protected set; }
-
-		/// <summary>
-		/// Index of character in character list.
-		/// </summary>
-		public virtual byte Index { get; set; }
 
 		/// <summary>
 		/// Ids of equipped items.
 		/// </summary>
-		public virtual IList<Equipment> Equipment { get; protected set; }
+		public virtual IList<Equipment> Inventory { get; protected set; }
 
 		/// <summary>
 		/// Character's position in barracks.
@@ -85,31 +82,27 @@ namespace Melia.Login.World
 		/// <summary>
 		/// Creates new character.
 		/// </summary>
-		public static Character New(Account account, string name, Gender gender, byte hair, JobData jobData, MapData mapData, Position pos)
+		public Character(Account account, string name, Gender gender, byte hair, JobData jobData, MapData mapData, Position pos) : this()
 		{
-			var character = new Character
-			{
-				Account = account,
-				Job = (Job)jobData.Id,
-				MapId = mapData.Id,
-				Name = name,
-				Gender = gender,
-				Hair = hair,
-				Position = pos,
-				Equipment = new List<Equipment>()
-			};
+			this.Account = account;
+			this.Job = (Job)jobData.Id;
+			this.MapId = mapData.Id;
+			this.Name = name;
+			this.Gender = gender;
+			this.Hair = hair;
+			this.Position = pos;
+			this.Inventory = new List<Equipment>();
 
-			character.Stats = new Stats(character, jobData);
-			character.Move(pos);
+			this.Stats = new Stats(this, jobData);
+			this.Move(pos);
 
 			for (var i = 0; i < Items.DefaultItems.Length; i++)
 			{
-				var item = new Equipment(character, Items.DefaultItems[i], i);
-				character.Equipment.Add(item);
+				var item = new Equipment(this, Items.DefaultItems[i], i);
+				this.Inventory.Add(item);
 			}
 
-			character.InitEquipment();
-			return character;
+			this.InitEquipment();
 		}
 
 		public virtual void Move(Position pos)
@@ -118,44 +111,66 @@ namespace Melia.Login.World
 		}
 
 		/// <summary>
+		/// hacky method. This should not be done in this class.
+		/// </summary>
+		/// <returns></returns>
+		public virtual byte GetIndex()
+		{
+			return (byte)(this.Account.GetCharacters().ToList().IndexOf(this) + 1);
+		}
+
+		/// <summary>
 		/// Initializes equipment for first time creation.
 		/// </summary>
 		private void InitEquipment()
 		{
-			// TODO: This belongs in a constructor (complicated with data persistence).
+			var db = LoginServer.Instance.Data.ItemDb;
+			var oldLightBow = db.Find("Old Light Bow");
+			var oldGladius = db.Find("Old Gladius");
+			var oldWoodenClub = db.Find("Old Wooden Club");
+			var oldShortRod = db.Find("Old Short Rod");
+			var lightPants = db.Find("Light Pants");
+			var lightArmor = db.Find("Light Armor");
+
 			switch (this.Job)
 			{
 				case Job.Archer:
-					this.Equipment[(int)EquipSlot.LeftHand].Equip(161101);
-					this.Equipment[(int)EquipSlot.RightHand].Equip(161101);
+					this.Inventory[(int)EquipSlot.LeftHand].Equip(oldLightBow.Id);
+					this.Inventory[(int)EquipSlot.RightHand].Equip(oldLightBow.Id);
 					break;
 				case Job.Swordsman:
-					this.Equipment[(int)EquipSlot.LeftHand].Equip(101101);
+					this.Inventory[(int)EquipSlot.LeftHand].Equip(oldGladius.Id);
 					break;
 				case Job.Cleric:
-					this.Equipment[(int)EquipSlot.LeftHand].Equip(201101);
+					this.Inventory[(int)EquipSlot.LeftHand].Equip(oldWoodenClub.Id);
 					break;
 				case Job.Wizard:
-					this.Equipment[(int)EquipSlot.LeftHand].Equip(141101);
+					this.Inventory[(int)EquipSlot.LeftHand].Equip(oldShortRod.Id);
 					break;
 				default:
 					throw new ArgumentException(string.Format("The job type '{0}' is not valid for this method.", this.Job));
 			}
 
-			this.Equipment[(int)EquipSlot.Pants].Equip(521101);
-			this.Equipment[(int)EquipSlot.Top].Equip(531101);
+			this.Inventory[(int)EquipSlot.Pants].Equip(lightPants.Id);
+			this.Inventory[(int)EquipSlot.Top].Equip(lightArmor.Id);
 		}
 
 		/// <summary>
-		/// Returns ids of equipped items.
+		/// Returns a characters equipment sorted by equip slot.
 		/// </summary>
 		/// <returns></returns>
-		public virtual int[] GetEquipIds()
+		public virtual IList<int> GetEquipment()
 		{
-			return this.Equipment
-				.OrderBy(x => x.EquipSlot)
-				.Select(x => x.ItemId)
-				.ToArray();
+			lock (this._key)
+			{
+				if (this.Inventory.Count != Items.EquipSlotCount)
+					throw new Exception("Error. The character's equipment count is not correct.");
+
+				return this.Inventory
+					.OrderBy(x => x.EquipSlot)
+					.Select(x => x.ItemId)
+					.ToList();
+			}
 		}
 	}
 }

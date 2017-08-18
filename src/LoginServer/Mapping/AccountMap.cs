@@ -1,13 +1,13 @@
 ﻿using FluentNHibernate;
 using FluentNHibernate.Mapping;
-using Melia.Login.World;
+using Melia.Login.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Login.Database
+namespace Melia.Login.Mapping
 {
 	public class AccountMap : ClassMap<Account>
 	{
@@ -18,6 +18,13 @@ namespace Melia.Login.Database
 			Map(x => x.Name);
 			Map(x => x.Password);
 			Map(x => x.TeamName);
+
+			Component(x => x.Money, y =>
+			{
+				y.Map(p => p.Medal);
+				y.Map(p => p.GiftMedal);
+				y.Map(p => p.PremiumMedal);
+			});
 
 			HasMany<Character>(Reveal.Member<Account>("_characters"))
 				.KeyColumn("accountId")

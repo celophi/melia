@@ -2,6 +2,7 @@
 // For more information, see license file in the main folder
 
 using Melia.Login.Database;
+using Melia.Login.Domain;
 using Melia.Shared.Network;
 using System;
 using System.Collections.Generic;

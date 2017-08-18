@@ -1,11 +1,12 @@
 ﻿using FluentNHibernate.Mapping;
+using Melia.Login.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Login.World
+namespace Melia.Login.Mapping
 {
 	public class EquipmentMap : ClassMap<Equipment>
 	{

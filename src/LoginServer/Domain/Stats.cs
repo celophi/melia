@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Login.World
+namespace Melia.Login.Domain
 {
 	public class Stats
 	{
-		public virtual Character Character { get; protected set; }
+		public readonly Character Character;
 		public virtual int Level { get; protected set; }
 		public virtual int MaxHP { get; protected set; }
 		public virtual int MaxSP { get; protected set; }
@@ -20,18 +20,15 @@ namespace Melia.Login.World
 		public virtual int SPR { get; protected set; }
 		public virtual int DEX { get; protected set; }
 
-		#region NHibernate
 		protected Stats() { }
-		#endregion
 
-		public Stats(Character character, JobData data)
+		public Stats(Character character, JobData data) : this()
 		{
 			this.Character = character;
 			this.Level = 1;
 			this.MaxHP = 100;
 			this.MaxSP = 50;
-			this.MaxSP = 25000;
-
+			this.MaxStamina = 25000;
 			this.STR = data.Str;
 			this.CON = data.Con;
 			this.INT = data.Int;

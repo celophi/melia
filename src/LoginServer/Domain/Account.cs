@@ -1,7 +1,6 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Login.World;
 using Melia.Shared.Const;
 using Melia.Shared.Data.Database;
 using Melia.Shared.Util;
@@ -13,16 +12,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Login.Database
+namespace Melia.Login.Domain
 {
-	/// <summary>
-	/// A player's account.
-	/// </summary>
 	public class Account
 	{
-		private IList<Character> _characters;
 		private object _key = new object();
-
+		private IList<Character> _characters;
 		public virtual Money Money { get; protected set; }
 
 		/// <summary>
@@ -46,11 +41,6 @@ namespace Melia.Login.Database
 		public virtual string TeamName { get; set; }
 
 		/// <summary>
-		/// Amount of medals (iCoins).
-		/// </summary>
-		public virtual int Medals { get; set; } = 500;
-
-		/// <summary>
 		/// Id of the barrack map.
 		/// </summary>
 		public virtual int SelectedBarrack { get; set; } = 11;
@@ -62,7 +52,7 @@ namespace Melia.Login.Database
 		/// </summary>
 		/// <param name="name"></param>
 		/// <param name="password"></param>
-		public static Account New(string name, string password)
+		public Account(string name, string password) : this()
 		{
 			if (string.IsNullOrWhiteSpace(name) || name.Length < 4 || name.Length > 16)
 			{
@@ -73,19 +63,13 @@ namespace Melia.Login.Database
 			{
 				throw new Exception("Error. The password field may not be null and must be between 4 and 16 characters in length.");
 			}
-
-			var encrypted = BCrypt.HashPassword(password, BCrypt.GenerateSalt());
-
-			var account =  new Account
-			{
-				Name = name,
-				Password = encrypted,
-				_characters = new List<Character>()
-			};
-			account.Money = new Money(account);
-
-			return account;
+			
+			this.Name = name;
+			this.Password = BCrypt.HashPassword(password, BCrypt.GenerateSalt());
+			this._characters = new List<Character>();
+			this.Money = new Money(this);
 		}
+		
 
 		/// <summary>
 		/// Creates a new character and registers it with the account.
@@ -104,17 +88,7 @@ namespace Melia.Login.Database
 				if (this.GetCharacterByName(name) != null)
 					throw new Exception("Error. Unable to create character because an already existing character has the same name.");
 
-				var character = Character.New(this, name, gender, hair, jobData, mapData, pos);
-
-				for (byte i = 1; i <= byte.MaxValue; ++i)
-				{
-					if (!_characters.Any(a => a.Index == i))
-					{
-						character.Index = i;
-						break;
-					}
-				}
-
+				var character = new Character(this, name, gender, hair, jobData, mapData, pos);
 				this._characters.Add(character);
 				return character;
 			}
@@ -132,8 +106,9 @@ namespace Melia.Login.Database
 				if (!this._characters.Contains(character))
 					throw new Exception("Error. the character supplied does not exist.");
 
+				var index = this._characters.IndexOf(character);
 				this._characters.Remove(character);
-				return character.Index;
+				return (byte)index;
 			}
 		}
 
@@ -179,7 +154,7 @@ namespace Melia.Login.Database
 				if (!this.Money.CanAfford(cost))
 					throw new Exception("Error. Cannot afford the barrack purchase price.");
 
-				this.Money.Charge(cost);
+				this.Money = this.Money - cost;
 				this.SelectedBarrack = barrack;
 			}
 		}
@@ -189,19 +164,36 @@ namespace Melia.Login.Database
 			throw new NotImplementedException();
 		}
 
-		public virtual void PurchaseTeamNameChange()
+		/// <summary>
+		/// Changes the team name of an account for TP.
+		/// </summary>
+		/// <param name="name"></param>
+		/// <param name="cost"></param>
+		public virtual void PurchaseTeamNameChange(string name, int cost)
 		{
-			throw new NotImplementedException();
+			lock (this._key)
+			{
+				if (!this.Money.CanAfford(cost))
+					throw new Exception("Error. Cannot afford the team name purchase price.");
+
+				this.AssignTeamName(name);
+				this.Money = this.Money - cost;
+			}
 		}
 		
 		/// <summary>
-		/// Returns list of all characters on account.
+		/// Returns a list of characters associated with this account.
 		/// </summary>
 		/// <returns></returns>
-		public virtual Character[] GetCharacters()
+		public virtual IReadOnlyList<Character> GetCharacters()
 		{
-			lock (_characters)
-				return _characters.OrderBy(x => x.Index).ToArray();
+			lock (this._key)
+			{
+				return this._characters
+					.OrderBy(x => x.Id)
+					.ToList()
+					.AsReadOnly();
+			}
 		}
 
 		/// <summary>
@@ -209,10 +201,13 @@ namespace Melia.Login.Database
 		/// </summary>
 		/// <param name="index"></param>
 		/// <returns></returns>
-		public virtual Character GetCharacterByIndex(byte index)
+		public virtual Character GetCharacterByIndex(int index)
 		{
+			if (index < 1)
+				throw new Exception("Error. The character array index must be greater than or equal to '1'");
+
 			lock (_characters)
-				return _characters.FirstOrDefault(a => a.Index == index);
+				return this._characters.ElementAtOrDefault(index - 1);
 		}
 
 		/// <summary>

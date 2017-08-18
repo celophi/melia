@@ -2,7 +2,7 @@
 // For more information, see license file in the main folder
 
 using Melia.Login.Database;
-using Melia.Login.World;
+using Melia.Login.Domain;
 using Melia.Shared.Const;
 using Melia.Shared.Network;
 using Melia.Shared.Network.Helpers;
@@ -29,14 +29,10 @@ namespace Melia.Login.Network.Helpers
 			packet.PutByte((byte)character.Gender);
 			packet.PutByte(0);
 			packet.PutInt(character.Stats.Level);
-
-			// Items
-			var equipIds = character.GetEquipIds();
-			if (equipIds.Length != Items.EquipSlotCount)
-				throw new InvalidOperationException("Incorrect amount of equipment (" + equipIds.Length + ").");
-
-			for (int i = 0; i < equipIds.Length; ++i)
-				packet.PutInt(equipIds[i]);
+			
+			// Equipment
+			foreach (var item in character.GetEquipment())
+				packet.PutInt(item);
 
 			// [i10671, 2015-10-26 iCBT2] ?
 			{
@@ -60,7 +56,7 @@ namespace Melia.Login.Network.Helpers
 			// Index was previously stored as a short, now there seem
 			// to be two byte, with the first being the index.
 			{
-				packet.PutByte(character.Index);
+				packet.PutByte(character.GetIndex());
 				packet.PutByte(181);
 			}
 

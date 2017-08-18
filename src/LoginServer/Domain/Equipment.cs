@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Login.World
+namespace Melia.Login.Domain
 {
 	public class Equipment
 	{
@@ -15,11 +15,9 @@ namespace Melia.Login.World
 		public virtual int ItemUniqueId { get; protected set; }
 		public virtual int Sort { get; protected set; }
 
-		#region NHibernate
 		protected Equipment() { }
-		#endregion
-
-		public Equipment(Character character, int itemId, int equipSlot)
+		
+		public Equipment(Character character, int itemId, int equipSlot) : this()
 		{
 			this.Character = character;
 			this.ItemId = itemId;
