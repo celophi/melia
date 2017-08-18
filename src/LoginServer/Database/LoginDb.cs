@@ -2,22 +2,18 @@
 // For more information, see license file in the main folder
 
 using Dapper;
-using Melia.Login.World;
-using Melia.Shared.Const;
+using Melia.Login.Domain;
 using Melia.Shared.Database;
 using Melia.Shared.Util;
 using Melia.Shared.Util.Security;
-using Melia.Shared.World;
 using MySql.Data.MySqlClient;
 using NHibernate;
 using NHibernate.Linq;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Melia.Login.Database
 {

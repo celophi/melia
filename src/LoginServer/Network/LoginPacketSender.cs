@@ -2,8 +2,8 @@
 // For more information, see license file in the main folder
 
 using Melia.Login.Database;
+using Melia.Login.Domain;
 using Melia.Login.Network.Helpers;
-using Melia.Login.World;
 using Melia.Shared.Const;
 using Melia.Shared.Network;
 using Melia.Shared.Network.Helpers;
@@ -21,12 +21,24 @@ namespace Melia.Login.Network
 {
 	public static class Send
 	{
-		public static void BC_LOGIN_PACKET_RECEIVED(LoginConnection conn)
+		/// <summary>
+		/// Sends the number of the new character's index.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="character"></param>
+		public static void BC_COMMANDER_CREATE_SLOTID(LoginConnection conn, Character character)
 		{
-			var packet = new Packet(Op.BC_LOGIN_PACKET_RECEIVED);
+			var packet = new Packet(Op.BC_COMMANDER_CREATE_SLOTID);
+			var characterCount = (byte)conn.Account.GetCharacters().Count;
+
+			packet.PutByte(characterCount);
 			conn.Send(packet);
 		}
 
+		/// <summary>
+		/// Sent to the client stating that the login was successful.
+		/// </summary>
+		/// <param name="conn"></param>
 		public static void BC_LOGINOK(LoginConnection conn)
 		{
 			var packet = new Packet(Op.BC_LOGINOK);
@@ -42,6 +54,21 @@ namespace Melia.Login.Network
 			conn.Send(packet);
 		}
 
+		/// <summary>
+		/// Tells the client that the server successfully received the login packet.
+		/// </summary>
+		/// <param name="conn"></param>
+		public static void BC_LOGIN_PACKET_RECEIVED(LoginConnection conn)
+		{
+			var packet = new Packet(Op.BC_LOGIN_PACKET_RECEIVED);
+
+			conn.Send(packet);
+		}
+
+		/// <summary>
+		/// Sent to the client when logging out.
+		/// </summary>
+		/// <param name="conn"></param>
 		public static void BC_LOGOUTOK(LoginConnection conn)
 		{
 			var packet = new Packet(Op.BC_LOGOUTOK);
@@ -49,6 +76,10 @@ namespace Melia.Login.Network
 			conn.Send(packet);
 		}
 
+		/// <summary>
+		/// Sends a list of characters to the client and account properties.
+		/// </summary>
+		/// <param name="conn"></param>
 		public static void BC_COMMANDER_LIST(LoginConnection conn)
 		{
 			var characters = conn.Account.GetCharacters();
@@ -56,7 +87,7 @@ namespace Melia.Login.Network
 			var packet = new Packet(Op.BC_COMMANDER_LIST);
 			packet.PutLong(conn.Account.Id);
 			packet.PutByte(0);
-			packet.PutByte((byte)characters.Length);
+			packet.PutByte((byte)characters.Count);
 			packet.PutString(conn.Account.TeamName, 64);
 
 			packet.AddAccountProperties(conn.Account);
@@ -99,6 +130,11 @@ namespace Melia.Login.Network
 			conn.Send(packet);
 		}
 
+		/// <summary>
+		/// Sends a newly created character to the client.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="character"></param>
 		public static void BC_COMMANDER_CREATE(LoginConnection conn, Character character)
 		{
 			var packet = new Packet(Op.BC_COMMANDER_CREATE);
@@ -108,47 +144,10 @@ namespace Melia.Login.Network
 		}
 
 		/// <summary>
-		/// Sends the number of the new character's index.
+		/// Informs the client that a character has been destroyed.
 		/// </summary>
 		/// <param name="conn"></param>
-		/// <param name="character"></param>
-		public static void BC_COMMANDER_CREATE_SLOTID(LoginConnection conn, Character character)
-		{
-			var packet = new Packet(Op.BC_COMMANDER_CREATE_SLOTID);
-			var characterCount = (byte)conn.Account.GetCharacters().Length;
-
-			packet.PutByte(characterCount);
-			conn.Send(packet);
-		}
-
-		public static void BC_BARRACKNAME_CHANGE(LoginConnection conn, TeamNameChangeResult result)
-		{
-			var response = new Packet(Op.BC_BARRACKNAME_CHANGE);
-			response.PutByte(result == TeamNameChangeResult.Okay);
-			response.PutInt((int)result);
-			response.PutString(conn.Account.TeamName, 64);
-
-			conn.Send(response);
-		}
-
-		public static void BC_MESSAGE(LoginConnection conn, MsgType msgType)
-		{
-			var packet = new Packet(Op.BC_MESSAGE);
-			packet.PutByte((byte)msgType);
-
-			conn.Send(packet);
-		}
-
-		public static void BC_MESSAGE(LoginConnection conn, string msg)
-		{
-			var packet = new Packet(Op.BC_MESSAGE);
-			packet.PutByte((byte)MsgType.Text);
-			packet.PutEmptyBin(40);
-			packet.PutString(msg);
-
-			conn.Send(packet);
-		}
-
+		/// <param name="index"></param>
 		public static void BC_COMMANDER_DESTROY(LoginConnection conn, byte index)
 		{
 			var packet = new Packet(Op.BC_COMMANDER_DESTROY);
@@ -157,7 +156,13 @@ namespace Melia.Login.Network
 			conn.Send(packet);
 		}
 
-
+		/// <summary>
+		/// Instructs the client that it may continue with starting the game.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="character"></param>
+		/// <param name="ip"></param>
+		/// <param name="port"></param>
 		public static void BC_START_GAMEOK(LoginConnection conn, Character character, string ip, int port)
 		{
 			var packet = new Packet(Op.BC_START_GAMEOK);
@@ -180,18 +185,54 @@ namespace Melia.Login.Network
 			conn.Send(packet);
 		}
 
-		public static void BC_SERVER_ENTRY(LoginConnection conn, string ip1, int port1, string ip2, int port2)
+		/// <summary>
+		/// Sends a changed team name to the client.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="result"></param>
+		public static void BC_BARRACKNAME_CHANGE(LoginConnection conn, TeamNameChangeResult result)
 		{
-			var packet = new Packet(Op.BC_SERVER_ENTRY);
-
-			packet.PutInt(IPAddress.Parse(ip1).ToInt32());
-			packet.PutInt(IPAddress.Parse(ip2).ToInt32());
-			packet.PutShort(port1);
-			packet.PutShort(port2);
+			var packet = new Packet(Op.BC_BARRACKNAME_CHANGE);
+			packet.PutByte(result == TeamNameChangeResult.Okay);
+			packet.PutInt((int)result);
+			packet.PutString(conn.Account.TeamName, 64);
 
 			conn.Send(packet);
 		}
 
+		/// <summary>
+		/// Sends a generic message dialog to the client.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="msgType"></param>
+		public static void BC_MESSAGE(LoginConnection conn, MsgType msgType)
+		{
+			var packet = new Packet(Op.BC_MESSAGE);
+			packet.PutByte((byte)msgType);
+
+			conn.Send(packet);
+		}
+
+		/// <summary>
+		/// Sends a custom message dialog to the client.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="msg"></param>
+		public static void BC_MESSAGE(LoginConnection conn, string msg)
+		{
+			var packet = new Packet(Op.BC_MESSAGE);
+			packet.PutByte((byte)MsgType.Text);
+			packet.PutEmptyBin(40);
+			packet.PutString(msg);
+
+			conn.Send(packet);
+		}
+
+		/// <summary>
+		/// Sends account properties to the client.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="account"></param>
 		public static void BC_ACCOUNT_PROP(LoginConnection conn, Account account)
 		{
 			var packet = new Packet(Op.BC_ACCOUNT_PROP);
@@ -221,7 +262,7 @@ namespace Melia.Login.Network
 
 			// Sum of characters and pets.
 			var characters = conn.Account.GetCharacters();
-			packet.PutShort(characters.Length);
+			packet.PutShort(characters.Count);
 
 			conn.Send(packet);
 		}
@@ -232,13 +273,13 @@ namespace Melia.Login.Network
 		/// <param name="conn"></param>
 		public static void BC_NORMAL_ZoneTraffic(LoginConnection conn)
 		{
-			var characters = conn.Account.GetCharacters();
-			var mapAvailableCount = characters.Length;
-			var zoneServerCount = 1;
-			var zoneMaxPcCount = 150;
-
 			var packet = new Packet(Op.BC_NORMAL);
 			packet.PutInt(0x0C); //SubOp
+
+			var characters = conn.Account.GetCharacters();
+			var mapAvailableCount = characters.Count;
+			var zoneServerCount = 1;
+			var zoneMaxPcCount = 150;
 
 			packet.BeginZlib();
 			packet.PutShort(zoneMaxPcCount);
@@ -267,7 +308,6 @@ namespace Melia.Login.Network
 		{
 			var packet = new Packet(Op.BC_NORMAL);
 			packet.PutInt(0x0F); // SubOp
-
 			packet.PutLpString(str);
 
 			conn.Send(packet);
@@ -282,6 +322,39 @@ namespace Melia.Login.Network
 			var packet = new Packet(Op.BC_NORMAL);
 			packet.PutInt(0x14);
 			packet.PutLpString(conn.SessionKey);
+
+			conn.Send(packet);
+		}
+
+		/// <summary>
+		/// Sends the cost of a character slot to the client.
+		/// </summary>
+		/// <param name="conn"></param>
+		public static void BC_REQ_SLOT_PRICE(LoginConnection conn)
+		{
+			var packet = new Packet(Op.BC_REQ_SLOT_PRICE);
+			packet.PutInt(50); // move this into database
+
+			conn.Send(packet);
+		}
+
+		/// <summary>
+		/// Instructs the client to move the user to the barrack server.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="ip1"></param>
+		/// <param name="port1"></param>
+		/// <param name="ip2"></param>
+		/// <param name="port2"></param>
+		public static void BC_SERVER_ENTRY(LoginConnection conn, string ip1, int port1, string ip2, int port2)
+		{
+			var packet = new Packet(Op.BC_SERVER_ENTRY);
+
+			packet.PutInt(IPAddress.Parse(ip1).ToInt32());
+			packet.PutInt(IPAddress.Parse(ip2).ToInt32());
+			packet.PutShort(port1);
+			packet.PutShort(port2);
+
 			conn.Send(packet);
 		}
 	}

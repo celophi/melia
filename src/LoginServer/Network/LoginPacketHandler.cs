@@ -2,7 +2,7 @@
 // For more information, see license file in the main folder
 
 using Melia.Login.Database;
-using Melia.Login.World;
+using Melia.Login.Domain;
 using Melia.Shared.Const;
 using Melia.Shared.Database;
 using Melia.Shared.Network;
@@ -52,7 +52,7 @@ namespace Melia.Login.Network
 				accountName = accountName.Substring("new__".Length);
 				if (!LoginServer.Instance.Database.AccountExists(accountName))
 				{
-					account = Account.New(accountName, password);
+					account = new Account(accountName, password);
 					LoginServer.Instance.Database.SaveAccount(account);
 				}
 					
@@ -116,9 +116,6 @@ namespace Melia.Login.Network
 		/// </summary>
 		/// <param name="conn"></param>
 		/// <param name="packet"></param>
-		/// <example>
-		/// ([06 00] [01 00 00 00] [07 00 00 00]) 00 | 43 07 5D A9 B7
-		/// </example>
 		[PacketHandler(Op.CB_START_BARRACK)]
 		public void CB_START_BARRACK(LoginConnection conn, Packet packet)
 		{
@@ -128,59 +125,6 @@ namespace Melia.Login.Network
 			Send.BC_COMMANDER_LIST(conn);
 			Send.BC_NORMAL_ZoneTraffic(conn);
 			Send.BC_NORMAL_TeamUI(conn);
-		}
-
-		/// <summary>
-		/// Send upon login, purpose unknown.
-		/// </summary>
-		/// <param name="conn"></param>
-		/// <param name="packet"></param>
-		/// <example>
-		/// ([4E 00] [02 00 00 00] [F1 00 00 00]) 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80 3F 00 00 00 00 | CB
-		/// </example>
-		[PacketHandler(Op.CB_CURRENT_BARRACK)]
-		public void CB_CURRENT_BARRACK(LoginConnection conn, Packet packet)
-		{
-		}
-
-		/// <summary>
-		/// Sent when the user clicks the barrack number.
-		/// </summary>
-		/// <param name="conn"></param>
-		/// <param name="packet"></param>
-		[PacketHandler(Op.CB_SELECT_BARRACK_LAYER)]
-		public void CB_SELECT_BARRACK_LAYER(LoginConnection conn, Packet packet)
-		{
-			// temporarily resend the current list
-			Send.BC_COMMANDER_LIST(conn);
-		}
-
-		/// <summary>
-		/// Sent when saving Team Name in Lodge Settings on barrack screen.
-		/// </summary>
-		/// <param name="conn"></param>
-		/// <param name="packet"></param>
-		[PacketHandler(Op.CB_BARRACKNAME_CHANGE)]
-		public void CB_BARRACKNAME_CHANGE(LoginConnection conn, Packet packet)
-		{
-			var name = packet.GetString(64);
-			
-			if (!conn.Account.IsTeamNameValid(name))
-			{
-				Send.BC_BARRACKNAME_CHANGE(conn, TeamNameChangeResult.TeamChangeFailed);
-				return;
-			}
-
-			var exists = LoginServer.Instance.Database.TeamNameExists(name);
-			if (exists)
-			{
-				Send.BC_BARRACKNAME_CHANGE(conn, TeamNameChangeResult.TeamNameAlreadyExist);
-				return;
-			}
-
-			conn.Account.AssignTeamName(name);
-			LoginServer.Instance.Database.SaveAccount(conn.Account);
-			Send.BC_BARRACKNAME_CHANGE(conn, TeamNameChangeResult.Okay);
 		}
 
 		/// <summary>
@@ -200,14 +144,13 @@ namespace Melia.Login.Network
 			var bz = packet.GetFloat();
 			var hair = packet.GetByte();
 
-			// character exist check
-			if(conn.Account.GetCharacters().Any(x => x.Name == name))
+
+			if (conn.Account.GetCharacterByName(name) != null)
 			{
 				Send.BC_MESSAGE(conn, MsgType.CannotCreateCharacter);
 				return;
 			}
 
-			
 			var startingCity = StartingCity.Klaipeda;
 
 			// Check starting city
@@ -267,9 +210,12 @@ namespace Melia.Login.Network
 				Send.BC_MESSAGE(conn, MsgType.CannotCreateCharacter);
 				return;
 			}
-			
+
 			var pos = new Position(startingCityData.X, startingCityData.Y, startingCityData.Z);
 			var character = conn.Account.CreateCharacter(name, gender, hair, jobData, mapData, pos);
+
+			// persist the new character so that the ID may be sent to the client.
+			LoginServer.Instance.Database.SaveAccount(conn.Account);
 
 			Send.BC_COMMANDER_CREATE_SLOTID(conn, character);
 			Send.BC_COMMANDER_CREATE(conn, character);
@@ -294,47 +240,27 @@ namespace Melia.Login.Network
 			}
 
 			var index = conn.Account.DeleteCharacter(character);
-			
+
 			LoginServer.Instance.Database.SaveAccount(conn.Account);
 			Send.BC_COMMANDER_DESTROY(conn, index);
 			Send.BC_NORMAL_TeamUI(conn);
 		}
 
 		/// <summary>
-		/// Sent after character moved somewhere on the barrack screen, updates position?
+		/// Sent upon login, contains checksum of client files?
 		/// </summary>
-		/// <param name="conn"></param>
-		/// <param name="packet"></param>
-		/// <example>
-		/// ([0B 00] [06 00 00 00] [AD 04 00 00]) 02 C5 C4 F0 C1 BD 63 90 41 BF 6F A8 C1 00 00 00 00 00 00 00 00 | C1
-		/// </example>
-		[PacketHandler(Op.CB_COMMANDER_MOVE)]
-		public void CB_COMMANDER_MOVE(LoginConnection conn, Packet packet)
+		[PacketHandler(Op.CB_CHECK_CLIENT_INTEGRITY)]
+		public void CB_CHECK_CLIENT_INTEGRITY(LoginConnection conn, Packet packet)
 		{
-			var index = packet.GetByte();
-			var x = packet.GetFloat();
-			var y = packet.GetFloat();
-			var z = packet.GetFloat();
-			var d1 = packet.GetFloat(); // ?
-			var d2 = packet.GetFloat(); // ?
+			var checksum = packet.GetString(64);
 
-			// Get character
-			var character = conn.Account.GetCharacterByIndex(index);
-			if (character == null)
-			{
-				Log.Warning("CB_COMMANDER_MOVE: User '{0}' tried to move invalid character ({1}).", conn.Account.Name, index);
-				return;
-			}
-			
-			character.Move(new Position(x, y, z));
+			// Ignore for now.
+			// TODO: Add option for accepted checksums.
 		}
 
 		/// <summary>
 		/// Sent when clicking [Start Game], to connect to the selected channel.
 		/// </summary>
-		/// <example>
-		/// ([09 00] [15 00 00 00] [1D 00 00 00]) 00 00 01 | 69 7D E4
-		/// </example>
 		[PacketHandler(Op.CB_START_GAME)]
 		public void CB_START_GAME(LoginConnection conn, Packet packet)
 		{
@@ -361,9 +287,76 @@ namespace Melia.Login.Network
 				return;
 			}
 
-
-
 			Send.BC_START_GAMEOK(conn, character, channelServer.Ip, channelServer.Port);
+		}
+
+		/// <summary>
+		/// Sent when saving Team Name in Lodge Settings on barrack screen.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CB_BARRACKNAME_CHANGE)]
+		public void CB_BARRACKNAME_CHANGE(LoginConnection conn, Packet packet)
+		{
+			var name = packet.GetString(64);
+
+			if (!conn.Account.IsTeamNameValid(name))
+			{
+				Send.BC_BARRACKNAME_CHANGE(conn, TeamNameChangeResult.TeamChangeFailed);
+				return;
+			}
+
+			var exists = LoginServer.Instance.Database.TeamNameExists(name);
+			if (exists)
+			{
+				Send.BC_BARRACKNAME_CHANGE(conn, TeamNameChangeResult.TeamNameAlreadyExist);
+				return;
+			}
+
+			conn.Account.AssignTeamName(name);
+			LoginServer.Instance.Database.SaveAccount(conn.Account);
+			Send.BC_BARRACKNAME_CHANGE(conn, TeamNameChangeResult.Okay);
+		}
+
+		/// <summary>
+		/// Updates the character's position in the barrack.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CB_COMMANDER_MOVE)]
+		public void CB_COMMANDER_MOVE(LoginConnection conn, Packet packet)
+		{
+			var index = packet.GetByte();
+			var x = packet.GetFloat();
+			var y = packet.GetFloat();
+			var z = packet.GetFloat();
+			var d1 = packet.GetFloat(); // ?
+			var d2 = packet.GetFloat(); // ?
+
+			// Weird byte sent when a new character is created.
+			if (index == 0xFF)
+				return;
+
+			// Get character
+			var character = conn.Account.GetCharacterByIndex(index);
+			if (character == null)
+			{
+				Log.Warning("CB_COMMANDER_MOVE: User '{0}' tried to move invalid character ({1}).", conn.Account.Name, index);
+				return;
+			}
+
+			character.Move(new Position(x, y, z));
+		}
+
+		/// <summary>
+		/// Sent when the client wants an update on zone traffic.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CB_REQ_CHANNEL_TRAFFIC)]
+		public void CB_REQ_CHANNEL_TRAFFIC(LoginConnection conn, Packet packet)
+		{
+			Send.BC_NORMAL_ZoneTraffic(conn);
 		}
 
 		/// <summary>
@@ -394,33 +387,49 @@ namespace Melia.Login.Network
 		}
 
 		/// <summary>
-		/// Sent upon login, contains checksum of client files?
-		/// </summary>
-		/// <example>
-		/// 0000   09 00 01 00 00 00 12 04  00 00 39 64 34 39 61 35   ..........9d49a5
-		/// 0010   33 36 34 38 32 63 33 33  38 39 33 31 66 31 32 62   36482c338931f12b
-		/// 0020   36 30 38 65 33 31 37 61  30 65 00 00 00 00 00 00   608e317a0e......
-		/// 0030   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
-		/// 0040   00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
-		/// </example>
-		[PacketHandler(Op.CB_CHECK_CLIENT_INTEGRITY)]
-		public void CB_CHECK_CLIENT_INTEGRITY(LoginConnection conn, Packet packet)
-		{
-			var checksum = packet.GetString(64);
-
-			// Ignore for now.
-			// TODO: Add option for accepted checksums.
-		}
-
-		/// <summary>
-		/// Sent when the client wants an update on zone traffic.
+		/// Send upon login, purpose unknown.
 		/// </summary>
 		/// <param name="conn"></param>
 		/// <param name="packet"></param>
-		[PacketHandler(Op.CB_REQ_CHANNEL_TRAFFIC)]
-		public void CB_REQ_CHANNEL_TRAFFIC(LoginConnection conn, Packet packet)
+		[PacketHandler(Op.CB_CURRENT_BARRACK)]
+		public void CB_CURRENT_BARRACK(LoginConnection conn, Packet packet)
 		{
-			Send.BC_NORMAL_ZoneTraffic(conn);
+			var accountId = packet.GetLong();
+		}
+
+		/// <summary>
+		/// Sent when the client attempts to purchase an additional character slot.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CB_REQ_SLOT_PRICE)]
+		public void CB_REQ_SLOT_PRICE(LoginConnection conn, Packet packet)
+		{
+			Send.BC_REQ_SLOT_PRICE(conn);
+		}
+
+		/// <summary>
+		/// Sent when the user clicks the barrack number.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CB_SELECT_BARRACK_LAYER)]
+		public void CB_SELECT_BARRACK_LAYER(LoginConnection conn, Packet packet)
+		{
+			// temporarily resend the current list
+			Send.BC_COMMANDER_LIST(conn);
+		}
+
+		/// <summary>
+		/// Represents a list of addons that are not allowed.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CB_NOT_AUTHORIZED_ADDON_LIST)]
+		public void CB_NOT_AUTHORIZED_ADDON_LIST(LoginConnection conn, Packet packet)
+		{
+			var count = packet.GetInt();
+			var addonNames = packet.GetString();
 		}
 	}
 }

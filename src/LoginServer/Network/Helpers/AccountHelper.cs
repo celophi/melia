@@ -2,6 +2,7 @@
 // For more information, see license file in the main folder
 
 using Melia.Login.Database;
+using Melia.Login.Domain;
 using Melia.Shared.Const;
 using Melia.Shared.Network;
 using System;
@@ -30,7 +31,7 @@ namespace Melia.Login.Network.Helpers
 
 			// Free TP
 			packet.PutInt(ObjectProperty.Account["Medal"]);
-			packet.PutFloat(account.Medals);
+			packet.PutFloat(account.Money.Medal);
 
 			packet.PutInt(ObjectProperty.Account["Medal_Get_Date"]);
 
@@ -39,11 +40,11 @@ namespace Melia.Login.Network.Helpers
 			
 			//Event TP
 			packet.PutInt(ObjectProperty.Account["GiftMedal"]);
-			packet.PutFloat(10);
+			packet.PutFloat(account.Money.GiftMedal);
 
 			// TP
 			packet.PutInt(ObjectProperty.Account["PremiumMedal"]);
-			packet.PutFloat(0);
+			packet.PutFloat(account.Money.PremiumMedal);
 
 			packet.PutInt(ObjectProperty.Account["SelectedBarrack"]);
 			packet.PutFloat(account.SelectedBarrack);

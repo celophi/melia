@@ -1,6 +1,7 @@
 ﻿using FluentNHibernate;
 using FluentNHibernate.Mapping;
 using Melia.Login.Database;
+using Melia.Login.Domain;
 using Melia.Shared.Const;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Melia.Login.World
+namespace Melia.Login.Mapping
 {
 	public class CharacterMap : ClassMap<Character>
 	{
@@ -20,7 +21,6 @@ namespace Melia.Login.World
 			Map(x => x.MapId).Column("zone");
 			Map(x => x.Job).CustomType<Job>();
 			Map(x => x.Gender).CustomType<Gender>();
-			Map(x => x.Index).Column("barrackIndex");
 			Map(x => x.Hair);
 			References<Account>(x => x.Account, "accountId");
 
@@ -51,7 +51,7 @@ namespace Melia.Login.World
 				y.Map(p => p.Level);
 			});
 
-			HasMany<Equipment>(x => x.Equipment)
+			HasMany<Equipment>(x => x.Inventory)
 				.KeyColumn("characterId")
 				.Where(x => x.EquipSlot < Items.EquipSlotCount)
 				.OrderBy("equipSlot ASC")
