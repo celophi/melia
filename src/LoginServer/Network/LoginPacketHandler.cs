@@ -313,9 +313,14 @@ namespace Melia.Login.Network
 				return;
 			}
 
-			conn.Account.AssignTeamName(name);
+			if (String.IsNullOrEmpty(conn.Account.TeamName))
+				conn.Account.AssignTeamName(name);
+			else
+				conn.Account.PurchaseTeamNameChange(name, 150);
+
 			LoginServer.Instance.Database.SaveAccount(conn.Account);
 			Send.BC_BARRACKNAME_CHANGE(conn, TeamNameChangeResult.Okay);
+			Send.BC_ACCOUNT_PROP(conn, conn.Account);
 		}
 
 		/// <summary>

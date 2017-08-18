@@ -10,8 +10,20 @@ namespace Melia.Login.Domain
 	{
 		private object _key = new object();
 		public readonly Account Account;
+
+		/// <summary>
+		/// FreeTP
+		/// </summary>
 		public virtual int Medal { get; protected set; }
+
+		/// <summary>
+		/// EventTP
+		/// </summary>
 		public virtual int GiftMedal { get; protected set; }
+
+		/// <summary>
+		/// TP
+		/// </summary>
 		public virtual int PremiumMedal { get; protected set; }
 
 		protected Money() { }
@@ -54,18 +66,18 @@ namespace Melia.Login.Domain
 					PremiumMedal = money.PremiumMedal
 				};
 
-				balance.GiftMedal -= cost;
+				balance.Medal -= cost;
+				if (balance.Medal >= 0)
+					return balance;
+
+				balance.GiftMedal += balance.Medal;
+				balance.Medal = 0;
 				if (balance.GiftMedal >= 0)
 					return balance;
 
-				balance.PremiumMedal -= balance.GiftMedal;
+				balance.PremiumMedal += balance.GiftMedal;
 				balance.GiftMedal = 0;
 				if (balance.PremiumMedal >= 0)
-					return balance;
-
-				balance.Medal -= balance.Medal;
-				balance.PremiumMedal = 0;
-				if (balance.Medal >= 0)
 					return balance;
 
 				throw new Exception("Error. Unable to complete the purchase because of insufficient funds.");

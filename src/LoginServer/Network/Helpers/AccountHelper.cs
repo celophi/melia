@@ -33,8 +33,8 @@ namespace Melia.Login.Network.Helpers
 			packet.PutInt(ObjectProperty.Account["Medal"]);
 			packet.PutFloat(account.Money.Medal);
 
+			// Date string to start counting from for Free TP? Ex: 201708518025941
 			packet.PutInt(ObjectProperty.Account["Medal_Get_Date"]);
-
 			packet.PutShort(5); // length of the next string
 			packet.PutString("None");
 			
