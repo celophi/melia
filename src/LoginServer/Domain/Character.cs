@@ -49,8 +49,6 @@ namespace Melia.Login.Domain
 		{
 			get
 			{
-				var cls = this.Job.ToClass();
-
 				// The stance is affected by the equipped items, we might
 				// have to move this to a place where we have proper access
 				// to the character's items, and we need item types.
@@ -58,20 +56,20 @@ namespace Melia.Login.Domain
 				// another Item class.
 				// For the official conditions see stancecondition.ies.
 
-				switch (cls)
+				switch (this.Job)
 				{
 					default:
-					case Class.Swordsman:
+					case Job.Swordsman:
 						return 10000;
 
-					case Class.Wizard:
+					case Job.Wizard:
 						return 10006;
 
-					case Class.Archer:
+					case Job.Archer:
 						return 10008;
 
-					case Class.Cleric:
-					case Class.GM:
+					case Job.Cleric:
+					case Job.GM:
 						return 10004;
 				}
 			}

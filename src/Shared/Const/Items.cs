@@ -58,29 +58,30 @@ namespace Melia.Shared.Const
 	/// </remarks>
 	public enum EquipSlot : byte
 	{
-		HairAccessory,
-		SubsidiaryAccessory,
-		Hair, // [i11025 (2016-02-26)]
-		Top,
-		Gloves,
-		Shoes,
-		Helmet,
-		Armband,
-		LeftHand,
-		RightHand,
-		Outer1,
-		Ring1,
-		Ring2,
-		Outer2,
-		Pants,
-		Ring3,
-		Ring4,
-		Bracelet1,
-		Bracelet2,
-		Necklace,
-		Hat,
-		Costume,
-		Outer3,
+		HairAccessory,			// HAT
+		SubsidiaryAccessory,	// HAT_L
+		Hair,					// HAIR
+		Top,					// SHIRT
+		Gloves,					// GLOVES
+		Shoes,					// BOOTS
+		Helmet,					// HELMET
+		Armband,				// ARMBAND
+		LeftHand,				// RH
+		RightHand,				// LH
+		Outer1,					// OUTER
+		Ring1,					// OUTERADD1
+		Ring2,					// OUTERADD2
+		Outer2,					// BODY
+		Pants,					// PANTS
+		Ring3,					// PANTSADD1
+		Ring4,					// PANTSADD2
+		Bracelet1,				// RING1
+		Bracelet2,				// RING2
+		Necklace,				// NECK
+		Hat,					// HAT_T
+		Costume,				// LENS
+		Outer3,					// WING
+								// LAST ?? This is not part of the array actually?
 	}
 
 	public enum InventoryItemRemoveMsg : byte

@@ -164,15 +164,18 @@ namespace Melia.Channel.Network
 		/// </summary>
 		/// <param name="conn"></param>
 		/// <param name="packet"></param>
-		/// <example>
-		/// ([59 0C] [02 00 00 00] [65 00 00 00]) 02 00 00 00 00 00 00 00 | E7 B1 5E C8 25 CB	
-		/// </example>
 		[PacketHandler(Op.CZ_CAMPINFO)]
 		public void CZ_CAMPINFO(ChannelConnection conn, Packet packet)
 		{
 			var accountId = packet.GetLong();
 
 			Send.ZC_CAMPINFO(conn);
+		}
+
+		[PacketHandler(Op.CZ_TARGET_JOB_INFO)]
+		public void CZ_TARGET_JOB_INFO(ChannelConnection conn, Packet packet)
+		{
+			var accountId = packet.GetLong();
 		}
 
 		/// <summary>

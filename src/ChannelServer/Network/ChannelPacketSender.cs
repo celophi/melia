@@ -1813,6 +1813,16 @@ namespace Melia.Channel.Network
 		}
 
 		/// <summary>
+		/// Sets the barrack slot buy from the zone server.
+		/// </summary>
+		/// <param name="conn"></param>
+		public static void ZC_NORMAL_BarrackSlotBuy(ChannelConnection conn)
+		{
+			var packet = new Packet(Op.ZC_NORMAL);
+			packet.PutInt(0x3C);
+		}
+
+		/// <summary>
 		/// Sends the session key to the client.
 		/// </summary>
 		/// <param name="conn"></param>
@@ -1850,6 +1860,15 @@ namespace Melia.Channel.Network
 			packet.PutEmptyBin(6); // unk ?
 			packet.PutShort(10); // points
 			packet.PutShort(2); // class tier (number of stars)
+
+			character.Connection.Send(packet);
+		}
+
+		public static void ZC_VIBRATE(Character character)
+		{
+			var packet = new Packet(Op.ZC_VIBRATE);
+			packet.PutInt(character.Handle);
+			packet.PutFloat(10); // time
 
 			character.Connection.Send(packet);
 		}

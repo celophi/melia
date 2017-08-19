@@ -55,7 +55,7 @@ namespace Melia.Login.Network
 					account = new Account(accountName, password);
 					LoginServer.Instance.Database.SaveAccount(account);
 				}
-					
+
 			}
 
 			account = LoginServer.Instance.Database.GetAccount(accountName);
@@ -314,13 +314,19 @@ namespace Melia.Login.Network
 			}
 
 			if (String.IsNullOrEmpty(conn.Account.TeamName))
+			{
 				conn.Account.AssignTeamName(name);
+				Send.BC_BARRACKNAME_CHANGE(conn, TeamNameChangeResult.Okay);
+			}
 			else
+			{
 				conn.Account.PurchaseTeamNameChange(name, 150);
+				Send.BC_BARRACKNAME_CHANGE(conn, TeamNameChangeResult.Okay);
+				Send.BC_ACCOUNT_PROP(conn, conn.Account);
+				Send.BC_NORMAL_Run(conn, BCNormalMsg.THEMA_BUY_SUCCESS);
+			}
 
 			LoginServer.Instance.Database.SaveAccount(conn.Account);
-			Send.BC_BARRACKNAME_CHANGE(conn, TeamNameChangeResult.Okay);
-			Send.BC_ACCOUNT_PROP(conn, conn.Account);
 		}
 
 		/// <summary>
@@ -413,6 +419,15 @@ namespace Melia.Login.Network
 			Send.BC_REQ_SLOT_PRICE(conn);
 		}
 
+		[PacketHandler(Op.CB_CHANGE_BARRACK_LAYER)]
+		public void CB_CHANGE_BARRACK_LAYER(LoginConnection conn, Packet packet)
+		{
+			var classId = packet.GetLong();
+			var unused = packet.GetInt();
+
+
+		}
+
 		/// <summary>
 		/// Sent when the user clicks the barrack number.
 		/// </summary>
@@ -421,6 +436,8 @@ namespace Melia.Login.Network
 		[PacketHandler(Op.CB_SELECT_BARRACK_LAYER)]
 		public void CB_SELECT_BARRACK_LAYER(LoginConnection conn, Packet packet)
 		{
+			var layer = packet.GetInt();
+
 			// temporarily resend the current list
 			Send.BC_COMMANDER_LIST(conn);
 		}

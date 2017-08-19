@@ -326,6 +326,12 @@ namespace Melia.Login.Network
 			conn.Send(packet);
 		}
 
+		public static void BC_NORMAL_BarrackSlotBuy(LoginConnection conn)
+		{
+			var packet = new Packet(Op.BC_NORMAL);
+			packet.PutInt(0x19); // subOp
+		}
+
 		/// <summary>
 		/// Sends the cost of a character slot to the client.
 		/// </summary>
