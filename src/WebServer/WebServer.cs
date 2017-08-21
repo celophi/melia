@@ -44,9 +44,6 @@ namespace Melia.Web
 			// Conf
 			this.LoadConf();
 
-			// Data
-			this.LoadData(DataToLoad.Servers, true);
-
 			// Web server
 			this.StartWebServer();
 
@@ -73,11 +70,13 @@ namespace Melia.Web
 
 			try
 			{
-				this.App.Listen(this.Conf.Web.Port);
+				int port;
+				Int32.TryParse(Settings.Default.WebPort, out port);
+				this.App.Listen(port);
 
-				Log.Info("ServerListURL: http://*:{0}/{1}", this.Conf.Web.Port, "toslive/patch/serverlist.xml");
-				Log.Info("StaticConfigURL: http://*:{0}/{1}", this.Conf.Web.Port, "toslive/patch/");
-				Log.Status("Server ready, listening on 0.0.0.0:{0}.", this.Conf.Web.Port);
+				Log.Info("ServerListURL: http://*:{0}/{1}", Settings.Default.WebPort, "toslive/patch/serverlist.xml");
+				Log.Info("StaticConfigURL: http://*:{0}/{1}", Settings.Default.WebPort, "toslive/patch/");
+				Log.Status("Server ready, listening on 0.0.0.0:{0}.", Settings.Default.WebPort);
 			}
 			catch (NHttp.NHttpException)
 			{

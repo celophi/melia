@@ -163,13 +163,13 @@ namespace Melia.Login.Network
 		/// <param name="character"></param>
 		/// <param name="ip"></param>
 		/// <param name="port"></param>
-		public static void BC_START_GAMEOK(LoginConnection conn, Character character, string ip, int port)
+		public static void BC_START_GAMEOK(LoginConnection conn, Character character)
 		{
 			var packet = new Packet(Op.BC_START_GAMEOK);
 
 			packet.PutInt(0);
-			packet.PutInt(IPAddress.Parse(ip).ToInt32());
-			packet.PutInt(port);
+			packet.PutInt(IPAddress.Parse(Settings.Default.ZoneServerIP).ToInt32());
+			packet.PutInt(Int32.Parse(Settings.Default.ZoneServerPort));
 			packet.PutInt(character.MapId);
 			packet.PutByte(0);
 			packet.PutLong(character.Id);

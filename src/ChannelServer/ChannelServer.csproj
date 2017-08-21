@@ -59,6 +59,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <HintPath>..\..\packages\NHibernate.4.0.0.4000\lib\net40\NHibernate.dll</HintPath>
       <Private>True</Private>
@@ -79,6 +83,7 @@
     <Compile Include="Database\AccountSettings.cs" />
     <Compile Include="Database\ChatMacro.cs" />
     <Compile Include="Database\ChatMacroMap.cs" />
+    <Compile Include="Database\ClientDB.cs" />
     <Compile Include="Database\MapVisibililtyMap.cs" />
     <Compile Include="Database\MapVisibility.cs" />
     <Compile Include="Database\SessionFactory.cs" />
@@ -95,6 +100,11 @@
     <Compile Include="Scripting\ScriptManager.cs" />
     <Compile Include="Scripting\ScriptState.cs" />
     <Compile Include="Scripting\Variables.cs" />
+    <Compile Include="Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Util\GmCommands.cs" />
     <Compile Include="World\Character.cs" />
     <Compile Include="World\CharacterMap.cs" />
@@ -107,8 +117,48 @@
     <Compile Include="World\WorldManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\Shared\ClientDB\maps.json">
+      <Link>ClientDB\maps.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\ClientDB\help.json">
+      <Link>ClientDB\help.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\ClientDB\item.json">
+      <Link>ClientDB\item.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\ClientDB\monsters.json">
+      <Link>ClientDB\monsters.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\ClientDB\exp.json">
+      <Link>ClientDB\exp.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\ClientDB\customcommand.json">
+      <Link>ClientDB\customcommand.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\ClientDB\dialogues.json">
+      <Link>ClientDB\dialogues.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\ClientDB\shops.json">
+      <Link>ClientDB\shops.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Shared\ClientDB\skills.json">
+      <Link>ClientDB\skills.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Melua\MeluaLib.csproj">

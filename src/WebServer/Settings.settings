@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Melia.Web" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="BarrackServerIP" Description="IP address to the barrack server" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">127.0.0.1</Value>
+    </Setting>
+    <Setting Name="BarrackServerPort" Description="Port number the barrack server is listening on" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2000</Value>
+    </Setting>
+    <Setting Name="WebPort" Description="Port number the web server uses to listen for incoming requests" Type="System.String" Scope="User">
+      <Value Profile="(Default)">80</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

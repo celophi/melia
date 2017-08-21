@@ -185,7 +185,7 @@ namespace Melia.Login.Network
 			}
 
 			// Get job data
-			var jobData = LoginServer.Instance.Data.JobDb.Find(job);
+			var jobData = LoginServer.Instance.Data.JobDB.FirstOrDefault(x => x.JobId == (int)job);
 			if (jobData == null)
 			{
 				Log.Error("CB_COMMANDER_CREATE: Job '{0}' not found.", job);
@@ -194,7 +194,7 @@ namespace Melia.Login.Network
 			}
 
 			// Get start city data
-			var startingCityData = LoginServer.Instance.Data.StartingCityDb.Find(startingCity);
+			var startingCityData = LoginServer.Instance.Data.StartingCityDB.FirstOrDefault(x => x.StartingCityId == startingCity);
 			if (startingCityData == null)
 			{
 				Log.Error("CB_COMMANDER_CREATE: StartingCity Id '{0}' not found.", startingCity);
@@ -203,7 +203,7 @@ namespace Melia.Login.Network
 			}
 
 			// Get map data
-			var mapData = LoginServer.Instance.Data.MapDb.Find(startingCityData.Map);
+			var mapData = LoginServer.Instance.Data.MapDB.FirstOrDefault(x => x.ClassName == startingCityData.Map);
 			if (mapData == null)
 			{
 				Log.Error("CB_COMMANDER_CREATE: Map '{0}' not found.", startingCityData.Map);
@@ -275,19 +275,7 @@ namespace Melia.Login.Network
 				return;
 			}
 
-			// Get channel
-			// TODO: Create a manager server that keeps track of the channels,
-			//   their statuses, etc, broadcast that list to login and the
-			//   channels, and use in places like this.
-			var channelId = 1;
-			var channelServer = LoginServer.Instance.Data.ServerDb.FindChannel(channelId);
-			if (channelServer == null)
-			{
-				Log.Error("Channel with id '{0}' not found.", channelId);
-				return;
-			}
-
-			Send.BC_START_GAMEOK(conn, character, channelServer.Ip, channelServer.Port);
+			Send.BC_START_GAMEOK(conn, character);
 		}
 
 		/// <summary>
@@ -381,7 +369,7 @@ namespace Melia.Login.Network
 			var oldMapId = packet.GetInt();
 
 			// Get barrack
-			var barrackData = LoginServer.Instance.Data.BarrackDb.Find(newMapId);
+			var barrackData = LoginServer.Instance.Data.BarrackDB.FirstOrDefault(x => x.MapId == newMapId);
 			if (barrackData == null)
 				return;
 

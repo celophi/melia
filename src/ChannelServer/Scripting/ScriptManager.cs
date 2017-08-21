@@ -355,7 +355,7 @@ namespace Melia.Channel.Scripting
 		/// <returns></returns>
 		private bool IsClientDialog(string value)
 		{
-			return ChannelServer.Instance.Data.DialogDb.Exists(value);
+			return ChannelServer.Instance.Data.DialogDB.Any(x => x.ClassName == value);
 		}
 
 		/// <summary>
@@ -699,17 +699,17 @@ namespace Melia.Channel.Scripting
 			Melua.lua_pop(L, 10);
 
 			// Check "from" map data
-			var fromMapData = ChannelServer.Instance.Data.MapDb.Find(fromMapName);
+			var fromMapData = ChannelServer.Instance.Data.MapDB.FirstOrDefault(x => x.ClassName == fromMapName);
 			if (fromMapData == null)
 				return Melua.melua_error(L, "Map '{0}' not found in data.", fromMapName);
 
 			// Check map in world
-			var map = ChannelServer.Instance.World.GetMap(fromMapData.Id);
+			var map = ChannelServer.Instance.World.GetMap(fromMapData.MapId);
 			if (map == null)
 				return Melua.melua_error(L, "Map '{0}' not found in world.", fromMapName);
 
 			// Check "to" map data
-			var toMapData = ChannelServer.Instance.Data.MapDb.Find(toMapName);
+			var toMapData = ChannelServer.Instance.Data.MapDB.FirstOrDefault(x => x.ClassName == toMapName);
 			if (toMapData == null)
 				return Melua.melua_error(L, "Map '{0}' not found in data.", toMapName);
 
@@ -728,7 +728,7 @@ namespace Melia.Channel.Scripting
 			monster.WarpName = warpName;
 			monster.Position = new Position(fromX, fromY, fromZ);
 			monster.Direction = new Direction(direction);
-			monster.WarpLocation = new Location(toMapData.Id, toX, toY, toZ);
+			monster.WarpLocation = new Location(toMapData.MapId, toX, toY, toZ);
 
 			map.AddMonster(monster);
 
@@ -1269,7 +1269,7 @@ namespace Melia.Channel.Scripting
 
 			Melua.lua_pop(L, 1);
 
-			if (!ChannelServer.Instance.Data.ShopDb.Exists(shopName))
+			if (!ChannelServer.Instance.Data.ShopDB.Any(x => x.Name == shopName))
 				return Melua.melua_error(L, "Shop '{0}' not found.", shopName);
 
 			conn.ScriptState.CurrentShop = shopName;
@@ -1348,7 +1348,7 @@ namespace Melia.Channel.Scripting
 			var amount = Melua.luaL_checkinteger(L, 2);
 			Melua.lua_pop(L, 2);
 
-			var itemData = ChannelServer.Instance.Data.ItemDb.Find(itemId);
+			var itemData = ChannelServer.Instance.Data.ItemDB.FirstOrDefault(x => x.ItemId == itemId);
 			if (itemData == null)
 				return Melua.melua_error(L, "Unknown item id.");
 
@@ -1388,7 +1388,7 @@ namespace Melia.Channel.Scripting
 			var amount = Melua.luaL_checkinteger(L, 2);
 			Melua.lua_pop(L, 2);
 
-			var itemData = ChannelServer.Instance.Data.ItemDb.Find(itemId);
+			var itemData = ChannelServer.Instance.Data.ItemDB.FirstOrDefault(x => x.ItemId == itemId);
 			if (itemData == null)
 				return Melua.melua_error(L, "Unknown item id.");
 

@@ -231,14 +231,14 @@ namespace Melia.Channel.Util
 
 			if (!int.TryParse(args[1], out mapId))
 			{
-				var data = ChannelServer.Instance.Data.MapDb.Find(args[1]);
+				var data = ChannelServer.Instance.Data.MapDB.FirstOrDefault(m => m.EngName == args[1]);
 				if (data == null)
 				{
 					this.SystemMessage(character, "Map not found.");
 					return CommandResult.Okay;
 				}
 
-				mapId = data.Id;
+				mapId = data.MapId;
 			}
 
 			if (args.Length >= 5)
@@ -271,7 +271,7 @@ namespace Melia.Channel.Util
 			if (!int.TryParse(args[1], out itemId))
 				return CommandResult.InvalidArgument;
 
-			if (!ChannelServer.Instance.Data.ItemDb.Exists(itemId))
+			if (!ChannelServer.Instance.Data.ItemDB.Any(x => x.ItemId == itemId))
 			{
 				this.SystemMessage(character, "Item not found.");
 				return CommandResult.Okay;
@@ -306,7 +306,7 @@ namespace Melia.Channel.Util
 
 			amount = Math2.Clamp(1, 100, amount);
 
-			var monsterData = ChannelServer.Instance.Data.MonsterDb.Find(id);
+			var monsterData = ChannelServer.Instance.Data.MonsterDB.FirstOrDefault(x => x.MonsterId == id);
 			if (monsterData == null)
 			{
 				this.SystemMessage(character, "Monster not found.");
@@ -345,7 +345,7 @@ namespace Melia.Channel.Util
 			var added = 0;
 			for (int itemId = 628001; itemId <= 629502; ++itemId)
 			{
-				if (!ChannelServer.Instance.Data.ItemDb.Exists(itemId))
+				if (!ChannelServer.Instance.Data.ItemDB.Any(x => x.ItemId == itemId))
 					continue;
 
 				if (!character.Inventory.HasItem(itemId))
@@ -467,19 +467,19 @@ namespace Melia.Channel.Util
 				return CommandResult.InvalidArgument;
 
 			var search = command.Substring(command.IndexOf(" ")).Trim();
-			var items = ChannelServer.Instance.Data.ItemDb.FindAll(search);
+			var items = ChannelServer.Instance.Data.ItemDB.Where(x => x.Name == search).ToList();
 			if (items.Count == 0)
 			{
 				this.SystemMessage(sender, "No items found for '{0}'.", search);
 				return CommandResult.Okay;
 			}
 
-			var eItems = items.OrderBy(a => a.Name.LevenshteinDistance(search)).ThenBy(a => a.Id).GetEnumerator();
+			var eItems = items.OrderBy(a => a.Name.LevenshteinDistance(search)).ThenBy(a => a.ItemId).GetEnumerator();
 			var max = 20;
 			for (int i = 0; eItems.MoveNext() && i < max; ++i)
 			{
 				var item = eItems.Current;
-				this.SystemMessage(sender, "{0}: {1}, Category: {2}", item.Id, item.Name, item.Category);
+				this.SystemMessage(sender, "{0}: {1}, Category: {2}", item.ItemId, item.Name, item.Category);
 			}
 
 			this.SystemMessage(sender, "Results: {0} (Max. {1} shown)", items.Count, max);
@@ -493,19 +493,19 @@ namespace Melia.Channel.Util
 				return CommandResult.InvalidArgument;
 
 			var search = command.Substring(command.IndexOf(" ")).Trim();
-			var monsters = ChannelServer.Instance.Data.MonsterDb.FindAll(search);
+			var monsters = ChannelServer.Instance.Data.MonsterDB.Where(x => x.Name == search).ToList();
 			if (monsters.Count == 0)
 			{
 				this.SystemMessage(sender, "No monsters found for '{0}'.", search);
 				return CommandResult.Okay;
 			}
 
-			var entries = monsters.OrderBy(a => a.Name.LevenshteinDistance(search)).ThenBy(a => a.Id).GetEnumerator();
+			var entries = monsters.OrderBy(a => a.Name.LevenshteinDistance(search)).ThenBy(a => a.MonsterId).GetEnumerator();
 			var max = 20;
 			for (int i = 0; entries.MoveNext() && i < max; ++i)
 			{
 				var current = entries.Current;
-				this.SystemMessage(sender, "{0}: {1}", current.Id, current.Name);
+				this.SystemMessage(sender, "{0}: {1}", current.MonsterId, current.Name);
 			}
 
 			this.SystemMessage(sender, "Results: {0} (Max. {1} shown)", monsters.Count, max);

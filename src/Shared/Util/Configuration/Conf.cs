@@ -23,11 +23,6 @@ namespace Melia.Shared.Util.Configuration
 		public CommandsConfFile Commands { get; private set; }
 
 		/// <summary>
-		/// web.conf
-		/// </summary>
-		public WebConfFile Web { get; private set; }
-
-		/// <summary>
 		/// world.conf
 		/// </summary>
 		public WorldConfFile World { get; private set; }
@@ -40,7 +35,6 @@ namespace Melia.Shared.Util.Configuration
 			this.Log = new LogConfFile();
 			this.Database = new DatabaseConfFile();
 			this.Commands = new CommandsConfFile();
-			this.Web = new WebConfFile();
 			this.World = new WorldConfFile();
 		}
 
@@ -52,7 +46,6 @@ namespace Melia.Shared.Util.Configuration
 			this.Log.Load();
 			this.Database.Load();
 			this.Commands.Load();
-			this.Web.Load();
 			this.World.Load();
 		}
 	}

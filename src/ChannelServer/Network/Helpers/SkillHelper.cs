@@ -4,6 +4,7 @@
 using System;
 using Melia.Shared.Const;
 using Melia.Shared.Network;
+using System.Linq;
 
 namespace Melia.Channel.Network.Helpers
 {
@@ -11,7 +12,7 @@ namespace Melia.Channel.Network.Helpers
 	{
 		public static void AddSkill(this Packet packet, int skillId)
 		{
-			var skill = ChannelServer.Instance.Data.SkillDb.Find(skillId);
+			var skill = ChannelServer.Instance.Data.SkillDB.FirstOrDefault(x => x.SkillId == skillId);
 			if (skill == null)
 				throw new NullReferenceException("Tried to add non-existing skill'" + skillId + "' ");
 			packet.PutLong(0); // skill object id (can be used to change skill properties with ZC_OBJECT_PROPERTY)

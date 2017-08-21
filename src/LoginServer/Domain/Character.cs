@@ -1,16 +1,12 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Login.Database;
 using Melia.Shared.Const;
-using Melia.Shared.Data.Database;
-using Melia.Shared.Network.Helpers;
+using Melia.Shared.Data;
 using Melia.Shared.World;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Melia.Login.Domain
 {
@@ -83,8 +79,8 @@ namespace Melia.Login.Domain
 		public Character(Account account, string name, Gender gender, byte hair, JobData jobData, MapData mapData, Position pos) : this()
 		{
 			this.Account = account;
-			this.Job = (Job)jobData.Id;
-			this.MapId = mapData.Id;
+			this.Job = (Job)jobData.JobId;
+			this.MapId = mapData.MapId;
 			this.Name = name;
 			this.Gender = gender;
 			this.Hair = hair;
@@ -122,35 +118,35 @@ namespace Melia.Login.Domain
 		/// </summary>
 		private void InitEquipment()
 		{
-			var db = LoginServer.Instance.Data.ItemDb;
-			var oldLightBow = db.Find("Old Light Bow");
-			var oldGladius = db.Find("Old Gladius");
-			var oldWoodenClub = db.Find("Old Wooden Club");
-			var oldShortRod = db.Find("Old Short Rod");
-			var lightPants = db.Find("Light Pants");
-			var lightArmor = db.Find("Light Armor");
+			var db = LoginServer.Instance.Data.ItemDB;
+			var oldLightBow = db.First(x => x.Name == "Old Light Bow");
+			var oldGladius = db.First(x => x.Name == "Old Gladius");
+			var oldWoodenClub = db.First(x => x.Name == "Old Wooden Club");
+			var oldShortRod = db.First(x => x.Name == "Old Short Rod");
+			var lightPants = db.First(x => x.Name == "Light Pants");
+			var lightArmor = db.First(x => x.Name == "Light Armor");
 
 			switch (this.Job)
 			{
 				case Job.Archer:
-					this.Inventory[(int)EquipSlot.LeftHand].Equip(oldLightBow.Id);
-					this.Inventory[(int)EquipSlot.RightHand].Equip(oldLightBow.Id);
+					this.Inventory[(int)EquipSlot.LeftHand].Equip(oldLightBow.ItemId);
+					this.Inventory[(int)EquipSlot.RightHand].Equip(oldLightBow.ItemId);
 					break;
 				case Job.Swordsman:
-					this.Inventory[(int)EquipSlot.LeftHand].Equip(oldGladius.Id);
+					this.Inventory[(int)EquipSlot.LeftHand].Equip(oldGladius.ItemId);
 					break;
 				case Job.Cleric:
-					this.Inventory[(int)EquipSlot.LeftHand].Equip(oldWoodenClub.Id);
+					this.Inventory[(int)EquipSlot.LeftHand].Equip(oldWoodenClub.ItemId);
 					break;
 				case Job.Wizard:
-					this.Inventory[(int)EquipSlot.LeftHand].Equip(oldShortRod.Id);
+					this.Inventory[(int)EquipSlot.LeftHand].Equip(oldShortRod.ItemId);
 					break;
 				default:
 					throw new ArgumentException(string.Format("The job type '{0}' is not valid for this method.", this.Job));
 			}
 
-			this.Inventory[(int)EquipSlot.Pants].Equip(lightPants.Id);
-			this.Inventory[(int)EquipSlot.Top].Equip(lightArmor.Id);
+			this.Inventory[(int)EquipSlot.Pants].Equip(lightPants.ItemId);
+			this.Inventory[(int)EquipSlot.Top].Equip(lightArmor.ItemId);
 		}
 
 		/// <summary>

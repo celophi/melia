@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Melia.Shared.Util;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,6 +34,8 @@ namespace Melia.Login.Domain
 		/// <param name="equipSlot"></param>
 		public virtual void Equip(int itemId)
 		{
+			if (itemId == 0)
+				Log.Error("Error. Attempted to equip an invalid item.");
 			this.ItemId = itemId;
 		}
 	}

@@ -30,6 +30,11 @@ namespace Melia.Channel
 		public ChannelDb Database { get; private set; }
 
 		/// <summary>
+		/// Represents client specific data from IES files.
+		/// </summary>
+		public ClientDB Data { get; private set; }
+
+		/// <summary>
 		/// Channel's console commands.
 		/// </summary>
 		public ConsoleCommands ConsoleCommands { get; private set; }
@@ -82,7 +87,7 @@ namespace Melia.Channel
 			SessionFactory.Init(this.Database._connectionString);
 
 			// Data
-			this.LoadData(DataToLoad.All, true);
+			this.Data = new ClientDB();
 
 			// GM Commands
 			this.GmCommands = new GmCommands();
@@ -98,18 +103,9 @@ namespace Melia.Channel
 			// Script manager
 			this.ScriptManager.Initialize();
 			this.ScriptManager.Load();
-
-			// Get channel data
-			var serverId = 1;
-			var serverData = this.Data.ServerDb.FindChannel(serverId);
-			if (serverData == null)
-			{
-				Log.Error("Server data not found. ({0})", serverId);
-				CliUtil.Exit(1);
-			}
-
+			
 			// Server
-			this.ConnectionManager = new ConnectionManager<ChannelConnection>(serverData.Port);
+			this.ConnectionManager = new ConnectionManager<ChannelConnection>(Int32.Parse(Settings.Default.ZoneServerPort));
 			this.ConnectionManager.Start();
 
 			// Ready

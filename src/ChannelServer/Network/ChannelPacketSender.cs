@@ -380,7 +380,7 @@ namespace Melia.Channel.Network
 			packet.PutInt(initial.Count);
 			foreach (var topic in initial)
 			{
-				var data = ChannelServer.Instance.Data.HelpDb.FirstOrDefault(x => x.Name == topic);
+				var data = ChannelServer.Instance.Data.HelpDB.FirstOrDefault(x => x.ClassName == topic);
 				if (data == null)
 				{
 					Log.Error("ZC_HELP_LIST: Help data '{0}' not found.", topic);
@@ -886,13 +886,13 @@ namespace Melia.Channel.Network
 		/// <param name="ip"></param>
 		/// <param name="port"></param>
 		/// <param name="mapId"></param>
-		public static void ZC_MOVE_ZONE_OK(ChannelConnection conn, string ip, int port, int mapId)
+		public static void ZC_MOVE_ZONE_OK(ChannelConnection conn, int mapId)
 		{
 			var packet = new Packet(Op.ZC_MOVE_ZONE_OK);
 
 			packet.PutInt(210004);
-			packet.PutInt(IPAddress.Parse(ip).ToInt32());
-			packet.PutInt(port);
+			packet.PutInt(IPAddress.Parse(Settings.Default.ZoneServerIP).ToInt32());
+			packet.PutInt(Int32.Parse(Settings.Default.ZoneServerPort));
 			packet.PutInt(mapId);
 			packet.PutFloat(38); // Camera X angle
 			packet.PutFloat(45); // Camera Y angle

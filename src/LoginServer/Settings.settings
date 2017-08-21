@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Melia.Login" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ZoneServerIP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">127.0.0.1</Value>
+    </Setting>
+    <Setting Name="ZoneServerPort" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">7000</Value>
+    </Setting>
+    <Setting Name="LoginServerIP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">127.0.0.1</Value>
+    </Setting>
+    <Setting Name="LoginServerPort" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

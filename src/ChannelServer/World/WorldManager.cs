@@ -92,9 +92,9 @@ namespace Melia.Channel.World
 		/// </summary>
 		public void Initialize()
 		{
-			foreach (var entry in ChannelServer.Instance.Data.MapDb.Entries.Values)
+			foreach (var entry in ChannelServer.Instance.Data.MapDB)
 			{
-				var map = new Map(entry.Id, entry.ClassName);
+				var map = new Map(entry.MapId, entry.ClassName);
 				_mapsId.Add(map.Id, map);
 				_mapsName.Add(map.Name, map);
 			}

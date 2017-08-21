@@ -19,7 +19,7 @@ namespace Melia.Channel
 			}
 			catch (Exception ex)
 			{
-				Log.Error("Error on startup: {0}, {1}", ex.GetType().Name, ex.Message);
+				Log.Error("Error on startup: {0}, {1}\r\n{2}\r\n{3}", ex.GetType().Name, ex.Message, ex.TargetSite, ex.StackTrace);
 				CliUtil.Exit(1, true);
 			}
 		}

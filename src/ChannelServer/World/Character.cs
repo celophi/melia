@@ -215,11 +215,11 @@ namespace Melia.Channel.World
 		/// <exception cref="ArgumentException">Thrown if map doesn't exist in data.</exception>
 		public virtual void Warp(string mapName, float x, float y, float z)
 		{
-			var map = ChannelServer.Instance.Data.MapDb.Find(mapName);
+			var map = ChannelServer.Instance.Data.MapDB.FirstOrDefault(m => m.EngName == mapName);
 			if (map == null)
 				throw new ArgumentException("Map '" + mapName + "' not found in data.");
 
-			this.Warp(map.Id, x, y, z);
+			this.Warp(map.MapId, x, y, z);
 		}
 
 		/// <summary>
@@ -275,17 +275,7 @@ namespace Melia.Channel.World
 			_warping = false;
 
 			ChannelServer.Instance.Database.SaveCharacter(this);
-
-			// Get channel
-			var channelId = 1;
-			var channelServer = ChannelServer.Instance.Data.ServerDb.FindChannel(channelId);
-			if (channelServer == null)
-			{
-				Log.Error("Channel with id '{0}' not found.", channelId);
-				return;
-			}
-
-			Send.ZC_MOVE_ZONE_OK(this.Connection, channelServer.Ip, channelServer.Port, this.MapId);
+			Send.ZC_MOVE_ZONE_OK(this.Connection, this.MapId);
 		}
 
 		/// <summary>
@@ -295,7 +285,15 @@ namespace Melia.Channel.World
 		{
 			this.Stats.Level += amount;
 			this.StatByLevel += amount;
-			this.Stats.MaxExp = ChannelServer.Instance.Data.ExpDb.GetExp(this.Stats.Level);
+
+			var exp = ChannelServer.Instance.Data.ExpDB[0].Exp;
+			if (this.Stats.Level < 1)
+				return;
+
+			if (this.Stats.Level > exp.Count)
+				this.Stats.MaxExp = 0;
+
+			this.Stats.MaxExp = exp[this.Stats.Level - 1];
 
 			// packet = new Packet(Op.ZC_OBJECT_PROPERTY);
 			//packet.PutLong(target.Id);

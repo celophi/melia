@@ -1,14 +1,11 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
-using Melia.Shared.Data.Database;
+using Melia.Shared.Data;
 using Melia.Shared.Util;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace Melia.Channel.World
 {
@@ -95,7 +92,7 @@ namespace Melia.Channel.World
 			if (this.Id == 0)
 				throw new InvalidOperationException("Item id wasn't set before calling LoadData.");
 
-			this.Data = ChannelServer.Instance.Data.ItemDb.Find(this.Id);
+			this.Data = ChannelServer.Instance.Data.ItemDB.FirstOrDefault(x => x.ItemId == this.Id);
 			if (this.Data == null)
 				throw new NullReferenceException("No item data found for '" + this.Id + "'.");
 		}

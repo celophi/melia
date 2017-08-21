@@ -29,6 +29,11 @@ namespace Melia.Login
 		public LoginDb Database { get; private set; }
 
 		/// <summary>
+		/// Represents client specific data from IES files.
+		/// </summary>
+		public ClientDB Data { get; private set; }
+
+		/// <summary>
 		/// Login's console commands.
 		/// </summary>
 		public ConsoleCommands ConsoleCommands { get; private set; }
@@ -55,22 +60,13 @@ namespace Melia.Login
 			this.CheckDatabaseUpdates();
 
 			// Data
-			this.LoadData(DataToLoad.Jobs | DataToLoad.Maps | DataToLoad.Barracks | DataToLoad.Servers | DataToLoad.StartingCities | DataToLoad.Items, true);
+			this.Data = new ClientDB();
 
 			// Packet handlers
 			LoginPacketHandler.Instance.RegisterMethods();
 
-			// Get server data
-			var serverId = 1;
-			var serverData = this.Data.ServerDb.FindLogin(serverId);
-			if (serverData == null)
-			{
-				Log.Error("Server data not found. ({0})", serverId);
-				CliUtil.Exit(1);
-			}
-
 			// Server
-			var mgr = new ConnectionManager<LoginConnection>(serverData.Port);
+			var mgr = new ConnectionManager<LoginConnection>(Int32.Parse(Settings.Default.LoginServerPort));
 			mgr.Start();
 
 			// Ready

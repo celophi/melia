@@ -57,9 +57,9 @@
     <Reference Include="MySql.Data">
       <HintPath>..\..\lib\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <HintPath>..\..\packages\NHibernate.4.0.0.4000\lib\net40\NHibernate.dll</HintPath>
@@ -83,31 +83,21 @@
     <Compile Include="Const\NPC.cs" />
     <Compile Include="Const\ObjectProperty.cs" />
     <Compile Include="Const\Option.cs" />
-    <Compile Include="Data\Database\CustomCommands.cs" />
-    <Compile Include="Data\Database\Exp.cs" />
-    <Compile Include="Data\Database\Barracks.cs" />
-    <Compile Include="Data\Database\Help.cs" />
-    <Compile Include="Data\Database\Shops.cs" />
-    <Compile Include="Data\Database\Dialogues.cs" />
-    <Compile Include="Data\Database\Skills.cs" />
-    <Compile Include="Data\Database\Monsters.cs" />
-    <Compile Include="Data\Database\Jobs.cs" />
-    <Compile Include="Data\Database\Maps.cs" />
-    <Compile Include="Data\Database\Server.cs" />
-    <Compile Include="Data\Database\StartingCities.cs" />
-    <Compile Include="Data\MeliaData.cs" />
-    <Compile Include="Data\CsvReader.cs" />
-    <Compile Include="Data\Database.cs" />
-    <Compile Include="Data\DatabaseCsv.cs" />
-    <Compile Include="Data\DatabaseDat.cs" />
-    <Compile Include="Data\DatabaseJson.cs" />
-    <Compile Include="Data\Database\Items.cs" />
-    <Compile Include="Data\Exceptions.cs" />
-    <Compile Include="Data\Extensions.cs" />
+    <Compile Include="Data\CustomCommandData.cs" />
+    <Compile Include="Data\ExpData.cs" />
+    <Compile Include="Data\BarrackData.cs" />
+    <Compile Include="Data\HelpData.cs" />
+    <Compile Include="Data\ShopData.cs" />
+    <Compile Include="Data\Dialogues.cs" />
+    <Compile Include="Data\SkillData.cs" />
+    <Compile Include="Data\MonsterData.cs" />
+    <Compile Include="Data\JobData.cs" />
+    <Compile Include="Data\MapData.cs" />
+    <Compile Include="Data\StartingCityData.cs" />
+    <Compile Include="Data\ItemData.cs" />
     <Compile Include="Network\Helpers\CommanderHelper.cs" />
     <Compile Include="Util\Configuration\Files\Commands.cs" />
     <Compile Include="Util\Configuration\Files\World.cs" />
-    <Compile Include="Util\Configuration\Files\Web.cs" />
     <Compile Include="Util\Extensions.cs" />
     <Compile Include="Util\Math2.cs" />
     <Compile Include="Util\Security\BCrypt.cs" />
@@ -138,6 +128,21 @@
     <Compile Include="World\Position.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClientDB\barracks.json" />
+    <None Include="ClientDB\customcommand.json" />
+    <None Include="ClientDB\dialogues.json" />
+    <None Include="ClientDB\exp.json" />
+    <None Include="ClientDB\help.json" />
+    <None Include="ClientDB\item.json" />
+    <None Include="ClientDB\jobs.json" />
+    <None Include="ClientDB\maps.json" />
+    <None Include="ClientDB\monsters.json" />
+    <None Include="ClientDB\quest_progress_check.json" />
+    <None Include="ClientDB\sessionobject.json" />
+    <None Include="ClientDB\sessionobject_main.json" />
+    <None Include="ClientDB\shops.json" />
+    <None Include="ClientDB\skills.json" />
+    <None Include="ClientDB\startingcities.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

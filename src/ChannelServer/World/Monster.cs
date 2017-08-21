@@ -3,10 +3,11 @@
 
 using Melia.Channel.Network;
 using Melia.Shared.Const;
-using Melia.Shared.Data.Database;
+using Melia.Shared.Data;
 using Melia.Shared.Util;
 using Melia.Shared.World;
 using System;
+using System.Linq;
 
 namespace Melia.Channel.World
 {
@@ -133,7 +134,7 @@ namespace Melia.Channel.World
 			if (this.Id == 0)
 				throw new InvalidOperationException("Id wasn't set before calling LoadData.");
 
-			this.Data = ChannelServer.Instance.Data.MonsterDb.Find(this.Id);
+			this.Data = ChannelServer.Instance.Data.MonsterDB.FirstOrDefault(x => x.MonsterId == this.Id);
 			if (this.Data == null)
 				throw new NullReferenceException("No data found for '" + this.Id + "'.");
 		}
