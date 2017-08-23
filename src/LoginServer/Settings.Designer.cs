@@ -67,5 +67,23 @@ namespace Melia.Login {
                 return ((string)(this["ClientDataFolder"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("127.0.0.1")]
+        public string BarrackServerIP {
+            get {
+                return ((string)(this["BarrackServerIP"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("9001")]
+        public string BarrackServerPort {
+            get {
+                return ((string)(this["BarrackServerPort"]));
+            }
+        }
     }
 }

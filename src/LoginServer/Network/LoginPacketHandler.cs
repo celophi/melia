@@ -121,7 +121,10 @@ namespace Melia.Login.Network
 		{
 			var unkByte = packet.GetByte();
 
-			Send.BC_SERVER_ENTRY(conn, "127.0.0.1", 9001, "127.0.0.1", 9002);
+			var ip = Settings.Default.BarrackServerIP;
+			int port = Int32.Parse(Settings.Default.BarrackServerPort);
+
+			Send.BC_SERVER_ENTRY(conn, ip, port, ip, port);
 			Send.BC_COMMANDER_LIST(conn);
 			Send.BC_NORMAL_ZoneTraffic(conn);
 			Send.BC_NORMAL_TeamUI(conn);
