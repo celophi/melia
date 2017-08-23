@@ -776,7 +776,7 @@ namespace Melia.Channel.Network
 			var mapId = packet.GetInt();
 			var visible = packet.GetBin(128);
 
-			var mapData = ChannelServer.Instance.Data.MapDB.FirstOrDefault(x => x.MapId == mapId);
+			var mapData = ChannelServer.Instance.ClientData.MapDB.FirstOrDefault(x => x.MapId == mapId);
 			if (mapData == null)
 			{
 				Log.Error("CZ_MAP_REVEAL_INFO: Error map '{0}' not found.", mapId);
@@ -923,7 +923,7 @@ namespace Melia.Channel.Network
 			var classId = packet.GetInt();
 			var cmdArg = packet.GetInt();
 
-			var data = ChannelServer.Instance.Data.CustomCommandDB.FirstOrDefault(x => x.ClassId == command);
+			var data = ChannelServer.Instance.ClientData.CustomCommandDB.FirstOrDefault(x => x.ClassId == command);
 			if (data == null)
 			{
 				Log.Error("CZ_CUSTOM_COMMAND: Custom command data '{0}' not found.", command);
@@ -1032,7 +1032,7 @@ namespace Melia.Channel.Network
 			}
 
 			// Get shop
-			var shopData = ChannelServer.Instance.Data.ShopDB.FirstOrDefault(x => x.Name == conn.ScriptState.CurrentShop);
+			var shopData = ChannelServer.Instance.ClientData.ShopDB.FirstOrDefault(x => x.Name == conn.ScriptState.CurrentShop);
 			if (shopData == null)
 			{
 				Log.Warning("CZ_ITEM_BUY: User '{0}' tried to buy from a shop that is not in the db.", conn.Account.Name);
@@ -1056,7 +1056,7 @@ namespace Melia.Channel.Network
 				}
 
 				// Get item
-				var itemData = ChannelServer.Instance.Data.ItemDB.FirstOrDefault(x => x.ItemId == productData.ItemId);
+				var itemData = ChannelServer.Instance.ClientData.ItemDB.FirstOrDefault(x => x.ItemId == productData.ItemId);
 				if (itemData == null)
 				{
 					Log.Warning("CZ_ITEM_BUY: User '{0}' tried to buy item that's not in the db ({1}, {2}).", conn.Account.Name, shopData.Name, productData.ItemId);

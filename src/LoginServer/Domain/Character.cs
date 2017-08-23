@@ -118,7 +118,7 @@ namespace Melia.Login.Domain
 		/// </summary>
 		private void InitEquipment()
 		{
-			var db = LoginServer.Instance.Data.ItemDB;
+			var db = LoginServer.Instance.ClientData.ItemDB;
 			var oldLightBow = db.First(x => x.Name == "Old Light Bow");
 			var oldGladius = db.First(x => x.Name == "Old Gladius");
 			var oldWoodenClub = db.First(x => x.Name == "Old Wooden Club");

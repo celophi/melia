@@ -12,7 +12,7 @@ namespace Melia.Channel.Network.Helpers
 	{
 		public static void AddSkill(this Packet packet, int skillId)
 		{
-			var skill = ChannelServer.Instance.Data.SkillDB.FirstOrDefault(x => x.SkillId == skillId);
+			var skill = ChannelServer.Instance.ClientData.SkillDB.FirstOrDefault(x => x.SkillId == skillId);
 			if (skill == null)
 				throw new NullReferenceException("Tried to add non-existing skill'" + skillId + "' ");
 			packet.PutLong(0); // skill object id (can be used to change skill properties with ZC_OBJECT_PROPERTY)

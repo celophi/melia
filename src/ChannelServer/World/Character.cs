@@ -215,7 +215,7 @@ namespace Melia.Channel.World
 		/// <exception cref="ArgumentException">Thrown if map doesn't exist in data.</exception>
 		public virtual void Warp(string mapName, float x, float y, float z)
 		{
-			var map = ChannelServer.Instance.Data.MapDB.FirstOrDefault(m => m.EngName == mapName);
+			var map = ChannelServer.Instance.ClientData.MapDB.FirstOrDefault(m => m.EngName == mapName);
 			if (map == null)
 				throw new ArgumentException("Map '" + mapName + "' not found in data.");
 
@@ -286,7 +286,7 @@ namespace Melia.Channel.World
 			this.Stats.Level += amount;
 			this.StatByLevel += amount;
 
-			var exp = ChannelServer.Instance.Data.ExpDB[0].Exp;
+			var exp = ChannelServer.Instance.ClientData.ExpDB[0].Exp;
 			if (this.Stats.Level < 1)
 				return;
 

@@ -134,7 +134,7 @@ namespace Melia.Channel.World
 			if (this.Id == 0)
 				throw new InvalidOperationException("Id wasn't set before calling LoadData.");
 
-			this.Data = ChannelServer.Instance.Data.MonsterDB.FirstOrDefault(x => x.MonsterId == this.Id);
+			this.Data = ChannelServer.Instance.ClientData.MonsterDB.FirstOrDefault(x => x.MonsterId == this.Id);
 			if (this.Data == null)
 				throw new NullReferenceException("No data found for '" + this.Id + "'.");
 		}

@@ -32,15 +32,21 @@ namespace Melia.Channel {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("7000")]
         public string ZoneServerPort {
             get {
                 return ((string)(this["ZoneServerPort"]));
             }
-            set {
-                this["ZoneServerPort"] = value;
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Client\\Data")]
+        public string ClientDataFolder {
+            get {
+                return ((string)(this["ClientDataFolder"]));
             }
         }
     }

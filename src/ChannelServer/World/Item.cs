@@ -92,7 +92,7 @@ namespace Melia.Channel.World
 			if (this.Id == 0)
 				throw new InvalidOperationException("Item id wasn't set before calling LoadData.");
 
-			this.Data = ChannelServer.Instance.Data.ItemDB.FirstOrDefault(x => x.ItemId == this.Id);
+			this.Data = ChannelServer.Instance.ClientData.ItemDB.FirstOrDefault(x => x.ItemId == this.Id);
 			if (this.Data == null)
 				throw new NullReferenceException("No item data found for '" + this.Id + "'.");
 		}

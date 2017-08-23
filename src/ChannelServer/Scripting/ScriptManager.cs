@@ -355,7 +355,7 @@ namespace Melia.Channel.Scripting
 		/// <returns></returns>
 		private bool IsClientDialog(string value)
 		{
-			return ChannelServer.Instance.Data.DialogDB.Any(x => x.ClassName == value);
+			return ChannelServer.Instance.ClientData.DialogDB.Any(x => x.ClassName == value);
 		}
 
 		/// <summary>
@@ -699,7 +699,7 @@ namespace Melia.Channel.Scripting
 			Melua.lua_pop(L, 10);
 
 			// Check "from" map data
-			var fromMapData = ChannelServer.Instance.Data.MapDB.FirstOrDefault(x => x.ClassName == fromMapName);
+			var fromMapData = ChannelServer.Instance.ClientData.MapDB.FirstOrDefault(x => x.ClassName == fromMapName);
 			if (fromMapData == null)
 				return Melua.melua_error(L, "Map '{0}' not found in data.", fromMapName);
 
@@ -709,7 +709,7 @@ namespace Melia.Channel.Scripting
 				return Melua.melua_error(L, "Map '{0}' not found in world.", fromMapName);
 
 			// Check "to" map data
-			var toMapData = ChannelServer.Instance.Data.MapDB.FirstOrDefault(x => x.ClassName == toMapName);
+			var toMapData = ChannelServer.Instance.ClientData.MapDB.FirstOrDefault(x => x.ClassName == toMapName);
 			if (toMapData == null)
 				return Melua.melua_error(L, "Map '{0}' not found in data.", toMapName);
 
@@ -1269,7 +1269,7 @@ namespace Melia.Channel.Scripting
 
 			Melua.lua_pop(L, 1);
 
-			if (!ChannelServer.Instance.Data.ShopDB.Any(x => x.Name == shopName))
+			if (!ChannelServer.Instance.ClientData.ShopDB.Any(x => x.Name == shopName))
 				return Melua.melua_error(L, "Shop '{0}' not found.", shopName);
 
 			conn.ScriptState.CurrentShop = shopName;
@@ -1348,7 +1348,7 @@ namespace Melia.Channel.Scripting
 			var amount = Melua.luaL_checkinteger(L, 2);
 			Melua.lua_pop(L, 2);
 
-			var itemData = ChannelServer.Instance.Data.ItemDB.FirstOrDefault(x => x.ItemId == itemId);
+			var itemData = ChannelServer.Instance.ClientData.ItemDB.FirstOrDefault(x => x.ItemId == itemId);
 			if (itemData == null)
 				return Melua.melua_error(L, "Unknown item id.");
 
@@ -1388,7 +1388,7 @@ namespace Melia.Channel.Scripting
 			var amount = Melua.luaL_checkinteger(L, 2);
 			Melua.lua_pop(L, 2);
 
-			var itemData = ChannelServer.Instance.Data.ItemDB.FirstOrDefault(x => x.ItemId == itemId);
+			var itemData = ChannelServer.Instance.ClientData.ItemDB.FirstOrDefault(x => x.ItemId == itemId);
 			if (itemData == null)
 				return Melua.melua_error(L, "Unknown item id.");
 

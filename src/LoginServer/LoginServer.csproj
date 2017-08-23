@@ -75,7 +75,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database\ClientDB.cs" />
+    <Compile Include="Client\ClientData.cs" />
     <Compile Include="Domain\Account.cs" />
     <Compile Include="Mapping\AccountMap.cs" />
     <Compile Include="Domain\Money.cs" />
@@ -102,25 +102,25 @@
     <Compile Include="Domain\Stats.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\Shared\ClientDB\item.json">
-      <Link>ClientDB\item.json</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="..\Shared\Client\Data\barracks.json">
+      <Link>Client\Data\barracks.json</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\Shared\ClientDB\startingcities.json">
-      <Link>ClientDB\startingcities.json</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="..\Shared\Client\Data\item.json">
+      <Link>Client\Data\item.json</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\Shared\ClientDB\jobs.json">
-      <Link>ClientDB\jobs.json</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="..\Shared\Client\Data\jobs.json">
+      <Link>Client\Data\jobs.json</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\Shared\ClientDB\maps.json">
-      <Link>ClientDB\maps.json</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="..\Shared\Client\Data\maps.json">
+      <Link>Client\Data\maps.json</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\Shared\ClientDB\barracks.json">
-      <Link>ClientDB\barracks.json</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="..\Shared\Client\Data\startingcities.json">
+      <Link>Client\Data\startingcities.json</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="app.config" />
     <None Include="packages.config" />

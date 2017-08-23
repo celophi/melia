@@ -77,13 +77,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChannelServer.cs" />
+    <Compile Include="Client\ClientData.cs" />
     <Compile Include="Database\Account.cs" />
     <Compile Include="Database\AccountMap.cs" />
     <Compile Include="Database\ChannelDb.cs" />
     <Compile Include="Database\AccountSettings.cs" />
     <Compile Include="Database\ChatMacro.cs" />
     <Compile Include="Database\ChatMacroMap.cs" />
-    <Compile Include="Database\ClientDB.cs" />
     <Compile Include="Database\MapVisibililtyMap.cs" />
     <Compile Include="Database\MapVisibility.cs" />
     <Compile Include="Database\SessionFactory.cs" />
@@ -117,40 +117,40 @@
     <Compile Include="World\WorldManager.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\Shared\ClientDB\maps.json">
-      <Link>ClientDB\maps.json</Link>
+    <Content Include="..\Shared\Client\Data\customcommand.json">
+      <Link>Client\Data\customcommand.json</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\Shared\ClientDB\help.json">
-      <Link>ClientDB\help.json</Link>
+    <Content Include="..\Shared\Client\Data\dialogues.json">
+      <Link>Client\Data\dialogues.json</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\Shared\ClientDB\item.json">
-      <Link>ClientDB\item.json</Link>
+    <Content Include="..\Shared\Client\Data\exp.json">
+      <Link>Client\Data\exp.json</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\Shared\ClientDB\monsters.json">
-      <Link>ClientDB\monsters.json</Link>
+    <Content Include="..\Shared\Client\Data\help.json">
+      <Link>Client\Data\help.json</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\Shared\ClientDB\exp.json">
-      <Link>ClientDB\exp.json</Link>
+    <Content Include="..\Shared\Client\Data\item.json">
+      <Link>Client\Data\item.json</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\Shared\ClientDB\customcommand.json">
-      <Link>ClientDB\customcommand.json</Link>
+    <Content Include="..\Shared\Client\Data\maps.json">
+      <Link>Client\Data\maps.json</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\Shared\ClientDB\dialogues.json">
-      <Link>ClientDB\dialogues.json</Link>
+    <Content Include="..\Shared\Client\Data\monsters.json">
+      <Link>Client\Data\monsters.json</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\Shared\ClientDB\shops.json">
-      <Link>ClientDB\shops.json</Link>
+    <Content Include="..\Shared\Client\Data\shops.json">
+      <Link>Client\Data\shops.json</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\Shared\ClientDB\skills.json">
-      <Link>ClientDB\skills.json</Link>
+    <Content Include="..\Shared\Client\Data\skills.json">
+      <Link>Client\Data\skills.json</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="app.config" />

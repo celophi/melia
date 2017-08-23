@@ -58,5 +58,14 @@ namespace Melia.Login {
                 return ((string)(this["LoginServerPort"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Client\\Data")]
+        public string ClientDataFolder {
+            get {
+                return ((string)(this["ClientDataFolder"]));
+            }
+        }
     }
 }

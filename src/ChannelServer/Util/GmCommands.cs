@@ -231,7 +231,7 @@ namespace Melia.Channel.Util
 
 			if (!int.TryParse(args[1], out mapId))
 			{
-				var data = ChannelServer.Instance.Data.MapDB.FirstOrDefault(m => m.EngName == args[1]);
+				var data = ChannelServer.Instance.ClientData.MapDB.FirstOrDefault(m => m.EngName == args[1]);
 				if (data == null)
 				{
 					this.SystemMessage(character, "Map not found.");
@@ -271,7 +271,7 @@ namespace Melia.Channel.Util
 			if (!int.TryParse(args[1], out itemId))
 				return CommandResult.InvalidArgument;
 
-			if (!ChannelServer.Instance.Data.ItemDB.Any(x => x.ItemId == itemId))
+			if (!ChannelServer.Instance.ClientData.ItemDB.Any(x => x.ItemId == itemId))
 			{
 				this.SystemMessage(character, "Item not found.");
 				return CommandResult.Okay;
@@ -306,7 +306,7 @@ namespace Melia.Channel.Util
 
 			amount = Math2.Clamp(1, 100, amount);
 
-			var monsterData = ChannelServer.Instance.Data.MonsterDB.FirstOrDefault(x => x.MonsterId == id);
+			var monsterData = ChannelServer.Instance.ClientData.MonsterDB.FirstOrDefault(x => x.MonsterId == id);
 			if (monsterData == null)
 			{
 				this.SystemMessage(character, "Monster not found.");
@@ -345,7 +345,7 @@ namespace Melia.Channel.Util
 			var added = 0;
 			for (int itemId = 628001; itemId <= 629502; ++itemId)
 			{
-				if (!ChannelServer.Instance.Data.ItemDB.Any(x => x.ItemId == itemId))
+				if (!ChannelServer.Instance.ClientData.ItemDB.Any(x => x.ItemId == itemId))
 					continue;
 
 				if (!character.Inventory.HasItem(itemId))
@@ -467,7 +467,7 @@ namespace Melia.Channel.Util
 				return CommandResult.InvalidArgument;
 
 			var search = command.Substring(command.IndexOf(" ")).Trim();
-			var items = ChannelServer.Instance.Data.ItemDB.Where(x => x.Name == search).ToList();
+			var items = ChannelServer.Instance.ClientData.ItemDB.Where(x => x.Name == search).ToList();
 			if (items.Count == 0)
 			{
 				this.SystemMessage(sender, "No items found for '{0}'.", search);
@@ -493,7 +493,7 @@ namespace Melia.Channel.Util
 				return CommandResult.InvalidArgument;
 
 			var search = command.Substring(command.IndexOf(" ")).Trim();
-			var monsters = ChannelServer.Instance.Data.MonsterDB.Where(x => x.Name == search).ToList();
+			var monsters = ChannelServer.Instance.ClientData.MonsterDB.Where(x => x.Name == search).ToList();
 			if (monsters.Count == 0)
 			{
 				this.SystemMessage(sender, "No monsters found for '{0}'.", search);

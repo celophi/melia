@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
+using Melia.Login.Client;
 using Melia.Login.Database;
 using Melia.Login.Network;
 using Melia.Login.Util;
@@ -31,7 +32,7 @@ namespace Melia.Login
 		/// <summary>
 		/// Represents client specific data from IES files.
 		/// </summary>
-		public ClientDB Data { get; private set; }
+		public ClientData ClientData { get; private set; }
 
 		/// <summary>
 		/// Login's console commands.
@@ -60,7 +61,7 @@ namespace Melia.Login
 			this.CheckDatabaseUpdates();
 
 			// Data
-			this.Data = new ClientDB();
+			this.ClientData = new ClientData();
 
 			// Packet handlers
 			LoginPacketHandler.Instance.RegisterMethods();

@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Aura development team - Licensed under GNU GPL
 // For more information, see license file in the main folder
 
+using Melia.Channel.Client;
 using Melia.Channel.Database;
 using Melia.Channel.Network;
 using Melia.Channel.Scripting;
@@ -32,7 +33,7 @@ namespace Melia.Channel
 		/// <summary>
 		/// Represents client specific data from IES files.
 		/// </summary>
-		public ClientDB Data { get; private set; }
+		public ClientData ClientData { get; private set; }
 
 		/// <summary>
 		/// Channel's console commands.
@@ -87,7 +88,7 @@ namespace Melia.Channel
 			SessionFactory.Init(this.Database._connectionString);
 
 			// Data
-			this.Data = new ClientDB();
+			this.ClientData = new ClientData();
 
 			// GM Commands
 			this.GmCommands = new GmCommands();

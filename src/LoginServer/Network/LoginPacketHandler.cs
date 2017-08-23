@@ -185,7 +185,7 @@ namespace Melia.Login.Network
 			}
 
 			// Get job data
-			var jobData = LoginServer.Instance.Data.JobDB.FirstOrDefault(x => x.JobId == (int)job);
+			var jobData = LoginServer.Instance.ClientData.JobDB.FirstOrDefault(x => x.JobId == (int)job);
 			if (jobData == null)
 			{
 				Log.Error("CB_COMMANDER_CREATE: Job '{0}' not found.", job);
@@ -194,7 +194,7 @@ namespace Melia.Login.Network
 			}
 
 			// Get start city data
-			var startingCityData = LoginServer.Instance.Data.StartingCityDB.FirstOrDefault(x => x.StartingCityId == startingCity);
+			var startingCityData = LoginServer.Instance.ClientData.StartingCityDB.FirstOrDefault(x => x.StartingCityId == startingCity);
 			if (startingCityData == null)
 			{
 				Log.Error("CB_COMMANDER_CREATE: StartingCity Id '{0}' not found.", startingCity);
@@ -203,7 +203,7 @@ namespace Melia.Login.Network
 			}
 
 			// Get map data
-			var mapData = LoginServer.Instance.Data.MapDB.FirstOrDefault(x => x.ClassName == startingCityData.Map);
+			var mapData = LoginServer.Instance.ClientData.MapDB.FirstOrDefault(x => x.ClassName == startingCityData.Map);
 			if (mapData == null)
 			{
 				Log.Error("CB_COMMANDER_CREATE: Map '{0}' not found.", startingCityData.Map);
@@ -369,7 +369,7 @@ namespace Melia.Login.Network
 			var oldMapId = packet.GetInt();
 
 			// Get barrack
-			var barrackData = LoginServer.Instance.Data.BarrackDB.FirstOrDefault(x => x.MapId == newMapId);
+			var barrackData = LoginServer.Instance.ClientData.BarrackDB.FirstOrDefault(x => x.MapId == newMapId);
 			if (barrackData == null)
 				return;
 

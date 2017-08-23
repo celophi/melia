@@ -105,7 +105,7 @@ namespace Melia.Channel.Database
 						var equipSlot = (EquipSlot)reader.GetByte("equipSlot");
 
 						// Check item, in case its data was removed
-						if (!ChannelServer.Instance.Data.ItemDB.Any(x => x.ItemId == itemId))
+						if (!ChannelServer.Instance.ClientData.ItemDB.Any(x => x.ItemId == itemId))
 						{
 							Log.Warning("ChannelDb.LoadCharacterItems: Item '{0}' not found, removing it from inventory.", itemId);
 							continue;

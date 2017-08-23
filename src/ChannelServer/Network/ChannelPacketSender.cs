@@ -380,7 +380,7 @@ namespace Melia.Channel.Network
 			packet.PutInt(initial.Count);
 			foreach (var topic in initial)
 			{
-				var data = ChannelServer.Instance.Data.HelpDB.FirstOrDefault(x => x.ClassName == topic);
+				var data = ChannelServer.Instance.ClientData.HelpDB.FirstOrDefault(x => x.ClassName == topic);
 				if (data == null)
 				{
 					Log.Error("ZC_HELP_LIST: Help data '{0}' not found.", topic);
