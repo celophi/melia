@@ -1344,6 +1344,40 @@ namespace Melia.Channel.Network
 		}
 
 		/// <summary>
+		/// Sets the position of an actor.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="entity"></param>
+		/// <param name="pos"></param>
+		public static void ZC_NORMAL_SetPosition(ChannelConnection conn, IEntity entity, Position pos)
+		{
+			var packet = new Packet(Op.ZC_NORMAL);
+			packet.PutInt(0x53); //subop
+
+			packet.PutInt(entity.Handle);
+			packet.PutFloat(pos.X);
+			packet.PutFloat(pos.Y);
+			packet.PutFloat(pos.Z);
+
+			conn.Send(packet);
+		}
+
+		/// <summary>
+		/// Unknown
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="entity"></param>
+		public static void ZC_NORMAL_AttachNodeToActor(ChannelConnection conn, IEntity entity)
+		{
+			var packet = new Packet(Op.ZC_NORMAL);
+			packet.PutInt(0x96); //subop
+
+			packet.PutInt(entity.Handle);
+
+			conn.Send(packet);
+		}
+
+		/// <summary>
 		/// Updates exp and max exp.
 		/// </summary>
 		/// <param name="character"></param>

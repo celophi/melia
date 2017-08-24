@@ -1,0 +1,18 @@
+//------------------------------------------------
+//--- 010 Editor v8.0 Binary Template
+//
+//      File: Vector3.bt
+//   Authors: celophi
+//   Version: 164556
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+typedef struct {
+  float x;
+  float y;
+  float z;
+} Vector3;

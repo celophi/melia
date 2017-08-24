@@ -388,6 +388,10 @@ namespace Melia.Channel.World
 				{
 					Send.ZC_ENTER_MONSTER(this.Connection, monster);
 					Send.ZC_FACTION(this.Connection, monster);
+
+					// These are sent with some ZC_ENTER_MONSTER packets and not others. I have yet to find why.
+					//Send.ZC_NORMAL_SetPosition(this.Connection, monster, monster.Position);
+					//Send.ZC_NORMAL_AttachNodeToActor(this.Connection, monster);
 				}
 
 				foreach (var monster in disappearMonsters)

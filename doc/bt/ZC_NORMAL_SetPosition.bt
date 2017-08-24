@@ -1,0 +1,22 @@
+//------------------------------------------------
+//--- 010 Editor v8.0 Binary Template
+//
+//      File: ZC_Normal_SetPosition.bt
+//   Authors: celophi
+//   Version: 164556
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+#include "common/Vector3.bt"
+
+short op<format=hex>;
+int reserved;
+short packetLength;
+int subOp<format=hex>;
+
+int handle;
+Vector3 position;
