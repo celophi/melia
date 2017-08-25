@@ -22,7 +22,10 @@ namespace Melia.Shared.Data
 		public float SplashHeight { get; set; }
 		public float SplashAngle { get; set; }
 		public float SplashRate { get; set; }
-	}
+        public string CoolDown { get; set; }
+        public float BasicCoolDown { get; set; }
+        public float MinCoolDown { get; set; }
+    }
 
 	public enum SplashType
 	{
