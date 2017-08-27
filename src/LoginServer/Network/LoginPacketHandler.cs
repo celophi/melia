@@ -125,6 +125,7 @@ namespace Melia.Login.Network
 			int port = Int32.Parse(Settings.Default.BarrackServerPort);
 
 			Send.BC_SERVER_ENTRY(conn, ip, port, ip, port);
+			Send.BC_NORMAL_SelectedBarrack(conn);
 			Send.BC_COMMANDER_LIST(conn);
 			Send.BC_NORMAL_ZoneTraffic(conn);
 			Send.BC_NORMAL_TeamUI(conn);
@@ -347,7 +348,9 @@ namespace Melia.Login.Network
 				return;
 			}
 
-			character.Move(new Position(x, y, z));
+			var pos = new Position(x, y, z);
+			character.Move(pos);
+			Send.BC_NORMAL_SetPosition(conn, index, pos);
 		}
 
 		/// <summary>

@@ -1,0 +1,1 @@
+ALTER TABLE `accounts` ADD COLUMN `SelectedBarrack` INT NOT NULL DEFAULT 11;

@@ -14,7 +14,7 @@ namespace Melia.Shared.Network
 {
 	public class Packet
 	{
-		private const int DefaultSize = 1024;
+		private const int DefaultSize = 8192;
 
 		private byte[] _buffer;
 		private int _ptr;
