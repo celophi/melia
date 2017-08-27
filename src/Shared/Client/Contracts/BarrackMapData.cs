@@ -10,10 +10,11 @@ using Melia.Shared.Const;
 namespace Melia.Shared.Data
 {
 	[Serializable]
-	public class BarrackData
+	public class BarrackMapData
 	{
-		public int MapId { get; set; }
+		public int ClassID { get; set; }
+		public string ClassName { get; set; }
 		public int Price { get; set; }
-		public int Characters { get; set; }
-	}
+        public int BaseSlot { get; set; }
+    }
 }

@@ -85,7 +85,7 @@
     <Compile Include="Const\Option.cs" />
     <Compile Include="Client\Contracts\CustomCommandData.cs" />
     <Compile Include="Client\Contracts\ExpData.cs" />
-    <Compile Include="Client\Contracts\BarrackData.cs" />
+    <Compile Include="Client\Contracts\BarrackMapData.cs" />
     <Compile Include="Client\Contracts\HelpData.cs" />
     <Compile Include="Client\Contracts\ShopData.cs" />
     <Compile Include="Client\Contracts\Dialogues.cs" />
@@ -128,7 +128,7 @@
     <Compile Include="World\Position.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Client\Data\barracks.json" />
+    <None Include="Client\Data\barrackmap.json" />
     <None Include="Client\Data\customcommand.json" />
     <None Include="Client\Data\dialogues.json" />
     <None Include="Client\Data\exp.json" />

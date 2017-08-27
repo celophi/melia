@@ -1,0 +1,24 @@
+﻿// Melia
+// Database file
+//---------------------------------------------------------------------------
+
+[
+  {
+    "ClassID": "1",
+    "ClassName": "barrack",
+    "Price": "0",
+    "BaseSlot": "4"
+  },
+  {
+    "ClassID": "2",
+    "ClassName": "barrack_2",
+    "Price": "69",
+    "BaseSlot": "4"
+  },
+  {
+    "ClassID": "3",
+    "ClassName": "barrack_noble",
+    "Price": "69",
+    "BaseSlot": "4"
+  }
+]

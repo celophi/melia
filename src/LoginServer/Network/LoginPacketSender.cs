@@ -254,8 +254,8 @@ namespace Melia.Login.Network
 
 			packet.PutLong(conn.Account.Id);
 
-			// Maximum number of allowed characters added to the default of (4).
-			packet.PutShort(2);
+			// Need to check the number of slots bought.
+            // slots = (mapDefault - 4 + bought)
 
 			// Team experience? Displayed under "Team Info"
 			packet.PutInt(0);

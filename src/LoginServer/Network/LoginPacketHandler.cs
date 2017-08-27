@@ -372,9 +372,13 @@ namespace Melia.Login.Network
 			var oldMapId = packet.GetInt();
 
 			// Get barrack
-			var barrackData = LoginServer.Instance.ClientData.BarrackDB.FirstOrDefault(x => x.MapId == newMapId);
-			if (barrackData == null)
+			var mapData = LoginServer.Instance.ClientData.MapDB.FirstOrDefault(x => x.MapId == newMapId);
+			if (mapData == null)
 				return;
+
+            var barrackData = LoginServer.Instance.ClientData.BarrackDB.FirstOrDefault(x => x.ClassName == mapData.ClassName);
+            if (barrackData == null)
+                return;
 
 			if (!conn.Account.Money.CanAfford(barrackData.Price))
 			{

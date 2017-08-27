@@ -11,7 +11,7 @@ namespace Melia.Login.Client
 {
 	public class ClientData
 	{
-		public readonly IList<BarrackData> BarrackDB = ClientData.Load<BarrackData>("barracks.json");
+		public readonly IList<BarrackMapData> BarrackDB = ClientData.Load<BarrackMapData>("barrackmap.json");
 		public readonly IList<ItemData> ItemDB = ClientData.Load<ItemData>("item.json");
 		public readonly IList<JobData> JobDB = ClientData.Load<JobData>("jobs.json");
 		public readonly IList<MapData> MapDB = ClientData.Load<MapData>("maps.json");
