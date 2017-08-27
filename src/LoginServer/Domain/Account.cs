@@ -42,6 +42,11 @@ namespace Melia.Login.Domain
 		/// </summary>
 		public virtual int SelectedBarrack { get; set; } = 11;
 
+		/// <summary>
+		/// The selected barrack layer to view characters.
+		/// </summary>
+		public virtual int SelectedBarrackLayer { get; protected set; } = 1;
+
 		protected Account() { }
 
 		/// <summary>
@@ -60,13 +65,13 @@ namespace Melia.Login.Domain
 			{
 				throw new Exception("Error. The password field may not be null and must be between 4 and 16 characters in length.");
 			}
-			
+
 			this.Name = name;
 			this.Password = BCrypt.HashPassword(password, BCrypt.GenerateSalt());
 			this._characters = new List<Character>();
 			this.Money = new Money(this);
 		}
-		
+
 
 		/// <summary>
 		/// Creates a new character and registers it with the account.
@@ -177,7 +182,7 @@ namespace Melia.Login.Domain
 				this.Money = this.Money - cost;
 			}
 		}
-		
+
 		/// <summary>
 		/// Returns a list of characters associated with this account.
 		/// </summary>
@@ -227,6 +232,18 @@ namespace Melia.Login.Domain
 		{
 			lock (this._key)
 				return this._characters.FirstOrDefault(x => x.Name == name);
+		}
+
+		/// <summary>
+		/// Sets the selected barrack layer.
+		/// </summary>
+		/// <param name="layer"></param>
+		public virtual void SetCurrentBarrackLayer(int layer)
+		{
+			if (layer < 1 || layer > 2)
+				return;
+
+			this.SelectedBarrackLayer = layer;
 		}
 	}
 }

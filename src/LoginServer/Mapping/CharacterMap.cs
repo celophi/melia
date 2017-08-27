@@ -22,6 +22,7 @@ namespace Melia.Login.Mapping
 			Map(x => x.Job).CustomType<Job>();
 			Map(x => x.Gender).CustomType<Gender>();
 			Map(x => x.Hair);
+			Map(x => x.BarrackLayer);
 			References<Account>(x => x.Account, "accountId");
 
 			Component(x => x.BarrackPosition, y =>

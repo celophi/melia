@@ -13,7 +13,7 @@ namespace Melia.Login.Domain
 	public class Character
 	{
 		private object _key = new object();
-		
+
 		public virtual long Id { get; protected set; }
 
 		/// <summary>
@@ -37,6 +37,7 @@ namespace Melia.Login.Domain
 		public virtual int MapId { get; set; }
 		public virtual string Name { get; protected set; }
 		public virtual byte Hair { get; protected set; }
+		public virtual int BarrackLayer { get; protected set; } = 1;
 
 		/// <summary>
 		/// Returns stance, based on job and other factors.
@@ -70,7 +71,7 @@ namespace Melia.Login.Domain
 				}
 			}
 		}
-		
+
 		protected Character() { }
 
 		/// <summary>
@@ -86,6 +87,7 @@ namespace Melia.Login.Domain
 			this.Hair = hair;
 			this.Position = pos;
 			this.Inventory = new List<Equipment>();
+			this.BarrackLayer = account.SelectedBarrackLayer;
 
 			this.Stats = new Stats(this, jobData);
 			this.Move(pos);

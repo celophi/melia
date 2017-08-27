@@ -80,9 +80,12 @@ namespace Melia.Login.Network
 		/// Sends a list of characters to the client and account properties.
 		/// </summary>
 		/// <param name="conn"></param>
-		public static void BC_COMMANDER_LIST(LoginConnection conn)
+		/// <param name="layer"></param>
+		public static void BC_COMMANDER_LIST(LoginConnection conn, int layer = 1)
 		{
-			var characters = conn.Account.GetCharacters();
+			var characters = conn.Account.GetCharacters()
+				.Where(x => x.BarrackLayer == layer)
+				.ToList();
 
 			var packet = new Packet(Op.BC_COMMANDER_LIST);
 			packet.PutLong(conn.Account.Id);
@@ -255,7 +258,7 @@ namespace Melia.Login.Network
 			packet.PutLong(conn.Account.Id);
 
 			// Need to check the number of slots bought.
-            // slots = (mapDefault - 4 + bought)
+			// slots = (mapDefault - 4 + bought)
 
 			// Team experience? Displayed under "Team Info"
 			packet.PutInt(0);

@@ -376,9 +376,9 @@ namespace Melia.Login.Network
 			if (mapData == null)
 				return;
 
-            var barrackData = LoginServer.Instance.ClientData.BarrackDB.FirstOrDefault(x => x.ClassName == mapData.ClassName);
-            if (barrackData == null)
-                return;
+			var barrackData = LoginServer.Instance.ClientData.BarrackDB.FirstOrDefault(x => x.ClassName == mapData.ClassName);
+			if (barrackData == null)
+				return;
 
 			if (!conn.Account.Money.CanAfford(barrackData.Price))
 			{
@@ -433,8 +433,8 @@ namespace Melia.Login.Network
 		{
 			var layer = packet.GetInt();
 
-			// temporarily resend the current list
-			Send.BC_COMMANDER_LIST(conn);
+			conn.Account.SetCurrentBarrackLayer(layer);
+			Send.BC_COMMANDER_LIST(conn, conn.Account.SelectedBarrackLayer);
 		}
 
 		/// <summary>
