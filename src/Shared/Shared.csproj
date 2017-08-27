@@ -75,7 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client\Logic\ClientScriptAttribute.cs" />
-    <Compile Include="Client\Logic\SkillPropCalc.cs" />
+    <Compile Include="Client\Logic\SkillPropertyCalculation.cs" />
     <Compile Include="Const\Character.cs" />
     <Compile Include="Const\Gender.cs" />
     <Compile Include="Const\Items.cs" />
