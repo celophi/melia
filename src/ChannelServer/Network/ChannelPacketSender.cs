@@ -818,6 +818,20 @@ namespace Melia.Channel.Network
 		}
 
 		/// <summary>
+		/// Sets the entity's owner to the specified character handle.
+		/// </summary>
+		/// <param name="character"></param>
+		/// <param name="monster"></param>
+		public static void ZC_OWNER(Character character, Monster monster)
+		{
+			var packet = new Packet(Op.ZC_OWNER);
+			packet.PutInt(monster.Handle);
+			packet.PutInt(character.Handle);
+
+			character.Connection.Send(packet);
+		}
+
+		/// <summary>
 		/// Sends ZC_MOVE_BARRACK to connection, informing client that it's
 		/// save to disconnect?
 		/// </summary>

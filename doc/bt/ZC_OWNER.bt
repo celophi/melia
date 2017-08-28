@@ -1,0 +1,18 @@
+//------------------------------------------------
+//--- 010 Editor v8.0 Binary Template
+//
+//      File: ZC_OWNER.bt
+//   Authors: celophi
+//   Version: 164556
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+short op<format=hex>;
+int reserved;
+
+int monsterHandle;
+int characterHandle;
