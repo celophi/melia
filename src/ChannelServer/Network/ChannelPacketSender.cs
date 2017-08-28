@@ -1006,9 +1006,10 @@ namespace Melia.Channel.Network
 
 			var packet = new Packet(Op.ZC_OBJECT_PROPERTY);
 			packet.PutLong(character.Id);
+            packet.PutEmptyBin(4); // unk
 			foreach (var property in properties)
 			{
-				packet.PutShort(property);
+				packet.PutInt(property);
 				var stat = ObjectProperty.PC.FirstOrDefault(x => x.Value == property);
 
 				switch (stat.Key)
