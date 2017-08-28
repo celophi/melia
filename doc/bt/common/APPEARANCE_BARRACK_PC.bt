@@ -1,0 +1,33 @@
+//------------------------------------------------
+//--- 010 Editor v8.0 Binary Template
+//
+//      File: APPEARANCE_BARRACK_PC.bt
+//   Authors: celophi
+//   Version: 164556
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+#include "APPEARANCE_PC.bt"
+#include "Vector3.bt"
+
+typedef struct {
+  APPEARANCE_PC APC;
+  __int64 characterId;
+  byte barrackSlot;
+  byte u2;
+  short mapId;
+  short channelId;
+  byte u0[14];
+  Vector3 u6;
+  float u7;
+  float u8;
+  Vector3 u3;
+  float u4;
+  float u5;
+  int u1;
+} APPEARANCE_BARRACK_PC;
+

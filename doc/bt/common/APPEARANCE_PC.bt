@@ -1,0 +1,31 @@
+//------------------------------------------------
+//--- 010 Editor v8.0 Binary Template
+//
+//      File: APPEARANCE_PC.bt
+//   Authors: celophi
+//   Version: 164556
+//   Purpose: Structure defining the appearance of a PC.
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+typedef struct {
+  char name[65];
+  char familyName[64];
+  byte u0[7];
+  __int64 accountId;
+  short stance;
+  short u4;
+  short jobId;
+  byte gender;
+  byte u2;
+  int level;
+  int Equipment[23];
+  byte u3[8];
+  short headType;
+  short pose;
+  int teamId;
+} APPEARANCE_PC;
+

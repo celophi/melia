@@ -1,8 +1,8 @@
 //------------------------------------------------
 //--- 010 Editor v8.0 Binary Template
 //
-//      File: ZC_UPDATED_PCAPPEARANCE.bt
-//   Authors: exec, celophi
+//      File: BARRACK_PC.bt
+//   Authors: celophi
 //   Version: 164556
 //   Purpose: 
 //  Category: 
@@ -11,10 +11,12 @@
 //   History: 
 //------------------------------------------------
 
-#include "common/APPEARANCE_PC.bt"
+#include "APPEARANCE_BARRACK_PC.bt"
 
-short op;
-int sequence;
-
-int handle;
-APPEARANCE_PC APC;
+typedef struct {
+  APPEARANCE_BARRACK_PC ABPC;
+  int equipment[23];
+  byte u1[12];
+  int dummyZoneID;
+  int u2;
+} BARRACK_PC;
