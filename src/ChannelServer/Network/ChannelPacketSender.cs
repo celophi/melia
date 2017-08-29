@@ -118,11 +118,25 @@ namespace Melia.Channel.Network
 		public static void ZC_START_GAME(ChannelConnection conn)
 		{
 			var packet = new Packet(Op.ZC_START_GAME);
+			float timeFactor = 1; // Affects the speed of everything happening in the client o.o
 
-			packet.PutFloat(1); // Affects the speed of everything happening in the client o.o
+			packet.PutFloat(timeFactor); 
 			packet.PutFloat(1); // serverAppTimeOffset
 			packet.PutFloat(1); // globalAppTimeOffset
 			packet.PutLong(DateTime.Now.Add(TimeZone.CurrentTimeZone.GetUtcOffset(DateTime.Now)).ToFileTime());
+
+			conn.Send(packet);
+		}
+
+		/// <summary>
+		/// Adjusts the time speed of the client.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="timeFactor"></param>
+		public static void ZC_TIME_FACTOR(ChannelConnection conn, float timeFactor = 1)
+		{
+			var packet = new Packet(Op.ZC_TIME_FACTOR);
+			packet.PutFloat(timeFactor);
 
 			conn.Send(packet);
 		}
