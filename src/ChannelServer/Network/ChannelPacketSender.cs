@@ -995,6 +995,12 @@ namespace Melia.Channel.Network
 			packet.PutInt(ObjectProperty.PC["MSP"]);
 			packet.PutFloat(character.Stats.MaxSP);
 
+			// job name
+			var jobData = ChannelServer.Instance.ClientData.JobDB
+				.First(x => x.JobId == (int)character.Job);
+			packet.PutInt(ObjectProperty.PC["JobName"]);
+			packet.PutLpString(jobData.ClassName);
+
 			foreach (var property in character.Stats.GetListOfInitialStats())
 			{
 				packet.PutInt(ObjectProperty.PC[property]);

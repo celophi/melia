@@ -20,6 +20,7 @@ namespace Melia.Channel.Client
 		public readonly IList<MonsterData> MonsterDB = ClientData.Load<MonsterData>("monsters.json");
 		public readonly IList<ShopData> ShopDB = ClientData.Load<ShopData>("shops.json");
 		public readonly IList<SkillData> SkillDB = ClientData.Load<SkillData>("skills.json");
+		public readonly IList<JobData> JobDB = ClientData.Load<JobData>("jobs.json");
 
 		public static IList<T> Load<T>(string filename)
 		{
