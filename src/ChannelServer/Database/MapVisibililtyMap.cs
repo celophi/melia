@@ -14,6 +14,7 @@ namespace Melia.Channel.Database
 			Table("MapVisibility");
 			Id(x => x.Id);
 			Map(x => x.Map);
+			Map(x => x.Percentage);
 			Map(x => x.Visible).Column("explored").UniqueKey("UQ_MapVisibility_Map");
 			References(x => x.Account).Column("accountId");
 		}

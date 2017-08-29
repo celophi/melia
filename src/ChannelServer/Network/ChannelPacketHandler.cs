@@ -788,6 +788,29 @@ namespace Melia.Channel.Network
 		}
 
 		/// <summary>
+		/// Reports to the server a percentage of the map that has been explored.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CZ_MAP_SEARCH_INFO)]
+		public void CZ_MAP_SEARCH_INFO(ChannelConnection conn, Packet packet)
+		{
+			var map = packet.GetString(41);
+			float percentage = packet.GetFloat();
+
+			var mapData = ChannelServer.Instance.ClientData.MapDB
+				.FirstOrDefault(x => x.ClassName == map);
+
+			if (mapData == null)
+			{
+				Log.Error("CZ_MAP_SEARCH_INFO: Error map '{0}' not found.", map);
+				return;
+			}
+
+			conn.Account.SetExploredMapPercentage(mapData.MapId, percentage);
+		}
+
+		/// <summary>
 		/// Sent when attacking enemies.
 		/// </summary>
 		/// <param name="conn"></param>

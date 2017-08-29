@@ -119,7 +119,7 @@ namespace Melia.Channel.Database
 
 		public virtual void AddExploredMap(int map, byte[] visible)
 		{
-			lock(this._key)
+			lock (this._key)
 			{
 				var explored = this.ExploredMaps.Where(x => x.Map == map).FirstOrDefault();
 				if (explored == null)
@@ -129,6 +129,26 @@ namespace Melia.Channel.Database
 				}
 
 				explored.Visible = visible;
+			}
+		}
+
+		/// <summary>
+		/// Sets the explored percentage for a map.
+		/// </summary>
+		/// <param name="map"></param>
+		/// <param name="percentage"></param>
+		public virtual void SetExploredMapPercentage(int map, float percentage)
+		{
+			lock (this._key)
+			{
+				var explored = this.ExploredMaps.First(x => x.Map == map);
+				if (explored == null)
+				{
+					explored = new MapVisibility(this, map, null);
+					this.ExploredMaps.Add(explored);
+				}
+
+				explored.SetPercentage(percentage);
 			}
 		}
 

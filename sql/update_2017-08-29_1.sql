@@ -1,0 +1,1 @@
+ALTER TABLE `mapvisibility` ADD COLUMN `Percentage` FLOAT(10,2) NOT NULL DEFAULT 0;
