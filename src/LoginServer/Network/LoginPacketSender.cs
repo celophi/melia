@@ -98,7 +98,40 @@ namespace Melia.Login.Network
 
 			foreach (var character in characters)
 			{
-				packet.AddCharacter(character);
+				packet.AddAppearancePC(character);
+
+
+				packet.PutLong(character.Id);
+
+				// [i11025 (2016-02-26)]
+				// Index was previously stored as a short, now there seem
+				// to be two byte, with the first being the index.
+				{
+					packet.PutByte(character.GetIndex());
+					packet.PutByte(181);
+				}
+
+				packet.PutShort(character.MapId);
+				packet.PutInt(0);
+				packet.PutInt(0);
+				packet.PutInt(0); // maxXP ?
+				packet.PutInt(0);
+
+				// Position?
+				packet.PutFloat(character.BarrackPosition.X);
+				packet.PutFloat(character.BarrackPosition.Y);
+				packet.PutFloat(character.BarrackPosition.Z);
+				packet.PutFloat(0); // Vector direction
+				packet.PutFloat(0); // Vector direction
+
+				// ?
+				packet.PutFloat(character.BarrackPosition.X);
+				packet.PutFloat(character.BarrackPosition.Y);
+				packet.PutFloat(character.BarrackPosition.Z);
+				packet.PutFloat(0); // Vector direction
+				packet.PutFloat(0); // Vector direction
+
+				packet.PutInt(0);
 
 				// Equip properties, short->length
 				for (int i = 0; i < Items.EquipSlotCount; ++i)
@@ -142,7 +175,40 @@ namespace Melia.Login.Network
 		public static void BC_COMMANDER_CREATE(LoginConnection conn, Character character)
 		{
 			var packet = new Packet(Op.BC_COMMANDER_CREATE);
-			packet.AddCharacter(character);
+			packet.AddAppearancePC(character);
+
+
+			packet.PutLong(character.Id);
+
+			// [i11025 (2016-02-26)]
+			// Index was previously stored as a short, now there seem
+			// to be two byte, with the first being the index.
+			{
+				packet.PutByte(character.GetIndex());
+				packet.PutByte(181);
+			}
+
+			packet.PutShort(character.MapId);
+			packet.PutInt(0);
+			packet.PutInt(0);
+			packet.PutInt(0); // maxXP ?
+			packet.PutInt(0);
+
+			// Position?
+			packet.PutFloat(character.BarrackPosition.X);
+			packet.PutFloat(character.BarrackPosition.Y);
+			packet.PutFloat(character.BarrackPosition.Z);
+			packet.PutFloat(0); // Vector direction
+			packet.PutFloat(0); // Vector direction
+
+			// ?
+			packet.PutFloat(character.BarrackPosition.X);
+			packet.PutFloat(character.BarrackPosition.Y);
+			packet.PutFloat(character.BarrackPosition.Z);
+			packet.PutFloat(0); // Vector direction
+			packet.PutFloat(0); // Vector direction
+
+			packet.PutInt(0);
 
 			conn.Send(packet);
 		}

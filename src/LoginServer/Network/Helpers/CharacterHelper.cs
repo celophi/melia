@@ -16,7 +16,7 @@ namespace Melia.Login.Network.Helpers
 {
 	public static class CharacterHelper
 	{
-		public static void AddCharacter(this Packet packet, Character character)
+		public static void AddAppearancePC(this Packet packet, Character character)
 		{
 			// Commander
 			packet.PutString(character.Name, 65);
@@ -50,37 +50,6 @@ namespace Melia.Login.Network.Helpers
 
 			// End commander
 
-			packet.PutLong(character.Id);
-
-			// [i11025 (2016-02-26)]
-			// Index was previously stored as a short, now there seem
-			// to be two byte, with the first being the index.
-			{
-				packet.PutByte(character.GetIndex());
-				packet.PutByte(181);
-			}
-
-			packet.PutShort(character.MapId);
-			packet.PutInt(0);
-			packet.PutInt(0);
-			packet.PutInt(0); // maxXP ?
-			packet.PutInt(0);
-
-			// Position?
-			packet.PutFloat(character.BarrackPosition.X);
-			packet.PutFloat(character.BarrackPosition.Y);
-			packet.PutFloat(character.BarrackPosition.Z);
-			packet.PutFloat(0);	// Vector direction
-			packet.PutFloat(0); // Vector direction
-
-			// ?
-			packet.PutFloat(character.BarrackPosition.X);
-			packet.PutFloat(character.BarrackPosition.Y);
-			packet.PutFloat(character.BarrackPosition.Z);
-			packet.PutFloat(0); // Vector direction
-			packet.PutFloat(0); // Vector direction
-
-			packet.PutInt(0);
 		}
 	}
 }

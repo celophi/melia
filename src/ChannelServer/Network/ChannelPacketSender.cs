@@ -972,13 +972,36 @@ namespace Melia.Channel.Network
 		/// <param name="character"></param>
 		public static void ZC_OBJECT_PROPERTY_Init(Character character)
 		{
-			ZC_OBJECT_PROPERTY(character,
-				ObjectProperty.PC["HP"], ObjectProperty.PC["MHP"],
-				ObjectProperty.PC["SP"], ObjectProperty.PC["MSP"],
-				ObjectProperty.PC["STR"], ObjectProperty.PC["CON"], ObjectProperty.PC["INT"], ObjectProperty.PC["MNA"], ObjectProperty.PC["DEX"],
-				ObjectProperty.PC["NowWeight"], ObjectProperty.PC["MaxWeight"],
-				ObjectProperty.PC["StatByLevel"], ObjectProperty.PC["StatByBonus"], ObjectProperty.PC["UsedStat"]
-			);
+			var packet = new Packet(Op.ZC_OBJECT_PROPERTY);
+			packet.PutLong(character.Id);
+			packet.PutInt(0); // not a trick packet.
+
+			packet.PutInt(ObjectProperty.PC["STR"]);
+			packet.PutFloat(character.Stats.STR);
+			packet.PutInt(ObjectProperty.PC["CON"]);
+			packet.PutFloat(character.Stats.CON);
+			packet.PutInt(ObjectProperty.PC["INT"]);
+			packet.PutFloat(character.Stats.INT);
+			packet.PutInt(ObjectProperty.PC["MNA"]);
+			packet.PutFloat(character.Stats.SPR);
+			packet.PutInt(ObjectProperty.PC["DEX"]);
+			packet.PutFloat(character.Stats.DEX);
+			packet.PutInt(ObjectProperty.PC["Lv"]);
+			packet.PutFloat(character.Stats.Level);
+			packet.PutInt(ObjectProperty.PC["MaxSta"]);
+			packet.PutFloat(character.Stats.MaxStamina);
+			packet.PutInt(ObjectProperty.PC["MHP"]);
+			packet.PutFloat(character.Stats.MaxHP);
+			packet.PutInt(ObjectProperty.PC["MSP"]);
+			packet.PutFloat(character.Stats.MaxSP);
+
+			foreach (var property in character.Stats.GetListOfInitialStats())
+			{
+				packet.PutInt(ObjectProperty.PC[property]);
+				packet.PutFloat(character.Stats.GetDummyStat(property));
+			}
+
+			character.Connection.Send(packet);
 		}
 
 		/// <summary>
@@ -1006,7 +1029,7 @@ namespace Melia.Channel.Network
 
 			var packet = new Packet(Op.ZC_OBJECT_PROPERTY);
 			packet.PutLong(character.Id);
-            packet.PutEmptyBin(4); // unk
+			packet.PutEmptyBin(4); // unk
 			foreach (var property in properties)
 			{
 				packet.PutInt(property);

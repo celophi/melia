@@ -2,7 +2,7 @@
 //--- 010 Editor v6.0.2 Binary Template
 //
 // File: ZC_OBJECT_PROPERTY.bt
-// Author: Tachiorz, exec
+// Author: Tachiorz, exec, celophi
 // Revision:
 // Purpose:
 //--------------------------------------
@@ -13,7 +13,7 @@ enum OBJP_TYPES { OBJP_FLOAT, OBJP_INT, OBJP_STRING };
 
 typedef struct 
 {
-    short id;
+    int id;
     switch(getPropertyType(id)) {
         case OBJP_STRING:
             lpString val;
@@ -71,7 +71,8 @@ short size;
 
 int64 characterId;
 
-local int i;
+local int isTrickPacket; // wtf IMC.
+int a;
 for(i=0; i<size-16;i+=0)
 {
     property prop;
