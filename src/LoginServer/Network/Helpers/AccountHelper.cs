@@ -23,12 +23,8 @@ namespace Melia.Login.Network.Helpers
 		public static void AddAccountProperties(this Packet packet, Account account)
 		{
 			packet.PutShort(43); // Account properties size
-
-			// [i11257 (2016-03-25)] ?
-			{
-				packet.PutShort(1003);
-			}
-
+			packet.PutShort(100); // ServerGroupID (this is the GROUPID in the web server serverlist.xml)
+			
 			// Free TP
 			packet.PutInt(ObjectProperty.Account["Medal"]);
 			packet.PutFloat(account.Money.Medal);
