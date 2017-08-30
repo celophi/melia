@@ -89,6 +89,20 @@ namespace Melia.Login.Network
 			conn.Send(packet);
 		}
 
+		/// <summary>
+		/// Sends the number of the new character's index.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="character"></param>
+		public static void BC_COMMANDER_CREATE_SLOTID(LoginConnection conn, Character character)
+		{
+			int count = conn.Account.GetCharacters().Count();
+
+			var packet = new Packet(Op.BC_COMMANDER_CREATE_SLOTID);
+			packet.PutByte((byte)count);
+			conn.Send(packet);
+		}
+
 		public static void BC_COMMANDER_CREATE(LoginConnection conn, Character character)
 		{
 			var packet = new Packet(Op.BC_COMMANDER_CREATE);

@@ -285,6 +285,7 @@ namespace Melia.Login.Network
 
 			conn.Account.CreateCharacter(character);
 
+			Send.BC_COMMANDER_CREATE_SLOTID(conn, character);
 			Send.BC_COMMANDER_CREATE(conn, character);
 		}
 
