@@ -1229,6 +1229,17 @@ namespace Melia.Channel.Network
 		}
 
 		/// <summary>
+		/// Indicates to the client a request to trade with another character.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CZ_EXCHANGE_REQUEST)]
+		public void CZ_EXCHANGE_REQUEST(ChannelConnection conn, Packet packet)
+		{
+			var targetHandle = packet.GetInt();
+		}
+
+		/// <summary>
 		/// Request to save a chat macro.
 		/// </summary>
 		/// <param name="conn"></param>
