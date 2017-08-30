@@ -441,6 +441,18 @@ namespace Melia.Login.Network
 		}
 
 		/// <summary>
+		/// Pets!
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CB_PET_PC)]
+		public void CB_PET_PC(LoginConnection conn, Packet packet)
+		{
+			var petGuid = packet.GetLong();
+			var characterId = packet.GetLong();
+		}
+
+		/// <summary>
 		/// Represents a list of addons that are not allowed.
 		/// </summary>
 		/// <param name="conn"></param>
