@@ -462,7 +462,7 @@ namespace Melia.Login.Network
 		{
 			var petGuid = packet.GetLong();
 			var characterId = packet.GetLong();
-			byte command = packet.GetByte(); // always '0' which represents a request to revive a dead pet.
+			byte command = packet.GetByte(); // 0 : revive request; 1 : delete pet request.
 		}
 
 		/// <summary>
