@@ -361,6 +361,7 @@ namespace Melia.Login.Network
 
 			// Need to check the number of slots bought.
 			// slots = (mapDefault - 4 + bought)
+			packet.PutShort(0);
 
 			// Team experience? Displayed under "Team Info"
 			packet.PutInt(0);
