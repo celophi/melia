@@ -453,6 +453,19 @@ namespace Melia.Login.Network
 		}
 
 		/// <summary>
+		/// Commands associated with pets.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="packet"></param>
+		[PacketHandler(Op.CB_PET_COMMAND)]
+		public void CB_PET_COMMAND(LoginConnection conn, Packet packet)
+		{
+			var petGuid = packet.GetLong();
+			var characterId = packet.GetLong();
+			byte command = packet.GetByte(); // always '0' which represents a request to revive a dead pet.
+		}
+
+		/// <summary>
 		/// Represents a list of addons that are not allowed.
 		/// </summary>
 		/// <param name="conn"></param>
