@@ -41,6 +41,7 @@ namespace Melia.Channel.Network.Helpers
 			packet.PutShort(commander.Hair);
 			packet.PutShort(0); // Pose
 			packet.PutInt(0); // TeamID
+			packet.PutInt(0); // Unknown
 		}
 	}
 }

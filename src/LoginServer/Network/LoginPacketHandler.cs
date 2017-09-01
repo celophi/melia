@@ -81,6 +81,7 @@ namespace Melia.Login.Network
 			Log.Info("User '{0}' logged in.", conn.Account.Name);
 
 			Send.BC_LOGINOK(conn);
+			Send.BC_COMMANDER_LIST(conn);
 		}
 
 		/// <summary>
@@ -126,9 +127,9 @@ namespace Melia.Login.Network
 
 			Send.BC_SERVER_ENTRY(conn, ip, port, ip, port);
 			Send.BC_NORMAL_SelectedBarrack(conn);
-			Send.BC_COMMANDER_LIST(conn);
 			Send.BC_NORMAL_ZoneTraffic(conn);
 			Send.BC_NORMAL_TeamUI(conn);
+			Send.BC_COMMANDER_LIST(conn);
 		}
 
 		/// <summary>

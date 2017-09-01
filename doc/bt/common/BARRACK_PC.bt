@@ -15,8 +15,11 @@
 
 typedef struct {
   APPEARANCE_BARRACK_PC ABPC;
-  int equipmentProperties[22];
-  byte u1[7];
+  // this is an empty property list; otherwise a short defines the length of a property.
+  short equipmentProperties[22]; 
+  byte u1[5];
+  short job;
+  int u2;
   // byte u1[12];
   // int dummyZoneID;
 } BARRACK_PC;

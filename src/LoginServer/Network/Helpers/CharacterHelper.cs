@@ -20,8 +20,12 @@ namespace Melia.Login.Network.Helpers
 		{
 			// Commander
 			packet.PutString(character.Name, 65);
+
+			// this is empty in i170175
 			packet.PutString(character.Account.TeamName, 64);
 			packet.PutEmptyBin(7);
+
+			// this is empty in i170175
 			packet.PutLong(character.Account.Id);
 			packet.PutShort(character.Stance);
 			packet.PutShort(0);
@@ -47,6 +51,7 @@ namespace Melia.Login.Network.Helpers
 			{
 				packet.PutInt(0);
 			}
+			packet.PutInt(0);
 
 			// End commander
 

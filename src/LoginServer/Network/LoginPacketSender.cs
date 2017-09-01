@@ -134,34 +134,20 @@ namespace Melia.Login.Network
 				packet.PutInt(0);
 
 				// Equip properties, short->length
+				// This is an empty property list
 				for (int i = 0; i < Items.EquipSlotCount; ++i)
 					packet.PutShort(0);
 
 				packet.PutByte(1);
 				packet.PutByte(1);
 				packet.PutByte(1);
+				packet.PutByte(1);
+				packet.PutByte(0);
 
-				// Job history?
-				// While this short existed in iCBT1, it might not have
-				// been used, couldn't find a log.
-				// Example: A Mage that switched to Pyromancer has two
-				//   elements in this list, 2001 and 2002.
-				packet.PutShort(0); // count
-									// loop
-									//   short jobId
-
-				// [i11025 (2016-02-26)] ?
-				{
-					packet.PutInt(0);
-				}
+				packet.PutShort((short)character.Job);
+				packet.PutInt(0);
 			}
-
-			// Null terminated list of some kind?
-			// Example of != 0: 02 00 | 0B 00 00 00 01 00, 0C 00 00 00 00 00
-			packet.PutShort(0); // count?
-
-			packet.PutShort(0); // unk
-			packet.PutInt(conn.Account.GetCharacters().Count()); // unk
+			
 			packet.PutShort(conn.Account.GetCharacters().Count()); // unk
 			
 			conn.Send(packet);
