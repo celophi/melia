@@ -1,0 +1,72 @@
+//------------------------------------------------
+//--- 010 Editor v8.0 Binary Template
+//
+//      File: ObjectProperty.bt
+//   Authors: Tachiorz, exec, celophi
+//   Version: i170175
+//   Purpose: Represents a key/value pair with dynamic type.
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+#include "utils/LPString.bt"
+
+enum OBJP_TYPES { OBJP_FLOAT, OBJP_INT, OBJP_STRING };
+
+typedef struct 
+{
+    int id;
+    switch(getPropertyType(id)) {
+        case OBJP_STRING:
+            LPString val;
+            break;
+        case OBJP_INT:
+            int32 val;
+            break;
+        case OBJP_FLOAT:
+            float val;
+            break;
+    }
+}
+ObjectProperty <read=propertyRead, optimize=false>;
+
+string propertyRead(ObjectProperty &p)
+{
+    local char ret[];
+    local char val_type[];
+    
+    switch(getPropertyType(p.id)) {
+        case OBJP_STRING:
+            SPrintf(ret, "%d : %s ", p.id, p.val.text);
+            break;
+        case OBJP_INT:
+            SPrintf(ret, "%d : %d" , p.id, p.val);
+            break;
+        case OBJP_FLOAT:
+            SPrintf(ret, "%d : %.0f" , p.id, p.val);
+            break;
+    }
+
+    return ret;
+}
+
+int getPropertyType(int id)
+{
+    switch(id) {
+        case 41: 
+        case 4591:
+        case 7118:
+        case 6303:      // Account : Medal_Get_Date
+        case 101000:    // Account : LimitPaymentStateBySteam
+            return OBJP_STRING;
+            break;
+        case 4601:
+            return OBJP_INT;
+            break;
+        default:
+            return OBJP_FLOAT;
+            break;
+    }
+}

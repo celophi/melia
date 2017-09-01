@@ -1,63 +1,39 @@
-//--------------------------------------
-//--- 010 Editor v6.0.2 Binary Template
+//------------------------------------------------
+//--- 010 Editor v8.0 Binary Template
 //
-// File: BC_COMMANDER_LIST.bt
-// Author: exec
-// Revision:
-// Purpose:
-//--------------------------------------
+//      File: BC_COMMANDER_LIST.bt
+//   Authors: exec, celophi
+//   Version: i170175
+//   Purpose: Informs the client of a list of characters to display
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
 
-#include "common.bt"
+#include "common/ObjectProperty.bt"
+#include "common/BARRACK_PC.bt"
 
-typedef struct
-{
-    short size;
-    short s1; // [i11257 (2016-03-25)]
+typedef struct {
+    local int i<hidden=true>;
+    while (i < accountPropertiesLength) {
+        ObjectProperty property;
+        i += sizeof(property);
+    }
+} AccountProperties;
 
-    if(size > 0)
-        byte properties[size]; // todo, short:val list
-}
-AccountProperties;
-
-typedef struct
-{
-    short size;
-    if(size > 0)
-        byte properties[size]; // todo, short:val list
-}
-ItemProperties;
-
-typedef struct
-{
-    Character character;
-
-    ItemProperties itemProperties[EquipSlotCount] <optimize=false>;
-    
-    // maybe job history?
-    short jobIdCount;
-    short jobId2[jobIdCount];
-
-    int i6; // [i11025 (2016-02-26)]
-}
-ListCharacter;
-
-short op;
-int sequence;
-short size;
+short op<format=hex>;
+int reserved;
+short packetLength;
 
 int64 accountId;
-byte b1;
+byte u0;
 byte characterCount;
 char teamName[64];
 
+short accountPropertiesLength;
+short serverGroupId; // This is the GROUPID value in serverlist.xml
+
 AccountProperties properties;
 
-ListCharacter character[characterCount] <optimize=false>;
-
-short s1;
-if (s1 != 0)
-    byte bin1[(4+2) * s1];
-
-// 02 00
-// 0B 00 00 00 01 00
-// 0C 00 00 00 00 00
+BARRACK_PC PC[characterCount] <optimize=false>;

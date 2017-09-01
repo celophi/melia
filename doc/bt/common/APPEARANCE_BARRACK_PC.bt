@@ -21,7 +21,10 @@ typedef struct {
   byte u2;
   short mapId;
   short channelId;
-  byte u0[14];
+  int u0;
+  short u8;
+  int maxExp;
+  int exp;
   Vector3 u6;
   float u7;
   float u8;
