@@ -1292,6 +1292,20 @@ namespace Melia.Channel.Network
 		}
 
 		/// <summary>
+		/// Sets the team ID for an entity.
+		/// </summary>
+		/// <param name="conn"></param>
+		/// <param name="entity"></param>
+		/// <param name="team"></param>
+		public static void ZC_TEAMID(ChannelConnection conn, IEntity entity, byte team)
+		{
+			var packet = new Packet(Op.ZC_TEAMID);
+			packet.PutInt(entity.Handle);
+			packet.PutByte(team);
+			conn.Send(packet);
+		}
+
+		/// <summary>
 		/// Informs players about a hit that occured, and about the target's
 		/// new hp, after damage was applied.
 		/// </summary>
