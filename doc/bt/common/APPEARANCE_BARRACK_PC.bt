@@ -11,8 +11,8 @@
 //   History: 
 //------------------------------------------------
 
-#include "APPEARANCE_PC.bt"
-#include "Vector3.bt"
+#include "common/APPEARANCE_PC.bt"
+#include "common/Vector3.bt"
 
 typedef struct {
   APPEARANCE_PC APC;
