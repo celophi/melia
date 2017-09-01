@@ -4,7 +4,7 @@
 //      File: CB_COMMANDER_CREATE.bt
 //   Authors: exec, celophi
 //   Version: i170175
-//   Purpose: 
+//   Purpose: Sent when the client requests a character to be made.
 //  Category: 
 // File Mask: 
 //  ID Bytes: 

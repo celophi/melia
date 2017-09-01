@@ -3,8 +3,8 @@
 //
 //      File: BC_COMMANDER_CREATE.bt
 //   Authors: exec, celophi
-//   Version: 164556
-//   Purpose: 
+//   Version: i170175
+//   Purpose: Instructs the client that a character was created.
 //  Category: 
 // File Mask: 
 //  ID Bytes: 

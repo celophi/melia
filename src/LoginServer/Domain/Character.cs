@@ -36,7 +36,7 @@ namespace Melia.Login.Domain
 
 		public virtual int MapId { get; set; }
 		public virtual string Name { get; protected set; }
-		public virtual byte Hair { get; protected set; }
+		public virtual short Hair { get; protected set; }
 		public virtual int BarrackLayer { get; protected set; } = 1;
 
 		/// <summary>
@@ -77,7 +77,7 @@ namespace Melia.Login.Domain
 		/// <summary>
 		/// Creates new character.
 		/// </summary>
-		public Character(Account account, string name, Gender gender, byte hair, JobData jobData, MapData mapData, Position pos) : this()
+		public Character(Account account, string name, Gender gender, short hair, JobData jobData, MapData mapData, Position pos) : this()
 		{
 			this.Account = account;
 			this.Job = (Job)jobData.JobId;

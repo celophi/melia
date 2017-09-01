@@ -83,7 +83,7 @@ namespace Melia.Login.Domain
 		/// <param name="mapData"></param>
 		/// <param name="pos"></param>
 		/// <returns></returns>
-		public virtual Character CreateCharacter(string name, Gender gender, byte hair, JobData jobData, MapData mapData, Position pos)
+		public virtual Character CreateCharacter(string name, Gender gender, short hair, JobData jobData, MapData mapData, Position pos)
 		{
 			lock (this._key)
 			{

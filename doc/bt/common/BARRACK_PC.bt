@@ -15,7 +15,7 @@
 
 typedef struct {
   APPEARANCE_BARRACK_PC ABPC;
-  int equipment[23];
+  int equipment[22];
   byte u1[12];
   int dummyZoneID;
   int u2;

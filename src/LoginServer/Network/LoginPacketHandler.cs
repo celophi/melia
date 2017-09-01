@@ -146,7 +146,7 @@ namespace Melia.Login.Network
 			var bx = packet.GetFloat();
 			var by = packet.GetFloat();
 			var bz = packet.GetFloat();
-			var hair = packet.GetByte();
+			var hair = packet.GetShort();
 
 
 			if (conn.Account.GetCharacterByName(name) != null)

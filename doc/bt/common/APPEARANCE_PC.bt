@@ -3,7 +3,7 @@
 //
 //      File: APPEARANCE_PC.bt
 //   Authors: celophi
-//   Version: 164556
+//   Version: i170175
 //   Purpose: Structure defining the appearance of a PC.
 //  Category: 
 // File Mask: 
@@ -22,10 +22,11 @@ typedef struct {
   byte gender;
   byte u2;
   int level;
-  int Equipment[23];
+  int Equipment[22];
   byte u3[8];
   short headType;
   short pose;
   int teamId;
+  DWORD u5;
 } APPEARANCE_PC;
 
