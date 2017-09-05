@@ -1372,6 +1372,16 @@ namespace Melia.Shared.Network
 				_names[(int)field.GetValue(null)] = field.Name;
 		}
 
+		/// <summary>
+		/// Represents the required sub-opcode for BC_NORMAL packets.
+		/// </summary>
+		public enum BarrackNormalOp : int
+		{
+			SetPosition = 0x02,
+			TeamUi = 0x0B,
+			ZoneTraffic = 0x0C,
+		}
+
 		public static int GetSize(int op)
 		{
 			int size;
